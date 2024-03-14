@@ -22,7 +22,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.hero-image {
 				width: 100%;
 			}
-			.hero-image img {
+			
+			.hero-image .img-content  {
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
@@ -59,7 +60,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" class="" />}
+					{heroImage && (<div class="img-content h-[510px] w-[1020px] bg-cover bg-center " style={`
+										background-image: url(${heroImage});
+								`}>
+								</div>)
+					}
+					
 				</div>
 				<div class="prose">
 					<div class="title">
