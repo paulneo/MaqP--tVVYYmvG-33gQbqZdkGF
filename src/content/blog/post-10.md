@@ -3,7 +3,6 @@ title: 'Third postsss 2017'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 22 2022'
 date: 2017-08-04T05:00:00Z
-
 heroImage: '/blog-placeholder-2.jpg'
 tags: ["Subterránea"]
 
