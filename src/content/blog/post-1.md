@@ -1,8 +1,8 @@
 ---
 title: 'Markdown Style Guide'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-date: 2026-03-07T05:00:00Z
-pubDate: 'Jul 01 2026'
+date: 2028-03-09T05:00:00Z
+pubDate: 'May 01 2026'
 heroImage: '/blog-placeholder-1.jpg'
 tags: ["Agrícola"]
 ---
@@ -27,6 +27,8 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ## Paragraph
 
+hola esto es mi popo 
+
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
@@ -37,6 +39,12 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ```markdown
 ![Alt text](./full/or/relative/path/of/image)
+```
+
+##
+
+```markdown
+ ESTOY APRENDIENDO MAQUINAS
 ```
 
 #### Output
@@ -89,7 +97,7 @@ The blockquote element represents content that is quoted from another source, op
 
 #### Output
 
-| Italics   | Bold     | Code   |
+| Italics   | Bold     | Code   |  
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
 

@@ -1,8 +1,8 @@
 ---
-title: 'Second post'
+title: 'Second post 2022'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2022'
-date: 2025-08-04T05:00:00Z
+date: 2022-08-04T05:00:00Z
 
 heroImage: '/blog-placeholder-4.jpg'
 tags: ["Subterránea"]

@@ -1,8 +1,8 @@
 ---
-title: 'First post'
+title: 'First post 2024'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'
-date: 2025-08-04T05:00:00Z
+date: 2024-08-04T05:00:00Z
 
 heroImage: '/blog-placeholder-3.jpg'
 tags: ["Maquinarias", "Gigantes"]
