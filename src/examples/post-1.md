@@ -5,6 +5,7 @@ date: 2020-03-09T05:00:00Z
 pubDate: 'May 01 2020'
 heroImage: '/blog-placeholder-1.jpg'
 tags: ["Agrícola"]
+status: false
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
