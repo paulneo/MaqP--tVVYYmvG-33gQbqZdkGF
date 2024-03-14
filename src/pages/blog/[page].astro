@@ -15,7 +15,6 @@ export async function getStaticPaths({ paginate }) {
 // Todos los datos paginados se pasan en la prop "page"
 const { page } = Astro.props;
 const { data = [] } = page
-console.log(page)
 ---
 
 <Layout title={'lista de blogs'} description="Total las etiquetas">

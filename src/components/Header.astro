@@ -1,11 +1,13 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import Logo from '../assets/logo.png'
 ---
 
 <header  class="flex justify-center items-center ">
 	<nav class="flex justify-between items-center w-[1100px] py-8">
-			<a href="/">{SITE_TITLE}</a>
+		<Image src={Logo} alt="Maquinarias pesadas" class='h-[120px] w-auto'/>
 		<div class="internal-links">
 			<HeaderLink href="/">Inicio</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
