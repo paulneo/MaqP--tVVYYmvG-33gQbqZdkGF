@@ -1,0 +1,32 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header  class="flex justify-center items-center ">
+	<nav class="flex justify-between items-center w-[1100px] py-8">
+			<a href="/">{SITE_TITLE}</a>
+		<div class="internal-links">
+			<HeaderLink href="/">Inicio</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+		</div>
+		<div>
+				<i class="fa-solid fa-moon text-2xl text-amber-500 cursor-pointer fa-fade"  style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.8;"></i>
+		</div>
+	</nav>
+</header>
+<style>
+
+	nav a {
+		padding: 0.2em 0.8rem;
+		border-bottom: 3px solid transparent;
+		text-decoration: none;
+	}
+	nav a.active {
+		text-decoration: none;
+		color: theme('colors.amber.500');;
+		border-bottom-color: theme('colors.amber.500');
+	}
+
+</style>

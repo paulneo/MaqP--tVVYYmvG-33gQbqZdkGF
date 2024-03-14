@@ -1,0 +1,60 @@
+---
+const today = new Date();
+---
+
+<footer class="h-60 bg-slate-900 flex flex-col justify-center items-center">
+	<div class="social-links">
+			<a
+				aria-label="facebook"
+				href={''}
+				target="_blank"
+				rel="noopener noreferrer nofollow"
+			>
+				<i class="fa-brands fa-facebook-f text-2xl hover:text-amber-500"></i>
+			</a>
+			<a
+				aria-label="twitter"
+				href={''}
+				target="_blank"
+				rel="noopener noreferrer nofollow"
+			>
+				<i class="fa-brands fa-x-twitter text-2xl hover:text-amber-500"></i>
+			</a>
+			<a
+				aria-label="twitter"
+				href={''}
+				target="_blank"
+				rel="noopener noreferrer nofollow"
+			> 
+				<i class="fa-brands fa-instagram text-2xl hover:text-amber-500"></i>
+			</a>
+			<a
+				aria-label="twitter"
+				href={''}
+				target="_blank"
+				rel="noopener noreferrer nofollow"
+			>
+				<i class="fa-brands fa-youtube text-2xl hover:text-amber-500"></i>
+			</a>
+	</div>
+    <!-- <p set:html={markdownify(config.params.copyright)} class="text-white/75" /> -->
+	<p class="text-slate-300 text-center">
+		&copy; {today.getFullYear()} Maquinarias pesadas. Todos los derechos reservados.
+	</p>
+</footer>
+
+<style>
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		margin-bottom: 1em;
+	}
+	.social-links a {
+		color: theme('colors.slate.400');
+	}
+	.social-links a:hover {
+		
+	}
+
+</style>
