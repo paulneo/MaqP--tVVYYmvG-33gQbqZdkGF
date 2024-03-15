@@ -7,7 +7,7 @@ heroImage: '/aceros.jpg'
 tags: ["Aceros", "Maquinaria"]
 
 ---
----
+
 La clasificación de los aceros es un tema crucial en la industria metalúrgica, abarcando una amplia gama de tipos basados en sus propiedades mecánicas y composiciones químicas. Esta clasificación permite a ingenieros y diseñadores seleccionar el material más adecuado para sus aplicaciones específicas, asegurando la integridad estructural y la eficiencia de sus proyectos.
 
 1. #### Aceros de Construcción
@@ -28,6 +28,7 @@ Dentro de los aceros de herramientas, encontramos:
 - Aceros indeformables
 - Aceros de corte no rápidos
 ```
+
 3. #### Aceros Inoxidables y Resistentes al Calor
 
 Estos aceros se caracterizan por su resistencia a la corrosión y a altas temperaturas, clasificándose en:
