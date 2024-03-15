@@ -49,13 +49,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
-			.dark h4 {
-				color: theme('colors.slate.100')
-			}
-
-			.dark p {
-				color: theme('colors.slate.300');
-			}
+		
 
 
 		</style>
@@ -64,7 +58,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<body class="dark:bg-slate-900 bg-slate-50">
 		<Header />
 		<main >
-			<article>
+			<article class="">
 				<div class="hero-image" >
 					{heroImage && (<div class="img-content h-[510px] w-[1020px] bg-cover bg-center " style={`
 										background-image: url(${heroImage});
@@ -73,7 +67,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					}
 					
 				</div>
-				<div class="prose">
+				<div class="prose dark:prose-invert">
 					<div class="title">
 						<div class="date">
 							<FormattedDate date={pubDate} />
@@ -94,20 +88,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		</main>
 		<Footer />
 	</body>
-	<style>
-		.dark h1 {
-				color: theme('colors.slate.50')
-			}
-			.dark h2 {
-				color: theme('colors.slate.50')
-			}
 
-			.dark .prose p {
-				color: theme('colors.slate.300')
-			}
-			.dark ul {
-				color: theme('colors.slate.300')
-			}
-	</style>
 </html>
 
