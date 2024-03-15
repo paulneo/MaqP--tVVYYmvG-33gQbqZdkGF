@@ -30,11 +30,6 @@ const Theme = () => {
       setIsDark(false);
     }
 
-    // localStorage.theme = 'light';
-
-    // localStorage.theme = 'dark';
-
-    // localStorage.removeItem('theme');
   }, []);
 
   return (
