@@ -7,7 +7,6 @@ heroImage: '/tratamiento-aceros.jpg'
 tags: ["Aceros", "Maquinaria"]
 
 ---
-
 El acero, conocido por su versatilidad y resistencia, puede someterse a diversos tratamientos para mejorar sus propiedades mecánicas y resistencia a la corrosión. Estos tratamientos se clasifican en superficiales y térmicos, cada uno con técnicas y objetivos específicos para optimizar el rendimiento del acero en distintas aplicaciones
 
 #### Tratamientos Superficiales
