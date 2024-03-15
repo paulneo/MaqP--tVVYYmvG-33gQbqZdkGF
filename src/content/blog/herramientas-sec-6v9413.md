@@ -3,7 +3,7 @@ title: 'Juego de Herramientas SEC 6V9413'
 description: 'El juego de herramientas SEC 6V9413'
 pubDate: 'Mar 14 2024'
 date: 2024-14-03T05:00:00Z
-heroImage: '/juego-herramientas-sec-6v9413.webp'
+heroImage: '/juego-herramientas-sec-6v9413.jpg'
 tags: ["herramientas-medicion"]
 
 ---

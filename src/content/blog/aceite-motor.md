@@ -3,7 +3,7 @@ title: 'Aceite para el Motor'
 description: 'Maximizando el Rendimiento de Maquinaria Pesada'
 pubDate: 'Mar 14 2024'
 date: 2024-14-03T05:00:00Z
-heroImage: '/aceite-motor.webp'
+heroImage: '/aceite-motor.jpg'
 tags: ["Aceite", "Motor"]
 
 ---
@@ -22,7 +22,7 @@ El aceite cumple múltiples funciones críticas, como enfriamiento, lubricación
 #### Conocimientos Básicos Sobre el Aceite Lubricante
 
 El aceite base se compone de una mezcla de hidrocarburos (parafínico, nafténico, aromático), con los parafínicos siendo los preferidos por sus características de viscosidad ideales. Los aditivos, como detergentes, dispersantes y antioxidantes, se añaden para mejorar el rendimiento del aceite, adecuándose a las necesidades específicas de los motores, engranajes e hidráulicos.
-![aceite motor](/aceite-motor-02.webp)
+![aceite motor](/aceite-motor-02.jpg)
 
 #### Composición de Aditivos
 
