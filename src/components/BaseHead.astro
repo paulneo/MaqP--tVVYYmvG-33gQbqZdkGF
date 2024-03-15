@@ -2,7 +2,8 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import { ViewTransitions } from 'astro:transitions';
+
 
 interface Props {
 	title: string;
@@ -15,7 +16,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const { title, description, image = '/blog-about.jpg' } = Astro.props;
 ---
 
+
 <!-- Global Metadata -->
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/png+xml" href="/favicon.png" />
@@ -46,6 +49,4 @@ const { title, description, image = '/blog-about.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
-<script src="https://kit.fontawesome.com/73da2e88a8.js" crossorigin="anonymous"></script>
 <ViewTransitions />

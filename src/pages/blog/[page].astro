@@ -19,13 +19,13 @@ const { data = [] } = page
 
 <Layout title={'lista de blogs'} description="Total las etiquetas">
 	<main>
-		<section>
+		<section >
 			<ul>
 				{
 					data.map((post) => (
-						<li>
+						<li >
 							<a href={`/blog/${post.slug}/`}>
-								<div class="img-content h-[220px] w-[100%] bg-cover bg-center " style={`
+								<div  class="img-content h-[220px] w-[100%] bg-cover bg-center " style={`
 										background-image: url(${post.data.heroImage});
 								`}>
 								</div>
