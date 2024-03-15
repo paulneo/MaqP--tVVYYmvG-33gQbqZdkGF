@@ -7,13 +7,13 @@ import Theme from '../components/react/theme.jsx'
 
 <header  class="flex justify-center items-center " > 
 	<nav class="flex justify-between items-center w-[1100px] py-8">
-		<Image src={Logo} alt="Maquinarias pesadas" class='h-[120px] w-auto'/>
+		<Image src={Logo} alt="Maquinarias pesadas" class='h-[120px] w-auto' loading='lazy' />
 		<div class="internal-links">
 			<HeaderLink href="/" >Inicio</HeaderLink>
 			<HeaderLink href="/blog" >Blog</HeaderLink>
 			<HeaderLink href="/about" >Nosotros</HeaderLink>
 		</div>
-		<Theme  />
+		<Theme client:load />
 
 	</nav>
 </header>
