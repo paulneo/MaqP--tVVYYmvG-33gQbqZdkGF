@@ -7,7 +7,6 @@ heroImage: '/aceite-motor.jpg'
 tags: ["Aceite", "Motor"]
 
 ---
-### Aceite para el Motor
 ---
 Esta sección brinda conocimientos esenciales sobre el aceite para motores de maquinaria pesada, enfocándose en su calidad, control de deterioro y efectos. Es vital para los operadores comprender estos aspectos para prolongar la vida útil de sus motores.
 
