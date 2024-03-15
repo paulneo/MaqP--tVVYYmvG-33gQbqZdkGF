@@ -4,6 +4,18 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+@tailwind base;
+
+@layer base {
+	ul {
+		list-style: disc ;
+		margin: auto;
+		padding: 0 30px;
+	}
+
+  /* ... */
+}
+
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
@@ -132,3 +144,4 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
