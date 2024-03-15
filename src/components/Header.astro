@@ -1,23 +1,26 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 import { Image } from 'astro:assets';
 import Logo from '../assets/logo.png'
+import Theme from '../components/react/theme.jsx'
 ---
 
-<header  class="flex justify-center items-center ">
+<header  class="flex justify-center items-center " > 
 	<nav class="flex justify-between items-center w-[1100px] py-8">
 		<Image src={Logo} alt="Maquinarias pesadas" class='h-[120px] w-auto'/>
 		<div class="internal-links">
-			<HeaderLink href="/">Inicio</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">Nosotros</HeaderLink>
+			<HeaderLink href="/" >Inicio</HeaderLink>
+			<HeaderLink href="/blog" >Blog</HeaderLink>
+			<HeaderLink href="/about" >Nosotros</HeaderLink>
 		</div>
-		<div>
-				<i class="fa-solid fa-moon text-2xl text-amber-500 cursor-pointer fa-fade"  style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.8;"></i>
-		</div>
+		<Theme client:visible />
+
 	</nav>
 </header>
+
+<script>
+
+</script>
 <style>
 
 	nav a {
@@ -29,6 +32,15 @@ import Logo from '../assets/logo.png'
 		text-decoration: none;
 		color: theme('colors.amber.500');;
 		border-bottom-color: theme('colors.amber.500');
+	}
+	.darknav a.active {
+		text-decoration: none;
+		color: theme('colors.amber.500');;
+		border-bottom-color: theme('colors.amber.500');
+	}
+
+	.dark\:underline:where([data-mode="dark"], [data-mode="dark"] *){
+		text-decoration-line: underline
 	}
 
 </style>
