@@ -13,12 +13,14 @@ El acero, conocido por su versatilidad y resistencia, puede someterse a diversos
 #### Tratamientos Superficiales
 
 Los tratamientos superficiales se enfocan en proteger el acero de la oxidación y la corrosión, así como en añadir características decorativas a los metales. Los más comunes incluyen:
+
 - Cincado: Proceso antioxidante electrolítico o mecánico para componentes metálicos.
 - Cromado: Recubrimiento que protege contra la oxidación y añade un acabado estético.
 - Galvanizado: Aplicación de una capa de zinc sobre chapa de acero para prevenir la corrosión.
 - Niquelado: Baño de níquel que ofrece protección contra la oxidación.
 - Pavonado: Tratamiento para pequeñas piezas de acero, como tornillería, mejorando su resistencia a la corrosión.
 - Pintura: Utilizado ampliamente en estructuras, automóviles, y barcos, entre otros, para proteger y decorar​​.
+
 
 #### Tratamientos Térmicos
 Los tratamientos térmicos buscan modificar la microestructura del acero para mejorar su dureza, tenacidad, y resistencia mecánica, sin alterar su composición química. Los principales tratamientos térmicos incluyen:
