@@ -1,0 +1,12 @@
+const id = "herramientas-sec-6v9413.md";
+						const collection = "blog";
+						const slug = "herramientas-sec-6v9413";
+						const body = "### Juego de Herramientas SEC 6V9413 para la Precisión en el Mantenimiento del Tren de Rodaje\n\nEl mantenimiento eficiente del tren de rodaje en maquinaria pesada es crucial para prolongar la vida útil de los equipos y asegurar su óptimo desempeño. El juego de herramientas SEC 6V9413, ofrecido por Caterpillar, se destaca por su capacidad de proporcionar mediciones precisas y rápidas de todos los componentes del tren de rodaje, asegurando así un mantenimiento y ajuste adecuados.\n\n#### Componentes del Juego de Herramientas\n\nEl juego de herramientas SEC incluye una variedad de instrumentos diseñados específicamente para medir con precisión los componentes del tren de rodaje, tales como:\n\n```markdown\n- Estuche SEC\n- Raspador\n- Regla de acero de 12\"\n- Calibradores de 4\", 6\" y 12\"\n- Cinta métrica de 12'\n- Medidores de rueda motriz y profundidad\n```\nCada herramienta está calibrada para ofrecer mediciones con una precisión de ±0.025 mm (±0.001 pulgadas), lo que garantiza la fiabilidad en el mantenimiento preventivo y correctivo del tren de rodaje.\n\n#### Importancia de la Precisión en el Mantenimiento\n\nEl mantenimiento preciso del tren de rodaje no solo extiende la vida útil de los componentes, sino que también contribuye a la eficiencia operativa de la maquinaria pesada. El uso del juego de herramientas SEC 6V9413 asegura que los componentes del tren de rodaje sean evaluados de manera precisa, lo que permite realizar ajustes y reemplazos oportunos que previenen fallas inesperadas y costosas reparaciones.\n\n#### Conclusión\n\nEl juego de herramientas SEC 6V9413 es esencial para cualquier profesional dedicado al mantenimiento de maquinaria pesada Caterpillar. Su precisión y calidad aseguran un mantenimiento eficaz que prolonga la vida útil del equipo y mantiene su rendimiento en niveles óptimos.";
+						const data = {title:"Juego de Herramientas SEC 6V9413",date:new Date(1738558800000),description:"El juego de herramientas SEC 6V9413",pubDate:new Date(1710392400000),heroImage:"/juego-herramientas-sec-6v9413.jpg",tags:["herramientas-medicion"]};
+						const _internal = {
+							type: 'content',
+							filePath: "/Users/jeanpaul/Projects/maquinarias-pesadas/src/content/blog/herramientas-sec-6v9413.md",
+							rawData: undefined,
+						};
+
+export { _internal, body, collection, data, id, slug };
