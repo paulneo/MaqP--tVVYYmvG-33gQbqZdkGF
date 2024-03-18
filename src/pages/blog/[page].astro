@@ -26,12 +26,12 @@ const { data = [] } = page
 						<li >
 							<a href={`/blog/${post.slug}/`}>
 								<div  class="img-content h-[220px] w-[100%] bg-cover bg-center " style={`
-										background-image: url(${post.data.heroImage});
+										background-image: url(${post.data?.heroImage});
 								`}>
 								</div>
-								<h4 class="text-slate-800 dark:text-slate-50 hover:text-amber-500">{post.data.title}</h4>
+								<h4 class="text-slate-800 dark:text-slate-50 hover:text-amber-500">{post.data?.title}</h4>
 								<p class="text-slate-800  dark:text-slate-50">
-									<FormattedDate date={post.data.pubDate} />
+									<FormattedDate date={post.data?.pubDate} />
 								</p>
 							</a>
 						</li>
