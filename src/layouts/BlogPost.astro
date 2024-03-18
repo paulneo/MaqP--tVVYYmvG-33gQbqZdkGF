@@ -17,7 +17,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			main {
 				width: calc(100% - 2em);
 				max-width: 100%;
-				margin: 0;
+				margin: 0 auto;
 			}
 			.hero-image {
 				width: 100%;
@@ -60,7 +60,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<main >
 			<article class="">
 				<div class="hero-image" >
-					{heroImage && (<div class="img-content h-[510px] w-[1020px] bg-cover bg-center dark:shadow-md dark:shadow-amber-500/50 " style={`
+					{heroImage && (<div class="img-content h-[300px] md:h-[510px]  w-[100%] lg:w-[1020px] bg-cover bg-center dark:shadow-md dark:shadow-amber-500/50 " style={`
 										background-image: url(${heroImage});
 								`}>
 								</div>)
