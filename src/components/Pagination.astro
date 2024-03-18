@@ -1,0 +1,130 @@
+---
+const { section, currentPage, totalPages } = Astro.props;
+
+const indexPageLink = currentPage === 2;
+const hasPrevPage = currentPage > 1;
+const hasNextPage = totalPages > currentPage;
+
+let pageList = [];
+
+if (totalPages > 5) {
+  if (currentPage === totalPages ) {
+    for (let i = currentPage - 2; i <= totalPages; i++) {
+      pageList.push(i);
+    }
+  } else if (currentPage === 1) {
+    for (let i = currentPage; i <= currentPage + 2; i++) {
+      pageList.push(i);
+    }
+  } else if (currentPage > 1) {
+    for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+      pageList.push(i);
+    }
+  } 
+} else {
+  for (let i = 1; i <= totalPages; i++) {
+    pageList.push(i);
+  }
+}
+
+---
+<div class="mt-10">
+  {
+    totalPages > 1 && (
+      <nav class="mb-4 flex justify-center space-x-2 text-center" >
+        
+        {/* previous */}
+        {hasPrevPage ? (
+          <a
+            href={
+              indexPageLink
+                ? `${section ? "/" + section : "/"}`
+                : `${section ? "/" + section : ""}/${currentPage - 1}`
+            }
+            class="border border-gray-400 hover:bg-primary hover:text-amber-500 rounded-md h-10 w-10 leading-[36px]   flex items-center justify-center transition duration-200"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 dark:fill-slate-200" viewBox="0 0 320 512">
+              <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+            </svg>
+          </a>
+        ) : (
+          <span class="border  dark:text-slate-200 border-gray-400 opacity-40 rounded-md h-10 w-10   flex items-center justify-center pointer-events-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 dark:fill-slate-200" viewBox="0 0 320 512">
+              <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+            </svg>
+          </span>
+        )}
+        {
+          currentPage > 2 && totalPages > 5 && (
+            <div class="flex space-x-2">
+              <a
+                href={`${section ? "/" + section : ""}/${1}`}
+                class="border dark:text-slate-200 border-gray-400 hover:bg-primary hover:text-amber-500 rounded-md h-10 w-10   flex items-center justify-center transition duration-200"
+              >
+                {1}
+              </a>
+              <span class="opacity-40 dark:text-slate-200 rounded-md h-10 w-10  flex items-center justify-center pointer-events-none">
+                ...
+              </span>
+            </div>
+          )
+        }
+        {/* page index */}
+        {pageList.map((pagination, i) =>
+          pagination === currentPage ? (
+            <span
+              aria-current="page"
+              class='border border-amber-500 bg-primary rounded-md h-10 w-10  text-amber-500 flex items-center justify-center '
+            > 
+              {pagination}
+            </span>
+          ) : (
+            <a
+              href={
+                pagination === 1
+                  ? `${section ? "/" + section : "/"}`
+                  : `${section ? "/" + section : ""}/${pagination}`
+              }
+              aria-current="page"
+              class='border border-gray-400 dark:text-slate-50 hover:bg-primary hover:text-amber-500 rounded-md h-10 w-10  flex items-center justify-center transition duration-200'
+            >
+              {pagination}
+            </a>
+          )
+        )}
+        {
+          currentPage < totalPages - 1 && totalPages > 5 && (
+            <div class="flex space-x-2">
+              <span class=" dark:text-slate-200 opacity-40 rounded-md h-10 w-10  flex items-center justify-center pointer-events-none">
+                ...
+              </span>
+              <a
+                href={`${section ? "/" + section : ""}/${totalPages}`}
+                class="border dark:text-slate-200  border-gray-400 hover:bg-primary hover:text-amber-500 rounded-md h-10 w-10   flex items-center justify-center transition duration-200"
+              >
+                {totalPages}
+              </a>
+            </div>
+          )
+        }
+        {/* next page */}
+        {hasNextPage ? (
+          <a
+            href={`${section ? "/" + section : ""}/${currentPage + 1}`}
+            class="border border-gray-400 hover:bg-primary hover:text-amber-500 rounded-md h-10 w-10   flex items-center justify-center transition duration-200"
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 dark:fill-slate-200">
+            <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+          </svg>
+          </a>
+        ) : (
+          <span class="border border-gray-400 opacity-40 rounded-md h-10 w-10  flex items-center justify-center pointer-events-none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 dark:fill-slate-200">
+            <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+          </svg>
+          </span>
+        )}
+      </nav>
+    )
+  }
+</div>

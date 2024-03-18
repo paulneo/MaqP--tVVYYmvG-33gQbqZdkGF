@@ -10,8 +10,8 @@ const posts = (await getCollection('blog'));
 const sortedPosts = sortByDate(posts);
 const fivePost = sortedPosts.slice(0, 5)
 
-const totalPosts = posts.length 
-
+const totalPosts = posts.length || 0
+const totalPage = Math.ceil(totalPosts / 5)
 ---
 <Layout title={'lista de blogs'} description="Total las etiquetas">
 	<main>
@@ -25,7 +25,7 @@ const totalPosts = posts.length
 											background-image: url(${post.data.heroImage});
 									`}>
 								</div>
-								<h4 class="text-slate-800 dark:text-slate-50 hover:text-amber-500">{post.data.title}</h4>
+								<h4 class=" text-slate-800 dark:text-slate-50 hover:text-amber-500">{post.data.title}</h4>
 								<p class="text-slate-800 dark:text-slate-50">
 									<FormattedDate date={post.data.pubDate} />
 								</p>
@@ -35,11 +35,10 @@ const totalPosts = posts.length
 				}
 			</ul>
 		</section>
-		<Pagination section="blog" currentPage={1} totalPages={Math.ceil(totalPosts / 5)} />
+		<Pagination section="blog" currentPage={1} totalPages={totalPage} />
 	</main>
 </Layout>
 
-<!-- width={720} height={360} src={post.data.heroImage} alt="" class="bg-[url({post.data.heroImage})]" /> -->
 
 <style>
 	main {
@@ -65,10 +64,7 @@ const totalPosts = posts.length
 		margin-bottom: 1rem;
 		text-align: center;
 	}
-	/* ul li:first-child img {
-		width: 100%;
-		height: 440px;
-	} */
+
 	ul li:first-child .img-content {
 		width: 100%;
 		height: 440px;
@@ -89,9 +85,7 @@ const totalPosts = posts.length
 	}
 
 
-	/* ul a:hover img {
-		box-shadow: var(--box-shadow);
-	} */
+
 
 	ul a:hover  .img-content  {
 		box-shadow: var(--box-shadow);

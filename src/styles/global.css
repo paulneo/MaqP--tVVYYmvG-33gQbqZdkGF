@@ -12,7 +12,9 @@
 		margin: auto;
 		padding: 0 30px;
 	}
-
+	.dark ul {
+		color: theme;
+	}
   /* ... */
 }
 
@@ -39,6 +41,8 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	font-size: 18px;
+	font-weight: 400;
+
 	line-height: 1.7;
 }
 main {

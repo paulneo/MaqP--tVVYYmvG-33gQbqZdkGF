@@ -5,6 +5,8 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import Pagination from '../../components/Pagination.astro'
 import { sortByDate } from '../../lib/utils/sortFunctions'
 
+export const prerender = true;
+
 export async function getStaticPaths({ paginate }) {
   const posts = (await getCollection('blog'))
 	const sortedPosts = sortByDate(posts);
@@ -26,12 +28,12 @@ const { data = [] } = page
 						<li >
 							<a href={`/blog/${post.slug}/`}>
 								<div  class="img-content h-[220px] w-[100%] bg-cover bg-center " style={`
-										background-image: url(${post.data.heroImage});
+										background-image: url(${post.data?.heroImage});
 								`}>
 								</div>
-								<h4 class="text-slate-800 hover:text-amber-500">{post.data.title}</h4>
-								<p class="text-slate-800 ">
-									<FormattedDate date={post.data.pubDate} />
+								<h4 class="text-slate-800 dark:text-slate-50 hover:text-amber-500">{post.data?.title}</h4>
+								<p class="text-slate-800  dark:text-slate-50">
+									<FormattedDate date={post.data?.pubDate} />
 								</p>
 							</a>
 						</li>
