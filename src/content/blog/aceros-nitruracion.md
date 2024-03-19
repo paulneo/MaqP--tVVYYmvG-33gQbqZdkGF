@@ -1,6 +1,6 @@
 ---
 title: 'Aceros de Nitruración'
-description: 'Aceros de Nitruración'
+description: 'Destacan por dureza y resistencia a la fatiga, útiles para aplicaciones exigentes, mantienen propiedades hasta 500°C'
 pubDate: 'Mar 15 2024'
 date: 2024-15-03T05:00:00Z
 heroImage: '/aceros-nitruracion.jpg'
@@ -28,4 +28,4 @@ Permite proteger eficazmente las áreas de las piezas que no requieren endurecim
  5. **Retención de Dureza a Altas Temperaturas**
 Las capas nitruradas mantienen una alta dureza incluso a temperaturas de hasta 500°C, especialmente cuando la exposición al calor no es prolongada. Comparativamente, mantienen durezas superiores a las obtenidas por otros métodos de endurecimiento superficial, tales como la cementación o el temple superficial, los cuales pierden dureza rápidamente a partir de los 220°C​​
 
-Estas características hacen de los aceros de nitruración una opción preferente para aplicaciones que requieren de materiales con alta dureza superficial, resistencia a la fatiga y capacidad de resistir condiciones corrosivas, sin comprometer la integridad estructural de la pieza trabajada
+Estas características hacen de los aceros de nitruración una opción preferente para aplicaciones que requieren de materiales con alta dureza superficial, resistencia a la fatiga y capacidad de resistir condiciones corrosivas, sin comprometer la integridad estructural de la pieza trabajada.
