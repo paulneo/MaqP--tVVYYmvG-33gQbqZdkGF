@@ -20,6 +20,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.4.12)(tailwindcss@3.4.1)
+  '@formkit/tempo':
+    specifier: ^0.0.17
+    version: 0.0.17
   '@types/react':
     specifier: ^18.2.66
     version: 18.2.66
@@ -29,6 +32,9 @@ dependencies:
   astro:
     specifier: ^4.4.12
     version: 4.4.12
+  fuse.js:
+    specifier: ^7.0.0
+    version: 7.0.0
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -626,6 +632,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@formkit/tempo@0.0.17:
+    resolution: {integrity: sha512-2gZE6oxp3dK6HigiKWclbCigmQGrbDTHIYe3D12T88RCorRznet2bpr7/wESBi6JFtSb0Y0NTnLvg6nfAcHERg==}
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1718,6 +1728,11 @@ packages:
 
   /function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+
+  /fuse.js@7.0.0:
+    resolution: {integrity: sha512-14F4hBIxqKvD4Zz/XjDc3y94mNZN6pRv3U13Udo0lNLCWRBUsrMv2xwcF/y/Z5sV6+FQW+/ow68cHpm4sunt8Q==}
+    engines: {node: '>=10'}
+    dev: false
 
   /gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
