@@ -5,7 +5,22 @@ export default {
     fontFamily: {
       sans: ['Atkinson', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h4: {
+              fontSize: '1em',
+              fontWeight: 600,
+            },
+            h5: {
+              fontWeight: 600,
+            },
+            // ...
+          },
+        },
+      }),
+    },
   },
   plugins: [require('@tailwindcss/typography')],
   darkMode: 'selector',
