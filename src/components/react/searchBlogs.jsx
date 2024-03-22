@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import Fuse from 'fuse.js';
 import { format } from '@formkit/tempo';
 
-const date = new Date();
-
 const searchBlogs = ({ posts }) => {
   const [inputVal, setInputVal] = useState('');
   const inputRef = useRef(null);
@@ -27,7 +25,6 @@ const searchBlogs = ({ posts }) => {
 
   useEffect(() => {
     let inputResult = inputVal.length > 5 ? fuse.search(inputVal) : [];
-    console.log(inputResult);
     setSearchResults(inputResult);
 
     if (inputVal.length > 0) {
