@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SearchBlogs from '../components/react/searchBlogs'
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'));
+---
+
+<Layout title="Maquinarias pesadas" description="Realiza una busqueda rapida de los mejores blogs maquinarias pesadas">
+	<main>
+    <SearchBlogs client:load posts={posts} />
+	</main>
+</Layout>
+
+<style>
+	main {
+		width: 820px;
+    min-height: 60vh;
+	}
+</style>
