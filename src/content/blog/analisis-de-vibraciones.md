@@ -4,7 +4,7 @@ description: 'Exploración de cómo el análisis de vibraciones juega un papel c
 pubDate: 'Mar 22 2024'
 date: 2024-22-03T05:08:47Z
 heroImage: '/analisis-vibraciones.webp'
-tags: ["Aceros", "Maquinaria"]
+tags: ["vibraciones", "Maquinaria"]
 
 ---
 
