@@ -12,14 +12,6 @@ const {title, description} = Astro.props
 <html lang="es">
 	<head>
 		<BaseHead title={title} description={description} />
-	<script async src="https://www.googletagmanager.com/gtag/js?id=GA4-MZS776990Q"></script>
-	<script is:inline>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'GA4-MZS776990Q');
-	</script>
 	</head>
 
 	<body class="dark:bg-slate-900 ">
