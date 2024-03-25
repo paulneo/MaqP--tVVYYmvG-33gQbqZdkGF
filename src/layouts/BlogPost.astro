@@ -12,6 +12,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="en">
 	<head>
+		
 		<BaseHead title={title} description={description} />
 		<style is:global>
 			main {
@@ -53,16 +54,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 
 		</style>
-	</head>
-	<!-- Google tag (gtag.js) -->
-	<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-MZS776990Q"></script>
-	<script type="text/partytown" >
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+		<script async src="https://www.googletagmanager.com/gtag/js?id=GA4-MZS776990Q"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'G-MZS776990Q');
-	</script>
+			gtag('config', 'GA4-MZS776990Q');
+		</script>
+	</head>
+
 	<body class="dark:bg-slate-900 bg-slate-50">
 		<Header />
 		<main >
