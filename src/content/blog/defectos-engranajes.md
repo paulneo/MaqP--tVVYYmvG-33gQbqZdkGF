@@ -4,7 +4,7 @@ description: 'Descubre cómo identificar y solucionar defectos en engranajes par
 pubDate: 'Mar 25 2024'
 date: 2024-25-03T13:00:00Z
 heroImage: '/diagnostico-engranajes.webp'
-tags: ["Actuadores", "Maquinaria"]
+tags: ["Engranajes", "Maquinaria"]
 
 ---
 
