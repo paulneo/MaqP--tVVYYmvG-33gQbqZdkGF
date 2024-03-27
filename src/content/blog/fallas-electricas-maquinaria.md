@@ -1,10 +1,10 @@
 ---
-title: 'Análisis y Soluciones a Fallas Eléctricas en Motores Industriales: Una Guía Completa'
-description: 'Descubre técnicas profundas para identificar y rectificar el aflojamiento mecánico, crucial para el mantenimiento preventivo y la eficiencia de la maquinaria industrial.'
+title: 'Entendiendo y Solucionando Fallas Eléctricas: Motores Industriales'
+description: 'Explora soluciones detalladas para fallas eléctricas en motores industriales. Diagnóstico preciso, prevención y mantenimiento proactivo.'
 pubDate: 'Mar 27 2024'
 date: 2024-27-03T11:40:00Z
-heroImage: '/aflojamiento-mecanico-maquinaria.webp'
-tags: ["Aflojamiento", "Maquinaria"]
+heroImage: '/fallas-electricas-maquinarias.webp'
+tags: ["Electricas", "Maquinaria", "Motores"]
 
 ---
 
