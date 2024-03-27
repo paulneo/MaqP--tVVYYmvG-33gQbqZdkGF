@@ -41,4 +41,4 @@ La clave para prevenir fallas eléctricas en motores industriales radica en un p
 - **Capacitación Continua:** Del personal en las mejores prácticas de operación y mantenimiento.
 
 ### Conclusión:
-Las fallas eléctricas en motores industriales pueden ser complejas, pero con un enfoque detallado en el diagnóstico y soluciones basadas en un conocimiento profundo, como se ha presentado en la sección 9 del documento, es posible minimizar su ocurrencia y impacto. A través de la implementación de estrategias de mantenimiento proactivas y educación continua, podemos asegurar el funcionamiento eficiente y prolongado de estos componentes cruciales para la industria.
+Las fallas eléctricas en motores industriales pueden ser complejas, pero con un enfoque detallado en el diagnóstico y soluciones basadas en un conocimiento profundo, es posible minimizar su ocurrencia y impacto. A través de la implementación de estrategias de mantenimiento proactivas y educación continua, podemos asegurar el funcionamiento eficiente y prolongado de estos componentes cruciales para la industria.
