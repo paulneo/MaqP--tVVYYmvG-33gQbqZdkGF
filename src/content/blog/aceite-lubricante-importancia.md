@@ -8,7 +8,7 @@ tags: ["Aceite Lubricante", "Maquinaria Pesada", "Mantenimiento"]
 
 ---
 ### La Lubricación y el Aceite Lubricante
-La lubricación juega un papel crucial en la protección y eficiencia de la maquinaria, reduciendo el desgaste por fricción entre componentes móviles. Un aceite lubricante es un líquido que, al interponerse entre dos superficies en movimiento, previene su desgaste directo. La refinación del petróleo produce aceites básicos, que aunque son naturalmente lubricantes, se potencian con aditivos para mejorar su rendimiento..
+La lubricación juega un papel crucial en la protección y eficiencia de la maquinaria, reduciendo el desgaste por fricción entre componentes móviles. Un aceite lubricante es un líquido que, al interponerse entre dos superficies en movimiento, previene su desgaste directo. La refinación del petróleo produce aceites básicos, que aunque son naturalmente lubricantes, se potencian con aditivos para mejorar su rendimiento.
 #### Composición del Aceite Lubricante
 Un aceite lubricante es el resultado de la mezcla de aceite básicos con compuestos aditivos, un aceite de manera natural es lubricante pero para que cumplan mejor su función es necesario que se les aplique estos aditivos los cuales le dan características especiales.
 #### Aceite Básico
