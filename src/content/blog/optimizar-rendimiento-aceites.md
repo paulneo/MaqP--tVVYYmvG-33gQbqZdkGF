@@ -2,7 +2,7 @@
 title: '¿Cómo optimizar el rendimiento conociendo el estado de su aceite?'
 description: 'Optimiza maquinaria con análisis de aceite avanzado. Detecta y previene fallos'
 pubDate: 'Mar 28 2024'
-heroImage: '/optimizar-rendimiento-aceite.webp'
+heroImage: '/images/optimizar-rendimiento-aceite.webp'
 tags: ["Aceites", "Analisis", "Estado", "Maquinaria"]
 
 ---

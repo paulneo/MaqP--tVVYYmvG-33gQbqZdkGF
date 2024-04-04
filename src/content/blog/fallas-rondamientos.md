@@ -2,7 +2,7 @@
 title: 'Aflojamiento Mecánico en Maquinaria: Diagnóstico y Soluciones'
 description: 'Aprende a prevenir y solucionar fallas en rodamientos con este artículo detallado. Descubre técnicas de diagnóstico y mantenimiento predictivo para mejorar la durabilidad y eficiencia de tu maquinaria.'
 pubDate: 'Mar 25 2024'
-heroImage: '/fallas-rondamientos.webp'
+heroImage: '/images/fallas-rondamientos.webp'
 tags: ["Rodamiento", "Maquinaria"]
 
 ---

@@ -2,7 +2,7 @@
 title: 'Dominando la Desalineación: Técnicas y Prevención'
 description: 'Explora técnicas avanzadas para diagnosticar y corregir la desalineación en equipos industriales, mejorando la eficiencia y prolongando la vida útil de la maquinaria mediante el mantenimiento predictivo.'
 pubDate: 'Mar 24 2024'
-heroImage: '/desalineacion-tecnicas-prevencion.webp'
+heroImage: '/images/desalineacion-tecnicas-prevencion.webp'
 tags: ["Desalineación", "Maquinaria"]
 
 ---

@@ -2,7 +2,7 @@
 title: 'Aceros Estructurales'
 description: 'vitales en ingeniería y construcción por su resistencia y ductilidad. Esenciales para estructuras durables, son mayormente hierro con bajo carbono, y pueden incluir silicio y fósforo para mejorar propiedades y resistencia a la corrosión'
 pubDate: 'Mar 18 2024'
-heroImage: '/aceros-estructurales.jpg'
+heroImage: '/images/aceros-estructurales.jpg'
 tags: ["Aceros", "Maquinaria"]
 
 ---

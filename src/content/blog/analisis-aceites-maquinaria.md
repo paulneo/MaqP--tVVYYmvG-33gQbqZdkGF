@@ -2,7 +2,7 @@
 title: 'Análisis de Aceite'
 description: 'análisis del aceite, como prevenir problemas y ahorrar costos al identificar tempranamente las fallas en motores Caterpillar'
 pubDate: 'Mar 27 2024'
-heroImage: '/analisis-aceite.webp'
+heroImage: '/images/analisis-aceite.webp'
 tags: ["Aceites", "Analisis", "Maquinaria"]
 
 ---

@@ -2,7 +2,7 @@
 title: 'Aceites Lubricantes en Maquinaria Pesada'
 description: 'Selección y mantenimiento de aceites lubricantes clave para maquinaria pesada. Incluye aceites base, aditivos y TBN para optimizar rendimiento y proteger contra corrosión.'
 pubDate: 'Mar 26 2024'
-heroImage: '/aceites-lubricantes.jpg'
+heroImage: '/images/aceites-lubricantes.jpg'
 tags: ["Aceites", "Lubricantes", "Maquinaria"]
 
 ---

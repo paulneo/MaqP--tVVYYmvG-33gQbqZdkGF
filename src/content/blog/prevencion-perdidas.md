@@ -2,7 +2,7 @@
 title: 'Aislamiento de Energía y Prevención de Pérdidas'
 description: 'Aislamiento de energía clave para seguridad laboral. Evita accidentes al interactuar con equipo eléctrico/mecánico, mediante bloqueo y desenergización adecuados'
 pubDate: 'Mar 20 2024'
-heroImage: '/prevencion-perdidas.jpg'
+heroImage: '/images/prevencion-perdidas.jpg'
 tags: ["Aislamiento", "Energia", "Prevención"]
 ---
 El aislamiento efectivo de energía es un componente esencial en la prevención de accidentes y lesiones en el lugar de trabajo, especialmente en entornos donde los trabajadores interactúan con equipos eléctricos y mecánicos. Este procedimiento describe las prácticas y dispositivos necesarios para un aislamiento seguro y efectivo, la prevención de pérdidas y las medidas de seguridad para proteger a los empleados durante la operación, mantenimiento o cualquier otra intervención en equipos.

@@ -2,7 +2,7 @@
 title: 'Tratamientos del Acero'
 description: 'Tratamientos del acero mejoran propiedades mecánicas y resistencia a corrosión, incluyendo métodos superficiales y térmicos como cincado, cromado, temple y revenido, clave para diversas aplicaciones'
 pubDate: 'Mar 15 2024'
-heroImage: '/tratamiento-aceros.jpg'
+heroImage: '/images/tratamiento-aceros.jpg'
 tags: ["Aceros", "Maquinaria"]
 
 ---

@@ -2,7 +2,7 @@
 title: 'La Esencia del Análisis de Vibraciones en el Mantenimiento Predictivo'
 description: 'Exploración de cómo el análisis de vibraciones juega un papel crucial en el mantenimiento predictivo, permitiendo detectar y prevenir fallas en la maquinaria industrial antes de que ocurran'
 pubDate: 'Mar 22 2024'
-heroImage: '/analisis-vibraciones.webp'
+heroImage: '/images/analisis-vibraciones.webp'
 tags: ["vibraciones", "Maquinaria"]
 
 ---

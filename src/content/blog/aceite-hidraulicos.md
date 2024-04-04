@@ -2,7 +2,7 @@
 title: 'Aceites Hidráulicos: Esenciales para la Eficiencia y Protección de Sistemas Industriales'
 description: 'Análisis profundo sobre las funciones críticas y las demandas que los aceites hidráulicos deben satisfacer en sistemas industriales, destacando su importancia en la transmisión de energía, lubricación, sellado, y la transferencia térmica'
 pubDate: 'Apr 03 2024'
-heroImage: '/aceites-hidraulicos.webp'
+heroImage: '/images/aceites-hidraulicos.webp'
 tags: ["Aceites Hidráulicos", "Sistemas Industriales", "Protección y Eficiencia"]
 ---
 Los aceites hidráulicos industriales enfrentan una amplia gama de demandas dentro de sistemas industriales, desempeñando funciones críticas que van más allá de la simple transmisión de energía. Estos fluidos de base petróleo son esenciales no solo como medios de transmisión sino también como agentes lubricantes, sellantes y medios de transferencia térmica, optimizando así la potencia y eficiencia del sistema mientras minimizan el desgaste y la rotura del equipo

@@ -2,7 +2,7 @@
 title: 'Entendiendo y Solucionando Fallas Eléctricas: Motores Industriales'
 description: 'Explora soluciones detalladas para fallas eléctricas en motores industriales. Diagnóstico preciso, prevención y mantenimiento proactivo.'
 pubDate: 'Mar 27 2024'
-heroImage: '/fallas-electricas-maquinarias.webp'
+heroImage: '/images/fallas-electricas-maquinarias.webp'
 tags: ["Electricas", "Maquinaria", "Motores"]
 
 ---

@@ -2,7 +2,7 @@
 title: 'Actuadores y Actuadores Lineales'
 description: 'Actuadores neumáticos transforman energía en movimiento lineal o rotativo, esenciales en automatización y control de procesos industriales.'
 pubDate: 'Mar 18 2024'
-heroImage: '/actuadores-lineales.jpg'
+heroImage: '/images/actuadores-lineales.jpg'
 tags: ["Actuadores", "Maquinaria"]
 
 ---

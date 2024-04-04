@@ -2,7 +2,7 @@
 title: 'Actuadores de Giro y sus Tipologías'
 description: 'Actuadores de giro convierten energía neumática en rotación. Hay de giro limitado para ángulos específicos y motores neumáticos para rotación continua'
 pubDate: 'Mar 18 2024'
-heroImage: '/actuadores-giro.jpg'
+heroImage: '/images/actuadores-giro.jpg'
 tags: ["Actuadores", "Maquinaria"]
 
 ---

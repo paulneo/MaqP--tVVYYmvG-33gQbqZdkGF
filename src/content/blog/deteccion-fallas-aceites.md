@@ -2,7 +2,7 @@
 title: 'Detección de Fallas a través del Análisis de Aceite en Motores '
 description: 'Prevención de fallas en motores Caterpillar a través del análisis de aceite y mantenimiento proactivo'
 pubDate: 'Mar 29 2024'
-heroImage: '/deteccion-fallas-aceite.webp'
+heroImage: '/images/deteccion-fallas-aceite.webp'
 tags: ["Aceites", "fallas", "Detección", "Maquinaria"]
 
 ---

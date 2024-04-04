@@ -2,7 +2,7 @@
 title: 'Cálculos de Cilindros'
 description: 'Cálculo de cilindros neumáticos: esencial para diseño en automatización. Incluye fuerza del émbolo, longitud de carrera, velocidad y consumo de aire'
 pubDate: 'Mar 18 2024'
-heroImage: '/calculo-cilindros.jpg'
+heroImage: '/images/calculo-cilindros.jpg'
 tags: ["Cilindros", "Maquinaria"]
 
 ---

@@ -2,7 +2,7 @@
 title: 'Defectos de las Correas de Maquinaria: Causas, Diagnóstico y Soluciones'
 description: 'Domina el mantenimiento de correas industriales con técnicas de diagnóstico y solución efectivas. Aumenta la eficiencia y vida útil de tu maquinaria.'
 pubDate: 'Mar 27 2024'
-heroImage: '/correas-maquinarias.webp'
+heroImage: '/images/correas-maquinarias.webp'
 tags: ["Correa", "Maquinaria"]
 
 ---
