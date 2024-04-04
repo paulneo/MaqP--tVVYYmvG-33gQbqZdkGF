@@ -2,7 +2,6 @@
 title: 'El Aceite Lubricante: Su Importancia en la Maquinaria Pesada'
 description: 'Exploración detallada de la función, composición y los diferentes tipos de aceite lubricante, junto con sus aditivos, para el mantenimiento óptimo de maquinaria'
 pubDate: 'Apr 01 2024'
-date: 2024-01-04T7:40:00Z
 heroImage: '/aceite-lubricante-importancia.jpg'
 tags: ["Aceite Lubricante", "Maquinaria Pesada", "Mantenimiento"]
 

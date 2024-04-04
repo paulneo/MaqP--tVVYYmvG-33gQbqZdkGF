@@ -2,7 +2,6 @@
 title: 'Diagnóstico y Solución de Defectos en Engranajes'
 description: 'Descubre cómo identificar y solucionar defectos en engranajes para mantener la maquinaria industrial en óptimas condiciones. Aprende técnicas clave para un mantenimiento predictivo efectivo.'
 pubDate: 'Mar 25 2024'
-date: 2024-25-03T13:00:00Z
 heroImage: '/diagnostico-engranajes.webp'
 tags: ["Engranajes", "Maquinaria"]
 

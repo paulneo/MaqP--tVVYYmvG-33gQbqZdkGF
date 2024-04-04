@@ -2,7 +2,6 @@
 title: 'Aceite para el Motor'
 description: 'Maximizando el Rendimiento de Maquinaria Pesada,  Mantener calidad y control evita deterioro, extiende vida útil. Selección y manejo adecuados son cruciales'
 pubDate: 'Mar 14 2024'
-date: 2024-14-03T05:00:00Z
 heroImage: '/aceite-motor.jpg'
 tags: ["Aceite", "Motor"]
 

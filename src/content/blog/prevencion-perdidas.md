@@ -2,7 +2,6 @@
 title: 'Aislamiento de Energía y Prevención de Pérdidas'
 description: 'Aislamiento de energía clave para seguridad laboral. Evita accidentes al interactuar con equipo eléctrico/mecánico, mediante bloqueo y desenergización adecuados'
 pubDate: 'Mar 20 2024'
-date: 2024-20-03T05:00:00Z
 heroImage: '/prevencion-perdidas.jpg'
 tags: ["Aislamiento", "Energia", "Prevención"]
 ---

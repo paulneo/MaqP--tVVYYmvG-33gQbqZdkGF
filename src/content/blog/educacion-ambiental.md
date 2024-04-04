@@ -2,7 +2,6 @@
 title: 'La Urgencia de la Educación Ambiental en Nuestro Mundo Contemporáneo'
 description: 'Exploramos la crucial importancia de la educación ambiental en ciudades modernas, destacando acciones sostenibles y la unión comunitaria por el planeta'
 pubDate: 'Mar 24 2024'
-date: 2024-24-03T05:09:55Z
 heroImage: '/educacion-ambiental.jpg'
 tags: ["Ambiental", "Educación"]
 ---

@@ -2,7 +2,6 @@
 title: 'Aceros de Nitruración'
 description: 'Destacan por dureza y resistencia a la fatiga, útiles para aplicaciones exigentes, mantienen propiedades hasta 500°C'
 pubDate: 'Mar 15 2024'
-date: 2024-15-03T05:00:00Z
 heroImage: '/aceros-nitruracion.jpg'
 tags: ["Aceros", "Maquinaria"]
 ---

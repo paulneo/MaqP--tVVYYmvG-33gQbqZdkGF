@@ -2,7 +2,6 @@
 title: 'Funcionamiento y Mantenimiento Óptimo de Motores con Aceites de Motor Especializados'
 description: 'visión detallada de cómo el aceite de motor, enriquecido con aditivos específicos, contribuye al rendimiento óptimo y a la prolongación de la vida útil de los motores, con un enfoque especial en los motores Caterpillar'
 pubDate: 'Apr 02 2024'
-date: 2024-02-04T7:40:00Z
 heroImage: '/funcionamiento-aceite-motor.webp'
 tags: ["Aceites de Motor", "Mantenimiento de Motores", "Aditivos de Aceite"]
 ---
