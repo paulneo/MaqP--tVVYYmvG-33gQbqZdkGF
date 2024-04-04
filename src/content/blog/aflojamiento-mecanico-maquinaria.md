@@ -2,8 +2,7 @@
 title: 'Aflojamiento Mecánico en Maquinaria: Diagnóstico y Soluciones'
 description: 'Descubre técnicas profundas para identificar y rectificar el aflojamiento mecánico, crucial para el mantenimiento preventivo y la eficiencia de la maquinaria industrial.'
 pubDate: 'Mar 25 2024'
-date: 2024-25-03T10:40:00Z
-heroImage: '/aflojamiento-mecanico-maquinaria.webp'
+heroImage: '/images/aflojamiento-mecanico-maquinaria.webp'
 tags: ["Aflojamiento", "Maquinaria"]
 
 ---

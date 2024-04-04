@@ -2,8 +2,7 @@
 title: 'Aceros de Nitruración'
 description: 'Destacan por dureza y resistencia a la fatiga, útiles para aplicaciones exigentes, mantienen propiedades hasta 500°C'
 pubDate: 'Mar 15 2024'
-date: 2024-15-03T05:00:00Z
-heroImage: '/aceros-nitruracion.jpg'
+heroImage: '/images/aceros-nitruracion.jpg'
 tags: ["Aceros", "Maquinaria"]
 ---
 Los aceros de nitruración se caracterizan por tener un contenido de carbono que oscila entre 0.25% y 0.5%. Son especialmente conocidos por alcanzar altas durezas gracias a la presencia de aluminio, en torno al 1%, y por la adición de cromo en algunos casos. Estos aceros incluyen porcentajes variables de molibdeno, desde 0.20% hasta 1%, para permitir la nitruración a temperaturas cercanas a los 500°C​​.

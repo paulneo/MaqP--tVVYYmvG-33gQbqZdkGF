@@ -60,23 +60,23 @@ const searchBlogs = ({ posts }) => {
           {searchResults?.length && searchResults?.length === 1
             ? 'resultados '
             : 'resultados'}{' '}
-          para <span class="text-amber-500">{inputVal}</span>
+          para <span className="text-amber-500">{inputVal}</span>
         </div>
       )}
       <div className="grid grid-cols-2 gap-4 mt-10">
         {searchResults.map(({ item }) => (
           <a className="" key={item.id} href={`/blog/${item.slug}`}>
             <div
-              class="img-content h-[220px] w-[100%] bg-cover bg-center rounded-xl "
+              className="img-content h-[220px] w-[100%] bg-cover bg-center rounded-xl "
               style={{
                 backgroundImage: `url(${item.data?.heroImage})`,
               }}
             ></div>
-            <h4 class="text-slate-800 dark:text-slate-50 hover:text-amber-500">
+            <h4 className="text-slate-800 dark:text-slate-50 hover:text-amber-500">
               {item.data.title}
             </h4>
-            <p class="text-slate-800  dark:text-slate-50">
-              {format(item.data.date, 'medium')}
+            <p className="text-slate-800  dark:text-slate-50">
+              {format(item.data.pubDate, 'medium')}
             </p>
           </a>
         ))}

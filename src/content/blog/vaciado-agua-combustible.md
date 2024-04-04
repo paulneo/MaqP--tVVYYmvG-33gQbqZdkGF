@@ -2,8 +2,7 @@
 title: 'Vaciado de agua en el sistema de combustible, localización de averías'
 description: 'Maximizando el Rendimiento de Maquinaria Pesada,  Mantener calidad y control evita deterioro, extiende vida útil. Selección y manejo adecuados son cruciales'
 pubDate: 'Mar 20 2024'
-date: 2024-20-03T05:00:00Z
-heroImage: '/vaciado-combustible.jpg'
+heroImage: '/images/vaciado-combustible.jpg'
 tags: ["Averías", "Combustible", "Camiones"]
 ---
 En los motores de los camiones, el sistema de combustible está diseñado para separar y eliminar el agua acumulada. Esta agua puede provenir de la condensación o del combustible mismo. Para garantizar el óptimo funcionamiento y la longevidad del motor, es crucial llevar a cabo el vaciado de agua y la localización de averías de manera eficiente.

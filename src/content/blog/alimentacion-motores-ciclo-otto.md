@@ -2,8 +2,7 @@
 title: 'Optimización de la Alimentación en Motores de Ciclo Otto para Tractores'
 description: 'Descubre cómo la tecnología de filtración, carburación e inyección de combustible mejora la eficiencia y durabilidad de los motores de ciclo Otto en tractores, asegurando un rendimiento óptimo.'
 pubDate: 'Mar 22 2024'
-date: 2024-22-03T05:08:47Z
-heroImage: '/motores-otto.webp'
+heroImage: '/images/motores-otto.webp'
 tags: ["Aceros", "Maquinaria"]
 
 ---

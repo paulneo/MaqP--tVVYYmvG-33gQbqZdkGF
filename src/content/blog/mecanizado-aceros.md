@@ -2,8 +2,7 @@
 title: 'Mecanizado del Acero'
 description: 'El mecanizado del acero conforma piezas variadas, esencial en fabricación desde estructuras hasta precisión en maquinaria, incluyendo laminado, forjado, y procesos específicos como estampado y EDM'
 pubDate: 'Mar 15 2024'
-date: 2024-15-03T05:00:00Z
-heroImage: '/mecanizado-acero.jpg'
+heroImage: '/images/mecanizado-acero.jpg'
 tags: ["Aceros", "Maquinaria"]
 
 ---

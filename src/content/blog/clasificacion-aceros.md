@@ -2,8 +2,7 @@
 title: 'Clasificación General de los Aceros'
 description: 'Clasificación de aceros según propiedades y composición para aplicaciones específicas: aceros de construcción, herramientas, e inoxidables/resistentes al calor, facilitando la selección materia'
 pubDate: 'Mar 15 2024'
-date: 2024-15-03T05:00:00Z
-heroImage: '/aceros.jpg'
+heroImage: '/images/aceros.jpg'
 tags: ["Aceros", "Maquinaria"]
 
 ---

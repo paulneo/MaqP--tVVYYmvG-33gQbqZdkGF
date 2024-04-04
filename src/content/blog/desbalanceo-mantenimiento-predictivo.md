@@ -2,8 +2,7 @@
 title: 'Soluciones al Desbalanceo en Maquinaria Industrial'
 description: 'Identifica y soluciona el desbalanceo en maquinaria para optimizar rendimiento y prevenir averías con técnicas de mantenimiento predictivo.'
 pubDate: 'Mar 24 2024'
-date: 2024-24-03T21:56:47Z
-heroImage: '/desbalanceo-maquinaria-predictivo.webp'
+heroImage: '/images/desbalanceo-maquinaria-predictivo.webp'
 tags: ["Desbalanceo", "Maquinaria"]
 ---
 
