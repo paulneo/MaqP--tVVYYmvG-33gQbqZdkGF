@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog'));
 ---
 
-<Layout title="Maquinarias pesadas" description="Realiza una busqueda rapida de los mejores blogs maquinarias pesadas">
+<Layout title="Busqueda para maquinarias pesadas" description="Realiza una busqueda rapida de los mejores blogs maquinarias pesadas">
 	<main>
     <SearchBlogs client:load posts={posts} />
 	</main>
