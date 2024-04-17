@@ -37,10 +37,3 @@ La continua evolución en el diseño de motores de pistón refleja el esfuerzo p
 
 ### Conclusión
 Los motores de pistón juegan un rol crucial en diversas aplicaciones, desde el transporte hasta la generación de energía. Su clasificación y características reflejan la importancia y la diversidad de estos motores en la ingeniería y tecnología modernas, demostrando su papel indispensable en la sociedad actual.
-
-#### Output
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
