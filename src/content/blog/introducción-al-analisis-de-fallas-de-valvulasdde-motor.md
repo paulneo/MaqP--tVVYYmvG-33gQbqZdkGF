@@ -1,12 +1,10 @@
 ---
 title: 'Introducción al Análisis de Fallas de Válvulas de Motor'
-description: ''
-pubDate: 'Mar 24 2024'
-heroImage: '/images/desalineacion-tecnicas-prevencion.webp'
+description: 'Explora los esenciales del análisis de fallas en válvulas de motor, crucial para optimizar y extender la vida de motores Caterpillar.'
+pubDate: 'Apr 14 2024 12:00'
+heroImage: '/images/introducción-al-analisis-de-fallas-de-valvulasdde-motor.webp'
 tags: ["Válvulas", "Motor", "Fallas de Válvulas"]
-
 ---
-
 
 En el ámbito de la ingeniería mecánica y automotriz, comprender cómo funcionan las válvulas de motor y cómo identificar sus posibles fallas es crucial para mantener la eficiencia y longevidad de cualquier motor de combustión interna. Este blog introduce los conceptos básicos del análisis de fallas, especialmente enfocado en las válvulas de los motores Caterpillar, una herramienta esencial para cualquier técnico o ingeniero en el campo.
 
