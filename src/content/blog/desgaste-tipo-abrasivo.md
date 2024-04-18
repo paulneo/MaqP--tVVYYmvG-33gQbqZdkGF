@@ -1,6 +1,6 @@
 ---
 title: 'Comprendiendo el Desgaste Abrasivo en Maquinaria:'
-description: 'Destion del desgaste abrasivo en maquinaria para prevenir fallas y extender la vida útil del equipo'
+description: 'Descubre cómo gestionar el desgaste abrasivo en maquinaria para prevenir fallas y extender la vida útil del equipo.'
 pubDate: 'Apr 11 2024'
 heroImage: '/images/desgaste-abrasivo.webp'
 tags: ["Análisis fallas", "Desgaste", "Tipos de desgaste", "Desgaste Abrasivo"]
