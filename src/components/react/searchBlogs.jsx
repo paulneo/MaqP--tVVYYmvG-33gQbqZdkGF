@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Fuse from 'fuse.js';
-import { format } from '@formkit/tempo';
+import React, { useEffect, useRef, useState } from "react";
+import Fuse from "fuse.js";
+import { format } from "@formkit/tempo";
 
 const searchBlogs = ({ posts }) => {
-  const [inputVal, setInputVal] = useState('');
+  const [inputVal, setInputVal] = useState("");
   const inputRef = useRef(null);
   const [searchResults, setSearchResults] = useState([]);
   const handleChange = (e) => {
@@ -11,7 +11,7 @@ const searchBlogs = ({ posts }) => {
   };
 
   const fuse = new Fuse(posts, {
-    keys: ['data.title'],
+    keys: ["data.title"],
     includeMatches: true,
     minMatchCharLength: 2,
     threshold: 0.5,
@@ -19,7 +19,7 @@ const searchBlogs = ({ posts }) => {
 
   useEffect(() => {
     const searchUrl = new URLSearchParams(window.location.search);
-    const searchStr = searchUrl.get('q');
+    const searchStr = searchUrl.get("q");
     if (searchStr) setInputVal(searchStr);
   }, []);
 
@@ -29,12 +29,12 @@ const searchBlogs = ({ posts }) => {
 
     if (inputVal.length > 0) {
       const searchParams = new URLSearchParams(window.location.search);
-      searchParams.set('q', inputVal);
+      searchParams.set("q", inputVal);
       const newRelativePathQuery =
-        window.location.pathname + '?' + searchParams.toString();
-      history.pushState(null, '', newRelativePathQuery);
+        window.location.pathname + "?" + searchParams.toString();
+      history.pushState(null, "", newRelativePathQuery);
     } else {
-      history.pushState(null, '', window.location.pathname);
+      history.pushState(null, "", window.location.pathname);
     }
   }, [inputVal]);
 
@@ -43,7 +43,7 @@ const searchBlogs = ({ posts }) => {
       <input
         className="
           block rounded-md outline-none border-0 ring-inset ring-1 ring-gray-300 dark:ring-gray-500  py-3 focus:border-primary focus:ring-transparent w-full text-center
-          focus:ring-2 focus:border focus:border-amber-600 placeholder:text-gray-400 dark:bg-slate-900 dark:text-slate-300 sticky top-10
+          focus:ring-2 focus:border focus:border-primary-600 placeholder:text-gray-400 dark:bg-slate-900 dark:text-slate-300 sticky top-10
         "
         placeholder="Escriba aqui para buscar un blog"
         type="text"
@@ -56,11 +56,11 @@ const searchBlogs = ({ posts }) => {
 
       {inputVal.length > 1 && (
         <div className="my-6 text-center dark:text-white">
-          Se encontró {searchResults?.length}{' '}
+          Se encontró {searchResults?.length}{" "}
           {searchResults?.length && searchResults?.length === 1
-            ? 'resultados '
-            : 'resultados'}{' '}
-          para <span className="text-amber-500">{inputVal}</span>
+            ? "resultados "
+            : "resultados"}{" "}
+          para <span className="text-primary-500">{inputVal}</span>
         </div>
       )}
       <div className="grid grid-cols-2 gap-4 mt-10">
@@ -72,11 +72,11 @@ const searchBlogs = ({ posts }) => {
                 backgroundImage: `url(${item.data?.heroImage})`,
               }}
             ></div>
-            <h4 className="text-slate-800 dark:text-slate-50 hover:text-amber-500">
+            <h4 className="text-slate-800 dark:text-slate-50 hover:text-primary-500">
               {item.data.title}
             </h4>
             <p className="text-slate-800  dark:text-slate-50">
-              {format(item.data.pubDate, 'medium')}
+              {format(item.data.pubDate, "medium")}
             </p>
           </a>
         ))}
