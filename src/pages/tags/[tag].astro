@@ -23,7 +23,7 @@ const { posts } = Astro.props;
 
 ---
 
-<Layout title={'Etiquetas de todos los blogs'} description={'Explora las mejores etiquetas de las maquinarias pesadas.'}>
+<Layout title={'Etiquetas de todos los blogs'} description={'Explora las mejores etiquetas del mundo de la ingenieria.'}>
   <p>Entradas etiquetadas con {tag}</p>
   <ul>
     {posts.map((post) => <li><a  href={`/blog/${post.slug}/`}>{post.data.title}</a></li>)}
