@@ -7,9 +7,9 @@ import { Icon } from 'astro-icon/components'
 
 ---
 
-<header  class="flex justify-center items-center " > 
+<header  class="flex justify-center items-center sticky top-0 border-b border-b-slate-900/5  dark:border-b-slate-50/5" id="header-nav"> 
 	<nav class="flex justify-around lg:justify-between items-center w-[100%] lg:w-[1100px] py-4  ">
-		<Image src={Logo} alt="Mundo Ingenieria" class=' h-14 md:h-[100px] lg:h-[100px] w-auto' loading='eager' />
+		<Image src={Logo} alt="Mundo Ingenieria" class=' h-14 md:h-[80px] lg:h-[80px] w-auto' loading='eager' />
 		<div class="internal-links">
 			<HeaderLink href="/" >Inicio</HeaderLink>
 			<HeaderLink href="/blog" >Blog</HeaderLink>
@@ -38,17 +38,30 @@ import { Icon } from 'astro-icon/components'
 	}
 	nav a.active {
 		text-decoration: none;
-		color: theme('colors.primary.600');;
+		color: theme('colors.primary.600');
 		border-bottom-color: theme('colors.primary.600');
 	}
 	.darknav a.active {
 		text-decoration: none;
-		color: theme('colors.primary.600');;
+		color: theme('colors.primary.600');
 		border-bottom-color: theme('colors.primary.600');
 	}
 
 	.dark\:underline:where([data-mode="dark"], [data-mode="dark"] *){
 		text-decoration-line: underline
 	}
+
+	#header-nav {
+    animation: headerScroll linear both;
+    animation-timeline: scroll();
+    animation-range: 0 500px;
+  }
+	@keyframes headerScroll {
+    to {
+      box-shadow: 0px 6px 15px 0px rgba(100, 116, 139, 0.12);
+      background: rgba(var(--bg-reverse), 0.7);
+      backdrop-filter: blur(10px);
+    }
+  }
 
 </style>

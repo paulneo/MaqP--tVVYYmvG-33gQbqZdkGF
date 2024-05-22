@@ -49,5 +49,10 @@ export default {
     },
   },
   plugins: [require("@tailwindcss/typography")],
-  darkMode: "selector",
+  darkMode: "class",
+  variants: {
+    extend: {
+      backgroundColor: ["dark"], // Asegúrate de habilitar las variantes oscuras
+    },
+  },
 };
