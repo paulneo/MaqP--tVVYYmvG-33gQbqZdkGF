@@ -1,11 +1,12 @@
 ---
-title: 'Aceros Estructurales'
-description: 'vitales en ingeniería y construcción por su resistencia y ductilidad. Esenciales para estructuras durables, son mayormente hierro con bajo carbono, y pueden incluir silicio y fósforo para mejorar propiedades y resistencia a la corrosión'
-pubDate: 'Mar 18 2024'
-heroImage: '/images/aceros-estructurales.jpg'
+title: "Aceros Estructurales"
+description: "vitales en ingeniería y construcción por su resistencia y ductilidad. Esenciales para estructuras durables, son mayormente hierro con bajo carbono, y pueden incluir silicio y fósforo para mejorar propiedades y resistencia a la corrosión"
+pubDate: "Mar 18 2024"
+heroImage: "/images/aceros-estructurales.jpg"
 tags: ["Aceros", "Maquinaria"]
-
+category: maquinarias_pesadas
 ---
+
 El acero estructural es fundamental en el mundo de la ingeniería y la construcción, dada su combinación de resistencia, ductilidad y soldabilidad. Este material es esencial en la creación de estructuras que demandan alta durabilidad y resistencia a diversas condiciones ambientales y de carga.
 
 #### Composición del Acero Estructural
@@ -20,6 +21,7 @@ El acero estructural está compuesto principalmente de hierro, con un pequeño p
 - Resistencia a la Corrosión: Bajo condiciones normales, presenta una buena resistencia a la corrosión, lo que le hace ideal para muchas aplicaciones estructurales​​.
 
 #### Clasificación de los Acero Estructurales
+
 El acero estructural, según su forma, se clasifica en:
 
 - Perfiles estructurales: Los perfiles estructurales son piezas de acero laminado cuya sección transversal puede ser en forma de I, H,T, canal o ángulo
@@ -27,6 +29,7 @@ El acero estructural, según su forma, se clasifica en:
 - Planchas: Las planchas de acero estructural son productos planos de acero laminado en caliente con anchos de 203 mm y 219 mm, y espesores mayores de 5,8 mm y mayores de 4,5 mm, respectivamente.
 
 **Aceros para Hormigón – Acero de refuerzo para armaduras**
+
 - Barras corrugadas
 - Alambrón
 - Alambres trefilados (lisos y corrugados)
@@ -37,4 +40,4 @@ El acero estructural, según su forma, se clasifica en:
 - Redondo liso para Hormigón Armado
 - Aceros para estructuras en zonas de alto riesgo sísmico.
 
-Para estructuras de hormigón se utilizan barras lisas y corrugadas, con diámetros que oscilan entre los 6mm y los 40mm, aunque lo común en una armadura de hormigón es que  difícilmente superen los 32mm. Además el acero de refuerzo se utiliza en las mallas electro soldadas o mallazo constituidos por alambres de diámetros entre 4mm a 12mm
+Para estructuras de hormigón se utilizan barras lisas y corrugadas, con diámetros que oscilan entre los 6mm y los 40mm, aunque lo común en una armadura de hormigón es que difícilmente superen los 32mm. Además el acero de refuerzo se utiliza en las mallas electro soldadas o mallazo constituidos por alambres de diámetros entre 4mm a 12mm

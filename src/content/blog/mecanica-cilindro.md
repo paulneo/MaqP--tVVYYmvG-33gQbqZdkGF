@@ -1,11 +1,12 @@
 ---
-title: 'Mecánica de un Cilindro'
-description: 'La mecánica de un cilindro de émbolo es clave en sistemas neumáticos industriales, incluyendo componentes como tubo, tapas, y vástago, más detalles sobre funcionamiento y construcción para optimizar rendimiento'
-pubDate: 'Mar 18 2024'
-heroImage: '/images/mecanica-cilindro.jpg'
+title: "Mecánica de un Cilindro"
+description: "La mecánica de un cilindro de émbolo es clave en sistemas neumáticos industriales, incluyendo componentes como tubo, tapas, y vástago, más detalles sobre funcionamiento y construcción para optimizar rendimiento"
+pubDate: "Mar 18 2024"
+heroImage: "/images/mecanica-cilindro.jpg"
 tags: ["Cilindros", "Maquinaria"]
-
+category: maquinarias_pesadas
 ---
+
 La mecánica de un cilindro, específicamente un cilindro de émbolo, es esencial en el diseño y operación de sistemas neumáticos en la automatización industrial. Esta sección se enfoca en desglosar los componentes críticos y el funcionamiento de estos cilindros.
 
 #### Componentes Principales

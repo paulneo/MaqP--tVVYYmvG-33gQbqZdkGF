@@ -1,10 +1,10 @@
 ---
-title: 'Clasificación General de los Aceros'
-description: 'Clasificación de aceros según propiedades y composición para aplicaciones específicas: aceros de construcción, herramientas, e inoxidables/resistentes al calor, facilitando la selección materia'
-pubDate: 'Mar 15 2024'
-heroImage: '/images/aceros.jpg'
+title: "Clasificación General de los Aceros"
+description: "Clasificación de aceros según propiedades y composición para aplicaciones específicas: aceros de construcción, herramientas, e inoxidables/resistentes al calor, facilitando la selección materia"
+pubDate: "Mar 15 2024"
+heroImage: "/images/aceros.jpg"
 tags: ["Aceros", "Maquinaria"]
-
+category: maquinarias_pesadas
 ---
 
 La clasificación de los aceros es un tema crucial en la industria metalúrgica, abarcando una amplia gama de tipos basados en sus propiedades mecánicas y composiciones químicas. Esta clasificación permite a ingenieros y diseñadores seleccionar el material más adecuado para sus aplicaciones específicas, asegurando la integridad estructural y la eficiencia de sus proyectos.
@@ -17,10 +17,10 @@ Los aceros de construcción se dividen principalmente en dos subgrupos, dependie
 
 **Aceros que se usan después del tratamiento** Se categorizan en aceros al carbono, aceros de gran resistencia, aceros de cementación, aceros de nitruración, aceros para muelles, aceros resistentes al desgaste, aceros con propiedades eléctricas especiales, y aceros Maraging.
 
-
 2. #### Aceros de Herramientas
 
 Dentro de los aceros de herramientas, encontramos:
+
 ```markdown
 - Aceros al carbono
 - Aceros para trabajos en caliente
@@ -39,7 +39,7 @@ Estos aceros se caracterizan por su resistencia a la corrosión y a altas temper
 - Aceros cromo-níquel austeníticos de alta aleación
 - Aceros para válvulas
 - Aceros con elevada resistencia a la fluencia en caliente (creep)
-- Aceros inoxidables endurecibles por precipitación 
+- Aceros inoxidables endurecibles por precipitación
 ```
 
 La selección de un tipo de acero específico depende de numerosos factores, incluyendo la resistencia mecánica requerida, la resistencia a la corrosión, las propiedades de templado, y las condiciones ambientales a las que se expondrá el material. Esta clasificación permite a los profesionales de la industria tomar decisiones informadas para lograr los mejores resultados en sus proyectos.

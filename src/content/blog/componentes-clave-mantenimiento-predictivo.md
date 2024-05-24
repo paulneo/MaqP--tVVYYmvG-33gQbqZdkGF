@@ -1,10 +1,10 @@
 ---
-title: 'Componentes Clave en el Mantenimiento Predictivo para Maquinaria Industrial'
-description: 'Mantenimiento predictivo, mediante transductores de vibración, procesamiento de señales y diagnósticos precisos, se convierte en la clave para evitar fallos en maquinaria industrial y garantizar la eficiencia operativa.'
-pubDate: 'Mar 24 2024'
-heroImage: '/images/componentes-clave-mantenimiento-predictivo.jpg'
+title: "Componentes Clave en el Mantenimiento Predictivo para Maquinaria Industrial"
+description: "Mantenimiento predictivo, mediante transductores de vibración, procesamiento de señales y diagnósticos precisos, se convierte en la clave para evitar fallos en maquinaria industrial y garantizar la eficiencia operativa."
+pubDate: "Mar 24 2024"
+heroImage: "/images/componentes-clave-mantenimiento-predictivo.jpg"
 tags: ["Industrial", "Maquinaria"]
-
+category: maquinarias_pesadas
 ---
 
 El mantenimiento predictivo es una filosofía de mantenimiento que se basa en el monitoreo del estado operativo de la maquinaria y el equipo industrial, con el objetivo de predecir y prevenir fallos antes de que ocurran. Este enfoque se apoya fuertemente en la tecnología y la ciencia de datos, y sus componentes clave incluyen los transductores de vibración, el procesamiento de señal, y métodos de diagnóstico avanzados.
@@ -39,4 +39,3 @@ Imagine una bomba centrífuga en una planta de procesamiento químico que empiez
 ## Conclusión
 
 La implementación efectiva de un programa de mantenimiento predictivo requiere una comprensión profunda de estos componentes y cómo interactúan entre sí. Al adoptar este enfoque, las empresas pueden mejorar significativamente la fiabilidad y disponibilidad de su maquinaria, al tiempo que reducen los costos asociados con fallos inesperados y mantenimientos correctivos.
-

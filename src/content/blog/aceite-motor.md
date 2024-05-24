@@ -1,10 +1,10 @@
 ---
-title: 'Aceite para el Motor'
-description: 'Maximizando el Rendimiento de Maquinaria Pesada,  Mantener calidad y control evita deterioro, extiende vida útil. Selección y manejo adecuados son cruciales'
-pubDate: 'Mar 14 2024'
-heroImage: '/images/aceite-motor.jpg'
+title: "Aceite para el Motor"
+description: "Maximizando el Rendimiento de Maquinaria Pesada,  Mantener calidad y control evita deterioro, extiende vida útil. Selección y manejo adecuados son cruciales"
+pubDate: "Mar 14 2024"
+heroImage: "/images/aceite-motor.jpg"
 tags: ["Aceite", "Motor"]
-
+category: maquinarias_pesadas
 ---
 
 Esta sección brinda conocimientos esenciales sobre el aceite para motores de maquinaria pesada, enfocándose en su calidad, control de deterioro y efectos. Es vital para los operadores comprender estos aspectos para prolongar la vida útil de sus motores.
