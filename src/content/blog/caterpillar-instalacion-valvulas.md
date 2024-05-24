@@ -1,5 +1,5 @@
 ---
-title: "Reparación de Motores Caterpillar 3116 y 3126 parte I "
+title: "Guía de Reparación: Caterpillar 3116 y 3126 "
 description: "Descubre el proceso de armado y desarmado de los motores Caterpillar 3116 y 3126, enfocándonos en la reparación de válvulas y componentes asociados"
 pubDate: "May 20 2024"
 heroImage: "/images/caterpillar-valvulas.webp"

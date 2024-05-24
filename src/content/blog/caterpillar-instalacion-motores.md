@@ -1,5 +1,5 @@
 ---
-title: "Reparación de Motores Caterpillar 3116 y 3126 parte II "
+title: "Bomba de Aceite y Bomba de Agua : Caterpillar 3116 y 3126"
 description: "Mantenimiento de las bombas de aceite y agua en motores Caterpillar 3116 y 3126"
 pubDate: "May 22 2024"
 heroImage: "/images/motores-caterpillar.webp"
@@ -13,7 +13,7 @@ tags:
 category: maquinarias_pesadas
 ---
 
-En esta segunda parte, continuaremos con los procedimientos de armado y desarmado del motor Caterpillar 3116 y 3126, enfocándonos en la bomba de aceite y la bomba de agua. Mantener estos componentes en óptimas condiciones es esencial para asegurar el buen funcionamiento del motor y prolongar su vida útil.
+En esta parte, continuaremos con los procedimientos de armado y desarmado del motor Caterpillar 3116 y 3126, enfocándonos en la bomba de aceite y la bomba de agua. Mantener estos componentes en óptimas condiciones es esencial para asegurar el buen funcionamiento del motor y prolongar su vida útil.
 
 ### Bomba de Aceite del Motor
 
