@@ -1,5 +1,5 @@
 ---
-title: 'Reparación y Mantenimiento del Motor Caterpillar 3116 y 3126 parte III '
+title: 'Cigüeñal y caja del volante: Caterpillar 3116 y 3126 '
 description: 'Continuamos detallando el mantenimiento del motor Caterpillar 3116 y 3126, enfocándonos en el sello y manguito trasero del cigüeñal, y la caja del volante'
 pubDate: 'May 23 2024'
 heroImage: '/images/caterpillar-volante.webp'
@@ -7,7 +7,7 @@ tags: ["Mantenimiento de Motores", "Reparación de Motores", "Motores Caterpilla
 category: maquinarias_pesadas
 
 ---
-En esta tercera parte del blog, continuamos con los procedimientos detallados de armado y desarmado del motor Caterpillar 3116 y 3126, enfocándonos en el sello trasero del cigüeñal, el manguito de desgaste del cigüeñal y la caja del volante. Estos componentes son críticos para el correcto funcionamiento del motor y requieren una atención meticulosa durante su mantenimiento y reparación.
+En esta parte, hablaremos sobre los procedimientos detallados de armado y desarmado del motor Caterpillar 3116 y 3126, enfocándonos en el sello trasero del cigüeñal, el manguito de desgaste del cigüeñal y la caja del volante. Estos componentes son críticos para el correcto funcionamiento del motor y requieren una atención meticulosa durante su mantenimiento y reparación.
 ### Sello Trasero del Cigüeñal
 #### Procedimiento de Remoción
 - Herramientas Necesarias:
