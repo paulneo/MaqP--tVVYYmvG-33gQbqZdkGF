@@ -1,10 +1,10 @@
 ---
-title: ' Fracturas: Un Análisis de Fallas en Maquinaria Pesada'
-description: 'Analiza cómo identificar y analizar diferentes tipos de fracturas para mejorar la prevención y el mantenimiento.'
-pubDate: 'Apr 12 2024'
-heroImage: '/images/fracturas-un-analisis-de-fallas-en-maquinaria-pesada.webp'
+title: " Fracturas: Un Análisis de Fallas en Maquinaria Pesada"
+description: "Analiza cómo identificar y analizar diferentes tipos de fracturas para mejorar la prevención y el mantenimiento."
+pubDate: "Apr 12 2024"
+heroImage: "/images/fracturas-un-analisis-de-fallas-en-maquinaria-pesada.webp"
 tags: ["Fracturas", "Maquinaria Pesada"]
-
+category: maquinarias_pesadas
 ---
 
 Las fracturas en los componentes de maquinaria pesada pueden ser indicativos de problemas serios y a menudo son el síntoma de fallas subyacentes en el material o en el diseño. Este artículo explora cómo identificar y analizar diferentes tipos de fracturas para mejorar la prevención y el mantenimiento.

@@ -1,14 +1,13 @@
 ---
-title: 'Aflojamiento Mecánico en Maquinaria: Diagnóstico y Soluciones'
-description: 'Descubre técnicas profundas para identificar y rectificar el aflojamiento mecánico, crucial para el mantenimiento preventivo y la eficiencia de la maquinaria industrial.'
-pubDate: 'Mar 25 2024'
-heroImage: '/images/aflojamiento-mecanico-maquinaria.webp'
+title: "Aflojamiento Mecánico en Maquinaria: Diagnóstico y Soluciones"
+description: "Descubre técnicas profundas para identificar y rectificar el aflojamiento mecánico, crucial para el mantenimiento preventivo y la eficiencia de la maquinaria industrial."
+pubDate: "Mar 25 2024"
+heroImage: "/images/aflojamiento-mecanico-maquinaria.webp"
 tags: ["Aflojamiento", "Maquinaria"]
-
+category: maquinarias_pesadas
 ---
 
 El aflojamiento mecánico es un fenómeno que afecta a una amplia gama de maquinaria industrial, desde sistemas de bombeo hasta conjuntos de transmisión. Este artículo se sumerge en las profundidades de las causas, la identificación, y las soluciones para el aflojamiento mecánico, destacando su impacto en la fiabilidad y eficiencia operativa.
-
 
 ## Entendiendo el Aflojamiento Mecánico
 

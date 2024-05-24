@@ -1,10 +1,10 @@
 ---
-title: 'Análisis de Fallas en Bombas y Motores Hidráulicos Caterpillar'
-description: 'Descubre cómo diagnosticar y resolver fallas en bombas y motores hidráulicos Caterpillar con nuestro manual técnico detallado. Aprende mantenimiento efectivo.'
-pubDate: 'Apr 10 2024'
-heroImage: '/images/manual-bombas-motores-hidraulicos.webp'
+title: "Análisis de Fallas en Bombas y Motores Hidráulicos Caterpillar"
+description: "Descubre cómo diagnosticar y resolver fallas en bombas y motores hidráulicos Caterpillar con nuestro manual técnico detallado. Aprende mantenimiento efectivo."
+pubDate: "Apr 10 2024"
+heroImage: "/images/manual-bombas-motores-hidraulicos.webp"
 tags: ["Motores", " Bombas", "Caterpillar"]
-
+category: maquinarias_pesadas
 ---
 
 ## 1. Fundamentos de Bombas y Motores Hidráulicos
@@ -37,6 +37,7 @@ tags: ["Motores", " Bombas", "Caterpillar"]
 ## 4. Mantenimiento Predictivo y Preventivo
 
 #### Recomendaciones de Mantenimiento:
+
 - **Verificaciones de Rutina:** Incluyen la revisión de niveles de fluido, la inspección de filtros, y el monitoreo de la temperatura operacional.
 - **Programación de Servicios:** Basado en las horas de operación o calendario, lo que ocurra primero, para asegurar que las bombas y motores están siendo mantenidos antes de que ocurran fallos.
 
@@ -45,8 +46,9 @@ tags: ["Motores", " Bombas", "Caterpillar"]
 **Formación Técnica:** Capacitación regular en las últimas tecnologías y procedimientos de diagnóstico es vital para mantener la maquinaria operando en óptimas condiciones.
 
 ## 6. Conclusión y Aplicación Práctica
+
 **Aplicación de Conocimientos:** El uso efectivo de este manual permite a los técnicos diagnosticar y resolver problemas de manera eficiente, lo cual es esencial para minimizar el tiempo de inactividad y maximizar la productividad.
 
-
 ## Conclusión
+
 Este manual técnico es una herramienta esencial para cualquier profesional involucrado en el mantenimiento de maquinaria pesada. Proporciona un enfoque sistemático y detallado para entender y diagnosticar problemas en sistemas hidráulicos, esencial para mantener la operatividad

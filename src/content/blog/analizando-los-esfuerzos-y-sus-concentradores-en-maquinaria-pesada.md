@@ -1,10 +1,10 @@
 ---
-title: 'Analizando los Esfuerzos y sus Concentradores en Maquinaria Pesada'
-description: 'Examina cómo los diferentes tipos de esfuerzos y los concentradores de esfuerzos afectan los componentes de maquinaria pesada.'
-pubDate: 'Apr 12 2024'
-heroImage: '/images/analizando-los-esfuerzos-y-sus-concentradores-en-maquinaria-pesada.webp'
+title: "Analizando los Esfuerzos y sus Concentradores en Maquinaria Pesada"
+description: "Examina cómo los diferentes tipos de esfuerzos y los concentradores de esfuerzos afectan los componentes de maquinaria pesada."
+pubDate: "Apr 12 2024"
+heroImage: "/images/analizando-los-esfuerzos-y-sus-concentradores-en-maquinaria-pesada.webp"
 tags: ["Esfuerzos", "Concentradores", "Maquinaria Pesada"]
-
+category: maquinarias_pesadas
 ---
 
 La durabilidad y la integridad estructural de la maquinaria pesada dependen significativamente de cómo se distribuyen y manejan los esfuerzos en sus componentes. Este artículo explora los diferentes tipos de esfuerzos que los componentes pueden experimentar y cómo los concentradores de esfuerzos afectan estos patrones, aumentando el riesgo de fallos.

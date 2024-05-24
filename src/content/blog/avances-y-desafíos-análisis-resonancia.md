@@ -1,10 +1,10 @@
 ---
-title: 'Avances y Desafíos en el Análisis de Resonancia para el Mantenimiento Predictivo'
-description: 'Integración de tecnología de punta en análisis de vibraciones para mantenimiento predictivo, con enfoque en software de análisis y sensores innovadores'
-pubDate: 'Apr 03 2024'
-heroImage: '/images/avances-y-desafios-analisis-resonancia.webp'
+title: "Avances y Desafíos en el Análisis de Resonancia para el Mantenimiento Predictivo"
+description: "Integración de tecnología de punta en análisis de vibraciones para mantenimiento predictivo, con enfoque en software de análisis y sensores innovadores"
+pubDate: "Apr 03 2024"
+heroImage: "/images/avances-y-desafios-analisis-resonancia.webp"
 tags: ["Resonancia", "Analisis", "Mantenimiento"]
-
+category: maquinarias_pesadas
 ---
 
 El análisis de resonancia es una piedra angular en el mantenimiento predictivo y la ingeniería de confiabilidad, especialmente en entornos industriales complejos. Este blog se sumerge en los desafíos contemporáneos y avances en el análisis de resonancia, dirigido a profesionales con experiencia que buscan profundizar su comprensión y aplicación de estas técnicas avanzadas.
