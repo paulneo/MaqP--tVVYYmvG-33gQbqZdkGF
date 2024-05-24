@@ -1,11 +1,12 @@
 ---
-title: 'Tratamientos del Acero'
-description: 'Tratamientos del acero mejoran propiedades mecánicas y resistencia a corrosión, incluyendo métodos superficiales y térmicos como cincado, cromado, temple y revenido, clave para diversas aplicaciones'
-pubDate: 'Mar 15 2024'
-heroImage: '/images/tratamiento-aceros.jpg'
+title: "Tratamientos del Acero"
+description: "Tratamientos del acero mejoran propiedades mecánicas y resistencia a corrosión, incluyendo métodos superficiales y térmicos como cincado, cromado, temple y revenido, clave para diversas aplicaciones"
+pubDate: "Mar 15 2024"
+heroImage: "/images/tratamiento-aceros.jpg"
 tags: ["Aceros", "Maquinaria"]
-
+category: maquinarias_pesadas
 ---
+
 El acero, conocido por su versatilidad y resistencia, puede someterse a diversos tratamientos para mejorar sus propiedades mecánicas y resistencia a la corrosión. Estos tratamientos se clasifican en superficiales y térmicos, cada uno con técnicas y objetivos específicos para optimizar el rendimiento del acero en distintas aplicaciones
 
 #### Tratamientos Superficiales
@@ -19,8 +20,8 @@ Los tratamientos superficiales se enfocan en proteger el acero de la oxidación 
 - Pavonado: Tratamiento para pequeñas piezas de acero, como tornillería, mejorando su resistencia a la corrosión.
 - Pintura: Utilizado ampliamente en estructuras, automóviles, y barcos, entre otros, para proteger y decorar​​.
 
-
 #### Tratamientos Térmicos
+
 Los tratamientos térmicos buscan modificar la microestructura del acero para mejorar su dureza, tenacidad, y resistencia mecánica, sin alterar su composición química. Los principales tratamientos térmicos incluyen:
 
 - Temple: Aumento de la dureza y resistencia mecánica mediante enfriamiento rápido.

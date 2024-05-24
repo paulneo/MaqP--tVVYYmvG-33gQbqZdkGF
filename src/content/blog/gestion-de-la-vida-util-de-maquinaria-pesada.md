@@ -1,10 +1,10 @@
 ---
-title: 'Gestión de la Vida Útil de Maquinaria Pesada'
-description: 'Gestion de una vida útil para tu maquinaria pesada con estrategias efectivas de mantenimiento y renovación.'
-pubDate: 'Apr 14 2024'
-heroImage: '/images/gestion-de-la-vida-util-de-maquinaria-pesada.webp'
+title: "Gestión de la Vida Útil de Maquinaria Pesada"
+description: "Gestion de una vida útil para tu maquinaria pesada con estrategias efectivas de mantenimiento y renovación."
+pubDate: "Apr 14 2024"
+heroImage: "/images/gestion-de-la-vida-util-de-maquinaria-pesada.webp"
 tags: ["Vida útil", "Maquinaria Pesada"]
-
+category: maquinarias_pesadas
 ---
 
 La maquinaria pesada es una inversión significativa en cualquier industria que la utiliza, desde la construcción hasta la minería. Entender cómo gestionar la vida útil de estos equipos es crucial para maximizar su valor y garantizar su funcionamiento seguro y eficiente
