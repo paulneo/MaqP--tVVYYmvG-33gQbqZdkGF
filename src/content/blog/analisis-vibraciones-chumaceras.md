@@ -1,10 +1,10 @@
 ---
-title: 'Análisis de Vibraciones en Chumaceras: Clave para el Mantenimiento Predictivo'
-description: 'Descubre cómo el análisis de vibraciones en chumaceras asegura un mantenimiento predictivo eficiente, previniendo fallas y optimizando la operación industrial'
-pubDate: 'Apr 02 2024'
-heroImage: '/images/vibraciones-chumaceras.webp'
+title: "Análisis de Vibraciones en Chumaceras: Clave para el Mantenimiento Predictivo"
+description: "Descubre cómo el análisis de vibraciones en chumaceras asegura un mantenimiento predictivo eficiente, previniendo fallas y optimizando la operación industrial"
+pubDate: "Apr 02 2024"
+heroImage: "/images/vibraciones-chumaceras.webp"
 tags: ["Vibraciones", "Maquinaria", "Chumaceras"]
-
+category: maquinarias_pesadas
 ---
 
 Las chumaceras, o cojinetes de deslizamiento, juegan un papel crucial en el funcionamiento eficiente de la maquinaria industrial. Estos componentes están diseñados para soportar cargas y permitir el movimiento deseado con mínima resistencia, facilitando así la rotación o deslizamiento entre partes mecánicas. Sin embargo, como cualquier componente mecánico, están sujetos a desgaste y fallas, lo que puede conducir a paradas no programadas y pérdidas significativas. Aquí es donde el análisis de vibraciones se convierte en una herramienta indispensable para el mantenimiento predictivo.

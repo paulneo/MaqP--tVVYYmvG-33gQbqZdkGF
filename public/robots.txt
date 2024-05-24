@@ -5,4 +5,4 @@ Disallow:
 
 # ---------------------------
 # END YOAST BLOCK
-Sitemap: https://mundoingerieria.org/sitemap-index.xml
+Sitemap: https://mundoingenieria.org/sitemap-index.xml

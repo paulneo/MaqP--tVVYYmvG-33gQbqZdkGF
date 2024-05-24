@@ -1,10 +1,10 @@
 ---
-title: 'Defectos de Fabricación y Sus Efectos en la Durabilidad de Maquinaria Pesada'
-description: 'Descubre cómo defectos de fabricación afectan la resistencia del material en maquinaria pesada'
-pubDate: 'Apr 13 2024'
-heroImage: '/images/defectos-de-fabricacion-y-sus-efectos-en-la-durabilidaddde-maquinaria-pesada.webp'
+title: "Defectos de Fabricación y Sus Efectos en la Durabilidad de Maquinaria Pesada"
+description: "Descubre cómo defectos de fabricación afectan la resistencia del material en maquinaria pesada"
+pubDate: "Apr 13 2024"
+heroImage: "/images/defectos-de-fabricacion-y-sus-efectos-en-la-durabilidaddde-maquinaria-pesada.webp"
 tags: ["Fracturas", "Maquinaria Pesada"]
-
+category: maquinarias_pesadas
 ---
 
 Los procesos de fabricación de componentes para maquinaria pesada son cruciales para asegurar la calidad y la durabilidad de estos equipos. Sin embargo, a veces se introducen defectos durante la fabricación que pueden comprometer la resistencia y funcionalidad de los materiales. Este artículo explorará algunos de los problemas más comunes que ocurren durante la fabricación y cómo impactan en la resistencia del material.
@@ -16,6 +16,7 @@ Durante el proceso de fundición, el metal líquido se vierte en moldes para for
 **Impacto:** Estos defectos crean puntos débiles en el material que pueden ser puntos de inicio para fracturas o fallas bajo carga.
 
 ## Errores de Forjado y Laminado:
+
 El forjado y el laminado implican deformar el metal a alta temperatura para formar piezas. Problemas como fisuras, pliegues y segregación de material pueden ocurrir si el proceso no se controla cuidadosamente.
 
 **Impacto:** Estos defectos pueden alterar la microestructura del material, reduciendo su resistencia y ductilidad, lo que hace que sea más susceptible a fallas mecánicas.

@@ -1,15 +1,16 @@
 ---
-title: 'Diagnóstico y Solución de Defectos en Engranajes'
-description: 'Descubre cómo identificar y solucionar defectos en engranajes para mantener la maquinaria industrial en óptimas condiciones. Aprende técnicas clave para un mantenimiento predictivo efectivo.'
-pubDate: 'Mar 25 2024'
-heroImage: '/images/diagnostico-engranajes.webp'
+title: "Diagnóstico y Solución de Defectos en Engranajes"
+description: "Descubre cómo identificar y solucionar defectos en engranajes para mantener la maquinaria industrial en óptimas condiciones. Aprende técnicas clave para un mantenimiento predictivo efectivo."
+pubDate: "Mar 25 2024"
+heroImage: "/images/diagnostico-engranajes.webp"
 tags: ["Engranajes", "Maquinaria"]
-
+category: maquinarias_pesadas
 ---
 
 Los engranajes son componentes fundamentales en una amplia gama de maquinaria industrial, transmitiendo potencia y movimiento con precisión y eficiencia. Sin embargo, son susceptibles a diversos tipos de defectos que pueden afectar gravemente su rendimiento y la fiabilidad del sistema en general. Este artículo se sumerge en el complejo mundo de los defectos de engranajes, ofreciendo una guía comprensiva para su diagnóstico y solución.
 
 ## Comprender los Defectos en Engranajes
+
 La interpretación de las características de los engranajes y la identificación de defectos es una tarea desafiante debido a su índole mecánicamente compleja. Sin embargo, algunos conceptos básicos facilitan el reconocimiento de problemas comunes en los engranajes :
 
 - **Frecuencia del Enlace de Engranajes:** Es una señal que aparece independientemente del estado de los engranajes. Su amplitud puede variar significativamente con la carga, lo que ayuda a distinguir entre problemas de engranajes y otros tipos de defectos.
@@ -34,4 +35,3 @@ La solución a los problemas de engranajes varía según el tipo y severidad del
 ## Conclusión
 
 Los defectos en los engranajes pueden tener consecuencias serias para la operación de maquinaria industrial. Un enfoque proactivo en el diagnóstico y la solución de estos problemas es crucial para asegurar la fiabilidad y eficiencia de los sistemas mecánicos. A través del conocimiento detallado de los tipos de defectos y sus soluciones, es posible mantener la maquinaria en óptimas condiciones de operación.
-

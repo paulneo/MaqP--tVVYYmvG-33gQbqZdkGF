@@ -1,9 +1,10 @@
 ---
-title: 'Soluciones al Desbalanceo en Maquinaria Industrial'
-description: 'Identifica y soluciona el desbalanceo en maquinaria para optimizar rendimiento y prevenir averías con técnicas de mantenimiento predictivo.'
-pubDate: 'Mar 24 2024'
-heroImage: '/images/desbalanceo-maquinaria-predictivo.webp'
+title: "Soluciones al Desbalanceo en Maquinaria Industrial"
+description: "Identifica y soluciona el desbalanceo en maquinaria para optimizar rendimiento y prevenir averías con técnicas de mantenimiento predictivo."
+pubDate: "Mar 24 2024"
+heroImage: "/images/desbalanceo-maquinaria-predictivo.webp"
 tags: ["Desbalanceo", "Maquinaria"]
+category: maquinarias_pesadas
 ---
 
 El desbalanceo es una condición común en la maquinaria rotativa que ocurre cuando el centro de masa no coincide con el eje de rotación, causando vibraciones perjudiciales. Aunque puede parecer un problema simple, sus efectos pueden ser devastadores, llevando desde un aumento en el desgaste hasta fallos catastróficos.
@@ -26,7 +27,6 @@ El diagnóstico preciso del desbalanceo es fundamental para un mantenimiento pre
 ## Corrección del Desbalanceo
 
 La corrección del desbalanceo implica añadir o quitar peso en posiciones estratégicas del rotor para equilibrar la masa alrededor del eje de rotación. Este proceso puede ser complejo, requiriendo análisis detallados y, a menudo, equipo especializado. Un ejemplo ilustrativo sería el ajuste realizado a un ventilador impelente del motor, donde el análisis espectral muestra cómo la intervención correctiva reduce significativamente la amplitud de la vibración, asegurando así la operación eficiente del equipo​​.
-
 
 ## Conclusiones
 
