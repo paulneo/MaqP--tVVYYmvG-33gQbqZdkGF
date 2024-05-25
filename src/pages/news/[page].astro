@@ -27,7 +27,7 @@ const { data = [] } = page
 				{
 					data.map((post) => (
 						<li >
-							<a href={`/blog/${post.slug}/`}>
+							<a href={`/news/${post.slug}/`}>
 								<div  class="img-content h-[220px] w-[100%] bg-cover bg-center " style={`
 										background-image: url(${post.data?.heroImage});
 								`}>
@@ -42,7 +42,7 @@ const { data = [] } = page
 				}
 			</ul>
 		</section>
-    <Pagination section="blog" currentPage={page.currentPage} totalPages={page.lastPage} />
+    <Pagination section="news" currentPage={page.currentPage} totalPages={page.lastPage} />
 	</main>
 </Layout>
 

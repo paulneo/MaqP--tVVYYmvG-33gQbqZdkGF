@@ -20,7 +20,7 @@ const totalPage = Math.ceil(totalPosts / 5)
 				{
 					fivePost.map((post) => (
 						<li>
-							<a href={`/blog/${post.slug}/`}>
+							<a href={`/news/${post.slug}`}>
 								<div class="img-content h-[220px] w-[100%] bg-cover bg-center " style={`
 											background-image: url(${post.data.heroImage});
 									`}>
@@ -35,7 +35,7 @@ const totalPage = Math.ceil(totalPosts / 5)
 				}
 			</ul>
 		</section>
-		<Pagination section="blog" currentPage={1} totalPages={totalPage} />
+		<Pagination section="news" currentPage={1} totalPages={totalPage} />
 	</main>
 </Layout>
 
