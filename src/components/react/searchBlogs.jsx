@@ -43,7 +43,7 @@ const searchBlogs = ({ posts }) => {
       <input
         className="
           block rounded-md outline-none border-0 ring-inset ring-1 ring-gray-300 dark:ring-gray-500  py-3 focus:border-primary focus:ring-transparent w-full text-center
-          focus:ring-2 focus:border focus:border-primary-600 placeholder:text-gray-400 dark:bg-slate-900 dark:text-slate-300 sticky top-10
+          focus:ring-2 focus:border focus:border-primary-600 placeholder:text-gray-400 dark:bg-slate-900 dark:text-slate-300 sticky top-32
         "
         placeholder="Escriba aqui para buscar un blog"
         type="text"
@@ -63,15 +63,16 @@ const searchBlogs = ({ posts }) => {
           para <span className="text-primary-500">{inputVal}</span>
         </div>
       )}
-      <div className="grid grid-cols-2 gap-4 mt-10">
+      <div className="grid grid-cols-2 gap-4 mt-10 z-0">
         {searchResults.map(({ item }) => (
           <a className="" key={item.id} href={`/blog/${item.slug}`}>
-            <div
-              className="img-content h-[220px] w-[100%] bg-cover bg-center rounded-xl "
-              style={{
-                backgroundImage: `url(${item.data?.heroImage})`,
-              }}
-            ></div>
+            <div className="img-content h-[220px] w-[100%] bg-cover bg-center rounded-xl">
+              <img
+                src={item.data?.heroImage}
+                alt={item.data.title}
+                class="w-full h-full object-cover	"
+              />
+            </div>
             <h4 className="text-slate-800 dark:text-slate-50 hover:text-primary-500">
               {item.data.title}
             </h4>

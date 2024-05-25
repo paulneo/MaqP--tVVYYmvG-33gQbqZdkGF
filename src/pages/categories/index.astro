@@ -19,7 +19,6 @@ const posts = (await getCollection('blog')).sort((a , b) => b.data.pubDate.value
     return acc
 }, new Map())
 
-console.log(categories)
 
 ---
 <Layout title={pageTitle} description="Mundo Ingeniería abarca categorías como construcción, electrónica, mecánica y robótica, enfocándose en la innovación y aplicación práctica de principios científicos y tecnológicos">

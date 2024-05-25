@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { sortByDate } from '../../lib/utils/sortFunctions'
 import Pagination from '../../components/Pagination.astro'
+import Image from 'astro/components/Image.astro';
 
 
 const posts = (await getCollection('blog'));
@@ -21,9 +22,8 @@ const totalPage = Math.ceil(totalPosts / 5)
 					fivePost.map((post) => (
 						<li>
 							<a href={`/blog/${post.slug}/`}>
-								<div class="img-content h-[220px] w-[100%] bg-cover bg-center " style={`
-											background-image: url(${post.data.heroImage});
-									`}>
+								<div class="img-content h-[220px] w-[100%] bg-cover bg-center ">
+									<Image src={post.data.heroImage} width={1280} alt={post.data.title} height={720} class="w-full h-full object-cover	"  loading="lazy" />
 								</div>
 								<h4 class=" text-slate-800 dark:text-slate-50 hover:text-primary-500">{post.data.title}</h4>
 								<p class="text-slate-800 dark:text-slate-50">
