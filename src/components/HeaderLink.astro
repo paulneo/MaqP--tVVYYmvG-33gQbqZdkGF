@@ -17,9 +17,21 @@ const isActive = href === pathname || href === '/' + subpath?.[0];
 	a {
 		display: inline-block;
 		text-decoration: none;
+		padding: 0.2em 0.8rem;
+		border-bottom: 3px solid transparent;
 	}
 	a.active {
+		text-decoration: none;
 		font-weight: bolder;
-		text-decoration: underline;
+		color: theme('colors.primary.600');
+		border-bottom-color: theme('colors.primary.600');
 	}
+
+	.darknav a.active {
+		text-decoration: none;
+		color: theme('colors.primary.600');
+		border-bottom-color: theme('colors.primary.600');
+	}
+
+	
 </style>
