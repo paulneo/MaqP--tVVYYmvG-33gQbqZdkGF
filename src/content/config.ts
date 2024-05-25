@@ -26,4 +26,19 @@ const categoryCollection = defineCollection({
     }),
 });
 
-export const collections = { blog, categories: categoryCollection };
+const news = defineCollection({
+  type: "content",
+  schema: () =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      image: z.string(),
+      pubDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+      heroImage: z.string().optional(),
+      tags: z.array(z.string()).default(["otros"]).optional(),
+      category: z.string(),
+    }),
+});
+
+export const collections = { blog, categories: categoryCollection, news };
