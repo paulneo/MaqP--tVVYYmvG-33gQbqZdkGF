@@ -1,5 +1,5 @@
 ---
-title: "XCMG Amplía su Portafolio con Nuevas Máquinas para el Mercado Minero Brasileño"
+title: "XCMG amplía su portafolio con nuevas máquinas para el mercado Minero Brasileño"
 description: "XCMG lanza tres nuevas máquinas para el mercado minero brasileño, incluyendo los camiones mineros XDE130 y XDR100, y la excavadora XE1350"
 pubDate: "May 23 2024"
 heroImage: "/news/camion-xde130.webp"

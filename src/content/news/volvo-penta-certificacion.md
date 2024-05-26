@@ -1,5 +1,5 @@
 ---
-title: "Volvo Penta Certifica a Cuatro Concesionarios por Excelencia en Servicio"
+title: "Volvo penta certifica a cuatro concesionarios por excelencia en servicio"
 description: "Volvo Penta certifica a cuatro concesionarios por su excelencia en minimizar el tiempo de inactividad, mejorando la eficiencia operativa y el servicio al cliente"
 pubDate: "May 22 2024"
 heroImage: "/news/volvo-penta.jpg"

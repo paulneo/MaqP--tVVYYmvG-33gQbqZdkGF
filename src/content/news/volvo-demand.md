@@ -1,5 +1,5 @@
 ---
-title: "Volvo Introduce el Programa On Demand para Facilitar el Uso de Camiones Eléctricos"
+title: "Volvo introduce el programa On Demand para facilitar el uso de camiones eléctricos"
 description: "Volvo Trucks North America lanzan Volvo On Demand, un programa que facilita la adopción de camiones eléctricos"
 pubDate: "May 23 2024"
 heroImage: "/news/volvo-programa.webp"

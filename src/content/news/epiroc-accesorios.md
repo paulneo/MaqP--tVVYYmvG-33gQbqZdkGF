@@ -1,5 +1,5 @@
 ---
-title: "Epiroc Adquirirá Fabricante Francés de Accesorios"
+title: "Epiroc adquirirá fabricante francés de Accesorios"
 description: "Epiroc adquirirá ACB+, un fabricante francés de accesorios para excavadoras, fortaleciendo su oferta de productos de alta calidad en Europa"
 pubDate: "May 24 2024"
 heroImage: "/news/epiroc-accesorios.webp"
