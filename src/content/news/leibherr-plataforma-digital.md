@@ -1,5 +1,5 @@
 ---
-title: "Liebherr Lanza Plataforma Digital para la Venta de Equipos Usados"
+title: "Liebherr lanza plataforma digital para la venta de equipos usados"
 description: "rabajador muere y otros dos resultan heridos tras el colapso de una grúa durante una tormenta en Houston"
 pubDate: "May 24 2024"
 heroImage: "/news/leibherr-plataforma.jpg"

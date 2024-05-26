@@ -1,5 +1,5 @@
 ---
-title: "Apuesta por la Sostenibilidad: Volvo CE Publica Informes de Huella de Carbono"
+title: "Apuesta por la sostenibilidad: Volvo CE publica informes de Huella de Carbono"
 description: "Volvo CE lanza informes de huella de carbono, destacando la sostenibilidad de sus máquinas eléctricas"
 pubDate: "May 23 2024"
 heroImage: "/news/volvo-ce-huella-carbono.jpg"

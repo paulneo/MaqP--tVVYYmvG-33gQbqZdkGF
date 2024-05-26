@@ -1,5 +1,5 @@
 ---
-title: "Liebherr y Fortescue Prueban Camión de Transporte Propulsado por Hidrógeno"
+title: "Liebherr y Fortescue prueban camión de transporte propulsado por hidrógeno"
 description: "Liebherr y Fortescue completan con éxito la primera prueba de un camión de transporte T 264 propulsado por hidrógeno"
 pubDate: "May 24 2024"
 heroImage: "/news/transporte-hidrogeno.jpg"

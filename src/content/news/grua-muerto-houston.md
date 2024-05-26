@@ -1,5 +1,5 @@
 ---
-title: "Colapso de Grúa en Houston Deja un Trabajador Muerto"
+title: "Colapso de grúa en Houston deja un trabajador muerto"
 description: "rabajador muere y otros dos resultan heridos tras el colapso de una grúa durante una tormenta en Houston"
 pubDate: "May 20 2024"
 heroImage: "/news/grua-muerte-houston.png"

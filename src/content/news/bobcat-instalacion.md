@@ -1,5 +1,5 @@
 ---
-title: "Bobcat Integra Celdas de Combustible Estacionarias en Plantas de Fabricación"
+title: "Bobcat integra celdas de combustible estacionarias en plantas de fabricación"
 description: "Bobcat integra 14 celdas de combustible estacionarias en sus plantas de Dakota del Norte para diversificar sus fuentes de energía"
 pubDate: "May 22 2024"
 heroImage: "/news/bobcat.jpg"

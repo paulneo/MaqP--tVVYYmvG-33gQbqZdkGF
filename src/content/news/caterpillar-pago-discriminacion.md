@@ -1,5 +1,5 @@
 ---
-title: "Caterpillar Paga $800,000 en Caso de Discriminación"
+title: "Caterpillar paga $800,000 en caso de discriminación"
 description: "Caterpillar pagará $800,000 en salarios atrasados por discriminación en la contratación de 60 solicitantes afroamericanos en su planta de Decatur, Illinois"
 pubDate: "May 22 2024"
 heroImage: "/news/caterpillar-pago-deuda.webp"
