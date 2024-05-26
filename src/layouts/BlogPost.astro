@@ -51,14 +51,30 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+
+			@media only screen and (max-width: 768px) {
+				main {
+					width: 100%;
+					max-width: 100%;
+					margin: 0 auto;
+					padding: 0;
+				}
+				.prose :where(ul > li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+					padding: 0;
+				}
+
+				.prose :where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+					padding-left: 1em;
+				}
+			}
 		
 
 
 		</style>
+
 	</head>
 
 	<body class="dark:bg-[#080E11] bg-slate-50">
-
 		<Header />
 		<main >
 			<article class="">

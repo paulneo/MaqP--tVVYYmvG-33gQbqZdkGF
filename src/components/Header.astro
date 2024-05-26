@@ -31,42 +31,54 @@ import { Icon } from 'astro-icon/components'
 <div class="fixed bg-white dark:bg-[#080E11] h-[100vh] w-0 overflow-hidden z-40 ease-in duration-200" data-header-status='closed' id="menuMovil"> 
 	<div class=" w-full">
 		<div class="flex flex-col items-center text-slate-900 dark:text-white  font-semibold lg:flex w-full py-4">
-			<a class="p-4 hover:bg-primary-400/[.08] w-full" href="/">Inicio</a>
-      <a class="p-4 hover:bg-primary-400/[.08] w-full" href="/blog">Blog</a>
-      <a class="p-4 hover:bg-primary-400/[.08] w-full" href="/categories">Categorías</a>
-      <a class="p-4 hover:bg-primary-400/[.08] w-full" href="/news">Noticias</a>
-      <a class="p-4 hover:bg-primary-400/[.08] w-full" href="/about">Nosotros</a>
+			<a class="p-4 hover:bg-primary-400/[.08] w-full" href="/" data-astro-reload>Inicio</a>
+      <a class="p-4 hover:bg-primary-400/[.08] w-full" href="/blog"data-astro-reload >Blog</a>
+      <a class="p-4 hover:bg-primary-400/[.08] w-full" href="/categories"data-astro-reload >Categorías</a>
+      <a class="p-4 hover:bg-primary-400/[.08] w-full" href="/news"data-astro-reload >Noticias</a>
+      <a class="p-4 hover:bg-primary-400/[.08] w-full" href="/about"data-astro-reload >Nosotros</a>
 
 		</div>
 	</div>
 </div>
 
-<script>
-	const bars: HTMLElement | null = document.getElementById('bars')
-  const xmark = document.getElementById('xmark')
-  const headerNav = document.getElementById('header-nav')
-  const menuMovil = document.getElementById('menuMovil')
+<script is:inline>
+  
+	document.addEventListener('DOMContentLoaded', function() {
+      const initializeMenu = function() {
+        const bars = document.getElementById('bars');
+        const xmark = document.getElementById('xmark');
+        const menuMovil = document.getElementById('menuMovil');
 
+        if (bars && xmark && menuMovil) {
+          bars.addEventListener('click', () => {
+            bars.classList.add('hidden');
+            bars.classList.remove('block');
+            xmark.classList.add('block');
+            xmark.classList.remove('hidden');
+            menuMovil.classList.add('w-full');
+            menuMovil.classList.remove('w-0');
+          });
 
-  bars.addEventListener('click', () => {
+          xmark.addEventListener('click', () => {
+            bars.classList.remove('hidden');
+            bars.classList.add('block');
+            xmark.classList.add('hidden');
+            xmark.classList.remove('block');
+            menuMovil.classList.remove('w-full');
+            menuMovil.classList.add('w-0');
+          });
+        } else {
+          console.error('Element(s) not found');
+        }
+      };
 
-    bars.classList.add('hidden')
-    bars.classList.remove('block')
-    xmark.classList.add('block')
-    xmark.classList.remove('hidden')
-    menuMovil.classList.add('w-full')
-    menuMovil.classList.remove('w-0')
+      // Ejecutar al cargar el DOM
+      initializeMenu();
 
-  }) 
+      // Re-ejecutar después de cada transición de vista (Astro specific)
+      document.addEventListener('astro:afterload', initializeMenu);
+    });
 
-  xmark.addEventListener('click', () => {
-    bars.classList.remove('hidden')
-    bars.classList.add('block')
-    xmark.classList.add('hidden')
-    xmark.classList.remove('block')
-    menuMovil.classList.remove('w-full')
-    menuMovil.classList.add('w-0')
-  }) 
 </script>
 <style>
 
