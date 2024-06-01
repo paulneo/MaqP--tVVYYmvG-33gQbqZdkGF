@@ -1,5 +1,5 @@
 ---
-title: "Guí de motores diésel: Sistema de combustible, admisión y escape"
+title: "Guía de motores diésel: Sistema de combustible, admisión y escape"
 description: "Guía completa para el mantenimiento y ajuste de motores diésel. Aprende sobre sistemas de combustible, admisión y escape con procedimientos detallados y prácticos, diseñados para mejorar el rendimiento del motor y asegurar su eficiencia."
 pubDate: "May 29 2024"
 heroImage: "/mecanica_automotriz/moto_diesel2.png"
