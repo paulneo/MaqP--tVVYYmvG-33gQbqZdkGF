@@ -9,17 +9,17 @@ category: maquinarias_pesadas
 
 El mecanizado del acero es un conjunto de procesos industriales que se aplican al acero para conformarlo en piezas de diversas formas y tamaños. Estos procesos son fundamentales en la fabricación de una amplia gama de productos, desde estructuras metálicas hasta componentes de precisión para maquinaria.
 
-### Acero Laminado
+## Acero Laminado
 
 - Aplicación: Utilizado en la construcción de estructuras metálicas y obras públicas.
 - Proceso: Involucra calentar lingotes de acero fundido y someterlos a un proceso de estiramiento y desbaste en un tren de laminación para formar perfiles normalizados.
 
-### Acero Forjado
+## Acero Forjado
 
 - Características: Mejora la calidad metalúrgica y las propiedades mecánicas del acero.
 - Beneficio: Reduce la cantidad de material a eliminar en procesos posteriores de mecanizado.
 
-### Acero Corrugado
+## Acero Corrugado
 
 - Uso: Especialmente en construcción para armar hormigón armado y cimentaciones.
 - Ventajas: Alta ductilidad y soldabilidad, lo que facilita las operaciones de corte y doblado.

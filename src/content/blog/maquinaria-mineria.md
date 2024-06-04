@@ -15,19 +15,19 @@ category: maquinarias_pesadas
 
 La selección de maquinaria para minería inicia una vez identificado un yacimiento mineral viable económicamente. Esta etapa incluye determinar la cantidad de equipos necesarios basándose en varios criterios como la ubicación geográfica, características de la mineralización y parámetros de explotación. Los vehículos se eligen según el tamaño del banco, la rampa y la producción esperada. Se utilizan análisis multicriterio para evaluar cada equipo específico.
 
-### Costes operativos
+## Costes operativos
 
 Los costes operativos engloban todos los gastos relacionados con la extracción del mineral, incluyendo la mano de obra, mantenimiento y combustibles. Los costes de mantenimiento son especialmente complejos y abarcan reparaciones, piezas de recambio, consumibles y costes de personal. Estos se calculan generalmente basados en los costes básicos de operación por hora para cada tipo de equipo.
 
-### Tiempos de operación
+## Tiempos de operación
 
 Los tiempos de operación se calculan sumando los tiempos unitarios de cada etapa del ciclo minero. La perforación y voladura son las fases que más tiempo consumen, determinando el ritmo de operación. Las fases de carga y transporte, si están bien planificadas, pueden ser rápidas y no impactar significativamente en el tiempo total de operación. También se consideran tiempos adicionales como los de repostaje, cambio de operadores y reparaciones imprevistas.
 
-### Modelo de planificación de maquinaria
+## Modelo de planificación de maquinaria
 
 Un ejemplo práctico de planificación se detalla, mostrando la incorporación progresiva de equipos y el reemplazo basado en la vida útil estimada. Esto es crucial para nuevos proyectos, permitiendo estimar las necesidades de capital y los momentos críticos en la operación minera.
 
-### Flota de vehículos mineros
+## Flota de vehículos mineros
 
 La elección de la flota minera depende de las limitaciones de espacio y la dureza de la roca, lo cual influye en la decisión de utilizar explosivos para el arranque. Las cargadoras y volquetes son fundamentales para el transporte del mineral hasta la planta de tratamiento. Se destacan varios tipos de cargadoras y volquetes, cada uno con configuraciones específicas adaptadas a las necesidades de la explotación.
 
@@ -42,13 +42,13 @@ La maquinaria auxiliar, como perforadoras, bulldozers y motoniveladoras, juega u
 - Motoniveladora y/o Bulldozer
 - Vehículos Auxiliares
 
-#### Cargadoras
+## Cargadoras
 
 - Palas: Operaciones auxiliares
 - Excavadoras de cables: Minería de gran tamaño
 - Excavadoras hidráulicas: Minería de tamaño medio o pequeño
 
-#### Palas
+## Palas
 
 - Palas montadas sobre orugas.
 - Palas montadas sobre ruedas.
@@ -62,14 +62,14 @@ Los parámetros que influyen en la productividad de una la cargadora son:
 - Distancia de maniobra.
 - Tipo de carga en el cazo.
 
-#### Excavadoras de cables
+## Excavadoras de cables
 
 - Productividad elevada
 - Coste unitario bajo
 - Facilidad de mantenimiento
 - Disponibilidad alta
 
-#### Excavadoras hidráulicas
+## Excavadoras hidráulicas
 
 Siguiendo este criterio existen dos tipos de excavadoras hidráulicas:
 
@@ -84,7 +84,7 @@ Siguiendo este criterio existen dos tipos de excavadoras hidráulicas:
 
 **Comparativa entre cargadoras:** A la hora de seleccionar un equipo u otro para operar en un tajo deben tenerse en cuenta las características de cada tipo de equipo, el tamaño y la adaptación al terreno existente.
 
-#### Volquetes
+## Volquetes
 
 Las principales ventajas
 
@@ -112,7 +112,7 @@ Las principales ventajas
 - Modelos de neumáticos
 - Diseño de la cabina
 
-### Maquinaria auxiliar
+## Maquinaria auxiliar
 
 En las explotaciones a cielo abierto existe una serie de elementos de maquinaria, llamada maquinaria auxiliar que puede no estar directamente relacionada con la producción u otras máquinas de arranque y transporte que no suelen estar aplicadas para cortas metálicas.
 Algunas de estas máquinas son:

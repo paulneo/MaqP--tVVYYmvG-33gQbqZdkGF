@@ -21,7 +21,7 @@ La vibración de una máquina es el movimiento oscilatorio de sus componentes. E
 
 Las fórmulas de conversión son esenciales para interpretar los datos de vibración recopilados. Permiten convertir una medida de vibración en otra, facilitando un análisis más versátil. Las siguientes son las fórmulas clave para las conversiones entre desplazamiento, velocidad y aceleración:
 
-##### De Desplazamiento a Velocidad:
+#### De Desplazamiento a Velocidad:
 
 Donde `V` es la velocidad en ips, `f` es la frecuencia en Hz, y `D` es el desplazamiento en mils.
 
@@ -29,7 +29,7 @@ Donde `V` es la velocidad en ips, `f` es la frecuencia en Hz, y `D` es el despla
 V = 0.0031416 _ f _ D
 ```
 
-##### De Velocidad a Aceleración:
+#### De Velocidad a Aceleración:
 
 Donde `A` es la aceleración en g's, `V` es la velocidad en ips, y `f` es la frecuencia en Hz.
 
@@ -37,7 +37,7 @@ Donde `A` es la aceleración en g's, `V` es la velocidad en ips, y `f` es la fre
 V = 0.0031416 _ f _ D
 ```
 
-##### De Desplazamiento a Aceleración:
+#### De Desplazamiento a Aceleración:
 
 Donde `A` es la aceleración en g's, `D` es el desplazamiento en mils, y `f` es la frecuencia en Hz.
 
@@ -67,6 +67,6 @@ El análisis del movimiento armónico simple proporciona un modelo para entender
 
 La interpretación de la amplitud de la vibración es vital para determinar la severidad de un problema. La conversión entre desplazamiento, velocidad y aceleración permite a los ingenieros seleccionar la medida más relevante para el tipo específico de análisis que están realizando, adaptando su enfoque al tipo de fallo mecánico que buscan identificar.
 
-## Conclusión
+#### Conclusión
 
 Al profundizar en cada uno de estos temas, se revela la complejidad y la profundidad del análisis de vibraciones como herramienta en el mantenimiento predictivo. Este conocimiento permite a los profesionales no solo diagnosticar y resolver problemas existentes sino también anticipar fallos antes de que ocurran, garantizando así operaciones más seguras, eficientes y rentables. Este enfoque detallado y técnico asegura que el mantenimiento predictivo continúe siendo una estrategia indispensable en la industria moderna, impulsando la fiabilidad y la eficiencia a nuevos niveles.

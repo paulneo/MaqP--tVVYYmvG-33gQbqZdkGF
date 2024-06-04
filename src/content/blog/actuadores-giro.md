@@ -9,13 +9,13 @@ category: maquinarias_pesadas
 
 Los actuadores de giro transforman la energía neumática en energía mecánica de rotación, clasificándose según su capacidad de giro en actuadores de giro limitado y motores neumáticos. Esta sección se enfoca en describir detalladamente los principales tipos de actuadores de giro disponibles en el mercado.
 
-#### Actuadores de Giro
+## Actuadores de Giro
 
 - Actuadores de Giro Limitado: Proporcionan movimiento de giro pero no completan una revolución completa, excepto en mecánicas particulares como el piñón-cremallera. Se encuentran versiones de simple y doble efecto para ángulos de 90º, 180º... hasta aproximadamente 300º.
 
 - Motores Neumáticos: Ofrecen movimiento rotatorio constante y se caracterizan por su alta velocidad de rotación.
 
-#### Tipos Principales de Actuadores de Giro
+### Tipos Principales de Actuadores de Giro
 
 1. Actuador de Paleta:
    - **Movimiento**: Raramente supera los 270º, incorpora topes mecánicos para regulación de giro.
@@ -34,7 +34,7 @@ Los actuadores de giro transforman la energía neumática en energía mecánica 
    - **Tipología**: Mayormente del tipo "de paletas" por su construcción sencilla y peso reducido.
    - **Potencia y RPM**: Fabricados para potencias de 0.1 a 20 CV, con revoluciones en vacío de 1000 a 5000 r.p.m., ideales para herramientas portátiles neumáticas
 
-##### Tabla de Comparación
+#### Tabla de Comparación
 
 | Tipo de Actuador          | Características                                                     | Aplicaciones                                                       |
 | ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |

@@ -33,6 +33,6 @@ La carburación ha sido tradicionalmente el método utilizado para mezclar aire 
 
 El sistema de ignición es responsable de encender la mezcla aire-combustible en el momento preciso para optimizar la combustión. Los avances tecnológicos han llevado desde sistemas de encendido mecánicos hasta sistemas electrónicos que ofrecen un control más exacto y reducen la necesidad de mantenimiento.
 
-## Conclusión
+#### Conclusión
 
 La alimentación en motores de ciclo Otto, especialmente en tractores, es un proceso complejo que requiere precisión y cuidado. Los avances en los sistemas de filtración, carburación, inyección de combustible y sistemas de ignición han mejorado significativamente el rendimiento, la eficiencia y la durabilidad de estos motores, asegurando su operatividad en las condiciones más demandantes.

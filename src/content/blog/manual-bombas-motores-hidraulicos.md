@@ -11,7 +11,7 @@ category: maquinarias_pesadas
 
 - **Principios Operativos:** Las bombas y motores hidráulicos son dispositivos cruciales en maquinaria pesada, responsables de convertir la energía mecánica en energía hidráulica y viceversa. Este proceso se logra mediante el desplazamiento de fluidos bajo presión, un concepto fundamental en la operación de equipos como excavadoras, cargadores y otras máquinas de construcción y minería.
 
-#### Tipos de Bombas:
+### Tipos de Bombas:
 
 - **Bomba de Engranajes:** Estas bombas contienen dos engranajes que interaccionan para bombear el fluido. Son apreciadas por su simplicidad y durabilidad, pero pueden ser ruidosas y menos eficientes a altas presiones.
 - **Bomba de Paletas:** Utilizan un rotor con paletas extensibles que se ajustan a la forma de una cámara ovalada para bombear el fluido. Estas bombas son más eficientes y ofrecen un flujo más uniforme que las de engranajes.
@@ -21,14 +21,14 @@ category: maquinarias_pesadas
 
 - **Componentes Claves:** Cada tipo de bomba consiste en componentes críticos como pistones, rotores, paletas, engranajes, sellos, y casquillos, cada uno fabricado con materiales específicos para resistir diferentes condiciones operativas.
 
-#### Selección de Materiales:
+### Selección de Materiales:
 
 - **Aleaciones de Acero para Engranajes y Pistones:** Seleccionados por su resistencia al desgaste y capacidad para soportar cargas pesadas.
 - **Aluminio para Carcasas:** Elegido por su ligereza y buena conductividad térmica, ayudando a disipar el calor durante la operación.
 
 ## 3. Diagnóstico de Fallas
 
-#### Procedimiento de Diagnóstico:
+### Procedimiento de Diagnóstico:
 
 - **Inspección Visual:** Buscar signos de desgaste anormal, corrosión, o daño evidente que pueda indicar problemas subyacentes.
 - **Análisis de Vibraciones y Ruido:** Las bombas y motores que operan fuera de sus especificaciones normales pueden producir vibraciones o ruidos inusuales que son indicativos de problemas internos.
@@ -36,7 +36,7 @@ category: maquinarias_pesadas
 
 ## 4. Mantenimiento Predictivo y Preventivo
 
-#### Recomendaciones de Mantenimiento:
+### Recomendaciones de Mantenimiento:
 
 - **Verificaciones de Rutina:** Incluyen la revisión de niveles de fluido, la inspección de filtros, y el monitoreo de la temperatura operacional.
 - **Programación de Servicios:** Basado en las horas de operación o calendario, lo que ocurra primero, para asegurar que las bombas y motores están siendo mantenidos antes de que ocurran fallos.
@@ -49,6 +49,6 @@ category: maquinarias_pesadas
 
 **Aplicación de Conocimientos:** El uso efectivo de este manual permite a los técnicos diagnosticar y resolver problemas de manera eficiente, lo cual es esencial para minimizar el tiempo de inactividad y maximizar la productividad.
 
-## Conclusión
+#### Conclusión
 
 Este manual técnico es una herramienta esencial para cualquier profesional involucrado en el mantenimiento de maquinaria pesada. Proporciona un enfoque sistemático y detallado para entender y diagnosticar problemas en sistemas hidráulicos, esencial para mantener la operatividad

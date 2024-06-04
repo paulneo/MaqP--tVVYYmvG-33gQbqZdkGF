@@ -13,7 +13,7 @@ tags:
 category: maquinarias_pesadas
 ---
 
-### Importancia de la Lubricación
+## Importancia de la Lubricación
 
 Una lubricación apropiada es fundamental para el correcto funcionamiento del motor. El sistema de lubricación de un motor moderno cumple tres objetivos principales:
 
@@ -54,11 +54,11 @@ Los sistemas de aceite de lubricación requieren el uso de aceite limpio, libre 
 - Filtros de Aceite
   Los filtros de aceite de Caterpillar eliminan partículas sólidas del aceite mediante filtración mecánica. Pueden ser de elemento reemplazable o de tipo enroscable, y tienen una válvula de derivación que proporciona lubricación adecuada si el filtro se tapona.
 
-### Flujo Básico del Aceite de Lubricación
+## Flujo Básico del Aceite de Lubricación
 
 El flujo básico comienza con la bomba de engranaje que extrae el aceite del sumidero a través del colador grueso de la campana de succión. Luego, el aceite se bombea hacia el enfriador de aceite, y después hacia los filtros de aceite. El aceite filtrado fluye por las galerías del bloque del motor, lubricando los componentes necesarios antes de retornar al sumidero.
 
-#### Sistema de aceite de prelubricación del 3600 – Modelo 3608
+### Sistema de aceite de prelubricación del 3600 – Modelo 3608
 
 - Bomba de aceite
 - Bomba de prelubricación
@@ -80,7 +80,7 @@ El flujo básico comienza con la bomba de engranaje que extrae el aceite del sum
 
 * Flujo en dirección opuesta durante la prelubricación
 
-#### sistema de aceite de prelubricación del 3600 – Modelo 3612
+### sistema de aceite de prelubricación del 3600 – Modelo 3612
 
 - Bomba de aceite
 - Bomba de prelubricación
@@ -111,19 +111,19 @@ El flujo básico comienza con la bomba de engranaje que extrae el aceite del sum
 - Sistema de prelubricación redundante
 - Sistema de prelubricación de arranque rápido
 
-#### Sistema de Prelubricación Intermitente
+## Sistema de Prelubricación Intermitente
 
 El sistema de prelubricación intermitente proporciona un rendimiento adecuado para aplicaciones que no requieren un arranque rápido. Utiliza una bomba instalada en el motor que se conecta inmediatamente antes del arranque. Este sistema opera a una velocidad de flujo y presión mayores que el sistema continuo, y no se recomienda su uso prolongado para evitar un posible bloqueo hidráulico durante el arranque.
 
-#### Sistema de Prelubricación Continuo
+## Sistema de Prelubricación Continuo
 
 La prelubricación continua se usa en aplicaciones de arranque inmediato y generalmente junto con sistemas de calentamiento del agua de las camisas y del aceite de lubricación. Este sistema opera continuamente cuando el motor no está en funcionamiento, asegurando que el aceite esté disponible en los cojinetes en todo momento, permitiendo así el arranque inmediato del motor.
 
-#### Sistema de Prelubricación Redundante
+## Sistema de Prelubricación Redundante
 
 Combina los sistemas de prelubricación continuo e intermitente, ofreciendo las ventajas de ambos. La bomba continua mantiene el motor preparado para el arranque inmediato, y la bomba intermitente funciona si la bomba continua falla. Este sistema es ideal para aplicaciones de arranque en frío o generadores de emergencia.
 
-#### Sistema de Prelubricación de Arranque Rápido
+## Sistema de Prelubricación de Arranque Rápido
 
 Consta de dos bombas eléctricas de prelubricación: una bomba continua y una bomba de refuerzo. Mientras el motor no está en funcionamiento, la bomba continua mantiene el nivel de aceite, y al arrancar el motor, la bomba de refuerzo eleva la presión del aceite. Este sistema permite un ciclo de arranque rápido, generalmente de 5 a 7 segundos con aceite a 25°C.
 

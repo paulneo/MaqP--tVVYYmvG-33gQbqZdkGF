@@ -9,7 +9,7 @@ category: maquinarias_pesadas
 
 En los motores de los camiones, el sistema de combustible está diseñado para separar y eliminar el agua acumulada. Esta agua puede provenir de la condensación o del combustible mismo. Para garantizar el óptimo funcionamiento y la longevidad del motor, es crucial llevar a cabo el vaciado de agua y la localización de averías de manera eficiente.
 
-#### Vaciado de Agua en el Sistema de Combustible
+## Vaciado de Agua en el Sistema de Combustible
 
 - Versión Antigua con Bomba de Combustible Eléctrica
 
@@ -19,11 +19,11 @@ En las versiones antiguas de camiones, el vaciado de agua del sistema de combust
 
 En las versiones más recientes, se utiliza una bomba manual para el vaciado de agua. Al igual que con la bomba eléctrica, se debe cumplir con ciertos criterios para que el proceso de vaciado se active, como que el vehículo esté inmóvil y que el freno de estacionamiento esté aplicado.
 
-#### Localización de Averías
+## Localización de Averías
 
 Para el diagnóstico eficaz de averías en el sistema de vaciado de agua, se proporcionan una serie de pasos detallados. Estos incluyen la verificación del estado de los indicadores, la limpieza de las válvulas y depósitos del separador de agua y la revisión de la conexión eléctrica de la bomba y la válvula de vaciado
 
-#### Herramientas y Equipamiento Especializado
+## Herramientas y Equipamiento Especializado
 
 Para realizar diagnósticos precisos, se recomienda el uso de herramientas especializadas proporcionadas, como adaptadores y multímetros, que facilitan las mediciones de tensión y la comprobación de la integridad del circuito.
 

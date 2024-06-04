@@ -8,11 +8,11 @@ tags:
 category: maquinarias_pesadas
 ---
 
-#### ¿Por Qué es Necesario Usar Anticongelante?
+## ¿Por Qué es Necesario Usar Anticongelante?
 
 El anticongelante es esencial para evitar daños en el motor causados por la congelación del agua en climas fríos. Mientras que el agua pura se congela a 0°C, la adición de anticongelante reduce este punto de congelación. Sin embargo, no se puede usar sal como anticongelante debido a que acelera la corrosión del motor, por lo que se utilizan compuestos específicos diseñados para este fin.
 
-#### Relación Entre la Proporción de Anticongelante y el Punto de Congelación
+### Relación Entre la Proporción de Anticongelante y el Punto de Congelación
 
 Aumentar la cantidad de anticongelante puede bajar el punto de congelación hasta cierto límite; después de este punto, añadir más anticongelante puede en realidad aumentar el punto de congelación. Para determinar la proporción adecuada de anticongelante, se debe considerar la temperatura más baja registrada en el área y reducirla en 10°C como margen de seguridad.
 
@@ -29,7 +29,7 @@ Hay diferentes tipos de anticongelantes cuyo punto de ebullición varía según 
 | Precauciones para el uso |El alcohol se evapora fácilmente y el nivel de refrigerante baja. |Si el glycol se evapora, añada agua o anticongelante para conservar|
 | Motores incapaces de usar anticongelante| Los motores Cummins (reaccionan con el agente anticorrosivo del inhibidor de corrosión y desciende el efecto anticorrosivo) |Ninguno en particular|
 
-### Corrosión y Anticongelante
+## Corrosión y Anticongelante
 
 Los anticongelantes a base de glycol son corrosivos por naturaleza. Por esta razón, contienen inhibidores de corrosión, cuya efectividad disminuye con el tiempo. Es recomendable drenar y reemplazar el anticongelante periódicamente según las especificaciones del fabricante para mantener la integridad del motor.
 

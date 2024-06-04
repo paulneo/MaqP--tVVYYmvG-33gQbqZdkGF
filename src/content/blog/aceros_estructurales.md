@@ -9,18 +9,18 @@ category: maquinarias_pesadas
 
 El acero estructural es fundamental en el mundo de la ingeniería y la construcción, dada su combinación de resistencia, ductilidad y soldabilidad. Este material es esencial en la creación de estructuras que demandan alta durabilidad y resistencia a diversas condiciones ambientales y de carga.
 
-#### Composición del Acero Estructural
+## Composición del Acero Estructural
 
 El acero estructural está compuesto principalmente de hierro, con un pequeño porcentaje de carbono, que generalmente no supera el 2%. La adición de otros elementos como silicio, fósforo, azufre y oxígeno, en cantidades controladas, mejora sus propiedades mecánicas y su resistencia a la corrosión. Específicamente, el acero estructural al carbono es un acero laminado en caliente diseñado para fines estructurales, con un límite de fluencia de 250 megapascales, equivalente a aproximadamente 27549 kg/cm²​​.
 
-#### Propiedades y Cualidades del Acero Estructural
+### Propiedades y Cualidades del Acero Estructural
 
 - Alta Resistencia: Posee una resistencia a la tracción entre 50,000 a 70,000 lbf/in², lo cual puede incrementarse mediante trabajo en frío, aleaciones y tratamientos térmicos.
 - Ductilidad: Su ductilidad permite realizar operaciones de formado en frío y facilita la soldadura, expandiendo su rango de aplicaciones.
 - Soldabilidad: Su facilidad para ser soldado permite la realización de estructuras complejas y de gran tamaño.
 - Resistencia a la Corrosión: Bajo condiciones normales, presenta una buena resistencia a la corrosión, lo que le hace ideal para muchas aplicaciones estructurales​​.
 
-#### Clasificación de los Acero Estructurales
+### Clasificación de los Acero Estructurales
 
 El acero estructural, según su forma, se clasifica en:
 

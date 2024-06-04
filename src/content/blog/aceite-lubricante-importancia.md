@@ -7,15 +7,15 @@ tags: ["Aceite Lubricante", "Maquinaria Pesada", "Mantenimiento"]
 category: maquinarias_pesadas
 ---
 
-### La Lubricación y el Aceite Lubricante
+## La Lubricación y el Aceite Lubricante
 
 La lubricación juega un papel crucial en la protección y eficiencia de la maquinaria, reduciendo el desgaste por fricción entre componentes móviles. Un aceite lubricante es un líquido que, al interponerse entre dos superficies en movimiento, previene su desgaste directo. La refinación del petróleo produce aceites básicos, que aunque son naturalmente lubricantes, se potencian con aditivos para mejorar su rendimiento.
 
-#### Composición del Aceite Lubricante
+### Composición del Aceite Lubricante
 
 Un aceite lubricante es el resultado de la mezcla de aceite básicos con compuestos aditivos, un aceite de manera natural es lubricante pero para que cumplan mejor su función es necesario que se les aplique estos aditivos los cuales le dan características especiales.
 
-#### Aceite Básico
+### Aceite Básico
 
 Un aceite básico es un fluido de origen mineral o sintético, con propiedades lubricantes, el cual se usa para hacer aceite y grasas pero no tiene características especiales de protección.
 Estos tienen 4 tipos de origen, los cuales son:
@@ -26,15 +26,15 @@ Estos tienen 4 tipos de origen, los cuales son:
 - Origen Sintético
   El aceite básico proviene del petróleo se obtiene a partir de la refinación del petróleo el cual se extrae del subsuelo y se somete a procesos de refinación de donde se obtiene el aceite básico.
 
-#### Refinación
+### Refinación
 
 Es una serie de procesos físicos y químicos a los cuales se le somete al petróleo crudo, con el fin de obtener los aceites básicos.
 
-#### Paranínficos
+### Paranínficos
 
 Son aceites básicos con alto contenido de saturados los cuales pueden resistir los efectos de las grandes temperaturas tales como oxidación perdida de viscosidad, volatilidad y consumo de aceite.
 
-#### Nafténicos
+### Nafténicos
 
 Son aceites básicos por su estructura cíclica presentan un alto desempeño a bajas temperaturas y buenas propiedades dieléctricas. Mayormente se aplican en aceites para motores de transformadores y refrigeración.
 
@@ -64,12 +64,12 @@ Los lubricantes no solo facilitan el deslizamiento entre superficies, sino que t
 | Protección contra la corrosión                  | \*\*\*   | \*\*   | \*\*     | -      |
 | Rango de temperatura de operación               | \*\*     | \*\*   | \*\*\*\* | \*\*\* |
 
-#### Leyenda
+### Leyenda
 
 ```
 Excelente: **** Muy bueno: *** Bueno: ** Regular: * Inaplicable: -
 ```
 
-### Conclusión:
+#### Conclusión:
 
 El aceite lubricante es fundamental para el mantenimiento y la eficiencia de la maquinaria pesada. La selección adecuada del tipo de aceite, basada en su composición y los aditivos específicos, es clave para maximizar la protección y el rendimiento del equipo.

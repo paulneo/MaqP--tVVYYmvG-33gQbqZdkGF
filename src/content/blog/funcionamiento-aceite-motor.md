@@ -7,11 +7,11 @@ tags: ["Aceites de Motor", "Mantenimiento de Motores", "Aditivos de Aceite"]
 category: maquinarias_pesadas
 ---
 
-### Cómo Funciona el Aceite de Motor en un Motor de Combustión Interna
+## Cómo Funciona el Aceite de Motor en un Motor de Combustión Interna
 
 El aceite de motor, almacenado en el cárter, es impulsado a través de una malla y un filtro por una bomba de aceite, eliminando contaminantes y partículas extrañas. Luego, se distribuye a través de pasajes dentro del bloque del motor hacia los cojinetes, el mecanismo de válvulas, los pistones, y las paredes de las camisas, antes de regresar al cárter. Una válvula de desvío garantiza una lubricación uniforme, incluso cuando el filtro está obstruido, asegurando que todas las partes del motor sean alcanzadas.
 
-#### Objetivos y Aditivos del Aceite de Moto
+## Objetivos y Aditivos del Aceite de Moto
 
 Los aditivos son esenciales para mejorar las características de funcionamiento del aceite de motor, permitiendo su actuación en situaciones críticas. Estos aditivos, que deben estar en proporciones adecuadas para evitar interacciones negativas, proporcionan al aceite del motor propiedades mejoradas esenciales para su rendimiento:
 
@@ -23,7 +23,7 @@ Los aditivos son esenciales para mejorar las características de funcionamiento 
 - Antiespumantes: Previenen la formación de espuma.
 - Modificadores de viscosidad: Estabilizan la viscosidad del aceite frente a cambios de temperatura.
 
-#### Funciones y beneficios de los principales aditivos en el aceite de motor
+## Funciones y beneficios de los principales aditivos en el aceite de motor
 
 | Tipo de Aditivo              | Función Principal                                         | Beneficios Clave                                                                                                                                  |
 | ---------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,6 +34,6 @@ Los aditivos son esenciales para mejorar las características de funcionamiento 
 | Anticorrosivo                | Contrarrestar los productos corrosivos dentro del motor   | Protege las partes metálicas del motor contra la corrosión causada por humedad y ácidos, minimizando el desgaste abrasivo                         |
 | Modificador de la Viscosidad | Reducir las variaciones de viscosidad con la temperatura  | Hace que el aceite sea más fluido en condiciones frías y más grueso a altas temperaturas, optimizando el funcionamiento del motor                 |
 
-### Conclusión:
+#### Conclusión:
 
 El aceite de motor juega un papel crítico en el funcionamiento y mantenimiento de los motores, especialmente en los motores Caterpillar. La selección adecuada de aceite, enriquecido con una combinación precisa de aditivos, no solo asegura el rendimiento óptimo del motor sino que también contribuye significativamente a la prolongación de su vida útil. El mantenimiento regular y el entendimiento de cómo los diferentes aditivos mejoran el rendimiento del aceite pueden reducir los tiempos de inactividad y los costos de reparación, asegurando que los motores operen en sus condiciones más eficientes.

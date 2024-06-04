@@ -9,13 +9,13 @@ category: maquinarias_pesadas
 
 La selección y mantenimiento de aceites lubricantes es fundamental para el rendimiento y la longevidad de la maquinaria pesada. Este artículo proporciona una visión detallada sobre la composición, funciones, y criterios de selección de los aceites lubricantes, basándose en información de un manual especializado de Komatsu.
 
-### Composición y Funciones:
+## Composición y Funciones:
 
-#### Composición del Aceite Lubricante
+### Composición del Aceite Lubricante
 
 Los aceites lubricantes están compuestos por **aceites base y aditivos**.
 
-#### Aceites de base:
+### Aceites de base:
 
 El aceite lubricante comienza con el aceite de base o materia prima. Los aceites de base son de origen mineral (petróleo) o de origen sintético. El aceite de base proporciona los requisitos básicos de lubricación de un motor, Sin embargo, a menos que se complemente son aditivos, el aceite de base se degradará y deteriorará rápidamente en algunas condiciones de operación. Los aceites crudos con mayor contenido de parafina se usan con mayor frecuencia en las mezclas de aceite para motores.
 
@@ -24,7 +24,7 @@ El aceite lubricante comienza con el aceite de base o materia prima. Los aceites
   fácilmente a un costo moderado.
 - **Aceites sintéticos:** Los aceites de base sintéticos se forman por procesos en los cuales materiales con una composición química determinada reaccionan químicamente para producir un compuesto con propiedades planificadas y predecibles. Estos aceites de base tienen índices de viscosidad mucho más altos que los aceites de base minerales y puntos de fluidez considerablemente más bajos. La principal desventaja de los aceites sintéticos es que su precio es demasiado alto y sus existencias son limitadas.
 
-#### Aditivos
+### Aditivos
 
 Los aditivos refuerzan o modifican algunas características del aceite de base. Básicamente permiten que el aceite cumpla con requisitos que van más allá de los límites del aceite de base.
 Los aditivos más comunes son: detergentes, inhibidores de oxidación, dispersantes, agentes que aumentan la alcalinidad, agentes antidesgaste, reductores del punto de fluidez y mejoradores del índice de viscosidad.

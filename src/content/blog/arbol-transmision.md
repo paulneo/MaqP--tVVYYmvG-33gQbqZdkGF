@@ -10,11 +10,11 @@ category: maquinarias_pesadas
 
 La transmisión es una parte crucial del sistema de propulsión de cualquier vehículo, especialmente en maquinaria pesada. Este sistema se encarga de transmitir la potencia generada por el motor a las ruedas o a otros mecanismos de movimiento. En este blog, nos centraremos en uno de los componentes clave del sistema de transmisión: el árbol de transmisión.
 
-### ¿Qué es el Árbol de Transmisión?
+## ¿Qué es el Árbol de Transmisión?
 
 El árbol de transmisión es el componente encargado de transmitir la energía motriz desde la transmisión hasta el puente trasero del vehículo. Dependiendo del tipo de vehículo y su aplicación, los árboles de transmisión pueden variar significativamente en tamaño y longitud. La instalación y el número de árboles de transmisión también pueden variar, con algunos vehículos utilizando hasta tres árboles para transmitir la potencia de manera eficiente.
 
-### Función y Características
+## Función y Características
 
 El árbol de transmisión es esencialmente un tubo de acero diseñado para ser lo suficientemente resistente como para soportar el máximo par motor que puede transmitirse al puente trasero. Un árbol de transmisión tubular es preferible a un eje sólido debido a su mayor dureza y elasticidad, lo que le permite soportar mejor los grandes ángulos de basculamiento sin romperse.
 
@@ -35,13 +35,13 @@ Un árbol de transmisión consta de varios componentes fundamentales que permite
 - **Plato**
   Los platos conectan el árbol de transmisión a la caja de cambios, permitiendo la transmisión de potencia.
 
-### Consideraciones de Instalación
+## Consideraciones de Instalación
 
-#### Extremos del Tubo y del Manguito
+### Extremos del Tubo y del Manguito
 
 Debido al movimiento del puente trasero, la distancia entre la caja de cambios y el puente trasero varía. Para absorber este movimiento, el árbol de transmisión se conecta con un retén deslizante de ranuras en los extremos del tubo y del manguito.
 
-#### Cojinete de Apoyo
+### Cojinete de Apoyo
 
 En vehículos con más de un árbol de propulsión, se utiliza un cojinete de apoyo central para guiar y sostener los árboles. Este cojinete generalmente está "precintado de por vida" y ubicado en una cubierta de caucho con fijaciones.
 
@@ -55,6 +55,6 @@ Las ranuras del árbol de transmisión deben engrasarse regularmente para reduci
 
 Al instalar el árbol de transmisión, es importante asegurarse de que los ángulos de la junta universal no presenten variaciones excesivas. Los ángulos deben ser lo más pequeños posible para minimizar las variaciones de velocidad y prolongar la vida útil de las juntas universales.
 
-### Conclusión
+##### Conclusión
 
 El árbol de transmisión es un componente vital en el sistema de transmisión de la maquinaria pesada, asegurando la transferencia eficiente de potencia desde el motor hasta las ruedas. Su diseño y mantenimiento adecuados son esenciales para el rendimiento y la durabilidad del vehículo. Al comprender los componentes y las consideraciones de instalación del árbol de transmisión, los operadores y técnicos pueden garantizar un funcionamiento óptimo de la maquinaria pesada.

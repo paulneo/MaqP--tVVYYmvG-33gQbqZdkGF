@@ -11,7 +11,7 @@ En el ámbito industrial, el análisis de fallas en maquinaria es una disciplina
 
 El análisis de fallas es un proceso sistemático destinado a investigar, analizar y determinar las causas de fallos en los componentes de maquinaria. Este proceso comienza cuando un componente no logra cumplir con su función esperada, lo que podría resultar en un cese de operaciones o incluso accidentes peligrosos.
 
-### Pasos Clave en el Análisis de Fallas
+## Pasos Clave en el Análisis de Fallas
 
 - **Identificación de la falla:** Reconocer que ha ocurrido un fallo y precisar en qué componente específico.
 - **Colección de datos:** Recopilar toda la información posible sobre el contexto operativo en el que ocurrió la falla, incluyendo las condiciones de trabajo y los antecedentes de mantenimiento.
@@ -19,7 +19,7 @@ El análisis de fallas es un proceso sistemático destinado a investigar, analiz
 - **Determinación de causas raíz:** Usar la información y los datos recabados para determinar por qué falló el componente.
 - **Implementación de soluciones:** Aplicar soluciones que pueden incluir cambios en el diseño del componente, mejoras en los procedimientos de mantenimiento, o la instalación de sistemas de monitoreo de la condición.
 
-### Importancia del Análisis de Fallas
+## Importancia del Análisis de Fallas
 
 La implementación de un análisis de fallas efectivo permite a las empresas:
 
@@ -27,7 +27,7 @@ La implementación de un análisis de fallas efectivo permite a las empresas:
 - **Reducir costos:** Al evitar fallas recurrentes, las empresas ahorran en reparaciones costosas y tiempo de inactividad no programado.
 - **Mejorar la seguridad:** Reducir el riesgo de accidentes mejora la seguridad del personal y la instalación.
 
-### Conclusión
+#### Conclusión
 
 El análisis de fallas es una herramienta indispensable en la gestión de la integridad de los activos y la seguridad operacional. Este proceso no solo ayuda a mitigar el riesgo de fallos futuros, sino que también contribuye a la optimización de la vida útil de la maquinaria y a la eficiencia general de las operaciones industriales.
 

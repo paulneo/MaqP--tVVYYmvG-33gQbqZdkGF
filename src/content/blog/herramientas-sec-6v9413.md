@@ -7,11 +7,11 @@ tags: ["herramientas-medicion"]
 category: maquinarias_pesadas
 ---
 
-### Juego de Herramientas SEC 6V9413 para la Precisión en el Mantenimiento del Tren de Rodaje
+## Juego de Herramientas SEC 6V9413 para la Precisión en el Mantenimiento del Tren de Rodaje
 
 El mantenimiento eficiente del tren de rodaje en maquinaria pesada es crucial para prolongar la vida útil de los equipos y asegurar su óptimo desempeño. El juego de herramientas SEC 6V9413, ofrecido por Caterpillar, se destaca por su capacidad de proporcionar mediciones precisas y rápidas de todos los componentes del tren de rodaje, asegurando así un mantenimiento y ajuste adecuados.
 
-#### Componentes del Juego de Herramientas
+## Componentes del Juego de Herramientas
 
 El juego de herramientas SEC incluye una variedad de instrumentos diseñados específicamente para medir con precisión los componentes del tren de rodaje, tales como:
 
@@ -26,7 +26,7 @@ El juego de herramientas SEC incluye una variedad de instrumentos diseñados esp
 
 Cada herramienta está calibrada para ofrecer mediciones con una precisión de ±0.025 mm (±0.001 pulgadas), lo que garantiza la fiabilidad en el mantenimiento preventivo y correctivo del tren de rodaje.
 
-#### Importancia de la Precisión en el Mantenimiento
+## Importancia de la Precisión en el Mantenimiento
 
 El mantenimiento preciso del tren de rodaje no solo extiende la vida útil de los componentes, sino que también contribuye a la eficiencia operativa de la maquinaria pesada. El uso del juego de herramientas SEC 6V9413 asegura que los componentes del tren de rodaje sean evaluados de manera precisa, lo que permite realizar ajustes y reemplazos oportunos que previenen fallas inesperadas y costosas reparaciones.
 

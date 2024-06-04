@@ -9,7 +9,7 @@ category: maquinarias_pesadas
 
 El fascinante mundo de los camiones mineros es tan complejo como las máquinas que lo conforman. Estos vehículos colosales son esenciales en la minería, operando bajo condiciones extremas y con requerimientos específicos que desafían los límites de la ingeniería mecánica. A continuación, exploraremos los aspectos más destacados de estos gigantes, desde sus potentes motores hasta los sistemas que permiten su operación eficiente.
 
-### Motores de Alto Rendimiento
+## Motores de Alto Rendimiento
 
 Los camiones mineros suelen estar equipados con motores turbo diésel intercooler de cuatro tiempos, aunque existen variantes como el motor V12 de Detroit Diesel de dos tiempos utilizado en Estados Unidos. Por ejemplo, el motor del **CAT 789C**, un volquete de 195 toneladas, destaca por su diseño robusto de 4 tiempos con Inyector unitario electrónico (EUI), optimizado para una combustión completa y eficiente del combustible. Este motor, modelo 3516B, está diseñado para operar a bajas revoluciones maximizando el tiempo de servicio entre mantenimientos y reduciendo los costos operativos.
 **El Belaz 75306**, otro gigante de 220 toneladas, emplea un motor Cummins Diesel de cuatro tiempos con inyección directa y post-enfriado por aire, demostrando la diversidad y adaptabilidad en la configuración de los motores según las necesidades específicas de cada operación minera.

@@ -9,7 +9,7 @@ category: mecanica_automotriz
 
 La afinación de motores carburados es un proceso esencial para garantizar el funcionamiento óptimo del motor, mantener bajos niveles de emisiones y asegurar una eficiencia adecuada en el consumo de combustible. Este artículo proporcionará una guía detallada sobre la puesta a punto, inspección y ajuste de los sistemas de alimentación de combustible, encendido y distribución, basada en el contenido del manual de afinación de motores carburados.
 
-### 1. Sistemas Principales en la Afinación de Motores
+## 1. Sistemas Principales en la Afinación de Motores
 
 Para llevar a cabo una afinación completa, es fundamental abordar varios sistemas del motor:
 
@@ -19,7 +19,7 @@ Para llevar a cabo una afinación completa, es fundamental abordar varios sistem
 - **Control de Emisiones:** Sistema PCV y EVAP para el manejo de emisiones de CO y HC.
 - **Sistema de Escape:** Incluye ductos, ahogadores y silenciadores.
 
-### 2. Formación de la Mezcla Aire-Combustible
+## 2. Formación de la Mezcla Aire-Combustible
 
 La relación aire-combustible es crucial para distintos objetivos del motor:
 
@@ -28,7 +28,7 @@ La relación aire-combustible es crucial para distintos objetivos del motor:
 - **Consumo de Combustible:** Relación de 16 a 1 para mejorar la eficiencia.
   Es vital que cualquier sistema, ya sea carburador, inyección mecánica o electrónica, pueda cumplir con estas condiciones para garantizar un rendimiento óptimo.
 
-### 3. Procedimientos para la Afinación
+## 3. Procedimientos para la Afinación
 
 ### Inspección del Sistema de Aire
 
@@ -54,6 +54,6 @@ La relación aire-combustible es crucial para distintos objetivos del motor:
 - **Correa Dentada y Cadena:** Inspeccionar por grietas, desgaste y tensión adecuada.
 - **Engranajes:** Verificar holgura y estado de los dientes.
 
-## Conclusión
+#### Conclusión
 
 La afinación de motores carburados requiere un conocimiento detallado y la atención a múltiples sistemas del motor. Siguiendo las inspecciones y procedimientos adecuados, se puede mantener un motor funcionando de manera eficiente y con bajas emisiones. Esta guía proporciona una base sólida para estudiantes de mecánica que buscan entender y aplicar técnicas de afinación en motores carburados.

@@ -29,7 +29,7 @@ Los parámetros que influyen en la decisión del método minero de una explotaci
 - Sistema con transporte mixto y arranque continuo
 - Sistema de arranque y transporte continuo
 
-### Yacimientos de mineral de hierro a cielo abierto
+## Yacimientos de mineral de hierro a cielo abierto
 
 existen una serie de parámetros que definen las características esenciales del diseño de una
 explotación a cielo abierto.
@@ -77,11 +77,11 @@ Una corta de mineral de hierro, se pueden señalar las siguientes etapas:
 - Almacenamiento y/o apilado
 - Transporte vía ferrocarril y/o barco granelero hasta destino
 
-### Operaciones básicas en minería a cielo abierto
+## Operaciones básicas en minería a cielo abierto
 
 El ciclo de explotación en minería a cielo abierto abarca desde la perforación hasta el transporte del mineral procesado. La selección de la maquinaria depende del método minero y del sistema operativo definidos. Las operaciones pueden ser totalmente discontinuas o seguir un sistema mixto o continuo, dependiendo de la geometría de la explotación y las características del mineral.
 
-### Operaciones básicas en minería a cielo abierto
+## Operaciones básicas en minería a cielo abierto
 
 | Arranque                      | Carga      | Transporte           | Vertido | Operaciones Auxiliares |
 | ----------------------------- | ---------- | -------------------- | ------- | ---------------------- |

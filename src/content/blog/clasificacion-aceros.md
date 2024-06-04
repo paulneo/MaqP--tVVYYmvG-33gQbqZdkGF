@@ -9,7 +9,7 @@ category: maquinarias_pesadas
 
 La clasificación de los aceros es un tema crucial en la industria metalúrgica, abarcando una amplia gama de tipos basados en sus propiedades mecánicas y composiciones químicas. Esta clasificación permite a ingenieros y diseñadores seleccionar el material más adecuado para sus aplicaciones específicas, asegurando la integridad estructural y la eficiencia de sus proyectos.
 
-1. #### Aceros de Construcción
+1. ## Aceros de Construcción
 
 Los aceros de construcción se dividen principalmente en dos subgrupos, dependiendo de si se usan en su estado bruto de forja o laminación sin tratamiento, o si se utilizan después de un tratamiento específico.
 
@@ -17,7 +17,7 @@ Los aceros de construcción se dividen principalmente en dos subgrupos, dependie
 
 **Aceros que se usan después del tratamiento** Se categorizan en aceros al carbono, aceros de gran resistencia, aceros de cementación, aceros de nitruración, aceros para muelles, aceros resistentes al desgaste, aceros con propiedades eléctricas especiales, y aceros Maraging.
 
-2. #### Aceros de Herramientas
+2. ## Aceros de Herramientas
 
 Dentro de los aceros de herramientas, encontramos:
 
@@ -28,7 +28,7 @@ Dentro de los aceros de herramientas, encontramos:
 - Aceros de corte no rápidos
 ```
 
-3. #### Aceros Inoxidables y Resistentes al Calor
+3. ## Aceros Inoxidables y Resistentes al Calor
 
 Estos aceros se caracterizan por su resistencia a la corrosión y a altas temperaturas, clasificándose en:
 

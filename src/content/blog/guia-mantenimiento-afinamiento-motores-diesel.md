@@ -54,14 +54,14 @@ Los inyectores hidráulicos funcionan mediante la presión del combustible propo
 
 El afinamiento del motor es un proceso integral que incluye varios ajustes y verificaciones para asegurar que el motor funcione de manera óptima.
 
-### Sincronización del Tiempo de Inyección
+## Sincronización del Tiempo de Inyección
 
 La sincronización adecuada del tiempo de inyección es crucial para el rendimiento del motor. Se debe ajustar el momento en que el combustible es inyectado en la cámara de combustión para que coincida con el ciclo del motor.
 
 1. **Verificación del Tiempo de Inyección:** Utilizar herramientas de diagnóstico para verificar y ajustar el tiempo de inyección.
 2. **Ajuste de la Correa o Cadena de Distribución:** Asegurarse de que la correa o cadena de distribución esté correctamente ajustada para mantener la sincronización del motor.
 
-### Verificación del Sistema de Escape
+## Verificación del Sistema de Escape
 
 Un sistema de escape eficiente es esencial para reducir las emisiones y mejorar el rendimiento del motor.
 

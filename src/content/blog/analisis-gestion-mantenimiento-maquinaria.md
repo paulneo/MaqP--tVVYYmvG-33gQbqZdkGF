@@ -14,7 +14,7 @@ El mantenimiento eficiente de la maquinaria pesada es un pilar fundamental para 
 - **Maximización de la vida útil:** Extender la vida operativa de la maquinaria tanto como sea posible.
 - **Seguridad y reducción de accidentes:** Asegurar que el entorno de trabajo sea seguro y minimizar el riesgo de incidentes.
 
-### Estructuración de Objetivos de Mantenimiento
+## Estructuración de Objetivos de Mantenimiento
 
 Para cualquier estructura organizacional, los objetivos deben equilibrar los recursos asignados con los resultados. En mantenimiento, se busca un balance entre la capacidad funcional de los equipos y su productividad.
 
@@ -55,6 +55,6 @@ El mantenimiento moderno requiere de una gestión dinámica que interactúe con 
 
 La elección del software de mantenimiento debe ser estratégica y alineada con las necesidades operativas. Debe proporcionar facilidad de uso, modularidad y capacidad de integración con otros sistemas empresariales.
 
-### Conclusión
+#### Conclusión
 
 Una gestión efectiva de mantenimiento es vital para el éxito a largo plazo de cualquier operación que dependa de maquinaria pesada. Implementar un modelo de gestión basado en la claridad, el orden y la estrategia conduce a la eficiencia y ahorros significativos.

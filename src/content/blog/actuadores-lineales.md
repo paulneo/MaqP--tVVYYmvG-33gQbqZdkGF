@@ -9,11 +9,11 @@ category: maquinarias_pesadas
 
 Los actuadores juegan un papel fundamental en la neumática, transformando la energía neumática en movimiento mecánico, ya sea lineal o rotativo. Estos dispositivos son esenciales en la automatización de procesos industriales, ofreciendo soluciones versátiles y eficientes para el control de maquinaria y sistemas.
 
-#### Actuadores
+## Actuadores
 
 Los actuadores neumáticos se clasifican principalmente en actuadores lineales, especiales y de giro, dependiendo del tipo de movimiento que generan. Los lineales realizan un movimiento directo y son comúnmente representados por cilindros de émbolo, los cuales también pueden ofrecer movimientos rotativos limitados mediante actuadores tipo piñón-cremallera. Los motores neumáticos, por otro lado, proporcionan un movimiento rotativo continuo. Además, existen actuadores especiales y combinados que ofrecen soluciones a necesidades específicas​​.
 
-#### Actuadores Lineales
+### Actuadores Lineales
 
 Los cilindros neumáticos son los actuadores lineales más comunes, divididos en dos categorías principales:
 
@@ -36,7 +36,7 @@ Los cilindros neumáticos son los actuadores lineales más comunes, divididos en
   - Buena relación de volumen ocupado entre compresión - expansión(son fabricados con 1, 2 ó 3 lóbulos).
   - Buena absorción de cargas radiales en los extremos
 
-##### Cilindros Lineales Específicos
+### Cilindros Lineales Específicos
 
 | Tipo de Cilindro  | Características                 | Aplicaciones                               |
 | ----------------- | ------------------------------- | ------------------------------------------ |

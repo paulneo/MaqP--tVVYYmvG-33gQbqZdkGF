@@ -11,23 +11,23 @@ category: mecanica_automotriz
 
 El sistema de combustible en motores diésel es crucial para garantizar una combustión eficiente y el óptimo rendimiento del motor. Aquí se destacan los componentes y procedimientos esenciales para su mantenimiento.
 
-### Inspección de la Bomba de Combustible
+## Inspección de la Bomba de Combustible
 
 1. **Verificación de la Presión de Suministro**: Utiliza un manómetro para medir la presión de salida de la bomba. Esta debe estar dentro de los rangos especificados por el fabricante.
 2. **Revisión de Fugas**: Inspecciona visualmente la bomba y sus conexiones para detectar posibles fugas de combustible.
 3. **Limpieza de Componentes**: Desmonta y limpia las válvulas y otros componentes internos de la bomba para asegurar su funcionamiento óptimo.
 
-### Mantenimiento Preventivo de la Bomba de Combustible
+## Mantenimiento Preventivo de la Bomba de Combustible
 
 - **Cambio de Filtros**: Reemplaza regularmente los filtros de combustible para evitar que impurezas dañen la bomba.
 - **Ajuste de Válvulas**: Ajusta las válvulas de la bomba para mantener la presión adecuada.
 - **Lubricación**: Asegura que todas las partes móviles de la bomba estén bien lubricadas para reducir el desgaste.
 
-### Funcionamiento y Ajuste de los Inyectores
+## Funcionamiento y Ajuste de los Inyectores
 
 Los inyectores hidráulicos son responsables de la pulverización del combustible en la cámara de combustión. Un correcto ajuste es esencial para una combustión eficiente.
 
-#### Procedimientos de Ajuste
+### Procedimientos de Ajuste
 
 1. **Calibración de la Presión**: Utiliza un banco de pruebas para ajustar la presión de inyección según las especificaciones del fabricante.
 2. **Limpieza de Orificios**: Desmonta y limpia los orificios de los inyectores para asegurar una atomización adecuada del combustible.

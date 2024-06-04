@@ -15,7 +15,7 @@ category: maquinarias_pesadas
 
 El universo de la maquinaria pesada es tan complejo como fascinante, y la Motoniveladora CAT 16M es un testimonio de la ingeniería moderna y la precisión hidráulica. En este artículo, desglosaremos las complejidades de su sistema hidráulico, identificaremos sus componentes críticos y relacionaremos su funcionalidad con el rendimiento fenomenal de esta máquina
 
-### Herramientas necesarias para proceder a retirar las tapas de los
+## Herramientas necesarias para proceder a retirar las tapas de los
 
 - Llave mixta 16
 - Llave mixta 17
@@ -27,7 +27,7 @@ El universo de la maquinaria pesada es tan complejo como fascinante, y la Motoni
 - Dado 14
 - Destornilladores
 
-### Características Destacadas de la 16M
+## Características Destacadas de la 16M
 
 - Número de serie prefijo: B9H
 - Base peso de la máquina: 26.086 kg (57.510 libras)

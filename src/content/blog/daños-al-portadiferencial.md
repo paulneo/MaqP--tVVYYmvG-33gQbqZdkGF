@@ -22,12 +22,12 @@ Factores Clave para la Prevención de Daños
 
 - **Causas de Daños por Fatiga:** Los daños por fatiga en el conjunto del eje pueden ser causados por exceder la capacidad de peso especificada del portadiferencial o por operar el vehículo con una carga que supera lo especificado, lo cual reduce significativamente la resistencia de los componentes del vehículo a la fatiga​​.
 
-### Medidas Preventivas
+## Medidas Preventivas
 
 - La especificación adecuada del eje es crucial para evitar daños.
 - El conocimiento de la capacidad de carga vertical (GAWR) y la capacidad de la transmisión del eje, especificada en términos del peso total del vehículo (GVW) o el peso bruto total combinado (GCW), es esencial.
 - La pendiente de la carretera y el tipo de superficie de la carretera son factores importantes que afectan la capacidad de carga del eje y deben ser considerados cuidadosamente​​.
 
-### Conclusión
+#### Conclusión
 
 La prevención de daños en los portadiferenciales no solo se basa en un diseño y especificación adecuados al inicio, sino también en el mantenimiento y la operación conscientes del vehículo a lo largo de su vida útil. Entender la importancia de estos factores y aplicar medidas preventivas puede significar la diferencia entre un rendimiento óptimo y fallos prematuros costosos. La anticipación a las necesidades específicas de cada aplicación, junto con un mantenimiento regular, garantizará que los componentes del vehículo, especialmente los ejes, mantengan su integridad y funcionamiento eficiente.

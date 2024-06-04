@@ -9,11 +9,11 @@ category: maquinarias_pesadas
 
 Los aceros de nitruración se caracterizan por tener un contenido de carbono que oscila entre 0.25% y 0.5%. Son especialmente conocidos por alcanzar altas durezas gracias a la presencia de aluminio, en torno al 1%, y por la adición de cromo en algunos casos. Estos aceros incluyen porcentajes variables de molibdeno, desde 0.20% hasta 1%, para permitir la nitruración a temperaturas cercanas a los 500°C​​.
 
-#### Características Mecánicas
+## Características Mecánicas
 
 La resistencia del núcleo central de las piezas nitruradas varía de 75 a 130 kg/mm², pudiendo alcanzar en algunos casos hasta 150 kg/mm². La dureza superficial depende directamente de la composición del acero. Una de las propiedades más destacadas de las piezas nitruradas es su excepcional resistencia a la fatiga, que se beneficia de una menor sensibilidad a la presencia de entallas. Este fenómeno se debe a los esfuerzos de compresión generados en la superficie de las piezas como resultado del aumento de volumen post-nitruración​​.
 
-#### Ventajas de la Nitruración
+## Ventajas de la Nitruración
 
 1.  **Gran Dureza**
     Los aceros nitrurados obtienen durezas muy elevadas, superiores a las conseguidas por otros métodos de endurecimiento superficial. Cuando se busca una capa dura con gran tenacidad, se opta por aceros que, tras la nitruración, presenten durezas relativamente bajas (entre 650 y 850 Vickers) debido a que las capas nitruradas más duras tienden a ser menos tenaces​​.

@@ -13,13 +13,13 @@ tags:
 category: maquinarias_pesadas
 ---
 
-### ¿Qué es la Electrónica?
+## ¿Qué es la Electrónica?
 
 La electrónica es la rama de la física y la ingeniería que estudia el comportamiento de los electrones en diferentes medios. A través del diseño y la creación de circuitos electrónicos, podemos controlar el flujo de estos electrones para realizar diversas funciones. Un ejemplo básico de un circuito electrónico incluye una bombilla, una pila y un interruptor. Cuando se conecta este circuito, los electrones fluyen y al atravesar la bombilla, parte de su energía se convierte en luz. Así, logramos que los electrones nos "obedezcan".
 
-### Tipos de Electrónica
+## Tipos de Electrónica
 
-#### Electrónica Analógica
+### Electrónica Analógica
 
 Uno de los grandes retos de la humanidad es manipular, almacenar, recuperar y transportar información. La electrónica ha amplificado estas capacidades, permitiéndonos progresar tecnológicamente. Para entender los principios de la electrónica analógica, consideremos cómo se maneja la información de una voz humana.
 
@@ -29,7 +29,7 @@ Cuando hablamos, nuestras cuerdas vocales generan vibraciones en el aire, propag
   La información está ligada a la forma de la onda, por lo que si la onda se degrada, se pierde información.
   Cada tipo de señal analógica requiere circuitos electrónicos específicos, lo que complica la versatilidad y el diseño.
 
-#### Electrónica Digital
+### Electrónica Digital
 
 La electrónica digital ofrece una solución a los problemas de los sistemas analógicos. En lugar de trabajar con señales continuas, las señales se convierten en números. Según el teorema de muestreo de Nyquist, cualquier señal puede representarse mediante números y reconstruirse con precisión.
 
@@ -71,6 +71,6 @@ La telemática combina la electrónica y las telecomunicaciones para proporciona
 - Diagnóstico y Mantenimiento Preventivo: Identificación de problemas antes de que ocurran, reduciendo el tiempo de inactividad y los costos de reparación.
 - Optimización de Rutas y Operaciones: Mejora de la logística y la eficiencia operativa mediante el análisis de datos en tiempo real.
 
-### Conclusión
+#### Conclusión
 
 La electrónica, tanto analógica como digital, es fundamental en el desarrollo y mejora continua de nuestras capacidades tecnológicas en diversas industrias, incluyendo la maquinaria pesada. Entender los principios de la electrónica y sus aplicaciones prácticas permite a los profesionales del sector mejorar la eficiencia, seguridad y funcionalidad de las máquinas pesadas, asegurando un futuro de innovación y progreso continuo.

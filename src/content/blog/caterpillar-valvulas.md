@@ -1,18 +1,25 @@
 ---
-title: 'Tapa del Mecanismo de Válvulas y componentes asociados: Caterpillar 3116 y 3126 '
-description: 'Procedimientos detallados para la remoción y la instalación de la tapa del mecanismo de válvulas y componentes asociados en los motores Caterpillar 3116 y 3126'
-pubDate: 'May 26 2024'
-heroImage: '/images/caterpillar-valvulas-balancin.webp'
-tags: ["Mantenimiento de Motores", "Reparación de Motores", "Motores Caterpillar", "Tapa de válvulas"]
+title: "Tapa del Mecanismo de Válvulas y componentes asociados: Caterpillar 3116 y 3126 "
+description: "Procedimientos detallados para la remoción y la instalación de la tapa del mecanismo de válvulas y componentes asociados en los motores Caterpillar 3116 y 3126"
+pubDate: "May 26 2024"
+heroImage: "/images/caterpillar-valvulas-balancin.webp"
+tags:
+  [
+    "Mantenimiento de Motores",
+    "Reparación de Motores",
+    "Motores Caterpillar",
+    "Tapa de válvulas",
+  ]
 category: maquinarias_pesadas
-
 ---
-### Tapa del Mecanismo de Válvulas
 
-#### Procedimiento de Remoción
-| Herramienta | Número de pieza | Descripción de la pieza      | Cant. |
-|-------------|------------------|-----------------------------|-------|
-| A           | 138-8440         | Limpiador de componentes    | 1     |
+## Tapa del Mecanismo de Válvulas
+
+### Procedimiento de Remoción
+
+| Herramienta | Número de pieza | Descripción de la pieza  | Cant. |
+| ----------- | --------------- | ------------------------ | ----- |
+| A           | 138-8440        | Limpiador de componentes | 1     |
 
 **ATENCIÓN**  
 Mantenga todas las piezas limpias y sin contaminantes. Los contaminantes pueden causar un desgaste acelerado y reducir la vida del componente.
@@ -22,25 +29,28 @@ Mantenga todas las piezas limpias y sin contaminantes. Los contaminantes pueden 
 3. Quite la tapa del mecanismo de válvulas y la empaquetadura.
 4. Limpie la tapa del mecanismo de válvulas con la herramienta (A).
 
-#### Procedimiento de Instalación
+### Procedimiento de Instalación
 
 | Herramienta | Número de pieza | Descripción de la pieza | Cant. |
-|-------------|------------------|------------------------|-------|
-| B           | 154-8874         | Juego de adhesivo      | 1     |
+| ----------- | --------------- | ----------------------- | ----- |
+| B           | 154-8874        | Juego de adhesivo       | 1     |
 
 1. Aplique adhesivo a la tapa del mecanismo de válvulas con la herramienta (B).
 2. Instale la empaquetadura nueva y la tapa del mecanismo de válvulas.
 3. Instale las arandelas y los pernos.
 
 **Secuencia de Apriete para las Tapas de Válvulas del Motor**
+
 - (A) Parte trasera
 - (B) Parte delantera
 
 4. Apriete secuencialmente los pernos a un par de apriete de 12 ± 3 N·m (106 ± 27 lb-pulg).
 5. Instale la tapa del tubo de llenado de aceite del motor (si tiene).
 
-### Eje de Balancín y Varilla de Empuje
-#### Procedimiento de Remoción
+## Eje de Balancín y Varilla de Empuje
+
+### Procedimiento de Remoción
+
 Comience:
 A. Quite la tapa del mecanismo de válvulas. Vea en Desarmado y Armado, "Tapa del mecanismo de válvulas - Quitar e Instalar".
 
@@ -53,11 +63,11 @@ Mantenga todas las piezas limpias y sin contaminantes. Los contaminantes pueden 
 4. Repita el procedimiento para cada conjunto de eje de balancín.
 5. Quite las varillas de empuje.
 
-#### Eje de Balancín - Procedimiento de Desarmado
+### Eje de Balancín - Procedimiento de Desarmado
 
 | Herramienta | Número de pieza | Descripción de la pieza | Cant. |
-|-------------|------------------|------------------------|-------|
-| A           | 6V-0083          | Papel de esmeril       | 1     |
+| ----------- | --------------- | ----------------------- | ----- |
+| A           | 6V-0083         | Papel de esmeril        | 1     |
 
 1. Quite la base de soporte del conjunto de eje de balancín.
 2. Quite los balancines de válvulas y el balancín del inyector unitario del conjunto de eje de balancín.
@@ -69,7 +79,7 @@ Mantenga todas las piezas limpias y sin contaminantes. Los contaminantes pueden 
 5. Inspeccione el cojinete en el balancín del inyector unitario. El orificio en el balancín es de 24,808 ± 0,20 mm (0,9767 ± 0,0079 pulg). Vea en Especificaciones, "Balancines de válvula y levantaválvulas". Reemplace el cojinete, si es necesario.
 6. Asegúrese de que el botón en el balancín del inyector unitario no esté dañado. Asegúrese también de que el anillo de retención para el botón esté en posición.
 
-#### Procedimiento de Armado
+## Procedimiento de Armado
 
 **ATENCIÓN**  
 Mantenga todas las piezas limpias y sin contaminantes. Los contaminantes pueden causar un desgaste acelerado y reducir la vida del componente.
@@ -81,10 +91,11 @@ Mantenga todas las piezas limpias y sin contaminantes. Los contaminantes pueden 
 5. Instale los balancines de válvula y el balancín del inyector unitario en el conjunto de eje de balancín.
 6. Instale la base de soporte en el conjunto de eje de balancín.
 
-### Eje de Balancín y Varilla de Empuje - Procedimiento de Instalación
-| Herramienta | Número de pieza | Descripción de la pieza         | Cant. |
-|-------------|------------------|--------------------------------|-------|
-| A           | 146-2597         | Sujetador de varilla de empuje | 1     |
+## Eje de Balancín y Varilla de Empuje - Procedimiento de Instalación
+
+| Herramienta | Número de pieza | Descripción de la pieza        | Cant. |
+| ----------- | --------------- | ------------------------------ | ----- |
+| A           | 146-2597        | Sujetador de varilla de empuje | 1     |
 
 1. Instale las varillas de empuje en el motor. La base de la varilla de empuje debe estar en el asiento del levantador de la varilla.
 2. Instale la Herramienta (A).
@@ -94,8 +105,10 @@ Mantenga todas las piezas limpias y sin contaminantes. Los contaminantes pueden 
 6. Ajuste el juego de las válvulas en todos los tornillos de ajuste. Vea el procedimiento correcto en el módulo de Pruebas y Ajustes, "Sistema de admisión de aire y de escape".
 7. Repita el procedimiento para los restantes conjuntos de eje de balancín.
 
-### Culata - Quitar
-#### Procedimiento de Remoción
+## Culata - Quitar
+
+### Procedimiento de Remoción
+
 Comience:
 A. Quite la base del filtro de combustible. Vea en Desarmado y Armado, "Base del filtro de combustible - Quitar e Instalar".
 B. Quite el regulador. Vea en Desarmado y Armado, "Regulador - Quitar".
@@ -109,11 +122,11 @@ G. Quite el múltiple de escape. Vea en Desarmado y Armado, "Múltiple de escape
 2. Saque los pernos y que sujetan la culata al bloque motor. Quite cuidadosamente la culata del bloque motor. La culata de los Motores 3116 pesa aproximadamente 85 kg (187 lb).
 3. Quite la culata de la empaquetadura.
 
-#### Procedimiento de Instalación
+### Procedimiento de Instalación
 
 | Herramienta | Número de pieza | Descripción de la pieza | Cant. |
-|-------------|------------------|------------------------|-------|
-| A           | 6V-4876          | Lubricante             | 1     |
+| ----------- | --------------- | ----------------------- | ----- |
+| A           | 6V-4876         | Lubricante              | 1     |
 
 1. Limpie completamente las superficies de contacto de la culata y del bloque del motor.
 2. Instale una nueva empaquetadura de la culata.
@@ -125,6 +138,6 @@ G. Quite el múltiple de escape. Vea en Desarmado y Armado, "Múltiple de escape
 5. Lubrique los pernos de la culata y ambos lados de las arandelas con herramienta (A). Instale los pernos de la culata. Siga el paso 6 para el procedimiento correcto de apriete.
 6. Apriete los pernos de la culata según el siguiente procedimiento:
    1. Apriete los pernos en secuencia numérica a un par de 150 ± 15 N·m (110 ± 11 lb-pie).
-   2. Apriete otra vez los pernos  en secuencia numérica a un par de 435 ± 20 N·m (320 ± 15 lb-pie).
+   2. Apriete otra vez los pernos en secuencia numérica a un par de 435 ± 20 N·m (320 ± 15 lb-pie).
    3. Apriete otra vez los pernos en secuencia numérica a un par de 435 ± 20 N·m (320 ± 15 lb-pie).
    4. Apriete los pernos en secuencia numérica a un par de 55 ± 7 N·m (41 ± 5 lb-pie).

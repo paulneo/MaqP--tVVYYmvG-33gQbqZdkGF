@@ -9,7 +9,7 @@ category: maquinarias_pesadas
 
 El Análisis de Seguridad en el Trabajo (AST) es un proceso sistemático diseñado para identificar peligros potenciales y recomendar medidas correctivas en los métodos de trabajo. Este enfoque se utiliza para prevenir accidentes y mejorar las condiciones de seguridad en entornos laborales, incluyendo el análisis de la planta o edificio y el diseño de maquinaria y procesos.
 
-### Pasos para Realizar un Análisis de Seguridad en el Trabajo
+## Pasos para Realizar un Análisis de Seguridad en el Trabajo
 
 Pasos para Realizar un Análisis de Seguridad en el Trabajo
 
@@ -22,7 +22,7 @@ Pasos para Realizar un Análisis de Seguridad en el Trabajo
 - **Propuestas de Medidas Preventivas:**
   Se deben establecer modos de eliminar peligros y evitar accidentes potenciales, lo cual puede incluir cambios en el proceso de trabajo, uso de equipos de protección personal, o mejoras en la capacitación de los empleados.
 
-### Técnicas de Preparación y Análisis
+## Técnicas de Preparación y Análisis
 
 - **Análisis de Árbol de Fallas (AAF):**
   Una técnica que ofrece un enfoque sistemático para analizar las causas raíz de fallas o accidentes, ideal para sistemas complejos donde otras técnicas pueden ser insuficientes.
@@ -37,6 +37,6 @@ Pasos para Realizar un Análisis de Seguridad en el Trabajo
 
 El AST debe ser implementado y revisado regularmente para asegurar su efectividad. Es esencial que todas las recomendaciones se comuniquen claramente a todos los niveles de la organización y que se realice un seguimiento de su implementación y de la efectividad de las medidas tomadas.
 
-### Consideraciones Finales
+#### Consideraciones Finales
 
 Implementar un AST efectivo requiere un compromiso continuo con la seguridad y debe adaptarse a medida que cambian las condiciones de trabajo y los procesos. La colaboración entre trabajadores y gestión es clave para identificar riesgos y desarrollar soluciones efectivas.

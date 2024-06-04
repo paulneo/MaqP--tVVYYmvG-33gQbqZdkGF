@@ -15,13 +15,13 @@ category: maquinarias_pesadas
 
 Los motores Caterpillar 3116 y 3126 son componentes cruciales en una variedad de aplicaciones industriales y de maquinaria pesada. Mantener estos motores en óptimas condiciones es esencial para asegurar su rendimiento y longevidad. En este blog, detallaremos el proceso de armado y desarmado de estos motores, centrándonos en la reparación de las válvulas de admisión y escape, así como en las guías y casquillos de las válvulas.
 
-### Armado y Desarmado del Motor Caterpillar 3126 y 3116
+## Armado y Desarmado del Motor Caterpillar 3126 y 3116
 
 Precauciones Iniciales
 **Atención:** Mantenga todas las piezas limpias y libres de contaminantes, ya que estos pueden causar un desgaste acelerado y reducir la vida útil de los componentes.
 Válvulas de Admisión y de Escape
 
-#### Herramientas Necesarias:
+### Herramientas Necesarias:
 
 - Compresor de resortes de válvula (5S-1330)(A)
 
@@ -41,11 +41,11 @@ Válvulas de Admisión y de Escape
 
 **NOTA:** Se puede usar un poco de grasa para sujetar las trabas de retén durante la instalación.
 
-### Guías de Válvulas de Admisión y de Escape
+## Guías de Válvulas de Admisión y de Escape
 
 Procedimiento de Remoción
 
-#### Herramientas Necesarias:
+### Herramientas Necesarias:
 
 - Juego de herramientas de guía de válvulas (1U-6685)
 
@@ -54,9 +54,9 @@ Procedimiento de Remoción
 - Quite las válvulas de admisión y escape siguiendo el procedimiento anterior.
 - Utilice la herramienta Impulsor de guía de válvulas para quitar las guías de las válvulas del conjunto de la culata.
 
-#### Procedimiento de Instalación
+### Procedimiento de Instalación
 
-#### Herramientas Necesarias:
+### Herramientas Necesarias:
 
 - Impulsor de guía de válvulas (1U-7793) (**A**)
 - Collar guía (1U-7792) (**B**)
@@ -94,6 +94,6 @@ Procedimiento de Remoción
 - Después de instalar los casquillos, lije los casquillos a la especificación final según la publicación "Especificaciones para culatas de Motores 3114, 3116 y 3126".
   Al finalizar el trabajo de armado y desarmado, es esencial seguir las especificaciones y procedimientos recomendados para asegurar que todos los componentes funcionen de manera óptima. Utilizar las herramientas adecuadas y mantener las piezas limpias y bien lubricadas prolongará la vida útil del motor y garantizará su rendimiento.
 
-### Conclusión
+#### Conclusión
 
 La reparación y el mantenimiento de los motores Caterpillar 3116 y 3126 requieren atención meticulosa y el uso de herramientas y técnicas específicas. Siguiendo los procedimientos detallados en este blog, los técnicos pueden asegurar que estos motores continúen funcionando de manera eficiente y fiable.

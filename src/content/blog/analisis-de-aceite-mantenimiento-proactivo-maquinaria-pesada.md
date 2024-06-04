@@ -9,7 +9,7 @@ category: maquinarias_pesadas
 
 En el ámbito del mantenimiento de flotas de maquinaria pesada, el análisis de aceite emerge como una herramienta crucial para la implementación de estrategias proactivas. Este enfoque, que busca extender la vida útil de la maquinaria a través de la detección temprana y eliminación de causas potenciales de fallos, ha demostrado ser eficaz para aumentar la confiabilidad y disponibilidad de los equipos, reduciendo simultáneamente los costos asociados con paradas inesperadas y mantenimiento reactivo.
 
-### Introducción a la Maquinaria Pesada
+## Introducción a la Maquinaria Pesada
 
 La maquinaria pesada, esencial en sectores como la construcción, minería, y manejo portuario, depende críticamente de la integridad de sus sistemas mecánicos y fluidos, tales como motores de combustión interna y circuitos hidráulicos. Aquí, el aceite no solo cumple funciones como control de fricción y temperatura, sino que también actúa como un transportador de información crucial sobre el estado de la maquinaria, al contener partículas de desgaste y contaminantes.
 
