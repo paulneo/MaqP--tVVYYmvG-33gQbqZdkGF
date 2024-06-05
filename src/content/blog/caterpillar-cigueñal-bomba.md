@@ -1,5 +1,5 @@
 ---
-title: "Cigüeñal, Bomba de Transferencia de Combustible Componentes asociados en Motores Caterpillar 3116 y 3126 "
+title: "Cigüeñal, Bomba de Transferencia de Combustible componentes asociados en Motores Caterpillar 3116 y 3126 "
 description: "Procedimientos detallados para la remoción e instalación del cigüeñal y la bomba de transferencia de combustible en motores Caterpillar 3116 y 3126"
 pubDate: "May 28 2024"
 heroImage: "/images/ciguenal.webp"
