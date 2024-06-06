@@ -5,7 +5,7 @@ import Image from 'astro/components/Image.astro';
 ---
 
 <Layout title="Mundo ingenieria" description="Cada artículo, cada historia, y cada consejo están diseñados para empoderarte, inspirarte, y conectarte más profundamente con esta industria vital">
-	<main class="	prose dark:prose-invert
+	<main class="prose dark:prose-invert
 	prose-strong:text-slate-700
 	dark:prose-strong:text-slate-200
 	prose-h3:text-slate-700 
@@ -15,30 +15,30 @@ import Image from 'astro/components/Image.astro';
 	prose-h4:text-slate-700 
 	dark:prose-h4:text-slate-200
 	">
-		<h1 class="dark:text-slate-50 text-4xl md:text-6xl  m-auto text-center font-semibold text-slate-800 mb-10">Mundo ingeniería: Tu portal integral de conocimiento técnico</h1>
+		<h1 class="dark:text-slate-50   m-auto text-center text-slate-800 mb-10">Mundo ingeniería: Tu portal integral de conocimiento técnico</h1>
 		<div class=" h-[520px] w-[100%] bg-cover bg-center rounded-xl mb-10">
       <Image src={'/inicio.jpg'} width={1280} alt={'Mundo ingeniería'} height={720} class="w-full h-full object-cover	"  loading="lazy" />
     </div>
 		<p class="dark:text-slate-300 text-slate-700">
 			Mundo Ingeniería es tu destino ideal para obtener información actualizada y precisa sobre todos los aspectos de la ingeniería. Nuestra plataforma está diseñada para ofrecer contenido relevante y de alta calidad, enfocado en mejorar tu conocimiento y habilidades en diversas ramas de la ingeniería. Desde innovaciones en maquinaria pesada hasta avances en la mecánica automotriz y más allá, Mundo Ingeniería es tu fuente confiable para todo lo relacionado con la ingeniería.
 		</p>
-		<h2 class="dark:text-slate-50 mt-10 font-medium mb-6">Blog y Noticias</h2>
+		<h2 class="">Blog y Noticias</h2>
 		<p class="dark:text-slate-300 text-slate-700">
 			Nuestro blog es una herramienta esencial para profesionales y estudiantes de ingeniería. Aquí encontrarás análisis profundos, guías prácticas y artículos sobre las últimas tendencias y mejores prácticas en diversas áreas de la ingeniería. Ya sea que te intereses por la ingeniería mecánica, civil, eléctrica o de software, nuestro blog tiene algo para ti.
 		</p>
-		<h3 class="dark:text-slate-50 mt-10 font-medium mb-6">Noticias de Ingeniería</h3>
+		<h3 class="">Noticias de Ingeniería</h3>
 		<p class="dark:text-slate-300 text-slate-700">
 			Mantente informado con nuestra sección de noticias, que ofrece las últimas actualizaciones sobre avances tecnológicos, innovaciones industriales y noticias relevantes del mundo de la ingeniería. Conoce las nuevas adquisiciones de empresas, lanzamientos de equipos y desarrollos en tecnologías de maquinaria y herramientas.
 		</p>
-		<h2 class="dark:text-slate-50 mt-10 font-medium mb-6">Misión y Visión
+		<h2 class="">Misión y Visión
 		</h2>
 		<p class="dark:text-slate-300 text-slate-700">
 			En Mundo Ingeniería, nuestra misión es proporcionar contenido de alta calidad que abarque todos los aspectos del fascinante mundo de la ingeniería. Nos dedicamos a ofrecer información actualizada y relevante que ayude a profesionales y estudiantes a mantenerse a la vanguardia en sus campos respectivos.
 		</p>
-		<h2 class="dark:text-slate-50 mt-10 font-medium mb-6">Únete a Nuestra Comunidad</h2>
+		<h2 class="">Únete a Nuestra Comunidad</h2>
 		<p class="dark:text-slate-300 text-slate-700"> Para más información y recursos, visita nuestra comunidad de <a href="https://www.facebook.com/mundoingenieria2024/" target="_blank" class=" dark:text-primary-500 text-primary-500 hover:text-primary-800" >facebook</a>  y descubre todo lo que Mundo Ingeniería tiene para ofrecer.
 		</p>
-		<h3 class="dark:text-slate-50 mt-10 font-medium mb-6">El Mundo Detrás de la Maquinaria Pesada</h3>
+		<h3 class="">El Mundo Detrás de la Maquinaria Pesada</h3>
 		<p  class="dark:text-slate-300 text-slate-700">Si te interesa obtener información más detallada y especializada sobre maquinaria pesada, te invitamos a visitar nuestra otra página web, <a class="text-primary-500 hover:text-primary-800" href="https://www.maquinariaspesadas.org/">Maquinarias Pesadas </a> . En este sitio encontrarás recursos exhaustivos, guías prácticas y descargas gratuitas enfocadas en el funcionamiento, mantenimiento y últimas innovaciones en maquinaria utilizada en construcción, minería y otros sectores industriales. ¡No te lo pierdas y amplía tu conocimiento con nosotros!</p>
 
 		
@@ -46,8 +46,11 @@ import Image from 'astro/components/Image.astro';
 </Layout>
 
 <style>
+	.prose {
+	}
 	main {
-		width: 820px;
+		max-width: 900px;
+
 	}
 
 </style>
