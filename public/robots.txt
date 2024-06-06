@@ -3,9 +3,6 @@
 User-agent: *
 Allow: /
 
-User-agent: *
-Disallow: /tags/
-
 # ---------------------------
 # END YOAST BLOCK
 Sitemap: https://mundoingenieria.org/sitemap-index.xml
