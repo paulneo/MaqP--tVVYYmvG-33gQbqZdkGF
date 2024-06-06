@@ -9,17 +9,23 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://mundoingenieria.org",
-  integrations: [sitemap(), tailwind(), react(), partytown({
-    config: {
-      forward: ["dataLayer.push"]
-    }
-  }), icon()],
+  site: "https://mundoingenieria.org/",
+  integrations: [
+    sitemap(),
+    tailwind(),
+    react(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+    icon(),
+  ],
   image: {
-    service: passthroughImageService()
+    service: passthroughImageService(),
   },
   output: "server",
   adapter: netlify({
-    cacheOnDemandPages: true
-  })
+    cacheOnDemandPages: true,
+  }),
 });

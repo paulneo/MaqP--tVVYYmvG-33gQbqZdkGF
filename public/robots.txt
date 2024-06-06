@@ -1,8 +1,4 @@
-# START YOAST BLOCK
-# ---------------------------
 User-agent: *
 Allow: /
 
-# ---------------------------
-# END YOAST BLOCK
 Sitemap: https://mundoingenieria.org/sitemap-index.xml
