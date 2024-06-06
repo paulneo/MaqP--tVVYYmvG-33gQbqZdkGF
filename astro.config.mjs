@@ -9,7 +9,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://mundoingenieria.org/",
+  site: "https://www.mundoingenieria.org/",
   integrations: [
     sitemap(),
     tailwind(),
