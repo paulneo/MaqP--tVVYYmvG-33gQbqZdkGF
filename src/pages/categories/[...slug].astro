@@ -24,9 +24,9 @@ const fivePost = posts.slice(0, 5)
 
 const totalPosts = posts.length || 0
 const totalPage = Math.ceil(totalPosts / 5)
-
+console.log(category)
 ---
-<Layout title={`Mundo ingeniería - ${category.data.title}`} description="Descubre el universo del mundo de la ingeniería: análisis, tendencias, y consejos de mantenimiento. Sumérgete en innovaciones y proyectos globales con nuestro contenido especializado para aficionados y profesionales">
+<Layout title={`${category.data.title}`} description={category.data.description}>
 	<main>
 		<section >
 			<ul>
