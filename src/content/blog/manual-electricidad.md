@@ -1,6 +1,6 @@
 ---
 title: "Manual Básico de Electricidad"
-description: "Conceptos fundamentales de la electricidad, desde cargas y corriente hasta componentes eléctricos y su medición."
+description: "Conceptos fundamentales de la electricidad, desde cargas y corriente hasta componentes eléctricos y su medición"
 pubDate: "Jun 20 2024"
 heroImage: "/images/mediones.webp"
 tags:
