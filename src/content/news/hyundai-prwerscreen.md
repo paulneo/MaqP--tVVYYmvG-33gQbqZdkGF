@@ -1,5 +1,5 @@
 ---
-title: "Hyundai Añade Powerscreen a su Red de Distribuidores"
+title: "Hyundai añade powerscreen a su red de distribuidores"
 description: "Hyundai ha ampliado su red de distribuidores con Powerscreen de California, Nevada y Hawaii, y Powerscreen de Washington para vender y dar servicio a su gama de excavadoras y cargadoras."
 pubDate: "Jun 27 2024"
 heroImage: "/news/hyundai-powerscreen.jpg"

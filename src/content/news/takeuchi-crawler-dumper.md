@@ -1,5 +1,5 @@
 ---
-title: "Takeuchi Lanza el Nuevo Crawler Dumper TCR50-2 para América del Norte"
+title: "Takeuchi lanza el nuevo Crawler Dumper TCR50-2 para América del Norte"
 description: "Takeuchi presenta el TCR50-2, un crawler dumper diseñado para manejar terrenos difíciles y espacios confinados, ideal para aplicaciones en construcción, minería e infraestructura."
 pubDate: "Jun 27 2024"
 heroImage: "/news/takeuchi.jpg"

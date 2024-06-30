@@ -1,5 +1,5 @@
 ---
-title: "BOMAG Nombra a Nuevo Presidente: Dr. Ingo Ettischer"
+title: "BOMAG nombra a nuevo Presidente: Dr. Ingo Ettischer"
 description: "Dr. Ingo Ettischer asume el cargo de presidente del Grupo BOMAG, sucediendo a Ralf Junker y trayendo consigo décadas de experiencia en la gestión global."
 pubDate: "Jun 28 2024"
 heroImage: "/news/ingo.jpg"

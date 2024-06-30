@@ -1,5 +1,5 @@
 ---
-title: "Actualización del Kia Seltos 2025: Cambios en Equipamiento y Precio"
+title: "Actualización del Kia Seltos 2025: Cambios en equipamiento y precio"
 description: "El Kia Seltos 2025 recibe mejoras en los materiales interiores y ajustes en los precios."
 pubDate: "Jun 29 2024"
 heroImage: "/news/kia-seltos.jpg"

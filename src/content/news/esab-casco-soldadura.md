@@ -1,5 +1,5 @@
 ---
-title: "ESAB Lanza el Casco de Soldadura Savage A50 LUX"
+title: "ESAB lanza el casco de soldadura Savage A50 LUX"
 description: "El nuevo casco de soldadura ESAB Savage A50 LUX proporciona mayor visibilidad y comodidad para soldadores, con características avanzadas para mejorar la protección y reducir la fatiga ocular."
 pubDate: "Jun 27 2024"
 heroImage: "/news/esab.jpg"

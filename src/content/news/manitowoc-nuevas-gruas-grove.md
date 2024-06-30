@@ -1,5 +1,5 @@
 ---
-title: "Manitowoc Aumenta Fuerza, Alcance y Flexibilidad en las Nuevas Grúas Todo Terreno Grove"
+title: "Manitowoc aumenta fuerza, alcance y flexibilidad en las nuevas grúas todo terreno Grove"
 description: "Manitowoc lanza dos nuevas grúas todo terreno Grove, GRT765 y GRT780, con mejoras significativas en fuerza, alcance y flexibilidad, junto con mayor comodidad para el operador y facilidad de servicio."
 pubDate: "Jun 27 2024"
 heroImage: "/news/manitowoc.webp"

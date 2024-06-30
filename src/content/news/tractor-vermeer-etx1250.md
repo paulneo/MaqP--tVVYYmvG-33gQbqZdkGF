@@ -1,5 +1,5 @@
 ---
-title: "Actualizaciones del Tractor Vermeer RTX1250: Versatilidad y Tecnología Mejoradas"
+title: "Actualizaciones del tractor Vermeer RTX1250: versatilidad y tecnología mejoradas"
 description: "El tractor Vermeer RTX1250 ha sido actualizado con múltiples mejoras para aumentar la eficiencia y el rendimiento en la instalación de servicios públicos."
 pubDate: "Jun 28 2024"
 heroImage: "/news/tractor-vermeer.jpg"

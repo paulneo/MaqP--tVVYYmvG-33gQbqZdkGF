@@ -1,5 +1,5 @@
 ---
-title: "Mercedes-Benz Invierte Más en Motores de Combustión Antes de la Transición a EV"
+title: "Mercedes-Benz invierte más en motores de combustión antes de la transición a EV"
 description: "Mercedes-Benz planea invertir 14 mil millones de euros en tecnología de motores de combustión este año, preparando su línea de autos híbridos y mejorando su Clase S."
 pubDate: "Jun 30 2024"
 heroImage: "/news/mercedes.webp"

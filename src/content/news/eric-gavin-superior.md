@@ -1,8 +1,8 @@
 ---
-title: "Superior Industries Nombra a Eric Gavin como Director de Desarrollo Comercial"
+title: "Superior Industries nombra a Eric Gavin como director de desarrollo comercial"
 description: "Eric Gavin se une a Superior Industries como director de desarrollo comercial en la división de gestión de construcción de la compañía."
 pubDate: "Jun 27 2024"
-heroImage: "/news/manitowoc.webp"
+heroImage: "/news/eric-gavin.jpg"
 tags:
   ["Superior Industries", "Desarrollo Comercial", "Gestión de Construcción"]
 category: "maquinarias_pesadas"

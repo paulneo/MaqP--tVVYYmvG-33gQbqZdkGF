@@ -1,5 +1,5 @@
 ---
-title: "Las Ventas de Zeekr se Disparan Mientras los Chinos Domina el Mercado de EV en Rusia"
+title: "Las ventas de Zeekr se disparan mientras los Chinos dominan el mercado de EV en Rusia"
 description: "Las ventas de vehículos eléctricos Zeekr en Rusia han aumentado significativamente, posicionando a los fabricantes chinos por delante de la competencia local en el creciente mercado de vehículos eléctricos del país."
 pubDate: "Jun 29 2024"
 heroImage: "/news/ventas-zeekr.webp"
