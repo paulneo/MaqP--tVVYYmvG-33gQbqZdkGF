@@ -7,11 +7,6 @@ tags:
   ["Hidráulica", "Mantenimiento", "Maquinaria Pesada"]
 category: maquinarias_pesadas
 ---
-
-# Principios Fundamentales de la Hidráulica
-
-## Introducción a la Hidráulica
-
 La hidráulica es una rama de la física y la ingeniería que se ocupa de las propiedades mecánicas de los líquidos. Su aplicación es fundamental en diversos tipos de maquinaria pesada, donde el control y la transmisión de potencia a través de fluidos son esenciales para el funcionamiento eficiente de los equipos.
 
 ## Conceptos Básicos

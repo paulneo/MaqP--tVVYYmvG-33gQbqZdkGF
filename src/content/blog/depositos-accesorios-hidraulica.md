@@ -8,8 +8,6 @@ tags:
 category: maquinarias_pesadas
 ---
 
-# Depósitos y Accesorios en Sistemas Oleohidráulicos
-
 El correcto diseño y mantenimiento de los depósitos y sus accesorios son fundamentales para la eficiencia y durabilidad de los sistemas oleohidráulicos. En este capítulo se detallan los componentes esenciales, sus funciones y recomendaciones de diseño.
 
 ## Funciones del Depósito
