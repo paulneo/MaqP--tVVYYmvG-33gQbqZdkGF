@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Layout from '../components/Blog/Blog.astro'
 ---
 
 <Layout
@@ -8,6 +8,7 @@ import Layout from '../layouts/BlogPost.astro';
 	pubDate={new Date('January 13 2024')}
 	heroImage="/images/blog-about.jpg"
 	category='acerca de nosotros'
+	relations={false}
 >
 	<p>
 		¡Bienvenidos a nuestro blog, donde encontrarás información dinámica y puntualizada sobre ingeniería!
