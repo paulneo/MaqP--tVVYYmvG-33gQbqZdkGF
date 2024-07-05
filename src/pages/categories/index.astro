@@ -22,7 +22,7 @@ const posts = (await getCollection('blog')).sort((a , b) => b.data.pubDate.value
 
 ---
 <Layout title={pageTitle} description="Mundo Ingeniería abarca categorías como construcción, electrónica, mecánica y robótica, enfocándose en la innovación y aplicación práctica de principios científicos y tecnológicos">
-  <section class="mx-auto px-4 py-10 sm:px-6 lg:px-8 lg:pt-10 lg:py-14 2xl:max-w-full">
+  <section class="  lg:w-[1400px] mx-auto px-4 py-10 sm:px-6 lg:px-8 lg:pt-10 lg:py-14 2xl:max-w-full">
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 md:gap-10">
           {
               categories.map(c => (

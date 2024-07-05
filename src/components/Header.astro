@@ -9,7 +9,9 @@ import { Icon } from 'astro-icon/components'
 
 <header  class="flex justify-center items-center sticky top-0 border-b border-b-slate-900/5  dark:border-b-slate-50/5 z-10" id="header-nav"> 
 	<nav class="flex justify-around lg:justify-between items-center w-[100%] lg:w-[1100px] py-4  ">
-		<Image src={Logo} alt="Mundo Ingenieria" class=' h-14 md:h-[80px] lg:h-[80px] w-auto' loading='eager' />
+    <a href="/">
+  		<Image src={Logo} alt="Mundo Ingenieria" class=' h-14 md:h-[80px] lg:h-[80px] w-auto' loading='eager' />
+    </a>
 		<div class="hidden sm:flex">
 			<HeaderLink href="/" >Inicio</HeaderLink>
 			<HeaderLink href="/blog" >Blog</HeaderLink>
@@ -22,7 +24,10 @@ import { Icon } from 'astro-icon/components'
 				<Icon name="fa6-solid:magnifying-glass"  class="text-primary-600 text-2xl hover:fill-primary-700" />
 			</a>
 			<Theme client:load />
-			<Icon name="fa6-solid:bars" class='sm:hidden text-primary-600 hover:fill-primary-700 text-2xl ease-in duration-200 cursor-pointer'  id='bars'/>
+      <div  class="cursor-pointer" id='bars'>
+        <Icon name="fa6-solid:bars" class='sm:hidden text-primary-600 hover:fill-primary-700 text-2xl ease-in duration-200 cursor-pointer' />
+
+      </div>
 			<Icon name="fa6-solid:xmark" class='sm:hidden text-primary-500 text-3xl hidden ease-in duration-200' id='xmark'/>
 
 		</div>
@@ -41,7 +46,7 @@ import { Icon } from 'astro-icon/components'
 	</div>
 </div>
 
-<script is:inline>
+<script  type="module">
   
 	document.addEventListener('DOMContentLoaded', function() {
       const initializeMenu = function() {
@@ -82,16 +87,18 @@ import { Icon } from 'astro-icon/components'
 </script>
 <style>
 
+
 	#header-nav {
     animation: headerScroll linear both;
     animation-timeline: scroll();
+    background: var(--bg-reverse);
+
     animation-range: 0 500px;
   }
 	@keyframes headerScroll {
     to {
       box-shadow: 0px 6px 15px 0px rgba(100, 116, 139, 0.12);
-      background: rgba(var(--bg-reverse), 0.7);
-      backdrop-filter: blur(10px);
+      /* backdrop-filter: blur(10px); */
     }
   }
 
