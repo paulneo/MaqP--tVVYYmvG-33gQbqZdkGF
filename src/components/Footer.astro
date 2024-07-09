@@ -5,8 +5,8 @@ import Logo from '../assets/logo.png'
 const today = new Date();
 ---
 
-<footer class="flex">
-	<div class="bg-[#0c0e0f] dark:bg-[#010303] w-1/2 px-32 p-10">
+<footer class="flex flex-col-reverse md:flex-row">
+	<div class="bg-[#0c0e0f] dark:bg-[#010303] w-full p-10 md:w-1/2 md:px-24 md:p-7 lg:px-32 lg:p-10">
 			<Image src={Logo} alt="Mundo Ingenieria" class=' h-14 md:h-[70px] lg:h-[70px] w-auto mb-6' loading='eager' />
 			<p class=" text-xl font-bold text-slate-300">Innovando el Futuro de la Ingeniería.</p>
 			<p class="text-base text-slate-300 mb-1">Descubre cómo las nuevas innovaciones están revolucionando la industria.</p>
@@ -59,7 +59,7 @@ const today = new Date();
 			</p>
 		
 	</div>
-	<div class="w-1/2 bg-[#0e1313] px-24 p-10 pt-20">
+	<div class="w-full md:w-1/2 bg-[#0e1313] p-10 md:px-18 md:p-8 md:pt-20  lg:px-24 lg:p-10 lg:pt-20">
 		<div class="flex mb-6">
 			<div class="w-1/2">
 				<p class="text-base text-slate-400 mb-2">Explorar</p>
