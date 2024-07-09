@@ -20,10 +20,10 @@ const { category } = Astro.props
 const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).filter((b) => {
     return b.data.category === category.slug
 });
-const fivePost = posts.slice(0, 5)
+const fivePost = posts.slice(0, 9)
 
 const totalPosts = posts.length || 0
-const totalPage = Math.ceil(totalPosts / 5)
+const totalPage = Math.ceil(totalPosts / 9)
 console.log(category)
 ---
 <Layout title={`${category.data.title}`} description={category.data.description}>

@@ -8,10 +8,10 @@ import Image from 'astro/components/Image.astro';
 
 const news = (await getCollection('news')) || [];
 const sortedPosts = sortByDate(news);
-const fivePost = sortedPosts.slice(0, 5)
+const fivePost = sortedPosts.slice(0, 9)
 
 const totalPosts = news.length || 0
-const totalPage = Math.ceil(totalPosts / 5)
+const totalPage = Math.ceil(totalPosts / 9)
 ---
 <Layout title={'Noticias'} description="Mundo Ingeniería - Descubre las últimas innovaciones, tendencias y avances en el campo de la ingeniería a nivel global.">
 	<main>

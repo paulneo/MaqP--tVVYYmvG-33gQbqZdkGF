@@ -13,7 +13,7 @@ export async function getStaticPaths({ paginate }) {
   const news = (await getCollection('news'))
 	const sortedNews = sortByDate(news);
 
-  return paginate(sortedNews, { pageSize: 5 });
+  return paginate(sortedNews, { pageSize: 9 });
 }
 
 const { page } = Astro.props;

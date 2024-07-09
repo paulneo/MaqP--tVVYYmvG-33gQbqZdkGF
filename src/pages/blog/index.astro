@@ -9,10 +9,10 @@ import Image from 'astro/components/Image.astro';
 
 const posts = (await getCollection('blog'));
 const sortedPosts = sortByDate(posts);
-const fivePost = sortedPosts.slice(0, 5)
+const fivePost = sortedPosts.slice(0, 9)
 
 const totalPosts = posts.length || 0
-const totalPage = Math.ceil(totalPosts / 5)
+const totalPage = Math.ceil(totalPosts / 9)
 ---
 <Layout title={'Mundo ingeniería - Blogs - articulos'} description="Descubre el universo del mundo de la ingeniería: análisis, tendencias, y consejos de mantenimiento. Sumérgete en innovaciones y proyectos globales con nuestro contenido especializado para aficionados y profesionales">
 	<main>
