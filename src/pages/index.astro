@@ -1,6 +1,38 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Image from 'astro/components/Image.astro';
+import { sortByDate } from '../lib/utils/sortFunctions';
+import Blog from '../components/Blog/Blog.astro'
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+
+const news = (await getCollection('news')) || [];
+const sortedPosts = sortByDate(news);
+const newsData = sortedPosts.slice(0, 9)
+
+const postsHeavyMachinery = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).filter((b) => {
+    return b.data.category === 'maquinarias_pesadas'
+});
+const heavyMachineryData = postsHeavyMachinery.slice(0, 9)
+
+const postsAutomotiveMechanic = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).filter((b) => {
+    return b.data.category === 'mecanica_automotriz'
+});
+const automotiveMechanicData = postsAutomotiveMechanic.slice(0, 9)
+
+const blogs = (await getCollection('blog'))
+const sortedBlogsPosts = sortByDate(blogs);
+const blogsData = sortedBlogsPosts.slice(0, 9)
+
+const ramdomNumber  = getRandomInt(blogs.length - 9)
+const randomData = blogs.slice(ramdomNumber, ramdomNumber + 9)
+
+console.log(randomData)
+console.log(getRandomInt(blogs.length - 9))
 
 ---
 
@@ -15,8 +47,8 @@ import Image from 'astro/components/Image.astro';
 	prose-h4:text-slate-700 
 	dark:prose-h4:text-slate-200
 	">
-		<h1 class="dark:text-slate-50   m-auto text-center text-slate-800 mb-10">Mundo ingeniería: Tu portal integral de conocimiento técnico</h1>
-		<div class=" h-[520px] w-[100%] bg-cover bg-center rounded-xl mb-10">
+		<h1 class="dark:text-slate-50  m-auto text-center text-slate-800 mb-10">Mundo ingeniería: Tu portal integral de conocimiento técnico</h1>
+		<div class=" h-[420px] w-[100%] bg-cover bg-center rounded-xl mb-10">
       <Image src={'/portal.jpeg'} width={1280} alt={'Mundo ingeniería'} height={720} class="w-full h-full object-cover	"  loading="lazy" />
     </div>
 		<p class="dark:text-slate-300 text-slate-700">
@@ -26,26 +58,122 @@ import Image from 'astro/components/Image.astro';
 		<p class="dark:text-slate-300 text-slate-700">
 			Nuestro blog es una herramienta esencial para profesionales y estudiantes de ingeniería. Aquí encontrarás análisis profundos, guías prácticas y artículos sobre las últimas tendencias y mejores prácticas en diversas áreas de la ingeniería. Ya sea que te intereses por la ingeniería mecánica, civil, eléctrica o de software, nuestro blog tiene algo para ti.
 		</p>
+
+		<!-- <div class="flex  items-center gap-6">
+			<h3 class="m-0">Últimas de publicaciones</h3>
+			<a  class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank" href="/news">ver más</a>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				{blogsData.map((el) => (
+					<div class="swiper-slide"> 
+						<Blog 
+							slug={el.slug}
+						  heroImage={el.data.heroImage}
+						  title={el.data.title}
+						  pubDate={el.data.pubDate} 
+						/> 
+					</div>
+				))}
+			</div>
+			<div class="swiper-pagination"></div>
+		</div> -->
+
+		<div class="flex  items-center flex-col  md:flex-row  md:gap-5 ">
+			<h3 class="m-0">Últimas publicaciones de maquinaria pesada</h3>
+			<a class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank">ver más</a>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				{heavyMachineryData.map((el) => (
+					<div class="swiper-slide"> 
+						<Blog 
+							slug={el.slug}
+						  heroImage={el.data.heroImage}
+						  title={el.data.title}
+						  pubDate={el.data.pubDate} 
+						/> 
+					</div>
+				))}
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="flex  items-center flex-col  md:flex-row  md:gap-5 ">
+			<h3 class="m-0">Últimas publicaciones de mecánica automotriz</h3>
+			<a  class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank" href="/categories/mecanica_automotriz">ver más</a>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				{automotiveMechanicData.map((el) => (
+					<div class="swiper-slide"> 
+						<Blog 
+							slug={el.slug}
+						  heroImage={el.data.heroImage}
+						  title={el.data.title}
+						  pubDate={el.data.pubDate} 
+						/> 
+					</div>
+				))}
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="flex  items-center flex-col  md:flex-row  md:gap-5 ">
+			<h3 class="m-0">Últimas publicaciones sobre las noticias</h3>
+			<a  class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank" href="/news">ver más</a>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				{newsData.map((el) => (
+					<div class="swiper-slide"> 
+						<Blog 
+							slug={el.slug}
+						  heroImage={el.data.heroImage}
+						  title={el.data.title}
+						  pubDate={el.data.pubDate} 
+						/> 
+					</div>
+				))}
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="flex  items-center flex-col  md:flex-row  md:gap-5 ">
+			<h3 class="m-0">Otras publicaciones que te puedan interesar</h3>
+			<a  class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank" href="/blog">ver más</a>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				{randomData.map((el) => (
+					<div class="swiper-slide"> 
+						<Blog 
+							slug={el.slug}
+						  heroImage={el.data.heroImage}
+						  title={el.data.title}
+						  pubDate={el.data.pubDate} 
+						/> 
+					</div>
+				))}
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		
 		<h3 class="">Noticias de Ingeniería</h3>
 		<p class="dark:text-slate-300 text-slate-700">
 			Mantente informado con nuestra sección de noticias, que ofrece las últimas actualizaciones sobre avances tecnológicos, innovaciones industriales y noticias relevantes del mundo de la ingeniería. Conoce las nuevas adquisiciones de empresas, lanzamientos de equipos y desarrollos en tecnologías de maquinaria y herramientas.
 		</p>
-		<h2 class="">Misión y Visión
-		</h2>
-		<p class="dark:text-slate-300 text-slate-700">
-			En Mundo Ingeniería, nuestra misión es proporcionar contenido de alta calidad que abarque todos los aspectos del fascinante mundo de la ingeniería. Nos dedicamos a ofrecer información actualizada y relevante que ayude a profesionales y estudiantes a mantenerse a la vanguardia en sus campos respectivos.
-		</p>
+		
 		<h2 class="">Únete a Nuestra Comunidad</h2>
 		<p class="dark:text-slate-300 text-slate-700"> Para más información y recursos, visita nuestra comunidad de <a href="https://www.facebook.com/mundoingenieria2024/" target="_blank" class=" dark:text-primary-500 text-primary-500 hover:text-primary-800" >facebook</a>  y descubre todo lo que Mundo Ingeniería tiene para ofrecer.
 		</p>
 		<h3 class="">El Mundo Detrás de la Maquinaria Pesada</h3>
 		<p  class="dark:text-slate-300 text-slate-700">Si te interesa obtener información más detallada y especializada sobre maquinaria pesada, te invitamos a visitar nuestra otra página web, <a class="text-primary-500 hover:text-primary-800" href="https://www.maquinariaspesadas.org/">Maquinarias Pesadas </a> . En este sitio encontrarás recursos exhaustivos, guías prácticas y descargas gratuitas enfocadas en el funcionamiento, mantenimiento y últimas innovaciones en maquinaria utilizada en construcción, minería y otros sectores industriales. ¡No te lo pierdas y amplía tu conocimiento con nosotros!</p>
 
-		
 	</main>
 </Layout>
 
 <style>
+
 	.prose {
 	}
 	main {
@@ -54,3 +182,37 @@ import Image from 'astro/components/Image.astro';
 	}
 
 </style>
+
+<script>
+  import Swiper from 'swiper/bundle';
+  import 'swiper/css/bundle';
+
+  new Swiper('.swiper', {
+    slidesPerView: 1,   
+    autoplay: {
+      delay: 3000,
+    },
+    loop: true,
+    spaceBetween: 30,
+    pagination: { 
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true,
+    },
+		breakpoints: {
+			640: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 40,
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 50,
+			},
+		},
+  });
+
+</script>

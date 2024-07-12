@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import FormattedDate from '../FormattedDate.astro';
+import Image from 'astro/components/Image.astro';
+import BlogPost from '../../layouts/BlogPost.astro';
+import RelatedPost from '../react/RelatedPost'
+
+
+const { title, description, pubDate, updatedDate, heroImage, tags = [], relations = true } = Astro.props;
+
+const posts = (await getCollection('blog'))
+
+
+
+---
+<BlogPost title={title} description={description}>
+  <main >
+    <article class="">
+      <div class="hero-image" >
+        <div class="img-content h-[300px] md:h-[510px]  w-[100%] lg:w-[1020px] bg-cover bg-center dark:shadow-md dark:shadow-primary-900/50">
+          {heroImage && (
+            <Image src={heroImage} width={1280} alt={title} height={720} class="w-full h-full object-cover	"  loading="lazy" />
+          )}
+        </div>
+      </div>
+
+      
+      <div class="
+        prose dark:prose-invert
+        prose-strong:text-slate-700
+        dark:prose-strong:text-slate-200
+        prose-h3:text-slate-700 
+        dark:prose-h3:text-slate-200
+        prose-h2:text-slate-700 
+        dark:prose-h2:text-slate-200
+        prose-h4:text-slate-700 
+        dark:prose-h4:text-slate-200
+        
+      ">
+        <div class="title">
+          <div class="date">
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  Última actualización en<FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
+          </div>
+          <h1 class="font-semibold text-slate-800 dark:text-slate-200">{title}</h1>
+          <hr />
+        </div>
+        <slot/>
+        
+      </div>
+      <div class="container  m-auto flex flex-wrap gap-2">
+        {tags.map((el:string) => (
+          <div class=" ">
+            <p class="py-1 px-4 mb-0  text-sm dark:text-white/90 bg-slate-200 dark:bg-slate-800 rounded-full">{el}</p>
+          </div>
+            
+        ))}
+      </div>
+    </article>
+    {
+    relations && (
+      <div class="container mt-4">
+        <h4 class="text-2xl font-semibold text-slate-700 dark:text-slate-200">Publicaciones relacionadas </h4>
+        <RelatedPost posts={posts} tags={tags} client:visible />
+      </div>
+    )}
+  </main>
+</BlogPost>
+

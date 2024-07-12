@@ -24,10 +24,14 @@ const {title, description} = Astro.props
 <style is:global>
 	:root {
 		--bg-reverse: #fff; 
+    --swiper-theme-color: theme('colors.primary.500') !important ;
+
 	}
 
 	.dark {
 		--bg-reverse: #080e11; 
+    --swiper-theme-color: theme('colors.primary.500') !important ;
+		--swiper-pagination-bullet-inactive-color: theme('colors.slate.200')
 	}
 
 </style>
