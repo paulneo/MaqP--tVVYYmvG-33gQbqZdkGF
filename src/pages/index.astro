@@ -47,7 +47,7 @@ console.log(getRandomInt(blogs.length - 9))
 	prose-h4:text-slate-700 
 	dark:prose-h4:text-slate-200
 	">
-		<h1 class="dark:text-slate-50   m-auto text-center text-slate-800 mb-10">Mundo ingeniería: Tu portal integral de conocimiento técnico</h1>
+		<h1 class="dark:text-slate-50  m-auto text-center text-slate-800 mb-10">Mundo ingeniería: Tu portal integral de conocimiento técnico</h1>
 		<div class=" h-[420px] w-[100%] bg-cover bg-center rounded-xl mb-10">
       <Image src={'/portal.jpeg'} width={1280} alt={'Mundo ingeniería'} height={720} class="w-full h-full object-cover	"  loading="lazy" />
     </div>
@@ -79,7 +79,7 @@ console.log(getRandomInt(blogs.length - 9))
 			<div class="swiper-pagination"></div>
 		</div> -->
 
-		<div class="flex  items-center gap-4">
+		<div class="flex  items-center flex-col  md:flex-row  md:gap-5 ">
 			<h3 class="m-0">Últimas publicaciones de maquinaria pesada</h3>
 			<a class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank">ver más</a>
 		</div>
@@ -98,7 +98,7 @@ console.log(getRandomInt(blogs.length - 9))
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<div class="flex  items-center gap-6">
+		<div class="flex  items-center flex-col  md:flex-row  md:gap-5 ">
 			<h3 class="m-0">Últimas publicaciones de mecánica automotriz</h3>
 			<a  class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank" href="/categories/mecanica_automotriz">ver más</a>
 		</div>
@@ -118,7 +118,7 @@ console.log(getRandomInt(blogs.length - 9))
 			<div class="swiper-pagination"></div>
 		</div>
 
-		<div class="flex  items-center gap-6">
+		<div class="flex  items-center flex-col  md:flex-row  md:gap-5 ">
 			<h3 class="m-0">Últimas publicaciones sobre las noticias</h3>
 			<a  class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank" href="/news">ver más</a>
 		</div>
@@ -138,7 +138,7 @@ console.log(getRandomInt(blogs.length - 9))
 			<div class="swiper-pagination"></div>
 		</div>
 
-		<div class="flex  items-center gap-6">
+		<div class="flex  items-center flex-col  md:flex-row  md:gap-5 ">
 			<h3 class="m-0">Otras publicaciones que te puedan interesar</h3>
 			<a  class="text-sm text-primary-900 no-underline rounded-full	p-[2px] px-3 bg-primary-500 hover:bg-primary-600" href="/categories/maquinarias_pesadas" target="_blank" href="/blog">ver más</a>
 		</div>
@@ -188,7 +188,7 @@ console.log(getRandomInt(blogs.length - 9))
   import 'swiper/css/bundle';
 
   new Swiper('.swiper', {
-    slidesPerView: 3,   
+    slidesPerView: 1,   
     autoplay: {
       delay: 3000,
     },
@@ -198,7 +198,21 @@ console.log(getRandomInt(blogs.length - 9))
       el: ".swiper-pagination",
       dynamicBullets: true,
       clickable: true,
-    }
+    },
+		breakpoints: {
+			640: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 40,
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 50,
+			},
+		},
   });
 
 </script>
