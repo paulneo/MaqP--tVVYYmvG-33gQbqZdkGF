@@ -11,6 +11,8 @@ El sistema de inyección electrónica de combustible (EFI) es una tecnología av
 
 ## Componentes del Sistema EFI
 
+![Tipos de Sistemas EFI](/mecanica_automotriz/fundamentos_tipos_de_sistemas_EFI.png)
+
 ### ECU del Motor
 
 La ECU es el cerebro del sistema EFI. Calcula la duración óptima de la inyección de combustible basada en las señales recibidas de varios sensores. Esta precisión asegura que el motor funcione de manera eficiente, maximizando el rendimiento y minimizando el consumo de combustible.
