@@ -1,7 +1,7 @@
 ---
 title: "Componentes y Funcionamiento del Sistema de Combustible"
 description: Componentes y el funcionamiento del sistema de combustible en los motores modernos. Aprende cómo la bomba de combustible, los inyectores y los reguladores de presión trabajan juntos para asegurar un rendimiento óptimo del motor, mejorando la eficiencia del combustible .
-pubDate: "Jul 19 2024"
+pubDate: "Jul 17 2024"
 heroImage: "/mecanica_automotriz/componentes_funcionamiento_sistemas_combustible.png"
 tags: ["Combustible", "Bomba", "Motor"]
 category: mecanica_automotriz
