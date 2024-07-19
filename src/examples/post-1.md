@@ -1,8 +1,8 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'May 01 2020'
-heroImage: '/blog-placeholder-1.jpg'
+title: "Markdown Style Guide"
+description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
+pubDate: "May 01 2020"
+heroImage: "/blog-placeholder-1.jpg"
 tags: ["Agrícola"]
 status: false
 ---
@@ -27,7 +27,7 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ## Paragraph
 
-hola esto es mi popo 
+hola esto es mi popo
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
@@ -44,12 +44,16 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 ##
 
 ```markdown
- ESTOY APRENDIENDO MAQUINAS
+ESTOY APRENDIENDO MAQUINAS
 ```
 
 #### Output
 
 ![blog placeholder](/blog-placeholder-about.jpg)
+
+### imagen con medida cambiar width
+
+<img src="/mecanica_automotriz/componentes_funcionamiento_sistemas_combustible4.png" alt="Control de Presión Constante" width="420"/>
 
 ## Blockquotes
 
@@ -97,7 +101,7 @@ The blockquote element represents content that is quoted from another source, op
 
 #### Output
 
-| Italics   | Bold     | Code   |  
+| Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
 
@@ -109,7 +113,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 
 ````markdown
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -125,7 +129,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 Output
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
