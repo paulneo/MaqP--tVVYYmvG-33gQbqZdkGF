@@ -1,5 +1,5 @@
 ---
-title: "Hyundai Tucson 2025: facelift y tecnologías de vanguardia"
+title: "Hyundai Tucson 2025: Tecnologías de vanguardia"
 description: "El Hyundai Tucson 2025 presenta un rediseño exterior e interior, con nuevas tecnologías y un precio inicial competitivo."
 pubDate: "Jul 18 2024"
 heroImage: "/news/hyundai-tucson.jpg"
