@@ -3,7 +3,7 @@ title: "¿Por qué sientes brusquedad al conducir?"
 description: "Descubre las causas de la brusquedad en la conducción y cómo solucionarlo. Aprende cómo las características de los neumáticos y el estado de la suspensión afectan la transmisión de impactos y mejora la comodidad de tu vehículo."
 pubDate: "Jul 22 2024"
 heroImage: "/mecanica_automotriz/por_que_sientes_brusquedad_al_conducir.jpg"
-tags: ["Aleteo de la dirección", "Carroceria", "Volante"]
+tags: ["Brusquedad", "Carroceria", "Conducción"]
 category: "mecanica_automotriz"
 ---
 
