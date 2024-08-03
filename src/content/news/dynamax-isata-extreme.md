@@ -3,10 +3,10 @@ title: "Dynamax Isata 5 Extreme Off-Road RV: Lujo y Aventura Sin Esperas"
 description: "Conozca el Isata 5 Extreme de Dynamax, un RV off-road de lujo listo para la aventura sin la necesidad de largas esperas."
 pubDate: "Jun 21 2024"
 heroImage: "/news/dynamax.jpeg"
-tags:
-  ["Dynamax", "RV", "Off-Road", "Aventura"]
+tags: ["Dynamax", "RV", "Off-Road", "Aventura"]
 category: mecanica_automotriz
 ---
+
 Hoy en día, si buscas un RV de lujo para terrenos difíciles con los mejores acabados, probablemente te encuentres revisando folletos de constructores boutique y desembolsando un depósito considerable solo para esperar tu máquina de aventura personalizada. Dynamax, una marca reconocida, adopta un enfoque diferente con su bien equipado Isata 5 Extreme, un RV listo para el off-road. Aquí te contamos qué puedes esperar.
 
 ## ¿Qué es un Super C RV?
@@ -23,7 +23,8 @@ Dynamax sabe que sus clientes disfrutan tanto de explorar terrenos difíciles co
 - **Capacidad de Carga y Remolque**: Equipado con un parachoques completo con luces off-road, enganche para remolque y espacio para un cabrestante.
 - **Diseño y Estilo**: Gráficos de montaña oscuros y emblemas 4x4 destacan su capacidad off-road.
 - **Interiores de Lujo**: Cuenta con comedor, sofá, cocina bien equipada, baño y ducha de 36x36 pulgadas. Las camas tamaño king y queen aseguran espacio suficiente para toda la familia.
-![blog placeholder](/news/dynamax-01.jpeg)
+  ![dynamax](/news/dynamax-01.jpeg)
+
 ## Capacidad Overland Directo del Concesionario
 
 El Isata 5 Extreme no solo ofrece características impresionantes, sino también la reputación y disponibilidad que Dynamax ha logrado. Puedes obtener todas estas características sin las largas esperas típicas de los constructores de vehículos overland personalizados. Este RV está listo para llegar a esos campamentos remotos que otros RVs no pueden soñar, y lo hace con comodidad.

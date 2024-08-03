@@ -3,10 +3,10 @@ title: "Subasta del Chevrolet Suburban 1972: un clásico modernizado en Bring a 
 description: "El Chevrolet Suburban 1972 se subasta en Bring a Trailer, destacando por su estilo vintage y modernas mejoras."
 pubDate: "Jul 22 2024"
 heroImage: "/news/suburban.jpg"
-tags:
-  ["Noticias", "Automóviles", "Subastas", "Chevrolet"]
+tags: ["Noticias", "Automóviles", "Subastas", "Chevrolet"]
 category: "mecanica_automotriz"
 ---
+
 El Chevrolet Suburban de 1972, parte de la sexta generación de esta icónica SUV, está actualmente en subasta, destacándose por su diseño vintage y mejoras modernas que lo hacen un vehículo único y funcional para el uso diario.
 
 #### Diseño y Estilo Clásico
@@ -24,7 +24,7 @@ El Suburban ha sido un verdadero veterano en el mundo automotriz desde 1935, per
 #### Especificaciones Técnicas
 
 Este modelo en particular es un C20 de 1972, conocido por su rareza con solo 2136 unidades fabricadas ese año. Equipado con un motor V-8 de 350 pulgadas cúbicas, el cual fue reconstruido a principios de los años 90, este Suburban ofrece una experiencia de conducción robusta. Además, cuenta con dirección asistida y control de crucero, una opción instalada por el concesionario en 1972.
-![blog placeholder](/news/72-suburban.jpg)
+![72-suburban](/news/72-suburban.jpg)
 
 #### Mercado y Popularidad
 

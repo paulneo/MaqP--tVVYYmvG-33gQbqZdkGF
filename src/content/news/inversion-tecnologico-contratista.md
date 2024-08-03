@@ -3,10 +3,10 @@ title: "La inversión en tecnología impulsa el éxito del contratista de B.C. U
 description: "United Group, con su flota de equipos John Deere equipada con tecnología Topcon, está preparada para un crecimiento significativo y proyectos de construcción más grandes."
 pubDate: "Jul 16 2024"
 heroImage: "/news/inversion-tecnologia.jpg"
-tags:
-  ["Noticias", "Construcción", "Tecnología"]
+tags: ["Noticias", "Construcción", "Tecnología"]
 category: maquinarias_pesadas
 ---
+
 United Group tiene una extensa historia en la construcción de British Columbia, con más de 80 años de experiencia en proyectos de infraestructura clave, como la construcción original de la autopista Sea to Sky. Con una reciente inversión en tecnología Topcon y equipos John Deere, la empresa está preparada para expandirse a nuevas regiones y abordar proyectos de construcción más grandes.
 
 ### Historia y Crecimiento
@@ -28,7 +28,7 @@ La adopción temprana de la tecnología de Topcon Positioning Systems ha sido fu
 ### Beneficios de la Tecnología en la Construcción
 
 La tecnología permite a operadores con poca experiencia alcanzar un nivel básico de productividad en máquinas equipadas con control de máquinas Topcon. "Es muy fácil de usar, podemos poner a cualquiera en la máquina y enseñarle a operar el GPS," explica Rusty Hodge, superintendente de sitio. La inversión en tecnología ha permitido a United Group completar proyectos con mayor rapidez y precisión, mejorando su competitividad en el mercado.
-![blog placeholder](/news/inversion-tecnologicos.jpg")
+![Beneficios de la Tecnología en la Construcción](/news/inversion-tecnologicos.jpg")
 
 ### Apoyo Continuo de Brandt Tractor
 

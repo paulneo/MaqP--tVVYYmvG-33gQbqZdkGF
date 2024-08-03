@@ -3,8 +3,7 @@ title: "Chevrolet Anuncia Fecha de Lanzamiento del Corvette ZR1 2025: El Superde
 description: "Chevrolet ha revelado la fecha de lanzamiento del Corvette ZR1 2025, un superdeportivo estadounidense con motor central y turboalimentación. Descubre los detalles y qué esperar de esta bestia de 900 caballos de fuerza."
 pubDate: "Jun 21 2024"
 heroImage: "/news/chervolet.jpg"
-tags:
-  ["Chevrolet", "Corvette ZR1", "Superdeportivos", "2025"]
+tags: ["Chevrolet", "Corvette ZR1", "Superdeportivos", "2025"]
 category: mecanica_automotriz
 ---
 
@@ -21,7 +20,7 @@ Chevrolet ha insinuado que el ZR1 podría incluir un motor eléctrico en el eje 
 El ZR1 no solo se destacará por su potencia bruta. También se espera que incluya mejoras significativas en el manejo y la frenada. Se anticipa un paquete de frenos más robusto y posiblemente una refrigeración adicional para los frenos, necesaria para gestionar la velocidad extra. El diseño general y las capacidades del ZR1 lo posicionan como un superdeportivo completo, adecuado tanto para la carretera como para la pista.
 
 Además, Chevrolet ha prometido que la experiencia de conducción será incomparable, con un enfoque en la estabilidad y la respuesta del vehículo en todas las condiciones. La incorporación de tecnologías avanzadas de asistencia al conductor y opciones de personalización también jugarán un papel crucial en el atractivo del ZR1.
-![blog placeholder](/news/chervolet-atras.jpg)
+![Chevrolet](/news/chervolet-atras.jpg)
 
 ## Expectativas y Futuro
 

@@ -3,8 +3,7 @@ title: "Hunter RMV's Acela Apex 6x6 Overlander: Un Estudio de Lujo Sobre Ruedas"
 description: "Descubre el nuevo Acela Apex 6x6 de Hunter RMV, un vehículo todoterreno de lujo que combina capacidades militares con el confort de un apartamento moderno."
 pubDate: "Jun 21 2024"
 heroImage: "/news/hunter.jpg"
-tags:
-  ["Hunter RMV", "Acela Apex 6x6", "Vehículos todoterreno", "RV de lujo"]
+tags: ["Hunter RMV", "Acela Apex 6x6", "Vehículos todoterreno", "RV de lujo"]
 category: mecanica_automotriz
 ---
 
@@ -27,7 +26,7 @@ La cocina incluye una nevera y congelador Isotherm de cajón, un microondas de c
 ### Baño y Dormitorio
 
 El baño ofrece una ducha completa, un lavabo iluminado y un inodoro Thetford de cassette para un uso eficiente del agua. Un tanque de agua dulce de 130 galones suministra agua para la ducha y los lavabos, mientras que el tanque de aguas grises cuenta con una válvula de descarga remota. El dormitorio principal tiene un colchón King-size con canales elevados para una ventilación adecuada, y múltiples ventanas para una óptima circulación de aire.
-![blog placeholder](/news/hunter-cocina.jpg)
+![Baño y Dormitorio](/news/hunter-cocina.jpg)
 
 ## Precio y Disponibilidad
 
