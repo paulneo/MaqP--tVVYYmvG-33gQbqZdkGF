@@ -2,7 +2,7 @@
 title: "Cómo gestionar el aumento de los costos de combustible"
 description: "Este artículo ofrece estrategias prácticas para manejar el aumento de los costos de combustible en la industria de la construcción, destacando la importancia de la gestión eficiente de equipos y la optimización de costos operativos."
 pubDate: "Aug 02 2024"
-heroImage: "/images/costos-combustible.jpg"
+heroImage: "/images/costos-combustible.jpeg"
 tags:
   [
     "Costos de Combustible",
@@ -18,7 +18,7 @@ Hubo un tiempo en que el precio del combustible diésel no cambiaba 40-50 centav
 
 Los precios del diésel han aumentado un 74% en el último año, con el combustible representando ahora más del 40% de los costos operativos del equipo. Y los precios del combustible son solo una parte de la historia. Ames dice que los costos generales del equipo de SEMA han subido un 33%, atribuyendo esto a una combinación de factores, incluida la inflación.
 
-![Impacto del Aumento de los Costos de Combustible](/images/grafica-combustible.jpg)
+![Impacto del Aumento de los Costos de Combustible](/images/grafica-combustible.jpeg)
 
 ## Estrategias para Gestionar los Costos de Combustible
 
