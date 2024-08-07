@@ -1,5 +1,5 @@
 ---
-title: "Ángulo de Convergencia y Divergencia en la Estabilidad del Vehículoo"
+title: "Ángulo de Convergencia y Divergencia en la Estabilidad del Vehículo"
 description: El ángulo de convergencia y divergencia, junto con el radio de giro, son cruciales para la estabilidad y manejo del vehículo. Aprende cómo estos factores afectan la conducción y el desgaste de los neumáticos.
 pubDate: "Jun 14 2024"
 heroImage: "/mecanica_automotriz/angulo-de-convergencia-divergencia-en-la-estabilidad-vehiculo.png"
