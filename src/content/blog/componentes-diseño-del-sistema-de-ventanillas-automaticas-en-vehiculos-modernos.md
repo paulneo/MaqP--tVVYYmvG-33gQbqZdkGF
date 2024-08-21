@@ -2,18 +2,18 @@
 title: "Componentes y diseño del sistema de ventanillas automáticas en vehículos modernos"
 description: Descubre cómo funciona el sistema de ventanillas automáticas en los vehículos modernos. Aprende sobre sus componentes clave, diseño, y cómo garantizan un funcionamiento eficiente y seguro.
 pubDate: "Aug 13 2024"
-heroImage: "/mecanica_automotriz/componentes-diseño-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos.jpg"
+heroImage: "/mecanica_automotriz/componentes-diseno-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos.jpg"
 tags: ["Ventanillas", "Seguridad"]
 category: mecanica_automotriz
 ---
 
 El **sistema de ventanillas automáticas** es un elemento esencial en los vehículos modernos, diseñado para facilitar la apertura y cierre de las ventanas con un solo toque de un interruptor. Este sistema está compuesto por varios componentes que trabajan en conjunto para asegurar un funcionamiento suave y eficiente. A continuación, se detallan los componentes principales y su diseño.
 
-<img src="/mecanica_automotriz/componentes-diseño-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos2.png" alt="Sistema de ventanillas automáticas" width="620"/>
+<img src="/mecanica_automotriz/componentes-diseno-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos2.png" alt="Sistema de ventanillas automáticas" width="620"/>
 
 ## Componentes del sistema de ventanillas automáticas
 
-<img src="/mecanica_automotriz/componentes-diseño-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos3.png" alt="Reguladores de ventanilla" width="420"/>
+<img src="/mecanica_automotriz/componentes-diseno-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos3.png" alt="Reguladores de ventanilla" width="420"/>
 
 1. **Reguladores de ventanilla**
 
@@ -27,7 +27,7 @@ El **sistema de ventanillas automáticas** es un elemento esencial en los vehíc
 
 3. **Interruptor maestro de ventanillas automáticas**
 
-<img src="/mecanica_automotriz/componentes-diseño-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos4.png" alt="Reguladores de ventanilla" width="420"/>
+<img src="/mecanica_automotriz/componentes-diseno-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos4.png" alt="Reguladores de ventanilla" width="420"/>
 
 - **Función:** Controla todo el sistema, permitiendo la operación de todas las ventanillas desde un solo panel. También incluye un interruptor de cierre que desactiva los controles de las ventanillas traseras y del pasajero delantero.
 - **Características:** El cálculo de atasco se basa en las señales del sensor de velocidad y del interruptor de límite, asegurando un funcionamiento seguro y eficiente.
@@ -42,7 +42,7 @@ El **sistema de ventanillas automáticas** es un elemento esencial en los vehíc
 
 6. **Interruptor de cortesía de la puerta**
 
-<img src="/mecanica_automotriz/componentes-diseño-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos5.png" alt="Reguladores de ventanilla" width="420"/>
+<img src="/mecanica_automotriz/componentes-diseno-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos5.png" alt="Reguladores de ventanilla" width="420"/>
 
 - **Función:** Detecta si la puerta del conductor está abierta o cerrada, enviando esta información al sistema para gestionar la función de ventanillas sin llave.
 
@@ -59,12 +59,12 @@ El diseño del sistema se basa en la integración de componentes que permiten un
 
 - 1. **Interruptor de conexión macho y hembra:**
 
-<img src="/mecanica_automotriz/componentes-diseño-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos6.png" alt="Reguladores de ventanilla" width="420"/>
+<img src="/mecanica_automotriz/componentes-diseno-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos6.png" alt="Reguladores de ventanilla" width="420"/>
      Los conectores macho y hembra están ubicados tanto en la puerta deslizante como en la estructura del vehículo. La energía eléctrica se suministra únicamente cuando la puerta está completamente cerrada. En el momento que la puerta se abre, se corta el suministro de electricidad automáticamente.
 
 - 2. **Unidad de suministro de energía continua de puerta corrediza:**
 
-<img src="/mecanica_automotriz/componentes-diseño-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos7.png" alt="Reguladores de ventanilla" width="420"/>
+<img src="/mecanica_automotriz/componentes-diseno-del-sistema-de-ventanillas-automaticas-en-vehiculos-modernos7.png" alt="Reguladores de ventanilla" width="420"/>
      Este sistema asegura un flujo constante de energía entre la carrocería del vehículo y los componentes eléctricos de la puerta deslizante, independientemente de si la puerta está abierta o cerrada. A diferencia de los sistemas tradicionales que emplean conectores macho y hembra, este sistema permite que dispositivos como las ventanillas automáticas funcionen incluso cuando la puerta no está cerrada completamente.
 
 ## Conclusión
