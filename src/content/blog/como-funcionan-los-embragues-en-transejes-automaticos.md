@@ -1,5 +1,5 @@
 ---
-title: " ¿Cómo funcionan los embragues en transejes automáticos?"
+title: "¿Cómo funcionan los embragues en transejes automáticos?"
 description: "Conoce el funcionamiento de los embragues C1 y C2 en los transejes automáticos. Aprende sobre su estructura y cómo aseguran una transmisión de potencia eficiente y suave en los vehículos."
 pubDate: "Jul 31 2024"
 heroImage: "/mecanica_automotriz/como_funcionan_los_embragues_en_transejes_automaticos.webp"
