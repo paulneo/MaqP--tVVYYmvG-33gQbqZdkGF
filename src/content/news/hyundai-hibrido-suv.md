@@ -5,7 +5,7 @@ pubDate: "Aug 28 2024"
 heroImage: "/news/hyundai-hibrido.jpg"
 tags:
   ["Noticias", "Vehículos Eléctricos", "Hyundai", "SUV"]
-category: "automotriz"
+category: "mecanica_automotriz"
 ---
 
 Hyundai, uno de los principales fabricantes de automóviles a nivel mundial, ha anunciado planes ambiciosos para el futuro de su línea de vehículos electrificados durante el reciente CEO Investor Day 2024. En el evento, la compañía reveló su estrategia a medio y largo plazo, denominada "Hyundai Way", que incluye la duplicación de su oferta actual de vehículos híbridos y la introducción de un SUV eléctrico de gran autonomía, conocido como EREV (vehículo eléctrico de rango extendido), dentro de su gama de productos.
