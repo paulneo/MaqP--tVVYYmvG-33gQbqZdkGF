@@ -2,7 +2,7 @@
 title: "Audi Q5 y SQ5 2025: Un nuevo diseño con motores conocidos"
 description: "Audi ha presentado la última generación de sus populares SUV compactos de lujo, el Q5 y el SQ5, que llegarán al mercado a mediados de 2025 con un diseño renovado y motores de combustión ya conocidos."
 pubDate: "Sep 02 2024"
-heroImage: "/news/audi_q5_sq5_2025.jpg"
+heroImage: "/news/audi-q5.jpg"
 tags:
   ["Noticias", "SUV", "Audi", "Novedades"]
 category: "mecanica_automotriz"
