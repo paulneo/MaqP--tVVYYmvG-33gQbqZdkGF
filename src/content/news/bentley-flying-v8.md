@@ -5,7 +5,7 @@ pubDate: "Sep 03 2024"
 heroImage: "/news/bentley-hybrid.jpg"
 tags:
   ["Noticias", "Híbrido Enchufable", "Automóviles de Lujo", "Innovación", "V-8"]
-category: "automotriz"
+category: "mecanica_automotriz"
 ---
 
 El **Bentley Flying Spur**, uno de los sedanes más lujosos y emblemáticos de la marca británica, se prepara para una renovación significativa que incluye un nuevo motor híbrido enchufable V-8. Este facelift, que estará disponible a partir del **10 de septiembre de 2024**, promete llevar la potencia y la sostenibilidad a un nuevo nivel en la línea de vehículos de Bentley.
