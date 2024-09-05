@@ -11,7 +11,7 @@ const searchBlogs = ({ posts }) => {
   };
 
   const fuse = new Fuse(posts, {
-    keys: ["data.title"],
+    keys: ["data.title", "data.description"],
     includeMatches: true,
     minMatchCharLength: 2,
     threshold: 0.5,
