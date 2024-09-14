@@ -15,9 +15,13 @@ Ambos motores, el AQY y el ATU, se basan en la misma arquitectura de cuatro cili
 
 #### 1.1 Motor AQY
 
+<img src="/mecanica_automotriz/diferencias-entre-los-motores-AQY-ATU-de-volkswagen-motorAQY.webp" alt="Motor AQY" width="320"/>
+
 El **motor AQY** se caracteriza por una configuración estándar, diseñada para un equilibrio entre potencia y eficiencia. Utiliza un sistema de **inyección multipunto** que permite una mezcla óptima de aire y combustible, logrando una combustión eficiente.
 
 #### 1.2 Motor ATU
+
+<img src="/mecanica_automotriz/diferencias-entre-los-motores-AQY-ATU-de-volkswagen-motorATU.webp" alt="Motor ATU" width="320"/>
 
 El **motor ATU** es una variante que incorpora algunas modificaciones para mejorar ciertos aspectos del rendimiento. Una de las diferencias principales es la presencia de un sistema de **regulación variable de válvulas**, que ajusta el tiempo de apertura y cierre de las válvulas para optimizar el flujo de aire y la potencia en diferentes rangos de revoluciones.
 
