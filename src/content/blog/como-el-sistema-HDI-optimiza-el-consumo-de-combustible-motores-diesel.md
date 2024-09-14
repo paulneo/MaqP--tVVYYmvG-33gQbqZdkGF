@@ -7,8 +7,6 @@ tags: ["HDI", "motores diésel", "eficiencia"]
 category: mecanica_automotriz
 ---
 
-## Cómo el sistema HDI optimiza el consumo de combustible en motores diésel
-
 El **sistema HDI (High-pressure Direct Injection)** ha revolucionado el mundo de los motores diésel, no solo mejorando el rendimiento, sino también reduciendo de manera significativa el **consumo de combustible**. La eficiencia de este sistema se debe a su capacidad para controlar de manera precisa la inyección del combustible, lo que maximiza la combustión y minimiza el desperdicio. En este blog, veremos cómo el sistema HDI optimiza el consumo de combustible y por qué es una solución ideal para quienes buscan vehículos más eficientes y económicos.
 
 ### 1. Inyección precisa y eficiente
