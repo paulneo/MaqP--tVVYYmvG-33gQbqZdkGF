@@ -1,7 +1,7 @@
 ---
 title: "Funcionamiento del sistema de frenos: Principios hidráulicos y respuestas ante fallos"
 description: "Descubre cómo el sistema de frenos convierte la fuerza del pedal en presión hidráulica, y cómo reacciona ante posibles fugas para garantizar la seguridad en la carretera."
-pubDate: "Oct 10 2024"
+pubDate: "Oct 22 2024"
 heroImage: "/mecanica_automotriz/funcionamiento-del-sistema-de-frenos-principios-hidraulicos-y-fallos.png"
 tags:
   [
