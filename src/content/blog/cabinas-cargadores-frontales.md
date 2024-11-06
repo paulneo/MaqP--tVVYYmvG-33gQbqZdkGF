@@ -4,7 +4,7 @@ description: "Exploramos en detalle las cabinas de operación de los cargadores 
 pubDate: "Oct 24 2024"
 heroImage: "/images/principal.jpg"
 tags: ["Cargadores Frontales", "Cabinas de Operación", "938G", "950G", "980G", "992D", "992G"]
-category: maquinaria_pesada
+category: maquinarias_pesadas
 ---
 
 Las cabinas de operación en los cargadores frontales están diseñadas para brindar comodidad, seguridad y un control óptimo del equipo durante su funcionamiento. A lo largo de los diferentes modelos de cargadores frontales, desde el **938G** hasta el **992G**, las cabinas han evolucionado para incluir tecnologías avanzadas que mejoran la eficiencia operativa y la experiencia del operador. A continuación, exploraremos las principales características y controles de cada modelo.
