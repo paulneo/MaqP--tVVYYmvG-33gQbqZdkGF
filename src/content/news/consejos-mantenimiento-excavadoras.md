@@ -1,7 +1,7 @@
 ---
 title: "Consejos de Mantenimiento para Excavadoras"
 description: "Conoce las mejores prácticas para mantener tu excavadora en óptimo funcionamiento y preservar su valor a largo plazo."
-pubDate: "Nov 25 2024"
+pubDate: "Nov 05 2024"
 heroImage: "/news/mantenimiento-excavadora.jpg"
 tags: ["Mantenimiento", "Excavadoras", "Maquinaria pesada", "Consejos"]
 category: maquinarias_pesadas
