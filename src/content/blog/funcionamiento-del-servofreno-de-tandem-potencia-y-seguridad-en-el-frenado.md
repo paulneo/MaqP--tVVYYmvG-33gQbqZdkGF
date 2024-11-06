@@ -1,7 +1,7 @@
 ---
 title: "Funcionamiento del Servofreno en Tándem: Potencia y Seguridad en el Frenado"
 description: "Conoce cómo el servofreno en tándem aprovecha la presión de aire para mejorar la capacidad de frenado y aumentar la seguridad al volante. Explicación detallada para amantes de la mecánica."
-pubDate: "Nov 22 2024"
+pubDate: "Nov 05 2024"
 heroImage: "/mecanica_automotriz/funcionamiento-del-servofreno-de-tandem-potencia-y-seguridad-en-el-frenado.jpg"
 tags:
   [
