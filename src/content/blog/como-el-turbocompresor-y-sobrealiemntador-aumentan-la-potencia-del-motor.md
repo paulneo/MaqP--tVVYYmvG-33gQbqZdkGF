@@ -3,14 +3,21 @@ title: "Cómo el turbocompresor y sobrealimentador aumentan la potencia de tu mo
 description: "Aprende cómo el turbocompresor y el sobrealimentador incrementan la potencia del motor al forzar el aire en los cilindros y mejorar la mezcla de aire-combustible, manteniendo el motor compacto y eficiente."
 pubDate: "Sep 26 2024"
 heroImage: "/mecanica_automotriz/como-el-turbocompresor-y-sobrealiemntador-aumentan-la-potencia-del-motor.webp"
-tags: ["turbocompresor", "sobrealimentador", "potencia del motor", "rendimiento del motor"]category: mecanica_automotriz
+tags:
+  [
+    "turbocompresor",
+    "sobrealimentador",
+    "potencia del motor",
+    "rendimiento del motor",
+  ]
+category: mecanica_automotriz
 ---
 
 La búsqueda de mayor potencia en los motores sin aumentar su tamaño físico es un desafío constante en la ingeniería automotriz. Aquí es donde entran en juego el **turbocompresor** y el **sobrealimentador**, dos tecnologías que permiten incrementar la potencia sin necesidad de agrandar el motor. Pero, ¿cómo logran este aumento en el rendimiento? En este blog, te explicamos de manera clara cómo funcionan y por qué son esenciales para los motores modernos.
 
 ### 1. Objetivo del turbocompresor y sobrealimentador
 
-<img src="/mecanica_automotriz/como-el-turbocompresor-y-sobrealiemntador-aumentan-la-potencia-del-motor2.png" alt="Objetivo del turbocompresor y sobrealimentador" width="420"/>
+<img src="/mecanica_automotriz/como-el-turbocompresor-y-sobrealiemntador-aumentan-la-potencia-del-motor2.png" alt="Objetivo del turbocompresor y sobrealimentadorty" width="420"/>
 
 El objetivo principal tanto del **turbocompresor** como del **sobrealimentador** es aumentar la cantidad de aire que entra en los cilindros del motor. Normalmente, un motor aspira aire de la atmósfera, y la cantidad de mezcla de aire-combustible determina la potencia que puede generar. Cuanto más aire y combustible entren en los cilindros, mayor será la combustión y, por lo tanto, mayor la potencia generada.
 
