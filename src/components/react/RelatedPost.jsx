@@ -25,17 +25,14 @@ const RelatedPost = ({ posts, tags }) => {
 
   useEffect(() => {
     let results = [];
-    console.log(tags);
 
     tags.forEach((element) => {
       if (results.length <= 9) {
         let newResult = fuse.search(element);
-        console.log(results.length);
 
         results = results.concat(newResult);
       }
     });
-    console.log(results);
     results.splice(9);
     setSearchResults(results);
   }, [tags]);
