@@ -1,0 +1,102 @@
+---
+import Layout from "./Layout.astro";
+import Navbar from "@components/Navbar.astro";
+import Footer from "@components/Footer.astro";
+import BackToTop from "@components/control/BackToTop.astro";
+import AdSlot from "@components/AdSlot.astro";
+import Sidebar from "@components/Sidebar.astro";
+
+interface Props {
+    title: string;
+    banner?: string;
+    description?: string;
+    showSidebar?: boolean;
+    showBannerAd?: boolean;
+    ogType?: 'website' | 'article';
+    ogImage?: string;
+    canonical?: string;
+    publishedTime?: Date;
+    modifiedTime?: Date;
+    author?: string;
+    tags?: string[];
+    noindex?: boolean;
+}
+
+// Sidebar y banners de AdSense desactivados por defecto: el sitio aún no tiene tráfico
+// ni cuenta de AdSense aprobada. Reactivar pasando showSidebar/showBannerAd={true}
+// cuando tengas tu cliente AdSense y traffic real.
+const {
+    title,
+    banner,
+    description,
+    showSidebar = false,
+    showBannerAd = false,
+    ogType,
+    ogImage,
+    canonical,
+    publishedTime,
+    modifiedTime,
+    author,
+    tags,
+    noindex,
+} = Astro.props
+---
+
+<Layout
+    title={title}
+    banner={banner}
+    description={description}
+    ogType={ogType}
+    ogImage={ogImage}
+    canonical={canonical}
+    publishedTime={publishedTime}
+    modifiedTime={modifiedTime}
+    author={author}
+    tags={tags}
+    noindex={noindex}
+>
+<slot slot="head" name="head"></slot>
+<div class="min-h-screen flex flex-col">
+    <div id="top-row" class="z-50 onload-animation">
+        <Navbar></Navbar>
+    </div>
+
+    {showBannerAd && (
+        <div class="border-b border-black/[0.05] dark:border-white/[0.06] bg-black/[0.01] dark:bg-white/[0.02]">
+            <div class="max-w-[var(--page-width)] mx-auto px-4 md:px-6 lg:px-8 py-4">
+                <AdSlot variant="banner-top" class="my-0" />
+            </div>
+        </div>
+    )}
+
+    <div id="content-wrapper" class="flex-1 onload-animation">
+        <div class="max-w-[var(--page-width)] mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12">
+            <div class:list={["flex gap-10 xl:gap-14", { "lg:flex-row": showSidebar, "flex-col": !showSidebar }]}>
+                <main id="swup" class="transition-fade flex-1 min-w-0">
+                    <slot></slot>
+                </main>
+                {showSidebar && <Sidebar />}
+            </div>
+        </div>
+    </div>
+
+    {showBannerAd && (
+        <div class="border-t border-black/[0.05] dark:border-white/[0.06] bg-black/[0.01] dark:bg-white/[0.02] mt-12">
+            <div class="max-w-[var(--page-width)] mx-auto px-4 md:px-6 lg:px-8 py-6">
+                <AdSlot variant="footer" class="my-0" />
+            </div>
+        </div>
+    )}
+
+    <div id="footer" class="onload-animation">
+        <Footer></Footer>
+    </div>
+    <BackToTop></BackToTop>
+</div>
+</Layout>
+
+<style is:global>
+    :root {
+        --page-width: 76rem;  /* más ancho para acomodar sidebar */
+    }
+</style>

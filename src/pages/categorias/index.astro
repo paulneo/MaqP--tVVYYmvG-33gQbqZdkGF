@@ -1,0 +1,68 @@
+---
+import MainGridLayout from "../../layouts/MainGridLayout.astro";
+import { Icon } from 'astro-icon/components';
+import { getSortedPosts } from "../../utils/content-utils";
+import { CATEGORY_LIST } from "../../lib/categories";
+
+const posts = await getSortedPosts();
+const counts: Record<string, number> = {};
+for (const p of posts) {
+    const cat = p.data.category;
+    if (cat) counts[cat] = (counts[cat] ?? 0) + 1;
+}
+---
+
+<MainGridLayout
+    title="Categorías"
+    description="Todos los temas de Nexo Mundial: arquitectura, construcción, maquinaria pesada, ingeniería básica y glosario."
+>
+    <header class="mb-12 max-w-2xl">
+        <p class="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--primary)] font-semibold mb-3">
+            Explora por tema
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] text-[var(--deep-text)] dark:text-white/95 mb-4">
+            Categorías
+        </h1>
+        <p class="text-lg text-black/60 dark:text-white/65 leading-relaxed">
+            Cinco silos temáticos donde organizamos el contenido. Cada uno reúne
+            artículos prácticos pensados para entender los conceptos del oficio.
+        </p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {CATEGORY_LIST.map(cat => (
+            <a
+                href={`/categorias/${cat.slug}/`}
+                class:list={["group relative block overflow-hidden rounded-2xl p-7 md:p-8 min-h-[220px] md:min-h-[260px] hover:scale-[1.01] transition", cat.image ? '' : cat.bg]}
+            >
+                {cat.image && (
+                    <>
+                        <img
+                            src={cat.image}
+                            alt=""
+                            role="presentation"
+                            loading="lazy"
+                            decoding="async"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/20"></div>
+                    </>
+                )}
+                <div class:list={["relative", cat.image ? 'text-white' : '']}>
+                    <div class:list={["mb-4", cat.image ? 'text-white/90' : cat.text]}>
+                        <Icon name={cat.icon} class="w-10 h-10 md:w-12 md:h-12 opacity-90"></Icon>
+                    </div>
+                    <h2 class:list={["text-xl md:text-2xl font-bold mb-2 tracking-tight", cat.image ? 'text-white drop-shadow-md' : cat.text]}>
+                        {cat.label}
+                    </h2>
+                    <p class:list={["text-sm md:text-base leading-relaxed mb-3", cat.image ? 'text-white/85' : 'text-black/65 dark:text-white/65']}>
+                        {cat.description}
+                    </p>
+                    <span class:list={["text-xs uppercase tracking-[0.14em] font-semibold", cat.image ? 'text-white/85' : `${cat.text} opacity-80`]}>
+                        {counts[cat.slug] ?? 0} {counts[cat.slug] === 1 ? 'artículo' : 'artículos'} →
+                    </span>
+                </div>
+            </a>
+        ))}
+    </div>
+</MainGridLayout>

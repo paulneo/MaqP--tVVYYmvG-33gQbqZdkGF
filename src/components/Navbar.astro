@@ -1,0 +1,292 @@
+---
+import { Icon } from 'astro-icon/components'
+import { siteConfig } from '../config'
+import { CATEGORY_LIST } from '../lib/categories'
+import { url } from '../utils/url-utils'
+import LightDarkSwitch from './LightDarkSwitch.svelte'
+import Search from './Search.svelte'
+import DisplaySettings from './widget/DisplaySettings.svelte'
+import NavMenuPanel from './widget/NavMenuPanel.astro'
+
+const className = Astro.props.class
+const currentPath = Astro.url.pathname
+
+const isActive = (path: string) => {
+  if (path === '/') return currentPath === '/' || currentPath === ''
+  return currentPath.startsWith(path)
+}
+
+// Para el menú mobile usamos los links principales (sin megamenú)
+const mobileLinks = [
+  { name: 'Inicio', url: '/', external: false },
+  { name: 'Arquitectura', url: '/categorias/arquitectura/', external: false },
+  { name: 'Construcción', url: '/categorias/construccion/', external: false },
+  {
+    name: 'Maquinaria',
+    url: '/categorias/maquinaria-pesada/',
+    external: false,
+  },
+  {
+    name: 'Ingeniería',
+    url: '/categorias/ingenieria-basica/',
+    external: false,
+  },
+  { name: 'Glosario', url: '/glosario/', external: false },
+  { name: 'Sobre', url: '/about/', external: false },
+]
+---
+<header
+    class:list={[
+        className,
+        "sticky top-0 z-30 w-full bg-[var(--page-bg)]/85 backdrop-blur-md",
+        "border-b border-black/[0.07] dark:border-white/[0.08]",
+    ]}
+>
+    <div class="max-w-[var(--page-width)] h-16 md:h-[4.5rem] mx-auto flex items-center gap-4 lg:gap-6 px-4 md:px-6">
+        <!-- Logo (swap entre light/dark según modo) -->
+        <a href={url('/')} aria-label={siteConfig.title} class="flex items-center transition hover:opacity-80 active:opacity-60 shrink-0">
+            <img
+                src="/logo-light.png"
+                alt={siteConfig.title}
+                width="2172"
+                height="724"
+                class="block dark:hidden h-14 md:h-14 w-auto"
+                fetchpriority="high"
+            />
+            <img
+                src="/logo-dark.png"
+                alt={siteConfig.title}
+                width="2172"
+                height="724"
+                class="hidden dark:block h-14 md:h-14 w-auto"
+                fetchpriority="high"
+            />
+        </a>
+
+        <!-- Buscador inline (desktop) -->
+        <div class="hidden lg:flex flex-1 max-w-md">
+            <div class="search-inline w-full">
+                <Search client:load>
+                    <Icon slot="search-icon" name="material-symbols:search" size={"1.15rem"} class="absolute pointer-events-none ml-3 transition my-auto text-black/40 dark:text-white/40"></Icon>
+                    <Icon slot="arrow-icon" name="fa6-solid:chevron-right" size={"0.7rem"} class="transition translate-x-0.5 my-auto text-[var(--primary)]"></Icon>
+                    <Icon slot="search-switch" name="material-symbols:search" size={"1.15rem"}></Icon>
+                </Search>
+            </div>
+        </div>
+
+        <!-- Nav links (desktop) -->
+        <nav class="hidden md:flex items-center gap-1 ml-auto lg:ml-0">
+            <a
+                href={url('/')}
+                class:list={[
+                    "px-3 py-2 text-sm font-medium rounded transition",
+                    isActive('/')
+                        ? "text-[var(--primary)] bg-[var(--primary)]/8"
+                        : "text-black/70 dark:text-white/70 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] hover:bg-black/[0.04] dark:hover:bg-white/[0.05]"
+                ]}
+            >
+                Inicio
+            </a>
+
+            <!-- Megamenú Categorías -->
+            <div class="relative" id="megamenu-wrapper">
+                <button
+                    type="button"
+                    id="megamenu-toggle"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class:list={[
+                        "px-3 py-2 text-sm font-medium rounded transition inline-flex items-center gap-1",
+                        currentPath.startsWith('/categorias')
+                            ? "text-[var(--primary)] bg-[var(--primary)]/8"
+                            : "text-black/70 dark:text-white/70 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] hover:bg-black/[0.04] dark:hover:bg-white/[0.05]"
+                    ]}
+                >
+                    Categorías
+                    <Icon name="material-symbols:keyboard-arrow-down-rounded" class="w-4 h-4 transition group-aria-expanded:rotate-180" id="megamenu-chevron"></Icon>
+                </button>
+
+                <div
+                    id="megamenu-panel"
+                    class="absolute right-0 lg:left-1/2 lg:-translate-x-1/2 top-full mt-2 w-[520px] max-w-[calc(100vw-2rem)] rounded-2xl bg-white dark:bg-[var(--card-bg)] border border-black/[0.08] dark:border-white/[0.1] shadow-xl shadow-black/10 dark:shadow-black/40 p-4 opacity-0 invisible -translate-y-1 transition-all duration-200 origin-top z-40"
+                    role="menu"
+                >
+                    <div class="grid grid-cols-2 gap-1.5">
+                        {CATEGORY_LIST.map(cat => (
+                            <a
+                                href={`/categorias/${cat.slug}/`}
+                                role="menuitem"
+                                class={`group/item flex items-start gap-3 p-3 rounded-xl hover:${cat.bg} transition`}
+                            >
+                                <div class={`shrink-0 w-9 h-9 rounded-lg ${cat.bg} flex items-center justify-center`}>
+                                    <Icon name={cat.icon} class={`w-5 h-5 ${cat.text}`}></Icon>
+                                </div>
+                                <div class="min-w-0">
+                                    <p class={`text-sm font-semibold text-[var(--deep-text)] dark:text-white/90 group-hover/item:${cat.text.replace('text-', 'text-')} transition`}>{cat.label}</p>
+                                    <p class="text-xs text-black/55 dark:text-white/55 line-clamp-2 mt-0.5 leading-snug">{cat.description}</p>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                    <div class="mt-2 pt-2 border-t border-black/[0.06] dark:border-white/[0.08]">
+                        <a href="/categorias/" class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.05] transition text-sm font-medium text-[var(--primary)]">
+                            <span>Ver todas las categorías</span>
+                            <Icon name="material-symbols:arrow-forward" class="w-4 h-4"></Icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a
+                href="/glosario/"
+                class:list={[
+                    "px-3 py-2 text-sm font-medium rounded transition",
+                    isActive('/glosario')
+                        ? "text-[var(--primary)] bg-[var(--primary)]/8"
+                        : "text-black/70 dark:text-white/70 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] hover:bg-black/[0.04] dark:hover:bg-white/[0.05]"
+                ]}
+            >
+                Glosario
+            </a>
+
+            <a
+                href="/about/"
+                class:list={[
+                    "px-3 py-2 text-sm font-medium rounded transition",
+                    isActive('/about')
+                        ? "text-[var(--primary)] bg-[var(--primary)]/8"
+                        : "text-black/70 dark:text-white/70 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] hover:bg-black/[0.04] dark:hover:bg-white/[0.05]"
+                ]}
+            >
+                Sobre
+            </a>
+        </nav>
+
+        <!-- Acciones derecha (search en mobile, dark mode, menu mobile) -->
+        <div class="flex items-center gap-1 ml-auto md:ml-0">
+            <!-- Search visible en mobile y tablet -->
+            <div class="lg:hidden">
+                <Search client:load>
+                    <Icon slot="search-icon" name="material-symbols:search" size={"1.15rem"} class="absolute pointer-events-none ml-3 transition my-auto text-black/40 dark:text-white/40"></Icon>
+                    <Icon slot="arrow-icon" name="fa6-solid:chevron-right" size={"0.7rem"} class="transition translate-x-0.5 my-auto text-[var(--primary)]"></Icon>
+                    <Icon slot="search-switch" name="material-symbols:search" size={"1.15rem"}></Icon>
+                </Search>
+            </div>
+            {!siteConfig.themeColor.fixed && (
+                <button aria-label="Display Settings" class="btn-plain h-10 w-10 rounded active:scale-95" id="display-settings-switch">
+                    <Icon name="material-symbols:palette-outline" size={"1.15rem"}></Icon>
+                </button>
+            )}
+            <LightDarkSwitch client:load></LightDarkSwitch>
+            <button aria-label="Menu" name="Nav Menu" class="btn-plain w-10 h-10 rounded active:scale-95 md:hidden" id="nav-menu-switch">
+                <Icon name="material-symbols:menu-rounded" size={"1.25rem"}></Icon>
+            </button>
+        </div>
+    </div>
+
+    <NavMenuPanel links={mobileLinks}></NavMenuPanel>
+    <DisplaySettings client:only="svelte">
+        <Icon slot="restore-icon" name="fa6-solid:arrow-rotate-left" size={"0.875rem"} class=""></Icon>
+    </DisplaySettings>
+</header>
+
+<style>
+    /* Megamenú: estado abierto */
+    #megamenu-panel.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    @media (min-width: 1024px) {
+        #megamenu-panel.is-open {
+            transform: translate(-50%, 0);
+        }
+    }
+
+    /* Buscador inline: customización del slot Fuwari */
+    .search-inline :global(#search-bar) {
+        @apply !w-full;
+    }
+</style>
+
+<script>
+function bindMegamenu() {
+    const toggle = document.getElementById('megamenu-toggle');
+    const panel = document.getElementById('megamenu-panel');
+    const wrapper = document.getElementById('megamenu-wrapper');
+    if (!toggle || !panel || !wrapper) return;
+
+    const open = () => {
+        panel.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+    };
+    const close = () => {
+        panel.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    // Toggle on click
+    toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (panel.classList.contains('is-open')) close(); else open();
+    });
+
+    // Hover open en desktop
+    let hoverTimer: number | undefined;
+    wrapper.addEventListener('mouseenter', () => {
+        if (window.innerWidth < 1024) return;
+        clearTimeout(hoverTimer);
+        open();
+    });
+    wrapper.addEventListener('mouseleave', () => {
+        if (window.innerWidth < 1024) return;
+        hoverTimer = window.setTimeout(close, 150);
+    });
+
+    // Cerrar al click afuera
+    document.addEventListener('click', (e) => {
+        if (!wrapper.contains(e.target as Node)) close();
+    });
+
+    // Cerrar al ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') close();
+    });
+}
+
+function bindNavbarButtons() {
+    const settingBtn = document.getElementById("display-settings-switch");
+    if (settingBtn) {
+        settingBtn.addEventListener("click", function () {
+            const settingPanel = document.getElementById("display-setting");
+            if (settingPanel) settingPanel.classList.toggle("float-panel-closed");
+        });
+    }
+
+    const menuBtn = document.getElementById("nav-menu-switch");
+    if (menuBtn) {
+        menuBtn.addEventListener("click", function () {
+            const menuPanel = document.getElementById("nav-menu-panel");
+            if (menuPanel) menuPanel.classList.toggle("float-panel-closed");
+        });
+    }
+}
+
+bindMegamenu();
+bindNavbarButtons();
+document.addEventListener('astro:after-swap', () => {
+    bindMegamenu();
+    bindNavbarButtons();
+}, { once: false });
+</script>
+
+{import.meta.env.PROD && <script is:inline define:vars={{scriptUrl: url('/pagefind/pagefind.js')}}>
+async function loadPagefind() {
+    const pagefind = await import(scriptUrl)
+    await pagefind.options({ 'excerptLength': 20 })
+    pagefind.init()
+    window.pagefind = pagefind
+    pagefind.search('')
+}
+loadPagefind()
+</script>}
