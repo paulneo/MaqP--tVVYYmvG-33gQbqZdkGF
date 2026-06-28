@@ -10,6 +10,7 @@ import { PAGE_SIZE } from "../constants/constants";
 import { CATEGORY_LIST } from "../lib/categories";
 import { Icon } from 'astro-icon/components';
 import { siteConfig } from "../config";
+import AdSlot from "../components/AdSlot.astro";
 
 export async function getStaticPaths({ paginate }) {
     const allBlogPosts = await getSortedPosts();
@@ -145,8 +146,16 @@ const renderCard = (entry: any, size: 'sm' | 'md' | 'lg' = 'sm') => ({
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
-                {restEntries.map((entry: any) => (
-                    <PostCard {...renderCard(entry, 'sm')} />
+                {restEntries.map((entry: any, i: number) => (
+                    <>
+                        <PostCard {...renderCard(entry, 'sm')} />
+                        {/* Insert in-feed ad después del 6to post para no saturar */}
+                        {i === 5 && isFirstPage && (
+                            <div class="col-span-full">
+                                <AdSlot variant="inline" />
+                            </div>
+                        )}
+                    </>
                 ))}
             </div>
 
