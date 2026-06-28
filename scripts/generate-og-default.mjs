@@ -4,9 +4,9 @@
  * muestra al compartir páginas del sitio que no tienen su propia imagen.
  *
  * Combina:
- *   - public/logo-mark.png (el símbolo cuadrado)
- *   - Wordmark "Nexo Mundial"
- *   - Tagline "Conocimiento técnico, explicado simple."
+ *   - public/logo-mark-light.png (el símbolo cuadrado de Mundo Ingeniería)
+ *   - Wordmark "Mundo Ingeniería"
+ *   - Tagline "Ingeniería aplicada para Latinoamérica."
  *   - Una línea de categorías al pie
  *
  * Si cambia el logo o cualquier texto, edita este script y corré:
@@ -35,14 +35,14 @@ const svg = `
   <!-- Top accent line -->
   <rect x="0" y="0" width="${W}" height="8" fill="${TEAL}"/>
 
-  <!-- Wordmark "Nexo Mundial" -->
+  <!-- Wordmark "Mundo Ingeniería" -->
   <text x="600" y="${LOGO_TOP + LOGO_SIZE + 90}"
         font-family="Helvetica, Arial, sans-serif"
         font-size="76"
         font-weight="800"
         fill="${DARK}"
         text-anchor="middle"
-        letter-spacing="-2">Nexo Mundial</text>
+        letter-spacing="-2">Mundo Ingeniería</text>
 
   <!-- Tagline -->
   <text x="600" y="${LOGO_TOP + LOGO_SIZE + 145}"
@@ -50,7 +50,7 @@ const svg = `
         font-size="28"
         font-weight="400"
         fill="${MUTED}"
-        text-anchor="middle">Conocimiento técnico, explicado simple.</text>
+        text-anchor="middle">Ingeniería aplicada para Latinoamérica.</text>
 
   <!-- Categories line at bottom -->
   <text x="600" y="555"
@@ -59,7 +59,7 @@ const svg = `
         font-weight="700"
         fill="${TEAL}"
         text-anchor="middle"
-        letter-spacing="4">ARQUITECTURA · CONSTRUCCIÓN · MAQUINARIA · INGENIERÍA</text>
+        letter-spacing="4">MAQUINARIA · AUTOMOTRIZ · INGENIERÍA · TECNOLOGÍA</text>
 </svg>
 `.trim()
 
