@@ -47,3 +47,19 @@ export const licenseConfig: LicenseConfig = {
   name: 'CC BY-NC-SA 4.0',
   url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
 }
+
+/**
+ * Google AdSense publisher ID — viene heredado del proyecto viejo
+ * Mundo Ingeniería que ya tenía cuenta aprobada.
+ * Si queda como string vacío, NO se carga el script de AdSense.
+ */
+export const adsenseId: string = 'ca-pub-7253543815310863'
+
+/**
+ * Google Analytics 4 measurement ID.
+ * TODO: reemplazar por el measurement ID propio de Mundo Ingeniería
+ * para conservar la historia de 12+ meses de tráfico ya acumulado.
+ * Sacar del panel: GA4 → Admin → Data Streams → Web → arriba a la
+ * derecha "ID de medición: G-XXXXXXXXX"
+ */
+export const ga4Id: string = 'G-M7K3WMX98Z'

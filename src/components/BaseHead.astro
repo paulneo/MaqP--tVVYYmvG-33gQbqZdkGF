@@ -1,5 +1,5 @@
 ---
-import { siteConfig } from "../config"
+import { siteConfig, adsenseId, ga4Id } from "../config"
 
 interface Props {
   title: string
@@ -87,7 +87,7 @@ const siteLocale = localeMap[siteConfig.lang] ?? siteConfig.lang.replace('-', '_
 {ogType === 'article' && tags.map(tag => (
   <meta property="article:tag" content={tag} />
 ))}
-<meta property="article:publisher" content="https://www.facebook.com/nexomundial2/" />
+<meta property="article:publisher" content="https://www.facebook.com/mundoingenieria2/" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
@@ -101,14 +101,14 @@ const siteLocale = localeMap[siteConfig.lang] ?? siteConfig.lang.replace('-', '_
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": siteConfig.title,
-  "alternateName": "Nexo Mundial Blog",
+  "alternateName": "Mundo Ingeniería Blog",
   "url": new URL('/', Astro.site).toString(),
   "logo": new URL('/logo-mark-light.png', Astro.site).toString(),
   "description": siteConfig.subtitle,
   "sameAs": [
-    "https://www.facebook.com/nexomundial2/",
+    "https://www.facebook.com/mundoingenieria2/",
     "https://www.instagram.com/nxmundial2024/",
-    "https://www.tiktok.com/@nexomundial2024"
+    "https://www.tiktok.com/@mundoingenieria2024"
   ]
 })}></script>
 
@@ -134,8 +134,8 @@ const siteLocale = localeMap[siteConfig.lang] ?? siteConfig.lang.replace('-', '_
 
 {isProd && (
   <>
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-M7K3WMX98Z"></script>
-    <script is:inline>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
+    <script is:inline define:vars={{ ga4Id }}>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       window.gtag = gtag;
@@ -151,7 +151,16 @@ const siteLocale = localeMap[siteConfig.lang] ?? siteConfig.lang.replace('-', '_
         wait_for_update: 500,
       });
       gtag('js', new Date());
-      gtag('config', 'G-M7K3WMX98Z');
+      gtag('config', ga4Id);
     </script>
+
+    {adsenseId && (
+      <script
+        is:inline
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+        crossorigin="anonymous"
+      ></script>
+    )}
   </>
 )}

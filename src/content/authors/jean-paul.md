@@ -1,11 +1,11 @@
 ---
 name: Jean Paul
-role: Editor de Nexo Mundial
-bio: Editor y curador del proyecto Nexo Mundial. Reviso, edito y verifico cada artículo antes de publicarlo, contrastando con manuales técnicos, normativas y fuentes especializadas en arquitectura, construcción e ingeniería.
+role: Editor de Mundo Ingeniería
+bio: Editor y curador del proyecto Mundo Ingeniería. Reviso, edito y verifico cada artículo antes de publicarlo, contrastando con manuales técnicos, normativas y fuentes especializadas en arquitectura, construcción e ingeniería.
 email: jeanp@pivot33.com
 ---
 
-Soy el editor responsable de Nexo Mundial. Selecciono los temas, redacto los artículos
+Soy el editor responsable de Mundo Ingeniería. Selecciono los temas, redacto los artículos
 con apoyo de herramientas de inteligencia artificial como asistente de redacción y
 revisión, y reviso manualmente cada publicación antes de que salga al sitio.
 

@@ -1,7 +1,7 @@
 import { defineCollection, reference, z } from 'astro:content'
 
 /**
- * Schema editorial de Nexo Mundial.
+ * Schema editorial de Mundo Ingeniería.
  *
  * Mantiene compatibilidad con los campos que ya consumen los layouts de Fuwari
  * (title, published, description, image, tags, category, draft) y añade los

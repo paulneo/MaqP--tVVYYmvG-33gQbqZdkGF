@@ -1,7 +1,7 @@
 import {AUTO_MODE, DARK_MODE, DEFAULT_THEME, LIGHT_MODE} from "@constants/constants.ts";
 
 export function getDefaultHue(): number {
-  const fallback = '170' // teal Nexo Mundial, no el azul 250 del template viejo
+  const fallback = '170' // teal Mundo Ingeniería, no el azul 250 del template viejo
   const configCarrier = document.getElementById('config-carrier')
   return parseInt(configCarrier?.dataset.hue || fallback)
 }

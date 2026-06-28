@@ -15,6 +15,7 @@ import PostTOC from "../../components/PostTOC.astro";
 import ReadingProgress from "../../components/ReadingProgress.astro";
 import RelatedPosts from "../../components/RelatedPosts.astro";
 import ShareButtons from "../../components/ShareButtons.astro";
+import AdSlot from "../../components/AdSlot.astro";
 import { isPostPublishable } from "@utils/content-utils";
 
 export async function getStaticPaths() {
@@ -208,6 +209,9 @@ const tagsList = (entry.data.tags as string[] | undefined) ?? [];
         <Markdown class="markdown-content onload-animation prose-blog">
             <Content />
         </Markdown>
+
+        <!-- Anuncio al final del artículo (in-article) -->
+        <AdSlot variant="in-article" />
 
         <!-- FAQs -->
         {faq.length > 0 && (
