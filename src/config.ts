@@ -30,8 +30,7 @@ export const navBarConfig: NavBarConfig = {
     { name: 'Maquinaria',  url: '/categorias/maquinaria-pesada/',   external: false },
     { name: 'Automotriz',  url: '/categorias/mecanica-automotriz/', external: false },
     { name: 'Ingeniería',  url: '/categorias/ingenieria-basica/',   external: false },
-    { name: 'Noticias',    url: '/categorias/noticias/',            external: false },
-    { name: 'Glosario',    url: '/glosario/',                       external: false },
+    { name: 'Categorías',  url: '/categorias/',                     external: false },
     LinkPreset.About,
   ],
 }
