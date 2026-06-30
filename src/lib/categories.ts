@@ -50,6 +50,17 @@ export const CATEGORIES: Record<string, CategoryMeta> = {
     chip: 'text-violet-700 bg-violet-50 dark:text-violet-300 dark:bg-violet-900/30',
     image: '/images/categories/ingenieria-basica.webp',
   },
+  'arquitectura': {
+    slug: 'arquitectura',
+    label: 'Arquitectura',
+    short: 'Arquitectura',
+    description: 'Diseño, planos, urbanismo, teoría arquitectónica y conceptos del oficio.',
+    icon: 'material-symbols:architecture',
+    bg: 'bg-blue-100 dark:bg-blue-900/30',
+    text: 'text-blue-700 dark:text-blue-300',
+    chip: 'text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-900/30',
+    image: '/images/categories/arquitectura.webp',
+  },
   'construccion': {
     slug: 'construccion',
     label: 'Construcción',
@@ -90,6 +101,7 @@ export const CATEGORY_LIST: CategoryMeta[] = [
   CATEGORIES['mecanica-automotriz'],
   CATEGORIES['ingenieria-basica'],
   CATEGORIES['construccion'],
+  CATEGORIES['arquitectura'],
   CATEGORIES['electricidad'],
   CATEGORIES['glosario-y-guias'],
 ]

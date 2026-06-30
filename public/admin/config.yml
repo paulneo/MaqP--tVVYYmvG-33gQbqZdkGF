@@ -86,6 +86,7 @@ collections:
           - { label: 'Mecánica automotriz', value: 'mecanica-automotriz' }
           - { label: 'Ingeniería', value: 'ingenieria-basica' }
           - { label: 'Construcción', value: 'construccion' }
+          - { label: 'Arquitectura', value: 'arquitectura' }
           - { label: 'Electricidad', value: 'electricidad' }
           - { label: 'Glosario y guías', value: 'glosario-y-guias' }
       - name: formato
@@ -159,6 +160,7 @@ collections:
           - { label: 'Mecánica automotriz', value: 'mecanica-automotriz' }
           - { label: 'Ingeniería', value: 'ingenieria-basica' }
           - { label: 'Construcción', value: 'construccion' }
+          - { label: 'Arquitectura', value: 'arquitectura' }
           - { label: 'Electricidad', value: 'electricidad' }
       - { name: short, label: 'Definición corta', widget: text, hint: '20–220 caracteres. Aparece en el listado del glosario.' }
       - { name: related, label: 'Términos relacionados (slugs)', widget: list, required: false }
