@@ -1,5 +1,5 @@
 # ════════════════════════════════════════════════════════════════════════
-# Sveltia CMS — Configuración del panel editorial de Nexo Mundial
+# Sveltia CMS — Configuración del panel editorial de Mundo Ingeniería
 # ════════════════════════════════════════════════════════════════════════
 #
 # Documentación: https://github.com/sveltia/sveltia-cms
@@ -12,17 +12,17 @@
 # Cloudflare Workers). El proxy es open source y se deploya con un
 # click desde: https://github.com/sveltia/sveltia-cms-auth
 #
-# Pasos:
-#   1. Deploy del worker → te da una URL tipo
-#      https://sveltia-cms-auth.<subdomain>.workers.dev
-#   2. Crear OAuth App en github.com/settings/applications/new con
-#      callback https://<worker-url>/callback
-#   3. Setear env vars en el worker: GITHUB_CLIENT_ID,
-#      GITHUB_CLIENT_SECRET, ALLOWED_DOMAINS=nexomundial.com,*.vercel.app
-#   4. Reemplazar base_url abajo con la URL real del worker.
+# Setup que tenés que hacer una vez en Cloudflare Workers:
+#   1. El worker EXISTENTE (sveltia-cms-auth.nexomundial2024.workers.dev)
+#      ya está deployado del setup de Nexo Mundial. Solo hay que agregar
+#      mundoingenieria.org a ALLOWED_DOMAINS en su Variables config.
+#   2. Setear ALLOWED_DOMAINS=nexomundial.com,mundoingenieria.org,*.vercel.app
+#   3. (Opcional) Crear OAuth App nuevo para Mundo Ingeniería en
+#      github.com/settings/applications/new con callback
+#      https://sveltia-cms-auth.nexomundial2024.workers.dev/callback
 backend:
   name: github
-  repo: paulneo/nexoM-j5CHGexBc44a-e-amp-kiAGopx8fE0
+  repo: paulneo/MaqP--tVVYYmvG-33gQbqZdkGF
   branch: main
   base_url: https://sveltia-cms-auth.nexomundial2024.workers.dev
   commit_messages:
@@ -42,10 +42,6 @@ publish_mode: editorial_workflow
 # Sveltia escribe el path absoluto en el campo `image` del frontmatter
 # (ej: /images/posts/excavadora.webp) y el sitio las renderiza sin
 # pasos extra.
-#
-# Si en el futuro querés mover a Cloudinary para optimización automática
-# (resize, WebP/AVIF, srcset), volvé a poner el bloque media_library con
-# tu API key real (cloudinary.com/console → Settings → Access Keys).
 
 media_folder: public/images/posts
 public_folder: /images/posts
@@ -86,15 +82,16 @@ collections:
         label: 'Categoría'
         widget: select
         options:
-          - { label: 'Arquitectura', value: 'arquitectura' }
-          - { label: 'Construcción', value: 'construccion' }
           - { label: 'Maquinaria pesada', value: 'maquinaria-pesada' }
-          - { label: 'Ingeniería básica', value: 'ingenieria-basica' }
+          - { label: 'Mecánica automotriz', value: 'mecanica-automotriz' }
+          - { label: 'Ingeniería', value: 'ingenieria-basica' }
+          - { label: 'Construcción', value: 'construccion' }
+          - { label: 'Electricidad', value: 'electricidad' }
           - { label: 'Glosario y guías', value: 'glosario-y-guias' }
       - name: formato
         label: 'Formato'
         widget: select
-        default: 'guia'
+        default: 'concepto'
         options:
           - { label: 'Guía', value: 'guia' }
           - { label: 'Concepto', value: 'concepto' }
@@ -105,19 +102,19 @@ collections:
       - name: nivel
         label: 'Nivel'
         widget: select
-        default: 'basico'
+        default: 'intermedio'
         options:
           - { label: 'Básico', value: 'basico' }
           - { label: 'Intermedio', value: 'intermedio' }
           - { label: 'Avanzado', value: 'avanzado' }
-      - { name: tags, label: 'Tags', widget: list, default: [], hint: 'Etiquetas en kebab-case (ej: cimentacion, hormigon-armado)' }
+      - { name: tags, label: 'Tags', widget: list, default: [], hint: 'Etiquetas en kebab-case (ej: excavadora, motor-diesel)' }
       - { name: image, label: 'Imagen de portada', widget: image, required: false, hint: 'Arrastra la imagen aquí (ideal WebP o JPG, 16:9, máx 500KB). Se guarda en /images/posts/ del repo. Si dejas vacío se usa un fallback con el ícono de la categoría.' }
       - name: author
         label: 'Autor'
         widget: select
         default: 'jean-paul'
         options:
-          - { label: 'Equipo Nexo Mundial', value: 'jean-paul' }
+          - { label: 'Equipo Mundo Ingeniería', value: 'jean-paul' }
       - { name: aiAssisted, label: 'Asistido por IA (muestra disclaimer al final)', widget: boolean, default: false }
       - name: faq
         label: 'Preguntas frecuentes (FAQ)'
@@ -135,7 +132,7 @@ collections:
         fields:
           - { name: title, label: 'Título de la fuente', widget: string }
           - { name: url, label: 'URL (opcional)', widget: string, required: false }
-      - { name: related, label: 'Slugs de posts relacionados', widget: list, required: false, hint: 'Ej: tipos-de-cimentacion-en-construccion (sin /posts/)' }
+      - { name: related, label: 'Slugs de posts relacionados', widget: list, required: false, hint: 'Ej: como-funciona-bomba-hidraulica (sin /posts/)' }
       - { name: body, label: 'Cuerpo del artículo', widget: markdown, hint: 'Markdown: ## H2, ### H3, **negrita**, *cursiva*, [link](url), - listas, etc.' }
 
   # ━━━ GLOSARIO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -158,10 +155,11 @@ collections:
         widget: select
         required: false
         options:
-          - { label: 'Arquitectura', value: 'arquitectura' }
-          - { label: 'Construcción', value: 'construccion' }
           - { label: 'Maquinaria pesada', value: 'maquinaria-pesada' }
-          - { label: 'Ingeniería básica', value: 'ingenieria-basica' }
+          - { label: 'Mecánica automotriz', value: 'mecanica-automotriz' }
+          - { label: 'Ingeniería', value: 'ingenieria-basica' }
+          - { label: 'Construcción', value: 'construccion' }
+          - { label: 'Electricidad', value: 'electricidad' }
       - { name: short, label: 'Definición corta', widget: text, hint: '20–220 caracteres. Aparece en el listado del glosario.' }
       - { name: related, label: 'Términos relacionados (slugs)', widget: list, required: false }
       - { name: updatedAt, label: 'Última actualización', widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, required: false }
