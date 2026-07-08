@@ -56,10 +56,9 @@ export const licenseConfig: LicenseConfig = {
 export const adsenseId: string = 'ca-pub-7253543815310863'
 
 /**
- * Google Analytics 4 measurement ID.
- * TODO: reemplazar por el measurement ID propio de Mundo Ingeniería
- * para conservar la historia de 12+ meses de tráfico ya acumulado.
- * Sacar del panel: GA4 → Admin → Data Streams → Web → arriba a la
- * derecha "ID de medición: G-XXXXXXXXX"
+ * Google Analytics 4 measurement ID de Mundo Ingeniería.
+ * Propiedad creada dedicada para este dominio; los datos de tráfico
+ * del sitio quedan separados de otros proyectos.
+ * Si queda como string vacío, NO se carga el script de gtag.
  */
-export const ga4Id: string = 'G-M7K3WMX98Z'
+export const ga4Id: string = 'G-0Y68R8Q8D0'
