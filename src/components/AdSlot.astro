@@ -74,8 +74,13 @@ const SIZES: Record<Props['variant'], {
 const cfg = SIZES[variant]
 const isProd = import.meta.env.PROD
 const adActive = isProd && Boolean(adsenseId) && Boolean(slot)
+// En prod con Auto-ads activo (adsenseId cargado, sin slot manual), el
+// componente se oculta y deja que Google Auto-ads decida dónde inyectar
+// anuncios. En dev seguimos mostrando el placeholder para ver el layout.
+const hideForAutoAds = isProd && Boolean(adsenseId) && !slot
 ---
 
+{!hideForAutoAds && (
 <aside
     class:list={[
         'ad-slot relative my-8',
@@ -118,3 +123,4 @@ const adActive = isProd && Boolean(adsenseId) && Boolean(slot)
         </div>
     )}
 </aside>
+)}
