@@ -159,7 +159,7 @@ igual en Lima, Mérida, Cartagena o Buenos Aires.
 
 ## El boceto del libro: la Casa Gaucín de Campo Baeza
 
-![Boceto a mano alzada de Alberto Campo Baeza para la Casa Gaucín, septiembre 2014, mostrando embocaduras profundas con jambas, dintel y alféizar](/images/posts/jambas-dinteles-alfeizares-boceto-campo-baeza.webp)
+![Boceto a mano alzada de Alberto Campo Baeza para la Casa Gaucín, septiembre 2014, mostrando embocaduras profundas con jambas, dintel y alféizar](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/jambas-dinteles-alfeizares-boceto-campo-baeza)
 
 *Boceto original de Alberto Campo Baeza para el proyecto de la Casa
 Gaucín (Cádiz, España), fechado el 20 de septiembre de 2014. Publicado
