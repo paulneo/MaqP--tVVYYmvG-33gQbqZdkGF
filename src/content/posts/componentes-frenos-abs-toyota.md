@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "toyota"
   - "frenos"
-image: /images/posts/componentes-frenos-ABS-toyota.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/componentes-frenos-ABS-toyota
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

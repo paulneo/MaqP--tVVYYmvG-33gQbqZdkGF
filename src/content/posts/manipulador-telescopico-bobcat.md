@@ -13,7 +13,7 @@ tags:
   - "noticias"
   - "agricultura"
   - "paisajismo"
-image: /images/posts/bobcat-manipulador.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/bobcat-manipulador
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

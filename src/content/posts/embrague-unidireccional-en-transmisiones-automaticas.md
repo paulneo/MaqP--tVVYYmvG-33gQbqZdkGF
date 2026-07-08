@@ -12,7 +12,7 @@ tags:
   - "engranajes"
   - "embragues"
   - "frenos"
-image: /images/posts/embrague_unidireccional_en_transmisiones_automaticas.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/embrague_unidireccional_en_transmisiones_automaticas
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

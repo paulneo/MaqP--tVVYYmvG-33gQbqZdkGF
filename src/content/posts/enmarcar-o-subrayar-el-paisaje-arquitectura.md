@@ -14,7 +14,7 @@ tags:
   - plataforma
   - machu-picchu
   - mecanismos-arquitectonicos
-image: /images/posts/enmarcar-o-subrayar-el-paisaje-arquitectura.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/enmarcar-o-subrayar-el-paisaje-arquitectura
 author: jean-paul
 aiAssisted: true
 faq:

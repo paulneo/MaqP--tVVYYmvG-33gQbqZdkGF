@@ -11,7 +11,7 @@ tags:
   - "aceites-de-motor"
   - "mantenimiento-de-motores"
   - "aditivos-de-aceite"
-image: /images/posts/funcionamiento-aceite-motor.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/funcionamiento-aceite-motor
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

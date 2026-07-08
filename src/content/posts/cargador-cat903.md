@@ -12,7 +12,7 @@ tags:
   - "caterpillar"
   - "noticias"
   - "rendimiento-hidraulico"
-image: /images/posts/caragador-cat903.jpeg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/caragador-cat903
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

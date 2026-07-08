@@ -14,7 +14,7 @@ tags:
   - hormigon
   - presupuesto
   - dosificacion
-image: /images/posts/cuanto-cemento-para-una-losa-de-concreto..webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cuanto-cemento-para-una-losa-de-concreto.
 author: jean-paul
 aiAssisted: true
 faq:

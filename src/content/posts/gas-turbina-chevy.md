@@ -12,7 +12,7 @@ tags:
   - "concept-cars"
   - "anos-80"
   - "tecnologia-automotriz"
-image: /images/posts/gas-turbina.jpeg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/gas-turbina
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

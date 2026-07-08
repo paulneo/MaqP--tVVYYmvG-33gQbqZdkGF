@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "motores"
   - "piston"
-image: /images/posts/tipos-de-motores-de-piston.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tipos-de-motores-de-piston
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

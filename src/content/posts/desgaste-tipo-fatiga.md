@@ -8,7 +8,7 @@ category: maquinaria-pesada
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/desgaste-por-fatiga.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/desgaste-por-fatiga
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

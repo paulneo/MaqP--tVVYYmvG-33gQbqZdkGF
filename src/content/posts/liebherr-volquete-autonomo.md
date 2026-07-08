@@ -14,7 +14,7 @@ tags:
   - "autonomia"
   - "mineria"
   - "tecnologia"
-image: /images/posts/liebherr-camion.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/liebherr-camion
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

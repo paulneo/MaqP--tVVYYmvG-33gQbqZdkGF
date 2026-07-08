@@ -12,7 +12,7 @@ tags:
   - "sistema-hidraulico"
   - "cucharones"
   - "cabina-de-operacion"
-image: /images/posts/cargador-frontal-cucharones.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cargador-frontal-cucharones
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -12,7 +12,7 @@ tags:
   - "reciclaje-de-agua"
   - "tecnologia-robotica"
   - "filtros-prensa"
-image: /images/posts/cde.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cde
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

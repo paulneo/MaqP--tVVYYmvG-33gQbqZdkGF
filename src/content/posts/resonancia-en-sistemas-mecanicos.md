@@ -11,7 +11,7 @@ tags:
   - "resonancia"
   - "sistema-mecanicos"
   - "mantenimiento"
-image: /images/posts/resonancia-en-sistemas-mecanicos.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/resonancia-en-sistemas-mecanicos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

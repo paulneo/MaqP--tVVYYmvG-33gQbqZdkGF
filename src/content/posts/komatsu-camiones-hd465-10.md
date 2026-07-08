@@ -12,7 +12,7 @@ tags:
   - "camion-de-acarreo"
   - "productividad"
   - "noticias"
-image: /images/posts/camiones-hd465.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/camiones-hd465
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

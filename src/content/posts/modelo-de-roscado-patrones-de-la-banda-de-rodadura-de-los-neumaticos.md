@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "llantas"
   - "neumaticos"
-image: /images/posts/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

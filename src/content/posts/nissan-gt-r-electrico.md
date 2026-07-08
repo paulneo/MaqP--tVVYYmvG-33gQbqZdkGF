@@ -13,7 +13,7 @@ tags:
   - "tecnologia"
   - "superdeportivos"
   - "electricos"
-image: /images/posts/nissan-gt-r.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/nissan-gt-r
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

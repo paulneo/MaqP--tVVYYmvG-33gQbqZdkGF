@@ -9,7 +9,7 @@ formato: concepto
 nivel: intermedio
 tags:
   - "herramientas-medicion"
-image: /images/posts/juego-herramientas-sec-6v9413.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/juego-herramientas-sec-6v9413
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

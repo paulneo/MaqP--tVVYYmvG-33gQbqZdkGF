@@ -11,7 +11,7 @@ tags:
   - "esfuerzos"
   - "concentradores"
   - "maquinaria-pesada"
-image: /images/posts/analizando-los-esfuerzos-y-sus-concentradores-en-maquinaria-pesada.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/analizando-los-esfuerzos-y-sus-concentradores-en-maquinaria-pesada
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

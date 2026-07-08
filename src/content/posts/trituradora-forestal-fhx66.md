@@ -8,7 +8,7 @@ category: construccion
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/trituradora-forestal.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/trituradora-forestal
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

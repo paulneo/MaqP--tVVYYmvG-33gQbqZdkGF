@@ -12,7 +12,7 @@ tags:
   - "excavadoras"
   - "maquinaria-pesada"
   - "consejos"
-image: /images/posts/mantenimiento-excavadora.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/mantenimiento-excavadora
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

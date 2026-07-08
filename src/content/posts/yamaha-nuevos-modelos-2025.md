@@ -13,7 +13,7 @@ tags:
   - "off-road"
   - "tecnologia"
   - "noticias"
-image: /images/posts/yamaha-nuevos.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/yamaha-nuevos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

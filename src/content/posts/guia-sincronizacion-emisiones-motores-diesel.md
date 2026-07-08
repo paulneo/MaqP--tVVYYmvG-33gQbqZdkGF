@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "motores"
   - "combustible"
-image: /images/posts/moto_diesel_sincronizacion.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/moto_diesel_sincronizacion
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

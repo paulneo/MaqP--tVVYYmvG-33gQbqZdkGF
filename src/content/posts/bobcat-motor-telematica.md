@@ -12,7 +12,7 @@ tags:
   - "telematica"
   - "tecnologia"
   - "seguridad"
-image: /images/posts/bobcat2.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/bobcat2
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

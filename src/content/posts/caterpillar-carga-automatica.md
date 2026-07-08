@@ -13,7 +13,7 @@ tags:
   - "caterpillar"
   - "noticias"
   - "sostenibilidad"
-image: /images/posts/caterpillar-carga.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/caterpillar-carga
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

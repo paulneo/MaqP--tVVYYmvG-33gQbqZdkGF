@@ -11,7 +11,7 @@ tags:
   - "precalentamiento"
   - "motores-diesel"
   - "arranque-en-frio"
-image: /images/posts/pre-poscalentamiento-motores-diesel-clave-para-un-arranque-eficiente-y-duradero.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/pre-poscalentamiento-motores-diesel-clave-para-un-arranque-eficiente-y-duradero
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

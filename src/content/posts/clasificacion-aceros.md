@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "aceros"
   - "maquinaria"
-image: /images/posts/aceros.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/aceros
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

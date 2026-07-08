@@ -11,7 +11,7 @@ tags:
   - "hdi"
   - "emisiones"
   - "motores-diesel"
-image: /images/posts/como-el-sistema-HDI-reduce-las-emisiones-motores-diesel.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como-el-sistema-HDI-reduce-las-emisiones-motores-diesel
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

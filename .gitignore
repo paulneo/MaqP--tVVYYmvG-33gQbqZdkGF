@@ -28,3 +28,4 @@ pnpm-debug.log*
 
 # unused lockfile (project uses pnpm)
 bun.lock
+.cloudinary-mapping.json

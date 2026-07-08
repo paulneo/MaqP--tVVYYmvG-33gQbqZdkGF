@@ -14,7 +14,7 @@ tags:
   - construccion-vivienda
   - latam
   - metro-cuadrado
-image: /images/posts/cuanto-cuesta-construir-una-casa-por-metro-cuadrado-latam-2026.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cuanto-cuesta-construir-una-casa-por-metro-cuadrado-latam-2026
 author: jean-paul
 aiAssisted: true
 faq:

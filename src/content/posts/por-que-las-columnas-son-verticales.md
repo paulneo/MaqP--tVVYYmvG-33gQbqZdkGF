@@ -14,7 +14,7 @@ tags:
   - arquitectura-contemporanea
   - diseño-estructural
   - hormigon-armado
-image: /images/posts/por-que-las-columnas-son-verticales.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por-que-las-columnas-son-verticales
 author: jean-paul
 aiAssisted: true
 faq:

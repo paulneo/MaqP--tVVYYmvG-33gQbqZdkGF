@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "llantas"
   - "alineacion"
-image: /images/posts/alineacion-de-ruedas-en-el-rendimiento-del-vehiculo.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/alineacion-de-ruedas-en-el-rendimiento-del-vehiculo
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

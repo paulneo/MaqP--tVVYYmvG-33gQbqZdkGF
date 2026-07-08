@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/kia-k8.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/kia-k8
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

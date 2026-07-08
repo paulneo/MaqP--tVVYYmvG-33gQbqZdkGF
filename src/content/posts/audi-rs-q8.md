@@ -11,7 +11,7 @@ tags:
   - "audi"
   - "rs-q8-performance"
   - "suv"
-image: /images/posts/audi.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/audi
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -11,7 +11,7 @@ tags:
   - "mantenimiento-vehicular"
   - "prevencion-danos"
   - "conduccion-responsable"
-image: /images/posts/importancia-adecuada-vehiculo.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/importancia-adecuada-vehiculo
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

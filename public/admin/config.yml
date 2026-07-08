@@ -37,12 +37,34 @@ backend:
 publish_mode: editorial_workflow
 
 # ─── Imágenes ─────────────────────────────────────────────────────────
-# Las imágenes subidas vía el CMS se guardan directamente en el repo,
-# bajo public/images/posts/, y Vercel las sirve desde su CDN edge.
-# Sveltia escribe el path absoluto en el campo `image` del frontmatter
-# (ej: /images/posts/excavadora.webp) y el sitio las renderiza sin
-# pasos extra.
+# Las imágenes subidas desde el CMS van a Cloudinary (cloud vadks4nc)
+# con transformación automática (WebP/AVIF + resize + quality auto).
+# Cloudinary devuelve la URL absoluta y Sveltia la escribe en el campo
+# `image` del frontmatter — el sitio la renderiza directo desde
+# res.cloudinary.com sin pasar por Vercel/Netlify.
+#
+# Las 847 imágenes viejas del sitio ya se migraron a Cloudinary vía
+# scripts/migrate-images-to-cloudinary.mjs (una sola vez, no re-ejecutar).
+# La carpeta public/images/posts/ se conserva como backup por un tiempo
+# — se puede borrar cuando estemos 100% confiados en Cloudinary.
+#
+# Setup pendiente (una vez):
+#   1. En Cloudinary → Settings → Upload → Upload Presets
+#   2. Add upload preset con Signing Mode "Unsigned" y folder "mundo-ingenieria"
+#   3. Reemplazar `upload_preset` abajo con el nombre real
 
+media_library:
+  name: cloudinary
+  output_filename_only: false
+  config:
+    cloud_name: vadks4nc
+    api_key: "411149126798244"
+    upload_preset: mundo_unsigned  # ← reemplazar por el preset name real cuando lo tengas
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
+
+# Fallback local (si el user rechaza el widget de Cloudinary):
 media_folder: public/images/posts
 public_folder: /images/posts
 

@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/sistema-de-aire-secundario-reduce-las-emisiones-motores-volkswagen.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistema-de-aire-secundario-reduce-las-emisiones-motores-volkswagen
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

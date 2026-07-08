@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/mclaren-2024.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/mclaren-2024
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

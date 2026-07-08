@@ -11,7 +11,7 @@ tags:
   - "aleteo-de-la-direccion"
   - "carroceria"
   - "volante"
-image: /images/posts/por_que_es_ruido_estruendo_en_la_carroceria_del_auto.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_es_ruido_estruendo_en_la_carroceria_del_auto
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

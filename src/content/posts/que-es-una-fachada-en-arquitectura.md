@@ -14,7 +14,7 @@ tags:
   - composicion-arquitectonica
   - palladio
   - diseño-de-casa
-image: /images/posts/que-es-una-fachada-en-arquitectura.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-una-fachada-en-arquitectura
 author: jean-paul
 aiAssisted: true
 faq:

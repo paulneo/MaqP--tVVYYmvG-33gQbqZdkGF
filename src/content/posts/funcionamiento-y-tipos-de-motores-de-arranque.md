@@ -9,7 +9,7 @@ formato: concepto
 nivel: intermedio
 tags:
   - "motor"
-image: /images/posts/funcionamiento-y-tipos-de-motores-de-arranque.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/funcionamiento-y-tipos-de-motores-de-arranque
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

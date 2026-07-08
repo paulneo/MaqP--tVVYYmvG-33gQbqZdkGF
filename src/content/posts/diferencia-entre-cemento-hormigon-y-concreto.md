@@ -14,7 +14,7 @@ tags:
   - concreto
   - materiales-construccion
   - definiciones
-image: /images/posts/diferencia-entre-cemento-hormigon-y-concreto.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/diferencia-entre-cemento-hormigon-y-concreto
 author: jean-paul
 aiAssisted: true
 faq:

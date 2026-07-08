@@ -11,7 +11,7 @@ tags:
   - "dano-carga-choque"
   - "vehiculos-pesados"
   - "prevencion"
-image: /images/posts/daños-carga-choque.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/daños-carga-choque
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "toyota"
   - "frenos"
-image: /images/posts/diagnostico_mantenimiento_sistema_control_TRC.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/diagnostico_mantenimiento_sistema_control_TRC
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

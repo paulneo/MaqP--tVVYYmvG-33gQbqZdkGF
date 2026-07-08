@@ -11,7 +11,7 @@ tags:
   - "resonancia"
   - "analisis"
   - "mantenimiento"
-image: /images/posts/avances-y-desafios-analisis-resonancia.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/avances-y-desafios-analisis-resonancia
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

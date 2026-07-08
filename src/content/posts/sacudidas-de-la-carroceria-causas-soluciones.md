@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "carroceria"
   - "sacudidas"
-image: /images/posts/sacudidas_de_la_carroceria_causas_soluciones.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sacudidas_de_la_carroceria_causas_soluciones
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

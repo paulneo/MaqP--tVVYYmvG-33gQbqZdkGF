@@ -11,7 +11,7 @@ tags:
   - "traccion-delantera"
   - "palieres"
   - "transmision"
-image: /images/posts/traccion-delantera-y-palieres-de-un-vehiculo-funcionamiento-componentes.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/traccion-delantera-y-palieres-de-un-vehiculo-funcionamiento-componentes
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

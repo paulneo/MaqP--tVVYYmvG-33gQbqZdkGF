@@ -11,7 +11,7 @@ tags:
   - "danos-diferenciales"
   - "choque"
   - "maquinaria-pesada"
-image: /images/posts/daños-choque-prevencion.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/daños-choque-prevencion
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

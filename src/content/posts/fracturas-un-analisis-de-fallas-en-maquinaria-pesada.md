@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "fracturas"
   - "maquinaria-pesada"
-image: /images/posts/fracturas-un-analisis-de-fallas-en-maquinaria-pesada.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/fracturas-un-analisis-de-fallas-en-maquinaria-pesada
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

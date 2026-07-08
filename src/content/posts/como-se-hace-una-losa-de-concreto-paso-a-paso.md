@@ -14,7 +14,7 @@ tags:
   - construccion-paso-a-paso
   - encofrado
   - tutorial
-image: /images/posts/como-se-hace-una-losa-de-concreto-paso-a-paso.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como-se-hace-una-losa-de-concreto-paso-a-paso
 author: jean-paul
 aiAssisted: true
 faq:

@@ -13,7 +13,7 @@ tags:
   - "innovacion"
   - "eficiencia"
   - "futuro-automotriz"
-image: /images/posts/el-futuro-del-sistema-HDI-innovaciones-en-motores-diesel-mas-limpios-y-eficientes.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/el-futuro-del-sistema-HDI-innovaciones-en-motores-diesel-mas-limpios-y-eficientes
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -12,7 +12,7 @@ tags:
   - "componentes-electricos"
   - "circuitos"
   - "mantenimiento-electrico"
-image: /images/posts/electricidad-basica.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/electricidad-basica
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

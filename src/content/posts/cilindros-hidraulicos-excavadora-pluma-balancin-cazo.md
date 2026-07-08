@@ -14,7 +14,7 @@ tags:
   - pluma
   - balancin
   - cazo
-image: /images/posts/cilindros-hidraulicos-excavadora-pluma-balancin-cazo.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cilindros-hidraulicos-excavadora-pluma-balancin-cazo
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: true

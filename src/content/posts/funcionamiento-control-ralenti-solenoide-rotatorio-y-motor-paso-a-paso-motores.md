@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

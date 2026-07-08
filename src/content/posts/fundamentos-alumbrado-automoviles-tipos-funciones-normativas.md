@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "luces"
   - "alumbrado"
-image: /images/posts/fundamentos_alumbrado_automoviles_tipos_funciones_normativas.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/fundamentos_alumbrado_automoviles_tipos_funciones_normativas
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

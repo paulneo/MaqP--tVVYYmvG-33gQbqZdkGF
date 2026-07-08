@@ -14,7 +14,7 @@ tags:
   - alfeizar
   - partes-de-ventana
   - vocabulario-arquitectonico
-image: /images/posts/que-son-jambas-dinteles-y-alfeizares.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-son-jambas-dinteles-y-alfeizares
 author: jean-paul
 aiAssisted: true
 faq:

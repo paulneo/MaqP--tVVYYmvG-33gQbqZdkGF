@@ -12,7 +12,7 @@ tags:
   - "motores-hemi"
   - "summit-racing"
   - "blueprint-engines"
-image: /images/posts/motor.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/motor
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

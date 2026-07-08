@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/como-la-electronica-mejora-la-seguridad-en-los-automoviles-modernos.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como-la-electronica-mejora-la-seguridad-en-los-automoviles-modernos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

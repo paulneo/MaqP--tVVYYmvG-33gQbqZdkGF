@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "4wd"
   - "traccion"
-image: /images/posts/ventajas-y-desventajas-de-la-traccion-4wd.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/ventajas-y-desventajas-de-la-traccion-4wd
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

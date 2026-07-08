@@ -12,7 +12,7 @@ tags:
   - "neumaticos"
   - "sistemas-hidraulicos"
   - "sistemas-de-frenos"
-image: /images/posts/neumaticos-sistema-interno.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/neumaticos-sistema-interno
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

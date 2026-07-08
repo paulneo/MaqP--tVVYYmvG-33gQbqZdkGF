@@ -12,7 +12,7 @@ tags:
   - "kubota"
   - "serie-rtv-x"
   - "maquinaria"
-image: /images/posts/kubota.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/kubota
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

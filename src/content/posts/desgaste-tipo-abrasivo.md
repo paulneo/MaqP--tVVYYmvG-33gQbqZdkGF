@@ -12,7 +12,7 @@ tags:
   - "desgaste"
   - "tipos-de-desgaste"
   - "desgaste-abrasivo"
-image: /images/posts/desgaste-abrasivo.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/desgaste-abrasivo
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

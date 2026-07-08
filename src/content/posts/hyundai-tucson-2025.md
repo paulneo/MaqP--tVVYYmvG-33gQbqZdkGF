@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/hyundai-tucson.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/hyundai-tucson
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

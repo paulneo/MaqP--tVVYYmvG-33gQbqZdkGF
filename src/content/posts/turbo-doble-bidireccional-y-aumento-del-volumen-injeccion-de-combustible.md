@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/turbo-doble-bidireccional-y-aumento-del-volumen-injeccion-de-combustible.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/turbo-doble-bidireccional-y-aumento-del-volumen-injeccion-de-combustible
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

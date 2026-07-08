@@ -12,7 +12,7 @@ tags:
   - "cargador-de-ruedas"
   - "canteras"
   - "maquinaria-pesada"
-image: /images/posts/komatsu-nuevo-cargador.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/komatsu-nuevo-cargador
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

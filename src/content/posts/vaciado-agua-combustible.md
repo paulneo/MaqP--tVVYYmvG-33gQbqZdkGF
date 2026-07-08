@@ -11,7 +11,7 @@ tags:
   - "averias"
   - "combustible"
   - "camiones"
-image: /images/posts/vaciado-combustible.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/vaciado-combustible
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -14,7 +14,7 @@ tags:
   - teoria-arquitectura
   - belleza-arquitectura
   - historia-arquitectura
-image: /images/posts/firmitas-utilitas-venustas-vitrubio.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/firmitas-utilitas-venustas-vitrubio
 author: jean-paul
 aiAssisted: true
 faq:

@@ -11,7 +11,7 @@ tags:
   - "pedal"
   - "acelerador"
   - "vibracion"
-image: /images/posts/por_que_vibra_la_palanca_de_cambios_de_tu_auto.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_vibra_la_palanca_de_cambios_de_tu_auto
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

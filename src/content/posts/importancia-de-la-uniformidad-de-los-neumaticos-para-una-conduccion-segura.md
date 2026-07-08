@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "llantas"
   - "neumaticos"
-image: /images/posts/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

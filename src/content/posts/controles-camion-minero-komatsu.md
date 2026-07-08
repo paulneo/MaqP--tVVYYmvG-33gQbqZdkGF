@@ -13,7 +13,7 @@ tags:
   - "controles"
   - "retardo-dinamico"
   - "frenos"
-image: /images/posts/controles-komatzu.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/controles-komatzu
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -12,7 +12,7 @@ tags:
   - "new-holland"
   - "maquinaria-de-construccion"
   - "noticias"
-image: /images/posts/cargadores-articulados.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cargadores-articulados
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

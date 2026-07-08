@@ -14,7 +14,7 @@ tags:
   - mantenimiento
   - iso-vg
   - viscosidad
-image: /images/posts/aceite-hidraulico-excavadora-tipos-viscosidad.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/aceite-hidraulico-excavadora-tipos-viscosidad
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: true

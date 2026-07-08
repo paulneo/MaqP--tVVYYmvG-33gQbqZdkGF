@@ -11,7 +11,7 @@ tags:
   - "motor"
   - "circuitos-de-alimentacion"
   - "control-electronico"
-image: /images/posts/voltaje_terminal_sensor_sistema_control_electronico_motor.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/voltaje_terminal_sensor_sistema_control_electronico_motor
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

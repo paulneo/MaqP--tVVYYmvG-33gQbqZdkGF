@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/tesla-robotaxi.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tesla-robotaxi
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

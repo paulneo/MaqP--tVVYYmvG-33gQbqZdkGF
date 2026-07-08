@@ -11,7 +11,7 @@ tags:
   - "motor-aqy"
   - "motor-atu"
   - "volkswagen"
-image: /images/posts/diferencias-entre-los-motores-AQY-ATU-de-volkswagen.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/diferencias-entre-los-motores-AQY-ATU-de-volkswagen
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

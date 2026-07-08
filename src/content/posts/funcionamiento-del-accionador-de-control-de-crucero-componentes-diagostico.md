@@ -12,7 +12,7 @@ tags:
   - "accionador"
   - "vehiculos"
   - "motor"
-image: /images/posts/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

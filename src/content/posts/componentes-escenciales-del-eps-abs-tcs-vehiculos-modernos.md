@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/componentes-escenciales-del-EPS-ABS-TCS-vehiculos-modernos.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/componentes-escenciales-del-EPS-ABS-TCS-vehiculos-modernos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

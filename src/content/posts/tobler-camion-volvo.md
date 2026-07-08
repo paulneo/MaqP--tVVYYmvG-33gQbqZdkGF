@@ -8,7 +8,7 @@ category: maquinaria-pesada
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/tobler-sons.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tobler-sons
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

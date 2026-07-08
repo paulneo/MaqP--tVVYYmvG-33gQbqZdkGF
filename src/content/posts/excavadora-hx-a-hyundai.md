@@ -8,7 +8,7 @@ category: maquinaria-pesada
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/excavadora-lineas.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/excavadora-lineas
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

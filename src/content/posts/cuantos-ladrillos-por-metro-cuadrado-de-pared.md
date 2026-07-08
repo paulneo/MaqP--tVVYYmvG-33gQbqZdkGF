@@ -13,7 +13,7 @@ tags:
   - mamposteria
   - calculo-construccion
   - presupuesto
-image: /images/posts/cuantos-ladrillos-por-metro-cuadrado-de-pared.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cuantos-ladrillos-por-metro-cuadrado-de-pared
 author: jean-paul
 aiAssisted: true
 faq:

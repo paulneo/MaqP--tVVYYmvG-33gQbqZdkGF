@@ -13,7 +13,7 @@ tags:
   - "operacion"
   - "controles"
   - "palancas"
-image: /images/posts/control-sistema.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/control-sistema
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

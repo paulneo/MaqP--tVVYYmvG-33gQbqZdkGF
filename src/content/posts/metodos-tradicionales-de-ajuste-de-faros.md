@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "llantas"
   - "alineacion"
-image: /images/posts/metodos-tradicionales-de-ajuste-de-faros.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/metodos-tradicionales-de-ajuste-de-faros
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

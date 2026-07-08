@@ -14,7 +14,7 @@ tags:
   - perdida-de-fuerza
   - diagnostico
   - hidraulica
-image: /images/posts/por-que-una-excavadora-pierde-fuerza.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por-que-una-excavadora-pierde-fuerza
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: true

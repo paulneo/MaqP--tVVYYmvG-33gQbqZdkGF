@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "4wd"
   - "traccion"
-image: /images/posts/que-es-traccion-4wd-y-como-funciona.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-traccion-4wd-y-como-funciona
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

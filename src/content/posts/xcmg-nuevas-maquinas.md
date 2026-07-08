@@ -12,7 +12,7 @@ tags:
   - "mineria"
   - "innovacion"
   - "equipos-pesados"
-image: /images/posts/camion-xde130.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/camion-xde130
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

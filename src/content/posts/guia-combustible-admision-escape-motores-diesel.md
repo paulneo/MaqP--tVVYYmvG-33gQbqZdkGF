@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "motores"
   - "combustible"
-image: /images/posts/moto_diesel2.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/moto_diesel2
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

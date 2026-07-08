@@ -12,7 +12,7 @@ tags:
   - "maquinaria-pesada"
   - "construccion"
   - "mineria"
-image: /images/posts/chasis-partes.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/chasis-partes
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

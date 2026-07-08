@@ -12,7 +12,7 @@ tags:
   - "rv"
   - "off-road"
   - "aventura"
-image: /images/posts/dynamax.jpeg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/dynamax
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -11,7 +11,7 @@ tags:
   - "tipos-de-cargas"
   - "maquinaria"
   - "maquinaria-industrial"
-image: /images/posts/tipos-de-cargas-y-sus-efectos-en-los-componentes-de-maquinaria.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tipos-de-cargas-y-sus-efectos-en-los-componentes-de-maquinaria
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

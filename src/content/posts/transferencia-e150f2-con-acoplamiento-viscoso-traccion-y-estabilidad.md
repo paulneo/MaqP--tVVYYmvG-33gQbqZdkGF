@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/transferencia-e150f2-con-acoplamiento-viscoso-traccion-y-estabilidad.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/transferencia-e150f2-con-acoplamiento-viscoso-traccion-y-estabilidad
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

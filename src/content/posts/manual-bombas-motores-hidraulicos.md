@@ -11,7 +11,7 @@ tags:
   - "motores"
   - "bombas"
   - "caterpillar"
-image: /images/posts/manual-bombas-motores-hidraulicos.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/manual-bombas-motores-hidraulicos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

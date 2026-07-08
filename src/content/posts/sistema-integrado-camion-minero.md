@@ -12,7 +12,7 @@ tags:
   - "camion-minero"
   - "sistema-integrado"
   - "mantenimiento"
-image: /images/posts/cabna-operador.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cabna-operador
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

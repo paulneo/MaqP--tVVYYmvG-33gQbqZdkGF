@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/funcionamiento-del-sistema-de-frenos-principios-hidraulicos-y-fallos.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/funcionamiento-del-sistema-de-frenos-principios-hidraulicos-y-fallos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

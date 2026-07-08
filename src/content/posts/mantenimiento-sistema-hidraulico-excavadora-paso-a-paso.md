@@ -14,7 +14,7 @@ tags:
   - checklist
   - calendario-mantenimiento
   - maquinaria-pesada
-image: /images/posts/mantenimiento-sistema-hidraulico-excavadora-paso-a-paso.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/mantenimiento-sistema-hidraulico-excavadora-paso-a-paso
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: true

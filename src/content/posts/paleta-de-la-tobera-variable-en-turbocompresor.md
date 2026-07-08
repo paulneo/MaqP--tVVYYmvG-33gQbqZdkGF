@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/paleta-de-la-tobera-variable-en-turbocompresor.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/paleta-de-la-tobera-variable-en-turbocompresor
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

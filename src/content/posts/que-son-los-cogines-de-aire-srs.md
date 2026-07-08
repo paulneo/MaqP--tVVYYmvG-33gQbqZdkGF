@@ -11,7 +11,7 @@ tags:
   - "cojines-de-aire-srs"
   - "colision"
   - "seguridad"
-image: /images/posts/que_son_los_cogines_de_aire_srs.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que_son_los_cogines_de_aire_srs
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

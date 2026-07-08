@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "toyota"
   - "frenos"
-image: /images/posts/sistema-control-tracción-TRC-toyota-celica.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistema-control-tracción-TRC-toyota-celica
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

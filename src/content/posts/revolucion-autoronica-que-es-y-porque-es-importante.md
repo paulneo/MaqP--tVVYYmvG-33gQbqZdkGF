@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/revolucion-autoronica-que-es-y porque-es-importante.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/revolucion-autoronica-que-es-y porque-es-importante
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

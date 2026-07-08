@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "aceros"
   - "maquinaria"
-image: /images/posts/motores-otto.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/motores-otto
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

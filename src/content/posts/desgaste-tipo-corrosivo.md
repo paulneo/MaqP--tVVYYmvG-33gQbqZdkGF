@@ -12,7 +12,7 @@ tags:
   - "desgaste"
   - "tipos-de-desgaste"
   - "desgaste-corrosivo"
-image: /images/posts/desgaste-corrosivo.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/desgaste-corrosivo
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

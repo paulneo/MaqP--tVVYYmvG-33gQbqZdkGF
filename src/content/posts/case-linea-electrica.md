@@ -8,7 +8,7 @@ category: maquinaria-pesada
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/case-electrica.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/case-electrica
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -12,7 +12,7 @@ tags:
   - "contaminacion"
   - "aceite"
   - "sobrecalentamiento"
-image: /images/posts/daño-lubricacion-maquinaria.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/daño-lubricacion-maquinaria
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

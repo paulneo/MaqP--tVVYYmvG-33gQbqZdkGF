@@ -13,7 +13,7 @@ tags:
   - "maquinaria-pesada"
   - "componentes"
   - "tren-de-potencia"
-image: /images/posts/cargador-frontal-01.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cargador-frontal-01
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

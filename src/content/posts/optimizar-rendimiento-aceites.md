@@ -12,7 +12,7 @@ tags:
   - "analisis"
   - "estado"
   - "maquinaria"
-image: /images/posts/optimizar-rendimiento-aceite.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/optimizar-rendimiento-aceite
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

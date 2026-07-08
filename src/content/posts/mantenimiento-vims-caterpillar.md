@@ -13,7 +13,7 @@ tags:
   - "mantenimiento"
   - "maquinaria-pesada"
   - "diagnostico"
-image: /images/posts/mantenimiento-vims.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/mantenimiento-vims
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -8,7 +8,7 @@ category: maquinaria-pesada
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/realidad-virtual.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/realidad-virtual
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

@@ -13,7 +13,7 @@ tags:
   - "sistemas-internos"
   - "mantenimiento"
   - "panel-de-instrumentos"
-image: /images/posts/camion-komatsu-partes.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/camion-komatsu-partes
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

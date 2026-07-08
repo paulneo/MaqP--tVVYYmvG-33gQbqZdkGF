@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "llantas"
   - "neumaticos"
-image: /images/posts/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

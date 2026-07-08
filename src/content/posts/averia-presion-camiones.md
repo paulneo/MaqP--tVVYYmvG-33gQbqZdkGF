@@ -11,7 +11,7 @@ tags:
   - "presion-de-alimentacion"
   - "diagnostico-de-averias"
   - "camiones-volvo"
-image: /images/posts/averias.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/averias
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

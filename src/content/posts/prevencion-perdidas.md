@@ -11,7 +11,7 @@ tags:
   - "aislamiento"
   - "energia"
   - "prevencion"
-image: /images/posts/prevencion-perdidas.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/prevencion-perdidas
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

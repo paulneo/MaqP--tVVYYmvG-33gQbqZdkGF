@@ -10,7 +10,7 @@ nivel: intermedio
 tags:
   - "desalineacion"
   - "maquinaria"
-image: /images/posts/desalineacion-tecnicas-prevencion.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/desalineacion-tecnicas-prevencion
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

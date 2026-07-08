@@ -8,7 +8,7 @@ category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags: []
-image: /images/posts/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos.png
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

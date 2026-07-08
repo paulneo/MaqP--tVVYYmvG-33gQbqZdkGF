@@ -11,7 +11,7 @@ tags:
   - "brusquedad"
   - "carroceria"
   - "conduccion"
-image: /images/posts/por_que_sientes_brusquedad_al_conducir.jpg
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_sientes_brusquedad_al_conducir
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

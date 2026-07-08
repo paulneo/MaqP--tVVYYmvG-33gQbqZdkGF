@@ -11,7 +11,7 @@ tags:
   - "hdi"
   - "inyeccion-directa"
   - "motores-diesel"
-image: /images/posts/como-funciona-el-sistema-de-injeccion-directa-HDI-motores-diesel.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como-funciona-el-sistema-de-injeccion-directa-HDI-motores-diesel
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false

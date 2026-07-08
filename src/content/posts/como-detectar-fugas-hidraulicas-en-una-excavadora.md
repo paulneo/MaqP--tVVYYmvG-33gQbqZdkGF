@@ -14,7 +14,7 @@ tags:
   - mantenimiento
   - seguridad
   - inyeccion-hidraulica
-image: /images/posts/como-detectar-fugas-hidraulicas-en-una-excavadora.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como-detectar-fugas-hidraulicas-en-una-excavadora
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: true

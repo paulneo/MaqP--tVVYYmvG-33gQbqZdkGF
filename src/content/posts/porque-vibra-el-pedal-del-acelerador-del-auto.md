@@ -11,7 +11,7 @@ tags:
   - "pedal"
   - "acelerador"
   - "vibracion"
-image: /images/posts/porque_vibra_el_pedal_del_acelerador_del_auto.webp
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/porque_vibra_el_pedal_del_acelerador_del_auto
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false
