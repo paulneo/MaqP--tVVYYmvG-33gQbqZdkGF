@@ -106,12 +106,7 @@ const siteLang = siteConfig.lang.replace('_', '-')
 			noindex={noindex}
 		/>
 
-		<!-- Favicons: PNG primary (Google + browsers modernos) + ICO legacy + Apple touch -->
-		<!-- SVG removido: pesaba 1.5 MB, causaba problemas con crawlers. -->
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="theme-color" content="#0E7C66" />
 		<!-- Set the theme before the page is rendered to avoid a flash -->
 		<script define:vars={{DEFAULT_THEME: DEFAULT_THEME, LIGHT_MODE: LIGHT_MODE, DARK_MODE: DARK_MODE, AUTO_MODE: AUTO_MODE}}>
