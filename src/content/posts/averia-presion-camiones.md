@@ -30,7 +30,7 @@ La bomba contiene una válvula de seguridad y una válvula de retención. La pri
 ### Funcionamiento de la Bomba de Combustible Eléctrica
 
 Utilizada para purgar el aire del sistema y vaciar el agua del separador, se activa mediante un interruptor en el panel de instrumentos. La operación de purga se realiza llenando el sistema y aumentando la presión, mientras que el vaciado del agua requiere condiciones específicas como el nivel alto de agua, vehículo y motor parados, y freno de estacionamiento aplicado.
-![Funcionamiento de la Bomba de Combustible Eléctrica](/images/combustible.jpg)
+![Funcionamiento de la Bomba de Combustible Eléctrica](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/combustible)
 
 ```markdown
 - Bomba de alimentación (1)

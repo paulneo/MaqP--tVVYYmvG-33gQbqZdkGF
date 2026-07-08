@@ -37,7 +37,7 @@ La falta de rigidez de la palanca de cambios o la resonancia en la misma puede a
 
 El juego excesivo entre la palanca de cambios y el varillaje, así como los bujes desgastados, pueden permitir que las vibraciones se transmitan más fácilmente y se perciban de manera más pronunciada en la palanca de cambios.
 
-<img src="/mecanica_automotriz/por_que_vibra_la_palanca_de_cambios_de_tu_auto2.png" alt="Palanca de Cambios" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_vibra_la_palanca_de_cambios_de_tu_auto2" alt="Palanca de Cambios" width="420"/>
 
 ## Mecánica del Desarrollo de la Vibración
 

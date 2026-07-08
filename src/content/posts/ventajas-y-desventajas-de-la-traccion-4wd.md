@@ -20,7 +20,7 @@ La tracción a las cuatro ruedas (4WD) es una tecnología crucial en muchos veh�
 
 ### Ventajas de la Tracción 4WD
 
-<img src="/mecanica_automotriz/ventajas-y-desventajas-de-la-traccion-4wd2.png" alt="Ventajas de la Tracción 4WD" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/ventajas-y-desventajas-de-la-traccion-4wd2" alt="Ventajas de la Tracción 4WD" width="420"/>
 
 La tracción 4WD es altamente valorada por su capacidad para mejorar la conducción en diversas condiciones. A continuación, se presentan las principales ventajas:
 
@@ -46,7 +46,7 @@ En condiciones de carretera difíciles, como en superficies cubiertas de nieve o
 
 ### Desventajas de la Tracción 4WD
 
-<img src="/mecanica_automotriz/ventajas-y-desventajas-de-la-traccion-4wd3.png" alt="Desventajas de la Tracción 4WD" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/ventajas-y-desventajas-de-la-traccion-4wd3" alt="Desventajas de la Tracción 4WD" width="420"/>
 
 A pesar de sus numerosas ventajas, la tracción 4WD también presenta ciertas desventajas que es importante considerar:
 

@@ -18,7 +18,7 @@ El sistema de frenos de un vehículo es una pieza fundamental para la seguridad 
 
 ### 1. Funcionamiento del sistema hidráulico
 
-<img src="/mecanica_automotriz/funcionamiento-del-sistema-de-frenos-principios-hidraulicos-y-fallos.png" alt="Funcionamiento del sistema hidráulico" width="650"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-del-sistema-de-frenos-principios-hidraulicos-y-fallos" alt="Funcionamiento del sistema hidráulico" width="650"/>
 
 El principio básico del sistema de frenos hidráulico es convertir la fuerza aplicada al pedal del freno en **presión hidráulica**, que luego es distribuida a las **ruedas** para generar la fuerza de frenado.
 

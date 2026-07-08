@@ -23,7 +23,7 @@ El ruido de la carretera es un murmullo o rugido de tono constante; el volumen d
 
 ## Causas principales
 
-<img src="/mecanica_automotriz/por_que_escuchas_ruido_en_la_carretera_al_conducir2.png" alt="Causas Principales de ruido en la carretera" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_escuchas_ruido_en_la_carretera_al_conducir2" alt="Causas Principales de ruido en la carretera" width="420"/>
 
 ### 1. Pequeños baches o depresiones en la superficie de la carretera
 

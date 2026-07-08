@@ -18,7 +18,7 @@ El **sistema de frenos** de un vehículo es uno de los componentes más esencial
 
 ### 1. Componentes del sistema de frenos
 
-<img src="/mecanica_automotriz/como-funciona-el-sistema-de-frenos-en-tu-vehiculo1.png" alt="CComponentes del sistema de frenos" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como-funciona-el-sistema-de-frenos-en-tu-vehiculo1" alt="CComponentes del sistema de frenos" width="620"/>
 
 El sistema de frenos consiste en varios elementos que trabajan en conjunto para detener el vehículo de manera segura. Los componentes principales son:
 
@@ -31,7 +31,7 @@ El sistema de frenos consiste en varios elementos que trabajan en conjunto para 
 
 ### 2. Funcionamiento del cilindro maestro
 
-<img src="/mecanica_automotriz/como-funciona-el-sistema-de-frenos-en-tu-vehiculo2.png" alt="Funcionamiento del cilindro maestro" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como-funciona-el-sistema-de-frenos-en-tu-vehiculo2" alt="Funcionamiento del cilindro maestro" width="420"/>
 
 El **cilindro maestro** es una de las partes más importantes del sistema de frenos, ya que convierte la presión mecánica aplicada al pedal del freno en **presión hidráulica**. Este cilindro envía la presión a los frenos en cada una de las ruedas a través de los **latiguillos de freno**. Actualmente, los vehículos suelen estar equipados con un cilindro maestro en tándem, que incluye **dos pistones** y **dos sistemas de frenos** independientes.
 

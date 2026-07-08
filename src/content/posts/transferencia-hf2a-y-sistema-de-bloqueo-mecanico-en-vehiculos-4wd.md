@@ -21,7 +21,7 @@ En el mundo de los vehículos con tracción a las cuatro ruedas (4WD), la transf
 
 ### 1. ¿Qué es la Transferencia HF2A?
 
-<img src="/mecanica_automotriz/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd" alt="Control de Presión Constante" width="620"/>
 
 La transferencia HF2A es un sistema de dos velocidades (Baja y Alta) diseñado para distribuir la potencia del motor a las cuatro ruedas de un vehículo 4WD. Este sistema se encuentra integrado en la caja de transferencia y permite alternar entre diferentes modos de tracción dependiendo de las condiciones del terreno. El diferencial central se encuentra alojado en el interior del engranaje lento del eje de salida, permitiendo una distribución eficiente de la potencia a través del sistema de tracción.
 
@@ -31,19 +31,19 @@ El proceso de transmisión de potencia en la transferencia HF2A es fundamental p
 
 ##### Diferencial central en modo de alta velocidad libre
 
-![blog placeholder](/mecanica_automotriz/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd2.png)
+![blog placeholder](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd2)
 
 ##### Diferencial central en modo de alta velocidad bloqueado
 
-![blog placeholder](/mecanica_automotriz/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd3.png)
+![blog placeholder](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd3)
 
 ##### Modo de baja velocidad
 
-![blog placeholder](/mecanica_automotriz/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd4.png)
+![blog placeholder](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd4)
 
 ### 2. Diferencial Central en la Transferencia HF2A
 
-<img src="/mecanica_automotriz/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd5.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd5" alt="Control de Presión Constante" width="620"/>
 
 El diferencial central es un componente clave que permite compensar las diferencias de velocidad entre las ruedas delanteras y traseras, especialmente en curvas. El sistema de diferencial central en la HF2A utiliza un engranaje de tipo cónico, lo que facilita una distribución uniforme del par entre las ruedas delanteras y traseras en una proporción de 1:1.
 
@@ -53,7 +53,7 @@ El mecanismo de control del diferencial central en la HF2A es de tipo bloqueo me
 
 ### 3. Sistema de Deslizamiento de la Horquilla de Cambio
 
-<img src="/mecanica_automotriz/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd6.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd6" alt="Control de Presión Constante" width="620"/>
 
 El sistema de deslizamiento de la horquilla de cambio es responsable de alternar entre las posiciones "L4" (baja velocidad) y "H4" (alta velocidad) y de activar el bloqueo del diferencial central. Este sistema utiliza un eje de horquilla de cambio que es movido por un actuador de cambio controlado eléctricamente.
 
@@ -63,7 +63,7 @@ El actuador de cambio de la transferencia es un componente crucial que utiliza u
 
 ### 4. Sistema de Bloqueo del Diferencial Central
 
-<img src="/mecanica_automotriz/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd7.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd7" alt="Control de Presión Constante" width="620"/>
 
 El sistema de bloqueo del diferencial central en la HF2A es esencial para mejorar la tracción en situaciones difíciles. Este sistema asegura que la potencia se distribuya de manera uniforme a las cuatro ruedas del vehículo, permitiendo superar obstáculos como nieve, barro o terrenos accidentados.
 

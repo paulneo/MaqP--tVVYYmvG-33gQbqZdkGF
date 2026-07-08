@@ -34,7 +34,7 @@ Dynamax sabe que sus clientes disfrutan tanto de explorar terrenos difíciles co
 - **Capacidad de Carga y Remolque**: Equipado con un parachoques completo con luces off-road, enganche para remolque y espacio para un cabrestante.
 - **Diseño y Estilo**: Gráficos de montaña oscuros y emblemas 4x4 destacan su capacidad off-road.
 - **Interiores de Lujo**: Cuenta con comedor, sofá, cocina bien equipada, baño y ducha de 36x36 pulgadas. Las camas tamaño king y queen aseguran espacio suficiente para toda la familia.
-  ![dynamax](/news/dynamax-01.jpeg)
+  ![dynamax](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/dynamax-01)
 
 ## Capacidad Overland Directo del Concesionario
 

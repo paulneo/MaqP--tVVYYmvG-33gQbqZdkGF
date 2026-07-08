@@ -23,7 +23,7 @@ La transferencia VF4BM es una tecnología avanzada en sistemas de tracción a la
 
 #### 1. Transferencia
 
-<img src="/mecanica_automotriz/transferencia-vf4bm-con-tipo-sensible-al-par2.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-vf4bm-con-tipo-sensible-al-par2" alt="Control de Presión Constante" width="620"/>
 
 La transferencia VF4BM es de dos velocidades (Baja-Alta), lo que permite seleccionar diferentes relaciones de transmisión según las necesidades de la conducción. Este sistema es notablemente compacto y ligero, características que lo hacen eficiente en cuanto al espacio y peso dentro del vehículo. Su característica principal es la incorporación de un diferencial central de tipo sensible al par con un mecanismo de bloqueo mecánico, que mejora la capacidad del vehículo para adaptarse a diferentes condiciones de conducción.
 
@@ -33,7 +33,7 @@ En lugar de una palanca de cambios de transferencia tradicional, el sistema VF4B
 
 #### 2. Actuador de cambio de la transferencia
 
-<img src="/mecanica_automotriz/transferencia-vf4bm-con-tipo-sensible-al-par3.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-vf4bm-con-tipo-sensible-al-par3" alt="Control de Presión Constante" width="620"/>
 
 El actuador de cambio de la transferencia es un componente crítico en el sistema VF4BM. Este incluye varios elementos clave:
 
@@ -46,7 +46,7 @@ Es importante destacar que este actuador no se puede desmontar, lo que significa
 
 #### 3. Diferencial central
 
-<img src="/mecanica_automotriz/transferencia-vf4bm-con-tipo-sensible-al-par4.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-vf4bm-con-tipo-sensible-al-par4" alt="Control de Presión Constante" width="620"/>
 
 El diferencial central de la transferencia VF4BM es un componente esencial que desempeña un papel clave en la distribución del par motor entre las ruedas delanteras y traseras. Este diferencial es de tipo sensible al par con un mecanismo de bloqueo mecánico y está compuesto por varios elementos:
 
@@ -59,7 +59,7 @@ El diferencial central de la transferencia VF4BM es un componente esencial que d
 
 ##### Funcionamiento del Diferencial Central:
 
-<img src="/mecanica_automotriz/transferencia-vf4bm-con-tipo-sensible-al-par5.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-vf4bm-con-tipo-sensible-al-par5" alt="Control de Presión Constante" width="620"/>
 
 - **Conducción normal (velocidad de la rueda delantera igual a la velocidad de la rueda trasera):** En condiciones normales de conducción, donde no hay diferencia de velocidad entre las ruedas delanteras y traseras, la fuerza motriz se distribuye en una proporción de 40:60 entre las ruedas delanteras y traseras. Esta distribución garantiza una tracción equilibrada, lo que resulta en una conducción suave y estable.
 
@@ -69,7 +69,7 @@ El diferencial central de la transferencia VF4BM es un componente esencial que d
 
 ##### Mecanismo de Bloqueo del Diferencial Central:
 
-<img src="/mecanica_automotriz/transferencia-vf4bm-con-tipo-sensible-al-par6.png" alt="Control de Presión Constante" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-vf4bm-con-tipo-sensible-al-par6" alt="Control de Presión Constante" width="620"/>
 
 El sistema de bloqueo del diferencial central es crucial para situaciones donde se requiere una distribución uniforme de la potencia, como al atravesar terrenos difíciles o cuando una o más ruedas están atascadas. Este mecanismo se activa mediante un interruptor:
 

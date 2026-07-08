@@ -18,7 +18,7 @@ En el mundo de los motores modernos, la **paleta de la tobera variable** juega u
 
 ### 1. ¿Qué es la paleta de la tobera variable?
 
-![¿Qué es la paleta de la tobera variable?](/mecanica_automotriz/paleta-de-la-tobera-variable-en-turbocompresor.png)
+![¿Qué es la paleta de la tobera variable?](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/paleta-de-la-tobera-variable-en-turbocompresor)
 
 La **paleta de la tobera variable** es un componente que ajusta la dirección y la velocidad de los gases de escape que pasan a través del turbocompresor. Al controlar el flujo de estos gases, la paleta permite optimizar la **presión de sobrealimentación** en función de las diferentes condiciones de conducción. Este sistema está controlado electrónicamente por la **ECU del motor**, que ajusta la inclinación de las paletas según sea necesario, lo que mejora la eficiencia tanto en condiciones de baja como de alta carga.
 

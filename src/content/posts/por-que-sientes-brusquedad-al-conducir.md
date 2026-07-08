@@ -21,7 +21,7 @@ Por brusquedad se entiende un impacto individual como el que se produce golpeand
 
 ## Causas principales
 
-<img src="/mecanica_automotriz/por_que_sientes_brusquedad_al_conducir2.png" alt="Causas principales brusquedad al conducir" width="400"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_sientes_brusquedad_al_conducir2" alt="Causas principales brusquedad al conducir" width="400"/>
 
 ### 1. Características envolventes de los neumáticos
 
@@ -43,7 +43,7 @@ El impacto se transmite a los brazos de la suspensión. Los bujes de la suspensi
 
 ## Observaciones adicionales
 
-<img src="/mecanica_automotriz/por_que_sientes_brusquedad_al_conducir3.png" alt="Observaciones adicionales - brusquedad al conducir" width="400"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_sientes_brusquedad_al_conducir3" alt="Observaciones adicionales - brusquedad al conducir" width="400"/>
 
 ### 1. Características de los neumáticos
 

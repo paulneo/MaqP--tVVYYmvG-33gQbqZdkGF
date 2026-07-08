@@ -31,7 +31,7 @@ Chevrolet ha insinuado que el ZR1 podría incluir un motor eléctrico en el eje 
 El ZR1 no solo se destacará por su potencia bruta. También se espera que incluya mejoras significativas en el manejo y la frenada. Se anticipa un paquete de frenos más robusto y posiblemente una refrigeración adicional para los frenos, necesaria para gestionar la velocidad extra. El diseño general y las capacidades del ZR1 lo posicionan como un superdeportivo completo, adecuado tanto para la carretera como para la pista.
 
 Además, Chevrolet ha prometido que la experiencia de conducción será incomparable, con un enfoque en la estabilidad y la respuesta del vehículo en todas las condiciones. La incorporación de tecnologías avanzadas de asistencia al conductor y opciones de personalización también jugarán un papel crucial en el atractivo del ZR1.
-![Chevrolet](/news/chervolet-atras.jpg)
+![Chevrolet](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/chervolet-atras)
 
 ## Expectativas y Futuro
 

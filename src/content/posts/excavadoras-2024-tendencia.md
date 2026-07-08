@@ -43,41 +43,41 @@ A continuación, se presentan algunos de los modelos más recientes en el mercad
 ### **Bobcat**
 
 Bobcat ha lanzado dos modelos en la clase de **10 a 16 toneladas métricas**, el **E145** y el **E165**. Estas excavadoras se caracterizan por su maniobrabilidad y capacidad para abordar trabajos más grandes. El modelo **E145**, actualizado en 2023, incluye una **pantalla táctil de 8 pulgadas** y un **sistema de cámara de 360 grados** como equipo estándar.
-![Bobcat](/news/bobcat-01.jpg)
+![Bobcat](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/bobcat-01)
 ### **Case**
 
 El **Case CX220E** cuenta con un motor **FPT de 162 hp**, un peso operativo de **50,000 libras** y una profundidad máxima de excavación de **21 pies 9 pulgadas**. Esta máquina también incluye **cuatro modos de trabajo** (Super Power, Power, Lifting y Eco) y una pantalla **LCD de 10 pulgadas** para mostrar datos y vistas de la cámara simultáneamente.
-![Case CX220E](/news/case.jpg)
+![Case CX220E](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/case)
 ### **Develon**
 
 El **DX225LC-7X** de Develon ofrece una potencia neta de **162.3 hp** y un peso operativo de **52,018 libras**. Su sistema de control completamente electrohidráulico y su paquete **2D de nivelación** lo convierten en un modelo destacado. El sistema **D-EcoPower VBO** de Develon reduce el consumo de combustible hasta en un **7%**.
-![Develon](/news/develon-01.jpg)
+![Develon](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/develon-01)
 ### **Hyundai**
 
 El **HX355ALCR** es la última incorporación de Hyundai, con una potencia de **258 hp** y un peso operativo de **79,807 libras**. Este modelo presenta funciones avanzadas como **Engine Connected Diagnostics** y **All Around View Monitoring**.
-![Hyundai](/news/hyundai.jpg)
+![Hyundai](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/hyundai)
 ### **JCB**
 
 El **JCB 370X** tiene un motor de **322 hp** y un peso operativo de **87,417 libras**. Este modelo incluye características tecnológicas avanzadas como **JCB UX touchscreen display** y la capacidad de almacenar hasta **25 perfiles de operador personalizados**.
-![JCB 370X](/news/jcb.jpg)
+![JCB 370X](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/jcb)
 ### **John Deere**
 
 El **John Deere 350 P-Tier** destaca por su **potencia de 271 hp** y un peso operativo de **80,985 libras**. Esta máquina incluye **ventanas con cámaras** opcionales para una vista de **270 grados** y sistemas mejorados de ahorro de combustible.
-![John Deere](/news/john-deere.jpg)
+![John Deere](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/john-deere)
 ### **KOBELCO**
 
 El **KOBELCO SK520LC-11** ofrece una potencia de **463 hp** y un peso operativo de **121,000 libras**. Equipado con un sistema de **cámara de seguridad de tres lados** y **iluminación LED**, esta máquina es una opción sólida para trabajos pesados.
-![KOBELCO](/news/kobelco.jpg)
+![KOBELCO](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/kobelco)
 ### **Link-Belt**
 
 La serie **X4S** de **Link-Belt** incluye el modelo **220 X4S**, con una potencia de **160 hp** y un peso operativo de **49,200 libras**. Este modelo cuenta con tecnología avanzada como **Precision Grade** impulsada por **Trimble Earthworks** para una mayor precisión en el trabajo.
-![Link-Belt](/news/link-belt.jpg)
+![Link-Belt](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/link-belt)
 ### **Takeuchi**
 
 El **Takeuchi TB2150** es el modelo más grande de la marca, con un peso operativo de **35,274 libras** y un motor **Deutz de 114 hp**. Esta excavadora incluye un sistema de **boom pivotante** que permite excavar con un desplazamiento hacia la izquierda o derecha, ideal para aplicaciones en espacios reducidos.
-![Takeuchi](/news/takeuchi-01.jpg)
+![Takeuchi](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/takeuchi-01)
 ### **Volvo**
 
 Volvo presentó su nueva serie de excavadoras, destacando el modelo **EC230F**, con un motor de **172 hp** y una profundidad máxima de excavación de **19 pies 5 pulgadas**. Los nuevos modelos de Volvo están equipados con tecnología avanzada como **Smart View** y **Dig Assist**, mejorando la eficiencia y seguridad en el sitio de trabajo.
-![Volvo](/news/volvo.jpg)
+![Volvo](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/volvo)
 El mercado de excavadoras continúa evolucionando, con avances en tecnología, accesorios y comodidad que permiten a los contratistas mejorar la productividad, reducir el consumo de combustible y aumentar la seguridad en los sitios de trabajo. La variedad de modelos disponibles de fabricantes como Bobcat, Case, Hyundai y otros ofrece soluciones personalizadas para cada necesidad operativa, desde la construcción hasta la demolición. Las innovaciones recientes, como los **sistemas telemáticos**, los **controles electrohidráulicos** y la **automatización avanzada**, están marcando el camino hacia un futuro más eficiente y seguro en la operación de excavadoras.

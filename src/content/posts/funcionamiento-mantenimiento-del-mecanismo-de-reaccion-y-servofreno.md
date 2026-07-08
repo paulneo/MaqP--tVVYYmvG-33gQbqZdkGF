@@ -23,7 +23,7 @@ En el sistema de frenos de los vehículos modernos, el **mecanismo de reacción 
 
 ### Generalidades del Mecanismo de Reacción
 
-<img src="/mecanica_automotriz/funcionamiento-mantenimiento-del-mecanismo-de-reaccion-y-servofreno2.png" alt="Generalidades del Mecanismo de Reacción" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-mantenimiento-del-mecanismo-de-reaccion-y-servofreno2" alt="Generalidades del Mecanismo de Reacción" width="520"/>
 
 El mecanismo de reacción reduce la tensión en el pedal del freno al evitar que toda la presión se transfiera a través del pedal. Así, se proporciona una “sensación” de frenado óptima al absorber parte de la presión en el pistón del servofreno. Esto se traduce en un frenado suave, donde el conductor experimenta sólo la mitad de la presión de retroalimentación, mientras que el servofreno absorbe la otra mitad.
 
@@ -33,7 +33,7 @@ La varilla de empuje, el disco de reacción y la válvula de aire trabajan de ma
 
 ### Ajuste de la Separación de la Varilla de Empuje
 
-<img src="/mecanica_automotriz/funcionamiento-mantenimiento-del-mecanismo-de-reaccion-y-servofreno3.png" alt=" Ajuste de la Separación de la Varilla de Empuje" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-mantenimiento-del-mecanismo-de-reaccion-y-servofreno3" alt=" Ajuste de la Separación de la Varilla de Empuje" width="620"/>
 
 El ajuste de la **varilla de empuje del servofreno** es fundamental para el correcto funcionamiento del cilindro maestro y el servofreno. Este ajuste, realizado con herramientas específicas como la SST o un medidor de espesores, garantiza una distancia precisa entre el pistón del cilindro maestro y la varilla de empuje. Una separación inadecuada puede resultar en problemas de frenado: una distancia muy pequeña causará fricción constante, mientras que una muy grande podría producir un retardo en la respuesta de los frenos.
 
@@ -41,7 +41,7 @@ El ajuste de la **varilla de empuje del servofreno** es fundamental para el corr
 
 ## Funcionamiento y Verificación del Servofreno en Tándem
 
-<img src="/mecanica_automotriz/funcionamiento-mantenimiento-del-mecanismo-de-reaccion-y-servofreno4.png" alt="Funcionamiento y Verificación del Servofreno en Tándem" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-mantenimiento-del-mecanismo-de-reaccion-y-servofreno4" alt="Funcionamiento y Verificación del Servofreno en Tándem" width="420"/>
 
 El **servidor en tándem** utiliza la diferencia de presión entre el vacío del motor y la presión atmosférica para asistir en el frenado, facilitando la aplicación de los frenos sin esfuerzo excesivo. A continuación, se explican los pasos para verificar su correcto funcionamiento.
 

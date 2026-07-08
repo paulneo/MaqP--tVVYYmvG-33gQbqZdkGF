@@ -25,7 +25,7 @@ La oscilación de la dirección se manifiesta como oscilaciones del volante haci
 
 ### Causas Principales
 
-<img src="/mecanica_automotriz/porque_ocila_el_volante_del_auto_oscilacion_de_la_direccion2.png" alt="Causas Principales  Oscilación de la Dirección" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/porque_ocila_el_volante_del_auto_oscilacion_de_la_direccion2" alt="Causas Principales  Oscilación de la Dirección" width="420"/>
 
 1. **Carretera con Baches**: Las irregularidades en la superficie de la carretera pueden generar vibraciones que se transmiten al sistema de dirección.
 2. **Deformación de los Neumáticos**: Neumáticos deformados o con desgaste irregular pueden causar vibraciones verticales abruptas, especialmente al frenar.

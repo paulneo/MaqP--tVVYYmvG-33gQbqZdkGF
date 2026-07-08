@@ -18,11 +18,11 @@ aiAssisted: false
 
 La uniformidad de los neumáticos es un aspecto crucial para garantizar una conducción segura y confortable. Este concepto se refiere a la uniformidad del peso, las dimensiones y la rigidez de los neumáticos. Sin embargo, generalmente, la uniformidad del peso se conoce como "equilibrado de las ruedas" y la uniformidad de las dimensiones como "desviación". En este blog, exploraremos en detalle estos términos y su impacto en el rendimiento del vehículo.
 
-<img src="/mecanica_automotriz/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura2.png" alt="La uniformidad de los neumáticos" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura2" alt="La uniformidad de los neumáticos" width="420"/>
 
 ## 1. Equilibrado de las ruedas
 
-<img src="/mecanica_automotriz/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura3.png" alt="Equilibrado de las ruedase" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura3" alt="Equilibrado de las ruedase" width="420"/>
 
 El equilibrado de las ruedas es esencial para eliminar vibraciones no deseadas y asegurar una conducción suave. Este proceso implica equilibrar el peso de todo el conjunto de la rueda, que incluye tanto la llanta como el neumático. Existen dos tipos principales de equilibrado:
 
@@ -33,7 +33,7 @@ Es fundamental equilibrar correctamente las ruedas para evitar vibraciones que p
 
 ## 2. Desviación
 
-<img src="/mecanica_automotriz/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura4.png" alt="Desviación" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura4" alt="Desviación" width="420"/>
 
 La desviación se define como el cambio aparente de las dimensiones de un neumático durante la rotación. Se mide utilizando un indicador de cuadrante contra la superficie del neumático mientras este gira. Existen dos tipos de desviación:
 
@@ -44,7 +44,7 @@ La desviación puede causar vibraciones y desgaste irregular de los neumáticos,
 
 ## 3. Uniformidad
 
-<img src="/mecanica_automotriz/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura5.png" alt="Uniformidad" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-de-la-uniformidad-de-los-neumaticos-para-una-conduccion-segura5" alt="Uniformidad" width="420"/>
 
 La uniformidad del neumático se refiere a las fluctuaciones en la rigidez del neumático durante su rotación. Estas fluctuaciones pueden introducir variaciones periódicas en las fuerzas que el neumático recibe de la carretera, las cuales se descomponen en tres componentes principales:
 

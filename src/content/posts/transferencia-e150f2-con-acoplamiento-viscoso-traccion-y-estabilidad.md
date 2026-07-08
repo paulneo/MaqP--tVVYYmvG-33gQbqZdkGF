@@ -18,7 +18,7 @@ El sistema de tracción de un vehículo juega un rol crucial en la garantía de 
 
 ### 1. Diferencial central y transferencia
 
-![Diferencial central y transferencia](/mecanica_automotriz/transferencia-e150f2-con-acoplamiento-viscoso-traccion-y-estabilidad.png)
+![Diferencial central y transferencia](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-e150f2-con-acoplamiento-viscoso-traccion-y-estabilidad)
 
 #### 1.1 Transferencia
 
@@ -41,7 +41,7 @@ El proceso de transmisión de potencia en el sistema E150F2 varía dependiendo d
 
 ### 2. Funcionamiento del diferencial central con acoplamiento viscoso
 
-<img src="/mecanica_automotriz/transferencia-e150f2-con-acoplamiento-viscoso-traccion-y-estabilidad2.png" alt="Funcionamiento del diferencial central con acoplamiento viscoso" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/transferencia-e150f2-con-acoplamiento-viscoso-traccion-y-estabilidad2" alt="Funcionamiento del diferencial central con acoplamiento viscoso" width="520"/>
 
 #### 2.1 Estructura
 

@@ -26,7 +26,7 @@ Sin sensores, los vehículos perderían funcionalidades esenciales como el **con
 
 ## Tipos de Sensores en los Vehículos Modernos
 
-![Sensores en Vehículos Modernos: Tipos, Funciones y su Impacto en la Seguridad](/mecanica_automotriz/sensores-en-vehiculos-modernos-tipos-funciones.webp)
+![Sensores en Vehículos Modernos: Tipos, Funciones y su Impacto en la Seguridad](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sensores-en-vehiculos-modernos-tipos-funciones)
 
 A continuación, analizamos los sensores más utilizados y su función dentro del automóvil:
 

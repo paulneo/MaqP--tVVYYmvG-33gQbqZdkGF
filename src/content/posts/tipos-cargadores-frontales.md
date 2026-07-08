@@ -46,7 +46,7 @@ El **bastidor** o **chasis** de un cargador frontal está compuesto por dos **se
 - **Travesaño**: Refuerza la estructura y proporciona estabilidad.
 - **Torreta de Mecanismo de Carga**: Sostiene los cilindros hidráulicos que accionan el levantamiento del cucharón.
 - **Pasador de la Unión Articulada**: Elemento clave que permite el giro del cargador.
-![Partes del Chasis](/images/chasis-mejorado.jpg)
+![Partes del Chasis](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/chasis-mejorado)
 ### B) Transmisión
 
 El sistema de **transmisión** de un cargador frontal es complejo y está diseñado para transmitir la potencia del motor a las ruedas de manera eficiente. Está compuesto por:
@@ -66,7 +66,7 @@ El sistema de **transmisión** de un cargador frontal es complejo y está diseñ
 3. **Árbol Motriz**: Transmite la fuerza motriz a las ruedas delanteras y traseras.
 4. **Diferencial**: Distribuye la potencia a las ruedas, permitiendo que giren a diferentes velocidades en las curvas.
 5. **Ejes y Mandos Finales**: Son responsables de transmitir la fuerza a las ruedas y proporcionar una reducción planetaria que mejora la tracción.
-![Partes de la Transmisión](/images/transmision.jpg)
+![Partes de la Transmisión](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/transmision)
 ### C) Sistema Hidráulico
 
 El **sistema hidráulico** es fundamental para el funcionamiento de los cargadores frontales, ya que acciona tanto el levantamiento como la inclinación del cucharón, así como la dirección del vehículo.

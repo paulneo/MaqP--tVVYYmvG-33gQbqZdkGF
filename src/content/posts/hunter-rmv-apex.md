@@ -37,7 +37,7 @@ La cocina incluye una nevera y congelador Isotherm de cajón, un microondas de c
 ### Baño y Dormitorio
 
 El baño ofrece una ducha completa, un lavabo iluminado y un inodoro Thetford de cassette para un uso eficiente del agua. Un tanque de agua dulce de 130 galones suministra agua para la ducha y los lavabos, mientras que el tanque de aguas grises cuenta con una válvula de descarga remota. El dormitorio principal tiene un colchón King-size con canales elevados para una ventilación adecuada, y múltiples ventanas para una óptima circulación de aire.
-![Baño y Dormitorio](/news/hunter-cocina.jpg)
+![Baño y Dormitorio](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/hunter-cocina)
 
 ## Precio y Disponibilidad
 

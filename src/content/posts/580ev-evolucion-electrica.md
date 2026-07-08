@@ -33,7 +33,7 @@ La batería también está equipada con un avanzado sistema de gestión térmica
 El diseño de la 580EV no se limita a la adaptación de un motor eléctrico en un chasis existente; ha sido diseñado desde cero para ser un vehículo eléctrico (EV). Esto se traduce en una máquina que no solo ofrece cero emisiones y un funcionamiento silencioso, sino que también mejora la eficiencia operativa en diversas aplicaciones, desde trabajos municipales hasta proyectos en entornos urbanos donde las emisiones y el ruido son preocupaciones críticas.
 
 Brad Stemper, Líder de Gestión de Producto en Norteamérica para Case, destacó que el proceso de desarrollo de la 580EV se basó en el feedback de los clientes. “Escuchamos lo que nuestros clientes querían ver en una retroexcavadora eléctrica y diseñamos esta máquina para ser un EV desde el primer día. Después de presentar el proyecto Zeus en 2020, recibimos muchos comentarios de clientes que influyeron en este diseño final”.
-![Ventajas en el Sitio de Trabajo](/news/580ev.jpg)
+![Ventajas en el Sitio de Trabajo](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/580ev)
 ### Comparación con la Retroexcavadora Diésel
 
 Una de las ventajas clave de la 580EV frente a las retroexcavadoras diésel es su capacidad para proporcionar torque instantáneo y respuesta de torque máxima a cualquier rpm. Esto elimina la necesidad de esperar a que un motor de combustión interna alcance la velocidad adecuada para satisfacer las demandas de carga, lo que mejora la eficiencia y la precisión en el sitio de trabajo.

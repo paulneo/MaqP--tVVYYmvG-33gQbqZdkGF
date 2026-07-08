@@ -18,11 +18,11 @@ aiAssisted: false
 
 La tracción a las 4 ruedas (4WD) es un sistema de transmisión que permite a un vehículo distribuir la potencia del motor a las cuatro ruedas, lo que mejora significativamente la tracción, la estabilidad y el control en diversas condiciones de carretera. Este sistema es particularmente útil en terrenos difíciles, como caminos cubiertos de nieve, lodo o grava, donde se requiere una mayor adherencia. En este blog, exploraremos en profundidad los distintos tipos de tracción a las 4 ruedas y cómo cada uno se adapta a diferentes necesidades de conducción.
 
-<img src="/mecanica_automotriz/tipos-de-traccion-a-las-4-ruedas2.png" alt="Tipos de Tracción a las 4 ruedas" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-traccion-a-las-4-ruedas2" alt="Tipos de Tracción a las 4 ruedas" width="420"/>
 
 ### 1. Tracción Parcial 4WD
 
-<img src="/mecanica_automotriz/tipos-de-traccion-a-las-4-ruedas3.png" alt="Tracción Parcial 4WD" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-traccion-a-las-4-ruedas3" alt="Tracción Parcial 4WD" width="420"/>
 
 #### **¿Qué es la Tracción Parcial 4WD?**
 
@@ -39,7 +39,7 @@ En el modo 4WD, tanto el eje delantero como el trasero están conectados directa
 
 ### 2. Tracción Completa 4WD
 
-<img src="/mecanica_automotriz/tipos-de-traccion-a-las-4-ruedas4.png" alt="Tracción Completa 4WD" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-traccion-a-las-4-ruedas4" alt="Tracción Completa 4WD" width="420"/>
 
 #### **¿Qué es la Tracción Completa 4WD?**
 
@@ -56,7 +56,7 @@ En un sistema de tracción completa 4WD, el vehículo está equipado con un dife
 
 ### 3. Tracción Total 4WD V-Flex
 
-<img src="/mecanica_automotriz/tipos-de-traccion-a-las-4-ruedas5.png" alt="Tracción Total 4WD V-Flex" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-traccion-a-las-4-ruedas5" alt="Tracción Total 4WD V-Flex" width="420"/>
 
 #### **¿Qué es la Tracción Total 4WD V-Flex?**
 

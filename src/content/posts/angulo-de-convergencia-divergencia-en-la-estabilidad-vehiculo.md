@@ -20,7 +20,7 @@ aiAssisted: false
 
 El ángulo de base se refiere a la inclinación de la parte delantera y trasera de las ruedas cuando se ve desde arriba del vehículo. Este ángulo se denomina ángulo de base de las ruedas. Cuando las partes delanteras de las ruedas están más cerca entre sí que las partes traseras, se conoce como "convergencia". Lo contrario se llama "divergencia".
 
-![Ángulo de Base (Convergencia y Divergencia)](/mecanica_automotriz/angulo-de-convergencia-divergencia-en-la-estabilidad-vehiculo1.png)
+![Ángulo de Base (Convergencia y Divergencia)](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/angulo-de-convergencia-divergencia-en-la-estabilidad-vehiculo1)
 
 ### Rodaje del Ángulo de Base
 
@@ -38,7 +38,7 @@ El deslizamiento lateral es la distancia total que los neumáticos izquierdo y d
 
 ## Radio de Giro (Ángulo de las Ruedas, Ángulo de Giro)
 
-![Radio de Giro (Ángulo de las Ruedas, Ángulo de Giro)](/mecanica_automotriz/angulo-de-convergencia-divergencia-en-la-estabilidad-vehiculo2.png)
+![Radio de Giro (Ángulo de las Ruedas, Ángulo de Giro)](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/angulo-de-convergencia-divergencia-en-la-estabilidad-vehiculo2)
 
 El radio de giro es el ángulo que giran las ruedas delanteras derecha e izquierda cuando el coche toma una curva. Si los diferentes ángulos de giro derecho e izquierdo son iguales a los centros de giro de las cuatro ruedas, se incrementa la estabilidad de la conducción durante las curvas.
 

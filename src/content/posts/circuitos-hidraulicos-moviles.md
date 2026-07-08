@@ -85,5 +85,5 @@ Los circuitos hidráulicos móviles son utilizados en maquinaria pesada y equipo
 ## Símbolos Hidráulicos ANSI
 
 Los símbolos hidráulicos ANSI son ampliamente utilizados en América del Norte y proporcionan una forma estandarizada de representar componentes y sistemas hidráulicos. Estos símbolos facilitan la comprensión y el diseño de circuitos complejos.
-![simbolos ANSI](/images/circuito1.jpg)
-![Simbolos ANSI](/images/circuito2.jpg)
+![simbolos ANSI](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/circuito1)
+![Simbolos ANSI](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/circuito2)

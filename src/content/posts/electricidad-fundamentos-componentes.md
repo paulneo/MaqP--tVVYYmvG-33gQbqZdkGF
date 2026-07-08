@@ -62,7 +62,7 @@ Cuando se tienen dos o más resistencias en serie es posible reducir el circuito
 a una resistencia equivalente. Para sumar las resistencias en serie basta con
 realizar la suma algebraica de las magnitudes de las resistencias individuales. El
 siguiente ejemplo muestra tres resistencias R1=10KΩ, R2=5KΩ y R3=20KΩ
-![Resistencia en Serie](/images/resistencia-serie.png)
+![Resistencia en Serie](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/resistencia-serie)
 \[
 Req = Res1 + Res2 + Res3 = 10KΩ + 5KKΩ + 20KΩ = 35KΩ
 \]
@@ -78,7 +78,7 @@ paralelo es igual al inverso de la suma de los inversos de cada una de las
 resistencias.
 En el siguiente circuito podemos notar tres resistencias en paralelo
 R1=15KΩ, R2=8KΩ y R3=3.7KΩ.
-![Resistencia en Paralelo](/images/electricidad-paralelo.png)
+![Resistencia en Paralelo](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/electricidad-paralelo)
 \[
 1/Req = 1/R1 + 1/R2 + 1/R3  = 1/15000 + 1/8000 + 1/3700 = 1/2164.8
 Req = 2164.8Ω = 2.16KΩ

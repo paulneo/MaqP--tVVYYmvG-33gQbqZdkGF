@@ -41,7 +41,7 @@ En la cabina de operación del 930CAT, los controles convencionales permiten al 
 14. **Reposa brazo**: Mejora el confort en largos periodos de operación.
 15. **Perilla de regulación del asiento**: Ajusta la altura y posición del asiento.
 16. **Perilla**: Elemento de ajuste adicional según necesidades del operador.
-![Controles del Cargador Convencional](/images/controles-cabina.jpg)
+![Controles del Cargador Convencional](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/controles-cabina)
 ## Controles de la Cabina Command Control
 
 El sistema **Command Control** del cargador proporciona opciones avanzadas de manejo:
@@ -62,7 +62,7 @@ El sistema **Command Control** del cargador proporciona opciones avanzadas de ma
 14. **Reposa brazo**: Mejora la postura del operador.
 15. **Perilla de regulación del asiento**: Ajuste del asiento.
 16. **Columna de dirección**: Ajustable para un control preciso.
-![Controles de la Cabina Command Control](/images/controles-cabina-02.jpg)
+![Controles de la Cabina Command Control](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/controles-cabina-02)
 ## Sistema de Monitoreo CMS
 
 El **CMS (Computerized Monitoring System)** es el sistema de monitoreo computarizado de Caterpillar que permite al operador tener una visibilidad completa sobre el estado del equipo. Es un tablero digital retroiluminado, con sensores que se ajustan automáticamente a la luz ambiente. Sus funciones clave incluyen:
@@ -81,7 +81,7 @@ El tablero de instrumentos del 930CAT está ubicado al frente del asiento del op
    - **Temperatura de aceite del convertidor de par**: Señala el recalentamiento del aceite en el área roja.
    - **Temperatura de aceite hidráulico**: Muestra el recalentamiento del aceite hidráulico en el área roja.
    - **Nivel de combustible**: Indica el volumen de combustible restante.
-![Modulo de Medidores](/images/modulo-medidores.jpg)
+![Modulo de Medidores](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/modulo-medidores)
 
 2. **Modulo de Velocímetro/Tacómetro**:
    - **Tacómetro electrónico** y **velocímetro digital**: Indican las RPM y velocidad del equipo.

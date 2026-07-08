@@ -18,7 +18,7 @@ La búsqueda de mayor potencia en los motores sin aumentar su tamaño físico es
 
 ### 1. Objetivo del turbocompresor y sobrealimentador
 
-<img src="/mecanica_automotriz/como-el-turbocompresor-y-sobrealiemntador-aumentan-la-potencia-del-motor2.png" alt="Objetivo del turbocompresor y sobrealimentadorty" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como-el-turbocompresor-y-sobrealiemntador-aumentan-la-potencia-del-motor2" alt="Objetivo del turbocompresor y sobrealimentadorty" width="420"/>
 
 El objetivo principal tanto del **turbocompresor** como del **sobrealimentador** es aumentar la cantidad de aire que entra en los cilindros del motor. Normalmente, un motor aspira aire de la atmósfera, y la cantidad de mezcla de aire-combustible determina la potencia que puede generar. Cuanto más aire y combustible entren en los cilindros, mayor será la combustión y, por lo tanto, mayor la potencia generada.
 

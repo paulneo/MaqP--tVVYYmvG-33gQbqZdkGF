@@ -35,7 +35,7 @@ Los cojines de aire SRS están diseñados para proporcionar a los ocupantes una 
 
 ## Necesidad de cinturones de seguridad y cojines de aire SRS
 
-<img src="/mecanica_automotriz/que_son_los_cogines_de_aire_srs2.png" alt="Necesidad de cinturones de seguridad y cojines de aire SR" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/que_son_los_cogines_de_aire_srs2" alt="Necesidad de cinturones de seguridad y cojines de aire SR" width="420"/>
 
 Cuando un vehículo colisiona con otro vehículo o con un objeto estacionario, este se detiene de forma muy rápida, pero no inmediata. Por ejemplo, si un vehículo choca contra una barrera fija en una colisión frontal a 50 km/h, necesita algo más de 0,1 segundos para realizar una parada completa. En el momento del impacto, el parachoques delantero detiene el movimiento, pero el resto del vehículo sigue circulando a una velocidad de 50 km/h. El vehículo comienza a absorber energía y a disminuir la velocidad, puesto que la parte frontal del vehículo se está aplastando de forma progresiva.
 

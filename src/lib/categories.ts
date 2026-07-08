@@ -26,7 +26,7 @@ export const CATEGORIES: Record<string, CategoryMeta> = {
     bg: 'bg-amber-100 dark:bg-amber-900/30',
     text: 'text-amber-700 dark:text-amber-300',
     chip: 'text-amber-800 bg-amber-50 dark:text-amber-300 dark:bg-amber-900/30',
-    image: '/images/categories/maquinaria-pesada.webp',
+    image: 'https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/categories/maquinaria-pesada',
   },
   'mecanica-automotriz': {
     slug: 'mecanica-automotriz',
@@ -37,7 +37,7 @@ export const CATEGORIES: Record<string, CategoryMeta> = {
     bg: 'bg-red-100 dark:bg-red-900/30',
     text: 'text-red-700 dark:text-red-300',
     chip: 'text-red-700 bg-red-50 dark:text-red-300 dark:bg-red-900/30',
-    image: '/images/categories/mecanica-automotriz.webp',
+    image: 'https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/categories/mecanica-automotriz',
   },
   'ingenieria-basica': {
     slug: 'ingenieria-basica',
@@ -48,7 +48,7 @@ export const CATEGORIES: Record<string, CategoryMeta> = {
     bg: 'bg-violet-100 dark:bg-violet-900/30',
     text: 'text-violet-700 dark:text-violet-300',
     chip: 'text-violet-700 bg-violet-50 dark:text-violet-300 dark:bg-violet-900/30',
-    image: '/images/categories/ingenieria-basica.webp',
+    image: 'https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/categories/ingenieria-basica',
   },
   'arquitectura': {
     slug: 'arquitectura',
@@ -59,7 +59,7 @@ export const CATEGORIES: Record<string, CategoryMeta> = {
     bg: 'bg-blue-100 dark:bg-blue-900/30',
     text: 'text-blue-700 dark:text-blue-300',
     chip: 'text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-900/30',
-    image: '/images/categories/arquitectura.webp',
+    image: 'https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/categories/arquitectura',
   },
   'construccion': {
     slug: 'construccion',
@@ -70,7 +70,7 @@ export const CATEGORIES: Record<string, CategoryMeta> = {
     bg: 'bg-orange-100 dark:bg-orange-900/30',
     text: 'text-orange-700 dark:text-orange-300',
     chip: 'text-orange-700 bg-orange-50 dark:text-orange-300 dark:bg-orange-900/30',
-    image: '/images/categories/construccion.webp',
+    image: 'https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/categories/construccion',
   },
   'electricidad': {
     slug: 'electricidad',
@@ -81,7 +81,7 @@ export const CATEGORIES: Record<string, CategoryMeta> = {
     bg: 'bg-yellow-100 dark:bg-yellow-900/30',
     text: 'text-yellow-700 dark:text-yellow-300',
     chip: 'text-yellow-700 bg-yellow-50 dark:text-yellow-300 dark:bg-yellow-900/30',
-    image: '/images/categories/electricidad.webp',
+    image: 'https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/categories/electricidad',
   },
   'glosario-y-guias': {
     slug: 'glosario-y-guias',
@@ -92,7 +92,7 @@ export const CATEGORIES: Record<string, CategoryMeta> = {
     bg: 'bg-emerald-100 dark:bg-emerald-900/30',
     text: 'text-emerald-700 dark:text-emerald-300',
     chip: 'text-emerald-700 bg-emerald-50 dark:text-emerald-300 dark:bg-emerald-900/30',
-    image: '/images/categories/glosario-y-guias.webp',
+    image: 'https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/categories/glosario-y-guias',
   },
 }
 

@@ -21,7 +21,7 @@ El sistema de combustible en los vehículos modernos es fundamental para asegura
 
 ## Componentes Principales del Sistema de Combustible
 
-![Sistema de Combustible](/mecanica_automotriz/componentes_funcionamiento_sistemas_combustible2.png)
+![Sistema de Combustible](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/componentes_funcionamiento_sistemas_combustible2)
 
 ### Depósito de Combustible
 
@@ -33,7 +33,7 @@ Este conjunto incluye la bomba de combustible, el filtro de combustible, el regu
 
 ### Bomba de Combustible
 
-![Bomba de Combustible](/mecanica_automotriz/componentes_funcionamiento_sistemas_combustible3.png)
+![Bomba de Combustible](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/componentes_funcionamiento_sistemas_combustible3)
 
 La bomba de combustible está instalada en el depósito y está integrada con varios otros componentes, como el filtro y el regulador de presión. El motor de la bomba hace girar el rotor, comprimiendo el combustible para que pueda ser inyectado a presión.
 
@@ -57,13 +57,13 @@ El regulador de presión controla la presión del combustible que llega al inyec
    - Este tipo mantiene la presión de combustible constante. Si la presión excede la fuerza del muelle del regulador, la válvula se abre y devuelve el exceso de combustible al depósito.
    - La ECU del motor ajusta la cantidad de inyección de combustible basándose en los cambios en el vacío del colector de admisión.
 
-<img src="/mecanica_automotriz/componentes_funcionamiento_sistemas_combustible4.png" alt="Control de Presión Constante" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/componentes_funcionamiento_sistemas_combustible4" alt="Control de Presión Constante" width="420"/>
 
 2. **Tipo 2: Regulación Continua con Tubería de Descarga**
    - Este tipo regula la presión del combustible de forma continua para mantenerla superior a la presión determinada por el colector.
    - La presión del combustible se ajusta según el vacío del colector, devolviendo el exceso de combustible al depósito mediante una tubería de retorno.
 
-<img src="/mecanica_automotriz/componentes_funcionamiento_sistemas_combustible5.png" alt="Regulación Continua con Tubería de Descarga" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/componentes_funcionamiento_sistemas_combustible5" alt="Regulación Continua con Tubería de Descarga" width="420"/>
 
 ### Tubo de Descarga e Inyector
 

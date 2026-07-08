@@ -39,7 +39,7 @@ El XP-882, conocido como Corvette de cuatro rotores, fue un intento de Zora Arku
 
 ### 1990 CERV III
 El CERV III, basado en el concepto Corvette Indy de 1986, era una exhibición de tecnología avanzada de GM con un motor LT5 de 5.7 litros y 650 hp, tracción total y dirección en las cuatro ruedas. Aunque no llegó a producción, muchas de sus características influenciaron a los Corvettes de quinta y sexta generación.
-![Autos Chevrolet](/news/cerv.jpg)
+![Autos Chevrolet](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/cerv)
 
 ### 2003 SS
 El concepto SS de 2003 llenó el vacío dejado por el Camaro, probando las aguas para un vehículo deportivo de tracción trasera que no era un Corvette. Aunque recibió una cálida recepción, nunca llegó a producción, y un proyecto similar para un Impala de tracción trasera fue cancelado.

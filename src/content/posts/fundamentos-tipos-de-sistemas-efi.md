@@ -21,7 +21,7 @@ El sistema de inyección electrónica de combustible (EFI) es una tecnología av
 
 ## Componentes del Sistema EFI
 
-![Tipos de Sistemas EFI](/mecanica_automotriz/fundamentos_tipos_de_sistemas_EFI.png)
+![Tipos de Sistemas EFI](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/fundamentos_tipos_de_sistemas_EFI)
 
 ### ECU del Motor
 
@@ -53,7 +53,7 @@ Mide la concentración de oxígeno en los gases de escape. Esta información es 
 
 ## Tipos de Sistemas EFI
 
-![Tipos de Sistemas EFI](/mecanica_automotriz/fundamentos_tipos_de_sistemas_EFI2.png)
+![Tipos de Sistemas EFI](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/fundamentos_tipos_de_sistemas_EFI2)
 
 ### L-EFI (Control de Flujo de Aire)
 

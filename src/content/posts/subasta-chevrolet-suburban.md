@@ -35,7 +35,7 @@ El Suburban ha sido un verdadero veterano en el mundo automotriz desde 1935, per
 #### Especificaciones Técnicas
 
 Este modelo en particular es un C20 de 1972, conocido por su rareza con solo 2136 unidades fabricadas ese año. Equipado con un motor V-8 de 350 pulgadas cúbicas, el cual fue reconstruido a principios de los años 90, este Suburban ofrece una experiencia de conducción robusta. Además, cuenta con dirección asistida y control de crucero, una opción instalada por el concesionario en 1972.
-![72-suburban](/news/72-suburban.jpg)
+![72-suburban](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/72-suburban)
 
 #### Mercado y Popularidad
 

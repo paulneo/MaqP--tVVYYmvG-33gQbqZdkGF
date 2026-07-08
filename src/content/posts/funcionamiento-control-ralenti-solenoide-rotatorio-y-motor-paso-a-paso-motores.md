@@ -22,13 +22,13 @@ La **ISCV de solenoide rotatorio** utiliza un mecanismo basado en un **campo mag
 
 #### 1.1 Control del arranque
 
-<img src="/mecanica_automotriz/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores2.png" alt="Control de Presión Constante" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores2" alt="Control de Presión Constante" width="420"/>
 
 Cuando el motor está en proceso de arranque, la ECU del motor recibe una señal de arranque (STA) y abre la ISCV para mejorar la capacidad de encendido. La apertura de la ISCV se ajusta según la señal de régimen del motor (NE) y la temperatura del refrigerante (THW). Este ajuste asegura que el motor reciba suficiente aire para iniciar el proceso de combustión de manera eficiente.
 
 #### 1.2 Control del precalentamiento (ralentí rápido)
 
-<img src="/mecanica_automotriz/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores3.png" alt="Control de Presión Constante" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores3" alt="Control de Presión Constante" width="420"/>
 
 Después del arranque, el motor puede estar frío, lo que afecta el rendimiento debido a la alta viscosidad del aceite y la atomización deficiente del combustible. En este caso, la ECU abre la ISCV para aumentar el régimen de ralentí y estabilizar el motor. Este proceso, conocido como **ralentí rápido**, permite que el motor funcione a un régimen más alto hasta que la temperatura del refrigerante aumente, momento en el que la ECU comienza a cerrar gradualmente la ISCV.
 
@@ -55,7 +55,7 @@ Antes de que el motor arranque, la ISCV se posiciona completamente abierta para 
 
 #### 2.2 Control después del arranque, precalentamiento y retroalimentación
 
-<img src="/mecanica_automotriz/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores4.png" alt="Control de Presión Constante" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores4" alt="Control de Presión Constante" width="420"/>
 
 El funcionamiento del **motor paso a paso** durante el precalentamiento y la retroalimentación es similar al del tipo solenoide rotatorio. Después del arranque, la válvula se cierra gradualmente desde su posición completamente abierta, ajustándose en función de la temperatura del refrigerante y el régimen del motor. Cuando la temperatura del refrigerante alcanza los 80°C, la ECU comienza a utilizar el **control de retroalimentación** para mantener el régimen de ralentí en su valor óptimo.
 

@@ -29,7 +29,7 @@ El aceite cumple múltiples funciones críticas, como enfriamiento, lubricación
 ### Conocimientos Básicos Sobre el Aceite Lubricante
 
 El aceite base se compone de una mezcla de hidrocarburos (parafínico, nafténico, aromático), con los parafínicos siendo los preferidos por sus características de viscosidad ideales. Los aditivos, como detergentes, dispersantes y antioxidantes, se añaden para mejorar el rendimiento del aceite, adecuándose a las necesidades específicas de los motores, engranajes e hidráulicos.
-![aceite motor](/images/aceite-motor-02.jpg)
+![aceite motor](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/aceite-motor-02)
 
 ### Composición de Aditivos
 

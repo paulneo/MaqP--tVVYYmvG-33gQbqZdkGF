@@ -31,7 +31,7 @@ U.S. Armor Group también ofrece una variedad de opciones adicionales, como puer
 ### Precio y Exclusividad
 
 El precio inicial del Lucid Air Sapphire blindado es de $425,000, pero puede aumentar significativamente dependiendo de las opciones seleccionadas. Este vehículo está claramente dirigido a un mercado exclusivo que busca una combinación perfecta de lujo, rendimiento y seguridad.
-![ecnología de Protección Avanzada](/news/lucid-air.jpg)
+![ecnología de Protección Avanzada](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/lucid-air)
 
 ### Un EV Preparado para Todo
 

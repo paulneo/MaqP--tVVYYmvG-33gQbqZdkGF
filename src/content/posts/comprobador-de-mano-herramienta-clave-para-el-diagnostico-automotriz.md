@@ -20,7 +20,7 @@ aiAssisted: false
 
 El comprobador de mano es un dispositivo diseñado para establecer comunicación con la ECU del vehículo. Esta herramienta puede leer y mostrar los Códigos de Diagnóstico de Problemas (DTC) almacenados en la ECU, los cuales son esenciales para identificar y solucionar problemas. Además, un comprobador de mano permite borrar estos códigos una vez que se ha realizado la reparación.
 
-<img src="/mecanica_automotriz/comprobador-de-mano-herramienta-clave-para-el-diagnostico-automotriz2.png" alt="¿Qué es un comprobador de mano?" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/comprobador-de-mano-herramienta-clave-para-el-diagnostico-automotriz2" alt="¿Qué es un comprobador de mano?" width="420"/>
 
 Más allá de su capacidad para leer DTC, el comprobador de mano ofrece funciones adicionales como la visualización en tiempo real de datos provenientes de varios sensores del vehículo. Esta funcionalidad lo convierte en una herramienta indispensable para realizar diagnósticos precisos y rápidos.
 
@@ -53,7 +53,7 @@ El comprobador de mano permite cambiar entre diferentes modos de visualización 
 
 Para establecer la conexión entre el comprobador y el vehículo, se utilizan cables específicos dependiendo del tipo de conector DLC presente en el vehículo. Por ejemplo:
 
-<img src="/mecanica_automotriz/comprobador-de-mano-herramienta-clave-para-el-diagnostico-automotriz3.png" alt="Visualización y conexiones" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/comprobador-de-mano-herramienta-clave-para-el-diagnostico-automotriz3" alt="Visualización y conexiones" width="420"/>
 
 - **DLC3:** Usado comúnmente en vehículos modernos, permite una conexión directa con cables estándar.
 - **DLC1 o DLC2:** Requiere de un módulo de interfaz de vehículo (VIM) para la correcta conexión y alimentación del comprobador.

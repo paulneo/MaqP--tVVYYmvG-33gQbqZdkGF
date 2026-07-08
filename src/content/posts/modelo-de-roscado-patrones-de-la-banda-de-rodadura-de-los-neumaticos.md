@@ -20,7 +20,7 @@ Los neumáticos son un componente esencial para la seguridad y el rendimiento de
 
 ## Tipos de patrones de la banda de rodadura
 
-<img src="/mecanica_automotriz/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos2.png" alt=" Tipos de patrones de la banda de rodadura" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos2" alt=" Tipos de patrones de la banda de rodadura" width="420"/>
 
 ### 1. Diseño de barras
 
@@ -69,13 +69,13 @@ En este patrón, la banda de rodadura se divide en bloques independientes. Se ut
 
 ## Neumáticos con diseño unidireccional
 
-<img src="/mecanica_automotriz/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos3.png" alt="Neumáticos con diseño unidireccional" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos3" alt="Neumáticos con diseño unidireccional" width="420"/>
 
 Algunos neumáticos tienen un diseño de banda de rodadura que debe montarse en una dirección específica para mejorar el rendimiento en carreteras mojadas, facilitando el drenaje del agua. Si se montan en la dirección incorrecta, su rendimiento puede disminuir significativamente en condiciones húmedas.
 
 ## Ruido generado por el diseño de la banda de rodadura
 
-<img src="/mecanica_automotriz/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos4.png" alt="Ruido generado por el diseño de la banda de rodadura" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos4" alt="Ruido generado por el diseño de la banda de rodadura" width="420"/>
 
 El ruido es uno de los sonidos más distintivos generados por los neumáticos. Las ranuras de la banda de rodadura atrapan y comprimen el aire al entrar en contacto con la carretera, liberando el aire comprimido cuando dejan de estar en contacto, lo que genera ruido. Cuanto más aire se atrape, mayor será el ruido. Los diseños de bloques o tacos suelen generar más ruido que los diseños de barras. El tono del ruido aumenta con la velocidad del vehículo.
 

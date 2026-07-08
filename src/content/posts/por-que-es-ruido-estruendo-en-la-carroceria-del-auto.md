@@ -57,25 +57,25 @@ Las vibraciones torsionales pueden transmitirse a través del sistema de transmi
 
 ### 1. Ángulo de junta del eje propulsor
 
-<img src="/mecanica_automotriz/por_que_es_ruido_estruendo_en_la_carroceria_del_auto1.png" alt=" Ángulo de junta del eje propulsor" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_es_ruido_estruendo_en_la_carroceria_del_auto1" alt=" Ángulo de junta del eje propulsor" width="420"/>
 
 Cuando hay un ángulo de junta en el eje propulsor, se producen dos fluctuaciones de par en cada vuelta del eje. Estas fluctuaciones aumentan con el ángulo de junta y, a ciertas velocidades del vehículo, hacen vibrar el tren de transmisión. Estas vibraciones se transmiten a través de los bujes o muelles del brazo de suspensión, provocando la vibración de los paneles de la carrocería y generando el ruido de estruendo.
 
 ### 2. Eje propulsor desequilibrado
 
-<img src="/mecanica_automotriz/por_que_es_ruido_estruendo_en_la_carroceria_del_auto2.png" alt="Eje propulsor desequilibrado" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_es_ruido_estruendo_en_la_carroceria_del_auto2" alt="Eje propulsor desequilibrado" width="420"/>
 
 Un eje propulsor desequilibrado genera una fuerza centrífuga que intenta doblar el eje hacia afuera, provocando vibraciones en cada vuelta. Estas vibraciones se transmiten a través de los soportes del motor y los bujes de la suspensión trasera hacia los paneles de la carrocería, generando el ruido de estruendo.
 
 ### 3. Vibraciones del tubo de escape
 
-<img src="/mecanica_automotriz/por_que_es_ruido_estruendo_en_la_carroceria_del_auto3.png" alt="Vibraciones del tubo de escape" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_es_ruido_estruendo_en_la_carroceria_del_auto3" alt="Vibraciones del tubo de escape" width="420"/>
 
 El tubo de escape, siendo largo y estrecho, vibra fácilmente y está conectado al motor, la mayor fuente de vibraciones del vehículo. Las vibraciones del motor pueden hacer resonar el tubo de escape, amplificándose y transmitiéndose a través de las juntas tóricas y abrazaderas del silencioso hacia la carrocería del vehículo, produciendo el ruido de estruendo. Para aislar la zona problemática, se pueden quitar las juntas tóricas una a una.
 
 ### 4. Vibración de componentes auxiliares
 
-<img src="/mecanica_automotriz/por_que_es_ruido_estruendo_en_la_carroceria_del_auto4.png" alt="Vibración de componentes auxiliares" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_es_ruido_estruendo_en_la_carroceria_del_auto4" alt="Vibración de componentes auxiliares" width="420"/>
 
 Si los soportes del alternador, la bomba de la servodirección o el compresor del aire acondicionado no son lo suficientemente rígidos, también resonarán debido a la vibración del motor. Esta vibración se transmite a través de los soportes del motor hacia la carrocería, creando el ruido de estruendo.
 

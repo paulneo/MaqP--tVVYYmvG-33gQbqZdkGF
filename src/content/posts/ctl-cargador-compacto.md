@@ -41,7 +41,7 @@ Los CTL que trabajan en la limpieza de terrenos y aplicaciones de preparación d
 #### Hidráulica de centro abierto vs. centro cerrado
 
 Hay dos configuraciones de flujo hidráulico para elegir al seleccionar un CTL: hidráulica de centro abierto y centro cerrado. Gardner dice que la función simultánea es mejor en máquinas con hidráulica de centro cerrado, ya que los brazos del cargador tienen su propio circuito. En una máquina de centro abierto, el accesorio y los brazos usan el mismo circuito que prioriza los brazos del cargador, luego el balde, y luego las funciones auxiliares.
-![Hidráulica de centro abierto vs. centro cerrado](/news/cargador-ctl.jpg)
+![Hidráulica de centro abierto vs. centro cerrado](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/cargador-ctl)
 
 ### Mantén tus accesorios CTL para una eficiencia óptima, longevidad y seguridad en el sitio de trabajo
 

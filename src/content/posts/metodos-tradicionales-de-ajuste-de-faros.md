@@ -32,7 +32,7 @@ Este método consiste en colocar el vehículo a una distancia de 10 metros de un
 - **Requiere Espacio**: Necesita una pared grande y un área despejada, lo que puede no estar disponible en todos los talleres.
 - **Precisión Limitada**: Puede no ser tan preciso como los métodos modernos que utilizan tecnología avanzada.
 
-![AJUSTE CON EL MÉTODO "PARED A 10 M](/mecanica_automotriz/metodos-tradicionales-de-ajuste-de-faros1.png)
+![AJUSTE CON EL MÉTODO "PARED A 10 M](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/metodos-tradicionales-de-ajuste-de-faros1)
 
 1. Línea A
 
@@ -70,7 +70,7 @@ Hoy en día, este método se emplea principalmente en vehículos donde el extrem
 
 Un ajustador de faros esencialmente simula una pared a 10 metros de distancia. La lente integrada en la caja óptica reduce la distancia de medición requerida de 10 metros a solo 50 cm (desde la lente hasta la pantalla de comprobación).
 
-![Regulación con el ajustador de faros](/mecanica_automotriz/metodos-tradicionales-de-ajuste-de-faros2.png)
+![Regulación con el ajustador de faros](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/metodos-tradicionales-de-ajuste-de-faros2)
 
 ### Método de Medición
 
@@ -82,7 +82,7 @@ Para realizar un ajuste preciso de los faros, es crucial contar con un suelo que
 
 ## Importancia de Respetar los Grados de Tolerancia
 
-![ Importancia de Respetar los Grados de Tolerancia](/mecanica_automotriz/metodos-tradicionales-de-ajuste-de-faros3.png)
+![ Importancia de Respetar los Grados de Tolerancia](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/metodos-tradicionales-de-ajuste-de-faros3)
 
 Si no se respetan los grados de tolerancia, incluso las pequeñas desviaciones pueden afectar significativamente la distribución de la luz. Esto puede ilustrarse claramente con un ejemplo:
 
@@ -108,7 +108,7 @@ Si las condiciones del suelo son las adecuadas y el vehículo ya ha sido comprob
 
 El ajustador de faros debe situarse frente a los faros que necesitan ser comprobados. La caja óptica debe colocarse en el centro del faro o de la fuente de iluminación, con desviaciones máximas de 3 cm en cuanto a altura y lateralidad. La distancia entre la caja óptica y el faro varía según el fabricante. Con los ajustadores de faros HELLA, la distancia adecuada desde el extremo delantero de la caja óptica hasta el faro debe ser de entre 30 y 70 cm.
 
-![Colocación del Ajustador de Faros](/mecanica_automotriz/metodos-tradicionales-de-ajuste-de-faros4.jpg)
+![Colocación del Ajustador de Faros](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/metodos-tradicionales-de-ajuste-de-faros4)
 
 A continuación, se debe orientar la caja óptica hacia el vehículo. Los ajustadores de faros con base de ruedas deben orientarse hacia cada faro que se necesite comprobar. En los ajustadores que se desplazan sobre raíles, la caja óptica solo necesita orientarse una vez. Con la ayuda de un visor de banda ancha, un visor láser o un espejo, la caja óptica se alinea de manera que las dos líneas del visor toquen los puntos indicados, a la misma altura y de forma simétrica respecto al eje del vehículo
 

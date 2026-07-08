@@ -18,7 +18,7 @@ En el mundo de la tecnología automotriz, el control del ralentí en los motores
 
 ### 1. ISCV de solenoide rotatorio: Estructura y funcionamiento
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti.png" alt="ISCV de solenoide rotatorio: Estructura y funcionamiento" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti" alt="ISCV de solenoide rotatorio: Estructura y funcionamiento" width="620"/>
 
 La **ISCV de tipo solenoide rotatorio** es una de las variantes más avanzadas de la válvula de control del régimen de ralentí. Esta válvula se instala directamente en el cuerpo de la mariposa de gases del motor y está compuesta por una serie de componentes clave, como:
 
@@ -40,7 +40,7 @@ Una característica importante de la **ISCV de solenoide rotatorio** es que est�
 
 ### 2. Evolución de la ISCV de solenoide rotatorio
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti2.png" alt="Evolución de la ISCV de solenoide rotatorio" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti2" alt="Evolución de la ISCV de solenoide rotatorio" width="620"/>
 
 Las versiones antiguas de la **ISCV de solenoide rotatorio** también utilizaban señales de la ECU para controlar la apertura de la válvula, pero con diferencias en su construcción y funcionamiento. A continuación se detalla su evolución:
 
@@ -50,11 +50,11 @@ En los modelos anteriores, la **ISCV de solenoide rotatorio** utilizaba dos bobi
 
 - **Apertura de la válvula:** Cuando se aplicaba electricidad a la **bobina A (RSO)** durante un tiempo prolongado, la válvula se abría.
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti3.png" alt="Apertura de la válvula" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti3" alt="Apertura de la válvula" width="420"/>
 
 - **Cierre de la válvula:** Cuando la corriente fluía a la **bobina B**, la válvula se movía hacia la dirección de cierre, reduciendo el flujo de aire.
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti4.png" alt="Cierre de la válvula" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti4" alt="Cierre de la válvula" width="420"/>
 
 Una característica notable de estos sistemas antiguos es la inclusión de una **cinta bimetálica** que reaccionaba a la temperatura del refrigerante del motor. Esta cinta ajustaba automáticamente la apertura de la válvula durante el precalentamiento del motor, asegurando que el motor funcionara correctamente a bajas temperaturas.
 
@@ -68,13 +68,13 @@ Además de la ISCV de solenoide rotatorio, existen otros tipos de válvulas que 
 
 #### 3.1 ISCV tipo ACV con control de operación
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti5.png" alt="ISCV tipo ACV con control de operación" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti5" alt="ISCV tipo ACV con control de operación" width="520"/>
 
 Este tipo de ISCV también controla el flujo de aire de admisión a través de un **circuito de derivación**. La apertura de la válvula se ajusta en función de la señal de rendimiento que proviene de la ECU, pero en este caso, la corriente que fluye a la **bobina solenoide** es la que determina cuánto se abre la válvula. Cuanto mayor es el factor de marcha de la corriente, mayor es la apertura de la válvula, lo que permite un flujo de aire más amplio para ajustar el ralentí.
 
 #### 3.2 ISCV tipo VSV con control ON-OFF
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti6.png" alt="ISCV tipo VSV con control ON-OFF" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-ISCV-con-solenoi-de-rotatorio-y-impacto-control-ralenti6" alt="ISCV tipo VSV con control ON-OFF" width="520"/>
 
 El **tipo VSV con control ON-OFF** es más sencillo en su funcionamiento, ya que opera con señales ON/OFF procedentes de la ECU. Cada vez que la corriente fluye a la bobina solenoide, la válvula se abre y el régimen de ralentí aumenta en incrementos de aproximadamente **100 rpm**. Este tipo de ISCV ofrece un control más básico pero efectivo en aplicaciones donde no se requiere una regulación extremadamente precisa.
 

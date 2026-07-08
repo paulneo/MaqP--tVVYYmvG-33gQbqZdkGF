@@ -38,7 +38,7 @@ La adopción temprana de la tecnología de Topcon Positioning Systems ha sido fu
 ### Beneficios de la Tecnología en la Construcción
 
 La tecnología permite a operadores con poca experiencia alcanzar un nivel básico de productividad en máquinas equipadas con control de máquinas Topcon. "Es muy fácil de usar, podemos poner a cualquiera en la máquina y enseñarle a operar el GPS," explica Rusty Hodge, superintendente de sitio. La inversión en tecnología ha permitido a United Group completar proyectos con mayor rapidez y precisión, mejorando su competitividad en el mercado.
-![Beneficios de la Tecnología en la Construcción](/news/inversion-tecnologicos.jpg")
+![Beneficios de la Tecnología en la Construcción](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/inversion-tecnologicos")
 
 ### Apoyo Continuo de Brandt Tractor
 

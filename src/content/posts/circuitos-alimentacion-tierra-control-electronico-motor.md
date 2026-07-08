@@ -23,7 +23,7 @@ En los motores modernos, el sistema de control electrónico es vital para garant
 
 ### Control mediante la Llave de Contacto
 
-![ Circuitos de Alimentación](/mecanica_automotriz/circuitos_alimentacion_tierra_control_electronico_motor.png)
+![ Circuitos de Alimentación](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/circuitos_alimentacion_tierra_control_electronico_motor)
 
 El primer tipo de circuito de alimentación es aquel que se activa directamente desde la llave de contacto del vehículo. Este método es bastante sencillo y se describe a continuación:
 
@@ -33,7 +33,7 @@ El primer tipo de circuito de alimentación es aquel que se activa directamente 
 
 ### Control por la ECU del Motor
 
-<img src="/mecanica_automotriz/circuitos_alimentacion_tierra_control_electronico_motor2.png" alt="Control por la ECU del Motor" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/circuitos_alimentacion_tierra_control_electronico_motor2" alt="Control por la ECU del Motor" width="420"/>
 
 El segundo tipo de circuito de alimentación está controlado directamente por la ECU del motor. Este método es un poco más complejo y funciona de la siguiente manera:
 
@@ -46,7 +46,7 @@ El segundo tipo de circuito de alimentación está controlado directamente por l
 
 ## Circuito de Toma a Tierra
 
-<img src="/mecanica_automotriz/circuitos_alimentacion_tierra_control_electronico_motor3.png" alt="Circuito de Toma a Tierra" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/circuitos_alimentacion_tierra_control_electronico_motor3" alt="Circuito de Toma a Tierra" width="420"/>
 
 La toma a tierra es fundamental para el funcionamiento adecuado de los sistemas eléctricos y electrónicos del motor. La ECU del motor utiliza tres circuitos básicos de toma a tierra, que se describen a continuación:
 

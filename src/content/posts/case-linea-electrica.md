@@ -34,7 +34,7 @@ La miniexcavadora CX25EV es el segundo modelo eléctrico de Case en esta categor
 - **Profundidad máxima de excavación:** 9’ 1”
 - **Alcance máximo:** 15’
 - **Velocidad máxima de desplazamiento:** 2.5 mph
-![CX25EV Miniexcavadora Compacta](/news/mini-excavator.jpg)
+![CX25EV Miniexcavadora Compacta](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/mini-excavator)
 
 La CX25EV está diseñada para ser transportada fácilmente con una camioneta y un remolque, lo que la convierte en una opción ideal para trabajos en áreas sensibles como hospitales y escuelas, así como para trabajos nocturnos e interiores. Además, las orugas pueden ajustarse para pasar por puertas y portones estrechos, ofreciendo estabilidad adicional durante las operaciones.
 
@@ -58,7 +58,7 @@ La cargadora compacta CL36EV es la segunda cargadora eléctrica de Case, sucedie
 La CL36EV puede cargarse en cualquier estación de carga automotriz de Nivel 2 J1772, y Case también ofrece un cargador rápido opcional que permite una carga completa en solo 2 horas. La cabina proporciona una visibilidad cercana a los 360 grados, un asiento completamente ajustable y una columna de dirección inclinable y telescópica. Además, Case ha integrado características avanzadas como el retorno a la posición de excavación con nivelación automática del cucharón y altura de corte, mejorando la eficiencia y suavidad del trabajo.
 
 La CL36EV es compatible con todos los accesorios para minicargadores de Case, incluyendo horquillas, empujadores de nieve, cucharones 4 en 1 y garras, lo que la hace altamente versátil para diferentes tareas.
-![CL36EV Cargadora Compacta Eléctrica](/news/compacto-case.jpg)
+![CL36EV Cargadora Compacta Eléctrica](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/compacto-case)
 
 ### Innovaciones en Confort y Seguridad
 

@@ -20,7 +20,7 @@ En este blog, exploraremos cómo funcionan los sistemas de diagnóstico en los v
 
 ## ¿Qué es un Sistema de Diagnóstico Vehicular?
 
-<img src="/mecanica_automotriz/sistema-de-diagnostico-electronico-en-vehiculos.webp" alt="Sistemas de Diagnóstico Electrónico en Vehículos: ¿Cómo Funcionan y por qué son Claves?" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sistema-de-diagnostico-electronico-en-vehiculos" alt="Sistemas de Diagnóstico Electrónico en Vehículos: ¿Cómo Funcionan y por qué son Claves?" width="520"/>
 
 Un sistema de diagnóstico vehicular es un conjunto de tecnologías integradas en el automóvil que monitorean y reportan el estado de sus diferentes componentes. A través de **sensores** y **unidades de control electrónico (ECU)**, el sistema es capaz de detectar anomalías en el motor, frenos, transmisión y otros sistemas críticos.
 

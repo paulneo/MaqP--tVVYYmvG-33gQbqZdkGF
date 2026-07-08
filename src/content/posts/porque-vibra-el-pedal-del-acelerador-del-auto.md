@@ -25,7 +25,7 @@ Esta vibración se manifiesta como una sensación de alta frecuencia en el pedal
 
 ### Causas Principales
 
-<img src="/mecanica_automotriz/porque_vibra_el_pedal_del_acelerador_del_auto2.png" alt="Vibración del Pedal del Acelerador" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/porque_vibra_el_pedal_del_acelerador_del_auto2" alt="Vibración del Pedal del Acelerador" width="420"/>
 
 1. **Vibración del Motor**: Las vibraciones generadas por el motor pueden transmitirse a través del sistema del acelerador.
 2. **Vibraciones y Resonancias en el Cable del Acelerador o el Varillaje**: El cable o varillaje del acelerador puede vibrar y resonar debido a las vibraciones del motor.

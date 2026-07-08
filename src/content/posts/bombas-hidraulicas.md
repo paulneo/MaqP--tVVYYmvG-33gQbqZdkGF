@@ -19,7 +19,7 @@ Los principios de funcionamiento de las bombas hidráulicas, componentes esencia
 ## Función de una Bomba
 
 La función principal de una bomba en un sistema hidráulico es convertir la energía mecánica en energía hidráulica, generando flujo y presión necesarios para mover los actuadores y realizar trabajo útil en el sistema.
-![bomba hidraulica](/images/bomba-hidraulica.jpg)
+![bomba hidraulica](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/bomba-hidraulica)
 
 ## Clasificación de las Bombas
 
@@ -28,7 +28,7 @@ Las bombas hidráulicas se clasifican en dos grandes categorías:
 - **Bombas de Desplazamiento Positivo**: Garantizan un caudal constante de fluido en cada ciclo de operación, independientemente de la presión del sistema.
 - **Bombas de Desplazamiento Variable**: Permiten ajustar el caudal de salida según las necesidades del sistema, mejorando la eficiencia energética.
 
-![bomba hidraulica](/images/bomba-02.jpg)
+![bomba hidraulica](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/bomba-02)
 ## Presión Nominal y Caudal Nominal
 
 - **Presión Nominal**: Es la máxima presión a la que la bomba puede operar de manera segura y eficiente.

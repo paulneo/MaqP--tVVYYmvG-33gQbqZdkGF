@@ -18,7 +18,7 @@ aiAssisted: false
 
 El avance del pivote es la inclinación hacia adelante y hacia atrás del eje de dirección. Este ángulo se mide en grados desde el eje de dirección hasta la vertical, visto de lado. La inclinación hacia atrás desde la línea vertical se llama “avance positivo del pivote”, mientras que la inclinación hacia adelante se conoce como “avance negativo del pivote”. La distancia desde la intersección de la línea central del eje de dirección con el suelo hasta el centro de la zona de contacto entre el neumático y el suelo se llama “pista de avance del pivote”.
 
-![Avance del Pivote en la Dirección del Vehículo](/mecanica_automotriz/avance-del-pivote-en-la-direccion-del-vehiculo1.png)
+![Avance del Pivote en la Dirección del Vehículo](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/avance-del-pivote-en-la-direccion-del-vehiculo1)
 
 El ángulo de avance del pivote influye en la estabilidad del vehículo en línea recta, mientras que la pista de avance del pivote afecta la capacidad de la rueda para recuperar su posición después de tomar una curva.
 
@@ -28,7 +28,7 @@ Si las ruedas tienen un avance del pivote positivo excesivo, mejorará la estabi
 
 ## Estabilidad en Línea Recta y Recuperación de la Rueda
 
-![Estabilidad en Línea Recta y Recuperación de la Rueda](/mecanica_automotriz/avance-del-pivote-en-la-direccion-del-vehiculo2.png)
+![Estabilidad en Línea Recta y Recuperación de la Rueda](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/avance-del-pivote-en-la-direccion-del-vehiculo2)
 
 ### Estabilidad en Línea Recta debido al Ángulo de Avance del Pivote
 
@@ -44,7 +44,7 @@ En este caso, si la pista de avance del pivote es larga, para una fuerza lateral
 
 ## Geometría Nachlauf y Vorlauf
 
-![Geometría Nachlauf y Vorlauf](/mecanica_automotriz/avance-del-pivote-en-la-direccion-del-vehiculo3.png)
+![Geometría Nachlauf y Vorlauf](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/avance-del-pivote-en-la-direccion-del-vehiculo3)
 
 En general, el ángulo de avance del pivote debe aumentar para incrementar la pista de avance del mismo. Sin embargo, incluso si el ángulo de avance del pivote permanece constante, es posible ajustar la pista de avance del pivote al valor deseado descentrando el eje de dirección hacia la parte delantera o trasera desde el centro de la rueda.
 

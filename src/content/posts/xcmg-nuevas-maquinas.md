@@ -33,7 +33,7 @@ El XDR100 tiene una capacidad de carga de 91 toneladas y un peso total cargado d
 ### Excavadora XE1350
 
 La excavadora XE1350, con un peso de 121 toneladas, está diseñada para trabajos pesados y equipada con un motor Cummins QSK23 que ofrece una potencia de 567 kW. Utiliza una bomba Kawasaki para un rendimiento hidráulico eficiente y presenta una estructura robusta con un chasis en forma de "X", pluma y brazo reforzados internamente. La cabina se centra en la comodidad del operador, con un asiento "Anti-Fatiga" y un panel de control con pantalla táctil. Su cuchara reforzada tiene una capacidad de 8 m³. Uno de los aspectos más destacados es su bajo consumo de combustible, lo que garantiza eficiencia y economía operativa.
-![excavadora XE1350](/news/excavadora.webp)
+![excavadora XE1350](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/excavadora)
 
 ### Compromiso con la Innovación y la Sostenibilidad
 

@@ -18,7 +18,7 @@ aiAssisted: false
 
 La tracción a las 4 ruedas, comúnmente conocida como 4WD (4-Wheel Drive), es un sistema que permite que un vehículo transmita potencia a los cuatro neumáticos simultáneamente. Este sistema es especialmente útil en condiciones de conducción difíciles, como en terrenos irregulares, superficies resbaladizas o carreteras cubiertas de nieve. En este blog, exploraremos en detalle cómo funciona 4WD, los diferentes tipos de tracción a las 4 ruedas, y sus ventajas en distintas situaciones de manejo.
 
-<img src="/mecanica_automotriz/que-es-traccion-4wd-y-como-funciona2.png" alt="Sistemas 4WD" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/que-es-traccion-4wd-y-como-funciona2" alt="Sistemas 4WD" width="420"/>
 
 ### Tipos de Sistemas 4WD
 
@@ -40,7 +40,7 @@ Por otro lado, los vehículos con tracción parcial 4WD carecen de un diferencia
 
 ### Importancia de los Neumáticos y el Uso de Cadenas
 
-<img src="/mecanica_automotriz/que-es-traccion-4wd-y-como-funciona3.png" alt="Importancia de los Neumáticos y el Uso de Cadenas" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/que-es-traccion-4wd-y-como-funciona3" alt="Importancia de los Neumáticos y el Uso de Cadenas" width="420"/>
 
 Los vehículos 4WD requieren que los cuatro neumáticos sean del mismo tipo y tamaño. Esto es fundamental para evitar problemas con los diferenciales. Si los neumáticos delanteros y traseros tienen diámetros diferentes, el diferencial central estará continuamente compensando la diferencia, lo que puede llevar a un desgaste prematuro. Del mismo modo, si los diámetros de los neumáticos izquierdo y derecho no coinciden, el diferencial delantero o trasero estará sometido a un esfuerzo innecesario.
 

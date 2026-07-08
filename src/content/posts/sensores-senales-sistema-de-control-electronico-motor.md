@@ -21,7 +21,7 @@ Los sensores son componentes esenciales en el sistema de control electrónico de
 
 ## Caudalímetro de Aire (Air Flow Meter)
 
-![Caudalímetro de Aire (Air Flow Meter)](/mecanica_automotriz/sensores_senales_sistema_de_control_electronico_motor.png)
+![Caudalímetro de Aire (Air Flow Meter)](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sensores_senales_sistema_de_control_electronico_motor)
 
 El caudalímetro de aire es un sensor fundamental en los sistemas de inyección electrónica de combustible (EFI) tipo L, ya que mide la masa o el volumen de aire que entra al motor. La señal de este sensor se utiliza para calcular la duración de la inyección de combustible y el ángulo de avance del encendido.
 
@@ -39,13 +39,13 @@ El caudalímetro de hilo caliente es popular debido a su precisión, peso ligero
 
 ##### Tipo Paleta
 
-![Tipo Paleta](/mecanica_automotriz/sensores_senales_sistema_de_control_electronico_motor2.png)
+![Tipo Paleta](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sensores_senales_sistema_de_control_electronico_motor2)
 
 El caudalímetro de tipo paleta consta de una placa de medida y un potenciómetro. A medida que el aire pasa por el sensor, abre la placa de medida hasta que la fuerza del aire y el muelle de retorno están en equilibrio. El potenciómetro convierte el volumen de aire en una señal de voltaje que se envía a la ECU.
 
 ##### Tipo Remolino Óptico Karman
 
-<img src="/mecanica_automotriz/sensores_senales_sistema_de_control_electronico_motor3.png" alt="Tipo Remolino Óptico Karman" width="450"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sensores_senales_sistema_de_control_electronico_motor3" alt="Tipo Remolino Óptico Karman" width="450"/>
 
 Este tipo de caudalímetro utiliza un generador de remolino que crea vórtices en el flujo de aire. La frecuencia de estos remolinos es proporcional a la velocidad del aire, lo que permite calcular el volumen de aire. Un espejo vibra con la presión de los remolinos, y un acoplador óptico detecta estas vibraciones para generar una señal de pulsos que se envía a la ECU.
 

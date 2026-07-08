@@ -32,7 +32,7 @@ Una presión de inflado insuficiente acelera el desgaste de los neumáticos, hac
 
 ## Ondas estacionarias e hidrodeslizamiento ("aquaplaning")
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo2.png" alt="Ondas estacionarias e hidrodeslizamiento (aquaplaning)" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo2" alt="Ondas estacionarias e hidrodeslizamiento (aquaplaning)" width="420"/>
 
 ### Ondas estacionarias
 
@@ -49,18 +49,18 @@ Un vehículo puede deslizarse en una carretera cubierta de agua si la velocidad 
 
 ## Carga
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo3.png" alt="Carga" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo3" alt="Carga" width="420"/>
 Una carga más alta acelera el desgaste de los neumáticos de forma similar a una disminución de la presión de inflado. El neumático también se desgasta más rápidamente en los virajes si está muy cargado.
 
 ## Velocidad del vehículo
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo4.png" alt="Velocidad del vehículo" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo4" alt="Velocidad del vehículo" width="420"/>
 
 Las fuerzas motriz y de frenado, la fuerza centrífuga en los virajes y otras fuerzas que actúan sobre el neumático aumentan en proporción al cuadrado de la velocidad del vehículo. A mayor velocidad, estas fuerzas se multiplican, aumentando la fricción entre la banda de rodadura y la superficie de la carretera, acelerando así el desgaste del neumático.
 
 ## Impacto del desgaste de los neumáticos en la distancia de frenado
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo5.png" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo5" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="620"/>
 
 El desgaste de los neumáticos no afecta demasiado a la distancia de frenado en superficies secas, pero en superficies húmedas, aumenta considerablemente. Un neumático desgastado no puede drenar el agua adecuadamente, provocando hidrodeslizamiento y aumentando la distancia de frenado.
 
@@ -72,37 +72,37 @@ Los indicadores de desgaste son rebordes en la banda de rodadura que indican el 
 
 ### Desgaste en los hombros o en el centro del neumático
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo11.png" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo11" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
 
 - **Presión baja:** Desgaste más rápido en los hombros.
 - **Presión alta:** Desgaste más rápido en el centro.
 
 ### Desgaste interno o externo
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo6.png" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo6" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
 
 Causado por virajes a velocidad excesiva, deformación o holgura en las piezas de la suspensión que afectan a la alineación de la rueda delantera.
 
 ### Desgaste por convergencia o divergencia
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo7.png" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo7" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
 
 Debido a un ajuste defectuoso de la convergencia. La fuerza de convergencia o divergencia excesiva provoca un desgaste característico de rebaba.
 
 ### Desgaste en diente de sierra
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo8.png" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo8" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
 
 Desgaste parcial en neumáticos con diseños de tacos o bloques. Más común en ruedas no motrices que no están sujetas a fuerza motriz.
 
 ### Desgaste puntual
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo9.png" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo9" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="420"/>
 
 Causado por holgura excesiva en cojinetes de ruedas o piezas de acoplamiento, deformación del tambor de freno, o desequilibrio excesivo de la rueda.
 
 ## Rotación de los neumáticos
 
-<img src="/mecanica_automotriz/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo10.png" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="550"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo10" alt="Impacto del desgaste de los neumáticos en la distancia de frenado" width="550"/>
 
 Para un desgaste uniforme, es necesario girar los neumáticos regularmente. Consulte el Manual del propietario para conocer el método de rotación recomendado para su modelo y región.

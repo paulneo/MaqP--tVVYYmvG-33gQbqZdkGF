@@ -28,7 +28,7 @@ El motor biturbo de 3.0 litros ahora genera 473 caballos de fuerza, 20 más que 
 
 BMW ofrece varios nuevos colores de pintura para 2025, incluyendo Sao Paulo Yellow, Vegas Red metallic, Skyscraper Grey metallic y Portimao Blue metallic. Además, hay nuevos tonos disponibles a través del programa de personalización BMW Individual, como Java Green metallic, Voodoo Blue, Grigio Telesto Pearl Effect metallic y Twilight Purple Pearl Effect metallic. Los modelos 2025 también pueden ser equipados con un acabado plateado brillante para las ruedas. Otros ajustes de diseño incluyen insignias negras delineadas en plata y tubos de escape negros estándar.
 En el interior, BMW ha rediseñado el volante con nuevos radios, un borde plano en la parte inferior y una marca roja en el centro a las 12 en punto. El volante está revestido en cuero de serie, con opciones para Alcantara y calefacción. Los asientos de cubo de carbono M ahora pueden pedirse como opción independiente. Los asientos estándar de cuero pueden pedirse en negro con un acento rojo.
-![Nuevos Colores y Diseño Interior](/news/interior-bmw.webp)
+![Nuevos Colores y Diseño Interior](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/interior-bmw)
 
 ### Tecnología y Comodidad
 

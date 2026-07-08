@@ -18,7 +18,7 @@ El control del régimen de ralentí en un motor es fundamental para asegurar que
 
 ### 1. ¿Qué es el sistema ISC?
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-valvulas-ISCV-en-el-sistema-de-control-ralenti.png" alt="¿Qué es el sistema ISC?" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-valvulas-ISCV-en-el-sistema-de-control-ralenti" alt="¿Qué es el sistema ISC?" width="620"/>
 
 El sistema ISC es responsable de mantener el régimen de ralentí del motor en un nivel óptimo en todo momento. Esto se logra mediante un circuito que bordea la válvula de mariposa, controlando el volumen de aire que pasa a través de este circuito de derivación utilizando la válvula ISCV. Esta válvula regula la cantidad de aire de admisión durante el ralentí en función de las señales enviadas por la Unidad de Control del Motor (ECU).
 
@@ -50,7 +50,7 @@ El sistema ISC también ajusta el régimen de ralentí en respuesta a ciertos ca
 
 ### 3. Tipos de válvulas ISCV
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-valvulas-ISCV-en-el-sistema-de-control-ralenti2.png" alt=" Tipos de válvulas ISCV" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-valvulas-ISCV-en-el-sistema-de-control-ralenti2" alt=" Tipos de válvulas ISCV" width="620"/>
 
 La válvula ISCV es el componente encargado de controlar la cantidad de aire que entra al motor durante el ralentí, utilizando señales de la ECU. Existen dos tipos principales de válvulas ISCV, cada una con un enfoque diferente para manejar el flujo de aire:
 

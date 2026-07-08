@@ -23,7 +23,7 @@ En los motores modernos, los sensores juegan un papel crucial en la recopilació
 
 ### 1. Utilización de Voltaje VC (VTA, PIM)
 
-![ Utilización de Voltaje VC (VTA, PIM)](/mecanica_automotriz/voltaje_terminal_sensor_sistema_control_electronico_motor.png)
+![ Utilización de Voltaje VC (VTA, PIM)](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/voltaje_terminal_sensor_sistema_control_electronico_motor)
 
 El primer método utiliza un voltaje constante de 5V (voltaje VC) generado por la batería para activar el microprocesador dentro de la ECU del motor. Este voltaje se suministra como fuente de alimentación para ciertos sensores.
 
@@ -33,7 +33,7 @@ El primer método utiliza un voltaje constante de 5V (voltaje VC) generado por l
 
 ### 2. Utilización de un Termistor (THW, THA)
 
-![ Utilización de un Termistor (THW, THA)](/mecanica_automotriz/voltaje_terminal_sensor_sistema_control_electronico_motor2.png)
+![ Utilización de un Termistor (THW, THA)](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/voltaje_terminal_sensor_sistema_control_electronico_motor2)
 
 Los termistores son dispositivos cuya resistencia varía según la temperatura, utilizados para detectar cambios de temperatura.
 
@@ -43,7 +43,7 @@ Los termistores son dispositivos cuya resistencia varía según la temperatura, 
 
 ### 3. Utilización de Activación/Desactivación de Voltaje
 
-![Utilización de Activación/Desactivación de Voltaje](/mecanica_automotriz/voltaje_terminal_sensor_sistema_control_electronico_motor3.png)
+![Utilización de Activación/Desactivación de Voltaje](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/voltaje_terminal_sensor_sistema_control_electronico_motor3)
 
 #### (1) Dispositivos que Utilizan un Interruptor (IDL, NSW)
 
@@ -59,14 +59,14 @@ Estos dispositivos utilizan la conmutación mediante un transistor en lugar de u
 
 ### 4. Utilización de una Fuente de Alimentación Distinta a la ECU del Motor (STA, STP)
 
-![Utilización de una Fuente de Alimentación Distinta a la ECU del Motor (STA, STP)](/mecanica_automotriz/voltaje_terminal_sensor_sistema_control_electronico_motor4.png)
+![Utilización de una Fuente de Alimentación Distinta a la ECU del Motor (STA, STP)](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/voltaje_terminal_sensor_sistema_control_electronico_motor4)
 La ECU determina si otros dispositivos están funcionando detectando el voltaje aplicado por esos dispositivos.
 
 - **Ejemplo**: En el circuito de una lámpara de parada, cuando el interruptor está activado, se aplica un voltaje de batería de 12V al terminal de la ECU. Cuando el interruptor está desactivado, el voltaje se convierte en 0V.
 
 ### 5. Utilización del Voltaje Generado por el Sensor (G, NE, OX, KNK)
 
-![Utilización del Voltaje Generado por el Sensor (G, NE, OX, KNK)](/mecanica_automotriz/voltaje_terminal_sensor_sistema_control_electronico_motor5.png)
+![Utilización del Voltaje Generado por el Sensor (G, NE, OX, KNK)](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/voltaje_terminal_sensor_sistema_control_electronico_motor5)
 
 Algunos sensores generan y emiten su propia electricidad, por lo que no necesitan un voltaje aplicado.
 

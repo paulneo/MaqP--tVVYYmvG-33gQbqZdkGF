@@ -18,7 +18,7 @@ El **turbo doble bidireccional** es una tecnología avanzada que permite que los
 
 ### 1. ¿Qué es el turbo doble bidireccional?
 
-<img src="/mecanica_automotriz/turbo-doble-bidiferencial.png" alt="¿Qué es el turbo doble bidireccional?" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/turbo-doble-bidiferencial" alt="¿Qué es el turbo doble bidireccional?" width="620"/>
 
 El **turbo doble bidireccional** consiste en la instalación de **dos turbocompresores** en un mismo motor. A diferencia de los sistemas tradicionales de un solo turbocompresor, este sistema permite optimizar el rendimiento en diferentes condiciones de carga. Esto es esencial porque un solo turbocompresor tiene dificultades para ofrecer un funcionamiento eficiente tanto en baja como en alta velocidad. Por el contrario, el turbo doble ajusta su comportamiento para ofrecer la mejor respuesta posible en ambos casos.
 
@@ -36,13 +36,13 @@ A medida que el **turbocompresor** o el **sobrealimentador** fuerza más aire de
 
 #### 2.1 Tipo controlado mecánicamente
 
-<img src="/mecanica_automotriz/injeccion-de-combustible-tipo-controlado-mecanicamente.png" alt="Tipo controlado mecánicamente" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/injeccion-de-combustible-tipo-controlado-mecanicamente" alt="Tipo controlado mecánicamente" width="620"/>
 
 En motores diésel que utilizan sobrealimentación, se emplea un **compensador de presión** que ajusta automáticamente el **volumen máximo de inyección de combustible** de acuerdo con la **presión de sobrealimentación**. Este sistema mecánico es eficiente para garantizar que el motor reciba el combustible necesario para quemar todo el aire comprimido que entra en los cilindros.
 
 #### 2.2 Tipo controlado por ordenador
 
-<img src="/mecanica_automotriz/injeccion-de-combustible-tipo-controlado-por-ordenador.png" alt="Tipo controlado por ordenador" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/injeccion-de-combustible-tipo-controlado-por-ordenador" alt="Tipo controlado por ordenador" width="620"/>
 
 En motores más modernos, tanto diésel como gasolina, el control de la **inyección de combustible** está completamente gestionado por una **ECU** (Unidad de Control Electrónico). La ECU utiliza sensores, como el **caudalímetro de aire** y el **sensor de presión del turbo**, para calcular la cantidad exacta de combustible que necesita el motor en función del volumen de aire que ingresa.
 

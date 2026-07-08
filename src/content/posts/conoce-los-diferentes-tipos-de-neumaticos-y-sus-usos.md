@@ -20,7 +20,7 @@ Los neumáticos son un componente crucial para el rendimiento y la seguridad de 
 
 ## Neumáticos para nieve
 
-<img src="/mecanica_automotriz/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos2.png" alt="Neumáticos para nieve" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos2" alt="Neumáticos para nieve" width="420"/>
 
 Los neumáticos para nieve están diseñados para mantener la capacidad de maniobra en carreteras cubiertas de lodo o nieve. Este tipo de neumático se caracteriza por tener un mayor número de bloques en el diseño de la banda de rodadura, más profundos y alejados unos de otros. Combina el diseño de tacos que transmite fuerza motriz de manera efectiva, con el diseño de barras que minimiza el deslizamiento lateral.
 
@@ -39,7 +39,7 @@ Los neumáticos para nieve están diseñados para mantener la capacidad de manio
 
 ## Neumáticos claveteados
 
-<img src="/mecanica_automotriz/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos3.png" alt="Neumáticos claveteados" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos3" alt="Neumáticos claveteados" width="420"/>
 
 Los neumáticos claveteados están diseñados para proporcionar mayor estabilidad en condiciones de hielo. Estos neumáticos combinan una banda de rodadura para nieve con clavos que se agarran a la superficie del hielo.
 
@@ -56,7 +56,7 @@ Los neumáticos claveteados están diseñados para proporcionar mayor estabilida
 
 ## Neumáticos sin claveteado
 
-<img src="/mecanica_automotriz/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos4.png" alt="Neumáticos sin claveteado" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos4" alt="Neumáticos sin claveteado" width="420"/>
 
 Desarrollados como una alternativa a los neumáticos claveteados, los neumáticos sin claveteado utilizan una banda de rodadura de caucho especial que mantiene su flexibilidad a bajas temperaturas.
 
@@ -72,7 +72,7 @@ Desarrollados como una alternativa a los neumáticos claveteados, los neumático
 
 ## Neumáticos para todo tiempo (neumáticos para todas las estaciones)
 
-<img src="/mecanica_automotriz/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos5.png" alt="Neumáticos para todo tiempo (neumáticos para todas las estaciones)" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos5" alt="Neumáticos para todo tiempo (neumáticos para todas las estaciones)" width="420"/>
 
 Los neumáticos para todo tiempo son una solución multiusos que combina las características de los neumáticos normales y para nieve, permitiendo su uso durante todo el año.
 
@@ -89,7 +89,7 @@ Los neumáticos para todo tiempo son una solución multiusos que combina las car
 
 ## Neumáticos para arena
 
-<img src="/mecanica_automotriz/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos6.png" alt="Neumáticos para arena" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos6" alt="Neumáticos para arena" width="420"/>
 
 Diseñados para viajar por terrenos blandos y arenosos, estos neumáticos tienen una banda de rodadura ancha con ranuras poco profundas para evitar romper la capa superior del suelo.
 

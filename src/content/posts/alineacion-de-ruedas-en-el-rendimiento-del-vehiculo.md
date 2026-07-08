@@ -22,7 +22,7 @@ Para lograr esto, las ruedas del vehículo se montan en ángulos específicos co
 
 ## Factores Clave de la Alineación de las Ruedas
 
-![Alineación de las Ruedas](/mecanica_automotriz/alineacion-de-ruedas-en-el-rendimiento-del-vehiculo.png)
+![Alineación de las Ruedas](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/alineacion-de-ruedas-en-el-rendimiento-del-vehiculo)
 
 La alineación de las ruedas comprende cinco factores fundamentales:
 

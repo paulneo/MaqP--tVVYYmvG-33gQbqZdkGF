@@ -20,7 +20,7 @@ Los neumáticos son una parte fundamental de cualquier vehículo, ya que son el 
 
 ## Generalidades
 
-<img src="/mecanica_automotriz/neumaticos_componentes_esenciales_para_una_conduccion_segura1.png" alt="Generalidades de los neumáticos | Mundo ingenieria" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/neumaticos_componentes_esenciales_para_una_conduccion_segura1" alt="Generalidades de los neumáticos | Mundo ingenieria" width="620"/>
 
 Los neumáticos se instalan junto con las llantas en el vehículo y están llenos de aire comprimido. Es crucial que la presión del aire sea la adecuada para evitar un desgaste anormal y mantener el rendimiento óptimo de la conducción. Los neumáticos desempeñan varias funciones esenciales:
 
@@ -30,7 +30,7 @@ Los neumáticos se instalan junto con las llantas en el vehículo y están lleno
 
 ## Estructura de los neumáticos
 
-<img src="/mecanica_automotriz/neumaticos_componentes_esenciales_para_una_conduccion_segura2.png" alt="Estructura de los neumáticos | Mundo ingenieria" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/neumaticos_componentes_esenciales_para_una_conduccion_segura2" alt="Estructura de los neumáticos | Mundo ingenieria" width="620"/>
 
 Existen diferentes tipos de neumáticos, como los neumáticos con cámara y los neumáticos sin cámara, además de los neumáticos radiales y los neumáticos diagonales. A continuación, se describen las principales partes de un neumático:
 
@@ -44,13 +44,13 @@ También existen neumáticos especiales, como los de repuesto compactos (neumát
 
 ## Dimensiones del neumático
 
-<img src="/mecanica_automotriz/neumaticos_componentes_esenciales_para_una_conduccion_segura3.png" alt="Dimensiones del neumático | Mundo ingenieria" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/neumaticos_componentes_esenciales_para_una_conduccion_segura3" alt="Dimensiones del neumático | Mundo ingenieria" width="620"/>
 
 El tamaño, el rendimiento y la estructura del neumático se indican en el lateral del mismo. Estos detalles son cruciales para asegurar que los neumáticos sean los adecuados para tu vehículo y tus necesidades de conducción.
 
 ## Llantas
 
-<img src="/mecanica_automotriz/neumaticos_componentes_esenciales_para_una_conduccion_segura4.png" alt=" Llantas| Mundo ingenieria" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/neumaticos_componentes_esenciales_para_una_conduccion_segura4" alt=" Llantas| Mundo ingenieria" width="620"/>
 
 El tamaño de la rueda se indica en el borde de la llanta, e incluye varios aspectos importantes:
 

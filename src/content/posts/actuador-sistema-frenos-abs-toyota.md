@@ -38,7 +38,7 @@ El actuador del ABS opera en tres modos principales para gestionar la presión d
    - La ECU abre la válvula de entrada y cierra la válvula de escape.
    - Esto incrementa la presión en los frenos, proporcionando más fuerza de frenado cuando se necesita.
 
-![Actuador del Sistema de Frenos ABS del Toyota](/mecanica_automotriz/acutador-sistema-frenos-ABS-toyota2.webp)
+![Actuador del Sistema de Frenos ABS del Toyota](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/acutador-sistema-frenos-ABS-toyota2)
 
 ### Componentes del Actuador
 
@@ -53,7 +53,7 @@ El actuador del ABS incluye varios componentes clave que permiten su funcionamie
 
 Existen cuatro válvulas solenoides de tres posiciones en el actuador del ABS mencionado. Las válvulas para las ruedas delanteras controlan individualmente las ruedas derecha e izquierda. En cambio, las válvulas para las ruedas traseras gestionan simultáneamente ambas ruedas, derecha e izquierda. Por esta característica, el sistema se conoce como un sistema de tres canales.
 
-![Diagrama del Sistema ABS](/mecanica_automotriz/acutador-sistema-frenos-ABS-toyota.webp)
+![Diagrama del Sistema ABS](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/acutador-sistema-frenos-ABS-toyota)
 
 ### Diagnóstico y Mantenimiento
 

@@ -20,13 +20,13 @@ Las ventanillas automáticas son una característica esencial en los vehículos 
 
 ## Descripción general del sistema
 
-<img src="/mecanica_automotriz/sistema-de-ventanillas-automaticas-en-vehiculos2.png" alt="ventanillas automáticas" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sistema-de-ventanillas-automaticas-en-vehiculos2" alt="ventanillas automáticas" width="620"/>
 
 El sistema de ventanillas automáticas funciona a través de un motor eléctrico que se activa cuando se presiona el interruptor de la ventana. Este motor convierte la energía eléctrica en movimiento mecánico, lo que permite que la ventanilla se desplace hacia arriba o hacia abajo mediante un regulador de ventanilla. Este movimiento es suave y controlado, proporcionando un ajuste preciso de la apertura de la ventanilla.
 
 ## Funciones principales del sistema
 
-<img src="/mecanica_automotriz/sistema-de-ventanillas-automaticas-en-vehiculos3.png" alt="ventanillas automáticas" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sistema-de-ventanillas-automaticas-en-vehiculos3" alt="ventanillas automáticas" width="620"/>
 
 ### Función manual de apertura/cierre
 
@@ -40,7 +40,7 @@ Con una simple pulsación completa del interruptor, la ventanilla se abrirá o c
 
 Cuando el interruptor de bloqueo está activado, se deshabilita la operación de las ventanillas desde cualquier interruptor que no sea el del conductor. Esta función es muy útil para evitar que los niños u otros pasajeros manipulen las ventanillas accidentalmente.
 
-<img src="/mecanica_automotriz/sistema-de-ventanillas-automaticas-en-vehiculos4.png" alt="ventanillas automáticas" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sistema-de-ventanillas-automaticas-en-vehiculos4" alt="ventanillas automáticas" width="620"/>
 
 ### Función de protección contra atascos
 

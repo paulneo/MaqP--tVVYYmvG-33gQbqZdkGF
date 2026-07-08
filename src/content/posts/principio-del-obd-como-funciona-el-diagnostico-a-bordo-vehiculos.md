@@ -22,17 +22,17 @@ El diagnóstico a bordo (OBD, por sus siglas en inglés) es un sistema avanzado 
 
 ### ¿Qué es el Diagnóstico?
 
-<img src="/mecanica_automotriz/principio-del-obd-como-funciona-el-diagnostico-a-bordo-vehiculos2.png" alt="Diagnóstico a Bordo (OBD)" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/principio-del-obd-como-funciona-el-diagnostico-a-bordo-vehiculos2" alt="Diagnóstico a Bordo (OBD)" width="420"/>
 
 El diagnóstico en un vehículo es un proceso en el cual la ECU supervisa continuamente las condiciones de diferentes componentes del automóvil. La ECU recibe señales de los sensores en forma de tensión eléctrica, las cuales reflejan las condiciones actuales del vehículo. Estas tensiones son comparadas con valores estándar almacenados en la memoria de la ECU. Si las tensiones detectadas se encuentran dentro del rango aceptable, la ECU determina que el sistema funciona correctamente.
 
-<img src="/mecanica_automotriz/principio-del-obd-como-funciona-el-diagnostico-a-bordo-vehiculos3.png" alt="Diagnóstico a Bordo (On-Board Diagnosis)" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/principio-del-obd-como-funciona-el-diagnostico-a-bordo-vehiculos3" alt="Diagnóstico a Bordo (On-Board Diagnosis)" width="420"/>
 
 Por ejemplo, un sensor de temperatura del agua puede generar una tensión que varía entre 0,1 V y 4,8 V. Si la señal del sensor cae fuera de este rango, la ECU identifica un problema. Un cortocircuito puede producir una tensión inferior a 0,1 V, mientras que un circuito abierto podría resultar en una tensión superior a 4,8 V. En tales casos, la ECU activa la luz de advertencia MIL (Luz de Funcionamiento Incorrecto), alertando al conductor sobre la anomalía. Simultáneamente, un Código de Diagnóstico de Problema (DTC) se guarda en la memoria de la ECU para facilitar su diagnóstico y reparación posterior.
 
 ### Lectura de los Códigos de Diagnóstico de Problema (DTC)
 
-<img src="/mecanica_automotriz/principio-del-obd-como-funciona-el-diagnostico-a-bordo-vehiculos4.png" alt="Lectura de los Códigos de Diagnóstico de Problema (DTC)" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/principio-del-obd-como-funciona-el-diagnostico-a-bordo-vehiculos4" alt="Lectura de los Códigos de Diagnóstico de Problema (DTC)" width="620"/>
 
 Los Códigos de Diagnóstico de Problema (DTC) son cruciales para identificar y resolver problemas en el vehículo. Estos códigos se pueden leer utilizando un dispositivo de escaneo conectado al Conector de Enlace de Datos 3 (DLC3). En general, los DTC aparecen en el visualizador del escáner en un formato de 5 dígitos, proporcionando detalles específicos sobre el problema detectado.
 

@@ -48,7 +48,7 @@ La unidad de control hidráulico está formada por varios componentes que trabaj
 
 #### 2.1 Bomba de aceite
 
-<img src="/mecanica_automotriz/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos2.png" alt="Bomba de aceite" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos2" alt="Bomba de aceite" width="620"/>
 
 La **bomba de aceite** es accionada por el **convertidor de par** del motor y es responsable de generar la presión necesaria para que el transeje funcione. Es fundamental mantener el **nivel de aceite** adecuado utilizando una **varilla de nivel** para garantizar un rendimiento óptimo.
 
@@ -58,7 +58,7 @@ Al remolcar vehículos con transeje automático, es importante recordar que la b
 
 #### 2.2 Cuerpo de la válvula
 
-<img src="/mecanica_automotriz/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos3.png" alt=" Cuerpo de la válvula" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos3" alt=" Cuerpo de la válvula" width="620"/>
 
 El **cuerpo de la válvula** se asemeja a un laberinto de conductos a través de los cuales fluye el líquido del transeje. Este componente contiene varias válvulas que regulan la presión y desvían el líquido a los conductos adecuados. Las válvulas principales incluyen:
 
@@ -69,13 +69,13 @@ El **cuerpo de la válvula** se asemeja a un laberinto de conductos a través de
 
 #### 2.3 Válvula reguladora primaria
 
-<img src="/mecanica_automotriz/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos4.png" alt="Válvula reguladora primaria" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos4" alt="Válvula reguladora primaria" width="620"/>
 
 La **válvula reguladora primaria** ajusta la presión de la línea hidráulica según la potencia del motor para evitar que la bomba pierda potencia. Cuando la presión aumenta demasiado, la válvula permite que el líquido se drene para mantener una presión constante. Además, regula la presión para evitar el deslizamiento del embrague y frenos cuando el acelerador está en una posición abierta.
 
 #### 2.4 Válvulas de cambio
 
-<img src="/mecanica_automotriz/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos6.png" alt="Válvula de cambio" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos6" alt="Válvula de cambio" width="620"/>
 
 Las **válvulas de cambio** controlan el paso del líquido hacia los embragues y frenos, lo que permite que los engranajes cambien de manera eficiente. Estas válvulas reciben señales de las **válvulas solenoide**, las cuales determinan cuándo debe aplicarse la presión hidráulica a los engranajes.
 
@@ -83,7 +83,7 @@ Ejemplo: Durante el cambio de la **primera a segunda marcha**, la presión hidr�
 
 #### 2.5 Válvulas solenoide
 
-<img src="/mecanica_automotriz/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos7.png" alt="Válvula solenoide" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos7" alt="Válvula solenoide" width="620"/>
 
 Las **válvulas solenoide** son controladas por la ECU y el sistema ECT. Existen dos tipos de válvulas solenoide:
 
@@ -96,13 +96,13 @@ El **sistema hidráulico** del transeje automático es una red compleja de válv
 
 #### 3.1 Válvula de mariposa
 
-<img src="/mecanica_automotriz/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos8.png" alt="Válvula de mariposa" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos8" alt="Válvula de mariposa" width="620"/>
 
 La **válvula de mariposa** ajusta la presión en respuesta al ángulo del pedal del acelerador. Este ajuste se transmite a la **válvula reguladora primaria**, que regula la presión de la línea según la apertura del acelerador. En modelos más modernos, este proceso se gestiona electrónicamente mediante **sensores de posición** y válvulas solenoide lineales.
 
 #### 3.2 Válvula manual
 
-<img src="/mecanica_automotriz/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos5.png" alt="Válvula manual" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-de-unidad-de-control-hidraulico-en-transejes-automaticos5" alt="Válvula manual" width="620"/>
 
 La **válvula manual**, conectada a la palanca de cambios, cambia la dirección del flujo del líquido en función de la posición de la palanca. Dependiendo del modelo del vehículo, este sistema puede ser accionado por varillas (vehículos de tracción trasera) o cables (vehículos de tracción delantera).
 

@@ -18,7 +18,7 @@ El **turbocompresor** es uno de los componentes más importantes en los motores 
 
 ### 1. Sistema de lubricación del turbocompresor
 
-![Sistema de lubricación del turbocompresor](/mecanica_automotriz/sistema-de-lubricacion-y-enfriamiento-en-un-turbocompresor2.png)
+![Sistema de lubricación del turbocompresor](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sistema-de-lubricacion-y-enfriamiento-en-un-turbocompresor2)
 
 El **sistema de lubricación** es fundamental para proteger los componentes internos del turbocompresor contra el desgaste y el daño causado por la fricción. Al operar a miles de revoluciones por minuto, las piezas móviles del turbocompresor necesitan estar bien lubricadas para evitar el contacto directo entre los metales, lo que podría causar daños irreparables.
 

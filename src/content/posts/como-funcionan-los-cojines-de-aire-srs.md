@@ -23,7 +23,7 @@ Los cojines de aire SRS (Sistema Suplementario de Sujeción) son una parte cruci
 
 ### 1. Proceso de Activación
 
-<img src="/mecanica_automotriz/como_funcionan_los_cogines_de_aire_srs2.png" alt="Proceso de Activación  cojines de aire SRS" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funcionan_los_cogines_de_aire_srs2" alt="Proceso de Activación  cojines de aire SRS" width="420"/>
 
 1. **Detección del Impacto**: En una colisión, el sensor del cojín de aire detecta la intensidad del impacto. Si la intensidad supera el valor especificado del conjunto del sensor del cojín de aire central, el accionador del inflador se enciende.
 2. **Generación de Gas**: El accionador provoca la combustión del amplificador y del grano propulsor, generando una gran cantidad de gas en el momento de la activación.
@@ -42,20 +42,20 @@ Los cojines de aire delanteros SRS están diseñados para activarse en respuesta
 
 ## No activación del cojín de aire SRS (conductor y pasajero)
 
-<img src="/mecanica_automotriz/como_funcionan_los_cogines_de_aire_srs3.png" alt="No activación del cojín de aire SRS (conductor y pasajero)" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funcionan_los_cogines_de_aire_srs3" alt="No activación del cojín de aire SRS (conductor y pasajero)" width="420"/>
 
 Los cojines de aire delanteros SRS no están diseñados para inflarse en colisiones laterales o traseras, vuelcos o colisiones frontales a baja velocidad. Sin embargo, pueden activarse en impactos graves en la parte inferior del vehículo.
 
 ## Activación del cojín de aire SRS (lateral y de cortina)
 
-<img src="/mecanica_automotriz/como_funcionan_los_cogines_de_aire_srs4.png" alt="Activación del cojín de aire SRS (lateral y de cortina)" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funcionan_los_cogines_de_aire_srs4" alt="Activación del cojín de aire SRS (lateral y de cortina)" width="420"/>
 
 1. **Cojín de aire lateral y de cortina (delantero solamente)**: Están diseñados para activarse cuando el compartimento del vehículo recibe un impacto lateral. No se activan si el impacto no afecta directamente al compartimento del vehículo.
 2. **Cojín de aire lateral y de cortina (delantero y trasero)**: Se activan cuando el compartimento del vehículo o el cuarto trasero del vehículo recibe un impacto lateral. No se activan en impactos diagonales que no afectan directamente al compartimento del vehículo.
 
 ## No activación del cojín de aire SRS (lateral y de cortina)
 
-<img src="/mecanica_automotriz/como_funcionan_los_cogines_de_aire_srs5.png" alt="No activación del cojín de aire SRS (lateral y de cortina)" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funcionan_los_cogines_de_aire_srs5" alt="No activación del cojín de aire SRS (lateral y de cortina)" width="420"/>
 
 Los cojines de aire laterales y de cortina no se activan en impactos frontales o traseros, vuelcos o colisiones laterales a baja velocidad.
 

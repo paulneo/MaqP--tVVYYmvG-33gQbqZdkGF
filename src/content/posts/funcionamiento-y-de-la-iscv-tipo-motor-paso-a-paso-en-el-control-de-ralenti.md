@@ -16,7 +16,7 @@ aiAssisted: false
 
 La **ISCV** (Válvula de Control del Régimen de Ralentí) es un componente clave en el control del régimen de ralentí en los motores modernos, asegurando un rendimiento estable y eficiente en condiciones de baja carga. Un tipo específico de ISCV, el **motor paso a paso**, ha demostrado ser altamente eficaz para regular el flujo de aire que pasa por el circuito de derivación de la mariposa de gases. En este artículo, exploraremos en profundidad cómo funciona la ISCV tipo motor paso a paso, su estructura y su papel fundamental en el control del régimen de ralentí.
 
-<img src="/mecanica_automotriz/funcionamiento-y-de-la-ISCV-tipo-motor-paso-a-paso-en-el-control-de-ralenti2.png" alt="ISCV tipo motor paso a paso" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-de-la-ISCV-tipo-motor-paso-a-paso-en-el-control-de-ralenti2" alt="ISCV tipo motor paso a paso" width="420"/>
 
 ### 1. ¿Qué es la ISCV tipo motor paso a paso?
 

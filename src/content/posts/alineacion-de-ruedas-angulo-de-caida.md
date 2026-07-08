@@ -20,13 +20,13 @@ Las ruedas delanteras de un vehículo están instaladas con la parte superior in
 
 En automóviles antiguos, las ruedas solían tener un ángulo de caída positivo para mejorar la durabilidad del eje delantero y asegurar que las ruedas mantuvieran un contacto perpendicular con la superficie de la carretera. Esto ayudaba a evitar el desgaste desigual de los neumáticos en caminos donde el centro estaba más elevado que los bordes.
 
-![Ángulo de Caída en las Ruedas del Vehículo](/mecanica_automotriz/alineacion-de-ruedas-angulo-de-caida1.png)
+![Ángulo de Caída en las Ruedas del Vehículo](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/alineacion-de-ruedas-angulo-de-caida1)
 
 En los vehículos modernos, los ejes y las suspensiones son más robustos y las carreteras suelen ser más planas, por lo que no es necesario un ángulo de caída positivo. Por lo tanto, los neumáticos se alinean hacia un ángulo de caída cero, aunque algunos vehículos actuales aún tienen un ángulo de caída negativo para mejorar el desempeño en las curvas.
 
 ## Ángulo de Caída Negativo
 
-![Ángulo de Caída Negativo](/mecanica_automotriz/alineacion-de-ruedas-angulo-de-caida2.png)
+![Ángulo de Caída Negativo](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/alineacion-de-ruedas-angulo-de-caida2)
 
 Cuando se aplica una carga vertical a un neumático con ángulo de caída, se genera una fuerza horizontal. Esta fuerza, conocida como "empuje del ángulo de caída", actúa hacia el interior del vehículo en el caso de un ángulo de caída negativo y hacia el exterior en el caso de un ángulo de caída positivo.
 
@@ -34,7 +34,7 @@ Al tomar curvas, el vehículo se inclina hacia el exterior, lo que hace que el �
 
 ## Ángulo de Caída en las Curvas
 
-![Ángulo de Caída Durante las Curvas](/mecanica_automotriz/alineacion-de-ruedas-angulo-de-caida4.png)
+![Ángulo de Caída Durante las Curvas](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/alineacion-de-ruedas-angulo-de-caida4)
 
 Cuando un automóvil gira, el empuje del ángulo de caída actúa sobre los neumáticos exteriores, reduciendo la fuerza centrífuga debido al aumento del ángulo de caída positivo. La fuerza centrífuga hace que el vehículo se incline hacia afuera durante el giro debido a la acción de los muelles de suspensión, alterando el ángulo de caída.
 
@@ -44,7 +44,7 @@ Durante el giro, la fuerza centrífuga tiende a hacer que el vehículo siga un a
 
 ## Ángulo de Caída Cero y Positivo
 
-![Ángulo de Caída Durante las Curvas](/mecanica_automotriz/alineacion-de-ruedas-angulo-de-caida3.png)
+![Ángulo de Caída Durante las Curvas](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/alineacion-de-ruedas-angulo-de-caida3)
 
 ### Ángulo de Caída Cero
 

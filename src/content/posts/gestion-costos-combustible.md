@@ -20,7 +20,7 @@ Hubo un tiempo en que el precio del combustible diésel no cambiaba 40-50 centav
 
 Los precios del diésel han aumentado un 74% en el último año, con el combustible representando ahora más del 40% de los costos operativos del equipo. Y los precios del combustible son solo una parte de la historia. Ames dice que los costos generales del equipo de SEMA han subido un 33%, atribuyendo esto a una combinación de factores, incluida la inflación.
 
-![Impacto del Aumento de los Costos de Combustible](/images/grafica-combustible.jpeg)
+![Impacto del Aumento de los Costos de Combustible](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/grafica-combustible)
 
 ## Estrategias para Gestionar los Costos de Combustible
 

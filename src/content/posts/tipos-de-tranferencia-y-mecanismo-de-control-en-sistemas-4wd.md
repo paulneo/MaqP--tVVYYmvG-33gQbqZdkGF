@@ -20,7 +20,7 @@ La tracción a las cuatro ruedas (4WD) es un sistema avanzado que ofrece una exc
 
 ### Tipos de Transferencia en Vehículos 4WD
 
-<img src="/mecanica_automotriz/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD.png" alt="Tipos de Transferencia en Vehículos 4WD" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD" alt="Tipos de Transferencia en Vehículos 4WD" width="620"/>
 
 La forma en que se transmite la potencia del motor a los neumáticos varía entre los diferentes tipos de sistemas 4WD. Dependiendo de si el vehículo está basado en un sistema FF (motor delantero, tracción delantera) o FR (motor delantero, tracción trasera), los conductos de transmisión de potencia son distintos. A continuación, se describen los principales tipos de transferencia en los sistemas 4WD.
 
@@ -38,7 +38,7 @@ En los sistemas de tracción parcial 4WD basados en FR, la transferencia de pote
 
 ### Tipos de Engranajes de Diferencial Central
 
-<img src="/mecanica_automotriz/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD2.png" alt="Tipos de Engranajes de Diferencial Central" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD2" alt="Tipos de Engranajes de Diferencial Central" width="620"/>
 
 El diferencial central es un componente crucial en los sistemas 4WD, ya que permite compensar las diferencias de velocidad de rotación entre las ruedas delanteras y traseras durante los giros. Existen varios tipos de engranajes de diferencial central, cada uno con sus propias características y ventajas.
 
@@ -56,25 +56,25 @@ En situaciones extremas, como al intentar salir de nieve profunda o de un socav�
 
 #### 1. Bloqueo Mecánico
 
-<img src="/mecanica_automotriz/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD3.png" alt="Bloqueo Mecánico" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD3" alt="Bloqueo Mecánico" width="420"/>
 
 El bloqueo mecánico es un sistema simple y efectivo donde el conductor puede cambiar manualmente entre los modos "FREE" y "LOCK". Este control manual permite al conductor decidir cuándo limitar el diferencial central para maximizar la tracción en condiciones difíciles.
 
 #### 2. Sensible al Par
 
-<img src="/mecanica_automotriz/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD4.png" alt="Sensible al Par" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD4" alt="Sensible al Par" width="420"/>
 
 Este sistema ajusta automáticamente la limitación del diferencial en función del par motor. A medida que el par aumenta, el sistema genera un par limitado que cambia instantáneamente la distribución del par entre las ruedas delanteras y traseras. Este ajuste dinámico ayuda a contener el deslizamiento de las ruedas y a mantener el control del vehículo en terrenos resbaladizos.
 
 #### 3. Acoplamiento Viscoso
 
-<img src="/mecanica_automotriz/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD5.png" alt=" Acoplamiento Viscoso" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD5" alt=" Acoplamiento Viscoso" width="420"/>
 
 El acoplamiento viscoso utiliza un fluido especial que se espesa cuando las diferencias de velocidad entre las ruedas delanteras y traseras aumentan. Este sistema limita el funcionamiento del diferencial central según la diferencia de velocidad de rotación, proporcionando un control suave y continuo sin necesidad de intervención del conductor.
 
 #### 4. Embrague Hidráulico de Discos Múltiples
 
-<img src="/mecanica_automotriz/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD6.png" alt="Embrague Hidráulico de Discos Múltiples" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/tipos-de-tranferencia-y-mecanismo-de-control-en-sistemas-4WD6" alt="Embrague Hidráulico de Discos Múltiples" width="420"/>
 
 Este sistema utiliza presión hidráulica aplicada a un embrague de discos múltiples para limitar el diferencial central. El embrague hidráulico proporciona un control preciso y ajustable de la distribución de la potencia, lo que es ideal para situaciones donde se requiere una respuesta rápida y efectiva al deslizamiento de las ruedas.
 

@@ -20,7 +20,7 @@ Las sacudidas en la carrocería de un vehículo son una forma común de vibraci�
 
 ## ¿Qué son las Sacudidas de la Carrocería?
 
-<img src="/mecanica_automotriz/sacudidas_de_la_carroceria_causas_soluciones2.png" alt="¿Qué son las Sacudidas de la Carrocería?" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sacudidas_de_la_carroceria_causas_soluciones2" alt="¿Qué son las Sacudidas de la Carrocería?" width="420"/>
 
 Las sacudidas se refieren a las vibraciones que se sienten en la carrocería del vehículo y en el volante, especialmente a velocidades superiores a 80 km/h. A medida que la velocidad aumenta, la intensidad de las sacudidas también lo hace, alcanzando un máximo a una velocidad específica.
 
@@ -30,7 +30,7 @@ La frecuencia de las sacudidas es similar a la vibración producida por una llav
 
 ## Causas Principales de las Sacudidas
 
-![Causas Principales de las Sacudidas](/mecanica_automotriz/sacudidas_de_la_carroceria_causas_soluciones3.png)
+![Causas Principales de las Sacudidas](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sacudidas_de_la_carroceria_causas_soluciones3)
 
 ### 1. Desviación y Desequilibrio de los Neumáticos
 
@@ -50,7 +50,7 @@ Las vibraciones pueden resonar entre varios componentes del vehículo, incluidos
 
 ### 3. Diferencias en los Radios de Giro de los Neumáticos
 
-![Causas Principales de las Sacudidas](/mecanica_automotriz/sacudidas_de_la_carroceria_causas_soluciones4.png)
+![Causas Principales de las Sacudidas](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/sacudidas_de_la_carroceria_causas_soluciones4)
 
 Las pequeñas diferencias en los radios de giro de los neumáticos pueden causar sacudidas alternas en sentido vertical y lateral a intervalos de aproximadamente 10 segundos. Esto crea puntos de desviación relativos entre los neumáticos derechos e izquierdos o entre los delanteros y traseros.
 

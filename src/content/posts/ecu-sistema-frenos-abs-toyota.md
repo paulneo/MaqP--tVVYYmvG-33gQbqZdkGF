@@ -60,7 +60,7 @@ Los sensores de velocidad de las ruedas son críticos para el funcionamiento del
 
 El diagrama de alambrado del ABS muestra cómo están conectados los diferentes componentes del sistema a la ECU. Esto incluye los sensores de velocidad de las ruedas, el actuador del ABS y otros elementos relacionados. Este diagrama es crucial para el diagnóstico y mantenimiento del sistema.
 
-![Diagrama de Alambrado ABS del Toyota](/mecanica_automotriz/ECU-sistema-frenos-ABS-toyota2.webp)
+![Diagrama de Alambrado ABS del Toyota](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/ECU-sistema-frenos-ABS-toyota2)
 
 ### Control de Relés
 

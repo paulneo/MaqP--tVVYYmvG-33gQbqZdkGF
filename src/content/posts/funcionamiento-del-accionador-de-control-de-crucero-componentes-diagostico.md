@@ -22,13 +22,13 @@ El **control de crucero** es una función esencial en los vehículos modernos, y
 
 ### 1. Motor e interruptores de límite
 
-<img src="/mecanica_automotriz/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico2.png" alt="Motor e interruptores de límite" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico2" alt="Motor e interruptores de límite" width="420"/>
 
 El **motor del accionador** es el encargado de ajustar el ángulo de la **válvula de mariposa de gases**, lo que permite que el sistema de crucero acelere o desacelere según las instrucciones de la **ECU de control de crucero**. El motor puede girar en ambos sentidos para aumentar o reducir la velocidad del vehículo.
 
 #### 1.1 Interruptores de límite
 
-<img src="/mecanica_automotriz/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico3.png" alt="Interruptores de límite" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico3" alt="Interruptores de límite" width="420"/>
 
 Para evitar que el motor del accionador se dañe cuando la **válvula de mariposa de gases** está completamente abierta o cerrada, se utilizan dos interruptores de límite: el **N.°1** y el **N.°2**. Estos interruptores aseguran que el motor se detenga en las posiciones extremas de la válvula. Por ejemplo, cuando la válvula está completamente abierta, el interruptor de límite N.°1 se activa y detiene el motor, y lo mismo ocurre con el N.°2 cuando la válvula está completamente cerrada.
 
@@ -38,7 +38,7 @@ Este mecanismo protege el motor del accionador de posibles daños que podrían o
 
 ### 2. Embrague magnético
 
-<img src="/mecanica_automotriz/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico4.png" alt="Embrague magnético" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico4" alt="Embrague magnético" width="420"/>
 
 El **embrague magnético** es otro componente crucial del accionador de control de crucero. Su función principal es conectar o desconectar el motor del **brazo de control** del sistema de crucero, dependiendo de las señales de cancelación.
 
@@ -52,7 +52,7 @@ Al pisar el pedal del freno, el sistema de control de crucero recibe una señal 
 
 ### 3. Potenciómetro (algunos modelos)
 
-<img src="/mecanica_automotriz/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico5.png" alt="Potenciómetro (algunos modelos)" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-del-accionador-de-control-de-crucero-componentes-diagostico5" alt="Potenciómetro (algunos modelos)" width="420"/>
 
 En algunos vehículos, el accionador de control de crucero está equipado con un **potenciómetro**. Este componente detecta el ángulo de giro del **brazo de control** y envía una señal continua a la ECU de control de crucero. A partir de estos datos, la ECU puede ajustar el ángulo de la **válvula de mariposa de gases** para corregir cualquier diferencia entre la velocidad real y la velocidad definida por el conductor.
 

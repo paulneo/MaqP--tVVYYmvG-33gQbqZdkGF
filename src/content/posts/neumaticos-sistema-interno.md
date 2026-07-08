@@ -104,7 +104,7 @@ El sistema de dirección incluye:
 6. **Bomba servo freno**
 7. **Bomba principal**
 8. **Filtro de retorno** en el tanque hidráulico
-![Sistema de direccion, componentes](/images/sistema-direccion.jpg)
+![Sistema de direccion, componentes](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/sistema-direccion)
 #### Sistema de Volteo
 
 El sistema hidráulico de volteo controla el movimiento del lampón para descargar material:
@@ -119,7 +119,7 @@ El sistema hidráulico de volteo controla el movimiento del lampón para descarg
 8. **Cilindro de volteo**
 9. **Enfriador de aceite hidráulico**
 10. **Filtro de retorno** en el tanque hidráulico
-![Sistema de volteo, componentes](/images/hidraulica-volteo.jpg)
+![Sistema de volteo, componentes](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/hidraulica-volteo)
 #### Sistema de Elevación
 
 El sistema hidráulico de elevación maneja el movimiento de levantar la carga:
@@ -134,7 +134,7 @@ El sistema hidráulico de elevación maneja el movimiento de levantar la carga:
 8. **Cilindro de volteo**
 9. **Enfriador de aceite hidráulico**
 10. **Filtro de retorno** en el tanque hidráulico
-![Sistema de elevación, componentes](/images/sistema-elevacion.jpg)
+![Sistema de elevación, componentes](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/sistema-elevacion)
 ### Sistema de Frenos
 
 El sistema de frenos en los cargadores frontales es vital para garantizar la seguridad durante la operación. Los frenos de servicio son **discos simples**, instalados en las cuatro ruedas. Están **sumergidos en aceite** para mejorar la disipación de calor y reducir el desgaste.
@@ -148,7 +148,7 @@ El sistema de frenos en los cargadores frontales es vital para garantizar la seg
 5. **Acumuladores**
 6. **Frenos de disco encapsulados**
 7. **Filtro de retorno** en el tanque hidráulico
-![Sistema de frenos, componentes](/images/sistema-freno.jpg)
+![Sistema de frenos, componentes](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/sistema-freno)
 ### Sistema de Bastidor
 
 El **bastidor articulado** de los cargadores frontales asegura que las ruedas traseras y delanteras sigan siempre el mismo trayecto. Esto permite que el cargador tenga plena potencia hidráulica en cualquier terreno, mejorando la tracción y maniobrabilidad.

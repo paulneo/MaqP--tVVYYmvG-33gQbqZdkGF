@@ -27,7 +27,7 @@ El equipo de ingenieros de Caterpillar se enfrentó al desafío de mejorar los c
 La nueva línea incluye cuatro nuevos SSLs: **Cat 250, 260, 270 y 270 XE**, y cuatro nuevos CTLs: **Cat 275, 275 XE, 285 y 285 XE**, siendo estos últimos los CTLs más grandes jamás producidos por Caterpillar. Los modelos **285 y 285 XE** compiten en una nueva clase de tamaño con mayor altura de elevación y fuerzas de ruptura de elevación y giro. 
 
 > "Estamos emocionados de lanzar el diseño de próxima generación para nuestra línea de cargadores de dirección deslizante y expandir las capacidades de rendimiento a más modelos de cargadores compactos de orugas," añadió Chase.
-![Nuevos Modelos de CTL y SSL](/news/caterpillar-260.jpg)
+![Nuevos Modelos de CTL y SSL](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/caterpillar-260)
 ## Rediseño del Compartimiento del Motor
 
 Todos los modelos de CTL y SSL de próxima generación cuentan con un compartimiento de motor rediseñado, que coloca el motor y el paquete de enfriamiento más bajo en el marco. Esto mejora la estabilidad y da al operador confianza al manejar cargas pesadas. Los nuevos motores cumplen con los estándares de emisiones Tier 4 Final de la EPA de EE. UU. y Stage V de la UE. Los modelos 270 y 270 XE SSLs y los cuatro nuevos CTLs están propulsados por el motor Cat C3.6TA, mientras que los modelos 250 y 260 SSLs utilizan el motor Cat C2.8T.

@@ -30,7 +30,7 @@ La Tundra tiene una capacidad máxima de remolque de 12,000 libras y una capacid
 ### Asientos con Masaje
 
 Los asientos con masaje son estándar en las versiones 1794, Platinum y Capstone para los asientos delanteros. Estos asientos ofrecen masaje para la parte superior e inferior del cuerpo, junto con un ajuste eléctrico de 10 posiciones. Los asientos pueden operar mientras la camioneta está en movimiento o estacionada, y se controlan a través de una pantalla multimedia táctil de 14 pulgadas.
-![Interior de Toyota Tundra 2025](/news/toyota-tundra-02.jpg)
+![Interior de Toyota Tundra 2025](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/toyota-tundra-02)
 
 ### Características Avanzadas para Remolque
 
@@ -48,7 +48,7 @@ Toyota ha incorporado una serie de características avanzadas para facilitar el 
 Nuevo en la línea es el Paquete TRD Rally, inspirado en las carreras de Baja, que incluye llantas todoterreno de 18 pulgadas con tapas centrales únicas, neumáticos para todo terreno, amortiguadores Bilstein y placas protectoras. El paquete también cuenta con un diferencial trasero con bloqueo controlado electrónicamente, Multi-Terrain Select para ayudar a controlar el deslizamiento de las ruedas, y Crawl Control, que es un control de crucero a baja velocidad para terrenos difíciles.
 
 "Los icónicos colores rojo, naranja y amarillo están incorporados en el diseño," dice Toyota, en el exterior e interior.
-![Toyota Tundra 2025 blanco](/news/toyota-tundra-03.jpg)
+![Toyota Tundra 2025 blanco](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/toyota-tundra-03)
 
 ### Tecnología de Seguridad
 

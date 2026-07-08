@@ -19,7 +19,7 @@ Seleccionar el rodillo compactador adecuado para un proyecto de pavimentación o
 ### Diferencia entre el Ancho del Tambor y el Ancho Efectivo del Tambor (EDW)
 
 Aunque la longitud del tambor puede parecer un indicador lógico de la capacidad de un compactador, en realidad no refleja completamente el **rendimiento de compactación**. Según los expertos de Volvo, el EDW es la medida real de la eficiencia, y puede haber una diferencia significativa entre este y la longitud total del tambor. En muchos casos, estas dos dimensiones varían hasta un **10%**. Esto se debe a que el EDW toma en cuenta la **cobertura efectiva del tambor** en función de los patrones de compactación que utiliza el operador.
-![Diferencia entre el Ancho del Tambor y el Ancho Efectivo del Tambor](/news/rodillo-compactador-02.jpg)
+![Diferencia entre el Ancho del Tambor y el Ancho Efectivo del Tambor](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/rodillo-compactador-02)
 ### Importancia del Ancho del Tambor en la Uniformidad de la Compactación
 
 **Justin Zupanc**, jefe de soluciones de electromovilidad y autónomas en productos de carreteras de Volvo, explica que el ancho del tambor tiene un gran impacto en la **densidad del pavimento**. En la **Figura 3** (ver referencia), el ancho de un panel pavimentado requiere tres pasadas laterales consecutivas del compactador para proporcionar una cobertura completa. Sin embargo, incluso el mejor operador tendrá dificultades para lograr una **densidad uniforme** del pavimento con este tipo de patrón de rodado.
@@ -47,7 +47,7 @@ Zupanc comenta:
 ### Anchos de Tambor Comunes en la Industria
 
 Debido a estos factores, la mayoría de los compactadores de carretera en América del Norte se producen con tambores en tres anchos estándar: **67, 79 y 84 pulgadas**. Estos tamaños permiten a los contratistas seleccionar el equipo adecuado para cada proyecto, logrando una compactación eficiente sin comprometer la calidad del pavimento o incurrir en costos innecesarios.
-![Anchos de Tambor Comunes en la Industria](/news/rodillo-compactador-03.jpg)
+![Anchos de Tambor Comunes en la Industria](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/rodillo-compactador-03)
 ### Cómo Seleccionar el Rodillo Compactador Correcto
 
 Al seleccionar un rodillo compactador, es importante considerar:

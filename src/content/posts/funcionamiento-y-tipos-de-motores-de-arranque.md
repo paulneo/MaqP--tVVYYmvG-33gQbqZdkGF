@@ -17,7 +17,7 @@ aiAssisted: false
 
 El motor de arranque es una parte crucial en el sistema de encendido de cualquier vehículo, ya que se encarga de iniciar el movimiento del cigüeñal, lo que permite que el motor comience a funcionar. Este dispositivo convierte la energía eléctrica de la batería en energía mecánica, generando un par elevado necesario para arrancar el motor.
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-motores-de-arranque2.png" alt="tipos de motores de arranque en vehículos" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-motores-de-arranque2" alt="tipos de motores de arranque en vehículos" width="520"/>
 
 ### ¿Qué es un motor de arranque?
 
@@ -29,25 +29,25 @@ Existen diferentes tipos de motores de arranque, cada uno con sus propias caract
 
 #### 1) Tipo de reducción
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-motores-de-arranque3.png" alt="Tipo de reducción" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-motores-de-arranque3" alt="Tipo de reducción" width="520"/>
 
 Este tipo de motor de arranque utiliza un motor compacto de alta velocidad y un engranaje reductor para aumentar el par de salida. Es eficiente y adecuado para vehículos que requieren un arranque rápido y potente.
 
 #### 2) Tipo convencional
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-motores-de-arranque4.png" alt="Tipo Convencional" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-motores-de-arranque4" alt="Tipo Convencional" width="520"/>
 
 En el motor de arranque convencional, el piñón y el inducido comparten el mismo eje, lo que significa que giran a la misma velocidad. La conexión del piñón con la corona dentada se realiza mediante una palanca de impulsión activada por un interruptor magnético.
 
 #### 3) Tipo planetario
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-motores-de-arranque5.png" alt="Tipo Planetario" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-motores-de-arranque5" alt="Tipo Planetario" width="520"/>
 
 Este motor de arranque utiliza un sistema de engranajes planetarios para reducir la velocidad del inducido y aumentar el par. Este tipo combina eficiencia y potencia, haciéndolo ideal para motores que requieren un arranque confiable.
 
 #### 4) Tipo de conductor de reducción-segmento planetario (PS)
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-motores-de-arranque6.png" alt="Tipo de Reducción-Segmento Planetario (PS)" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-motores-de-arranque6" alt="Tipo de Reducción-Segmento Planetario (PS)" width="520"/>
 
 El motor de arranque de tipo PS utiliza imanes permanentes en la bobina de campo y un sistema de engranajes planetarios para proporcionar un arranque potente con una construcción más ligera y compacta.
 
@@ -55,7 +55,7 @@ El motor de arranque de tipo PS utiliza imanes permanentes en la bobina de campo
 
 El motor en serie de corriente continua (DC) es preferido en los motores de arranque debido a su capacidad de generar un par elevado en el momento de arranque.
 
-<img src="/mecanica_automotriz/funcionamiento-y-tipos-de-motores-de-arranque7.png" alt="Relación entre Corriente y Tensión" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-y-tipos-de-motores-de-arranque7" alt="Relación entre Corriente y Tensión" width="520"/>
 
 #### a) Relación entre la velocidad, el par y la corriente
 

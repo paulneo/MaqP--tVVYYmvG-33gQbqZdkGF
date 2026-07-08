@@ -43,7 +43,7 @@ El VT-75 incluye una variedad de características opcionales que mejoran la efic
 - **Control de conducción sensible a la velocidad:** Mejora la retención de materiales a velocidades más altas, desactivándose automáticamente para tareas de movimiento más lento.
 - **Cámara de respaldo:** Proporciona mayor visibilidad alrededor de la máquina al retroceder.
 - **Telemática Yanmar SmartAssist:** Ofrece actualizaciones de estado operativas en tiempo real, informes diarios de trabajo y protección integrada contra robos.
-![Comodidad en la Cabina cargador compacto](/news/cargador-orugas-vt-75.jpg)
+![Comodidad en la Cabina cargador compacto](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-news/cargador-orugas-vt-75)
 
 ### Mantenimiento y Servicio
 

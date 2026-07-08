@@ -25,14 +25,14 @@ El aleteo de la dirección se caracteriza por oscilaciones del volante de 5 a 15
 
 ### Causas Principales
 
-<img src="/mecanica_automotriz/por_que_se_mueve_volante_auto_causas_soluciones_del_aleteo_de_la_direccion2.png" alt="Causas Principales del Aleteo de la Dirección" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_se_mueve_volante_auto_causas_soluciones_del_aleteo_de_la_direccion2" alt="Causas Principales del Aleteo de la Dirección" width="420"/>
 
 1. **Desviación, Desequilibrio o Irregularidad de los Neumáticos**: Cualquier problema con los neumáticos puede generar fuerzas vibratorias que afectan la dirección.
 2. **Resonancia entre los Neumáticos y el Volante de Dirección**: Las vibraciones pueden resonar con el sistema de dirección, amplificando las oscilaciones del volante.
 
 ## Mecanismo del Aleteo de la Dirección
 
-<img src="/mecanica_automotriz/por_que_se_mueve_volante_auto_causas_soluciones_del_aleteo_de_la_direccion3.png" alt="Mecanismo del Aleteo de la Dirección" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_se_mueve_volante_auto_causas_soluciones_del_aleteo_de_la_direccion3" alt="Mecanismo del Aleteo de la Dirección" width="520"/>
 
 ### 1. Generación de la Fuerza Vibratoria
 

@@ -108,7 +108,7 @@ El **panel de instrumentos** del camión Komatsu es el centro de información y 
 - **Interruptor de limpiaparabrisas/lavador**: Activa los limpiaparabrisas y el sistema de lavado para mantener la visibilidad clara.
 - **Interruptor de espejo con desempañador**: Activa el desempañador de los espejos para mejorar la visibilidad en climas fríos o húmedos.
 En esta parte puedes visualizar la imagen completa con todas sus partes:
-![panel de instrumentos komatsu, medidores, indicadores y controles del panel](/images/panel-instrumentos.jpg)
+![panel de instrumentos komatsu, medidores, indicadores y controles del panel](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/panel-instrumentos)
 ```markdown
 1. Interruptor de partida
 2. Interruptor de detención del motor con temporizador de retardo

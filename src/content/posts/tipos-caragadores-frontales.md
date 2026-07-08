@@ -87,4 +87,4 @@ El **diferencial** permite que las ruedas giren a distintas velocidades, lo cual
 #### Ejes y Mandos Finales
 
 Los **ejes** transmiten la fuerza a las ruedas mediante engranajes de alta resistencia. Los **mandos finales** proporcionan una reducción planetaria en cada rueda, lo que disminuye el esfuerzo torsional en los ejes y garantiza una larga vida útil.
-![Partes del cargador frontal, convertidor de par, diferencial](/images/cargador-frontal-partes.jpg)
+![Partes del cargador frontal, convertidor de par, diferencial](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/cargador-frontal-partes)

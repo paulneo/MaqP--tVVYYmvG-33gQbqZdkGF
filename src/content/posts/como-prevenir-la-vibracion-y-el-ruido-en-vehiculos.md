@@ -19,13 +19,13 @@ aiAssisted: false
 
 La vibración y el ruido en los vehículos pueden ser molestos y afectan la comodidad de la conducción. Para prevenir estos problemas, existen diversos métodos, incluyendo la supresión de la fuerza vibratoria, la interrupción de la resonancia y la interrupción de la transmisión. A continuación, se describen en detalle algunos de estos métodos.
 
-<img src="/mecanica_automotriz/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos1.png" alt="Aislamiento de vibraciones" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos1" alt="Aislamiento de vibraciones" width="620"/>
 
 ## Aislamiento de vibraciones
 
 ### Amortiguador de masa
 
-<img src="/mecanica_automotriz/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos2.png" alt="Amortiguador de masa" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos2" alt="Amortiguador de masa" width="520"/>
 
 Un amortiguador de masa es un peso instalado en la porción vibradora del vehículo, cuya misión es trasladar el punto de resonancia reduciendo su frecuencia natural. Esto ayuda a mover la vibración y el ruido fuera del rango de la conducción normal, reduciendo así el nivel de vibración y ruido.
 
@@ -42,7 +42,7 @@ Es importante instalar el amortiguador de masa correctamente para evitar aumenta
 
 ### Amortiguador dinámico
 
-<img src="/mecanica_automotriz/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos3.png" alt="Amortiguador dinámico" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos3" alt="Amortiguador dinámico" width="520"/>
 
 Un amortiguador dinámico consta de un peso y un muelle conectados a la porción vibratoria. Este sistema divide una frecuencia natural en dos frecuencias naturales menores, ayudando a trasladar el punto de resonancia y atenuar los niveles de vibración y ruido.
 
@@ -54,7 +54,7 @@ La frecuencia natural de un amortiguador dinámico debe ser igual a la de la por
 
 ### Goma aislante de vibraciones
 
-<img src="/mecanica_automotriz/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos4.png" alt="Goma aislante de vibraciones" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos4" alt="Goma aislante de vibraciones" width="520"/>
 
 La goma aislante de vibraciones se utiliza para reducir la vibración en las juntas de los soportes del motor, los soportes de la carrocería y el buje de la suspensión.
 
@@ -65,7 +65,7 @@ La goma aislante de vibraciones se utiliza para reducir la vibración en las jun
 
 ### Insonorización del panel
 
-<img src="/mecanica_automotriz/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos5.png" alt="Insonorización del panel" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos5" alt="Insonorización del panel" width="520"/>
 
 Para reducir la vibración del panel de la carrocería del vehículo, se utilizan materiales amortiguadores como capa inferior, tela asfáltica, panel de varias capas y tela de resina de tipo restrictivo.
 
@@ -77,6 +77,6 @@ Para reducir la vibración del panel de la carrocería del vehículo, se utiliza
 
 ### Material absorbente de sonido
 
-<img src="/mecanica_automotriz/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos6.png" alt="Material absorbente de sonido" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos6" alt="Material absorbente de sonido" width="520"/>
 
 Los materiales absorbentes de sonido, como lana de vidrio, fieltro y espuma de poliuretano, son sustancias permeables y porosas que reducen el nivel de presión de sonido al absorber la vibración en el aire. Estos materiales son más eficaces para sonidos de alta frecuencia, mientras que los materiales más gruesos son mejores para sonidos de baja frecuencia.

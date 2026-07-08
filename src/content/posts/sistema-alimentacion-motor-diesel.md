@@ -51,7 +51,7 @@ El filtrado del combustible es crucial para el funcionamiento de la bomba de iny
 2. **Segundo Filtro**: Un filtro más fino ubicado después de la bomba de alimentación.
 3. **Filtro Principal**: Elimina las partículas más pequeñas, garantizando la pureza del combustible.
 
-![Filtro de Combustible](/images/sistemas-filtrado.jpg)
+![Filtro de Combustible](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/sistemas-filtrado)
 
 Los filtros principales suelen estar fabricados con papel plegado, ofreciendo una gran superficie de filtrado en un volumen reducido. 
 
@@ -63,7 +63,7 @@ Las bombas de inyección de pistones en línea transforman la energía mecánica
 
 El pistón de la bomba, al desplazarse, empuja el combustible hacia el inyector. La cantidad de combustible inyectada se regula girando el pistón dentro de su cilindro, modificando la coincidencia de las escotaduras con los orificios de llenado.
 
-![Bomba de Inyección en Línea](/images/inyector.jpg)
+![Bomba de Inyección en Línea](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/inyector)
 
 ### Bomba de Inyección Rotativa
 
@@ -71,7 +71,7 @@ Las bombas rotativas utilizan un único elemento que presiona el combustible y l
 
 El rotor de la bomba, al girar dentro de un anillo de levas, desplaza los pistones que comprimen el combustible, enviándolo a los inyectores en el momento adecuado.
 
-![Bomba de Inyección Rotativa](/images/inyeccion-rotativa.jpg)
+![Bomba de Inyección Rotativa](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/inyeccion-rotativa)
 
 ## Inyección Directa y Sistema Common Rail
 

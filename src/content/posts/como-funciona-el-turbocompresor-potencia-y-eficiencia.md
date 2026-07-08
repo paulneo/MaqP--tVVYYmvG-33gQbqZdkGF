@@ -26,7 +26,7 @@ El **turbocompresor** es un dispositivo que utiliza los gases de escape del moto
 
 ### 2. Funcionamiento del turbocompresor
 
-<img src="/mecanica_automotriz/funcionamiento-turbocompresor.png" alt="Funcionamiento del turbocompresor" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-turbocompresor" alt="Funcionamiento del turbocompresor" width="620"/>
 
 Cuando los gases de escape salen del motor, pasan a través de la **turbina** del turbocompresor. Estos gases hacen que la turbina gire a altísimas velocidades. Debido a que la rueda del **compresor** está conectada a la misma turbina, también comienza a girar y comprime el aire que ingresa al motor. Esta mayor presión de aire en los cilindros resulta en una mayor **eficiencia de combustión**, lo que se traduce en más potencia para el motor.
 
@@ -40,19 +40,19 @@ En algunos modelos, el turbocompresor también incluye un **enfriador intermedio
 
 ### 3. Componentes clave del turbocompresor
 
-<img src="/mecanica_automotriz/componentes-del-turbocompresor.png" alt="¿Qué es un turbocompresor?" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/componentes-del-turbocompresor" alt="¿Qué es un turbocompresor?" width="620"/>
 
 El turbocompresor está compuesto por varios elementos que trabajan en conjunto para aumentar la potencia del motor. A continuación, se describen los componentes más importantes:
 
 #### 3.1 Alojamiento de la turbina y del compresor
 
-<img src="/mecanica_automotriz/valvula-de-descarga-y-actuador.png" alt="Alojamiento de la turbina y del compresor" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/valvula-de-descarga-y-actuador" alt="Alojamiento de la turbina y del compresor" width="620"/>
 
 El **alojamiento de la turbina** es donde los gases de escape entran en contacto con la rueda de la turbina. Este componente debe ser extremadamente resistente al calor, ya que los gases de escape alcanzan temperaturas muy altas. Por otro lado, el **alojamiento del compresor** es donde se encuentra la rueda del compresor, que comprime el aire antes de enviarlo a los cilindros.
 
 #### 3.2 Rueda de la turbina
 
-<img src="/mecanica_automotriz/ruedas-de-la-turbina-del-compresor.png" alt="Cojinetes completamente flotantes" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/ruedas-de-la-turbina-del-compresor" alt="Cojinetes completamente flotantes" width="620"/>
 
 La **rueda de la turbina** es el componente que gira gracias a los gases de escape. Debe estar fabricada con materiales resistentes al calor y al desgaste, como aleaciones de metales especiales o incluso **cerámica**, debido a las altas temperaturas y las rápidas velocidades a las que gira.
 
@@ -62,13 +62,13 @@ La **rueda del compresor** es la encargada de comprimir el aire de entrada al mo
 
 #### 3.4 Cojinetes completamente flotantes
 
-<img src="/mecanica_automotriz/cojinetes-completamente-flotantes-turbocompresor.png" alt="Cojinetes completamente flotantes" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/cojinetes-completamente-flotantes-turbocompresor" alt="Cojinetes completamente flotantes" width="620"/>
 
 Los **cojinetes** permiten que el eje del turbocompresor gire suavemente a velocidades extremadamente altas. Los cojinetes completamente flotantes, utilizados en muchos turbocompresores modernos, ayudan a reducir la fricción y el desgaste en el eje, lo que prolonga la vida útil del turbocompresor.
 
 #### 3.5 Válvula de descarga y actuador
 
-<img src="/mecanica_automotriz/valvula-de-descarga-y-actuador.png" alt="Válvula de descarga" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/valvula-de-descarga-y-actuador" alt="Válvula de descarga" width="620"/>
 
 La **válvula de descarga** y el **actuador** trabajan juntos para regular la presión en el sistema de escape. Cuando la presión dentro del turbocompresor alcanza un nivel demasiado alto, el actuador abre la válvula de descarga para liberar parte de los gases y evitar daños.
 

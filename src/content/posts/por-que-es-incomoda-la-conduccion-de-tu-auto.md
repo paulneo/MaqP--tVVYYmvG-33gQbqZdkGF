@@ -21,7 +21,7 @@ La conducción incómoda se refiere al balanceo y bamboleo de todo el vehículo 
 
 ## Causas Principales
 
-<img src="/mecanica_automotriz/por_que_es_incomoda_la_conduccion_de_tu_auto3.png" alt="Causas Principales incomoda la conducción" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_es_incomoda_la_conduccion_de_tu_auto3" alt="Causas Principales incomoda la conducción" width="420"/>
 
 ### 1. Superficie de la Carretera con Baches o Irregular
 
@@ -47,7 +47,7 @@ Las oscilaciones de la suspensión, a su vez, hacen que la carrocería del vehí
 
 ## Factores Relacionados con la Comodidad de la Conducción
 
-<img src="/mecanica_automotriz/por_que_es_incomoda_la_conduccion_de_tu_auto2.png" alt="Factores Relacionados con la Comodidad de la Conducción" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/por_que_es_incomoda_la_conduccion_de_tu_auto2" alt="Factores Relacionados con la Comodidad de la Conducción" width="520"/>
 
 ### 1. Tara y Peso No Suspendido
 

@@ -33,7 +33,7 @@ Los frenos de discos múltiples húmedos se utilizan en los frenos B2 y B3. Esto
 
 ### Freno de banda (B1)
 
-<img src="/mecanica_automotriz/como_funcionan_los_frenos_en_los_transejes_automaticos2.png" alt="Freno de banda (B1)a" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funcionan_los_frenos_en_los_transejes_automaticos2" alt="Freno de banda (B1)a" width="620"/>
 
 #### Estructura
 
@@ -41,7 +41,7 @@ La cinta del freno se enrolla en la circunferencia exterior del tambor. Un extre
 
 #### Funcionamiento
 
-<img src="/mecanica_automotriz/como_funcionan_los_frenos_en_los_transejes_automaticos3.png" alt="Freno de banda (B1) funcionamiento" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funcionan_los_frenos_en_los_transejes_automaticos3" alt="Freno de banda (B1) funcionamiento" width="620"/>
 
 1. **Aplicación de presión hidráulica**: Si se aplica presión hidráulica al pistón, éste se mueve hacia la izquierda en el cilindro del pistón comprimiendo los muelles. El vástago del pistón se mueve con el pistón y empuja un extremo de la cinta del freno. Como el otro extremo de la cinta del freno está fijado a la caja del transeje, el diámetro de la cinta del freno disminuye y ésta se agarra al tambor, inmovilizándolo.
 2. **Generación de fricción**: Se genera una fuerza de fricción elevada entre la cinta del freno y el tambor, inmovilizando el tambor o un miembro del conjunto de engranaje planetario.
@@ -49,7 +49,7 @@ La cinta del freno se enrolla en la circunferencia exterior del tambor. Un extre
 
 ### Frenos de discos múltiples húmedos (B2 y B3)
 
-<img src="/mecanica_automotriz/como_funcionan_los_frenos_en_los_transejes_automaticos4.png" alt="Frenos de discos múltiples húmedos (B2 y B3)" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funcionan_los_frenos_en_los_transejes_automaticos4" alt="Frenos de discos múltiples húmedos (B2 y B3)" width="620"/>
 
 #### Estructura
 
@@ -58,7 +58,7 @@ La cinta del freno se enrolla en la circunferencia exterior del tambor. Un extre
 
 #### Funcionamiento
 
-<img src="/mecanica_automotriz/como_funcionan_los_frenos_en_los_transejes_automaticos5.png" alt="Frenos de discos múltiples húmedos (B2 y B3) funcionamiento" width="420"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funcionan_los_frenos_en_los_transejes_automaticos5" alt="Frenos de discos múltiples húmedos (B2 y B3) funcionamiento" width="420"/>
 
 1. **Aplicación de presión hidráulica**: Cuando se aplica presión hidráulica al cilindro del pistón, el pistón se mueve por el interior del cilindro, forzando a las placas y los discos a entrar en contacto. Se genera una fuerza de fricción elevada entre cada disco y cada placa, fijando el portasatélites o el engranaje solar a la caja del transeje.
 2. **Liberación de presión hidráulica**: Cuando se drena el líquido presurizado del cilindro del pistón, el muelle de retorno empuja el pistón a su posición y hace que se suelte el freno.

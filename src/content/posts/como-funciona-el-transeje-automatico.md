@@ -22,7 +22,7 @@ En los vehículos con transeje automático, la unidad de engranaje planetario co
 
 ## Estructura de los engranajes planetarios
 
-<img src="/mecanica_automotriz/como_funciona_el_transeje_automatico2.png" alt="Estructura de los engranajes planetarios" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funciona_el_transeje_automatico2" alt="Estructura de los engranajes planetarios" width="620"/>
 
 Los engranajes planetarios tienen tres tipos de engranajes: corona dentada, engranaje de piñón y engranaje solar, además del portasatélites. El portasatélites se conecta al eje central de cada engranaje de piñón y hace que los engranajes de piñón giren. Con este conjunto de engranajes conectados mutuamente, los engranajes de piñón parecen planetas girando en torno al sol; de ahí que se llamen engranajes planetarios. Normalmente, se combinan varios engranajes planetarios en la unidad de engranaje planetario.
 
@@ -32,7 +32,7 @@ Cambiando los elementos de entrada, salida y los elementos de fijación es posib
 
 ### 1. Deceleración
 
-<img src="/mecanica_automotriz/como_funciona_el_transeje_automatico3.png" alt="Deceleración" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funciona_el_transeje_automatico3" alt="Deceleración" width="620"/>
 - **Entrada de potencia**: Corona dentada
 - **Salida de potencia**: Portasatélites
 - **Fijo**: Engranaje solar
@@ -41,7 +41,7 @@ Si el engranaje solar está fijo, solo gira el engranaje de piñón. Por tanto, 
 
 ### 2. Marcha atrás
 
-<img src="/mecanica_automotriz/como_funciona_el_transeje_automatico4.png" alt="Marcha atrás" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funciona_el_transeje_automatico4" alt="Marcha atrás" width="620"/>
 
 - **Entrada de potencia**: Engranaje solar
 - **Salida de potencia**: Corona dentada
@@ -51,7 +51,7 @@ Si el portasatélites está fijo en una posición y el engranaje solar gira, la 
 
 ### 3. Conexión directa
 
-<img src="/mecanica_automotriz/como_funciona_el_transeje_automatico5.png" alt="Conexión directa" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funciona_el_transeje_automatico5" alt="Conexión directa" width="620"/>
 
 - **Entrada de potencia**: Engranaje solar, corona dentada
 - **Salida de potencia**: Portasatélites
@@ -60,7 +60,7 @@ Como la corona dentada y el engranaje solar giran juntos a la misma velocidad, e
 
 ### 4. Aceleración
 
-<img src="/mecanica_automotriz/como_funciona_el_transeje_automatico6.png" alt="Aceleración" width="620"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/como_funciona_el_transeje_automatico6" alt="Aceleración" width="620"/>
 
 - **Entrada de potencia**: Portasatélites
 - **Salida de potencia**: Corona dentada

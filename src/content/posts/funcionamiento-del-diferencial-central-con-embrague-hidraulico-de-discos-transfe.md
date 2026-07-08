@@ -20,7 +20,7 @@ El avance en los sistemas de tracción vehicular ha dado lugar a innovaciones qu
 
 #### 1.1 Transferencia
 
-![Diferencial central y transferencia](/mecanica_automotriz/funcionamiento-del-diferencial-central-con-embrague-hidraulico-de-discos-transferencia-A540H2.png)
+![Diferencial central y transferencia](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-del-diferencial-central-con-embrague-hidraulico-de-discos-transferencia-A540H2)
 
 En la transferencia A540H, la ubicación del diferencial central difiere significativamente de los sistemas tradicionales de bloqueo mecánico. A diferencia de los modelos anteriores, donde el diferencial central estaba integrado con el diferencial delantero, en este diseño, el diferencial central está separado. Esta disposición permite una mayor libertad de movimiento dentro de la montura de la corona dentada, la cual alberga tanto el diferencial delantero como el embrague hidráulico de discos múltiples. Este embrague se utiliza para limitar la acción del diferencial central, asegurando un control preciso de la tracción.
 
@@ -28,7 +28,7 @@ En los modelos más recientes, el control de la limitación del diferencial se r
 
 #### 1.2 Transmisión de potencia
 
-![Transmisión de potencia](/mecanica_automotriz/funcionamiento-del-diferencial-central-con-embrague-hidraulico-de-discos-transferencia-A540H2.png)
+![Transmisión de potencia](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-del-diferencial-central-con-embrague-hidraulico-de-discos-transferencia-A540H2)
 
 - **En rectas:** Durante la conducción en línea recta, la potencia del motor se divide en dos partes en el diferencial central. Una parte se dirige al diferencial trasero a través del engranaje planetario derecho, mientras que la otra se transmite a los ejes propulsores delanteros mediante el diferencial delantero. Esta distribución equilibrada asegura una tracción uniforme en todas las ruedas.
 
@@ -36,7 +36,7 @@ En los modelos más recientes, el control de la limitación del diferencial se r
 
 ### 2. Funcionamiento del diferencial central con embrague hidráulico de discos
 
-<img src="/mecanica_automotriz/funcionamiento-del-diferencial-central-con-embrague-hidraulico-de-discos-transferencia-A540H3.png" alt="Funcionamiento del diferencial central con embrague hidráulico de discos" width="520"/>
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-mecanica/funcionamiento-del-diferencial-central-con-embrague-hidraulico-de-discos-transferencia-A540H3" alt="Funcionamiento del diferencial central con embrague hidráulico de discos" width="520"/>
 
 #### 2.1 Estructura
 
