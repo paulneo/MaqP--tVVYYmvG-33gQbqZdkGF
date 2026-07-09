@@ -15,6 +15,45 @@
   # Astro y bundlers se optimizan solos con este flag
   NODE_ENV = "production"
 
+# ── Redirects de URLs legacy del sitio anterior a Astro ────────────────
+# Google Search Console lista ~156 URLs con error 5xx que corresponden a
+# rutas del sitio viejo que ya no existen. Reencaminamos las que tienen
+# equivalente actual (/news, /blog) y marcamos como Gone las que no
+# (assets de Partytown, endpoint de Netlify Images). Convertir 5xx en
+# 301/410 mejora la percepción de calidad del dominio en Google.
+
+[[redirects]]
+  from = "/news/*"
+  to = "/posts/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/posts/:splat"
+  status = 301
+  force = true
+
+# Partytown fue removido en la migración a Astro 5; sus assets ya no existen.
+[[redirects]]
+  from = "/~partytown/*"
+  to = "/404"
+  status = 410
+  force = true
+
+# Netlify Image CDN reemplazado por Cloudinary; el endpoint ya no aplica.
+[[redirects]]
+  from = "/.netlify/images"
+  to = "/404"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/.netlify/images/*"
+  to = "/404"
+  status = 410
+  force = true
+
 # ── Cache HTTP ──────────────────────────────────────────────────────────
 # /_astro/* son assets con hash en el nombre (ej: /_astro/x8jf3.abc123.css),
 # así que se pueden cachear por un año — cuando el contenido cambia, Astro
