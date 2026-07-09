@@ -1,11 +1,12 @@
 ---
-title: "Tipos de cargadores frontales y sus componentes principales"
+title: "Tipos de cargadores frontales: sobre orugas vs sobre ruedas"
 published: 2024-09-20
+updatedAt: 2026-07-09
 draft: false
 featured: false
-description: "Un análisis detallado de los tipos de cargadores frontales y los componentes clave que conforman el chasis, la transmisión, el sistema hidráulico y las herramientas de trabajo d..."
+description: "Comparativa de los dos tipos de cargadores frontales: sobre orugas y sobre ruedas. Cuándo usar cada uno y qué diferencia hay en chasis, transmisión e hidráulica."
 category: maquinaria-pesada
-formato: concepto
+formato: comparativa
 nivel: intermedio
 tags:
   - "cargadores-frontales"
@@ -17,6 +18,24 @@ image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-inge
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false
+faq:
+  - q: "¿Cuál es la diferencia entre un cargador frontal sobre orugas y uno sobre ruedas?"
+    a: "El cargador sobre orugas ofrece mayor tracción en terreno blando o accidentado (arcilla, obra en construcción, minería subterránea) pero es más lento y se desgasta más rápido. El de ruedas es más veloz, más eficiente en distancias largas y se prefiere para minería a cielo abierto y obras civiles con pistas firmes. La regla práctica: orugas para tracción, ruedas para velocidad."
+  - q: "¿Qué componentes tiene un cargador frontal sobre ruedas?"
+    a: "Los componentes principales son: chasis articulado (dos bastidores unidos), motor diésel, transmisión power-shift (convertidor de par + caja), diferencial y mandos finales, sistema hidráulico de doble efecto para el cucharón y la pluma, cabina con controles ergonómicos, y neumáticos radiales de gran tamaño (típicamente 26.5 R25 o mayores)."
+  - q: "¿Los cargadores frontales sobre orugas se usan en minería?"
+    a: "Sí, pero principalmente en minería subterránea o cuando la pista es demasiado blanda para ruedas. En minería a cielo abierto, los cargadores de ruedas dominan porque se mueven más rápido entre el frente de carga y los camiones mineros. Los de orugas quedan reservados a tareas de apoyo o a terrenos que colapsan neumáticos."
+  - q: "¿Cuánto pesa un cargador frontal grande?"
+    a: "Un cargador Caterpillar 992 (típico en minería) pesa unas 97 toneladas en orden de trabajo. Los modelos más pequeños como el 924H pesan alrededor de 11 toneladas. El más grande del mercado, el LeTourneau L2350, supera las 250 toneladas y se usa para cargar camiones mineros de 400 toneladas."
+sources:
+  - title: "Caterpillar — Wheel Loader Range"
+    url: "https://www.cat.com/en_US/products/new/equipment/wheel-loaders.html"
+  - title: "Volvo Construction Equipment — Wheel vs Track Loaders"
+    url: "https://www.volvoce.com/global/en/products/wheel-loaders/"
+related:
+  - cargador-frontal-historia
+  - cabinas-cargadores-frontales
+  - componenetes-camion-minero
 ---
 
 Existen dos tipos principales de **cargadores frontales**, diferenciados principalmente por su sistema de rodaje: los cargadores frontales sobre orugas y los cargadores frontales sobre ruedas. A continuación, exploraremos las características de cada tipo, así como los componentes más importantes de los cargadores frontales a ruedas.

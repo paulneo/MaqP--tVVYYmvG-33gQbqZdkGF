@@ -1,20 +1,42 @@
 ---
-title: "¿Por qué vibra la palanca de cambios de tu auto?"
+title: "¿Por qué vibra la palanca de cambios de tu auto? 6 causas y solución"
 published: 2024-07-21
+updatedAt: 2026-07-09
 draft: false
 featured: false
-description: "Descubre las causas de la vibración de la palanca de cambios en tu vehículo y cómo solucionarlo. Aprende cómo las vibraciones del motor y la transmisión afectan la palanca de ca..."
+description: "Las 6 causas más comunes de que la palanca de cambios vibre: motor desajustado, soportes rotos, embrague, volante de inercia, transmisión y ejes. Cómo diagnosticar cada una."
 category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
 tags:
-  - "pedal"
-  - "acelerador"
-  - "vibracion"
+  - "palanca-de-cambios"
+  - "vibraciones"
+  - "transmision"
+  - "diagnostico-mecanico"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_vibra_la_palanca_de_cambios_de_tu_auto
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false
+faq:
+  - q: "¿Por qué vibra la palanca de cambios cuando acelero?"
+    a: "Cuando la vibración aparece o se intensifica al acelerar, la causa más probable es un problema en el tren motriz: soportes del motor endurecidos o rotos, volante de inercia dañado o disco de embrague desbalanceado. La vibración se transmite del motor al eje de la caja de cambios y desde ahí a la palanca."
+  - q: "¿Vibra solo la palanca o también el volante?"
+    a: "Si vibra solo la palanca, el problema está entre motor, embrague y caja. Si además vibra el volante, típicamente es un problema en la parte delantera: ruedas desbalanceadas, semiejes doblados o rodamientos gastados. Aislar dónde vibra primero es el paso más importante del diagnóstico."
+  - q: "¿Es peligroso manejar con la palanca vibrando?"
+    a: "Depende de la causa. Una vibración leve por soportes de motor gastados no es peligrosa a corto plazo pero acelera el desgaste del embrague y de la caja. Una vibración fuerte o repentina puede indicar rotura de un semieje o de un componente rotativo — ahí sí es urgente detener el vehículo y revisar."
+  - q: "¿Cuánto cuesta arreglar la vibración de la palanca?"
+    a: "Depende del origen. Soportes de motor van de USD 30 a 150 por par + mano de obra (~1-2 horas). Un embrague completo cuesta USD 200-600. Un volante bimasa de reemplazo puede ir de USD 300 a 800. Un balanceo de ruedas es lo más barato: USD 15-30."
+  - q: "¿Cómo se diagnostica de dónde viene la vibración?"
+    a: "Se sigue un proceso ordenado: (1) probar la vibración con embrague pisado y motor a distintas revoluciones — si sigue vibrando, es motor o soportes; (2) probar con embrague soltado y caja en punto muerto — si aparece la vibración, es la caja o el eje; (3) probar en marcha a distintas velocidades — si aparece solo a cierta velocidad, es ruedas o semiejes."
+sources:
+  - title: "AA1Car — Diagnóstico de vibraciones en transmisión"
+    url: "https://www.aa1car.com/library/vibrations.htm"
+  - title: "SAE International — Vehicle Vibration Diagnostics"
+    url: "https://www.sae.org/publications/technical-papers"
+related:
+  - alineacion-de-ruedas-en-el-rendimiento-del-vehiculo
+  - angulo-de-convergencia-divergencia-en-la-estabilidad-vehiculo
+  - importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo
 ---
 
 La vibración de la palanca de cambios es un problema común en vehículos, especialmente cuando las revoluciones del motor son relativamente altas. Este tipo de vibración puede ser indicativo de varios problemas mecánicos. A continuación, se describen las causas principales y la mecánica detrás de esta vibración.

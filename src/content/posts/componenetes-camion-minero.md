@@ -1,9 +1,10 @@
 ---
-title: "Componentes y sistemas de los camiones mineros"
+title: "Componentes de un camión minero: tolva, bastidor, transmisión y cabina"
 published: 2024-08-27
+updatedAt: 2026-07-09
 draft: false
 featured: false
-description: "Un análisis detallado de los principales componentes y sistemas de los camiones mineros, incluyendo la tolva, el bastidor, la transmisión, la cabina, y los controles internos"
+description: "Análisis detallado de cada sistema de un camión minero: tolva de descarga, bastidor principal, transmisión, cabina de operador y los controles internos que definen su rendimiento."
 category: maquinaria-pesada
 formato: concepto
 nivel: intermedio
@@ -16,6 +17,28 @@ image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-inge
 author: jean-paul
 reviewedBy: jean-paul
 aiAssisted: false
+faq:
+  - q: "¿Cuáles son los componentes principales de un camión minero?"
+    a: "Un camión minero se compone de cinco sistemas principales: la tolva (donde va la carga), el bastidor (chasis estructural que soporta todo), el sistema de transmisión (motor diésel o eléctrico + caja + diferencial), la cabina de operador y los sistemas hidráulicos y de control. Cada uno está sobredimensionado para operar en minería a cielo abierto durante 15-20 años."
+  - q: "¿Cuánto puede cargar un camión minero grande?"
+    a: "Los camiones mineros más grandes del mundo, como el Caterpillar 797F o el Belaz 75710, pueden transportar entre 400 y 450 toneladas de material por viaje. En operaciones estándar se usan camiones de 90 a 240 toneladas, dependiendo del tamaño de la mina y de los cargadores frontales o palas que los cargan."
+  - q: "¿Qué es la tolva de un camión minero?"
+    a: "La tolva es el recipiente montado sobre el bastidor donde va la carga (roca, mineral, estéril). Está construida con placas de acero de alta dureza (típicamente Hardox 400 o 450) porque tiene que resistir el impacto de bloques que caen desde varios metros durante la carga. Su geometría inclinada hacia adelante facilita la descarga por gravedad."
+  - q: "¿Cuál es la diferencia entre un camión minero rígido y uno articulado?"
+    a: "El camión rígido tiene chasis en una sola pieza y gira mediante las ruedas delanteras; se usa en minería a cielo abierto sobre pistas anchas y firmes. El articulado tiene bastidor dividido con articulación central, mayor movilidad en terreno accidentado y menor capacidad — se usa más en construcción y minería subterránea."
+  - q: "¿Cuánto cuesta un camión minero?"
+    a: "Un camión minero nuevo de 90-100 toneladas cuesta entre USD 500.000 y 1.000.000. Los modelos ultra grandes (300+ toneladas) van de USD 3 a 6 millones. El costo por hora de operación (combustible + neumáticos + mantenimiento) suele ser de USD 80 a 200/hora dependiendo del tamaño."
+sources:
+  - title: "Caterpillar — Off-Highway Trucks (Mining)"
+    url: "https://www.cat.com/en_US/products/new/equipment/off-highway-trucks.html"
+  - title: "Komatsu — Rigid Dump Trucks Specifications"
+    url: "https://www.komatsu.com/en/products/dump-trucks/"
+  - title: "SSAB Hardox — Wear Steel for Mining"
+    url: "https://www.ssab.com/en/brands-and-products/hardox"
+related:
+  - cargador-frontal-historia
+  - cabinas-cargadores-frontales
+  - anatomia-camion-minero
 ---
 
 En la operación de maquinaria pesada, como los camiones mineros, es crucial conocer en profundidad cada uno de sus componentes y sistemas. Este conocimiento no solo facilita el manejo seguro y eficiente de la máquina, sino que también permite un mantenimiento más efectivo, prolongando la vida útil del equipo y asegurando un rendimiento óptimo.
