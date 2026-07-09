@@ -52,20 +52,79 @@ const coverUsesCdn = hasCover && isCdnRef(entry.data.image as string);
 const coverCdnUrl = coverUsesCdn ? img(entry.data.image as string, { width: 1600, height: 900, crop: 'fill' }) : '';
 const coverCdnSrcset = coverUsesCdn ? imgSrcset(entry.data.image as string, [800, 1200, 1600, 2000]) : '';
 
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.mundoingenieria.org'
+const postUrl = `${siteUrl}/posts/${entry.slug}/`
+const wordCount = (remarkPluginFrontmatter?.minutes ? remarkPluginFrontmatter.minutes * 200 : undefined)
+
+const seoOverride = entry.data.seo as { canonical?: string; ogImage?: string; noindex?: boolean } | undefined;
+const ogImageRaw = seoOverride?.ogImage ?? (entry.data.image as string | undefined);
+const ogImageUrl = ogImageRaw && coverUsesCdn
+    ? img(entry.data.image as string, { width: 1200, height: 630, crop: 'fill' })
+    : ogImageRaw;
+const tagsList = (entry.data.tags as string[] | undefined) ?? [];
+
 const jsonLd: any = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": entry.data.title,
     "description": entry.data.description || entry.data.title,
     "keywords": (entry.data.tags || []).join(', '),
+    "inLanguage": "es",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": postUrl },
     "author": {
         "@type": "Person",
         "name": profileConfig.name,
-        "url": Astro.site,
+        "url": `${siteUrl}/about/`,
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Mundo Ingeniería",
+        "logo": {
+            "@type": "ImageObject",
+            "url": `${siteUrl}/logo-light.png`,
+            "width": 2172,
+            "height": 724,
+        },
     },
     "datePublished": formatDateToYYYYMMDD(entry.data.published),
 };
 if (updatedAt && !sameDate) jsonLd.dateModified = formatDateToYYYYMMDD(updatedAt);
+if (ogImageUrl) {
+    jsonLd.image = {
+        "@type": "ImageObject",
+        "url": ogImageUrl,
+        "width": 1200,
+        "height": 630,
+    };
+}
+if (cat) {
+    jsonLd.articleSection = cat.label;
+}
+if (wordCount) {
+    jsonLd.wordCount = wordCount;
+}
+
+// BreadcrumbList: Google usa esto para mostrar "Inicio › Categoría › Post" en el snippet
+// de resultados en vez de la URL cruda. Es un rich snippet muy visible que aumenta CTR.
+const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": `${siteUrl}/` },
+        ...(cat ? [{
+            "@type": "ListItem",
+            "position": 2,
+            "name": cat.label,
+            "item": `${siteUrl}/categorias/${cat.slug}/`,
+        }] : []),
+        {
+            "@type": "ListItem",
+            "position": cat ? 3 : 2,
+            "name": entry.data.title,
+            "item": postUrl,
+        },
+    ],
+};
 
 const faqJsonLd = faq.length > 0 ? {
     "@context": "https://schema.org",
@@ -76,13 +135,6 @@ const faqJsonLd = faq.length > 0 ? {
         "acceptedAnswer": { "@type": "Answer", "text": a },
     })),
 } : null;
-
-const seoOverride = entry.data.seo as { canonical?: string; ogImage?: string; noindex?: boolean } | undefined;
-const ogImageRaw = seoOverride?.ogImage ?? (entry.data.image as string | undefined);
-const ogImageUrl = ogImageRaw && coverUsesCdn
-    ? img(entry.data.image as string, { width: 1200, height: 630, crop: 'fill' })
-    : ogImageRaw;
-const tagsList = (entry.data.tags as string[] | undefined) ?? [];
 ---
 <MainGridLayout
     banner={entry.data.image}
@@ -98,6 +150,7 @@ const tagsList = (entry.data.tags as string[] | undefined) ?? [];
     noindex={seoOverride?.noindex || entry.data.draft}
 >
     <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)}></script>
     {faqJsonLd && <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqJsonLd)}></script>}
 
     <ReadingProgress target=".markdown-content" />
