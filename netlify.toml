@@ -54,6 +54,36 @@
   status = 410
   force = true
 
+# Path viejo en ingles /categories/* → nuevo en espanol /categorias/*
+# (nota: el sitio viejo tenia typos en algunos slugs, ej mecanica_automotriz
+# con underscore; el redirect abajo captura ambos)
+[[redirects]]
+  from = "/categories/*"
+  to = "/categorias/:splat"
+  status = 301
+  force = true
+
+# El slug mecanica_automotriz (con underscore) del sitio viejo era en realidad
+# mecanica-automotriz (con guion). Redirigimos explicitamente al slug bueno.
+[[redirects]]
+  from = "/categorias/mecanica_automotriz"
+  to = "/categorias/mecanica-automotriz"
+  status = 301
+  force = true
+
+# terminos_condiciones (con underscore) del sitio viejo → /terminos actual
+[[redirects]]
+  from = "/terminos_condiciones"
+  to = "/terminos"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terminos_condiciones/*"
+  to = "/terminos"
+  status = 301
+  force = true
+
 # ── Cache HTTP ──────────────────────────────────────────────────────────
 # /_astro/* son assets con hash en el nombre (ej: /_astro/x8jf3.abc123.css),
 # así que se pueden cachear por un año — cuando el contenido cambia, Astro
