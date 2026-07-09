@@ -50,10 +50,19 @@ export function isAbsoluteUrl(ref: string): boolean {
 }
 
 /**
- * Devuelve true si `ref` se va a procesar por el CDN (no es local ni URL).
+ * Devuelve true si `ref` se va a servir desde el CDN.
+ * Cubre tres casos:
+ *   - public_id corto (ej: "mundo-ingenieria/aceite-motor") → genera URL Cloudinary con transforms
+ *   - URL absoluta ya renderizada por Cloudinary/Cloudflare/Bunny → passthrough directo (imágenes migradas)
+ * Deja fuera solo paths locales y URLs http(s) de dominios no reconocidos como CDN.
  */
 export function isCdnRef(ref: string): boolean {
-    return !!ref && !isLocalPath(ref) && !isAbsoluteUrl(ref)
+    if (!ref) return false
+    if (isLocalPath(ref)) return false
+    if (ref.startsWith('https://res.cloudinary.com/')) return true
+    if (ref.startsWith('https://imagedelivery.net/')) return true
+    if (ref.startsWith('https://') && ref.includes('.b-cdn.net/')) return true
+    return !isAbsoluteUrl(ref)
 }
 
 /**
