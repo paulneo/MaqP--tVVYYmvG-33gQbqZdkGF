@@ -49,14 +49,13 @@ export const licenseConfig: LicenseConfig = {
 }
 
 /**
- * Google AdSense publisher ID.
- * Vacío mientras se aprueba la cuenta AdSense nueva a nombre del owner
- * del sitio. Reemplazar por 'ca-pub-XXXXXXXXXXXXXXXX' cuando Google
- * asigne el ID en el signup nuevo, y volver a hacer push.
- * Mientras esté vacío, NO se carga el script de AdSense (BaseHead lo
- * chequea antes de renderizar el <script>).
+ * Google AdSense publisher ID de la cuenta a nombre del owner del sitio
+ * (Jean Paul Mamani Coaquira). Cuenta creada en Peru; pagos en USD vía
+ * Wise cuando esa verificación se apruebe.
+ * Si se vacía este string, NO se carga el script de AdSense (BaseHead
+ * lo chequea antes de renderizar).
  */
-export const adsenseId: string = ''
+export const adsenseId: string = 'ca-pub-1325551810977848'
 
 /**
  * Google Analytics 4 measurement ID de Mundo Ingeniería.
