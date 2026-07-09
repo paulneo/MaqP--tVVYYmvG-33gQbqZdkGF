@@ -1,1 +1,6 @@
-google.com, pub-7253543815310863, DIRECT, f08c47fec0942fa0
+# AdSense account pending — new publisher ID will be added here after
+# the owner completes AdSense signup and Google approves
+# mundoingenieria.org under the new account.
+#
+# Format when active:
+#   google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
