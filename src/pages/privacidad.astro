@@ -1,6 +1,6 @@
 ---
 import MainGridLayout from "../layouts/MainGridLayout.astro";
-const updatedAt = new Date('2026-05-26');
+const updatedAt = new Date('2026-07-09');
 ---
 
 <MainGridLayout
@@ -34,8 +34,10 @@ const updatedAt = new Date('2026-05-26');
 
         <h2>1. Responsable del tratamiento</h2>
         <p>
-            El responsable del sitio y del tratamiento de datos personales es el equipo
-            editorial de Mundo Ingeniería. Para cualquier consulta podés escribirnos a
+            El responsable del sitio y del tratamiento de datos personales es
+            <strong>Jean Paul Mamani Coaquira</strong>, editor y responsable
+            editorial de Mundo Ingeniería, con domicilio en Perú.
+            Para cualquier consulta podés escribirnos a
             <a href="mailto:contacto@mundoingenieria.org">contacto@mundoingenieria.org</a> o a
             través de la página de <a href="/contacto/">contacto</a>.
         </p>
@@ -115,13 +117,86 @@ const updatedAt = new Date('2026-05-26');
 
         <h2>5. Analítica</h2>
         <p>
-            Usamos <em>Google Analytics</em> para medir el tráfico del sitio de forma
+            Usamos <em>Google Analytics 4</em> para medir el tráfico del sitio de forma
             agregada. Los datos recopilados incluyen páginas vistas, tiempo en página,
             país aproximado, dispositivo y referencia de origen. No usamos esta
             información para identificar usuarios individuales.
         </p>
+        <p>
+            El sitio implementa <strong>Google Consent Mode v2</strong>, un mecanismo
+            estándar de Google que ajusta el envío de datos a Google Analytics y AdSense
+            según las preferencias de consentimiento que expreses en el banner de
+            cookies. Cuando rechazás cookies publicitarias, los anuncios pueden
+            servirse en modo "no personalizado" (contextual) y las señales enviadas a
+            Google se limitan.
+        </p>
 
-        <h2>6. Cómo usamos tus datos</h2>
+        <h2>6. Proveedores de servicios (terceros)</h2>
+        <p>
+            Para operar el sitio dependemos de un conjunto acotado de proveedores
+            externos que actúan como <em>encargados del tratamiento</em>. Cada uno
+            está sujeto a sus propias políticas de privacidad:
+        </p>
+        <ul>
+            <li>
+                <strong>Google LLC</strong> — Analytics (GA4) y publicidad (AdSense).
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Google</a>.
+            </li>
+            <li>
+                <strong>Netlify Inc.</strong> — hosting del sitio y CDN global. Puede
+                registrar logs técnicos de acceso (IP, user-agent) con fines de
+                seguridad y disponibilidad.
+                <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener noreferrer">Política de privacidad de Netlify</a>.
+            </li>
+            <li>
+                <strong>Cloudinary Ltd.</strong> — servicio de entrega y optimización
+                de imágenes (CDN). Sirve las imágenes de los artículos.
+                <a href="https://cloudinary.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Cloudinary</a>.
+            </li>
+            <li>
+                <strong>Cloudflare Inc.</strong> — servicio de OAuth para el panel
+                editorial del sitio (no interviene en la navegación pública).
+            </li>
+        </ul>
+        <p>
+            No transferimos datos a otros proveedores más allá de los mencionados,
+            y solo los datos estrictamente necesarios para que cada servicio cumpla
+            su función.
+        </p>
+
+        <h2>7. Base legal del tratamiento</h2>
+        <p>
+            El tratamiento de datos se apoya en tres bases legales, según el tipo de dato:
+        </p>
+        <ul>
+            <li>
+                <strong>Consentimiento</strong>: cookies publicitarias, personalización
+                de anuncios y otras cookies no esenciales. Podés retirar el consentimiento
+                en cualquier momento a través del banner de cookies.
+            </li>
+            <li>
+                <strong>Interés legítimo</strong>: analítica agregada del sitio y logs
+                de seguridad. Son datos necesarios para operar el servicio de forma
+                razonable y no identifican individualmente al visitante.
+            </li>
+            <li>
+                <strong>Cumplimiento de obligaciones legales</strong>: cuando la
+                legislación aplicable así lo requiera.
+            </li>
+        </ul>
+
+        <h2>8. Retención de datos</h2>
+        <p>
+            Los datos que recopilamos se conservan solo durante el tiempo estrictamente
+            necesario:
+        </p>
+        <ul>
+            <li>Analítica agregada (Google Analytics 4): hasta 14 meses.</li>
+            <li>Logs técnicos de servidor (Netlify): hasta 30 días.</li>
+            <li>Correos que nos envíes: durante el tiempo necesario para responderlos, más un archivo mínimo con fines administrativos.</li>
+        </ul>
+
+        <h2>9. Cómo usamos tus datos</h2>
         <p>Los datos que recopilamos se usan exclusivamente para:</p>
         <ul>
             <li>Responder consultas que nos envíes por email o formulario.</li>
@@ -134,20 +209,21 @@ const updatedAt = new Date('2026-05-26');
             terceros para fines distintos a los descritos en este documento.
         </p>
 
-        <h2>7. Tus derechos</h2>
+        <h2>10. Tus derechos</h2>
         <p>Tenés derecho a:</p>
         <ul>
             <li>Acceder a los datos personales que tengamos sobre vos.</li>
             <li>Solicitar la corrección o eliminación de esos datos.</li>
             <li>Oponerte al tratamiento o solicitar su limitación.</li>
-            <li>Retirar el consentimiento en cualquier momento.</li>
+            <li>Retirar el consentimiento en cualquier momento (via el banner de cookies o escribiéndonos).</li>
+            <li>Presentar una reclamación ante la autoridad de protección de datos de tu país si considerás vulnerados tus derechos.</li>
         </ul>
         <p>
             Para ejercer estos derechos, escribinos a
             <a href="mailto:contacto@mundoingenieria.org">contacto@mundoingenieria.org</a>.
         </p>
 
-        <h2>8. Enlaces a sitios externos</h2>
+        <h2>11. Enlaces a sitios externos</h2>
         <p>
             Mundo Ingeniería puede contener enlaces a sitios de terceros. No nos hacemos
             responsables de las prácticas de privacidad ni del contenido de esos sitios.
@@ -155,7 +231,7 @@ const updatedAt = new Date('2026-05-26');
             compartir información personal con ellos.
         </p>
 
-        <h2>9. Menores de edad</h2>
+        <h2>12. Menores de edad</h2>
         <p>
             El sitio no está dirigido a menores de 14 años. No recopilamos
             intencionalmente datos personales de menores. Si sos padre, madre o tutor
@@ -163,7 +239,7 @@ const updatedAt = new Date('2026-05-26');
             eliminarla.
         </p>
 
-        <h2>10. Cambios en esta política</h2>
+        <h2>13. Cambios en esta política</h2>
         <p>
             Podemos actualizar esta política para reflejar cambios en nuestras prácticas
             o por motivos legales. Cuando lo hagamos, modificaremos la fecha de "última
@@ -171,7 +247,7 @@ const updatedAt = new Date('2026-05-26');
             revisarla periódicamente.
         </p>
 
-        <h2>11. Contacto</h2>
+        <h2>14. Contacto</h2>
         <p>
             Si tenés dudas o consultas sobre esta política de privacidad, escribinos a
             <a href="mailto:contacto@mundoingenieria.org">contacto@mundoingenieria.org</a> o a

@@ -12,6 +12,7 @@ const editor = authors.find(a => a.slug === 'jean-paul') ?? authors[0];
 <MainGridLayout
     title="Sobre Mundo Ingeniería"
     description="Biblioteca digital de conocimiento técnico práctico sobre arquitectura, construcción, maquinaria pesada e ingeniería básica."
+    canonical="https://www.mundoingenieria.org/about/"
     showSidebar={false}
 >
     <article class="max-w-3xl mx-auto">
@@ -91,21 +92,30 @@ const editor = authors.find(a => a.slug === 'jean-paul') ?? authors[0];
             </ul>
         </section>
 
-        <!-- Equipo editorial -->
+        <!-- Editor / responsable editorial -->
         <section class="mb-12 p-6 md:p-8 rounded-2xl bg-black/[0.025] dark:bg-white/[0.04] border border-black/[0.05] dark:border-white/[0.05]">
             <p class="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--primary)] font-semibold mb-3">
-                Equipo editorial
+                Editor y responsable
             </p>
             <h2 class="text-2xl font-bold tracking-tight mb-1 text-[var(--deep-text)] dark:text-white/95">
-                Equipo Mundo Ingeniería
+                Jean Paul Mamani Coaquira
             </h2>
-            <p class="text-sm text-black/55 dark:text-white/55 mb-4">Edición y revisión de contenidos</p>
+            <p class="text-sm text-black/55 dark:text-white/55 mb-4">
+                Editor de Mundo Ingeniería · Perú
+            </p>
+            <p class="text-black/70 dark:text-white/70 leading-relaxed mb-3">
+                Selecciono los temas, redacto con apoyo de herramientas de
+                inteligencia artificial como asistente y reviso cada artículo antes
+                de publicarlo. Verifico cifras, contrasto con manuales y normativas
+                técnicas cuando aplica, y reescribo para que el lenguaje sea claro
+                sin perder precisión.
+            </p>
             <p class="text-black/70 dark:text-white/70 leading-relaxed">
-                Detrás de Mundo Ingeniería hay un equipo editorial pequeño que selecciona los temas,
-                redacta con apoyo de herramientas de inteligencia artificial como asistente, y
-                revisa cada artículo antes de publicarlo. Verificamos cifras, contrastamos con
-                manuales y normativas técnicas cuando aplica, y reescribimos para que el lenguaje
-                sea claro sin perder precisión.
+                Mi objetivo con Mundo Ingeniería es que un estudiante, un operador
+                o un profesional que necesita repasar un concepto encuentre acá una
+                explicación clara y honesta, sin tener que leer un manual entero.
+                Si encontrás un error o querés proponer un tema, escribime a
+                <a href="mailto:contacto@mundoingenieria.org" class="text-[var(--primary)] underline underline-offset-2 hover:no-underline">contacto@mundoingenieria.org</a>.
             </p>
         </section>
 
