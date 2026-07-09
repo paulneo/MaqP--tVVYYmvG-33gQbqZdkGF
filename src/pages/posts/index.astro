@@ -1,0 +1,96 @@
+---
+// Página índice de todos los artículos en /posts/.
+// Muestra los últimos posts publicados en una grilla simple con paginación.
+// Se hizo pública porque un sitio externo referencia esta URL y antes daba 404.
+import { Icon } from 'astro-icon/components'
+import MainGridLayout from '../../layouts/MainGridLayout.astro'
+import PostCard from '../../components/PostCard.astro'
+import Pagination from '../../components/control/Pagination.astro'
+import { getSortedPosts } from '../../utils/content-utils'
+import { getPostUrlBySlug } from '../../utils/url-utils'
+import { PAGE_SIZE } from '../../constants/constants'
+
+const allPosts = await getSortedPosts()
+const posts = allPosts.slice(0, PAGE_SIZE)
+const totalPosts = allPosts.length
+const totalPages = Math.ceil(totalPosts / PAGE_SIZE)
+
+const renderCard = (entry: any, size: 'sm' | 'md' | 'lg' = 'sm') => ({
+    entry,
+    title: entry.data.title,
+    tags: entry.data.tags,
+    category: entry.data.category,
+    published: entry.data.published,
+    url: getPostUrlBySlug(entry.slug),
+    image: entry.data.image,
+    description: entry.data.description,
+    draft: entry.data.draft,
+    size,
+})
+
+const pageForPagination = {
+    currentPage: 1,
+    lastPage: totalPages,
+    total: totalPosts,
+    size: PAGE_SIZE,
+    start: 0,
+    end: posts.length - 1,
+    url: {
+        current: '/posts/',
+        next: totalPages > 1 ? '/2/' : undefined,
+        prev: undefined,
+    },
+}
+---
+
+<MainGridLayout
+    title="Todos los artículos"
+    description="Índice de todos los artículos publicados en Mundo Ingeniería. Guías técnicas, análisis y comparativas sobre maquinaria pesada, mecánica automotriz, construcción e ingeniería aplicada."
+    canonical="https://www.mundoingenieria.org/posts/"
+>
+    <section class="max-w-5xl mx-auto">
+        <!-- Header -->
+        <header class="mb-10 md:mb-14 text-center">
+            <p class="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--primary)] font-semibold mb-3">
+                Biblioteca editorial
+            </p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.02em] leading-[1.05] text-[var(--deep-text)] dark:text-white/95 mb-4">
+                Todos los artículos
+            </h1>
+            <p class="text-lg md:text-xl text-black/60 dark:text-white/60 max-w-2xl mx-auto leading-relaxed">
+                {totalPosts} publicaciones sobre maquinaria pesada, mecánica automotriz,
+                ingeniería aplicada y construcción. Ordenados por fecha de publicación.
+            </p>
+
+            <!-- Quick links a categorías -->
+            <div class="mt-8 flex flex-wrap justify-center gap-2">
+                <a href="/categorias/" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-black/[0.04] dark:bg-white/[0.06] text-black/70 dark:text-white/70 hover:bg-[var(--primary)] hover:text-white transition text-xs md:text-sm font-medium">
+                    <Icon name="material-symbols:category" class="w-3.5 h-3.5" />
+                    Ver por categoría
+                </a>
+                <a href="/glosario/" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-black/[0.04] dark:bg-white/[0.06] text-black/70 dark:text-white/70 hover:bg-[var(--primary)] hover:text-white transition text-xs md:text-sm font-medium">
+                    <Icon name="material-symbols:menu-book" class="w-3.5 h-3.5" />
+                    Glosario técnico
+                </a>
+                <a href="/rss.xml" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-black/[0.04] dark:bg-white/[0.06] text-black/70 dark:text-white/70 hover:bg-[var(--primary)] hover:text-white transition text-xs md:text-sm font-medium">
+                    <Icon name="fa6-solid:rss" class="w-3.5 h-3.5" />
+                    RSS
+                </a>
+            </div>
+        </header>
+
+        <!-- Grilla de posts -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+            {posts.map((entry: any) => (
+                <PostCard {...renderCard(entry, 'sm')} />
+            ))}
+        </div>
+
+        <!-- Paginación -->
+        {totalPages > 1 && (
+            <div class="mt-12 md:mt-16">
+                <Pagination page={pageForPagination} />
+            </div>
+        )}
+    </section>
+</MainGridLayout>

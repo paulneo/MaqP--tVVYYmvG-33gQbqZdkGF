@@ -26,7 +26,9 @@ const VALID_CATEGORIES = [
   'arquitectura',
   'construccion',
   'maquinaria-pesada',
+  'mecanica-automotriz',
   'ingenieria-basica',
+  'electricidad',
   'glosario-y-guias',
 ]
 

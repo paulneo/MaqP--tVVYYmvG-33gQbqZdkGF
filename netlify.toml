@@ -84,6 +84,58 @@
   status = 301
   force = true
 
+# ── Duplicados consolidados (canibalizacion SEO detectada) ─────────────
+# Cuando dos posts trataban el mismo tema, dejamos el mas completo y
+# redirigimos el otro. Google transfiere el ranking al ganador.
+
+# Manipulador telescopico Bobcat: keys iguales en orden distinto
+[[redirects]]
+  from = "/posts/bobcat-manipulador-telescopico"
+  to = "/posts/manipulador-telescopico-bobcat"
+  status = 301
+  force = true
+
+# Typo: caragadores -> cargadores
+[[redirects]]
+  from = "/posts/tipos-caragadores-frontales"
+  to = "/posts/tipos-cargadores-frontales"
+  status = 301
+  force = true
+
+# Con y sin guion: mini-excavadora -> miniexcavadora
+[[redirects]]
+  from = "/posts/develon-mini-excavadora"
+  to = "/posts/develon-miniexcavadora"
+  status = 301
+  force = true
+
+# Con y sin "de": analisis-aceite-* -> analisis-de-aceite-*
+[[redirects]]
+  from = "/posts/analisis-aceite-mantenimiento-proactivo-maquinaria-pesada"
+  to = "/posts/analisis-de-aceite-mantenimiento-proactivo-maquinaria-pesada"
+  status = 301
+  force = true
+
+# Anatomia camiones: version basica -> version completa
+[[redirects]]
+  from = "/posts/anatomia-basica-camiones-mineros"
+  to = "/posts/anatomia-camion-minero"
+  status = 301
+  force = true
+
+# Mammoet SK6000: 3 posts del mismo evento -> el mas SEO-friendly
+[[redirects]]
+  from = "/posts/mammoet-grua-terrestre"
+  to = "/posts/mammoet-grua-mas-grande"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/posts/mamoet-grua-terrestre"
+  to = "/posts/mammoet-grua-mas-grande"
+  status = 301
+  force = true
+
 # ── Cache HTTP ──────────────────────────────────────────────────────────
 # /_astro/* son assets con hash en el nombre (ej: /_astro/x8jf3.abc123.css),
 # así que se pueden cachear por un año — cuando el contenido cambia, Astro

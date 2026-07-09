@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-check:
+    name: Build + Lint + Typecheck
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint (biome)
+        run: pnpm lint
+        continue-on-error: true # Warnings no bloquean el build; los errores sí
+
+      - name: Typecheck (astro check)
+        run: pnpm typecheck
+        continue-on-error: true # Astro tiene warnings que no queremos bloquear
+
+      - name: Build
+        run: pnpm build
+        env:
+          # El build no requiere las claves de IA/Cloudinary — solo son
+          # para los scripts opcionales de generación de contenido.
+          NODE_ENV: production

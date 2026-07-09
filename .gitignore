@@ -30,3 +30,4 @@ pnpm-debug.log*
 bun.lock
 .cloudinary-mapping.json
 .cloudinary-mapping-remaining.json
+_archive-old-stack/
