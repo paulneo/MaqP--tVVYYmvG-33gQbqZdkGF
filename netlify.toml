@@ -1,0 +1,51 @@
+# Config de build y headers HTTP para Netlify.
+# Antes de este archivo, Netlify usaba defaults genéricos; con esto tunneamos
+# el pipeline para Astro static y agregamos cache long-lived para /_astro/*
+# (los assets con hash) + headers básicos de seguridad.
+
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  # Node y package manager
+  NODE_VERSION = "22"
+  # Astro CLI: no manda telemetría anónima (ahorra 5-10s por build)
+  ASTRO_TELEMETRY_DISABLED = "1"
+  # Astro y bundlers se optimizan solos con este flag
+  NODE_ENV = "production"
+
+# ── Cache HTTP ──────────────────────────────────────────────────────────
+# /_astro/* son assets con hash en el nombre (ej: /_astro/x8jf3.abc123.css),
+# así que se pueden cachear por un año — cuando el contenido cambia, Astro
+# genera un nombre distinto y el browser lo pide de nuevo.
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Fuentes locales rara vez cambian
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Sitemaps y RSS: cache moderado para que se refresquen cuando publiques
+[[headers]]
+  for = "/sitemap-*.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# ── Headers de seguridad para TODO el sitio ─────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
