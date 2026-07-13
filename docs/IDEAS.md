@@ -480,6 +480,107 @@ Página o subsección con:
 
 ---
 
+## 🌱 Brain dump — ideas de expansión (agrupadas por categoría)
+
+Ideas surgidas del brainstorming del 2026-07-13. Priorizadas por impacto potencial /
+complejidad. La mayoría va a quedar en modo "backlog" — solo unas pocas se ejecutan
+cada 6-12 meses.
+
+### Contenido y autoridad temática
+
+- **Reviews con affiliate** ("Los 5 mejores compresores para taller 2026") con links a
+  MercadoLibre / Amazon. Alto CTR, comisión 3-8%. 🔴 Alto impacto + baja complejidad.
+- **Base de datos de normas técnicas** explicadas (ISO, ASTM, NTP peruana). Cada norma
+  = URL indexable con explicación del alcance. NO alojar la norma (copyright), solo
+  explicarla + linkear a la fuente oficial. 🟢 Bajo esfuerzo.
+- **Análisis de accidentes / incidentes técnicos**. Casos reales con análisis educativo.
+  Alto volumen de búsqueda. 🟡 Delicado editorialmente pero muy demandado.
+- **Directorio de institutos técnicos** (SENATI, TECSUP, SENA, SENAI, etc.). Cada
+  institución = URL con carreras + info. 🟢 Bajo esfuerzo, SEO Latam sólido.
+- **Comparador universal de máquinas** con filtros por marca/capacidad/precio +
+  ranking + reviews. Monetización con featured listings + affiliate. 🟡 Media complejidad,
+  alto revenue.
+
+### Multi-formato y distribución
+
+- **YouTube channel** con videos de las calculadoras en acción + explicaciones
+  visuales. Segundo canal de tráfico, monetizable con YouTube Ads.
+- **TikTok / Reels técnicos** de 60 segundos explicando conceptos. Distribución Latam
+  fuerte, tráfico gratis al sitio.
+- **Podcast** con entrevistas a expertos + análisis de casos. Distribuido en Spotify /
+  Apple Podcasts. Barrera de producción alta.
+- **PWA (Progressive Web App)** — todo el sitio y las calculadoras funcionando offline
+  en móvil. Diferenciador FUERTE para uso EN obra sin internet. 🔴 Alto impacto.
+- **Widgets embebibles para blogs terceros** ("Powered by Mundo Ingeniería"). Otros
+  sitios embedean nuestras calculadoras → backlinks gratis + branding. **SEO play
+  extremo.**
+
+### Comunidad y engagement
+
+- **Foro / Discord de la comunidad** técnica Latam. Aumenta retención + engagement.
+  Discourse embebido o Discord server externo.
+- **Sistema Q&A técnicas** tipo Quora del nicho. Los users preguntan, respondemos vos
+  o IA. Cada pregunta = URL indexable. 🔴 Alto impacto (contenido generado por la
+  comunidad).
+- **Newsletter Pro paga** ($5/mes vía Substack). Análisis profundos, casos reales,
+  entrevistas semanales. Bajo esfuerzo + ingreso recurrente.
+
+### Monetización avanzada
+
+- **Certificaciones digitales técnicas** ("Curso operador Cat", "Mantenimiento
+  hidráulico"). Cursos + certificado descargable. Vender $100-500 por curso a
+  operadores y empresas de capacitación. **El más rentable a largo plazo.**
+- **Job board técnico**. Empresas publican vacantes de operadores/mecánicos/ingenieros;
+  users postulan directo. Monetización: $20-50 por listing. Network effect si arranca.
+- **Chatbot IA técnico** con Claude API entrenado con el contenido del sitio. Free
+  tier limitado, Pro ilimitado ($9-20/mes por user). Diferenciador máximo.
+- **Membresía Elite** ($50-100/mes). Acceso a todo + Discord privado + Q&A mensual
+  con expertos + descuentos. Pocos users pagando mucho > muchos pagando poco.
+- **API pública de calculadoras**. Otros sitios/apps consumen los cálculos con API
+  key (free tier + paid). Nicho pero rentable $50-500/mes por client.
+- **Contenido patrocinado** por marcas del rubro (Caterpillar, Volvo, Komatsu).
+  Featured posts, reviews de productos. Requiere autoridad del sitio ya establecida.
+  $200-2000 por deal cuando el sitio crezca.
+- **Marketplace de PDFs terceros** — autores externos venden sus PDFs, comisión al
+  sitio 10-20%. Escalable sin trabajo propio.
+
+### Tecnología / producto ambicioso (fase 2+)
+
+- **SaaS lite: Gestor de flota** con control de horas + mantenimientos multi-user. B2B
+  para empresas de flota. $19-49/mes. **Muy alta complejidad, no priorizar por ahora**
+  (mercado saturado, ya existen productos específicos).
+- **Simulador visual de operación** de excavadora/cargador en browser. Educativo, muy
+  compartible en redes. Complejidad muy alta, ROI incierto.
+- **App nativa mobile** con fórmulas + conversiones + fichas técnicas. Compra única
+  $5-15. Barrera de publicación en Apple/Google.
+- **Integraciones Zapier** — calculadoras conectables a workflows automatizados. Muy
+  nicho pero muy valioso para empresas.
+
+### Priorización recomendada (para próximos 6 meses)
+
+**🔴 Alto impacto + baja complejidad — empezar acá:**
+1. Reviews con affiliate MercadoLibre / Amazon
+2. Newsletter Pro (Substack, $5/mes)
+3. Sistema Q&A técnicas
+4. PWA de calculadoras (después del módulo herramientas)
+
+**🟡 Alto impacto + alta complejidad — fase 2 (mes 6+):**
+5. Certificaciones digitales
+6. Chatbot IA técnico con Claude API
+7. Job board técnico
+
+**🟢 Experimentales — probar cuando haya tiempo:**
+8. TikTok / Reels técnicos
+9. Base de datos de normas
+10. Directorio de institutos
+
+**🚫 Descartar por ahora:**
+- SaaS de flota (mercado saturado, alta complejidad)
+- Simulador de operación (ROI incierto, muy caro)
+- Podcast (barrera de producción alta, ROI incierto en Latam)
+
+---
+
 ## 📝 Ideas sueltas (todavía sin categorizar)
 
 *(Este es el buzón. Todo lo que se nos ocurra pero aún no sabemos si vale la pena,
