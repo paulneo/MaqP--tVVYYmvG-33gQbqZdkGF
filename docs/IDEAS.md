@@ -270,6 +270,75 @@ Legalmente riesgoso mantenerlos thin. Editorialmente débil.
 
 ---
 
+## 💰 Herramientas Pro y suscripciones — monetización directa
+
+**Idea clave**: además de AdSense (revenue pasivo), monetizar directamente con
+productos y servicios pagos aprovechando la audiencia y expertise del sitio.
+
+### Modelos de monetización identificados
+
+1. **Freemium en calculadoras**: básicas gratis, avanzadas paga.
+2. **Suscripción "Mundo Ingeniería Pro"**: acceso a todas las herramientas Pro,
+   guardar cálculos, exportar PDF con logo, múltiples proyectos. $9/mes o $79/año.
+3. **Productos digitales one-time**: guías PDF, templates Notion/Excel, bundles de
+   calculadoras descargables. $9-49 según tipo.
+4. **Pay-per-use** (créditos): compras 10 créditos por $9, cada cálculo consume 1-2.
+5. **Consultoría técnica** ($50-200/consulta): alta rentabilidad pero no escalable.
+
+### Herramientas Pro concretas (para construir después del MVP free)
+
+- **Costo total de propiedad (TCO)** de una máquina (vida útil + depreciación +
+  combustible + mantenimiento + operador + financiamiento).
+- **Comparador ROI** de 3 modelos side-by-side.
+- **Presupuesto detallado de obra** por m² con inputs granulares.
+- **Optimizador de flota** — dado un proyecto, cuántas máquinas de cada tipo.
+- **Análisis de aceite predictivo** — cargás resultados, te dice si es normal o alerta.
+- **Dimensionamiento hidráulico** — input caudal + presión + carga → bombas + válvulas.
+- **Planificador de mantenimiento** — genera calendario personalizado con alertas.
+
+### Opciones técnicas de implementación (por complejidad)
+
+**A — Simple**: Gumroad / Lemon Squeezy para vender productos digitales one-time.
+Sin código custom. Comisión ~10%. Ideal para arrancar y validar demanda.
+
+**B — Media**: Memberful u Outseta para membership/subscripción. Ellos manejan pagos,
+users, login; nosotros integramos widget/embed. Comisión ~5% + Stripe. Bueno cuando
+la subscripción demuestra tener demanda.
+
+**C — Avanzada**: Stripe + Supabase + Astro SSR (propio). Full control, sin
+comisiones de terceros. 2-4 semanas de código. Justificable cuando la subscripción
+llega a $500-1000 MRR.
+
+### Roadmap sugerido
+
+**Fase 1 (mes 1-2) — Validar con productos simples**:
+- Vender 1-2 productos digitales one-time vía Gumroad.
+- Ejemplos: "Pack de 5 calculadoras profesionales en Excel" ($15),
+  "Guía PDF: Mantenimiento preventivo Cat 320D" ($19).
+- Meta: 20-50 ventas en 60 días para validar disposición a pagar.
+
+**Fase 2 (mes 3-4) — Herramientas Pro con Memberful**:
+- Módulo `/herramientas/pro/` con 5-8 calculadoras avanzadas.
+- Login/pago vía Memberful.
+- Meta: 20 suscripciones activas en 3 meses = ~$180/mes MRR.
+
+**Fase 3 (mes 6-12) — Sistema propio + flagship**:
+- Migrar a stack propio si MRR pasa $500-1000.
+- Producto flagship: curso en video estructurado o consultoría paquetizada.
+
+### Proyección realista de revenue (12 meses)
+
+Con tráfico actual + crecimiento moderado + `maquinariaspesadas.org` estable:
+
+| Mes | AdSense Mundo | Productos digital | Suscripción Pro | maquinariaspesadas.org | Total mensual |
+|---|---|---|---|---|---|
+| 1-2 | $30-80 | $150-300 (una vez) | — | $700 | ~$800-1000 |
+| 3-4 | $80-150 | $300-600 (una vez) | $100-200 | $700 | ~$1000-1400 |
+| 6 | $150-300 | $200-500/mes | $300-500 | $700 | ~$1400-2000 |
+| 12 | $300-500 | $500-1000/mes | $700-1200 | $700 | ~$2200-3400 |
+
+---
+
 ## 💰 Estrategia de productos digitales (largo plazo)
 
 Idea del análisis externo del 2026-07-09: **el sitio ya tiene lo que otros creadores
