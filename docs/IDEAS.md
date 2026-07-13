@@ -313,46 +313,74 @@ de mayor intención de compra.
 
 ---
 
+## 🏗️ Estrategia dual de dominios — DECISIÓN ESTRATÉGICA
+
+Jean Paul opera **DOS dominios** en el mismo nicho técnico. La decisión estratégica
+tomada el 2026-07-13 es **mantenerlos separados con roles complementarios**:
+
+### `maquinariaspesadas.org` — Biblioteca de recursos ($700/mes)
+
+- **Stack**: WordPress + LiteSpeed (self-hosted)
+- **Rol**: distribución de manuales, cursos, catálogos, fotos y videos.
+- **Estado**: activo desde ~2018, ~1.000-3.000 posts, monetización probada con Google
+  AdSense en $700/mes.
+- **Consigna**: **NO TOCAR**. Sigue funcionando, sigue generando revenue estable.
+
+### `mundoingenieria.org` — Portal editorial (nuevo, en crecimiento)
+
+- **Stack**: Astro 5 + Netlify + Cloudinary
+- **Rol**: guías originales, calculadoras interactivas, análisis técnicos, fichas de
+  modelos, contenido educativo escrito por Jean Paul.
+- **Estado**: AdSense aprobado 2026-07-09, monetización arrancando. Potencial de
+  crecer a $100-500/mes en 6 meses con buena estrategia editorial + módulo de
+  herramientas.
+- **Consigna**: enfocado en **contenido ORIGINAL**. NO subir manuales que ya están
+  en Maquinarias Pesadas.
+
+### Cross-linking bidireccional
+
+Los dos sitios se retroalimentan con enlaces:
+
+- **Desde Mundo Ingeniería**: cuando un post hable de un modelo/tema donde
+  Maquinarias Pesadas tiene el manual, linkear con formato *"¿Necesitás el manual
+  completo? Descargalo en Maquinarias Pesadas"*.
+- **Desde Maquinarias Pesadas**: en las páginas de descarga, linkear a la guía
+  editorial en Mundo Ingeniería con *"¿Querés entender el fondo técnico?"*.
+
+**Beneficios de esta estrategia:**
+
+1. Doble revenue diversificado ($700/mes actuales + potencial de Mundo).
+2. Link juice cruzado aumenta la autoridad de ambos.
+3. Cada sitio hace lo que mejor sabe hacer (Maquinarias ranquea en queries
+   "descarga gratis manual", Mundo ranquea en queries "cómo funciona X").
+4. Cuenta AdSense de Mundo se mantiene "limpia" (sin contenido duplicado o
+   copyright dudoso que podría poner en riesgo la cuenta joven).
+
+---
+
 ## ⚠️ Ideas descartadas (con motivo, para no reconsiderarlas)
 
-### ❌ Distribuir manuales oficiales de fabricantes desde el sitio
+### ❌ Subir a Mundo Ingeniería los archivos que ya están en Maquinarias Pesadas
 
-**Idea original:** ofrecer descarga directa de manuales técnicos (Caterpillar, Komatsu,
-Volvo, etc.) que Jean Paul tiene guardados en Mega/Drive.
+**Idea original:** aprovechar el tráfico de Mundo para monetizar también los manuales
+y cursos que Jean Paul ya tiene en Mega/Drive y también en Maquinarias Pesadas.
 
 **Motivo del descarte:**
 
-Distribuir manuales protegidos por copyright sin autorización es infracción legal.
-Los riesgos concretos son:
+- **Riesgo asimétrico**: la ganancia potencial es marginal (+$50-100/mes en el mejor
+  caso) y la pérdida potencial es alta (perder la cuenta AdSense de Mundo, que tiene
+  días de aprobada).
+- **Duplicate content penalization**: si los mismos archivos están en dos dominios
+  del mismo owner, Google penaliza al "sitio nuevo" (Mundo) y prioriza al histórico
+  (Maquinarias Pesadas). Mundo pierde ranking, Maquinarias no gana nada.
+- **Riesgo cruzado**: Google podría auditar Maquinarias por "sitio hermano sospechoso",
+  poniendo en riesgo los $700/mes que ya funcionan.
+- **La cuenta AdSense de Mundo es frágil**: recién aprobada, Google observa con lupa
+  las cuentas nuevas. Un solo strike puede tirar meses de trabajo.
 
-- **AdSense suspende la cuenta** cuando detecta patrones de pirateo (los bots de Google
-  escanean sitios buscando esto). Perderíamos toda la monetización que costó semanas
-  aprobar.
-- **DMCA takedowns**: cualquier fabricante puede notificar a Google/Netlify y obligar
-  el bajado del contenido en 24-48 hs, con la mancha en el track record del dominio.
-- **Baja de ranking**: Google desprioriza sitios que detecta como distribuidores de
-  material protegido.
-- **Demanda del fabricante** (baja probabilidad en un sitio chico, pero técnicamente
-  posible; Caterpillar es especialmente activo con esto).
-- **Denuncia penal en Perú** bajo la Ley 822 de derechos de autor (baja probabilidad
-  pero existe).
-
-**Alternativas legales que dan el mismo valor al user:**
-
-1. **Curar links** a manuales gratuitos que los fabricantes publican en sus sitios
-   oficiales (Caterpillar, Volvo, Komatsu publican bastante gratis).
-2. **PDFs originales** escritos por Jean Paul basados en su experiencia (guía de
-   mantenimiento preventivo, checklist de operador, cheatsheet de fallas hidráulicas).
-   Son contenido propio, legal y diferenciador.
-3. **Fichas técnicas** con datos públicos citando fuentes oficiales — "reporting
-   técnico" es legal.
-4. **Documentos de dominio público** verificados individualmente (algunos gobiernos,
-   normas viejas liberadas, publicaciones de ONGs).
-5. **Contenido Creative Commons** (Wikimedia, OpenStax, MIT OCW).
-
-**Nueva idea:** en lugar del módulo de descargas piratas, armar **"Recursos técnicos
-curados"** con links a manuales oficiales gratuitos + PDFs originales. Esto va como
-prioridad media, ver más abajo.
+**Alternativa que aplicamos:** dejar los archivos donde están (Maquinarias Pesadas),
+y desde Mundo Ingeniería solo linkear a esos recursos cuando el post lo justifique.
+El link juice y el tráfico calificado benefician a ambos sitios.
 
 ---
 
