@@ -1,0 +1,118 @@
+---
+/**
+ * Landing del módulo /herramientas/.
+ *
+ * Muestra todas las calculadoras activas agrupadas por categoría. Se construye
+ * dinámicamente a partir del registro `src/lib/tools.ts` — cuando se agrega una
+ * herramienta nueva ahí, aparece automáticamente en esta landing.
+ */
+import { Icon } from 'astro-icon/components'
+import MainGridLayout from '../../layouts/MainGridLayout.astro'
+import {
+    getActiveTools,
+    getToolsByCategory,
+    CATEGORY_LABEL,
+    CATEGORY_ICON,
+    CATEGORY_DESCRIPTION,
+} from '../../lib/tools'
+
+const activeTools = getActiveTools()
+const grouped = getToolsByCategory()
+const totalTools = activeTools.length
+---
+
+<MainGridLayout
+    title="Herramientas y calculadoras técnicas"
+    description="Colección gratuita de calculadoras técnicas para construcción, maquinaria pesada, mecánica automotriz y arquitectura. Uso directo en el navegador, sin registro."
+    canonical="https://www.mundoingenieria.org/herramientas/"
+    showSidebar={false}
+>
+    <article class="max-w-5xl mx-auto">
+        <!-- Hero -->
+        <header class="mb-14 md:mb-20 text-center">
+            <p class="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--primary)] font-semibold mb-3">
+                Herramientas técnicas
+            </p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.02em] leading-[1.05] text-[var(--deep-text)] dark:text-white/95 mb-5">
+                Calculadoras para el trabajo real
+            </h1>
+            <p class="text-lg md:text-xl text-black/60 dark:text-white/65 max-w-2xl mx-auto leading-[1.55]">
+                {totalTools} {totalTools === 1 ? 'calculadora' : 'calculadoras'} gratis para
+                estimar cubicajes, materiales, costos de operación y más. Sin instalar nada,
+                sin registro. Diseñadas para trabajar en obra, con o sin internet.
+            </p>
+        </header>
+
+        <!-- Grid por categoría -->
+        {(Object.keys(grouped) as (keyof typeof grouped)[]).map((category) => (
+            <section class="mb-14 md:mb-16">
+                <div class="mb-6 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
+                        <Icon name={CATEGORY_ICON[category]} class="w-5 h-5" />
+                    </div>
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold tracking-tight text-[var(--deep-text)] dark:text-white/95">
+                            {CATEGORY_LABEL[category]}
+                        </h2>
+                        <p class="text-sm text-black/55 dark:text-white/55">
+                            {CATEGORY_DESCRIPTION[category]}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+                    {grouped[category].map((tool) => (
+                        <a
+                            href={`/herramientas/${tool.slug}/`}
+                            class="group relative p-5 md:p-6 rounded-2xl bg-white dark:bg-white/[0.03] border border-black/[0.07] dark:border-white/[0.08] hover:border-[var(--primary)]/30 hover:shadow-md transition-all"
+                        >
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-white transition">
+                                    <Icon name={tool.icon} class="w-5 h-5" />
+                                </div>
+                                {tool.tier === 'free' && (
+                                    <span class="ml-auto text-[0.65rem] uppercase tracking-[0.14em] font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-700 dark:text-emerald-400">
+                                        Gratis
+                                    </span>
+                                )}
+                            </div>
+                            <h3 class="text-base md:text-lg font-bold text-[var(--deep-text)] dark:text-white/95 mb-2 leading-tight group-hover:text-[var(--primary)] transition-colors">
+                                {tool.title}
+                            </h3>
+                            <p class="text-sm text-black/60 dark:text-white/60 leading-[1.5] line-clamp-3">
+                                {tool.description}
+                            </p>
+                            <div class="mt-4 inline-flex items-center gap-1 text-sm text-[var(--primary)] opacity-70 group-hover:opacity-100 transition">
+                                Abrir
+                                <Icon name="material-symbols:arrow-forward" class="w-4 h-4 group-hover:translate-x-0.5 transition" />
+                            </div>
+                        </a>
+                    ))}
+                </div>
+            </section>
+        ))}
+
+        <!-- CTA final -->
+        <section class="mt-16 pt-10 border-t border-black/[0.08] dark:border-white/[0.1]">
+            <div class="p-6 md:p-8 rounded-2xl bg-black/[0.025] dark:bg-white/[0.04] border border-black/[0.05] dark:border-white/[0.05]">
+                <p class="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--primary)] font-semibold mb-3">
+                    ¿Falta una calculadora?
+                </p>
+                <h3 class="text-xl md:text-2xl font-bold tracking-tight text-[var(--deep-text)] dark:text-white/95 mb-3">
+                    Contanos qué necesitás
+                </h3>
+                <p class="text-base text-black/65 dark:text-white/65 mb-5 leading-relaxed">
+                    Este módulo va creciendo con cada semana. Si necesitás una calculadora
+                    específica para tu obra o taller, escribinos y la agregamos.
+                </p>
+                <a
+                    href="/contacto/"
+                    class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--primary)] text-white font-medium hover:opacity-90 transition text-sm"
+                >
+                    <Icon name="material-symbols:mail-outline" class="w-4 h-4" />
+                    Contacto
+                </a>
+            </div>
+        </section>
+    </article>
+</MainGridLayout>
