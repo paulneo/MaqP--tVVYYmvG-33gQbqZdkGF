@@ -70,11 +70,6 @@ const totalTools = activeTools.length
                                 <div class="w-10 h-10 shrink-0 rounded-lg bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-white transition">
                                     <Icon name={tool.icon} class="w-5 h-5" />
                                 </div>
-                                {tool.tier === 'free' && (
-                                    <span class="ml-auto text-[0.65rem] uppercase tracking-[0.14em] font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-700 dark:text-emerald-400">
-                                        Gratis
-                                    </span>
-                                )}
                             </div>
                             <h3 class="text-base md:text-lg font-bold text-[var(--deep-text)] dark:text-white/95 mb-2 leading-tight group-hover:text-[var(--primary)] transition-colors">
                                 {tool.title}

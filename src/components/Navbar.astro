@@ -31,6 +31,7 @@ const mobileLinks = [
     url: '/categorias/ingenieria-basica/',
     external: false,
   },
+  { name: 'Herramientas', url: '/herramientas/', external: false },
   { name: 'Glosario', url: '/glosario/', external: false },
   { name: 'Sobre', url: '/about/', external: false },
 ]
@@ -136,6 +137,18 @@ const mobileLinks = [
                     </div>
                 </div>
             </div>
+
+            <a
+                href="/herramientas/"
+                class:list={[
+                    "px-3 py-2 text-sm font-medium rounded transition",
+                    isActive('/herramientas')
+                        ? "text-[var(--primary)] bg-[var(--primary)]/8"
+                        : "text-black/70 dark:text-white/70 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] hover:bg-black/[0.04] dark:hover:bg-white/[0.05]"
+                ]}
+            >
+                Herramientas
+            </a>
 
             <a
                 href="/glosario/"

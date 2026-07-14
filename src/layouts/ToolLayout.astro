@@ -88,11 +88,6 @@ const breadcrumbJsonLd = {
                     <Icon name={CATEGORY_ICON[tool.category]} class="w-3.5 h-3.5" />
                     {CATEGORY_LABEL[tool.category]}
                 </span>
-                {tool.tier === 'free' && (
-                    <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-xs font-semibold uppercase tracking-[0.1em]">
-                        Gratis
-                    </span>
-                )}
             </div>
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-0.02em] leading-[1.1] text-[var(--deep-text)] dark:text-white/95 mb-4">
                 {tool.title}

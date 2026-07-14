@@ -90,10 +90,8 @@
             {#each [{ v: 'losa', label: 'Losa' }, { v: 'columna', label: 'Columna' }, { v: 'viga', label: 'Viga' }, { v: 'zapata', label: 'Zapata' }] as opt}
                 <button
                     type="button"
-                    class="px-3 py-2.5 rounded-lg border text-sm font-medium transition"
-                    class:border-primary={elementType === opt.v}
-                    class:bg-primary-tint={elementType === opt.v}
-                    class:border-default={elementType !== opt.v}
+                    class="tool-chip"
+                    class:tool-chip-active={elementType === opt.v}
                     on:click={() => (elementType = opt.v as ElementType)}
                 >
                     {opt.label}
@@ -281,18 +279,47 @@
 </div>
 
 <style>
-    /* Utility classes locales para los botones (Tailwind arbitrary values funciona pero
-       aquí evitamos la complejidad y usamos CSS directo para las variantes de selección) */
-    .border-primary {
-        border-color: var(--primary);
+    /* Chips selectores (Losa / Columna / Viga / Zapata) — con contraste correcto
+       en ambos modos. Evitamos Tailwind arbitrary values para tener control fino
+       del look en dark mode. */
+    .tool-chip {
+        padding: 0.625rem 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: rgba(0, 0, 0, 0.03);
+        color: rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+        transition: all 0.15s;
     }
-    .border-default {
-        border-color: rgba(0, 0, 0, 0.12);
+    .tool-chip:hover {
+        background: rgba(0, 0, 0, 0.06);
+        border-color: rgba(0, 0, 0, 0.2);
     }
-    :global(.dark) .border-default {
+    :global(.dark) .tool-chip {
         border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.85);
     }
-    .bg-primary-tint {
-        background: color-mix(in oklab, var(--primary) 8%, transparent);
+    :global(.dark) .tool-chip:hover {
+        background: rgba(255, 255, 255, 0.09);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    /* Estado seleccionado — verde primario del sitio */
+    .tool-chip-active {
+        border-color: var(--primary);
+        background: color-mix(in oklab, var(--primary) 12%, transparent);
+        color: var(--primary);
+        font-weight: 600;
+    }
+    :global(.dark) .tool-chip-active {
+        border-color: var(--primary);
+        background: color-mix(in oklab, var(--primary) 18%, transparent);
+        color: var(--primary);
+    }
+    .tool-chip-active:hover {
+        background: color-mix(in oklab, var(--primary) 16%, transparent);
+        border-color: var(--primary);
     }
 </style>
