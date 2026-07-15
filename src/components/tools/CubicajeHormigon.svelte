@@ -112,7 +112,7 @@
                     bind:value={largo}
                     step="0.1"
                     min="0"
-                    class="w-full px-3 py-2.5 rounded-lg border border-black/[0.12] dark:border-white/[0.12] bg-white dark:bg-black/20 text-base focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]"
+                    class="tool-input"
                 />
             </label>
             <label class="block">
@@ -124,7 +124,7 @@
                     bind:value={ancho}
                     step="0.1"
                     min="0"
-                    class="w-full px-3 py-2.5 rounded-lg border border-black/[0.12] dark:border-white/[0.12] bg-white dark:bg-black/20 text-base focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]"
+                    class="tool-input"
                 />
             </label>
             <label class="block">
@@ -136,7 +136,7 @@
                     bind:value={espesor}
                     step="0.01"
                     min="0"
-                    class="w-full px-3 py-2.5 rounded-lg border border-black/[0.12] dark:border-white/[0.12] bg-white dark:bg-black/20 text-base focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]"
+                    class="tool-input"
                 />
             </label>
         </div>
@@ -151,7 +151,7 @@
                     bind:value={seccionA}
                     step="0.01"
                     min="0"
-                    class="w-full px-3 py-2.5 rounded-lg border border-black/[0.12] dark:border-white/[0.12] bg-white dark:bg-black/20 text-base focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]"
+                    class="tool-input"
                 />
             </label>
             <label class="block">
@@ -163,7 +163,7 @@
                     bind:value={seccionB}
                     step="0.01"
                     min="0"
-                    class="w-full px-3 py-2.5 rounded-lg border border-black/[0.12] dark:border-white/[0.12] bg-white dark:bg-black/20 text-base focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]"
+                    class="tool-input"
                 />
             </label>
             <label class="block">
@@ -175,7 +175,7 @@
                     bind:value={altura}
                     step="0.1"
                     min="0"
-                    class="w-full px-3 py-2.5 rounded-lg border border-black/[0.12] dark:border-white/[0.12] bg-white dark:bg-black/20 text-base focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]"
+                    class="tool-input"
                 />
             </label>
         </div>
@@ -192,7 +192,7 @@
                 bind:value={quantity}
                 step="1"
                 min="1"
-                class="w-full px-3 py-2.5 rounded-lg border border-black/[0.12] dark:border-white/[0.12] bg-white dark:bg-black/20 text-base focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]"
+                class="tool-input"
             />
         </label>
         <label class="block">
@@ -205,13 +205,13 @@
                 step="1"
                 min="0"
                 max="30"
-                class="w-full px-3 py-2.5 rounded-lg border border-black/[0.12] dark:border-white/[0.12] bg-white dark:bg-black/20 text-base focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]"
+                class="tool-input"
             />
         </label>
     </div>
 
     <!-- Resultados -->
-    <div class="p-5 md:p-6 rounded-xl bg-[var(--primary)]/[0.05] border border-[var(--primary)]/20">
+    <div class="tool-result-card">
         <p class="text-xs uppercase tracking-[0.18em] font-semibold text-[var(--primary)] mb-4">
             Resultado
         </p>
@@ -231,28 +231,28 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <div class="p-3 rounded-lg bg-white/60 dark:bg-black/20 backdrop-blur-sm">
+            <div class="tool-result-metric">
                 <p class="text-xs text-black/55 dark:text-white/55 mb-1">Cemento</p>
                 <p class="text-lg font-bold text-[var(--deep-text)] dark:text-white/95">
                     {fmt(bolsasCemento, 0)}
                 </p>
                 <p class="text-xs text-black/50 dark:text-white/50">bolsas de 42.5 kg</p>
             </div>
-            <div class="p-3 rounded-lg bg-white/60 dark:bg-black/20 backdrop-blur-sm">
+            <div class="tool-result-metric">
                 <p class="text-xs text-black/55 dark:text-white/55 mb-1">Arena</p>
                 <p class="text-lg font-bold text-[var(--deep-text)] dark:text-white/95">
                     {fmt(arenaKg, 0)}
                 </p>
                 <p class="text-xs text-black/50 dark:text-white/50">kg</p>
             </div>
-            <div class="p-3 rounded-lg bg-white/60 dark:bg-black/20 backdrop-blur-sm">
+            <div class="tool-result-metric">
                 <p class="text-xs text-black/55 dark:text-white/55 mb-1">Grava</p>
                 <p class="text-lg font-bold text-[var(--deep-text)] dark:text-white/95">
                     {fmt(gravaKg, 0)}
                 </p>
                 <p class="text-xs text-black/50 dark:text-white/50">kg</p>
             </div>
-            <div class="p-3 rounded-lg bg-white/60 dark:bg-black/20 backdrop-blur-sm">
+            <div class="tool-result-metric">
                 <p class="text-xs text-black/55 dark:text-white/55 mb-1">Agua</p>
                 <p class="text-lg font-bold text-[var(--deep-text)] dark:text-white/95">
                     {fmt(aguaLitros, 0)}
@@ -278,48 +278,5 @@
     </div>
 </div>
 
-<style>
-    /* Chips selectores (Losa / Columna / Viga / Zapata) — con contraste correcto
-       en ambos modos. Evitamos Tailwind arbitrary values para tener control fino
-       del look en dark mode. */
-    .tool-chip {
-        padding: 0.625rem 0.75rem;
-        border-radius: 0.5rem;
-        font-size: 0.875rem;
-        font-weight: 500;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        background: rgba(0, 0, 0, 0.03);
-        color: rgba(0, 0, 0, 0.75);
-        cursor: pointer;
-        transition: all 0.15s;
-    }
-    .tool-chip:hover {
-        background: rgba(0, 0, 0, 0.06);
-        border-color: rgba(0, 0, 0, 0.2);
-    }
-    :global(.dark) .tool-chip {
-        border-color: rgba(255, 255, 255, 0.12);
-        background: rgba(255, 255, 255, 0.05);
-        color: rgba(255, 255, 255, 0.85);
-    }
-    :global(.dark) .tool-chip:hover {
-        background: rgba(255, 255, 255, 0.09);
-        border-color: rgba(255, 255, 255, 0.2);
-    }
-    /* Estado seleccionado — verde primario del sitio */
-    .tool-chip-active {
-        border-color: var(--primary);
-        background: color-mix(in oklab, var(--primary) 12%, transparent);
-        color: var(--primary);
-        font-weight: 600;
-    }
-    :global(.dark) .tool-chip-active {
-        border-color: var(--primary);
-        background: color-mix(in oklab, var(--primary) 18%, transparent);
-        color: var(--primary);
-    }
-    .tool-chip-active:hover {
-        background: color-mix(in oklab, var(--primary) 16%, transparent);
-        border-color: var(--primary);
-    }
-</style>
+<!-- Estilos globales de las herramientas viven en src/components/GlobalStyles.astro -->
+

@@ -1,0 +1,116 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import LadrillosPorMetroCuadrado from '../../components/tools/LadrillosPorMetroCuadrado.svelte'
+---
+
+<ToolLayout slug="ladrillos-por-metro-cuadrado">
+    <LadrillosPorMetroCuadrado slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo funciona el cálculo</h2>
+        <p>
+            La cantidad de ladrillos necesaria por metro cuadrado depende de las
+            dimensiones nominales del ladrillo (o bloque) y del espesor de la junta
+            de mortero. Con juntas típicas de 1-1.5 cm entre piezas, estos son los
+            valores de referencia más usados en Latam:
+        </p>
+        <ul>
+            <li><strong>Ladrillo común (24×11.5×6 cm)</strong>: ~65 unidades/m²</li>
+            <li><strong>Ladrillo macizo (24×11.5×5.5 cm)</strong>: ~72 unidades/m²</li>
+            <li><strong>Ladrillo hueco cerámico (33×18×18 cm)</strong>: ~16 unidades/m²</li>
+            <li><strong>Bloque de concreto (40×20×15 cm)</strong>: ~12.5 unidades/m²</li>
+            <li><strong>Termoarcilla (30×19×24 cm)</strong>: ~16 unidades/m²</li>
+        </ul>
+
+        <h3>Sobre el desperdicio</h3>
+        <p>
+            Siempre se pide un porcentaje adicional de ladrillos para cubrir las
+            unidades que llegan rotas, las que se rompen durante el corte y los
+            recortes en esquinas, aberturas y encuentros de paredes:
+        </p>
+        <ul>
+            <li><strong>Paredes rectangulares simples</strong>: 3-5% de desperdicio</li>
+            <li><strong>Paredes con muchas aberturas</strong> (ventanas, puertas): 7-10%</li>
+            <li><strong>Muros con formas curvas o esquinas complejas</strong>: 10-15%</li>
+        </ul>
+
+        <h3>Sobre el mortero de asiento</h3>
+        <p>
+            El mortero de asiento típico usa una dosificación 1:4 (una parte de cemento
+            por cuatro de arena, más agua a punto trabajable). Un m³ de mortero requiere
+            aproximadamente <strong>350 kg de cemento</strong> (~8 bolsas) y
+            <strong>1.400 kg de arena limpia</strong>. El volumen de mortero por m² de
+            pared varía entre 18 y 32 litros según el tipo de ladrillo.
+        </p>
+        <p>
+            <strong>Importante:</strong> los valores son referencia. Consultá siempre
+            las normas locales (NTP en Perú, IRAM en Argentina, NCh en Chile) para
+            proyectos con requerimientos estructurales específicos.
+        </p>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos ladrillos entran en 1 metro cuadrado?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del tipo. Para el ladrillo común de 24×11.5×6 cm entran
+                aproximadamente <strong>65 unidades/m²</strong>. Para bloques
+                grandes de concreto (40×20 cm), solo <strong>12-13 unidades/m²</strong>.
+                La calculadora acepta 5 tipos comunes y te da el número exacto según
+                las dimensiones de tu pared.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es mejor: ladrillo hueco o macizo?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del uso. El <strong>macizo</strong> es más resistente y se
+                usa en muros portantes (estructurales). El <strong>hueco</strong> es
+                más liviano, aislante térmico y acústico, y se usa en paredes divisorias
+                no portantes. El hueco es más rápido de colocar (menos piezas por m²)
+                y consume menos mortero, pero no aguanta cargas grandes por sí solo.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto mortero necesito por metro cuadrado?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Entre <strong>18 y 32 litros por m²</strong> según el tipo de ladrillo.
+                Los bloques grandes (concreto, termoarcilla) consumen menos porque tienen
+                menos juntas. Los ladrillos comunes chicos consumen más porque tienen
+                muchas juntas por m². La calculadora te da la cantidad exacta más las
+                bolsas de cemento y kg de arena necesarios.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo descuento puertas y ventanas del cálculo?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Medí el ancho y alto de cada abertura, multiplicá para obtener los m²,
+                y sumalos todos. Cargalo en el campo <em>"Aberturas a descontar"</em>.
+                Por ejemplo, una puerta de 0.8m × 2m = 1.6 m², y una ventana de
+                1.2m × 1.5m = 1.8 m². Total a descontar: 3.4 m².
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Sirve para muros de doble hilada?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                No directamente. Esta calculadora asume una hilada simple (soga o cabeza,
+                pero una sola vuelta). Para muros de doble hilada (dos ladrillos de
+                espesor), multiplicá el resultado final por 2. Alternativamente, cargá
+                <strong>"Cantidad de paredes iguales" = 2</strong> con la misma dimensión.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

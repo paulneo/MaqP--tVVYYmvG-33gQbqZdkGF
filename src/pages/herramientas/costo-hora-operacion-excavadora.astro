@@ -1,0 +1,148 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import CostoHoraOperacion from '../../components/tools/CostoHoraOperacion.svelte'
+---
+
+<ToolLayout slug="costo-hora-operacion-excavadora">
+    <CostoHoraOperacion slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula el costo por hora</h2>
+        <p>
+            El costo real de operar una máquina no es solo el combustible: hay que sumar
+            <strong>5 componentes</strong> que muchos operadores subestiman. La fórmula
+            estándar de la industria es:
+        </p>
+        <p class="text-center text-lg font-mono bg-black/[0.03] dark:bg-white/[0.05] p-3 rounded-lg">
+            Costo/hora = Depreciación + Combustible + Mantenimiento + Operador + Overhead
+        </p>
+
+        <h3>1. Depreciación</h3>
+        <p>
+            Es la pérdida de valor de la máquina a lo largo del tiempo. Se calcula como:
+            <code>(precio de compra − valor residual) / horas totales de vida útil</code>.
+            Una excavadora clase 20 T se estima entre <strong>8-12 años</strong> con
+            <strong>1.500 hs/año</strong>, valor residual <strong>15-25%</strong> del
+            precio de compra. Esto suele ser el componente más grande del costo.
+        </p>
+
+        <h3>2. Combustible</h3>
+        <p>
+            Consumo típico de excavadora 20 T: <strong>18-25 litros/hora</strong> según
+            marca, año, mantenimiento y tipo de trabajo. Un cargador frontal grande
+            (988H) consume 45-60 l/h. Un camión minero de 100 T, más de 100 l/h. El
+            precio del diesel varía mucho por país — en Latam entre USD 0.9 y 1.4/litro
+            en 2026.
+        </p>
+
+        <h3>3. Mantenimiento y repuestos</h3>
+        <p>
+            Regla práctica de fabricantes (Caterpillar, Volvo, Komatsu): un
+            <strong>6-10% del precio de compra anual</strong> en mantenimiento
+            preventivo, cambios de filtros y aceites, repuestos menores y correctivos.
+            Máquinas viejas o con abuso operativo suben a 12-15%.
+        </p>
+
+        <h3>4. Operador</h3>
+        <p>
+            El salario mensual del operador dividido por las horas laborales
+            (típicamente <strong>176 hs/mes</strong> = 44 hs/sem × 4 semanas), más las
+            cargas sociales (aportes patronales, seguridad social, indemnizaciones).
+            En Latam, las cargas suelen ir del <strong>25% al 45%</strong> según el país.
+        </p>
+
+        <h3>5. Overhead / margen administrativo</h3>
+        <p>
+            Costos indirectos: seguros de la máquina, impuestos, transporte al sitio,
+            supervisión, contabilidad, financiamiento si la máquina fue comprada a
+            crédito. Típicamente <strong>8-15%</strong> del subtotal de los 4 primeros
+            componentes.
+        </p>
+
+        <h3>¿Para qué sirve este cálculo?</h3>
+        <ul>
+            <li>
+                <strong>Presupuestar servicios</strong> — cuando cotizás alquiler por
+                hora, el precio de venta debe ser <em>costo por hora × margen deseado</em>.
+                Un margen razonable en Latam es 20-40% sobre el costo.
+            </li>
+            <li>
+                <strong>Comparar comprar vs alquilar</strong> — si vas a usar la máquina
+                menos de 800-1.000 hs/año, muchas veces alquilar es más rentable.
+            </li>
+            <li>
+                <strong>Detectar máquinas ineficientes</strong> — si tu costo real por
+                hora es mucho más alto que el promedio del rubro, tenés un problema
+                (consumo excesivo, mantenimiento pobre, operador ineficiente).
+            </li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto cuesta operar una excavadora Cat 320D por hora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con los defaults de la calculadora (compra USD 180k, vida útil 10 años,
+                1.500 hs/año, combustible USD 1.10/l, operador USD 1.200 + 30% cargas),
+                el costo total sale aproximadamente <strong>USD 55-65 por hora</strong>.
+                Este es un rango típico para excavadoras clase 20 T en Latam. Marcas
+                premium como Caterpillar o Volvo suelen estar arriba; Sany o LiuGong,
+                abajo.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Debería incluir el transporte al sitio de trabajo?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende. Si es un trabajo largo (más de una semana en el mismo lugar),
+                el transporte se factura por separado (movilización + desmovilización).
+                Si son trabajos cortos en distintos sitios, sí conviene prorratearlo
+                dentro del overhead. Regla: si el transporte representa más del 5% del
+                ingreso total del trabajo, factuarlo por separado.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué pasa si la máquina está financiada con crédito?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Los intereses del financiamiento se suman al overhead. Regla práctica:
+                para una máquina financiada a 5 años con tasa del 12% anual, el costo
+                financiero adicional es aproximadamente <strong>5-8% del precio de
+                compra por año</strong> — subí el overhead de 10% default a 18-25%
+                para capturarlo.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué la depreciación aparece tan alta comparada con el mantenimiento?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Porque la máquina pierde una gran parte de su valor en el primer 30%
+                de su vida útil. Una excavadora nueva de USD 180k, en 10 años, con 20%
+                de residual, pierde USD 144k / 15.000 hs = <strong>USD 9.60/hora</strong>{' '}
+                solo en depreciación. El mantenimiento anual (~8% × USD 180k = 14.4k) /
+                1.500 hs = <strong>USD 9.60/hora</strong>. Suelen empatar. Máquinas
+                viejas amortizadas tienen depreciación menor pero mantenimiento más alto.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿A qué precio conviene alquilar la excavadora a un cliente?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Regla: <strong>costo total × 1.30 a 1.50</strong> para cubrir riesgos
+                y ganancia razonable. Si tu costo real es USD 60/hora, alquilás entre
+                <strong>USD 78 y 90 por hora</strong>. Si el trabajo es en zona alejada
+                o con exigencia alta (24/7), subí el margen a 1.60-2.00.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

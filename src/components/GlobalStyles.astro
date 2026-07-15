@@ -302,5 +302,109 @@ color_set({
     animation-delay: 400ms;
 }
 
+/* ─── Herramientas / calculadoras ────────────────────────────────────── */
+/* Estilos compartidos por todos los componentes Svelte del módulo         */
+/* /herramientas/. Se definen a nivel global (sin :global) porque los       */
+/* Svelte components dentro de una isla ya renderizan a nivel document.    */
+
+.tool-input {
+    width: 100%;
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+.tool-input:hover {
+    border-color: rgba(0, 0, 0, 0.24);
+}
+.tool-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 20%, transparent);
+}
+.tool-input::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+html.dark .tool-input {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.95);
+}
+html.dark .tool-input:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.08);
+}
+html.dark .tool-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.tool-chip {
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: rgba(0, 0, 0, 0.02);
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: center;
+}
+.tool-chip:hover {
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.24);
+}
+html.dark .tool-chip {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.85);
+}
+html.dark .tool-chip:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.24);
+}
+.tool-chip-active {
+    border-color: var(--primary);
+    background: color-mix(in oklab, var(--primary) 12%, transparent);
+    color: var(--primary);
+    font-weight: 600;
+}
+.tool-chip-active:hover {
+    background: color-mix(in oklab, var(--primary) 16%, transparent);
+    border-color: var(--primary);
+}
+html.dark .tool-chip-active {
+    background: color-mix(in oklab, var(--primary) 20%, transparent);
+    color: var(--primary);
+}
+
+.tool-result-card {
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    background: color-mix(in oklab, var(--primary) 5%, white);
+    border: 1px solid color-mix(in oklab, var(--primary) 20%, transparent);
+}
+html.dark .tool-result-card {
+    background: color-mix(in oklab, var(--primary) 8%, rgba(255, 255, 255, 0.03));
+    border-color: color-mix(in oklab, var(--primary) 30%, transparent);
+}
+
+.tool-result-metric {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+}
+html.dark .tool-result-metric {
+    background: rgba(255, 255, 255, 0.06);
+}
+
 
 </style>
