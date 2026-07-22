@@ -12,8 +12,8 @@ tags:
   - "engranajes"
   - "frenos"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como_funcionan_los_frenos_en_los_transejes_automaticos
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

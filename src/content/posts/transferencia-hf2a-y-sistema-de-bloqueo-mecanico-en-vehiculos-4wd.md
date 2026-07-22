@@ -12,8 +12,8 @@ tags:
   - "traccion"
   - "conduccion"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/transferencia-hf2a-y-sistema-de-bloqueo-mecanico-en-vehiculos-4wd8
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

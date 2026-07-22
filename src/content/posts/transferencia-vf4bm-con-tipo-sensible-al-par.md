@@ -12,8 +12,8 @@ tags:
   - "traccion"
   - "diferencial-central"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/transferencia-vf4bm-con-tipo-sensible-al-par
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

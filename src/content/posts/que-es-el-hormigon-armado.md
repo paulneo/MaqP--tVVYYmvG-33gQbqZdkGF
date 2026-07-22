@@ -13,7 +13,7 @@ tags:
   - estructuras
   - materiales
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-el-hormigon-armado
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: false
 faq:
   - q: ¿Cuál es la diferencia entre hormigón y hormigón armado?
@@ -25,7 +25,7 @@ faq:
 related:
   - tipos-de-cimentacion-en-construccion
   - diferencia-entre-viga-y-columna
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 El **hormigón armado** es el material estructural más usado en el mundo. Casi

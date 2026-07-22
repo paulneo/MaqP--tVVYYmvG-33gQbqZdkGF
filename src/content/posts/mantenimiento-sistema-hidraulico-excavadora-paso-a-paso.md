@@ -15,8 +15,8 @@ tags:
   - calendario-mantenimiento
   - maquinaria-pesada
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/mantenimiento-sistema-hidraulico-excavadora-paso-a-paso
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: true
 faq:
   - q: "¿Cuál es el item de mantenimiento más importante de todos?"

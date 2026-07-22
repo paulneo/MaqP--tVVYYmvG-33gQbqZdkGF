@@ -15,7 +15,7 @@ tags:
   - le-corbusier
   - diseño-arquitectonico
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/compresion-y-dilatacion-espacial-en-arquitectura
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuál es la altura mínima cómoda para un techo en una casa?
@@ -38,7 +38,7 @@ related:
   - firmitas-utilitas-venustas-vitrubio
   - que-son-jambas-dinteles-y-alfeizares
   - por-que-las-columnas-son-verticales
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Hay un mecanismo arquitectónico tan simple que parece tonto cuando lo

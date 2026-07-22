@@ -13,7 +13,7 @@ tags:
   - proyecto-arquitectonico
   - dibujo-tecnico
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tipos-de-planos-arquitectonicos
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: false
 faq:
   - q: ¿Cuántos planos lleva un proyecto arquitectónico?
@@ -25,7 +25,7 @@ faq:
 related:
   - que-es-un-plano-arquitectonico
   - diferencia-entre-arquitectura-y-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Un proyecto arquitectónico no es un solo plano: es un **conjunto de planos**

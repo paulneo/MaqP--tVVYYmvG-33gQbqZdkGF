@@ -15,8 +15,8 @@ tags:
   - placa-oblicua
   - caudal-variable
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como-funciona-la-bomba-hidraulica-de-una-excavadora
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: true
 faq:
   - q: "¿Por qué la bomba hidráulica tiene 'caudal variable'?"

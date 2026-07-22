@@ -15,8 +15,8 @@ tags:
   - pascal
   - maquinaria-pesada
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-un-sistema-hidraulico-en-una-excavadora
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: true
 faq:
   - q: "¿Cuál es la diferencia entre sistema hidráulico y neumático?"

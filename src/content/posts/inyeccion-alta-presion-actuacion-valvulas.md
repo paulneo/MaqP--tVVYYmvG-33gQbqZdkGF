@@ -1,9 +1,9 @@
 ---
-title: "Inyección de alta presión y actuación electrónica de válvulas en motores ACERT"
-published: 2026-08-16
+title: "Inyección de alta presión y actuación de válvulas en ACERT"
+published: 2026-07-14
 draft: false
 featured: false
-description: "El sistema ACERT redefinió la inyección diesel: presiones de hasta 2.000 bar, múltiples inyecciones por ciclo, y control electrónico de válvulas. Explicamos HEUI, MEUI, common rail y cómo la ECU coordina todo."
+description: "Los motores ACERT usan hasta 2.000 bar de presión, múltiples inyecciones y control electrónico de válvulas. Explicamos HEUI, MEUI y common rail."
 category: mecanica-automotriz
 formato: guia
 nivel: avanzado
@@ -14,8 +14,8 @@ tags:
   - "common-rail"
   - "sistema-acert"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/inyeccion-alta-presion-actuacion-valvulas
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: true
 faq:
   - q: "¿Cuál es la diferencia entre HEUI, MEUI y common rail?"

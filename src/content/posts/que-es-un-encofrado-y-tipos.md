@@ -13,7 +13,7 @@ tags:
   - hormigon
   - construccion
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-un-encofrado-y-tipos
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuándo se puede retirar el encofrado?
@@ -37,7 +37,7 @@ related:
   - que-es-el-hormigon-armado
   - que-es-una-zapata-de-cimentacion
   - tipos-de-cimentacion-en-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Un **encofrado** es el molde temporal que contiene al hormigón fresco

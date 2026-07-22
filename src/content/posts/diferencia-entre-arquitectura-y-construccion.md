@@ -13,7 +13,7 @@ tags:
   - construccion
   - profesiones
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/diferencia-entre-arquitectura-y-construccion
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Un arquitecto puede dirigir una obra?
@@ -37,7 +37,7 @@ related:
   - tipos-de-planos-arquitectonicos
   - que-es-un-plano-arquitectonico
   - tipos-de-estructuras-en-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 **Arquitectura** y **construcción** son palabras que se usan a veces como

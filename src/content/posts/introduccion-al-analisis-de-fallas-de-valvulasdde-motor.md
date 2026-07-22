@@ -12,8 +12,8 @@ tags:
   - "motor"
   - "fallas-de-valvulas"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/introducción-al-analisis-de-fallas-de-valvulasdde-motor
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: false
 ---
 

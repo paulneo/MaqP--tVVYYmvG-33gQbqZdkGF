@@ -1,9 +1,9 @@
 ---
-title: "Diagnóstico de fallas en motores ACERT: Cat ET, códigos DFC y flujo de trabajo del técnico"
-published: 2026-08-20
+title: "Diagnóstico de fallas en motores ACERT: Cat ET, códigos DFC y flujo"
+published: 2026-07-21
 draft: false
 featured: false
-description: "Un motor ACERT que empieza a fallar necesita diagnóstico electrónico serio. Explicamos el uso de Cat ET, los códigos DFC más comunes, el flujo lógico para diagnosticar y las herramientas de taller indispensables."
+description: "Un motor ACERT que falla necesita diagnóstico electrónico. Explicamos Cat ET, los códigos DFC comunes, flujo diagnóstico y herramientas."
 category: mecanica-automotriz
 formato: guia
 nivel: avanzado
@@ -14,8 +14,8 @@ tags:
   - "sistema-acert"
   - "servicio-caterpillar"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/diagnostico-fallas-acert-herramientas
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: true
 faq:
   - q: "¿Qué es Cat ET y por qué es esencial?"

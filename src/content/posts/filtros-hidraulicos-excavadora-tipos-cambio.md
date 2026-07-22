@@ -15,8 +15,8 @@ tags:
   - contaminacion-hidraulica
   - filtro-plexus
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/filtros-hidraulicos-excavadora-tipos-cambio
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: true
 faq:
   - q: "¿Puedo lavar un filtro hidráulico para reutilizarlo?"

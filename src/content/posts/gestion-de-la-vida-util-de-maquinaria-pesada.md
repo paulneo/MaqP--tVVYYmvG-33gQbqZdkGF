@@ -11,8 +11,8 @@ tags:
   - "vida-util"
   - "maquinaria-pesada"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/gestion-de-la-vida-util-de-maquinaria-pesada
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: false
 ---
 

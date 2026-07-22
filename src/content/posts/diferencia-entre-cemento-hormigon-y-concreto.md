@@ -15,7 +15,7 @@ tags:
   - materiales-construccion
   - definiciones
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/diferencia-entre-cemento-hormigon-y-concreto
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuál es más resistente, el cemento o el concreto?
@@ -31,7 +31,7 @@ related:
   - que-es-la-resistencia-del-hormigon-fc
   - como-se-calcula-el-cubicaje-de-hormigon
   - cuanto-cemento-para-una-losa-de-concreto
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 El error más común en una ferretería: pedís "cemento" cuando lo que necesitás es concreto premezclado. O al revés, pedís "hormigón" y no saben de qué hablás porque en ese país le dicen "concreto". Estos tres términos se confunden constantemente, y la diferencia importa tanto para hablar con proveedores como para entender qué material usás en cada aplicación.

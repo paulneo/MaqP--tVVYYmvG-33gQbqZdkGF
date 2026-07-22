@@ -9,8 +9,8 @@ formato: concepto
 nivel: intermedio
 tags: []
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/dodge-durango
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

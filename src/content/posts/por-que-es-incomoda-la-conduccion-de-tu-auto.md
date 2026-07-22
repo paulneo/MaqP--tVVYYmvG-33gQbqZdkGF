@@ -12,8 +12,8 @@ tags:
   - "carroceria"
   - "volante"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_es_incomoda_la_conduccion_de_tu_auto
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

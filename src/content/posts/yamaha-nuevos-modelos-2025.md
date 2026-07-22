@@ -14,8 +14,8 @@ tags:
   - "tecnologia"
   - "noticias"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/yamaha-nuevos
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: false
 ---
 

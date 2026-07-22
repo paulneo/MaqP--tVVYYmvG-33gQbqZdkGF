@@ -11,8 +11,8 @@ tags:
   - "obd"
   - "diagnostico"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/principio-del-obd-como-funciona-el-diagnostico-a-bordo-vehiculos
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

@@ -12,8 +12,8 @@ tags:
   - "volkswagen"
   - "diseno-de-motor"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/motor-2.0L-de-volkswagen-diseno-estructura-funcionamiento
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

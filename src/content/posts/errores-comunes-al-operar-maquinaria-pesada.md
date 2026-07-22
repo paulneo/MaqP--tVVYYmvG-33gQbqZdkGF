@@ -13,7 +13,7 @@ tags:
   - seguridad
   - operacion
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/errores-comunes-al-operar-maquinaria-pesada
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: false
 faq:
   - q: ¿Quién es responsable de los daños por mala operación?
@@ -25,7 +25,7 @@ faq:
 related:
   - que-es-una-excavadora
   - diferencia-retroexcavadora-cargador-frontal
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 La maquinaria pesada es responsable de buena parte de los accidentes

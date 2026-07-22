@@ -1,9 +1,9 @@
 ---
 title: "Historia de las normas EPA para emisiones diesel: de 1988 a 2010"
-published: 2026-07-25
+published: 2026-06-16
 draft: false
 featured: false
-description: "Cómo la EPA endureció los límites de emisiones diesel entre 1988 y 2010, y por qué esa evolución obligó a la industria a inventar CGI, DPF, SCR y ACERT."
+description: "Recorrido histórico por las normas EPA de emisiones diesel: Tier 1 a Tier 4 Final, qué exigía cada una y cómo cambió el motor diesel moderno."
 category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
@@ -13,8 +13,8 @@ tags:
   - "motor-diesel"
   - "regulacion-ambiental"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/historia-normas-epa-diesel
-author: jean-paul
-reviewedBy: jean-paul
+author: normativa-global
+reviewedBy: normativa-global
 aiAssisted: true
 faq:
   - q: "¿Qué es la EPA y por qué regula motores diesel?"

@@ -13,7 +13,7 @@ tags:
   - zapata
   - hormigon-armado
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-una-zapata-de-cimentacion
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuál es la diferencia entre zapata y losa de cimentación?
@@ -37,7 +37,7 @@ related:
   - tipos-de-cimentacion-en-construccion
   - que-es-el-hormigon-armado
   - tipos-de-suelo-en-ingenieria-civil
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Una **zapata** es un elemento estructural de cimentación que recibe la

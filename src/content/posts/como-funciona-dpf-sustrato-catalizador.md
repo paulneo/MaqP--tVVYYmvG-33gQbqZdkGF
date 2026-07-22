@@ -1,9 +1,9 @@
 ---
 title: "Cómo funciona un DPF por dentro: sustrato, catalizador y washcoat"
-published: 2026-08-02
+published: 2026-06-24
 draft: false
 featured: false
-description: "El DPF por dentro es una matriz cerámica con catalizador de platino y washcoat. Explicamos qué es cada capa, qué materiales se usan (cordierite vs carburo de silicio) y por qué."
+description: "Sustrato cerámico, catalizador de platino/paladio y washcoat: cómo trabajan las capas internas del DPF para atrapar y oxidar el hollín."
 category: mecanica-automotriz
 formato: concepto
 nivel: avanzado
@@ -14,8 +14,8 @@ tags:
   - "catalizador-platino"
   - "sustrato-ceramico"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/como-funciona-dpf-sustrato-catalizador
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: true
 faq:
   - q: "¿Qué es el sustrato de un DPF?"

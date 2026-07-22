@@ -13,7 +13,7 @@ tags:
   - terminos-construccion
   - construccion
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/glosario-tecnico-construccion-30-terminos
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Por qué los términos de construcción cambian entre países?
@@ -33,7 +33,7 @@ related:
   - que-es-el-hormigon-armado
   - tipos-de-cimentacion-en-construccion
   - diferencia-entre-viga-y-columna
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Entrar en obra sin vocabulario técnico es como entrar a un quirófano sin

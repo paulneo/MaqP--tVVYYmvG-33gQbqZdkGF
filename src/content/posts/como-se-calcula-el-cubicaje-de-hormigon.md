@@ -13,7 +13,7 @@ tags:
   - calculo
   - obra
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como-se-calcula-el-cubicaje-de-hormigon
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: false
 faq:
   - q: ¿Cuánto desperdicio de hormigón hay que considerar?
@@ -25,7 +25,7 @@ faq:
 related:
   - que-es-el-hormigon-armado
   - tipos-de-cimentacion-en-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 El **cubicaje** es la cantidad de hormigón —medida en metros cúbicos

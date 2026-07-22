@@ -12,8 +12,8 @@ tags:
   - "fatiga"
   - "medidas-preventivas"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/daños-al-portadiferencial
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: false
 ---
 

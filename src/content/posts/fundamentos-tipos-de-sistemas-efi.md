@@ -12,8 +12,8 @@ tags:
   - "efi"
   - "electronica"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/fundamentos_tipos_de_sistemas_EFI
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

@@ -13,7 +13,7 @@ tags:
   - movimiento-tierras
   - maquinaria-pesada
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-una-excavadora
-author: jean-paul
+author: servicio-campo
 aiAssisted: false
 faq:
   - q: ¿Cuál es la diferencia entre una excavadora y una retroexcavadora?
@@ -25,7 +25,7 @@ faq:
 related:
   - diferencia-retroexcavadora-cargador-frontal
   - tipos-maquinaria-pesada-construccion
-reviewedBy: jean-paul
+reviewedBy: servicio-campo
 ---
 
 Una **excavadora** es una máquina pesada diseñada para mover grandes volúmenes

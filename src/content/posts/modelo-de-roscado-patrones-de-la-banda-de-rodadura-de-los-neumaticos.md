@@ -11,8 +11,8 @@ tags:
   - "llantas"
   - "neumaticos"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/modelo-de-rosado-patrones-de-la-banda-de-rodadura-de-los-neumaticos
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

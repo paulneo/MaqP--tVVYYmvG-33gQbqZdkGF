@@ -13,7 +13,7 @@ tags:
   - columna
   - estructuras
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/diferencia-entre-viga-y-columna
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: false
 faq:
   - q: ¿Una columna puede convertirse en viga?
@@ -25,7 +25,7 @@ faq:
 related:
   - que-es-el-hormigon-armado
   - tipos-de-cimentacion-en-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 **Vigas** y **columnas** son los dos elementos estructurales más básicos

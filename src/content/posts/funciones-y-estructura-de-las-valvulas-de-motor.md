@@ -11,8 +11,8 @@ tags:
   - "valvulas"
   - "motor"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/funciones-y-estructura-de-las-valvulas-de-motor
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

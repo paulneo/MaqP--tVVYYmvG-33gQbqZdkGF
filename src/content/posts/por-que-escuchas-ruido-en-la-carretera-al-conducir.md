@@ -12,8 +12,8 @@ tags:
   - "conduccion"
   - "carroceria"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_escuchas_ruido_en_la_carretera_al_conducir
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

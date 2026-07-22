@@ -1,9 +1,9 @@
 ---
-title: "Turbochargers en serie y ATAAC en motores Cat ACERT: cómo se comprime y enfría el aire"
-published: 2026-08-14
+title: "Turbochargers en serie y ATAAC en motores Cat ACERT"
+published: 2026-07-14
 draft: false
 featured: false
-description: "Los motores ACERT usan dos turbos en serie más un ATAAC (Air-to-Air Aftercooler) para lograr presiones de sobrealimentación de hasta 4 bar. Explicamos cómo funciona cada etapa y por qué la temperatura del aire importa tanto como la presión."
+description: "Los motores ACERT usan dos turbos en serie + ATAAC para presiones de hasta 4 bar. Cómo funciona cada etapa y por qué la temperatura importa."
 category: mecanica-automotriz
 formato: guia
 nivel: avanzado
@@ -14,8 +14,8 @@ tags:
   - "sobrealimentacion"
   - "sistema-acert"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/turbochargers-serie-ataac
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: true
 faq:
   - q: "¿Por qué dos turbos en serie en vez de uno solo más grande?"

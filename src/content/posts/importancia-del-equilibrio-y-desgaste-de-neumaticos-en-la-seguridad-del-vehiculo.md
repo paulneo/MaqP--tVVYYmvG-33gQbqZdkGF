@@ -13,8 +13,8 @@ tags:
   - "equilibrio"
   - "desgaste"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/importancia-del-equilibrio-y-desgaste-de-neumaticos-en-la-seguridad-del-vehiculo
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

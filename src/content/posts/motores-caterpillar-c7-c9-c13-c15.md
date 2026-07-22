@@ -1,9 +1,9 @@
 ---
 title: "Motores Caterpillar C7, C9, C13 y C15: guía comparativa"
-published: 2026-07-27
+published: 2026-06-19
 draft: false
 featured: false
-description: "Diferencias técnicas y de aplicación entre los motores Caterpillar C7, C9, C13 y C15: cilindrada, potencia, torque, aplicaciones típicas y qué modelo elegir según el trabajo."
+description: "Comparación técnica de la familia de motores Cat C7, C9, C13 y C15: potencia, torque, aplicaciones, tecnología ACERT y diferencias clave."
 category: maquinaria-pesada
 formato: comparativa
 nivel: intermedio
@@ -14,8 +14,8 @@ tags:
   - "motor-c13"
   - "motor-c15"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/motores-caterpillar-c7-c9-c13-c15
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: true
 faq:
   - q: "¿Qué diferencia hay entre el Cat C7 y C9?"

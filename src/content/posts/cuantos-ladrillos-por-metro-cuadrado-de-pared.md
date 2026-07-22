@@ -14,7 +14,7 @@ tags:
   - calculo-construccion
   - presupuesto
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cuantos-ladrillos-por-metro-cuadrado-de-pared
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: '¿Bloque de concreto o ladrillo: cuál rinde más por m²?'
@@ -30,7 +30,7 @@ related:
   - tipos-de-estructuras-en-construccion
   - cuanto-cuesta-construir-una-casa-por-metro-cuadrado-latam-2026
   - diferencia-entre-cemento-hormigon-y-concreto
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Antes de comprar ladrillos para una obra, necesitás un número concreto. No "más o menos" — un número que te permita cotizar, comparar proveedores y saber cuánto vas a gastar en mampostería. La fórmula es simple; lo que cambia es el tipo de ladrillo.

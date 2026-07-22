@@ -1,9 +1,9 @@
 ---
-title: "Mantenimiento preventivo de motores Caterpillar ACERT: guía práctica para operadores y talleres"
-published: 2026-08-18
+title: "Mantenimiento preventivo de motores Cat ACERT: guía práctica"
+published: 2026-07-17
 draft: false
 featured: false
-description: "Los motores ACERT son más limpios pero también más exigentes en mantenimiento. Repasamos los intervalos críticos, qué mirar en cada componente (CGI, DPF, inyectores, turbos) y qué NO hacer si querés que duren más de 20.000 horas."
+description: "Los motores ACERT son más limpios pero más exigentes. Repasamos los intervalos críticos, qué mirar en cada componente y qué NO hacer."
 category: mecanica-automotriz
 formato: guia
 nivel: intermedio
@@ -14,8 +14,8 @@ tags:
   - "vida-util-motor"
   - "servicio-1000-horas"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/mantenimiento-preventivo-acert
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: true
 faq:
   - q: "¿Cada cuántas horas se hace servicio a un motor ACERT?"

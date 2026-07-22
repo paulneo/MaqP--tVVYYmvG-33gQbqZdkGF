@@ -12,8 +12,8 @@ tags:
   - "carroceria"
   - "conduccion"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_sientes_brusquedad_al_conducir
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Las 5 emisiones reguladas del motor diesel: PM, NOx, HC, CO y opacidad"
-published: 2026-07-23
+published: 2026-06-14
 draft: false
 featured: false
-description: "Guía técnica de las 5 emisiones diesel que regulan EPA, Euro y las normas Latam: qué son, cómo se forman y por qué cada una es un problema ambiental y sanitario."
+description: "Cuáles son las 5 emisiones que regulan las normas EPA y Euro en motores diesel, cómo se forman, sus efectos y qué tecnologías las controlan."
 category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
@@ -14,8 +14,8 @@ tags:
   - "hidrocarburos"
   - "monoxido-carbono"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/las-emisiones-reguladas-del-motor-diesel
-author: jean-paul
-reviewedBy: jean-paul
+author: normativa-global
+reviewedBy: normativa-global
 aiAssisted: true
 faq:
   - q: "¿Qué es el particulado PM en emisiones diesel?"

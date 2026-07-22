@@ -13,8 +13,8 @@ tags:
   - "embragues"
   - "frenos"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/embrague_unidireccional_en_transmisiones_automaticas
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

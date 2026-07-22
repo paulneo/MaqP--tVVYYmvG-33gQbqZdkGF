@@ -12,8 +12,8 @@ tags:
   - "carroceria"
   - "volante"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_es_ruido_estruendo_en_la_carroceria_del_auto
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

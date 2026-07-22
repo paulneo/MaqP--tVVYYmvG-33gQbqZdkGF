@@ -14,8 +14,8 @@ tags:
   - "historia"
   - "caterpillar"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cargador-frontal
-author: jean-paul
-reviewedBy: jean-paul
+author: redaccion-maquinaria
+reviewedBy: redaccion-maquinaria
 aiAssisted: false
 faq:
   - q: "¿Cuándo se inventó el primer cargador frontal?"

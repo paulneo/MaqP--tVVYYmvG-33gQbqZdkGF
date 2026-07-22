@@ -13,7 +13,7 @@ tags:
   - cargador-frontal
   - comparativa
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/diferencia-retroexcavadora-cargador-frontal
-author: jean-paul
+author: redaccion-maquinaria
 aiAssisted: false
 faq:
   - q: ¿Cuál es más versátil, la retro o el cargador frontal?
@@ -25,7 +25,7 @@ faq:
 related:
   - que-es-una-excavadora
   - errores-comunes-al-operar-maquinaria-pesada
-reviewedBy: jean-paul
+reviewedBy: redaccion-maquinaria
 ---
 
 A simple vista parecen primas hermanas: las dos tienen ruedas grandes, una

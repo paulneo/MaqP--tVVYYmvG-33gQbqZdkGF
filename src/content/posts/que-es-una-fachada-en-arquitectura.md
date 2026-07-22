@@ -15,7 +15,7 @@ tags:
   - palladio
   - diseño-de-casa
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-una-fachada-en-arquitectura
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuál es la diferencia entre fachada y muro?
@@ -41,7 +41,7 @@ related:
   - firmitas-utilitas-venustas-vitrubio
   - por-que-las-columnas-son-verticales
   - tipos-de-planos-arquitectonicos
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 **Facies**. En latín significa cara, rostro, semblante. De ahí viene

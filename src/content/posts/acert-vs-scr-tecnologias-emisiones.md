@@ -1,9 +1,9 @@
 ---
-title: "ACERT vs SCR: dos filosofías para bajar emisiones diesel y por qué la industria eligió una"
-published: 2026-08-22
+title: "ACERT vs SCR: dos filosofías para bajar emisiones diesel"
+published: 2026-07-23
 draft: false
 featured: false
-description: "Cat apostó a ACERT — atacar el NOx dentro del cilindro. Cummins, Volvo y Detroit apostaron a SCR — tratarlo después. Comparamos ambas tecnologías, ventajas, desventajas y por qué la industria terminó adoptando SCR + DPF como estándar."
+description: "Cat apostó por ACERT (atacar el NOx en cilindro). Cummins, Volvo y Detroit apostaron por SCR (tratarlo después). Comparativa técnica."
 category: mecanica-automotriz
 formato: guia
 nivel: avanzado
@@ -14,8 +14,8 @@ tags:
   - "sistema-acert"
   - "emisiones-diesel"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/acert-vs-scr-tecnologias-emisiones
-author: jean-paul
-reviewedBy: jean-paul
+author: normativa-global
+reviewedBy: normativa-global
 aiAssisted: true
 faq:
   - q: "¿Qué es SCR y qué diferencia tiene con ACERT?"

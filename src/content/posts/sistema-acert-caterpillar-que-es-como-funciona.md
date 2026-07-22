@@ -1,9 +1,9 @@
 ---
 title: "Qué es el sistema ACERT de Caterpillar y cómo funciona"
-published: 2026-07-21
+published: 2026-06-12
 draft: false
 featured: false
-description: "El sistema ACERT combina 5 tecnologías (turbochargers en serie, CGI, DPF, inyección alta presión y actuación de válvula) para que los motores Cat cumplan EPA 2007 sin sacrificar potencia."
+description: "El sistema ACERT combina 5 tecnologías (turbos en serie, CGI, DPF, alta presión y actuación de válvula) para cumplir EPA 2007 sin sacrificar potencia."
 category: mecanica-automotriz
 formato: concepto
 nivel: intermedio
@@ -14,8 +14,8 @@ tags:
   - "emisiones-diesel"
   - "epa-2007"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/sistema-acert-caterpillar-que-es-como-funciona
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: true
 faq:
   - q: "¿Qué significa ACERT en Caterpillar?"

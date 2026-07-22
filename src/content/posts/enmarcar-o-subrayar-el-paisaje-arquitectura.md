@@ -15,7 +15,7 @@ tags:
   - machu-picchu
   - mecanismos-arquitectonicos
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/enmarcar-o-subrayar-el-paisaje-arquitectura
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Qué quiere decir 'enmarcar' un paisaje desde la arquitectura?
@@ -41,7 +41,7 @@ related:
   - que-son-jambas-dinteles-y-alfeizares
   - que-es-una-fachada-en-arquitectura
   - firmitas-utilitas-venustas-vitrubio
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Si tu casa o tu edificio tiene una vista — de mar, de montaña, de

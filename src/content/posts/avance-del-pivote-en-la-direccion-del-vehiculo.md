@@ -11,8 +11,8 @@ tags:
   - "llantas"
   - "alineacion"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/avance-del-pivote-en-la-direccion-del-vehiculo
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

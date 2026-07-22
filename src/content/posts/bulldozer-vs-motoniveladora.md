@@ -14,7 +14,7 @@ tags:
   - movimiento-tierras
   - maquinaria-pesada
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/bulldozer-vs-motoniveladora
-author: jean-paul
+author: redaccion-maquinaria
 aiAssisted: true
 faq:
   - q: ¿Cuál es más cara, una bulldozer o una motoniveladora?
@@ -38,7 +38,7 @@ related:
   - tipos-de-maquinaria-pesada-en-construccion
   - que-es-una-excavadora
   - errores-comunes-al-operar-maquinaria-pesada
-reviewedBy: jean-paul
+reviewedBy: redaccion-maquinaria
 ---
 
 A simple vista parecen primas: las dos son grandes, amarillas, con una

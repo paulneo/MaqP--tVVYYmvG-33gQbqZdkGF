@@ -12,8 +12,8 @@ tags:
   - "colision"
   - "seguridad"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tipos_y_precaucioes_de_los_cojines_de_aire_SRS
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

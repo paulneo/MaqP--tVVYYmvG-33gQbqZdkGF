@@ -1,9 +1,9 @@
 ---
-title: "Sensores y componentes del DPF: temperatura, presión y estructura interna"
-published: 2026-08-04
+title: "Sensores del DPF: temperatura, presión diferencial y estructura"
+published: 2026-06-27
 draft: false
 featured: false
-description: "El DPF no es solo un filtro: incluye sensores de temperatura y presión diferencial, distribuidor de flujo, condensate ring y aislamiento. Guía técnica de cada componente."
+description: "Cada DPF tiene 2 sensores de temperatura + 1 de presión diferencial. Explicamos cómo trabajan, dónde se ubican y qué le dicen a la ECU."
 category: mecanica-automotriz
 formato: guia
 nivel: avanzado
@@ -14,8 +14,8 @@ tags:
   - "temperatura-escape"
   - "diagnostico-motor"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/sensores-componentes-dpf
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: true
 faq:
   - q: "¿Qué sensores tiene un DPF?"

@@ -15,7 +15,7 @@ tags:
   - belleza-arquitectura
   - historia-arquitectura
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/firmitas-utilitas-venustas-vitrubio
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Quién fue Vitrubio y por qué importa todavía?
@@ -38,7 +38,7 @@ related:
   - que-son-jambas-dinteles-y-alfeizares
   - diferencia-entre-arquitectura-y-construccion
   - que-es-un-plano-arquitectonico
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Hay una fórmula con 2.000 años de antigüedad que sigue siendo la mejor

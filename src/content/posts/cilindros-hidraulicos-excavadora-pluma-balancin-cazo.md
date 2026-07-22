@@ -15,8 +15,8 @@ tags:
   - balancin
   - cazo
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cilindros-hidraulicos-excavadora-pluma-balancin-cazo
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: true
 faq:
   - q: "¿Cuál es la fuerza real que ejerce el cilindro del cazo de una excavadora?"

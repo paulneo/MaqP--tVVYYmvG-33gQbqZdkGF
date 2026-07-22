@@ -13,7 +13,7 @@ tags:
   - maquinaria-pesada
   - operacion
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/mantenimiento-basico-de-maquinaria-pesada
-author: jean-paul
+author: servicio-campo
 aiAssisted: true
 faq:
   - q: ¿Cuánto cuesta el mantenimiento de una máquina pesada por año?
@@ -40,7 +40,7 @@ related:
   - tipos-de-maquinaria-pesada-en-construccion
   - errores-comunes-al-operar-maquinaria-pesada
   - que-es-una-excavadora
-reviewedBy: jean-paul
+reviewedBy: servicio-campo
 ---
 
 Una máquina pesada bien mantenida trabaja **15.000 a 20.000 horas** antes

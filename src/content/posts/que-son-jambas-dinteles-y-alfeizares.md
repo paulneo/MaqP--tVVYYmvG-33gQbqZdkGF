@@ -15,7 +15,7 @@ tags:
   - partes-de-ventana
   - vocabulario-arquitectonico
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-son-jambas-dinteles-y-alfeizares
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuál es la diferencia entre jamba y montante?
@@ -38,7 +38,7 @@ related:
   - diferencia-entre-arquitectura-y-construccion
   - glosario-tecnico-construccion-30-terminos
   - cuantos-ladrillos-por-metro-cuadrado-de-pared
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Hay tres palabras que arquitectos y maestros de obras usan todo el tiempo,

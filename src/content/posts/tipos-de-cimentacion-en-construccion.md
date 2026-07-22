@@ -13,7 +13,7 @@ tags:
   - estructuras
   - obra
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tipos-de-cimentacion-en-construccion
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: false
 faq:
   - q: ¿Cuál es la cimentación más usada en viviendas?
@@ -26,7 +26,7 @@ related:
   - que-es-el-hormigon-armado
   - tipos-de-suelo-en-ingenieria-civil
   - diferencia-entre-viga-y-columna
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 La **cimentación** es la parte de la estructura que transmite las cargas del

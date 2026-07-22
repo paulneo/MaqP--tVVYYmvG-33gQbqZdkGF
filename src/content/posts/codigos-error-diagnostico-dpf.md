@@ -1,9 +1,9 @@
 ---
-title: "Códigos de error y diagnóstico del DPF: los más comunes y cómo resolverlos"
-published: 2026-08-10
+title: "Códigos de error del DPF: los más comunes y cómo resolverlos"
+published: 2026-07-08
 draft: false
 featured: false
-description: "Guía técnica de los códigos de error más frecuentes del DPF en motores Cat ACERT: qué significan, causas comunes y flujo de diagnóstico paso a paso."
+description: "Los 12 códigos DFC más comunes del DPF, qué significa cada uno, flujo de diagnóstico paso a paso y herramientas necesarias en taller."
 category: mecanica-automotriz
 formato: guia
 nivel: avanzado
@@ -14,8 +14,8 @@ tags:
   - "cat-et"
   - "troubleshooting"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/codigos-error-diagnostico-dpf
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: true
 faq:
   - q: "¿Qué herramienta uso para leer los códigos del DPF en un motor Cat?"

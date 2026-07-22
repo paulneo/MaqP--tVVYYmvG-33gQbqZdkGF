@@ -12,8 +12,8 @@ tags:
   - "colision"
   - "seguridad"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como_funcionan_los_cogines_de_aire_srs
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

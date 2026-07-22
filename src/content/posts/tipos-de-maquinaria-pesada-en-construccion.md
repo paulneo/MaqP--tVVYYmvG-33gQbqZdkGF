@@ -13,7 +13,7 @@ tags:
   - equipos-construccion
   - movimiento-tierras
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tipos-de-maquinaria-pesada-en-construccion
-author: jean-paul
+author: redaccion-maquinaria
 aiAssisted: true
 faq:
   - q: ¿Cuál es la maquinaria pesada más usada en una obra?
@@ -41,7 +41,7 @@ related:
   - que-es-una-excavadora
   - diferencia-retroexcavadora-cargador-frontal
   - errores-comunes-al-operar-maquinaria-pesada
-reviewedBy: jean-paul
+reviewedBy: redaccion-maquinaria
 ---
 
 La **maquinaria pesada** es el conjunto de equipos motorizados diseñados para

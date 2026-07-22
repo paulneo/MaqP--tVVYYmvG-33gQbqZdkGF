@@ -15,7 +15,7 @@ tags:
   - arquitectura-vernacular
   - sistemas-constructivos
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/estereotomico-vs-tectonico-arquitectura
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Qué significa que una arquitectura sea estereotómica?
@@ -41,7 +41,7 @@ related:
   - compresion-y-dilatacion-espacial-en-arquitectura
   - por-que-las-columnas-son-verticales
   - que-son-jambas-dinteles-y-alfeizares
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Toda la arquitectura del mundo, desde una pirámide egipcia hasta una

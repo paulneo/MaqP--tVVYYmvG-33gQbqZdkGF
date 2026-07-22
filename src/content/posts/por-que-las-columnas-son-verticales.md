@@ -15,7 +15,7 @@ tags:
   - diseño-estructural
   - hormigon-armado
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por-que-las-columnas-son-verticales
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Las columnas inclinadas son menos seguras que las verticales?
@@ -41,7 +41,7 @@ related:
   - tipos-de-estructuras-en-construccion
   - que-es-el-hormigon-armado
   - diferencia-entre-arquitectura-y-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Estuve leyendo *Varia Architectonica* de Alberto Campo Baeza este fin de

@@ -12,8 +12,8 @@ tags:
   - "carroceria"
   - "volante"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/porque_ocila_el_volante_del_auto_oscilacion_de_la_direccion
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

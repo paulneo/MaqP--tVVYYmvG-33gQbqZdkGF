@@ -1,9 +1,9 @@
 ---
 title: "Diagrama del sistema ACERT 2007: componentes y flujo de gases"
-published: 2026-07-29
+published: 2026-06-22
 draft: false
 featured: false
-description: "El diagrama completo del sistema ACERT explicado: cómo se conectan turbochargers en serie, CGI cooler, DPF, inyectores e intake valve actuation, y por dónde circula el aire y el escape."
+description: "Diagrama detallado de un motor ACERT 2007: turbos en serie, ATAAC, CGI, DPF, inyección alta presión. Flujo de aire y gases explicado paso a paso."
 category: mecanica-automotriz
 formato: guia
 nivel: avanzado
@@ -13,8 +13,8 @@ tags:
   - "diagrama-motor"
   - "flujo-gases"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/diagrama-sistema-acert-2007
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: true
 faq:
   - q: "¿Por qué el sistema ACERT usa turbochargers en serie en vez de uno solo?"

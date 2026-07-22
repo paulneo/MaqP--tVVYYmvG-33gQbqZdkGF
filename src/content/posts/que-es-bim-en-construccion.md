@@ -13,7 +13,7 @@ tags:
   - software-construccion
   - arquitectura
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-bim-en-construccion
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuál es la diferencia entre BIM y CAD?
@@ -37,7 +37,7 @@ related:
   - tipos-de-planos-arquitectonicos
   - que-es-un-plano-arquitectonico
   - tipos-de-estructuras-en-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 **BIM** son las siglas de **Building Information Modeling** — Modelado

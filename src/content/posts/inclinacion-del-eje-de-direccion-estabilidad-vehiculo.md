@@ -11,8 +11,8 @@ tags:
   - "llantas"
   - "alineacion"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/inclinacion-del-eje-de-direccion-estabilidad-vehiculo
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

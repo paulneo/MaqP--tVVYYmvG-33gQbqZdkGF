@@ -13,7 +13,7 @@ tags:
   - ensayos
   - resistencia
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-la-resistencia-del-hormigon-fc
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuál es la diferencia entre f'c y fck?
@@ -37,7 +37,7 @@ related:
   - que-es-el-hormigon-armado
   - como-se-calcula-el-cubicaje-de-hormigon
   - tipos-de-estructuras-en-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 La **resistencia del hormigón** — escrita como **f'c** en la convención

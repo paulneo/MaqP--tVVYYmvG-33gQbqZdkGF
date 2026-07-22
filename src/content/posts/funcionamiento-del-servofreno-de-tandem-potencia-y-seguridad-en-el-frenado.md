@@ -9,8 +9,8 @@ formato: concepto
 nivel: intermedio
 tags: []
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/funcionamiento-del-servofreno-de-tandem-potencia-y-seguridad-en-el-frenado
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

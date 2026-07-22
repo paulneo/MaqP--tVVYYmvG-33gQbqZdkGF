@@ -12,8 +12,8 @@ tags:
   - "bomba"
   - "motor"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/componentes_funcionamiento_sistemas_combustible
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

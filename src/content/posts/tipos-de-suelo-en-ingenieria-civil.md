@@ -13,7 +13,7 @@ tags:
   - geotecnia
   - cimentacion
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tipos-de-suelo-en-ingenieria-civil
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: false
 faq:
   - q: ¿Cómo sé qué tipo de suelo tengo en mi terreno?
@@ -25,7 +25,7 @@ faq:
 related:
   - tipos-de-cimentacion-en-construccion
   - diferencia-entre-viga-y-columna
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 El **suelo** es el cimiento literal de cualquier obra. Antes de proyectar

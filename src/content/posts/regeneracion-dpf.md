@@ -1,9 +1,9 @@
 ---
 title: "Regeneración del DPF: pasiva, activa y forzada explicadas"
-published: 2026-08-06
+published: 2026-07-01
 draft: false
 featured: false
-description: "El DPF se limpia solo quemando el hollín acumulado. Explicamos los 3 tipos de regeneración (pasiva, activa y forzada), cuándo ocurre cada una y qué hacer si falla."
+description: "Los 3 tipos de regeneración del DPF: pasiva por temperatura de operación, activa por post-inyección y forzada en taller. Cuándo ocurre cada una."
 category: mecanica-automotriz
 formato: guia
 nivel: intermedio
@@ -13,8 +13,8 @@ tags:
   - "mantenimiento-motor"
   - "combustion-hollin"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/regeneracion-dpf
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: true
 faq:
   - q: "¿Qué es la regeneración del DPF?"

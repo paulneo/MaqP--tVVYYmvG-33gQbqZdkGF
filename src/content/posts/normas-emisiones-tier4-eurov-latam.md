@@ -1,9 +1,9 @@
 ---
-title: "EPA Tier 4, Euro Stage V y normas de emisiones diesel en Latam: qué obligan y cómo afectan a operadores"
-published: 2026-08-24
+title: "EPA Tier 4, Euro Stage V y normas de emisiones diesel en Latam"
+published: 2026-07-25
 draft: false
 featured: false
-description: "Las normas EPA Tier 4 Final y Euro Stage V redefinieron el motor diesel moderno. Pero Latam va detrás — con normas más laxas o inexistentes en varios países. Repasamos qué exige cada norma y qué implica para el operador latinoamericano."
+description: "Las normas EPA Tier 4 Final y Euro Stage V redefinieron el motor diesel. Latam va detrás — repasamos qué exige cada una y qué implica en Latam."
 category: mecanica-automotriz
 formato: guia
 nivel: intermedio
@@ -14,8 +14,8 @@ tags:
   - "latam"
   - "sistema-acert"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/normas-emisiones-tier4-eurov-latam
-author: jean-paul
-reviewedBy: jean-paul
+author: normativa-global
+reviewedBy: normativa-global
 aiAssisted: true
 faq:
   - q: "¿Qué es EPA Tier 4 Final y qué motores afecta?"

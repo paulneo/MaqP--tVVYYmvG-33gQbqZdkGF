@@ -1,9 +1,9 @@
 ---
-title: "Qué es un DPF (Diesel Particulate Filter): función, tipos y montaje"
-published: 2026-07-31
+title: "Qué es un DPF (Diesel Particulate Filter): función y tipos"
+published: 2026-06-24
 draft: false
 featured: false
-description: "El DPF atrapa el hollín del escape diesel antes de que salga al ambiente. Guía completa: cómo trabaja, single vs dual, montaje horizontal o vertical, y cuándo lleva cada tipo."
+description: "El DPF es el filtro que atrapa las partículas del escape diesel. Explicamos qué es, cómo funciona, tipos, materiales y por qué es obligatorio."
 category: mecanica-automotriz
 formato: guia
 nivel: intermedio
@@ -14,8 +14,8 @@ tags:
   - "sistema-acert"
   - "emisiones-diesel"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/que-es-dpf
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: true
 faq:
   - q: "¿Qué es exactamente un DPF?"

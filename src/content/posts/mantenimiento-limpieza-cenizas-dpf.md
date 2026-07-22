@@ -1,9 +1,9 @@
 ---
 title: "Mantenimiento del DPF: cenizas, limpieza y reemplazo"
-published: 2026-08-08
+published: 2026-07-04
 draft: false
 featured: false
-description: "El DPF genera cenizas incombustibles que la regeneración no puede eliminar. Guía técnica de la limpieza de cenizas, intervalos, procedimientos y cuándo hay que reemplazarlo."
+description: "Guía completa: acumulación de cenizas del aceite, intervalos de limpieza a fondo, procesos oficiales de limpieza y cuándo reemplazar el DPF."
 category: mecanica-automotriz
 formato: guia
 nivel: intermedio
@@ -13,8 +13,8 @@ tags:
   - "limpieza-cenizas"
   - "servicio-caterpillar"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/mantenimiento-limpieza-cenizas-dpf
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: true
 faq:
   - q: "¿Qué son las cenizas del DPF?"

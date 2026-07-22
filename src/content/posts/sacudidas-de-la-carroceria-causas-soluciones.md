@@ -11,8 +11,8 @@ tags:
   - "carroceria"
   - "sacudidas"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sacudidas_de_la_carroceria_causas_soluciones
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

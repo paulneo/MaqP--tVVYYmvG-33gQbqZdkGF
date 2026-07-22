@@ -13,7 +13,7 @@ tags:
   - materiales
   - construccion
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/tipos-de-estructuras-en-construccion
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuál es la diferencia entre estructura y cimentación?
@@ -37,7 +37,7 @@ related:
   - diferencia-entre-viga-y-columna
   - tipos-de-suelo-en-ingenieria-civil
   - tipos-de-cimentacion-en-construccion
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 La **estructura** de un edificio es su esqueleto. Es el conjunto de

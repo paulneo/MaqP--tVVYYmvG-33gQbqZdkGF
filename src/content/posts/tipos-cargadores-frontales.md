@@ -15,8 +15,8 @@ tags:
   - "transmision"
   - "sistema-hidraulico"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/cat-cargador
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 faq:
   - q: "¿Cuál es la diferencia entre un cargador frontal sobre orugas y uno sobre ruedas?"

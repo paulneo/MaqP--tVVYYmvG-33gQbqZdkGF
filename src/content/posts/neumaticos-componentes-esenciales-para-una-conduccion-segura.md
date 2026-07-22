@@ -11,8 +11,8 @@ tags:
   - "neumaticos"
   - "seguridad"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/neumaticos_componentes_esenciales_para_una_conduccion_segura
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

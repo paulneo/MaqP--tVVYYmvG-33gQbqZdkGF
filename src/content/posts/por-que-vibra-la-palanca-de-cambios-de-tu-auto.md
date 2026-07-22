@@ -14,8 +14,8 @@ tags:
   - "transmision"
   - "diagnostico-mecanico"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_vibra_la_palanca_de_cambios_de_tu_auto
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 faq:
   - q: "¿Por qué vibra la palanca de cambios cuando acelero?"

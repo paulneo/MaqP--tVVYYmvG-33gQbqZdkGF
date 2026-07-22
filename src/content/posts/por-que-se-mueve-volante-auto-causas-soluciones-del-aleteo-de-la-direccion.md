@@ -12,8 +12,8 @@ tags:
   - "carroceria"
   - "volante"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/por_que_se_mueve_volante_auto_causas_soluciones_del_aleteo_de_la_direccion
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: false
 ---
 

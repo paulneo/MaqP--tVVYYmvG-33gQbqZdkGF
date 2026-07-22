@@ -15,7 +15,7 @@ tags:
   - encofrado
   - tutorial
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como-se-hace-una-losa-de-concreto-paso-a-paso
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: true
 faq:
   - q: ¿Cuánto tarda en fraguar una losa de concreto?
@@ -31,7 +31,7 @@ related:
   - que-es-un-encofrado-y-tipos
   - como-se-calcula-el-cubicaje-de-hormigon
   - cuanto-cemento-para-una-losa-de-concreto
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Una losa de concreto bien ejecutada dura décadas sin mantenimiento. Una mal ejecutada fisura, filtra agua y en el peor de los casos compromete la estructura. La diferencia entre las dos no está en el dinero invertido — está en seguir el proceso correcto en cada etapa.

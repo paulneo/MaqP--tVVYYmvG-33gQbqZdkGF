@@ -13,7 +13,7 @@ tags:
   - dibujo-tecnico
   - principiantes
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/que-es-un-plano-arquitectonico
-author: jean-paul
+author: redaccion-tecnica
 aiAssisted: false
 faq:
   - q: ¿Cómo sé qué pared es portante en un plano?
@@ -24,7 +24,7 @@ faq:
     a: Es la línea que representa el nivel del suelo natural antes de construir. Sirve como referencia para indicar profundidades de cimentación, sótanos o desniveles del proyecto.
 related:
   - tipos-de-planos-arquitectonicos
-reviewedBy: jean-paul
+reviewedBy: redaccion-tecnica
 ---
 
 Un **plano arquitectónico** es un dibujo técnico, hecho a escala, que

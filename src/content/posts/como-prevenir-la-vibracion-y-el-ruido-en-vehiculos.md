@@ -12,8 +12,8 @@ tags:
   - "amortiguador"
   - "insonorizacion"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/como_prevenir_la_vibracion_y_el_ruido_en_vehiculos1
-author: jean-paul
-reviewedBy: jean-paul
+author: servicio-campo
+reviewedBy: servicio-campo
 aiAssisted: false
 ---
 

@@ -1,9 +1,9 @@
 ---
-title: "Sistema CGI (Cooled Gas Induction) en motores Cat: válvula, cooler y flow sensor"
-published: 2026-08-12
+title: "Sistema CGI (Cooled Gas Induction) en Cat: válvula, cooler y sensor"
+published: 2026-07-11
 draft: false
 featured: false
-description: "El CGI reduce hasta 40% del NOx recirculando gases de escape enfriados. Explicamos válvula, cooler, flow sensor, cómo se controla y las fallas más comunes."
+description: "El CGI reduce hasta 40% del NOx recirculando gases de escape enfriados. Explicamos válvula, cooler, flow sensor y las fallas más comunes."
 category: mecanica-automotriz
 formato: guia
 nivel: avanzado
@@ -14,8 +14,8 @@ tags:
   - "sistema-acert"
   - "recirculacion-gases"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/acert/sistema-cgi-cooled-gas-induction
-author: jean-paul
-reviewedBy: jean-paul
+author: taller-diesel
+reviewedBy: taller-diesel
 aiAssisted: true
 faq:
   - q: "¿Qué es CGI y qué diferencia tiene con EGR?"
