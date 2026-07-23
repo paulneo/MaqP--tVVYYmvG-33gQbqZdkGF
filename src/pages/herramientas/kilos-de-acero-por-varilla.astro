@@ -1,0 +1,136 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import KilosAceroVarilla from '../../components/tools/KilosAceroVarilla.svelte'
+---
+
+<ToolLayout slug="kilos-de-acero-por-varilla">
+    <KilosAceroVarilla slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula el peso del acero</h2>
+        <p>
+            El peso de una varilla de acero por metro lineal se obtiene con la fórmula
+            estándar de la industria:
+        </p>
+        <p>
+            <code>peso (kg/m) = diámetro² (mm) / 162</code>
+        </p>
+        <p>
+            Esta fórmula deriva de la ecuación geométrica exacta:
+        </p>
+        <p>
+            <code>peso = (π / 4) × diámetro² × densidad</code>
+        </p>
+        <p>
+            donde la densidad del acero al carbono estructural es <strong>7.850 kg/m³</strong>.
+            Al pasar el diámetro de metros a milímetros y ajustar unidades, la constante
+            queda en 162,026 (que se redondea a 162 para uso práctico).
+        </p>
+
+        <h3>Diámetros nominales estándar</h3>
+        <p>
+            Los diámetros comerciales en Latam siguen la nomenclatura milimétrica europea
+            o el sistema "número" americano. Los más usados en obra:
+        </p>
+        <ul>
+            <li><strong>6 mm (#2)</strong> — 0.22 kg/m — estribos, mallas</li>
+            <li><strong>8 mm (#3)</strong> — 0.40 kg/m — estribos, refuerzo secundario</li>
+            <li><strong>10 mm (#3)</strong> — 0.62 kg/m — losas livianas</li>
+            <li><strong>12 mm (#4)</strong> — 0.89 kg/m — losas, vigas pequeñas</li>
+            <li><strong>16 mm (#5)</strong> — 1.58 kg/m — vigas, columnas</li>
+            <li><strong>20 mm (#6)</strong> — 2.47 kg/m — columnas de carga</li>
+            <li><strong>25 mm (#8)</strong> — 3.86 kg/m — estructuras pesadas</li>
+            <li><strong>32 mm (#10)</strong> — 6.32 kg/m — obras especiales</li>
+        </ul>
+        <p>
+            Estos valores son teóricos. En la práctica el peso real puede variar ±3%
+            según fabricante, proceso de producción y tolerancias de norma.
+        </p>
+
+        <h3>Cómo pedir el acero al proveedor</h3>
+        <p>
+            El acero de refuerzo se comercializa <strong>por kilogramo</strong>, no por
+            metro. Por eso esta calculadora te da el peso total: sumás los metros de
+            todos los diámetros, calculás el peso, y ese número es el que le pedís al
+            corralón.
+        </p>
+        <p>
+            <strong>Tip práctico</strong>: agregá siempre un 5-8% de sobrecompra para
+            cubrir desperdicios de corte, empalmes y ganchos de anclaje. Los planos
+            estructurales suelen dar el peso "neto"; la compra real siempre es un poco
+            más.
+        </p>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos kilos pesa una varilla de 12 mm de 12 metros?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Una varilla de <strong>12 mm de diámetro y 12 metros de largo pesa
+                aproximadamente 10,67 kg</strong>. El cálculo es <code>(12² / 162) × 12 =
+                0,888 × 12 = 10,67 kg</code>. En Latam las varillas se venden en tramos
+                de 6, 9 o 12 metros según el país.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué se usa la fórmula d²/162?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Es una simplificación de la fórmula geométrica exacta que asume acero
+                al carbono con densidad de 7.850 kg/m³. La constante 162,026 sale de
+                combinar π/4 con la densidad y las conversiones de mm a m. Se redondea a
+                162 porque es más fácil de calcular mentalmente y el error es menor al
+                0,02% — despreciable para uso en obra.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Es lo mismo acero corrugado, ADN 420 o construction steel?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Todos se refieren a <strong>acero de refuerzo para hormigón armado</strong>,
+                pero con nomenclatura distinta por país. En Argentina se llama
+                <strong>ADN 420</strong> (Acero Dureza Natural, fluencia 420 MPa); en Chile
+                <strong>A63-42H</strong>; en Perú y Colombia <strong>grado 60</strong>
+                (60.000 psi de fluencia); en México <strong>grado 42</strong>. Todos tienen
+                la misma densidad (7.850 kg/m³), por lo que el peso por metro se calcula
+                igual. Lo que cambia es la resistencia a la tracción y el uso estructural
+                permitido.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto acero necesito por m² de losa?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del tipo de losa y la carga estructural, pero como referencia
+                para pre-dimensionar: <strong>losa maciza estándar</strong> requiere
+                50-80 kg de acero/m³ de hormigón; <strong>losa aligerada con casetones</strong>
+                requiere 40-60 kg/m³; <strong>losa nervada</strong> unos 60-90 kg/m³.
+                Para el cálculo exacto siempre consultá los planos estructurales — el
+                acero mal dimensionado es la primera causa de fallas en losas.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto conviene sumar de sobrecompra o desperdicio?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Para obras convencionales, <strong>5-8% de sobrecompra</strong> es el
+                estándar. Este porcentaje cubre: desperdicios de corte, empalmes con
+                traslape (típicamente 40-60 diámetros), ganchos de anclaje en extremos,
+                estribos con detalle de gancho a 135°, y errores de armadura. En obras
+                grandes con mucho detalle (columnas complejas, escaleras helicoidales)
+                subí a 10-15%. Sobrecomprar cuesta poco; quedarse corto retrasa la obra
+                días.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

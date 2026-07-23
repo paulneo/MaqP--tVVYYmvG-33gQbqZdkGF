@@ -128,6 +128,79 @@ export const TOOLS: Tool[] = [
     status: 'active',
     tier: 'free',
   },
+  {
+    slug: 'kilos-de-acero-por-varilla',
+    title: 'Calculadora de kilos de acero por varilla',
+    description:
+      'Calculá el peso en kilos de las varillas de acero según el diámetro (6, 8, 10, 12, 16, 20, 25 mm) y la longitud. Incluye costo total estimado.',
+    category: 'construccion',
+    icon: 'fa6-solid:helmet-safety',
+    keywords: [
+      'kilos varilla acero',
+      'peso varilla',
+      'cuantos kilos pesa varilla del 12',
+      'acero de refuerzo por metro',
+      'cálculo acero obra',
+    ],
+    searchVolume: 4000,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'bolsas-de-cemento-por-metro-cubico',
+    title: 'Calculadora de bolsas de cemento por m³ de hormigón',
+    description:
+      'Calculá cuántas bolsas de cemento, arena, grava y agua necesitás por metro cúbico de hormigón según la resistencia (H15, H21, H25, H30, H40).',
+    category: 'construccion',
+    icon: 'material-symbols:construction',
+    keywords: [
+      'bolsas de cemento por metro cubico',
+      'dosificación hormigón',
+      'cemento por m3',
+      'proporción cemento arena grava',
+      'mezcla de concreto',
+    ],
+    searchVolume: 6000,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'rendimiento-de-excavadora',
+    title: 'Calculadora de rendimiento de excavadora (m³/hora)',
+    description:
+      'Estimá la producción real de una excavadora en m³/hora según capacidad del cucharón, tiempo de ciclo, factor de llenado y eficiencia operativa.',
+    category: 'maquinaria',
+    icon: 'fa6-solid:tractor',
+    relatedTools: ['costo-hora-operacion-excavadora', 'consumo-combustible-maquinaria'],
+    keywords: [
+      'rendimiento excavadora',
+      'producción excavadora m3 hora',
+      'productividad excavadora',
+      'cálculo rendimiento maquinaria',
+    ],
+    searchVolume: 1500,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'consumo-combustible-maquinaria',
+    title: 'Calculadora de consumo de combustible de maquinaria pesada',
+    description:
+      'Calculá el consumo de diesel y el costo total por horas de operación según el tipo y tamaño de máquina (excavadora, bulldozer, cargador, motoniveladora).',
+    category: 'maquinaria',
+    icon: 'material-symbols:local-gas-station',
+    relatedTools: ['costo-hora-operacion-excavadora', 'rendimiento-de-excavadora'],
+    keywords: [
+      'consumo combustible maquinaria',
+      'litros diesel por hora',
+      'consumo excavadora',
+      'consumo bulldozer',
+      'costo combustible obra',
+    ],
+    searchVolume: 2500,
+    status: 'active',
+    tier: 'free',
+  },
 ]
 
 /** Devuelve las herramientas activas (excluye coming-soon) */

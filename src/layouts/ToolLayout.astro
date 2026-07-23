@@ -13,6 +13,7 @@
  */
 import { Icon } from 'astro-icon/components'
 import MainGridLayout from './MainGridLayout.astro'
+import AdSlot from '../components/AdSlot.astro'
 import { CATEGORY_LABEL, CATEGORY_ICON, getToolBySlug } from '../lib/tools'
 
 interface Props {
@@ -102,6 +103,9 @@ const breadcrumbJsonLd = {
             <slot name="calculator" />
         </section>
 
+        <!-- Anuncio después de la calculadora, antes de la explicación -->
+        <AdSlot variant="in-article" slot="2446638857" />
+
         <!-- Explicación técnica (opcional) -->
         {Astro.slots.has('explanation') && (
             <section class="mb-12 prose-blog max-w-none">
@@ -134,6 +138,9 @@ const breadcrumbJsonLd = {
                 <slot name="faq" />
             </section>
         )}
+
+        <!-- Multiplex antes del CTA final -->
+        <AdSlot variant="multiplex" slot="1244971895" />
 
         <!-- CTA a más herramientas -->
         <section class="mt-16 pt-10 border-t border-black/[0.08] dark:border-white/[0.1] text-center">

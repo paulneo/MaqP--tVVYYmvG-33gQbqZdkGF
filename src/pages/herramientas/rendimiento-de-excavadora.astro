@@ -1,0 +1,140 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import RendimientoExcavadora from '../../components/tools/RendimientoExcavadora.svelte'
+---
+
+<ToolLayout slug="rendimiento-de-excavadora">
+    <RendimientoExcavadora slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula el rendimiento de una excavadora</h2>
+        <p>
+            El rendimiento real de una excavadora en m³/hora se obtiene con la fórmula:
+        </p>
+        <p>
+            <code>Q = (3600 × C × Ff × Fh × Fo) / T</code>
+        </p>
+        <p>Donde:</p>
+        <ul>
+            <li><strong>Q</strong> = producción efectiva en m³/hora</li>
+            <li><strong>3600</strong> = segundos en una hora</li>
+            <li><strong>C</strong> = capacidad del cucharón en m³</li>
+            <li><strong>Ff</strong> = factor de llenado (0,7-1,0)</li>
+            <li><strong>Fh</strong> = factor de eficiencia horaria (minutos trabajados / 60)</li>
+            <li><strong>Fo</strong> = factor del operador (0,6-0,9)</li>
+            <li><strong>T</strong> = tiempo de ciclo en segundos</li>
+        </ul>
+
+        <h3>Factor de llenado (Ff)</h3>
+        <p>
+            Indica qué porcentaje de la capacidad nominal del cucharón se llena realmente
+            en cada ciclo. Depende del material:
+        </p>
+        <ul>
+            <li><strong>Tierra suelta o arena</strong>: 0,95 - 1,10 (a veces sobrepasa)</li>
+            <li><strong>Tierra común compacta</strong>: 0,85 - 0,95</li>
+            <li><strong>Arcilla húmeda</strong>: 0,80 - 0,90</li>
+            <li><strong>Roca fragmentada bien voladura</strong>: 0,60 - 0,75</li>
+            <li><strong>Roca dura mal fragmentada</strong>: 0,40 - 0,55</li>
+        </ul>
+
+        <h3>Tiempo de ciclo (T)</h3>
+        <p>
+            El tiempo de ciclo es el tiempo que tarda la excavadora en: cargar el
+            cucharón → girar → descargar → volver. Depende de:
+        </p>
+        <ul>
+            <li>Ángulo de giro (menor ángulo = ciclo más corto)</li>
+            <li>Altura de descarga (a nivel de suelo o a camión)</li>
+            <li>Distancia del apoyo del brazo</li>
+            <li>Experiencia del operador</li>
+        </ul>
+        <p>Valores típicos:</p>
+        <ul>
+            <li>Excavadora pequeña con giro 60°: 15-18 segundos</li>
+            <li>Excavadora mediana con giro 90° a camión: 20-25 segundos</li>
+            <li>Excavadora grande con giro 120° a camión alto: 25-35 segundos</li>
+        </ul>
+
+        <h3>Factor operador (Fo)</h3>
+        <p>
+            Es la penalización por la habilidad del operador. Un operador experto de
+            larga trayectoria acerca el rendimiento real al teórico. Uno sin experiencia
+            puede perder hasta 40% de la producción posible.
+        </p>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos m³ mueve una excavadora por hora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del tamaño y las condiciones, pero como referencia:
+                una <strong>excavadora mediana de 20-25 t</strong> (cucharón 1 m³) mueve
+                <strong>80-140 m³/hora</strong> en tierra común con un operador
+                experimentado. Una <strong>excavadora chica de 8-12 t</strong> ronda los
+                40-70 m³/h; una <strong>grande de 40-50 t</strong> puede pasar los
+                200-300 m³/h. En roca dura, todos los valores caen a la mitad.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué la producción real es menor que la teórica?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Porque los factores de eficiencia son <strong>multiplicativos</strong>.
+                Si tenés un cucharón que se llena al 85% (Ff=0,85), trabajás 50 minutos
+                por hora (Fh=0,83) y el operador tiene skill promedio (Fo=0,80), tu
+                producción efectiva es <strong>solo el 56% de la teórica</strong>
+                (0,85 × 0,83 × 0,80 = 0,565). Y eso ya es un escenario decente. En
+                condiciones malas, se puede bajar al 35-40%.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo puedo aumentar el rendimiento?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Los mayores impactos vienen de: <strong>(1) Reducir el ángulo de giro</strong>
+                — poner los camiones lo más perpendicular posible al talud aumenta 15-25%
+                el rendimiento. <strong>(2) Sincronizar el ciclo camión-excavadora</strong>
+                — que nunca esté esperando. <strong>(3) Operador experto</strong> — la
+                diferencia entre bueno y experto es 20-30% de producción. <strong>(4)
+                Cucharón correcto</strong> — un cucharón demasiado grande no se llena,
+                uno chico multiplica ciclos.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Sirve esta fórmula para cargadoras frontales o retros?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, la fórmula base es la misma para cualquier equipo de carga cíclica.
+                Lo que cambia son los tiempos de ciclo y factores de llenado típicos.
+                Cargadora frontal: ciclos de 30-60 s (incluye desplazamiento entre pila y
+                camión). Retroexcavadora: 20-25 s. Motoescrepa (scraper): ciclos muy
+                largos porque incluye viaje ida-vuelta al depósito. Para cargadoras,
+                agregá factor de viaje aparte.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo calculo cuánto material moveré en toda la obra?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con esta fórmula tenés la producción diaria. Para el total de la obra:
+                <strong>Volumen total ÷ Producción por día = días de trabajo</strong>.
+                Pero recordá considerar el <strong>coeficiente de esponjamiento</strong>:
+                un metro cúbico de tierra en su lugar (m³ banco) ocupa 1,2-1,4 m³ cuando
+                está suelta después de excavar (m³ suelto). Este es el volumen que
+                realmente carga la excavadora en el cucharón. Para pedir el equipo,
+                calculá siempre en m³ suelto.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

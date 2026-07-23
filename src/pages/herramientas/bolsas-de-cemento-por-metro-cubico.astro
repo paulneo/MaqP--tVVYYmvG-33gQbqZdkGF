@@ -1,0 +1,145 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import BolsasCementoPorM3 from '../../components/tools/BolsasCementoPorM3.svelte'
+---
+
+<ToolLayout slug="bolsas-de-cemento-por-metro-cubico">
+    <BolsasCementoPorM3 slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Dosificación del hormigón según resistencia</h2>
+        <p>
+            Un metro cúbico de hormigón no lleva siempre la misma cantidad de cemento.
+            La dosificación depende directamente de la <strong>resistencia característica</strong>
+            que se busca (expresada como <code>Hxx</code> o <code>fcxx</code>, donde xx es
+            la resistencia en MPa a los 28 días).
+        </p>
+        <p>
+            A mayor resistencia, más cemento por m³ y menor relación agua/cemento. Esto
+            hace un hormigón más duro y menos permeable, pero también más caro y con
+            menor trabajabilidad.
+        </p>
+
+        <h3>Tabla de referencia por resistencia</h3>
+        <p>Dosificaciones típicas por m³ (agregado seco, cemento tipo I común):</p>
+        <ul>
+            <li>
+                <strong>H10 (10 MPa)</strong> — 200 kg cemento (~5 bolsas). Uso: contrapiso,
+                rellenos no estructurales, banquinas.
+            </li>
+            <li>
+                <strong>H15 (15 MPa)</strong> — 250 kg cemento (~6 bolsas). Uso: solera de
+                cimientos, hormigón simple.
+            </li>
+            <li>
+                <strong>H21 (21 MPa)</strong> — 350 kg cemento (~8 bolsas). Uso: obra
+                estructural general, el más común en construcción de viviendas.
+            </li>
+            <li>
+                <strong>H25 (25 MPa)</strong> — 380 kg cemento (~9 bolsas). Uso: losas y
+                vigas estructurales con requerimientos elevados.
+            </li>
+            <li>
+                <strong>H30 (30 MPa)</strong> — 420 kg cemento (~10 bolsas). Uso: columnas
+                de alta carga, edificios de más de 4 pisos.
+            </li>
+            <li>
+                <strong>H40 (40 MPa)</strong> — 450 kg cemento (~11 bolsas). Uso:
+                estructuras de alta resistencia, pisos industriales, obras marinas.
+            </li>
+        </ul>
+
+        <h3>Relación agua-cemento</h3>
+        <p>
+            La <strong>relación agua/cemento (a/c)</strong> es el factor más crítico
+            para la calidad del hormigón. Menor a/c da mayor resistencia y durabilidad,
+            pero menor trabajabilidad.
+        </p>
+        <ul>
+            <li>H10-H15 → a/c ~ 0,70-0,75</li>
+            <li>H21 → a/c ~ 0,55-0,60</li>
+            <li>H25 → a/c ~ 0,50-0,55</li>
+            <li>H30-H40 → a/c ~ 0,40-0,50 (requiere superplastificante)</li>
+        </ul>
+        <p>
+            <strong>Regla de oro</strong>: nunca agregues agua "para que fluya mejor"
+            en obra. Cada litro de agua extra reduce la resistencia final. Si el hormigón
+            no fluye, es tema de plastificantes, no de agua.
+        </p>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántas bolsas de cemento entran en 1 metro cúbico?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende de la resistencia. Para el hormigón más común en obra
+                (<strong>H21</strong>, 21 MPa), se necesitan <strong>8 bolsas de 42,5 kg</strong>
+                por m³ (350 kg totales). Para hormigón estructural más resistente
+                (H25-H30), se sube a 9-10 bolsas. Para hormigón simple de contrapiso
+                (H10-H15), alcanza con 5-6 bolsas.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué diferencia hay entre H21, H25 y H30?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Los números indican la <strong>resistencia característica a la compresión
+                a los 28 días</strong>, expresada en MPa (megapascales). Un H21 soporta 21
+                MPa (~214 kg/cm²), un H25 soporta 25 MPa (~255 kg/cm²), etc. En términos
+                prácticos: H21 se usa para casi todo en viviendas de 1-2 pisos; H25 para
+                losas de edificios; H30+ para columnas de edificios altos o estructuras
+                especiales.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es la proporción 1:2:3 y cuándo se usa?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Es la <strong>proporción volumétrica clásica</strong> para hormigón
+                estructural: <strong>1 parte de cemento, 2 de arena y 3 de grava</strong>,
+                con agua ajustada según trabajabilidad. Equivale aproximadamente a un
+                H21-H25. Otras proporciones típicas: 1:3:4 para hormigón simple
+                (~H15-H18), 1:1,5:3 para hormigón de alta resistencia (~H30). Estas
+                proporciones son útiles como referencia rápida en obra, pero las
+                dosificaciones "por peso" son más precisas.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto cuesta 1 m³ de hormigón hecho en obra vs premezclado?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>En obra</strong>: sumando cemento (~8 bolsas × precio local),
+                arena, grava, agua y mano de obra de mezclado, ronda entre USD 80-150/m³
+                según el país (más barato en países con cemento subsidiado, más caro en
+                zonas remotas). <strong>Premezclado</strong>: cuesta USD 100-180/m³
+                puesto en obra, pero garantiza calidad, ahorra tiempo y evita
+                dosificaciones erráticas. Para volúmenes de más de 5-8 m³, el premezclado
+                casi siempre conviene por tiempo y consistencia.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Puedo usar cemento tipo IP o de otros tipos?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, con matices. <strong>Cemento tipo I (común)</strong>: es el estándar,
+                para casi todo. <strong>Tipo IP (puzolánico)</strong>: menos calor de
+                hidratación, ideal para volúmenes grandes o climas cálidos. <strong>Tipo
+                V (resistente a sulfatos)</strong>: para obras en contacto con suelos
+                sulfatados o agua de mar. <strong>Cemento blanco</strong>: para hormigones
+                arquitectónicos. Las dosificaciones son similares, pero la resistencia
+                final puede variar ±10% — verificá siempre la ficha técnica del cemento
+                que uses.
+            </p>
+        </details>
+    </div>
+</ToolLayout>
