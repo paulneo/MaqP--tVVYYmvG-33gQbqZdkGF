@@ -442,5 +442,69 @@ html.dark .tool-result-metric {
     background: rgba(255, 255, 255, 0.06);
 }
 
+/* ─── Prose (contenido editorial en posts + herramientas) ─────────────── */
+/* Estilos compartidos por posts y ToolLayout. Antes vivían solo en        */
+/* pages/posts/[...slug].astro, pero eso hacía que las tablas y demás      */
+/* elementos no se estilizaran en /herramientas/. Se mueven acá para       */
+/* aplicar globalmente en todas las pages.                                  */
+
+.prose-blog {
+    @apply text-[1.06rem] md:text-[1.075rem] leading-[1.72];
+}
+.prose-blog p {
+    @apply my-5 text-black/80 dark:text-white/80;
+}
+.prose-blog h2 {
+    @apply text-2xl md:text-[1.7rem] tracking-tight font-bold mt-12 mb-4 text-[var(--deep-text)] dark:text-white/95;
+}
+.prose-blog h3 {
+    @apply text-xl md:text-[1.35rem] tracking-tight font-bold mt-9 mb-3 text-[var(--deep-text)] dark:text-white/95;
+}
+.prose-blog a:not(.anchor) {
+    @apply text-[var(--primary)] underline underline-offset-2 transition;
+    text-decoration-color: color-mix(in oklch, var(--primary) 40%, transparent);
+}
+.prose-blog a:not(.anchor):hover {
+    text-decoration-color: var(--primary);
+}
+.prose-blog strong {
+    @apply font-semibold text-black/95 dark:text-white/95;
+}
+.prose-blog ul, .prose-blog ol {
+    @apply my-5 pl-6 space-y-1.5;
+}
+.prose-blog ul { list-style-type: disc; }
+.prose-blog ol { list-style-type: decimal; }
+.prose-blog li {
+    @apply text-black/80 dark:text-white/80;
+}
+.prose-blog li::marker {
+    @apply text-[var(--primary)];
+}
+.prose-blog blockquote {
+    @apply border-l-4 border-[var(--primary)] pl-5 italic text-black/65 dark:text-white/65 my-6;
+}
+.prose-blog table {
+    @apply w-full my-6 text-sm border-collapse;
+}
+.prose-blog table th {
+    @apply text-left font-semibold py-2.5 px-3 border-b-2 border-black/15 dark:border-white/25 bg-black/[0.04] dark:bg-white/[0.06] text-black/90 dark:text-white/95;
+}
+.prose-blog table td {
+    @apply py-2.5 px-3 border-b border-black/[0.08] dark:border-white/[0.10] text-black/80 dark:text-white/80;
+}
+.prose-blog code:not(pre code) {
+    @apply px-1.5 py-0.5 rounded bg-black/[0.05] dark:bg-white/[0.08] text-[0.92em] font-mono text-black/85 dark:text-white/90;
+}
+.prose-blog pre {
+    @apply my-6 p-4 rounded-lg text-sm overflow-x-auto;
+}
+.prose-blog img {
+    @apply rounded-lg my-6;
+}
+.prose-blog hr {
+    @apply my-10 border-black/[0.1] dark:border-white/[0.1];
+}
+
 
 </style>
