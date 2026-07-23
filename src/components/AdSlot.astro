@@ -24,7 +24,7 @@
 import { adsenseId } from '../config'
 
 interface Props {
-    variant: 'banner-top' | 'in-article' | 'sidebar-sticky' | 'footer' | 'inline'
+    variant: 'in-article' | 'sidebar-sticky' | 'footer' | 'inline' | 'multiplex'
     slot?: string
     class?: string
 }
@@ -38,36 +38,35 @@ const SIZES: Record<Props['variant'], {
     format: string;
     layout?: string;
 }> = {
-    'banner-top': {
-        label: 'AD · banner top',
-        classes: 'w-full max-w-[728px] mx-auto',
-        minH: 'min-h-[90px] md:min-h-[90px]',
-        format: 'horizontal',
-    },
     'in-article': {
         label: 'AD · in-article',
         classes: 'w-full max-w-[680px] mx-auto',
         minH: 'min-h-[280px]',
-        format: 'fluid',
-        layout: 'in-article',
+        format: 'auto',
     },
     'sidebar-sticky': {
         label: 'AD · sidebar',
         classes: 'w-full max-w-[300px]',
         minH: 'min-h-[600px]',
-        format: 'vertical',
+        format: 'auto',
     },
     'footer': {
         label: 'AD · footer',
         classes: 'w-full max-w-[728px] mx-auto',
         minH: 'min-h-[90px]',
-        format: 'horizontal',
+        format: 'auto',
     },
     'inline': {
         label: 'AD · responsive',
         classes: 'w-full',
         minH: 'min-h-[120px]',
         format: 'auto',
+    },
+    'multiplex': {
+        label: 'AD · multiplex',
+        classes: 'w-full',
+        minH: 'min-h-[400px]',
+        format: 'autorelaxed',
     },
 }
 

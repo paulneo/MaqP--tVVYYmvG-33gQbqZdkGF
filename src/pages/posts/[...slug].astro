@@ -264,7 +264,7 @@ const faqJsonLd = faq.length > 0 ? {
         </Markdown>
 
         <!-- Anuncio al final del artículo (in-article) -->
-        <AdSlot variant="in-article" />
+        <AdSlot variant="in-article" slot="2446638857" />
 
         <!-- FAQs -->
         {faq.length > 0 && (
@@ -348,6 +348,9 @@ const faqJsonLd = faq.length > 0 ? {
             tags={entry.data.tags ?? []}
             limit={3}
         />
+
+        <!-- Multiplex debajo de artículos relacionados -->
+        <AdSlot variant="multiplex" slot="1244971895" />
         </article>
     </div>
 </MainGridLayout>
