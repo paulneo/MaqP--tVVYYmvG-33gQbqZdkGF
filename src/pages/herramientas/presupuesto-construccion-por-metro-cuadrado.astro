@@ -1,0 +1,165 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import PresupuestoConstruccion from '../../components/tools/PresupuestoConstruccion.svelte'
+---
+
+<ToolLayout slug="presupuesto-construccion-por-metro-cuadrado">
+    <PresupuestoConstruccion slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se estima el presupuesto de una construcción</h2>
+        <p>
+            El costo total de construir una casa o local se calcula como:
+        </p>
+        <p>
+            <code>Costo total = Costo por m² × Superficie construida</code>
+        </p>
+        <p>
+            El <strong>costo por m²</strong> varía dramáticamente por país, zona y calidad
+            de terminaciones. En Latam los rangos típicos van de <strong>USD 350/m²</strong>
+            para construcciones muy económicas hasta <strong>USD 2.500/m²</strong> para
+            construcciones premium con diseño arquitectónico.
+        </p>
+
+        <h3>Qué incluye el presupuesto</h3>
+        <p>El costo total se descompone en 5 partidas típicas:</p>
+        <ul>
+            <li>
+                <strong>Materiales (42%)</strong>: cemento, acero, ladrillos, arena, grava,
+                tejas, cerámicos, sanitarios, aberturas, pintura, cables, cañerías.
+            </li>
+            <li>
+                <strong>Mano de obra (32%)</strong>: albañiles, maestro, ayudantes,
+                gasfitería, electricidad, carpintería, terminaciones. Es la partida más
+                variable por país — puede ir del 25% en países con mano de obra barata al
+                40% en países con mano de obra cara.
+            </li>
+            <li>
+                <strong>Equipos y herramientas (8%)</strong>: alquiler de andamios, mezcladora,
+                encofrado, herramientas eléctricas, transporte de materiales.
+            </li>
+            <li>
+                <strong>Honorarios profesionales (10%)</strong>: arquitecto, ingeniero
+                calculista, dirección de obra, trámites municipales.
+            </li>
+            <li>
+                <strong>Gastos indirectos + utilidad (8%)</strong>: seguros, garantías,
+                imprevistos, utilidad del contratista.
+            </li>
+        </ul>
+
+        <h3>Qué NO incluye</h3>
+        <p>
+            Estos costos son <strong>solo obra gris + terminaciones</strong>. Aparte pagás:
+        </p>
+        <ul>
+            <li>
+                <strong>Terreno</strong> — muy variable por zona.
+            </li>
+            <li>
+                <strong>Trámites y permisos</strong> — municipalidad, tasas.
+            </li>
+            <li>
+                <strong>Servicios</strong> — conexiones de agua, luz, gas, cloacas.
+            </li>
+            <li>
+                <strong>Muebles y equipamiento</strong> — cocina, closets, decoración.
+            </li>
+            <li>
+                <strong>Paisajismo</strong> — jardines, veredas, cercas exteriores.
+            </li>
+        </ul>
+
+        <h3>Factores que hacen variar el costo</h3>
+        <ul>
+            <li>
+                <strong>Zona geográfica</strong>: capital vs interior puede variar 30-50%.
+                Zonas alejadas encarecen materiales por transporte.
+            </li>
+            <li>
+                <strong>Topografía del terreno</strong>: plano es barato; pendiente,
+                excavaciones profundas o cimientos especiales suben 15-30%.
+            </li>
+            <li>
+                <strong>Diseño complejo</strong>: formas irregulares, dobles alturas,
+                voladizos aumentan costo 10-25% vs una casa rectangular convencional.
+            </li>
+            <li>
+                <strong>Calidad de terminaciones</strong>: piso porcellanato vs cemento
+                alisado, aberturas de aluminio vs PVC — es donde más se dispara.
+            </li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto cuesta construir una casa de 80 m² en Perú?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con calidad <strong>estándar</strong>, aproximadamente <strong>USD
+                52.000</strong> (USD 650/m² × 80 m²). Económica bajaría a USD 33.600,
+                premium subiría a USD 88.000. Estos valores son referencia; el costo real
+                depende de la zona (Lima es 20-30% más cara que provincias) y la
+                complejidad del diseño.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué construir en Chile o Uruguay es más caro que en Perú o Bolivia?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Por tres factores principales: <strong>(1)</strong> Costo de mano de obra
+                — un albañil en Chile gana 2-3 veces más que en Perú. <strong>(2)</strong>
+                Normativa más estricta (sismos, eficiencia energética, accesibilidad) que
+                obliga a mejores materiales y mayor supervisión. <strong>(3)</strong>
+                Estándares de terminación más altos como norma de mercado.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Es más barato construir en dos plantas o en una sola planta grande?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>Depende</strong>. La <strong>construcción en dos plantas es más
+                económica por m² total</strong> porque duplicás cimientos, techos y
+                servicios sanitarios, pero compartís cocina, escaleras y estructura
+                vertical. Sin embargo, requiere <strong>más m² totales de cimientos y
+                techo por m² habitable</strong>, y agrega el costo de la escalera. En
+                promedio, dos plantas cuestan 10-15% menos por m² que una sola planta
+                equivalente, pero requiere más superficie total.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto conviene reservar como imprevisto?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>Mínimo 10%, ideal 15%</strong> del presupuesto total. Los
+                imprevistos surgen siempre: cambios de diseño durante la obra, materiales
+                que suben de precio, problemas del terreno, retrasos que suman jornales.
+                Los constructores experimentados dicen que <strong>quien construye sin
+                reserva de imprevisto termina hipotecándose</strong>. Este porcentaje YA
+                está incluido en la calculadora (partida "Utilidad").
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Puedo confiar en este estimado para tomar decisiones importantes?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>Como referencia inicial, sí</strong>. Sirve para saber si tu
+                proyecto está en el orden de magnitud correcto ANTES de hablar con
+                arquitecto/constructor. Pero <strong>no reemplaza un presupuesto formal</strong>:
+                los precios reales varían por zona específica, disponibilidad de materiales,
+                fluctuación de la moneda, complejidad del diseño y momento del año.
+                Para decisiones importantes (comprar terreno, sacar crédito), consultá
+                siempre con 2-3 profesionales locales y compará.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

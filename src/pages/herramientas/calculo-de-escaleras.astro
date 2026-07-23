@@ -1,0 +1,184 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import CalculoEscaleras from '../../components/tools/CalculoEscaleras.svelte'
+---
+
+<ToolLayout slug="calculo-de-escaleras">
+    <CalculoEscaleras slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se diseña una escalera cómoda</h2>
+        <p>
+            El diseño de una escalera se basa en tres medidas fundamentales:
+        </p>
+        <ul>
+            <li>
+                <strong>Contrahuella (C)</strong>: altura vertical de cada escalón, en
+                centímetros.
+            </li>
+            <li>
+                <strong>Huella (H)</strong>: profundidad horizontal donde se apoya el pie,
+                en centímetros.
+            </li>
+            <li>
+                <strong>Cantidad de escalones (n)</strong>: número de contrahuellas.
+            </li>
+        </ul>
+
+        <h3>Regla de Blondel</h3>
+        <p>
+            El arquitecto francés François Blondel definió en 1675 la fórmula clásica de
+            comodidad para escaleras:
+        </p>
+        <p>
+            <code>2 × Contrahuella + Huella = 60 a 64 cm (ideal 63 cm)</code>
+        </p>
+        <p>
+            Esta fórmula representa el paso natural humano al subir. Si la suma queda por
+            debajo de 60, la escalera es <strong>muy plana</strong> — te obliga a dar pasos
+            cortos y ocupa mucho espacio. Si supera 64, es <strong>muy pronunciada</strong> —
+            cansa las piernas y es peligrosa.
+        </p>
+
+        <h3>Medidas típicas por uso</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Uso</th>
+                    <th>Contrahuella</th>
+                    <th>Huella</th>
+                    <th>Blondel (2C+H)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Residencial (casas)</td>
+                    <td>17-18 cm</td>
+                    <td>27-30 cm</td>
+                    <td>61-66 cm</td>
+                </tr>
+                <tr>
+                    <td>Comercial / público</td>
+                    <td>15-17 cm</td>
+                    <td>28-31 cm</td>
+                    <td>58-65 cm</td>
+                </tr>
+                <tr>
+                    <td>Industrial / secundaria</td>
+                    <td>18-20 cm</td>
+                    <td>25-27 cm</td>
+                    <td>61-67 cm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Fórmula de la cantidad de escalones</h3>
+        <p>
+            La cantidad de escalones se obtiene dividiendo la altura total entre la
+            contrahuella deseada:
+        </p>
+        <p>
+            <code>n = altura total ÷ contrahuella ideal</code>
+        </p>
+        <p>
+            Como el resultado casi nunca da un número entero, se <strong>redondea al
+            entero más cercano</strong> y luego se recalcula la contrahuella real:
+        </p>
+        <p>
+            <code>Contrahuella real = altura total ÷ n</code>
+        </p>
+        <p>
+            De esa forma la escalera queda con contrahuellas iguales entre sí — cada
+            escalón mide exactamente lo mismo, que es una regla de seguridad clave
+            (escalones desiguales causan tropiezos).
+        </p>
+
+        <h3>Longitud horizontal requerida</h3>
+        <p>
+            El espacio que ocupa la escalera en planta se calcula:
+        </p>
+        <p>
+            <code>Longitud = huella × (n - 1)</code>
+        </p>
+        <p>
+            Se resta 1 porque el último escalón ya es el piso superior y no ocupa huella
+            adicional.
+        </p>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuál es la contrahuella máxima permitida en una casa?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del país, pero como referencia: <strong>máximo 18-19 cm</strong>
+                en residencial (algunas normas permiten hasta 20 cm en casas). En espacios
+                comerciales o públicos baja a 17 cm por seguridad. En escaleras de
+                escape/emergencia, muchos códigos exigen máximo 17,5 cm. Consultá siempre
+                la normativa local — Argentina tiene el Código de Edificación por
+                jurisdicción, Perú tiene el RNE (A.010), Chile la OGUC.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuál es la huella mínima?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>Mínimo absoluto 24-25 cm</strong> para que apoye completo el pie
+                de un adulto. Recomendado <strong>27-30 cm</strong> para residencial y
+                <strong>28-32 cm</strong> para uso público. Huellas menores a 24 cm son
+                peligrosas — el pie no apoya bien y aumenta el riesgo de caída al bajar.
+                En escaleras compensadas (con giros) la huella se mide a 40 cm del
+                barandal.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es un descanso y cuándo es obligatorio?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Un <strong>descanso</strong> es una plataforma horizontal entre tramos de
+                escalones. La normativa exige uno cuando la escalera <strong>supera cierto
+                número de escalones consecutivos</strong> — típicamente 16-18 en
+                residencial y 12-14 en público. El descanso debe tener como mínimo el ancho
+                de la escalera. Además de la normativa, un descanso <strong>reduce el
+                cansancio</strong> y permite girar la dirección de la escalera para
+                aprovechar mejor el espacio.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué ancho debe tener una escalera residencial?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>Mínimo 80-90 cm</strong> en casas para uso normal, pero
+                <strong>recomendado 100-120 cm</strong> para mayor comodidad. Si vas a
+                subir muebles grandes, considerá 120-140 cm. En escaleras de escape o
+                edificios públicos, la normativa exige mínimo 120 cm (usuarios pueden
+                cruzarse en emergencia). Además del ancho, chequeá siempre la
+                <strong>altura libre desde el escalón hacia arriba</strong>: mínimo 210
+                cm en toda la escalera para que no te golpees la cabeza.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Puedo hacer una escalera con menos espacio del que la calculadora recomienda?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, pero comprometés comodidad y seguridad. Para <strong>reducir el largo
+                horizontal</strong> hay opciones: <strong>(1)</strong> Escalera compensada
+                con giro a 90° o 180° — usa menos espacio en planta. <strong>(2)</strong>
+                Escalera helicoidal — mínimo espacio pero solo apta para uso ocasional
+                (baja capacidad, no permite subir muebles). <strong>(3)</strong> Aumentar
+                la contrahuella dentro de límites — cada cm de contrahuella extra reduce
+                un escalón, pero baja comodidad. Nunca reduzcas la huella por debajo de
+                25 cm.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

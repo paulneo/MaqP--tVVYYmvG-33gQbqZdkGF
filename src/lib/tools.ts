@@ -201,6 +201,61 @@ export const TOOLS: Tool[] = [
     status: 'active',
     tier: 'free',
   },
+  {
+    slug: 'presupuesto-construccion-por-metro-cuadrado',
+    title: 'Calculadora de presupuesto de construcción por m²',
+    description:
+      'Estimá el costo total de construir una casa en Latam según país (Perú, México, Colombia, Argentina, Chile, Uruguay, Bolivia) y calidad (económica, estándar, premium).',
+    category: 'construccion',
+    icon: 'material-symbols:home-work',
+    keywords: [
+      'cuanto cuesta construir una casa',
+      'presupuesto construcción por metro cuadrado',
+      'costo m2 construcción Latam',
+      'presupuesto obra Perú México Colombia',
+      'costo construcción casa',
+    ],
+    searchVolume: 12000,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'calculo-de-escaleras',
+    title: 'Calculadora de escaleras: huella, contrahuella y escalones',
+    description:
+      'Calculá la cantidad de escalones, huella y contrahuella de tu escalera según la altura del piso y la regla de Blondel. Incluye validación de comodidad.',
+    category: 'arquitectura',
+    icon: 'material-symbols:stairs',
+    keywords: [
+      'cálculo de escaleras',
+      'huella y contrahuella',
+      'cuantos escalones necesito',
+      'regla de Blondel',
+      'diseño escalera residencial',
+    ],
+    searchVolume: 5000,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'amortizacion-maquinaria-pesada',
+    title: 'Calculadora de amortización de maquinaria pesada',
+    description:
+      'Calculá la depreciación anual, por hora y el valor contable de tu maquinaria pesada. Método lineal + método por horómetro para excavadoras, cargadores y camiones.',
+    category: 'maquinaria',
+    icon: 'material-symbols:trending-down',
+    relatedTools: ['costo-hora-operacion-excavadora'],
+    keywords: [
+      'amortización maquinaria pesada',
+      'depreciación excavadora',
+      'valor contable maquinaria',
+      'depreciación por hora',
+      'vida útil maquinaria',
+    ],
+    searchVolume: 900,
+    status: 'active',
+    tier: 'free',
+  },
 ]
 
 /** Devuelve las herramientas activas (excluye coming-soon) */

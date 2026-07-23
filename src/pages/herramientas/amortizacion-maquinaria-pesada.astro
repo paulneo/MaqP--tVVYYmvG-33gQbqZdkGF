@@ -1,0 +1,199 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import AmortizacionMaquinaria from '../../components/tools/AmortizacionMaquinaria.svelte'
+---
+
+<ToolLayout slug="amortizacion-maquinaria-pesada">
+    <AmortizacionMaquinaria slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Qué es la amortización y por qué importa</h2>
+        <p>
+            La <strong>amortización</strong> (o depreciación) es la asignación contable
+            del costo de compra de un bien a lo largo de su vida útil. En maquinaria
+            pesada es una de las partidas más importantes del <strong>costo por hora
+            de operación</strong> — típicamente representa el <strong>25-35% del total</strong>,
+            solo superada por el combustible.
+        </p>
+        <p>
+            Calcularla bien te permite:
+        </p>
+        <ul>
+            <li><strong>Presupuestar obras</strong> con costo real, no solo caja.</li>
+            <li><strong>Decidir comprar vs alquilar</strong> maquinaria específica.</li>
+            <li><strong>Cobrar tu maquinaria propia</strong> a valor real de mercado cuando la usás en tu propia obra.</li>
+            <li><strong>Planificar reemplazo</strong> antes de que la máquina se vuelva antieconómica.</li>
+        </ul>
+
+        <h3>Método línea recta</h3>
+        <p>
+            El método más simple. Divide la depreciación uniformemente entre los años
+            de vida útil:
+        </p>
+        <p>
+            <code>Depreciación anual = (Precio compra - Valor residual) / Vida útil (años)</code>
+        </p>
+        <p>
+            Aceptado por todos los fiscos de Latam. Da valores predecibles y estables.
+            Su limitación es que asume uso constante — no refleja bien maquinaria con
+            uso muy variable año a año.
+        </p>
+
+        <h3>Método por horómetro (proporcional al uso)</h3>
+        <p>
+            Más preciso para maquinaria pesada. Asigna un valor de depreciación a cada
+            hora de uso real:
+        </p>
+        <p>
+            <code>Depreciación por hora = (Precio - Valor residual) / Total horas vida útil</code>
+        </p>
+        <p>
+            <code>Total horas vida útil = Vida útil (años) × Horas anuales promedio</code>
+        </p>
+        <p>
+            <strong>Ventajas</strong>: si la máquina trabaja poco un año, se deprecia
+            poco; si trabaja mucho, se deprecia más. Refleja el uso real. Muy usado en
+            minería, construcción y transporte.
+        </p>
+
+        <h3>Valor residual: qué es y cómo estimarlo</h3>
+        <p>
+            El <strong>valor residual</strong> es lo que la máquina va a valer al final
+            de su vida útil, cuando decidas venderla. Reglas típicas:
+        </p>
+        <ul>
+            <li><strong>Marcas premium (Cat, Komatsu, Volvo)</strong>: 15-25% del precio de compra.</li>
+            <li><strong>Marcas intermedias (Hitachi, JCB, Case)</strong>: 12-18%.</li>
+            <li><strong>Marcas económicas o modelos poco demandados</strong>: 8-12%.</li>
+        </ul>
+        <p>
+            Factores que <strong>aumentan</strong> el residual: mantenimiento riguroso
+            documentado, horómetro bajo, mercado hispanohablante fuerte para ese modelo.
+            Factores que <strong>reducen</strong>: normativas de emisiones que dejan
+            obsoletos motores antiguos, cambios tecnológicos, uso en minería (más
+            desgaste que en construcción).
+        </p>
+
+        <h3>Vida útil típica por tipo de máquina</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Máquina</th>
+                    <th>Vida útil (años)</th>
+                    <th>Horas totales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Excavadora hidráulica</td>
+                    <td>8-12</td>
+                    <td>15.000-25.000</td>
+                </tr>
+                <tr>
+                    <td>Cargador frontal</td>
+                    <td>10-15</td>
+                    <td>18.000-30.000</td>
+                </tr>
+                <tr>
+                    <td>Bulldozer</td>
+                    <td>10-15</td>
+                    <td>15.000-25.000</td>
+                </tr>
+                <tr>
+                    <td>Motoniveladora</td>
+                    <td>12-15</td>
+                    <td>20.000-30.000</td>
+                </tr>
+                <tr>
+                    <td>Camión volquete</td>
+                    <td>6-10</td>
+                    <td>12.000-20.000</td>
+                </tr>
+                <tr>
+                    <td>Retroexcavadora</td>
+                    <td>10-12</td>
+                    <td>10.000-15.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué diferencia hay entre amortización contable y depreciación real?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                La <strong>amortización contable</strong> es la asignación fiscal del costo
+                — sigue las reglas del fisco de tu país (tasas máximas anuales, métodos
+                permitidos). La <strong>depreciación real</strong> es lo que la máquina
+                pierde efectivamente de valor de mercado. Suelen ser muy distintas:
+                fiscalmente amortizás 20% anual, pero en el mercado la máquina puede
+                perder 30% el primer año y 5% en los siguientes. Para <strong>costeo
+                interno de proyectos</strong>, usá la depreciación real (esta calculadora).
+                Para <strong>declaraciones fiscales</strong>, usá las tasas del fisco.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Puedo amortizar una máquina usada?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí. Se toma el <strong>precio pagado</strong> (no el precio original de
+                fábrica), se estima un <strong>valor residual</strong> y se define una
+                <strong>vida útil remanente</strong> según horas del horómetro. Ejemplo:
+                excavadora con 8.000 h horómetro, vida útil típica 20.000 h → le quedan
+                12.000 h → si esperás usarla 2.000 h/año, la depreciás en 6 años. El
+                método es el mismo, cambia el punto de partida.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto pesa la amortización en el costo hora total?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                En maquinaria pesada nueva típica, la amortización representa
+                <strong>25-35% del costo por hora total</strong>. Junto con el combustible
+                (30-45%) son las dos partidas más grandes, sumando ~65-75% del costo total
+                de operación. El resto se reparte entre mantenimiento (15-20%), operador
+                (10-15%) y overhead (5-10%). En máquinas viejas ya amortizadas, esa
+                partida cae a cero y el costo/hora baja significativamente — por eso el
+                mercado de usados es tan competitivo.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuándo conviene comprar vs alquilar maquinaria?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Regla práctica: si vas a usar la máquina <strong>menos de 1.200-1.500
+                horas al año</strong>, casi siempre conviene alquilar. Si vas a usarla
+                <strong>más de 2.000 horas anuales por al menos 3-5 años seguidos</strong>,
+                empieza a convenir comprar. La lógica: el costo/hora de una máquina
+                alquilada es ~40-60% mayor que una propia bien costeada, pero no cargás
+                capital ni gestión. Empresas grandes con proyectos de largo plazo
+                compran; contratistas eventuales alquilan. Contadores calcularán el
+                <strong>punto de equilibrio</strong> exacto según tu caso.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué pasa si la máquina dura más que la vida útil estimada?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Contablemente ya está <strong>totalmente amortizada</strong> — su valor
+                en libros es igual al valor residual. Fiscalmente ya no podés seguir
+                deduciéndola. Pero comercialmente aún tiene valor: cada hora que trabajás
+                con una máquina totalmente amortizada es "ganancia pura" desde el punto
+                de vista de la partida de amortización. Muchos contratistas viven de
+                esto: comprar buena marca, mantenerla religiosamente y estirarla 3-5 años
+                más allá de la vida útil teórica. Es el modelo de negocio de flotas
+                pequeñas rentables.
+            </p>
+        </details>
+    </div>
+</ToolLayout>
