@@ -1,0 +1,115 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import ConsumoElectrico from '../../components/tools/ConsumoElectrico.svelte'
+---
+
+<ToolLayout slug="consumo-electrico-kwh-costo">
+    <ConsumoElectrico slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula el consumo eléctrico</h2>
+        <p>
+            El consumo de un electrodoméstico se calcula así:
+        </p>
+        <p>
+            <code>Consumo (kWh) = (Potencia en W × Horas de uso × Días) / 1.000</code>
+        </p>
+        <p>
+            Después multiplicás el consumo total por el precio del kWh en tu país para obtener el costo:
+        </p>
+        <p>
+            <code>Costo = Consumo (kWh) × Precio por kWh</code>
+        </p>
+
+        <h3>Diferencia entre W (watt) y kWh (kilovatio hora)</h3>
+        <p>
+            Este es el punto que más confunde. Son dos cosas distintas:
+        </p>
+        <ul>
+            <li><strong>Watt (W)</strong>: es la <strong>potencia instantánea</strong>. Cuánta energía consume el aparato <strong>por segundo</strong> mientras está prendido. Un TV LED puede tener 90 W, un aire acondicionado 1.200 W.</li>
+            <li><strong>Kilovatio hora (kWh)</strong>: es el <strong>consumo acumulado</strong>. Cuánta energía consumió el aparato durante cierto tiempo. Es lo que la compañía te factura.</li>
+        </ul>
+        <p>
+            Analogía: los <strong>W son como los km/h</strong> de un auto (velocidad instantánea). Los <strong>kWh son los km recorridos totales</strong> (que ya no dependen solo de la velocidad, también del tiempo).
+        </p>
+        <p>
+            Ejemplo: un aire acondicionado de 1.200 W (1,2 kW) usado 6 horas/día durante 30 días consume: 1,2 × 6 × 30 = <strong>216 kWh al mes</strong>.
+        </p>
+
+        <h3>Potencias típicas de electrodomésticos</h3>
+        <p>Como referencia, potencias promedio en watts:</p>
+        <ul>
+            <li><strong>Bajo consumo (menos de 100 W)</strong>: iluminación LED, TV LED chico, cargador de celular, ventilador de mesa.</li>
+            <li><strong>Consumo medio (100-500 W)</strong>: refrigerador, TV LED grande, PC, ventilador de techo, licuadora.</li>
+            <li><strong>Consumo alto (500-2.000 W)</strong>: microondas, aire acondicionado, plancha, lavarropas, secarropas.</li>
+            <li><strong>Consumo muy alto (2.000+ W)</strong>: horno eléctrico, calentador de agua, ducha eléctrica, aire acondicionado central, bomba de piscina.</li>
+        </ul>
+
+        <h3>Los "villanos" del consumo eléctrico</h3>
+        <p>
+            Los electrodomésticos que más gastan por hora de uso:
+        </p>
+        <ol>
+            <li><strong>Ducha eléctrica</strong> — 4.500-8.000 W. Cada ducha de 10 minutos gasta 1,3 kWh. Es el rey del consumo hogareño.</li>
+            <li><strong>Aire acondicionado</strong> — 900-3.500 W según BTU. Un split de 12k BTU en verano consume 200-300 kWh/mes.</li>
+            <li><strong>Refrigerador</strong> — 100-200 W, pero funciona 24/7. Suma 70-150 kWh/mes.</li>
+            <li><strong>Horno eléctrico</strong> — 2.000-3.000 W. Cada uso de 1 hora gasta 2,5 kWh.</li>
+        </ol>
+
+        <h3>Cómo bajar la factura</h3>
+        <ol>
+            <li><strong>Refrigerador clase A o A+</strong>: consume 30-40% menos que uno viejo.</li>
+            <li><strong>Iluminación LED</strong> (versus incandescente/halógena): reduce iluminación de 60W a 8-12W (80% menos).</li>
+            <li><strong>Aire acondicionado inverter</strong>: consume 30-45% menos que uno común.</li>
+            <li><strong>Standby matters</strong>: aparatos "apagados" pero enchufados suman 5-10% del consumo total.</li>
+            <li><strong>Calentador de agua a gas</strong> en vez de eléctrico: enorme reducción si tu hogar hace muchas duchas.</li>
+        </ol>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto consume un aire acondicionado por mes?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Un <strong>split de 12.000 BTU (mediano)</strong> tiene potencia ~1.200 W. Si lo usás 6 horas/día durante 30 días, consume <strong>216 kWh/mes</strong>. Al precio promedio de Latam (USD 0,10/kWh), son <strong>~USD 22/mes solo por ese aire</strong>. Un inverter equivalente baja a ~130 kWh/mes = ~USD 13/mes. Los splits grandes de 18k o 24k BTU multiplican estas cifras 1,5-2x.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto gasta un refrigerador al mes?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende de la eficiencia y el tamaño. <strong>Refri viejo (10+ años)</strong>: 300-400 W promedio × 24 h = 220-290 kWh/mes. <strong>Refri moderno clase A+</strong>: 100-150 W promedio × 24 h = 70-110 kWh/mes. Ojo: el refri no consume constantemente sus watts nominales — hace ciclos. Los watts que ves en la etiqueta son el pico. El consumo real promedio es 40-60% de ese pico.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto cuesta el kWh en cada país de Latam?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Precios residenciales promedio 2026 (USD): <strong>Perú</strong> 0,06 · <strong>México</strong> 0,07 · <strong>Colombia</strong> 0,14 · <strong>Argentina</strong> 0,06 (con subsidio) hasta 0,15 (sin subsidio) · <strong>Chile</strong> 0,16 · <strong>Uruguay</strong> 0,20 · <strong>Bolivia</strong> 0,06. Los precios varían mucho por banda tarifaria: consumir más de cierto umbral te sube a categoría más cara. Chile y Uruguay son los más caros; Bolivia y Argentina (subsidiada) los más baratos.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo puedo medir el consumo real de un aparato?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Necesitás un <strong>medidor de consumo enchufable</strong> (kill-a-watt en inglés, wattmeter en español). Cuesta USD 15-30 en cualquier ferretería o Amazon Latam. Se enchufa entre el aparato y la toma, y te muestra en tiempo real: potencia (W), tensión (V), corriente (A), consumo acumulado (kWh). Muy útil para descubrir "vampiros de energía" — aparatos que consumen aunque parezcan apagados.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué mi factura no coincide exactamente con este cálculo?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Varios factores hacen que la factura real sea distinta al estimado teórico: <strong>(1) Cargos fijos</strong> por conexión al sistema (varían USD 3-10/mes). <strong>(2) Impuestos y contribuciones</strong> (IVA, alumbrado público, otros — típicamente 20-40% adicional). <strong>(3) Bandas tarifarias progresivas</strong> — a mayor consumo, mayor precio unitario. <strong>(4) Consumo real de aparatos</strong> distinto al nominal (hornos y refris tienen ciclos on/off). Esta calculadora estima el consumo bruto; para la factura completa multiplicá el resultado por 1,25-1,4 para incluir impuestos.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

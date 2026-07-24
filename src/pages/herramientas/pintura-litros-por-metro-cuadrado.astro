@@ -1,0 +1,104 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import PinturaLitrosM2 from '../../components/tools/PinturaLitrosM2.svelte'
+---
+
+<ToolLayout slug="pintura-litros-por-metro-cuadrado">
+    <PinturaLitrosM2 slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula la cantidad de pintura</h2>
+        <p>
+            El cálculo real de pintura no es solo "área × precio". Hay tres variables que suelen olvidarse y que hacen que la mayoría de la gente <strong>compre de más o de menos</strong>:
+        </p>
+        <ol>
+            <li><strong>El tipo de superficie</strong> — el rendimiento varía hasta 50% entre yeso liso y cemento revocado.</li>
+            <li><strong>La cantidad de manos</strong> — casi siempre se necesitan 2, no 1.</li>
+            <li><strong>El descuento de puertas y ventanas</strong> — ignorarlas puede sobrestimar 15-20%.</li>
+        </ol>
+
+        <h3>Fórmula que usa esta calculadora</h3>
+        <p>
+            <code>Área neta = (largo × alto × cantidad paredes) − puertas − ventanas</code>
+        </p>
+        <p>
+            <code>Litros = (Área neta × manos) / rendimiento por litro</code>
+        </p>
+        <p>
+            El rendimiento por litro depende del tipo de superficie y de la calidad de la pintura. Los rangos típicos para <strong>una mano</strong>:
+        </p>
+        <ul>
+            <li><strong>Yeso / pared lisa</strong>: 10-14 m²/L. La calculadora asume 12 como valor medio.</li>
+            <li><strong>Cemento revocado</strong>: 7-10 m²/L. La superficie porosa absorbe más pintura.</li>
+            <li><strong>Madera (barniz)</strong>: 12-16 m²/L. Cubre bien porque la superficie es lisa.</li>
+            <li><strong>Hierro (esmalte)</strong>: 10-14 m²/L. Con convertidor de óxido previo.</li>
+            <li><strong>Exterior expuesto</strong>: 7-10 m²/L. Requiere más capa por resistencia climática.</li>
+        </ul>
+
+        <h3>Cuántas manos son necesarias</h3>
+        <p>
+            La respuesta técnica es <strong>siempre al menos 2</strong>, aunque el fabricante diga "cubre en una mano". Razones:
+        </p>
+        <ul>
+            <li><strong>Primera mano</strong>: no cubre uniformemente en superficies porosas. Sirve como base y sellador.</li>
+            <li><strong>Segunda mano</strong>: da el color y acabado final. Es la que "se ve".</li>
+            <li><strong>Tercera mano</strong> (solo si es necesaria): para colores muy oscuros sobre base clara, o al revés.</li>
+        </ul>
+
+        <h3>Superficies especiales</h3>
+        <p>Para casos particulares, ajustá el rendimiento:</p>
+        <ul>
+            <li><strong>Superficie sin pintar previa</strong>: sumá 30% de consumo la primera vez.</li>
+            <li><strong>Cambio de color drástico</strong>: usar sellador previo o hasta 3 manos.</li>
+            <li><strong>Zona muy húmeda</strong> (cocina, baño): pintura específica anti-hongo. Rendimiento similar.</li>
+            <li><strong>Exterior sur / muy expuesto al sol</strong>: pensá en pintura reflexiva o de alta durabilidad. Puede requerir mano extra.</li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos m² se pintan con un litro de pintura?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Para <strong>pintura látex estándar en pared lisa (yeso)</strong>, un litro cubre entre <strong>10 y 14 m²</strong> por mano (promedio 12 m²). En cemento sin pulir baja a 7-10 m²/L, en madera sube a 12-16 m²/L. Esos son valores de fabricante — en la práctica, la primera mano rinde ~15% menos que la segunda porque la superficie absorbe más.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto tarda en secarse la pintura entre manos?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del tipo: <strong>látex al agua</strong> — 2-4 horas al tacto, 4-6 h para segunda mano. <strong>Esmalte sintético</strong> — 6-12 horas para siguiente mano. <strong>Barniz</strong> — 8-24 horas. En días húmedos o fríos, sumá 50% más. Nunca dar segunda mano si la primera "tira" cuando la tocás con el dedo — vas a arruinar el acabado.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Necesito sellador o imprimación antes de pintar?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>Sí, en la mayoría de los casos</strong>. Un buen sellador: (1) reduce el consumo de pintura de color un 20-30%, (2) mejora la adherencia, (3) uniformiza absorción. Es especialmente importante en superficies nuevas (yeso o revoque sin pintar), después de reparaciones con masilla, o cuando cambiás a un color muy distinto. Los selladores rinden más (~15 m²/L) y son baratos comparado con la pintura de acabado.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué diferencia hay entre pintura mate, satinada y brillante?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>Mate</strong>: sin brillo, disimula imperfecciones, ideal para paredes con textura o techos. Peor lavabilidad. <strong>Satinada</strong>: brillo suave (5-15%), balance entre estética y lavabilidad. La más usada en dormitorios y living. <strong>Semi-brillante</strong>: 30-50% brillo, muy lavable. Ideal para cocinas, baños, marcos. <strong>Brillante</strong>: máxima lavabilidad pero muestra todas las imperfecciones. Se usa en carpintería, hierro y aberturas. El rendimiento por litro es similar entre acabados.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto conviene comprar de más?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>10-15% de sobrecompra</strong> es lo recomendable. Cubre: desperdicio en el rodillo, retoques posteriores, cambios de idea sobre alguna pared. Además, si compraste un tinte específico y te quedás corto, casi imposible replicar el color exacto en otra tanda del fabricante. Mejor sobrar medio litro que quedarte sin.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

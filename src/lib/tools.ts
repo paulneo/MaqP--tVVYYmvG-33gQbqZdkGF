@@ -256,6 +256,78 @@ export const TOOLS: Tool[] = [
     status: 'active',
     tier: 'free',
   },
+  {
+    slug: 'pintura-litros-por-metro-cuadrado',
+    title: 'Calculadora de pintura: litros por m² con descuento de aberturas',
+    description:
+      'Calculá cuántos litros de pintura necesitás según superficie (yeso, cemento, madera, hierro), cantidad de manos y descuento automático de puertas y ventanas.',
+    category: 'construccion',
+    icon: 'material-symbols:format-paint',
+    keywords: [
+      'calculadora pintura',
+      'litros pintura por metro cuadrado',
+      'cuanta pintura necesito',
+      'rendimiento pintura',
+      'pintura pared m2',
+    ],
+    searchVolume: 20000,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'volumen-tanque-cisterna',
+    title: 'Calculadora de volumen de tanque y cisterna de agua',
+    description:
+      'Calculá el volumen en litros y m³ de tu tanque o cisterna: rectangular, cilíndrico vertical, cilíndrico horizontal o tinaco esférico. Incluye duración según consumo familiar.',
+    category: 'ingenieria-general',
+    icon: 'material-symbols:water-drop',
+    keywords: [
+      'volumen tanque agua',
+      'capacidad cisterna litros',
+      'calculadora tanque cilíndrico',
+      'volumen tinaco',
+      'litros cisterna',
+    ],
+    searchVolume: 15000,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'calculadora-techo-calamina-tejas',
+    title: 'Calculadora de techo: calamina, tejas y área total',
+    description:
+      'Calculá los m² de tu techo (1 agua, 2 aguas, 4 aguas o plano) y la cantidad de calamina, tejas o panel sándwich necesaria según el material elegido.',
+    category: 'construccion',
+    icon: 'material-symbols:roofing',
+    keywords: [
+      'calculadora techo calamina',
+      'cuantas tejas por metro cuadrado',
+      'área techo dos aguas',
+      'calamina metros cuadrados',
+      'pendiente techo',
+    ],
+    searchVolume: 12000,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'consumo-electrico-kwh-costo',
+    title: 'Calculadora de consumo eléctrico en kWh y costo mensual',
+    description:
+      'Calculá cuánto consume cada electrodoméstico en kWh y cuánto pagás por mes en tu factura de luz. Precios por país (Perú, México, Colombia, Argentina, Chile).',
+    category: 'ingenieria-general',
+    icon: 'material-symbols:electric-bolt',
+    keywords: [
+      'calculadora consumo eléctrico',
+      'cuánto consume mi aire acondicionado',
+      'kwh factura luz',
+      'consumo electrodomésticos',
+      'costo energía eléctrica',
+    ],
+    searchVolume: 25000,
+    status: 'active',
+    tier: 'free',
+  },
 ]
 
 /** Devuelve las herramientas activas (excluye coming-soon) */
