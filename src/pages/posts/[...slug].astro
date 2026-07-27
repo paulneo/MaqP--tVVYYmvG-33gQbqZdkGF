@@ -16,6 +16,8 @@ import ReadingProgress from "../../components/ReadingProgress.astro";
 import RelatedPosts from "../../components/RelatedPosts.astro";
 import ShareButtons from "../../components/ShareButtons.astro";
 import AdSlot from "../../components/AdSlot.astro";
+import ToolCalloutCard from "../../components/ToolCalloutCard.astro";
+import { suggestToolForPost } from "../../lib/tool-suggestions";
 import { isPostPublishable } from "@utils/content-utils";
 
 export async function getStaticPaths() {
@@ -46,6 +48,15 @@ const sameDate = updatedAt && updatedAt.toDateString() === new Date(entry.data.p
 
 const faq = (entry.data.faq as { q: string; a: string }[] | undefined) ?? [];
 const sources = (entry.data.sources as { title: string; url?: string }[] | undefined) ?? [];
+
+// Sugerencia automática de calculadora relacionada (cross-linking a /herramientas/).
+// Se calcula por keywords en slug + tags + category. Ver src/lib/tool-suggestions.ts.
+const suggestedTool = suggestToolForPost({
+    slug: entry.slug,
+    category: entry.data.category,
+    tags: entry.data.tags ?? [],
+    title: entry.data.title,
+});
 
 const hasCover = !!entry.data.image;
 const coverUsesCdn = hasCover && isCdnRef(entry.data.image as string);
@@ -262,6 +273,9 @@ const faqJsonLd = faq.length > 0 ? {
         <Markdown class="markdown-content onload-animation prose-blog">
             <Content />
         </Markdown>
+
+        <!-- Calculadora relacionada (cross-linking automático) -->
+        {suggestedTool && <ToolCalloutCard tool={suggestedTool} />}
 
         <!-- Anuncio al final del artículo (in-article) -->
         <AdSlot variant="in-article" slot="2446638857" />
