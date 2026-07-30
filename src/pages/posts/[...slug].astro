@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import ImageWrapper from "../../components/misc/ImageWrapper.astro";
@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content, remarkPluginFrontmatter } = await entry.render();
+const { Content, remarkPluginFrontmatter } = await render(entry);
 
 const cat = getCategory(entry.data.category);
 const formato = entry.data.formato as string | undefined;

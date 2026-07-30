@@ -1,5 +1,6 @@
 ---
 import path from "path";
+import { render } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 import ImageWrapper from "./misc/ImageWrapper.astro";
 import { getDir } from "../utils/url-utils";
@@ -24,7 +25,7 @@ const hasCover = image !== undefined && image !== null && image !== '';
 const useCdn = hasCover && isCdnRef(image);
 const cdnUrl = useCdn ? img(image, { width: 1920, height: 800, crop: 'fill' }) : '';
 const cdnSrcset = useCdn ? imgSrcset(image, [800, 1200, 1600, 1920, 2400]) : '';
-const { remarkPluginFrontmatter } = await entry.render();
+const { remarkPluginFrontmatter } = await render(entry);
 
 const cat = getCategory(category);
 const formato = entry.data?.formato as string | undefined;
