@@ -17,20 +17,20 @@ const { currentSlug, category, relatedSlugs = [], tags = [], limit = 3 } = Astro
 const all = await getCollection('posts', ({ data }) => isPostPublishable(data));
 
 // 1) Manualmente referenciados via frontmatter `related`
-const manual = all.filter(p => relatedSlugs.includes(p.slug) && p.slug !== currentSlug);
+const manual = all.filter(p => relatedSlugs.includes(p.id) && p.id !== currentSlug);
 
 // 2) Misma categoría (excluyendo current y los ya en manual)
 const sameCategory = all.filter(p =>
-    p.slug !== currentSlug &&
-    !manual.some(m => m.slug === p.slug) &&
+    p.id !== currentSlug &&
+    !manual.some(m => m.id === p.id) &&
     p.data.category === category
 );
 
 // 3) Por tags compartidos (fallback si no hay suficientes en categoría)
 const byTags = all.filter(p =>
-    p.slug !== currentSlug &&
-    !manual.some(m => m.slug === p.slug) &&
-    !sameCategory.some(s => s.slug === p.slug) &&
+    p.id !== currentSlug &&
+    !manual.some(m => m.id === p.id) &&
+    !sameCategory.some(s => s.id === p.id) &&
     p.data.tags?.some(t => tags.includes(t))
 );
 
@@ -40,7 +40,7 @@ const combined = [...manual, ...sameCategory, ...byTags].slice(0, limit);
 // Si todavía no hay suficientes, completar con últimos posts
 if (combined.length < limit) {
     const fillers = all
-        .filter(p => p.slug !== currentSlug && !combined.some(c => c.slug === p.slug))
+        .filter(p => p.id !== currentSlug && !combined.some(c => c.id === p.id))
         .sort((a, b) => +new Date(b.data.published) - +new Date(a.data.published))
         .slice(0, limit - combined.length);
     combined.push(...fillers);

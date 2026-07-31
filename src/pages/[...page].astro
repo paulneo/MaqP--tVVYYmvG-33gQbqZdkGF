@@ -61,7 +61,7 @@ const renderCard = (entry: any, size: 'sm' | 'md' | 'lg' = 'sm') => ({
                 title={heroEntry.data.title}
                 category={heroEntry.data.category}
                 published={heroEntry.data.published}
-                url={getPostUrlBySlug(heroEntry.slug)}
+                url={getPostUrlBySlug(heroEntry.id)}
                 image={heroEntry.data.image}
                 description={heroEntry.data.description}
             />
