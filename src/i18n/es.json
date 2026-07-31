@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "categories": "Categorías",
+    "tools": "Herramientas",
+    "glossary": "Glosario",
+    "about": "Sobre"
+  },
+  "post": {
+    "readingTime": "min de lectura",
+    "level": "Nivel",
+    "publishedOn": "Publicado el",
+    "updatedOn": "Actualizado el",
+    "author": "Por",
+    "reviewedBy": "Revisado por",
+    "tableOfContents": "En este artículo",
+    "faq": "Preguntas frecuentes",
+    "sources": "Fuentes",
+    "relatedPosts": "Artículos relacionados",
+    "backToCategory": "Más artículos en",
+    "share": "Compartir",
+    "aiDisclosure": "Este artículo fue redactado con asistencia de inteligencia artificial y revisado por el equipo editorial antes de publicarse."
+  },
+  "tools": {
+    "openCalculator": "Abrir calculadora",
+    "relatedCalculator": "Calculadora relacionada",
+    "reset": "Reiniciar valores",
+    "result": "Resultado",
+    "seeAll": "Ver todas las herramientas"
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "aiPolicy": "Política de IA",
+    "contact": "Contacto"
+  },
+  "common": {
+    "loading": "Cargando",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "readMore": "Leer más",
+    "search": "Buscar"
+  },
+  "notTranslated": {
+    "title": "Este artículo aún no está traducido al inglés",
+    "message": "Estamos trabajando en traducir más contenido. Mientras tanto, podés leer la versión en español.",
+    "cta": "Leer en español"
+  }
+}

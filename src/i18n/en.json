@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Home",
+    "categories": "Categories",
+    "tools": "Tools",
+    "glossary": "Glossary",
+    "about": "About"
+  },
+  "post": {
+    "readingTime": "min read",
+    "level": "Level",
+    "publishedOn": "Published on",
+    "updatedOn": "Updated on",
+    "author": "By",
+    "reviewedBy": "Reviewed by",
+    "tableOfContents": "In this article",
+    "faq": "Frequently Asked Questions",
+    "sources": "Sources",
+    "relatedPosts": "Related posts",
+    "backToCategory": "More articles in",
+    "share": "Share",
+    "aiDisclosure": "This article was drafted with AI assistance and reviewed by our editorial team before publishing."
+  },
+  "tools": {
+    "openCalculator": "Open calculator",
+    "relatedCalculator": "Related calculator",
+    "reset": "Reset values",
+    "result": "Result",
+    "seeAll": "See all tools"
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "aiPolicy": "AI Policy",
+    "contact": "Contact"
+  },
+  "common": {
+    "loading": "Loading",
+    "next": "Next",
+    "previous": "Previous",
+    "readMore": "Read more",
+    "search": "Search"
+  },
+  "notTranslated": {
+    "title": "This article is not yet translated to English",
+    "message": "We're working on translating more content. In the meantime, you can read the Spanish version.",
+    "cta": "Read in Spanish"
+  }
+}

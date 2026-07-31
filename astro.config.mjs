@@ -34,6 +34,13 @@ export default defineConfig({
   site: "https://www.mundoingenieria.org/",
   base: "/",
   trailingSlash: "always",
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'en'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
   integrations: [
     tailwind(),
     swup({

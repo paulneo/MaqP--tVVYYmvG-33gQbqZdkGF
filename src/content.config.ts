@@ -73,6 +73,11 @@ const postsCollection = defineCollection({
   schema: postsSchema,
 })
 
+const postsEnCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/posts-en' }),
+  schema: postsSchema,
+})
+
 const draftsCollection = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/drafts' }),
   schema: postsSchema,
@@ -131,6 +136,7 @@ const tagsCollection = defineCollection({
 
 export const collections = {
   posts: postsCollection,
+  'posts-en': postsEnCollection,
   drafts: draftsCollection,
   authors: authorsCollection,
   glosario: glosarioCollection,

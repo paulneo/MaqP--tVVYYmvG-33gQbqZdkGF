@@ -1,0 +1,288 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import ImageWrapper from "../../../components/misc/ImageWrapper.astro";
+import { getDir } from "@utils/url-utils";
+import { profileConfig } from "src/config";
+import Markdown from "@components/misc/Markdown.astro";
+import path from "path";
+import { formatDateToYYYYMMDD } from "../../../utils/date-utils";
+import { getCategory, FORMATO_LABEL } from "../../../lib/categories";
+import { img, isCdnRef, imgSrcset } from "../../../lib/images";
+import PostTOC from "../../../components/PostTOC.astro";
+import ReadingProgress from "../../../components/ReadingProgress.astro";
+import ShareButtons from "../../../components/ShareButtons.astro";
+import AdSlot from "../../../components/AdSlot.astro";
+import { isPostPublishable } from "@utils/content-utils";
+import { useTranslations } from "../../../i18n";
+
+const t = useTranslations('en');
+
+export async function getStaticPaths() {
+    const blogEntries = await getCollection('posts-en', ({ data }) => isPostPublishable(data));
+    return blogEntries.map(entry => ({
+        params: { slug: entry.id }, props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(entry);
+
+const cat = getCategory(entry.data.category);
+const formato = entry.data.formato as string | undefined;
+const formatoLabel = formato ? FORMATO_LABEL[formato] ?? formato : '';
+const nivel = entry.data.nivel as string | undefined;
+
+const aiAssisted = entry.data.aiAssisted as boolean | undefined;
+
+const publishedFmt = new Date(entry.data.published).toLocaleDateString('en', {
+    day: 'numeric', month: 'long', year: 'numeric',
+});
+const updatedAt = entry.data.updatedAt ? new Date(entry.data.updatedAt as Date) : null;
+const updatedFmt = updatedAt ? updatedAt.toLocaleDateString('en', {
+    day: 'numeric', month: 'long', year: 'numeric',
+}) : null;
+const sameDate = updatedAt && updatedAt.toDateString() === new Date(entry.data.published).toDateString();
+
+const faq = (entry.data.faq as { q: string; a: string }[] | undefined) ?? [];
+const sources = (entry.data.sources as { title: string; url?: string }[] | undefined) ?? [];
+
+const hasCover = !!entry.data.image;
+const coverUsesCdn = hasCover && isCdnRef(entry.data.image as string);
+const coverCdnUrl = coverUsesCdn ? img(entry.data.image as string, { width: 1600, height: 900, crop: 'fill' }) : '';
+const coverCdnSrcset = coverUsesCdn ? imgSrcset(entry.data.image as string, [800, 1200, 1600, 2000]) : '';
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.mundoingenieria.org';
+const postUrl = `${siteUrl}/en/posts/${entry.id}/`;
+const wordCount = (remarkPluginFrontmatter?.minutes ? remarkPluginFrontmatter.minutes * 200 : undefined);
+
+const seoOverride = entry.data.seo as { canonical?: string; ogImage?: string; noindex?: boolean } | undefined;
+const ogImageRaw = seoOverride?.ogImage ?? (entry.data.image as string | undefined);
+const ogImageUrl = ogImageRaw && coverUsesCdn
+    ? img(entry.data.image as string, { width: 1200, height: 630, crop: 'fill' })
+    : ogImageRaw;
+const tagsList = (entry.data.tags as string[] | undefined) ?? [];
+
+const jsonLd: any = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": entry.data.title,
+    "description": entry.data.description || entry.data.title,
+    "keywords": (entry.data.tags || []).join(', '),
+    "inLanguage": "en",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": postUrl },
+    "author": {
+        "@type": "Person",
+        "name": profileConfig.name,
+        "url": `${siteUrl}/about/`,
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Mundo Ingeniería",
+        "logo": {
+            "@type": "ImageObject",
+            "url": `${siteUrl}/logo-light.png`,
+            "width": 2172,
+            "height": 724,
+        },
+    },
+    "datePublished": formatDateToYYYYMMDD(entry.data.published),
+};
+if (updatedAt && !sameDate) jsonLd.dateModified = formatDateToYYYYMMDD(updatedAt);
+if (ogImageUrl) {
+    jsonLd.image = {
+        "@type": "ImageObject",
+        "url": ogImageUrl,
+        "width": 1200,
+        "height": 630,
+    };
+}
+if (cat) {
+    jsonLd.articleSection = cat.label;
+}
+if (wordCount) {
+    jsonLd.wordCount = wordCount;
+}
+
+const faqJsonLd = faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.map(({ q, a }) => ({
+        "@type": "Question",
+        "name": q,
+        "acceptedAnswer": { "@type": "Answer", "text": a },
+    })),
+} : null;
+---
+<MainGridLayout
+    banner={entry.data.image}
+    title={entry.data.title}
+    description={entry.data.description}
+    ogType="article"
+    ogImage={ogImageUrl}
+    canonical={seoOverride?.canonical}
+    publishedTime={entry.data.published}
+    modifiedTime={updatedAt ?? undefined}
+    author={profileConfig.name}
+    tags={tagsList}
+    noindex={seoOverride?.noindex || entry.data.draft}
+>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+    {faqJsonLd && <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqJsonLd)}></script>}
+
+    <ReadingProgress target=".markdown-content" />
+
+    <div class="xl:flex xl:items-start xl:gap-12">
+        <PostTOC />
+        <article class="flex-1 min-w-0 max-w-3xl xl:max-w-none xl:flex-1 mx-auto xl:mx-0">
+        <nav aria-label="Breadcrumb" class="mb-6 text-xs text-black/45 dark:text-white/45 onload-animation">
+            <ol class="flex flex-wrap items-center gap-1.5">
+                <li><a href="/en/" class="hover:text-[var(--primary)] transition">Home</a></li>
+                {cat && (
+                    <>
+                        <li class="opacity-40" aria-hidden="true">/</li>
+                        <li><span>{cat.label}</span></li>
+                    </>
+                )}
+            </ol>
+        </nav>
+
+        <header class="mb-8 onload-animation">
+            {cat && (
+                <div class="flex items-center gap-2 mb-5">
+                    <span class={`inline-block text-[0.72rem] font-semibold uppercase tracking-[0.12em] px-2.5 py-1 rounded ${cat.chip}`}>
+                        {cat.label}
+                    </span>
+                    {formatoLabel && (
+                        <span class="text-[0.72rem] uppercase tracking-[0.12em] text-black/45 dark:text-white/45">
+                            {formatoLabel}
+                        </span>
+                    )}
+                </div>
+            )}
+
+            <h1
+                data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title"
+                class="text-3xl md:text-5xl font-bold tracking-tight leading-[1.1] text-[var(--deep-text)] dark:text-white/95 mb-5"
+            >
+                {entry.data.title}
+            </h1>
+
+            {entry.data.description && (
+                <p class="text-lg md:text-xl leading-[1.5] text-black/60 dark:text-white/60 mb-7">
+                    {entry.data.description}
+                </p>
+            )}
+
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-black/55 dark:text-white/55 pb-6 border-b border-black/[0.08] dark:border-white/[0.1]">
+                <time datetime={new Date(entry.data.published).toISOString()}>{publishedFmt}</time>
+                {remarkPluginFrontmatter?.minutes && (
+                    <>
+                        <span aria-hidden="true">·</span>
+                        <span>{remarkPluginFrontmatter.minutes} {t('post.readingTime')}</span>
+                    </>
+                )}
+                {nivel && (
+                    <>
+                        <span aria-hidden="true">·</span>
+                        <span class="capitalize">{t('post.level')} {nivel}</span>
+                    </>
+                )}
+            </div>
+
+            {updatedFmt && updatedAt && !sameDate && (
+                <p class="mt-3 text-xs text-black/40 dark:text-white/40">
+                    {t('post.updatedOn')} <time datetime={updatedAt.toISOString()}>{updatedFmt}</time>
+                </p>
+            )}
+        </header>
+
+        <div class="mb-10 onload-animation">
+            {coverUsesCdn ? (
+                <img
+                    src={coverCdnUrl}
+                    srcset={coverCdnSrcset}
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    alt={`Cover: ${entry.data.title}`}
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                    class="rounded-2xl banner-container w-full"
+                />
+            ) : hasCover ? (
+                <ImageWrapper
+                    src={entry.data.image}
+                    basePath={path.join("content/posts-en/", getDir(entry.id))}
+                    class="rounded-2xl banner-container w-full"
+                />
+            ) : cat && (
+                <div class={`rounded-2xl ${cat.bg} aspect-[16/8] flex flex-col items-center justify-center`}>
+                    <div class={cat.text}>
+                        <Icon name={cat.icon} class="w-20 h-20 md:w-28 md:h-28 opacity-90"></Icon>
+                    </div>
+                </div>
+            )}
+        </div>
+
+        <Markdown class="markdown-content onload-animation prose-blog">
+            <Content />
+        </Markdown>
+
+        <AdSlot variant="in-article" slot="2446638857" />
+
+        {faq.length > 0 && (
+            <section class="mt-14 pt-10 border-t border-black/[0.08] dark:border-white/[0.1]">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6 text-[var(--deep-text)] dark:text-white/95">
+                    {t('post.faq')}
+                </h2>
+                <div class="space-y-3">
+                    {faq.map(({ q, a }) => (
+                        <details class="group rounded-lg border border-black/[0.08] dark:border-white/[0.1] overflow-hidden">
+                            <summary class="cursor-pointer list-none flex items-center justify-between gap-3 p-4 font-semibold text-black/85 dark:text-white/90 hover:bg-black/[0.02] dark:hover:bg-white/[0.03] transition">
+                                <span>{q}</span>
+                                <span class="text-[var(--primary)] group-open:rotate-45 transition-transform shrink-0 text-xl leading-none">+</span>
+                            </summary>
+                            <div class="px-4 pb-4 text-black/65 dark:text-white/65 leading-relaxed">
+                                {a}
+                            </div>
+                        </details>
+                    ))}
+                </div>
+            </section>
+        )}
+
+        {sources.length > 0 && (
+            <section class="mt-12 pt-8 border-t border-black/[0.08] dark:border-white/[0.1]">
+                <h2 class="text-[0.72rem] uppercase tracking-[0.16em] font-semibold text-black/55 dark:text-white/55 mb-4">
+                    {t('post.sources')}
+                </h2>
+                <ul class="text-sm text-black/65 dark:text-white/65 space-y-2 list-disc pl-5">
+                    {sources.map(s => (
+                        <li>
+                            {s.url ? (
+                                <a href={s.url} target="_blank" rel="noopener noreferrer" class="hover:text-[var(--primary)] transition underline decoration-dotted underline-offset-2">{s.title}</a>
+                            ) : s.title}
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        )}
+
+        <ShareButtons
+            title={entry.data.title}
+            url={new URL(`/en/posts/${entry.id}/`, Astro.site).toString()}
+            description={entry.data.description}
+            tags={entry.data.tags ?? []}
+        />
+
+        {aiAssisted && (
+            <p class="mt-10 text-xs text-black/45 dark:text-white/45 leading-relaxed border-l-2 border-black/[0.1] dark:border-white/[0.15] pl-3">
+                {t('post.aiDisclosure')}
+            </p>
+        )}
+
+        <AdSlot variant="multiplex" slot="1244971895" />
+        </article>
+    </div>
+</MainGridLayout>

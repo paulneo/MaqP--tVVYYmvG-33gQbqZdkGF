@@ -1,0 +1,27 @@
+---
+/**
+ * Selector de idioma para el header.
+ * Muestra las banderas y linkea al equivalente en el otro idioma.
+ */
+import { getLocaleFromUrl, getAlternateLangUrl, languages } from '../i18n'
+
+const currentLang = getLocaleFromUrl(Astro.url)
+const pathname = Astro.url.pathname
+
+const otherLang = currentLang === 'es' ? 'en' : 'es'
+const otherUrl = getAlternateLangUrl(pathname, currentLang, otherLang)
+const otherLabel = languages[otherLang]
+const otherFlag = otherLang === 'es' ? '🇪🇸' : '🇺🇸'
+---
+
+<a
+  href={otherUrl}
+  class="lang-selector inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-sm text-black/65 dark:text-white/65 hover:bg-black/[0.05] dark:hover:bg-white/[0.06] hover:text-[var(--primary)] transition"
+  aria-label={`Switch to ${otherLabel}`}
+  title={otherLabel}
+>
+  <span class="text-base leading-none">{otherFlag}</span>
+  <span class="hidden md:inline uppercase text-xs font-semibold tracking-wider">
+    {otherLang}
+  </span>
+</a>

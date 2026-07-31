@@ -1,5 +1,6 @@
 ---
 import { siteConfig, adsenseId, ga4Id } from "../config"
+import { getLocaleFromUrl, getAlternateLangUrl } from "../i18n"
 
 interface Props {
   title: string
@@ -40,11 +41,16 @@ const resolveOgImage = (src: string | undefined) => {
 }
 const ogImageUrl = resolveOgImage(ogImage)
 
+const currentLang = getLocaleFromUrl(Astro.url)
 const localeMap: Record<string, string> = {
   es: 'es_ES',
   en: 'en_US',
 }
-const siteLocale = localeMap[siteConfig.lang] ?? siteConfig.lang.replace('-', '_')
+const siteLocale = localeMap[currentLang] ?? currentLang
+
+const pathname = Astro.url.pathname
+const esUrl = new URL(getAlternateLangUrl(pathname, currentLang, 'es'), Astro.site).toString()
+const enUrl = new URL(getAlternateLangUrl(pathname, currentLang, 'en'), Astro.site).toString()
 ---
 
 <meta charset="UTF-8" />
@@ -58,6 +64,10 @@ const siteLocale = localeMap[siteConfig.lang] ?? siteConfig.lang.replace('-', '_
 {noindex
   ? <meta name="robots" content="noindex, nofollow" />
   : <meta name="robots" content="index, follow, max-image-preview:large" />}
+
+<link rel="alternate" hreflang="es" href={esUrl} />
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="x-default" href={esUrl} />
 
 <meta property="og:type" content={ogType} />
 <meta property="og:locale" content={siteLocale} />

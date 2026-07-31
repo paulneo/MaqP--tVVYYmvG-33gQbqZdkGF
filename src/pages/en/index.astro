@@ -1,0 +1,64 @@
+---
+import MainGridLayout from '../../layouts/MainGridLayout.astro'
+import { useTranslations } from '../../i18n'
+
+const t = useTranslations('en')
+---
+
+<MainGridLayout
+  title="Mundo Ingeniería - Heavy Machinery & Engineering"
+  description="Technical articles on heavy machinery, diesel engines, hydraulic systems, and engineering calculators. Content from official manufacturer manuals (Caterpillar, Cummins, Volvo)."
+  canonical="https://www.mundoingenieria.org/en/"
+  showSidebar={false}
+>
+  <article class="max-w-4xl mx-auto">
+    <header class="mb-12">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.02em] leading-[1.05] text-[var(--deep-text)] dark:text-white/95 mb-6">
+        Heavy Machinery Engineering
+      </h1>
+      <p class="text-lg md:text-xl text-black/60 dark:text-white/65 leading-[1.55]">
+        Technical articles based on official manuals from Caterpillar, Cummins, Volvo, and other manufacturers. Deep dives into diesel engines, hydraulic systems, and engineering fundamentals.
+      </p>
+    </header>
+
+    <section class="mb-16 p-6 md:p-8 rounded-2xl bg-[var(--primary)]/[0.05] dark:bg-[var(--primary)]/[0.08] border border-[var(--primary)]/20">
+      <h2 class="text-xl md:text-2xl font-bold tracking-tight mb-3 text-[var(--deep-text)] dark:text-white/95">
+        English version is growing
+      </h2>
+      <p class="text-black/70 dark:text-white/70 leading-relaxed mb-4">
+        Most of our content is in Spanish for Latin American operators and technicians. We're gradually translating the most searched articles to English. For the full catalog with 600+ articles and 14 calculators, visit the Spanish site.
+      </p>
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--primary)] text-white font-semibold hover:opacity-90 transition"
+      >
+        Visit Spanish site (full content)
+        <span>→</span>
+      </a>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6 text-[var(--deep-text)] dark:text-white/95">
+        Topics covered
+      </h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-black/75 dark:text-white/75">
+        <li class="p-4 rounded-lg border border-black/[0.08] dark:border-white/[0.08]">
+          <strong class="text-[var(--deep-text)] dark:text-white/95">Diesel Engines</strong>
+          <p class="text-sm text-black/60 dark:text-white/60 mt-1">Caterpillar ACERT, Cummins ISX/Signature, Volvo D7E — architecture, diagnostics, service</p>
+        </li>
+        <li class="p-4 rounded-lg border border-black/[0.08] dark:border-white/[0.08]">
+          <strong class="text-[var(--deep-text)] dark:text-white/95">Hydraulic Systems</strong>
+          <p class="text-sm text-black/60 dark:text-white/60 mt-1">Pumps, valves, cylinders, motors, oils and maintenance</p>
+        </li>
+        <li class="p-4 rounded-lg border border-black/[0.08] dark:border-white/[0.08]">
+          <strong class="text-[var(--deep-text)] dark:text-white/95">Oil Analysis</strong>
+          <p class="text-sm text-black/60 dark:text-white/60 mt-1">API/SAE/ISO classifications, SOS testing, additives, contamination</p>
+        </li>
+        <li class="p-4 rounded-lg border border-black/[0.08] dark:border-white/[0.08]">
+          <strong class="text-[var(--deep-text)] dark:text-white/95">Emissions Standards</strong>
+          <p class="text-sm text-black/60 dark:text-white/60 mt-1">EPA Tier 4, Euro Stage V, ACERT vs SCR, DPF and DEF systems</p>
+        </li>
+      </ul>
+    </section>
+  </article>
+</MainGridLayout>

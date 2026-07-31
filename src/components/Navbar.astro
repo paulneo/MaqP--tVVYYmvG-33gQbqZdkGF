@@ -7,6 +7,7 @@ import LightDarkSwitch from './LightDarkSwitch.svelte'
 import Search from './Search.svelte'
 import DisplaySettings from './widget/DisplaySettings.svelte'
 import NavMenuPanel from './widget/NavMenuPanel.astro'
+import LanguageSelector from './LanguageSelector.astro'
 
 const className = Astro.props.class
 const currentPath = Astro.url.pathname
@@ -190,6 +191,7 @@ const mobileLinks = [
                     <Icon name="material-symbols:palette-outline" size={"1.15rem"}></Icon>
                 </button>
             )}
+            <LanguageSelector />
             <LightDarkSwitch client:load></LightDarkSwitch>
             <button aria-label="Menu" name="Nav Menu" class="btn-plain w-10 h-10 rounded active:scale-95 md:hidden" id="nav-menu-switch">
                 <Icon name="material-symbols:menu-rounded" size={"1.25rem"}></Icon>
