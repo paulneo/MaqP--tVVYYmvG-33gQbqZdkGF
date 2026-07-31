@@ -1,8 +1,14 @@
 ---
 import MainGridLayout from '../../layouts/MainGridLayout.astro'
-import { useTranslations } from '../../i18n'
+import { getCollection } from 'astro:content'
+import { isPostPublishable } from '@utils/content-utils'
+import { img, isCdnRef } from '../../lib/images'
+import { getCategory } from '../../lib/categories'
 
-const t = useTranslations('en')
+const allEn = await getCollection('posts-en', ({ data }) => isPostPublishable(data))
+const posts = allEn.sort((a, b) =>
+  new Date(b.data.published).getTime() - new Date(a.data.published).getTime(),
+)
 ---
 
 <MainGridLayout
@@ -11,31 +17,88 @@ const t = useTranslations('en')
   canonical="https://www.mundoingenieria.org/en/"
   showSidebar={false}
 >
-  <article class="max-w-4xl mx-auto">
-    <header class="mb-12">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.02em] leading-[1.05] text-[var(--deep-text)] dark:text-white/95 mb-6">
+  <article class="max-w-5xl mx-auto">
+    <header class="mb-10">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.02em] leading-[1.05] text-[var(--deep-text)] dark:text-white/95 mb-5">
         Heavy Machinery Engineering
       </h1>
-      <p class="text-lg md:text-xl text-black/60 dark:text-white/65 leading-[1.55]">
+      <p class="text-lg md:text-xl text-black/60 dark:text-white/65 leading-[1.55] max-w-3xl">
         Technical articles based on official manuals from Caterpillar, Cummins, Volvo, and other manufacturers. Deep dives into diesel engines, hydraulic systems, and engineering fundamentals.
       </p>
     </header>
 
-    <section class="mb-16 p-6 md:p-8 rounded-2xl bg-[var(--primary)]/[0.05] dark:bg-[var(--primary)]/[0.08] border border-[var(--primary)]/20">
-      <h2 class="text-xl md:text-2xl font-bold tracking-tight mb-3 text-[var(--deep-text)] dark:text-white/95">
-        English version is growing
-      </h2>
-      <p class="text-black/70 dark:text-white/70 leading-relaxed mb-4">
-        Most of our content is in Spanish for Latin American operators and technicians. We're gradually translating the most searched articles to English. For the full catalog with 600+ articles and 14 calculators, visit the Spanish site.
-      </p>
+    <section class="mb-12 p-5 md:p-6 rounded-2xl bg-[var(--primary)]/[0.05] dark:bg-[var(--primary)]/[0.08] border border-[var(--primary)]/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <h2 class="text-lg md:text-xl font-bold tracking-tight mb-1 text-[var(--deep-text)] dark:text-white/95">
+          English version is growing
+        </h2>
+        <p class="text-sm md:text-base text-black/70 dark:text-white/70 leading-relaxed">
+          Currently {posts.length} articles translated. For the full catalog with 600+ articles and 14 calculators, visit the Spanish site.
+        </p>
+      </div>
       <a
         href="/"
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--primary)] text-white font-semibold hover:opacity-90 transition"
+        class="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--primary)] text-white font-semibold hover:opacity-90 transition text-sm"
       >
-        Visit Spanish site (full content)
+        Spanish site
         <span>→</span>
       </a>
     </section>
+
+    {posts.length > 0 && (
+      <section class="mb-16">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6 text-[var(--deep-text)] dark:text-white/95">
+          All English articles
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {posts.map(entry => {
+            const cat = getCategory(entry.data.category)
+            const hasCover = !!entry.data.image
+            const coverUsesCdn = hasCover && isCdnRef(entry.data.image as string)
+            const coverUrl = coverUsesCdn
+              ? img(entry.data.image as string, { width: 800, height: 450, crop: 'fill' })
+              : ''
+            return (
+              <a
+                href={`/en/posts/${entry.id}/`}
+                class="group flex flex-col rounded-2xl overflow-hidden border border-black/[0.08] dark:border-white/[0.1] bg-white dark:bg-[var(--card-bg)] hover:shadow-lg hover:-translate-y-0.5 transition"
+              >
+                {coverUsesCdn ? (
+                  <img
+                    src={coverUrl}
+                    alt={entry.data.title}
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full aspect-[16/9] object-cover"
+                  />
+                ) : cat ? (
+                  <div class={`w-full aspect-[16/9] ${cat.bg} flex items-center justify-center`}>
+                    <span class={`text-xs uppercase tracking-widest font-semibold ${cat.text}`}>
+                      {cat.label}
+                    </span>
+                  </div>
+                ) : null}
+                <div class="p-5 flex flex-col flex-1">
+                  {cat && (
+                    <span class={`inline-block self-start text-[0.65rem] font-semibold uppercase tracking-[0.12em] px-2 py-0.5 rounded ${cat.chip} mb-3`}>
+                      {cat.label}
+                    </span>
+                  )}
+                  <h3 class="text-base md:text-lg font-bold leading-snug text-[var(--deep-text)] dark:text-white/95 group-hover:text-[var(--primary)] transition mb-2 line-clamp-2">
+                    {entry.data.title}
+                  </h3>
+                  {entry.data.description && (
+                    <p class="text-sm text-black/60 dark:text-white/60 leading-relaxed line-clamp-3">
+                      {entry.data.description}
+                    </p>
+                  )}
+                </div>
+              </a>
+            )
+          })}
+        </div>
+      </section>
+    )}
 
     <section class="mb-12">
       <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6 text-[var(--deep-text)] dark:text-white/95">

@@ -23,7 +23,7 @@ import { isPostPublishable } from "@utils/content-utils";
 export async function getStaticPaths() {
     const blogEntries = await getCollection('posts', ({ data }) => isPostPublishable(data));
     return blogEntries.map(entry => ({
-        params: { slug: entry.slug }, props: { entry },
+        params: { slug: entry.id }, props: { entry },
     }));
 }
 
@@ -52,7 +52,7 @@ const sources = (entry.data.sources as { title: string; url?: string }[] | undef
 // Sugerencia automática de calculadora relacionada (cross-linking a /herramientas/).
 // Se calcula por keywords en slug + tags + category. Ver src/lib/tool-suggestions.ts.
 const suggestedTool = suggestToolForPost({
-    slug: entry.slug,
+    slug: entry.id,
     category: entry.data.category,
     tags: entry.data.tags ?? [],
     title: entry.data.title,
@@ -64,7 +64,7 @@ const coverCdnUrl = coverUsesCdn ? img(entry.data.image as string, { width: 1600
 const coverCdnSrcset = coverUsesCdn ? imgSrcset(entry.data.image as string, [800, 1200, 1600, 2000]) : '';
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.mundoingenieria.org'
-const postUrl = `${siteUrl}/posts/${entry.slug}/`
+const postUrl = `${siteUrl}/posts/${entry.id}/`
 const wordCount = (remarkPluginFrontmatter?.minutes ? remarkPluginFrontmatter.minutes * 200 : undefined)
 
 const seoOverride = entry.data.seo as { canonical?: string; ogImage?: string; noindex?: boolean } | undefined;
@@ -323,7 +323,7 @@ const faqJsonLd = faq.length > 0 ? {
         <!-- Compartir -->
         <ShareButtons
             title={entry.data.title}
-            url={new URL(`/posts/${entry.slug}/`, Astro.site).toString()}
+            url={new URL(`/posts/${entry.id}/`, Astro.site).toString()}
             description={entry.data.description}
             tags={entry.data.tags ?? []}
         />
@@ -350,13 +350,13 @@ const faqJsonLd = faq.length > 0 ? {
 
         {licenseConfig.enable && (
             <div class="mt-10">
-                <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="rounded-lg license-container onload-animation"></License>
+                <License title={entry.data.title} slug={entry.id} pubDate={entry.data.published} class="rounded-lg license-container onload-animation"></License>
             </div>
         )}
 
         <!-- Posts relacionados -->
         <RelatedPosts
-            currentSlug={entry.slug}
+            currentSlug={entry.id}
             category={entry.data.category}
             relatedSlugs={entry.data.related ?? []}
             tags={entry.data.tags ?? []}
