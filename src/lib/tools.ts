@@ -328,6 +328,63 @@ export const TOOLS: Tool[] = [
     status: 'active',
     tier: 'free',
   },
+  {
+    slug: 'agregados-hormigon-arena-grava',
+    title: 'Calculadora de agregados para hormigón (arena, grava, cemento)',
+    description:
+      'Calculá kilos de cemento, m³ de arena y m³ de grava según proporción (1:2:3, 1:3:5, 1:1.5:3) y volumen de hormigón. Con desperdicio ajustable.',
+    category: 'construccion',
+    icon: 'material-symbols:landscape',
+    relatedTools: ['bolsas-de-cemento-por-metro-cubico', 'cubicaje-de-hormigon'],
+    keywords: [
+      'agregados hormigón',
+      'cuanta arena y grava para 1 m3',
+      'proporción hormigón 1 2 3',
+      'dosificación cemento arena grava',
+      'cálculo agregados obra',
+    ],
+    searchVolume: 4500,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'consumo-def-adblue-flota',
+    title: 'Calculadora de consumo de DEF/AdBlue para flota Tier 4',
+    description:
+      'Estimá litros de AdBlue por mes según consumo diésel de tu flota y ratio SCR típico (3-6%). Con costo mensual y proyección anual.',
+    category: 'maquinaria',
+    icon: 'material-symbols:water-drop',
+    relatedTools: ['consumo-combustible-maquinaria', 'costo-hora-operacion-excavadora'],
+    keywords: [
+      'consumo adblue',
+      'def flota diesel',
+      'cuánto adblue por litro diésel',
+      'scr tier 4',
+      'costo adblue mensual',
+    ],
+    searchVolume: 1200,
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'encofrado-madera-por-m2',
+    title: 'Calculadora de encofrado de madera por m² (losa, muro, columna)',
+    description:
+      'Calculá tablero, puntales y clavos necesarios para encofrar losas, muros o columnas por m². Con reuso configurable y desperdicio ajustable.',
+    category: 'construccion',
+    icon: 'material-symbols:carpenter',
+    relatedTools: ['cubicaje-de-hormigon', 'kilos-de-acero-por-varilla'],
+    keywords: [
+      'encofrado madera por m2',
+      'cuanta madera para encofrado',
+      'puntales por metro cuadrado',
+      'cálculo encofrado losa',
+      'materiales encofrado',
+    ],
+    searchVolume: 2200,
+    status: 'active',
+    tier: 'free',
+  },
 ]
 
 /** Devuelve las herramientas activas (excluye coming-soon) */

@@ -1,0 +1,150 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import ConsumoDefAdBlue from '../../components/tools/ConsumoDefAdBlue.svelte'
+---
+
+<ToolLayout slug="consumo-def-adblue-flota">
+    <ConsumoDefAdBlue slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Qué es el DEF (o AdBlue) y por qué la flota lo necesita</h2>
+        <p>
+            El <strong>DEF (Diesel Exhaust Fluid)</strong>, comercializado en Europa como
+            <strong>AdBlue</strong>, es una solución de urea al 32.5% con agua desmineralizada.
+            Los motores diésel modernos que cumplen normas <strong>EPA Tier 4 Final</strong>
+            (USA) o <strong>Euro Stage V</strong> (UE) lo inyectan en el sistema
+            <strong>SCR (Selective Catalytic Reduction)</strong>, donde reacciona con los
+            óxidos de nitrógeno (NOx) del escape y los convierte en nitrógeno y vapor de agua.
+        </p>
+        <p>
+            Sin DEF, el motor entra en <strong>modo derating</strong> (reducción forzada de
+            potencia) y eventualmente se detiene. Todos los motores Tier 4 con SCR llevan un
+            tanque de DEF separado del tanque de combustible. La flota necesita
+            reabastecerlo periódicamente.
+        </p>
+
+        <h3>Ratio típico DEF/diésel por tipo de motor</h3>
+        <ul>
+            <li>
+                <strong>Motores highway modernos</strong> (Cummins ISX15, Volvo D13, Detroit
+                DD15): 3-4% de DEF sobre diésel. Menos DEF porque tienen combustión más
+                eficiente y menos NOx generado.
+            </li>
+            <li>
+                <strong>Maquinaria Tier 4 Final</strong> (Cat C7.1, Cummins QSL, Deutz TCD):
+                4-6%. Ratio típico para excavadoras, cargadores y camiones off-highway.
+            </li>
+            <li>
+                <strong>Motores compactos con carga parcial constante</strong> (D7E, C4.4):
+                6-8%. Trabajar en ralentí o cargas parciales aumenta la relación NOx/potencia
+                y con eso el consumo de DEF.
+            </li>
+            <li>
+                <strong>Generadores estacionarios Tier 4</strong>: 3-5% en carga nominal,
+                sube a 6-8% en cargas parciales inferiores al 40%.
+            </li>
+        </ul>
+
+        <h3>Almacenamiento y contaminación</h3>
+        <p>
+            El DEF es un fluido delicado. <strong>Contaminarlo cuesta caro</strong>: partículas
+            metálicas, aceite, siliconas o combustible envenenan el catalizador SCR
+            (reemplazo: USD 3,000-8,000 según motor).
+        </p>
+        <ul>
+            <li>Temperatura: almacenar entre -5°C y 30°C. Se cristaliza a -11°C y se
+                degrada al sol prolongado.</li>
+            <li>Vida útil sellado: 12-24 meses según fabricante. Abierto: 6-12 meses.</li>
+            <li>Bidones dedicados: nunca reutilizar bidones que hayan tenido combustible
+                o aceite.</li>
+            <li>Bombas: exclusivas para DEF, con filtros de 10 μm o menos.</li>
+        </ul>
+
+        <h3>Formatos comerciales</h3>
+        <p>
+            En Latam el DEF se vende habitualmente en:
+        </p>
+        <ul>
+            <li><strong>Bidones 10 L</strong>: para uso individual, flotas pequeñas o
+                reposición en obra remota.</li>
+            <li><strong>Tambores 208 L</strong>: para taller central, flotas medianas.
+                Necesita bomba manual o eléctrica dedicada.</li>
+            <li><strong>Cisternas 1000 L (IBC)</strong>: flotas grandes, grandes obras.
+                Rentables desde 500 L/mes de consumo.</li>
+            <li><strong>Granel</strong>: desde 3000 L, con tanque instalado en obra. El
+                más barato por litro pero requiere logística.</li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué pasa si se acaba el DEF en la máquina?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                La ECU detecta el nivel bajo y activa una <strong>secuencia progresiva de
+                penalizaciones</strong>. Primero enciende un aviso en el tablero (nivel bajo).
+                Luego reduce la potencia al 50-75% (derating suave). Si sigue sin
+                reabastecerse, el motor limita a 5 km/h en camiones highway, o queda en
+                ralentí en maquinaria off-highway. Finalmente puede pasar a modo de arranque
+                bloqueado. <strong>Nunca es un problema mecánico</strong>: el motor está bien,
+                solo espera DEF. Reabastecé y el sistema se recupera en 1-2 arranques.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Puedo diluir DEF con agua para "estirarlo"?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>No.</strong> La concentración 32.5% no es arbitraria: es la que
+                congela más bajo (~-11°C) y a la que la urea se descompone en amoníaco al
+                inyectarse. Si diluís, el sistema mide la conductividad, detecta el DEF fuera
+                de spec y bloquea el vehículo. Además, agua sola nunca reduce NOx. La única
+                opción legal es DEF certificado ISO 22241. Marcas confiables en Latam:
+                YARA, BASF, Terracair, cualquiera con sello VDA/API.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Es lo mismo DEF que AdBlue?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, es el mismo fluido. <strong>DEF</strong> es el término genérico usado en
+                USA y en la industria (Diesel Exhaust Fluid). <strong>AdBlue</strong> es una
+                marca registrada de la asociación de la industria automotriz alemana (VDA),
+                usada como nombre comercial en Europa. La especificación técnica es idéntica:
+                <strong>ISO 22241</strong> (32.5% urea + 67.5% agua desmineralizada). En
+                Latam se usa cualquiera de los dos nombres indistintamente.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuándo conviene pasar de bidones a granel?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                El breakeven depende del país, pero como referencia: <strong>bidón 10L</strong>
+                cuesta ~USD 1.20-1.50/L, <strong>tambor 208L</strong> ~USD 0.95-1.15/L,
+                <strong>IBC 1000L</strong> ~USD 0.85-1.00/L, <strong>granel</strong> ~USD
+                0.70-0.85/L. Un salto típico: pasar a tambor cuando consumís más de 200 L/mes,
+                a IBC cuando pasás 800 L/mes, a granel cuando pasás 3000 L/mes. El ahorro se
+                amortiza rápido si tenés flota diésel Tier 4 activa.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿El consumo de DEF sube en obra a mucha altura?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, un poco. En obras sobre 3000 msnm (minería Andes, obras de altura), el
+                motor trabaja con menos oxígeno disponible y la ECU ajusta timing y presión
+                de inyección. Los NOx generados suben ligeramente y el SCR responde
+                inyectando más DEF. Aumento típico: 5-15% sobre el consumo a nivel del mar.
+                Considerá 6% en vez de 5% si tu flota opera constantemente en altura.
+            </p>
+        </details>
+    </div>
+</ToolLayout>
