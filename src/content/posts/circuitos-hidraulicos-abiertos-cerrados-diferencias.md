@@ -13,7 +13,7 @@ tags:
   - "sistema-hidraulico"
   - "hidrostatica"
   - "arquitectura-hidraulica"
-image: ""
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistemas-hidraulicos/circuitos-hidraulicos-abiertos-cerrados-diferencias
 author: taller-diesel
 reviewedBy: taller-diesel
 aiAssisted: true

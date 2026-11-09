@@ -13,7 +13,7 @@ tags:
   - "maquinaria-pesada"
   - "fundamentos"
   - "principio-pascal"
-image: ""
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistemas-hidraulicos/que-es-un-sistema-hidraulico-fundamentos
 author: taller-diesel
 reviewedBy: taller-diesel
 aiAssisted: true

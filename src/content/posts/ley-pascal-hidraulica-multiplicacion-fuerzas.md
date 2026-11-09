@@ -13,7 +13,7 @@ tags:
   - "multiplicacion-fuerzas"
   - "principio-fisico"
   - "presion-hidraulica"
-image: ""
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistemas-hidraulicos/ley-pascal-hidraulica-multiplicacion-fuerzas
 author: redaccion-tecnica
 reviewedBy: redaccion-tecnica
 aiAssisted: true

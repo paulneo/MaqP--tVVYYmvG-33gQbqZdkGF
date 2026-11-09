@@ -13,7 +13,7 @@ tags:
   - "bomba-pistones"
   - "bomba-paletas"
   - "sistema-hidraulico"
-image: ""
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistemas-hidraulicos/bombas-hidraulicas-tipos-engranajes-paletas-pistones
 author: taller-diesel
 reviewedBy: taller-diesel
 aiAssisted: true

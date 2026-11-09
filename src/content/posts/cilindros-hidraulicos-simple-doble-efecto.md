@@ -13,7 +13,7 @@ tags:
   - "doble-efecto"
   - "actuadores"
   - "sistema-hidraulico"
-image: ""
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistemas-hidraulicos/cilindros-hidraulicos-simple-doble-efecto
 author: taller-diesel
 reviewedBy: taller-diesel
 aiAssisted: true

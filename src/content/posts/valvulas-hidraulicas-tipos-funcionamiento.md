@@ -13,7 +13,7 @@ tags:
   - "valvula-alivio"
   - "sistema-hidraulico"
   - "control-hidraulico"
-image: ""
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistemas-hidraulicos/valvulas-hidraulicas-tipos-funcionamiento
 author: taller-diesel
 reviewedBy: taller-diesel
 aiAssisted: true

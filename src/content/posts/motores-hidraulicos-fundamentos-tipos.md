@@ -13,7 +13,7 @@ tags:
   - "sistema-hidraulico"
   - "traslacion-oruga"
   - "giro-torreta"
-image: ""
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistemas-hidraulicos/motores-hidraulicos-fundamentos-tipos
 author: taller-diesel
 reviewedBy: taller-diesel
 aiAssisted: true

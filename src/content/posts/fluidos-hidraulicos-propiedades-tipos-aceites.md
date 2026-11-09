@@ -13,7 +13,7 @@ tags:
   - "iso-46-68"
   - "viscosidad"
   - "mantenimiento-hidraulico"
-image: ""
+image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/sistemas-hidraulicos/fluidos-hidraulicos-propiedades-tipos-aceites
 author: taller-diesel
 reviewedBy: taller-diesel
 aiAssisted: true
