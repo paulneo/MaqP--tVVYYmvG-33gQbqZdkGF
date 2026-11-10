@@ -1,52 +1,48 @@
 name: Scheduled site rebuild
 
-# Dispara un rebuild de Vercel 2 veces al día para que los posts con
+# Dispara un rebuild de Netlify una vez al día para que los posts con
 # `published` futuro aparezcan automáticamente cuando llega su fecha.
 # El filtro real lo hace `isPostPublishable` en src/utils/content-utils.ts
 # durante el build.
 #
-# REQUIRES setup once:
-#   1. Vercel → Settings → Git → Deploy Hooks → "Create Hook"
-#      (name: "Scheduled rebuild", branch: "main") → copiar URL
-#   2. GitHub repo → Settings → Secrets and variables → Actions →
-#      New repository secret → name `VERCEL_DEPLOY_HOOK`, value: la URL
+# Setup (ya realizado):
+#   1. Netlify → sitio "maquinariaspesadas" → Build hooks →
+#      "Scheduled daily rebuild" (branch: main)
+#   2. GitHub → Settings → Secrets and variables → Actions →
+#      secret `NETLIFY_BUILD_HOOK` con la URL del hook
+#
+# Nota: GitHub desactiva los cron tras 60 días sin commits en el repo.
 
 on:
   schedule:
-    # 11:00 UTC = 6:00 AM Lima/Bogotá/Quito
-    # 23:00 UTC = 6:00 PM Lima/Bogotá/Quito
-    # Dos rebuilds diarios cubren publicaciones programadas para mañana
-    # tanto en horario AM como PM. ~60 builds/mes — dentro del free tier
-    # de Vercel (100/mes).
-    - cron: '0 11,23 * * *'
+    # 11:00 UTC = 6:00 AM Lima/Bogotá/Quito.
+    # Un solo rebuild diario publica todos los posts del día (3 por día).
+    # ~30 builds/mes × ~4.5 min ≈ 135 min, dentro del plan Free de Netlify.
+    - cron: '0 11 * * *'
 
   # Permite trigger manual desde la pestaña Actions del repo
   workflow_dispatch:
 
 jobs:
-  trigger-vercel-rebuild:
+  trigger-netlify-rebuild:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Verify deploy hook secret exists
+      - name: Verify build hook secret exists
         run: |
-          if [ -z "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then
-            echo "::error::VERCEL_DEPLOY_HOOK secret not configured."
+          if [ -z "${{ secrets.NETLIFY_BUILD_HOOK }}" ]; then
+            echo "::error::NETLIFY_BUILD_HOOK secret not configured."
             echo "Set it at: Settings → Secrets and variables → Actions → New repository secret"
             exit 1
           fi
 
-      - name: Trigger Vercel deploy hook
+      - name: Trigger Netlify build hook
         run: |
-          response=$(curl -sS -X POST -w "\n%{http_code}" "${{ secrets.VERCEL_DEPLOY_HOOK }}")
-          status=$(echo "$response" | tail -n1)
-          body=$(echo "$response" | sed '$d')
-
-          echo "Vercel response (HTTP $status):"
-          echo "$body"
+          status=$(curl -sS -o /dev/null -w "%{http_code}" -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK }}")
+          echo "Netlify response: HTTP $status"
 
           if [ "$status" != "200" ] && [ "$status" != "201" ]; then
-            echo "::error::Deploy hook failed with status $status"
+            echo "::error::Build hook failed with status $status"
             exit 1
           fi
-          echo "✓ Vercel deploy triggered successfully"
+          echo "✓ Netlify rebuild triggered successfully"
