@@ -153,7 +153,7 @@
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
             Dosificación estándar para {resistencia}. Los valores pueden variar según la
             granulometría del agregado, cemento usado y norma local. Para obras estructurales
-            importantes, consultá el diseño de mezcla con un ingeniero.
+            importantes, consulte el diseño de mezcla con un ingeniero.
         </p>
     </div>
 

@@ -81,8 +81,8 @@
 <div class="costo-hora-calculadora">
     <p class="text-sm text-black/60 dark:text-white/60 mb-6 leading-relaxed">
         Los valores por defecto son para una excavadora clase 20 toneladas
-        (Cat 320D, Volvo EC210, Komatsu PC200 y similares). Ajustá cada input a los
-        números reales de tu operación.
+        (Cat 320D, Volvo EC210, Komatsu PC200 y similares). Ajuste cada input a los
+        números reales de su operación.
     </p>
 
     <!-- Máquina y vida útil -->
@@ -151,7 +151,7 @@
                 </span>
                 <input type="number" bind:value={mantenimientoAnualPct} step="0.5" min="0" max="30" class="tool-input" />
                 <span class="text-xs text-black/45 dark:text-white/45 mt-1 block">
-                    Fabricante recomienda 6-10%
+                    Referencia habitual: 6-10%
                 </span>
             </label>
             <label class="block">

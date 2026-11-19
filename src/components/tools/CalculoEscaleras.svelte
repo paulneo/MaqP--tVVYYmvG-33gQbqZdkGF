@@ -148,9 +148,9 @@
                 <p class="text-xs text-yellow-800 dark:text-yellow-200 leading-relaxed">
                     <strong>Atención:</strong>
                     {#if blondelWarning === 'baja'}
-                        La regla de Blondel (2C + H) da {fmt(blondel, 1)} cm — menor a 60. La escalera va a ser muy plana y ocupará mucho espacio horizontal. Considerá aumentar levemente la contrahuella.
+                        La regla de Blondel (2C + H) da {fmt(blondel, 1)} cm — menor a 60. La escalera va a ser muy plana y ocupará mucho espacio horizontal. Considere aumentar levemente la contrahuella.
                     {:else}
-                        La regla de Blondel (2C + H) da {fmt(blondel, 1)} cm — mayor a 64. La escalera va a ser incómoda y agotadora. Considerá reducir la contrahuella con más escalones.
+                        La regla de Blondel (2C + H) da {fmt(blondel, 1)} cm — mayor a 64. La escalera va a ser incómoda y agotadora. Considere reducir la contrahuella con más escalones.
                     {/if}
                 </p>
             </div>

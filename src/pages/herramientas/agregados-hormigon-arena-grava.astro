@@ -4,93 +4,126 @@ import AgregadosHormigon from '../../components/tools/AgregadosHormigon.svelte'
 ---
 
 <ToolLayout slug="agregados-hormigon-arena-grava">
+    <!-- Calculadora interactiva (Svelte island) -->
     <AgregadosHormigon slot="calculator" client:visible />
 
+    <!-- Explicación técnica -->
     <div slot="explanation">
         <h2>Proporción volumétrica: la base del hormigón hecho en obra</h2>
         <p>
             Cuando no se compra hormigón premezclado y se dosifica manualmente en obra,
             los operarios trabajan con <strong>proporciones volumétricas</strong>: partes
-            de cemento, arena y grava medidas con la misma unidad (una lata, una carretilla).
-            Esa relación define directamente la resistencia final y la trabajabilidad de
-            la mezcla.
+            de cemento, arena y grava medidas con el mismo recipiente (una lata, un balde,
+            una carretilla). Esa relación influye directamente en la resistencia final y
+            en la trabajabilidad de la mezcla.
         </p>
         <p>
             La proporción se escribe como <code>1 : a : g</code>, donde 1 es siempre cemento,
-            <em>a</em> es arena y <em>g</em> es grava (agregado grueso). Ejemplo clásico:
-            <strong>1 : 2 : 3</strong> significa 1 lata de cemento, 2 de arena y 3 de grava,
-            más el agua ajustada para lograr trabajabilidad sin exceso.
+            <em>a</em> es arena y <em>g</em> es grava (agregado grueso). Por ejemplo,
+            <strong>1 : 2 : 3</strong> significa 1 recipiente de cemento, 2 de arena y 3 de
+            grava, más el agua necesaria para lograr trabajabilidad sin exceso.
         </p>
 
-        <h3>Proporciones típicas y sus usos</h3>
-        <ul>
-            <li>
-                <strong>1 : 3 : 5</strong> — hormigón pobre, resistencia baja (~H10-H15).
-                Uso: contrapiso, relleno no estructural, banquinas, hormigón ciclópeo.
-            </li>
-            <li>
-                <strong>1 : 2 : 4</strong> — hormigón simple (~H17-H20). Uso: cimientos
-                sin refuerzo, veredas, muros de contención bajos.
-            </li>
-            <li>
-                <strong>1 : 2 : 3</strong> — <em>la proporción más usada en Latam</em>.
-                Estructural general (~H21-H25). Uso: columnas, vigas y losas de vivienda
-                1-2 pisos.
-            </li>
-            <li>
-                <strong>1 : 1.5 : 3</strong> — hormigón estructural más resistente
-                (~H25-H30). Uso: losas y vigas de edificios, columnas de más carga.
-            </li>
-            <li>
-                <strong>1 : 1 : 2</strong> — hormigón de alta resistencia (~H30-H40).
-                Requiere superplastificante para trabajabilidad. Uso: obras especiales,
-                pisos industriales.
-            </li>
-        </ul>
-
-        <h3>Factor de compactación: por qué 1 m³ de hormigón necesita 1.5 m³ de materiales</h3>
+        <h3>Proporciones que incluye la calculadora</h3>
         <p>
-            Un error común es sumar volúmenes sueltos y esperar que el resultado sea el
-            mismo m³ del hormigón fraguado. No lo es. Los agregados sueltos tienen huecos
-            entre partículas (arena ~35% de huecos, grava ~40%). Al mezclar y compactar,
-            el cemento y el agua llenan esos huecos y el conjunto se reduce.
-        </p>
-        <p>
-            La regla práctica: <strong>por cada m³ de hormigón compactado, sumá 1.5 m³ de
-            materiales sueltos</strong>. Sin ese ajuste, siempre falta material a mitad de
-            colada.
-        </p>
-
-        <h3>Relación agua/cemento (a/c)</h3>
-        <p>
-            El factor más crítico: cuanta menos agua por unidad de cemento, mayor resistencia
-            y durabilidad. Como referencia:
+            La tabla siguiente reproduce los cinco dosajes de la herramienta, con la
+            relación agua/cemento (a/c) que aplica a cada uno. Las resistencias son
+            aproximadas y están expresadas con la designación H (resistencia característica
+            en MPa) usada en Argentina y Uruguay; en otros países se expresa como f'c en
+            MPa o en kg/cm².
         </p>
         <ul>
-            <li>Proporciones 1:3:5 y 1:2:4 → a/c ~ 0.6-0.7 (más agua, más trabajable)</li>
-            <li>Proporción 1:2:3 → a/c ~ 0.55</li>
-            <li>Proporción 1:1.5:3 → a/c ~ 0.5</li>
-            <li>Proporción 1:1:2 → a/c ~ 0.45 (necesita superplastificante)</li>
+            <li><strong>1 : 3 : 5</strong> (a/c 0,70): hormigón pobre, ~H10-H15. Contrapisos, rellenos no estructurales, hormigón ciclópeo.</li>
+            <li><strong>1 : 2 : 4</strong> (a/c 0,60): hormigón simple, ~H17-H20. Cimientos sin refuerzo, veredas.</li>
+            <li><strong>1 : 2 : 3</strong> (a/c 0,55): uso estructural general, ~H21-H25. Es el dosaje por defecto de la herramienta.</li>
+            <li><strong>1 : 1,5 : 3</strong> (a/c 0,50): ~H25-H30. Losas y vigas con mayor exigencia.</li>
+            <li><strong>1 : 1 : 2</strong> (a/c 0,45): ~H30-H40. Con una relación a/c tan baja suele requerirse un aditivo reductor de agua para obtener trabajabilidad.</li>
         </ul>
+
+        <h3>Cómo se calcula</h3>
+        <p>La calculadora sigue estos pasos, en este orden:</p>
+        <ol>
+            <li><code>V total = V hormigón × (1 + desperdicio / 100)</code></li>
+            <li><code>V suelto = V total × 1,5</code> (factor de compactación: los materiales sueltos ocupan más volumen que el hormigón compactado).</li>
+            <li><code>partes = c + a + g</code> (suma de la proporción, por ejemplo 1 + 2 + 3 = 6).</li>
+            <li><code>V cemento = (c / partes) × V suelto</code>; igual para arena y grava con a y g.</li>
+            <li><code>cemento (kg) = V cemento × 1.440</code> (densidad aparente del cemento suelto en kg/m³). Las bolsas son <code>redondeo hacia arriba (kg / 42,5)</code>.</li>
+            <li><code>agua (L) = cemento (kg) × relación a/c</code>.</li>
+        </ol>
         <p>
-            <strong>Nunca agregues agua "para que fluya mejor"</strong>. Cada litro extra
-            baja la resistencia final. Si el hormigón no fluye, es tema de aditivo o
-            granulometría, no de agua.
+            Los resultados de arena y grava salen en metros cúbicos sueltos, que es como
+            se compran y se miden en obra. Por tratarse de coeficientes de referencia,
+            las normas locales (NTP y RNE en Perú, NSR-10 en Colombia, NTC y NMX en
+            México, NCh en Chile, IRAM y CIRSOC en Argentina) y el diseño de mezcla del
+            ingeniero estructural prevalecen sobre estos números.
         </p>
+
+        <h3>Factor de compactación: por qué 1 m³ de hormigón necesita unos 1,5 m³ de materiales sueltos</h3>
+        <p>
+            Un error frecuente es sumar volúmenes sueltos y esperar el mismo volumen de
+            hormigón fraguado. Los agregados sueltos tienen huecos entre partículas. Al
+            mezclar y compactar, el cemento, el agua y los granos finos llenan esos huecos
+            y el conjunto se reduce. La herramienta adopta un factor de 1,5 como regla
+            práctica de pre-dimensionamiento; el valor real varía con la granulometría y
+            la humedad de los agregados y debe confirmarse con un ensayo de rendimiento
+            si el volumen es grande.
+        </p>
+
+        <h3>Ejemplo resuelto: contrapiso de 20 m² y 10 cm de espesor</h3>
+        <p>
+            Se va a hacer un contrapiso de 4 × 5 m con 10 cm de espesor, con dosaje
+            1 : 3 : 5 y 5 % de desperdicio.
+        </p>
+        <ol>
+            <li>Volumen de hormigón: <code>4 × 5 × 0,10 = 2 m³</code>.</li>
+            <li>Con desperdicio: <code>2 × 1,05 = 2,10 m³</code>.</li>
+            <li>Volumen suelto: <code>2,10 × 1,5 = 3,15 m³</code>.</li>
+            <li>Partes totales: <code>1 + 3 + 5 = 9</code>.</li>
+            <li>Cemento suelto: <code>(1/9) × 3,15 = 0,35 m³</code>; en peso, <code>0,35 × 1.440 = 504 kg</code>, que dan <code>504 / 42,5 = 11,86</code>, es decir <strong>12 bolsas</strong>.</li>
+            <li>Arena: <code>(3/9) × 3,15 = 1,05 m³</code>.</li>
+            <li>Grava: <code>(5/9) × 3,15 = 1,75 m³</code>.</li>
+            <li>Agua: <code>504 × 0,70 = 352,8 litros</code> (aprox. 353 L).</li>
+        </ol>
+        <p>
+            Para el dosaje 1 : 2 : 3 con 1 m³ y sin desperdicio, el mismo procedimiento da
+            0,25 m³ de cemento (360 kg, 9 bolsas), 0,50 m³ de arena, 0,75 m³ de grava y 198
+            litros de agua.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <ul>
+            <li>Compre el cemento en bolsas enteras: 11,86 bolsas se convierten en 12.</li>
+            <li>Pida arena y grava en m³ y agregue la humedad: la arena húmeda se esponja, de modo que el mismo peso ocupa más volumen y la dosificación por volumen cambia.</li>
+            <li>El agua calculada es el agua total de mezclado. Si la arena viene húmeda, parte del agua ya está en el agregado y debe descontarse al amasar.</li>
+            <li>Las proporciones por volumen son aproximadas; para obras estructurales se prefiere dosificar por peso o contratar premezclado.</li>
+        </ul>
+
+        <h3>Errores comunes al dosificar agregados</h3>
+        <ul>
+            <li><strong>Ignorar el factor de compactación</strong> y comprar solo el volumen de hormigón en agregados: faltará material a mitad del vaciado.</li>
+            <li><strong>Agregar agua "para que fluya mejor"</strong>: cada litro adicional sube la relación a/c y baja la resistencia final.</li>
+            <li><strong>Medir con recipientes distintos</strong> para cada material (un balde para la arena y una carretilla para la grava): la proporción deja de ser 1 : 2 : 3.</li>
+            <li><strong>No considerar la humedad de la arena</strong>, que modifica tanto el volumen como el agua efectiva.</li>
+            <li><strong>Emplear un dosaje pobre en elementos estructurales</strong> porque "así se hizo siempre": la resistencia la define el proyecto.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/cuanto-cemento-para-una-losa-de-concreto/">Cuánto cemento necesito para una losa de concreto</a></li>
+            <li><a href="/posts/diferencia-entre-cemento-hormigon-y-concreto/">Diferencia entre cemento, hormigón y concreto</a></li>
+            <li><a href="/posts/que-es-la-resistencia-del-hormigon-fc/">Qué es la resistencia del hormigón (f'c)</a></li>
+            <li><a href="/posts/como-se-calcula-el-cubicaje-de-hormigon/">Cómo se calcula el cubicaje de hormigón en obra</a></li>
+        </ul>
     </div>
 
+    <!-- FAQ -->
     <div slot="faq">
         <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
                 ¿Cuánta arena y grava necesito para 1 m³ de hormigón 1:2:3?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Para 1 m³ de hormigón compactado con proporción <strong>1:2:3</strong>,
-                partiendo de 1.5 m³ de materiales sueltos: <strong>~0.25 m³ de cemento
-                (≈8-9 bolsas)</strong>, <strong>~0.5 m³ de arena</strong> y
-                <strong>~0.75 m³ de grava</strong>, más ~180 litros de agua. El total
-                suelto suma 1.5 m³ que al compactar y llenar huecos rinde 1 m³ de
-                hormigón. La calculadora te da los números ajustados por desperdicio.
+                Con los coeficientes de esta calculadora, para 1 m³ de hormigón compactado se parte de 1,5 m³ de materiales sueltos: <strong>0,25 m³ de cemento (360 kg, 9 bolsas de 42,5 kg)</strong>, <strong>0,50 m³ de arena</strong> y <strong>0,75 m³ de grava</strong>, con unos <strong>198 litros de agua</strong> (a/c 0,55). Si añade desperdicio, todas las cantidades suben en esa proporción.
             </p>
         </details>
 
@@ -99,12 +132,7 @@ import AgregadosHormigon from '../../components/tools/AgregadosHormigon.svelte'
                 ¿Qué proporción usar para columnas y vigas de una casa?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Para vivienda de 1-2 pisos, <strong>1:2:3</strong> es el estándar de facto
-                en Latam. Da resistencia H21-H25, suficiente para columnas y vigas de
-                sección normal. Si tenés luces largas o cargas altas (garaje sobre local
-                comercial, techo cargado), subí a <strong>1:1.5:3</strong> (H25-H30). Para
-                edificios de 3+ pisos, mejor usar premezclado con diseño de mezcla
-                calculado por ingeniero.
+                La proporción la define el proyecto estructural, no la calculadora. Como referencia, el dosaje 1 : 2 : 3 se emplea con frecuencia en vivienda de baja altura, y 1 : 1,5 : 3 para elementos con mayor exigencia. Si el plano especifica una resistencia (f'c), solicite un diseño de mezcla que la garantice. Para edificios de varios pisos suele preferirse premezclado con control de calidad.
             </p>
         </details>
 
@@ -113,13 +141,7 @@ import AgregadosHormigon from '../../components/tools/AgregadosHormigon.svelte'
                 ¿La proporción cambia si uso arena fina o gruesa?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Sí, pero no drásticamente. La <strong>arena fina</strong> tiene más huecos
-                pequeños y absorbe más cemento, dando hormigón más plástico pero un poco
-                menos resistente. La <strong>arena gruesa</strong> (o mezclada 70/30 con
-                fina) genera menos huecos, ahorra cemento y da mejor resistencia. Regla
-                práctica: si sólo tenés arena muy fina, aumentá un 5-10% las partes de
-                cemento. Ideal: pedir <strong>arena de trituración lavada</strong>, que
-                tiene granulometría bien graduada.
+                Sí. La arena muy fina tiene mayor superficie específica, demanda más pasta de cemento y agua, y tiende a dar mezclas menos resistentes a igual contenido de cemento. Una arena bien graduada (mezcla de gruesa y fina), limpia y sin arcilla ni materia orgánica permite mejor resistencia con menos cemento. Si solo dispone de arena muy fina, conviene consultar con un laboratorio o con el ingeniero antes de ajustar el dosaje.
             </p>
         </details>
 
@@ -128,26 +150,34 @@ import AgregadosHormigon from '../../components/tools/AgregadosHormigon.svelte'
                 ¿Por qué obtengo menos m³ de lo que calculo?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Casi siempre por el <strong>factor de compactación</strong>. Los agregados
-                sueltos ocupan ~50% más de volumen que el hormigón fraguado (huecos entre
-                partículas). Si tirás 1 m³ de arena + 1 m³ de grava en la mezcladora, no
-                salen 2 m³ de hormigón sino ~1.3 m³. Esta calculadora ya aplica el factor
-                1.5 automáticamente, por eso los números pueden verse más altos que en
-                otras fuentes que ignoran ese detalle.
+                Casi siempre por el factor de compactación. Los agregados sueltos tienen huecos que se llenan al mezclar, así que el volumen de hormigón fraguado es menor que la suma de los volúmenes sueltos. Esta calculadora aplica un factor de 1,5 (V suelto = 1,5 × V hormigón) y por eso sus cifras de arena y grava pueden ser mayores que las de fuentes que ignoran ese detalle.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto desperdicio prever en una obra pequeña?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                En obra pequeña o autoconstrucción son realistas <strong>5-10 %</strong>: se pierde material en la mezcladora, en las carretillas y en los restos de los baldes. En obras grandes con cuadrillas entrenadas, 3-5 % puede bastar. Si el trabajo es a la intemperie, con viento o lluvia, o con acopios sobre tierra, suba el margen.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántas bolsas de cemento lleva un metro cúbico de hormigón según la proporción?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con los coeficientes de la herramienta y sin desperdicio, 1 m³ requiere aproximadamente: <strong>1:3:5</strong> unos 240 kg (6 bolsas), <strong>1:2:4</strong> unos 309 kg (8 bolsas), <strong>1:2:3</strong> 360 kg (9 bolsas), <strong>1:1,5:3</strong> unos 393 kg (10 bolsas) y <strong>1:1:2</strong> unos 540 kg (13 bolsas). La razón es que cada dosaje reparte los 1,5 m³ sueltos en partes distintas y el cemento pesa 1.440 kg por m³ suelto. Son cifras de referencia; el diseño de mezcla final puede variar.
             </p>
         </details>
 
         <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿Cuánto desperdicio prever en una obra pequeña?
+                ¿Puedo medir las partes con una carretilla en lugar de con latas?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Para obra pequeña o autoconstrucción, <strong>5-10% de desperdicio</strong>
-                es realista. Se pierde material en la mezcladora, en carretillas volcadas,
-                en fondos de baldes que no se raspan, y en dosificación irregular. Para
-                obras grandes con encofrado apretado y cuadrillas experimentadas, 3-5%
-                suele alcanzar. Para obras al aire libre en día de viento (arena que vuela),
-                subí a 10-15%.
+                Sí, siempre que use el mismo recipiente para todas las partes y que lo llene al ras. Calibre el recipiente una vez (por ejemplo, un cajón de madera de volumen conocido) y úselo como unidad. Mezclar recipientes de distinto tamaño es una de las causas más habituales de resistencia variable entre un vaciado y otro.
             </p>
         </details>
     </div>

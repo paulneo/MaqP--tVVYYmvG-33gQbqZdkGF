@@ -199,7 +199,7 @@
                 {fmt(litrosNecesarios, 2)} <span class="text-2xl md:text-3xl">litros</span>
             </p>
             <p class="text-xs text-black/45 dark:text-white/45 mt-1">
-                Comprá {envaseSugerido.cantidad} envase{envaseSugerido.cantidad > 1 ? 's' : ''} de {envaseSugerido.tamaño} L
+                Compre {envaseSugerido.cantidad} envase{envaseSugerido.cantidad > 1 ? 's' : ''} de {envaseSugerido.tamaño} L
             </p>
         </div>
 
@@ -237,13 +237,13 @@
                 <div class="tool-result-metric opacity-50">
                     <p class="text-xs text-black/55 dark:text-white/55 mb-1">Costo total</p>
                     <p class="text-lg font-bold text-black/40 dark:text-white/40">—</p>
-                    <p class="text-xs text-black/50 dark:text-white/50">ingresá precio</p>
+                    <p class="text-xs text-black/50 dark:text-white/50">ingrese precio</p>
                 </div>
             {/if}
         </div>
 
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
-            El cálculo usa rendimiento nominal del fabricante. En la práctica, la primera mano rinde ~15% menos (superficie porosa absorbe). Considerá comprar 10% extra por retoques y desperdicio.
+            El cálculo usa rendimiento nominal del fabricante. En la práctica, la primera mano suele rendir menos (la superficie porosa absorbe más). Considere comprar 10% extra por retoques y desperdicio.
         </p>
     </div>
 

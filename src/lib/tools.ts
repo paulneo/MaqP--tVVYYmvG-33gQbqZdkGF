@@ -78,7 +78,7 @@ export const TOOLS: Tool[] = [
     slug: 'cubicaje-de-hormigon',
     title: 'Calculadora de cubicaje de hormigón',
     description:
-      'Calculá los m³ de hormigón necesarios para losas, columnas, vigas y zapatas. Con conversión a bolsas de cemento, arena y agregado.',
+      'Calcule los m³ de hormigón necesarios para losas, columnas, vigas y zapatas. Con conversión a bolsas de cemento, arena y agregado.',
     category: 'construccion',
     icon: 'material-symbols:foundation',
     relatedPost: 'como-se-calcula-el-cubicaje-de-hormigon',
@@ -97,7 +97,7 @@ export const TOOLS: Tool[] = [
     slug: 'ladrillos-por-metro-cuadrado',
     title: 'Calculadora de ladrillos por metro cuadrado',
     description:
-      'Estimá cuántos ladrillos necesitás según las dimensiones de la pared y el tipo de ladrillo (cerámico, hueco, macizo). Incluye desperdicio recomendado.',
+      'Estime cuántos ladrillos necesita según las dimensiones de la pared y el tipo de ladrillo (cerámico, hueco, macizo). Incluye desperdicio recomendado.',
     category: 'construccion',
     icon: 'material-symbols:grid-4x4',
     relatedPost: 'cuantos-ladrillos-por-metro-cuadrado-de-pared',
@@ -115,7 +115,7 @@ export const TOOLS: Tool[] = [
     slug: 'costo-hora-operacion-excavadora',
     title: 'Calculadora de costo por hora de operación de excavadora',
     description:
-      'Calculá cuánto cuesta operar una excavadora por hora: combustible, mantenimiento, depreciación, operador y utilidad. Base para presupuestar obras.',
+      'Calcule cuánto cuesta operar una excavadora por hora: combustible, mantenimiento, depreciación, operador y utilidad. Base para presupuestar obras.',
     category: 'maquinaria',
     icon: 'material-symbols:oil-barrel',
     keywords: [
@@ -132,7 +132,7 @@ export const TOOLS: Tool[] = [
     slug: 'kilos-de-acero-por-varilla',
     title: 'Calculadora de kilos de acero por varilla',
     description:
-      'Calculá el peso en kilos de las varillas de acero según el diámetro (6, 8, 10, 12, 16, 20, 25 mm) y la longitud. Incluye costo total estimado.',
+      'Calcule el peso en kilos de las varillas de acero según el diámetro (6, 8, 10, 12, 16, 20, 25 mm) y la longitud. Incluye costo total estimado.',
     category: 'construccion',
     icon: 'fa6-solid:helmet-safety',
     keywords: [
@@ -150,7 +150,7 @@ export const TOOLS: Tool[] = [
     slug: 'bolsas-de-cemento-por-metro-cubico',
     title: 'Calculadora de bolsas de cemento por m³ de hormigón',
     description:
-      'Calculá cuántas bolsas de cemento, arena, grava y agua necesitás por metro cúbico de hormigón según la resistencia (H15, H21, H25, H30, H40).',
+      'Calcule cuántas bolsas de cemento, arena, grava y agua necesita por metro cúbico de hormigón según la resistencia (H15, H21, H25, H30, H40).',
     category: 'construccion',
     icon: 'material-symbols:construction',
     keywords: [
@@ -168,7 +168,7 @@ export const TOOLS: Tool[] = [
     slug: 'rendimiento-de-excavadora',
     title: 'Calculadora de rendimiento de excavadora (m³/hora)',
     description:
-      'Estimá la producción real de una excavadora en m³/hora según capacidad del cucharón, tiempo de ciclo, factor de llenado y eficiencia operativa.',
+      'Estime la producción real de una excavadora en m³/hora según capacidad del cucharón, tiempo de ciclo, factor de llenado y eficiencia operativa.',
     category: 'maquinaria',
     icon: 'fa6-solid:tractor',
     relatedTools: ['costo-hora-operacion-excavadora', 'consumo-combustible-maquinaria'],
@@ -186,7 +186,7 @@ export const TOOLS: Tool[] = [
     slug: 'consumo-combustible-maquinaria',
     title: 'Calculadora de consumo de combustible de maquinaria pesada',
     description:
-      'Calculá el consumo de diesel y el costo total por horas de operación según el tipo y tamaño de máquina (excavadora, bulldozer, cargador, motoniveladora).',
+      'Calcule el consumo de diesel y el costo total por horas de operación según el tipo y tamaño de máquina (excavadora, bulldozer, cargador, motoniveladora).',
     category: 'maquinaria',
     icon: 'material-symbols:local-gas-station',
     relatedTools: ['costo-hora-operacion-excavadora', 'rendimiento-de-excavadora'],
@@ -205,7 +205,7 @@ export const TOOLS: Tool[] = [
     slug: 'presupuesto-construccion-por-metro-cuadrado',
     title: 'Calculadora de presupuesto de construcción por m²',
     description:
-      'Estimá el costo total de construir una casa en Latam según país (Perú, México, Colombia, Argentina, Chile, Uruguay, Bolivia) y calidad (económica, estándar, premium).',
+      'Estime el costo total de construir una casa en Latam según país (Perú, México, Colombia, Argentina, Chile, Uruguay, Bolivia) y calidad (económica, estándar, premium).',
     category: 'construccion',
     icon: 'material-symbols:home-work',
     keywords: [
@@ -223,7 +223,7 @@ export const TOOLS: Tool[] = [
     slug: 'calculo-de-escaleras',
     title: 'Calculadora de escaleras: huella, contrahuella y escalones',
     description:
-      'Calculá la cantidad de escalones, huella y contrahuella de tu escalera según la altura del piso y la regla de Blondel. Incluye validación de comodidad.',
+      'Calcule la cantidad de escalones, huella y contrahuella de su escalera según la altura del piso y la regla de Blondel. Incluye validación de comodidad.',
     category: 'arquitectura',
     icon: 'material-symbols:stairs',
     keywords: [
@@ -241,7 +241,7 @@ export const TOOLS: Tool[] = [
     slug: 'amortizacion-maquinaria-pesada',
     title: 'Calculadora de amortización de maquinaria pesada',
     description:
-      'Calculá la depreciación anual, por hora y el valor contable de tu maquinaria pesada. Método lineal + método por horómetro para excavadoras, cargadores y camiones.',
+      'Calcule la depreciación anual, por hora y el valor contable de su maquinaria pesada. Método lineal + método por horómetro para excavadoras, cargadores y camiones.',
     category: 'maquinaria',
     icon: 'material-symbols:trending-down',
     relatedTools: ['costo-hora-operacion-excavadora'],
@@ -260,7 +260,7 @@ export const TOOLS: Tool[] = [
     slug: 'pintura-litros-por-metro-cuadrado',
     title: 'Calculadora de pintura: litros por m² con descuento de aberturas',
     description:
-      'Calculá cuántos litros de pintura necesitás según superficie (yeso, cemento, madera, hierro), cantidad de manos y descuento automático de puertas y ventanas.',
+      'Calcule cuántos litros de pintura necesita según superficie (yeso, cemento, madera, hierro), cantidad de manos y descuento automático de puertas y ventanas.',
     category: 'construccion',
     icon: 'material-symbols:format-paint',
     keywords: [
@@ -278,7 +278,7 @@ export const TOOLS: Tool[] = [
     slug: 'volumen-tanque-cisterna',
     title: 'Calculadora de volumen de tanque y cisterna de agua',
     description:
-      'Calculá el volumen en litros y m³ de tu tanque o cisterna: rectangular, cilíndrico vertical, cilíndrico horizontal o tinaco esférico. Incluye duración según consumo familiar.',
+      'Calcule el volumen en litros y m³ de su tanque o cisterna: rectangular, cilíndrico vertical, cilíndrico horizontal o tinaco esférico. Incluye duración según consumo familiar.',
     category: 'ingenieria-general',
     icon: 'material-symbols:water-drop',
     keywords: [
@@ -296,7 +296,7 @@ export const TOOLS: Tool[] = [
     slug: 'calculadora-techo-calamina-tejas',
     title: 'Calculadora de techo: calamina, tejas y área total',
     description:
-      'Calculá los m² de tu techo (1 agua, 2 aguas, 4 aguas o plano) y la cantidad de calamina, tejas o panel sándwich necesaria según el material elegido.',
+      'Calcule los m² de su techo (1 agua, 2 aguas, 4 aguas o plano) y la cantidad de calamina, tejas o panel sándwich necesaria según el material elegido.',
     category: 'construccion',
     icon: 'material-symbols:roofing',
     keywords: [
@@ -314,7 +314,7 @@ export const TOOLS: Tool[] = [
     slug: 'consumo-electrico-kwh-costo',
     title: 'Calculadora de consumo eléctrico en kWh y costo mensual',
     description:
-      'Calculá cuánto consume cada electrodoméstico en kWh y cuánto pagás por mes en tu factura de luz. Precios por país (Perú, México, Colombia, Argentina, Chile).',
+      'Calcule cuánto consume cada electrodoméstico en kWh y cuánto paga por mes en su factura de luz. Precios por país (Perú, México, Colombia, Argentina, Chile).',
     category: 'ingenieria-general',
     icon: 'material-symbols:electric-bolt',
     keywords: [
@@ -332,7 +332,7 @@ export const TOOLS: Tool[] = [
     slug: 'agregados-hormigon-arena-grava',
     title: 'Calculadora de agregados para hormigón (arena, grava, cemento)',
     description:
-      'Calculá kilos de cemento, m³ de arena y m³ de grava según proporción (1:2:3, 1:3:5, 1:1.5:3) y volumen de hormigón. Con desperdicio ajustable.',
+      'Calcule kilos de cemento, m³ de arena y m³ de grava según proporción (1:2:3, 1:3:5, 1:1.5:3) y volumen de hormigón. Con desperdicio ajustable.',
     category: 'construccion',
     icon: 'material-symbols:landscape',
     relatedTools: ['bolsas-de-cemento-por-metro-cubico', 'cubicaje-de-hormigon'],
@@ -351,7 +351,7 @@ export const TOOLS: Tool[] = [
     slug: 'consumo-def-adblue-flota',
     title: 'Calculadora de consumo de DEF/AdBlue para flota Tier 4',
     description:
-      'Estimá litros de AdBlue por mes según consumo diésel de tu flota y ratio SCR típico (3-6%). Con costo mensual y proyección anual.',
+      'Estime litros de AdBlue por mes según consumo diésel de su flota y ratio SCR típico (3-6%). Con costo mensual y proyección anual.',
     category: 'maquinaria',
     icon: 'material-symbols:water-drop',
     relatedTools: ['consumo-combustible-maquinaria', 'costo-hora-operacion-excavadora'],
@@ -370,7 +370,7 @@ export const TOOLS: Tool[] = [
     slug: 'encofrado-madera-por-m2',
     title: 'Calculadora de encofrado de madera por m² (losa, muro, columna)',
     description:
-      'Calculá tablero, puntales y clavos necesarios para encofrar losas, muros o columnas por m². Con reuso configurable y desperdicio ajustable.',
+      'Calcule tablero, puntales y clavos necesarios para encofrar losas, muros o columnas por m². Con reuso configurable y desperdicio ajustable.',
     category: 'construccion',
     icon: 'material-symbols:carpenter',
     relatedTools: ['cubicaje-de-hormigon', 'kilos-de-acero-por-varilla'],

@@ -212,13 +212,13 @@
                 <div class="tool-result-metric opacity-50">
                     <p class="text-xs text-black/55 dark:text-white/55 mb-1">Costo total</p>
                     <p class="text-lg font-bold text-black/40 dark:text-white/40">—</p>
-                    <p class="text-xs text-black/50 dark:text-white/50">ingresá precio</p>
+                    <p class="text-xs text-black/50 dark:text-white/50">ingrese precio</p>
                 </div>
             {/if}
         </div>
 
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
-            El <strong>traslape</strong> ya está incluido según material. Sumá 5-10% extra para cortes en cumbreras y bordes. El <strong>peso</strong> es orientativo para dimensionar la estructura de soporte.
+            El <strong>traslape</strong> ya está incluido según material. Sume 5-10% extra para cortes en cumbreras y bordes. El <strong>peso</strong> es orientativo para dimensionar la estructura de soporte.
         </p>
     </div>
 

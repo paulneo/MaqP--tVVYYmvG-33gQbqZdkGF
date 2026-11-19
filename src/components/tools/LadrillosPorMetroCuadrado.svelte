@@ -167,7 +167,7 @@
                 class="tool-input"
             />
             <span class="text-xs text-black/45 dark:text-white/45 mt-1 block">
-                Sumá m² de puertas, ventanas, etc.
+                Sume los m² de puertas, ventanas, etc.
             </span>
         </label>
         <label class="block">

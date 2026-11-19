@@ -166,8 +166,8 @@
 
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
             Fórmula: <code>Q = (3600 × C × Ff) / T × Fh × Fo</code>. Los factores dependen
-            del tipo de suelo, experiencia del operador y condiciones del sitio. Ajustá
-            según tu contexto para estimados realistas.
+            del tipo de suelo, experiencia del operador y condiciones del sitio. Ajuste
+            según su contexto para estimados realistas.
         </p>
     </div>
 

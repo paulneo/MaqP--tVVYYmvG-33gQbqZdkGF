@@ -10,14 +10,15 @@ import ConsumoCombustible from '../../components/tools/ConsumoCombustible.svelte
         <h2>Consumo de combustible en maquinaria pesada</h2>
         <p>
             El combustible es uno de los mayores costos operativos de una máquina
-            pesada — típicamente entre <strong>30% y 45% del costo/hora</strong>. Saber
-            estimar el consumo permite presupuestar obras con precisión y detectar
-            equipos con problemas mecánicos (una máquina consumiendo 20% más que su rango
-            típico casi siempre tiene algo que revisar).
+            pesada: como valor referencial, entre <strong>30% y 45% del costo por hora</strong>
+            según el país, el precio del diésel y el tipo de trabajo. Estimar el consumo
+            permite presupuestar obras con mayor precisión y detectar equipos con
+            problemas mecánicos (una máquina que consume 20% más que su rango habitual
+            casi siempre necesita una revisión).
         </p>
 
         <h3>Consumos típicos por tipo de máquina</h3>
-        <p>Valores promedio en operación normal (carga variada, terreno normal):</p>
+        <p>Valores referenciales en operación normal (carga variada, terreno normal). Son rangos orientativos: el consumo real depende de cada equipo:</p>
         <ul>
             <li>
                 <strong>Excavadora:</strong> chica (5-10 t) 8-12 L/h · mediana (20-25 t)
@@ -46,22 +47,92 @@ import ConsumoCombustible from '../../components/tools/ConsumoCombustible.svelte
 
         <h3>Factores que aumentan el consumo</h3>
         <ul>
-            <li><strong>Terreno duro o pendiente</strong>: puede subir el consumo 30-50%.</li>
-            <li><strong>Altitud</strong>: motores diesel pierden potencia y consumen más por sobre 2.500 msnm.</li>
-            <li><strong>Motor viejo o mal mantenido</strong>: puede consumir 15-25% más que uno nuevo.</li>
-            <li><strong>Operador con hábitos agresivos</strong>: aceleración innecesaria, ralentí prolongado — hasta 20% más.</li>
+            <li><strong>Terreno duro o pendiente</strong>: puede elevar el consumo de forma notable (como referencia, entre 30% y 50% en casos exigentes).</li>
+            <li><strong>Altitud</strong>: a gran altura los motores diésel disponen de menos aire y suelen trabajar con menor eficiencia; el efecto depende de la altitud y de si el motor es turboalimentado.</li>
+            <li><strong>Motor viejo o mal mantenido</strong>: puede consumir claramente más que uno en buen estado (referencia: 15-25%).</li>
+            <li><strong>Operador con hábitos agresivos</strong>: aceleración innecesaria y ralentí prolongado pueden sumar hasta cerca de 20% de consumo.</li>
             <li><strong>Filtros de aire sucios</strong>: reducen eficiencia de combustión.</li>
-            <li><strong>Diesel de baja calidad</strong>: quema menos eficiente.</li>
+            <li><strong>Diésel de baja calidad o contaminado</strong>: obstruye filtros y empeora la combustión.</li>
         </ul>
 
         <h3>Cómo optimizar el consumo</h3>
         <ol>
             <li><strong>Mantenimiento al día</strong>: filtros de aire, combustible, aceite en tiempo.</li>
-            <li><strong>Evitar ralentí prolongado</strong>: apagar el motor si la espera es mayor a 5 minutos.</li>
-            <li><strong>Uso del modo eco</strong>: los equipos modernos tienen modos de ahorro que reducen 10-15%.</li>
+            <li><strong>Evitar ralentí prolongado</strong>: apagar el motor cuando la espera sea prolongada (muchas empresas fijan un umbral de 5 a 10 minutos).</li>
+            <li><strong>Uso del modo eco</strong>: muchos equipos modernos tienen modos de ahorro; el fabricante indica el ahorro esperado para cada modelo.</li>
             <li><strong>Capacitación del operador</strong>: la principal palanca de ahorro real.</li>
-            <li><strong>Combustible con aditivos</strong>: en algunos mercados vale la pena.</li>
+            <li><strong>Control del combustible</strong>: tanques limpios, filtros de decantación y abastecimiento en puntos confiables.</li>
         </ol>
+
+        <h3>Cómo se calcula</h3>
+        <p>
+            La calculadora toma un consumo horario referencial según el tipo de máquina
+            y su tamaño, y lo multiplica por las horas de trabajo y el precio del diésel:
+        </p>
+        <p class="text-center text-lg font-mono bg-black/[0.03] dark:bg-white/[0.05] p-3 rounded-lg">
+            Litros = L/h × horas &nbsp;·&nbsp; Costo total = Litros × precio por litro
+        </p>
+        <ul>
+            <li><strong>L/h</strong>: consumo horario de la tabla interna (por ejemplo, 20 L/h para una excavadora mediana de 20-25 t).</li>
+            <li><strong>horas</strong>: horas de motor encendido en el horómetro, no horas de turno.</li>
+            <li><strong>precio por litro</strong>: precio del diésel en su moneda, con impuestos si usted no los recupera.</li>
+            <li><strong>Costo por hora</strong> = L/h × precio por litro. Es el dato que se traslada al costo horario total del equipo.</li>
+        </ul>
+        <p>
+            Los valores internos de L/h son: excavadora 10 / 20 / 32, cargador frontal
+            12 / 22 / 38, bulldozer 22 / 42 / 65, motoniveladora 12 / 20 / 30,
+            retroexcavadora 8 / 12 / 18 y camión volquete 15 / 25 / 40 (chica / mediana /
+            grande). Son promedios de trabajo mixto, no datos de un modelo concreto.
+        </p>
+
+        <h3>Ejemplo resuelto</h3>
+        <p>
+            Un contratista en Lima mueve tierra con una <strong>excavadora mediana de
+            20-25 t</strong> durante una jornada con 8 horas de motor encendido. El diésel
+            le cuesta USD 1,20 por litro.
+        </p>
+        <ol>
+            <li>Consumo horario de la tabla: <strong>20 L/h</strong>.</li>
+            <li>Litros de la jornada: 20 × 8 = <strong>160 L</strong>.</li>
+            <li>Costo por hora: 20 × 1,20 = <strong>USD 24 por hora</strong>.</li>
+            <li>Costo de la jornada: 160 × 1,20 = <strong>USD 192</strong>.</li>
+            <li>Para un mes de 22 jornadas iguales: 160 × 22 = 3.520 L, es decir USD 4.224.</li>
+        </ol>
+        <p>
+            Segundo caso: un <strong>bulldozer mediano (D7-D8)</strong> de 42 L/h que trabaja
+            10 horas con diésel a USD 1,10 consume 42 × 10 = 420 L, con un costo de
+            420 × 1,10 = USD 462 (USD 46,20 por hora). Es el doble del costo horario de
+            combustible de la excavadora del primer caso, algo habitual en equipos de empuje.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            El resultado es un punto de partida para presupuestar, no una medición. Si la
+            obra tiene pendientes, roca o altitud, aplique un recargo sobre los litros:
+            con un 15% adicional, los 160 L del ejemplo pasan a 184 L. Para contrastar con
+            la realidad calcule su consumo medido (litros repuestos ÷ horas de horómetro):
+            si en 7,5 horas se repusieron 168 L, el consumo real es 22,4 L/h, un 12% sobre
+            los 20 L/h de referencia, aún razonable. Una desviación sostenida superior a
+            20% justifica revisar filtros, inyectores, ralentí excesivo y posibles
+            fugas o pérdidas de combustible.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Usar horas de turno en lugar de horas de motor</strong>: un turno de 10 horas rara vez equivale a 10 horas de horómetro, y el ralentí también consume.</li>
+            <li><strong>Olvidar el ralentí y las esperas</strong>: un motor encendido sin trabajar sigue quemando combustible.</li>
+            <li><strong>Aplicar el mismo consumo a todas las condiciones</strong>: el mismo equipo gasta distinto en suelo blando que en roca o en pendiente.</li>
+            <li><strong>Mezclar monedas o precios con y sin impuestos</strong>: si el IVA es recuperable, use el precio neto.</li>
+            <li><strong>Calcular con consumo de ficha técnica</strong>: los datos de catálogo suelen corresponder a condiciones de ensayo, no a obra.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/gestion-costos-combustible/">Cómo gestionar el aumento de los costos de combustible</a></li>
+            <li><a href="/posts/arrendamientos-valor-mercado/">Arrendamientos de valor justo y costo por hora del equipo</a></li>
+            <li><a href="/posts/consejos-mantenimiento-excavadoras/">Consejos de mantenimiento para excavadoras</a></li>
+            <li><a href="/posts/gestion-de-la-vida-util-de-maquinaria-pesada/">Gestión de la vida útil de maquinaria pesada</a></li>
+        </ul>
     </div>
 
     <div slot="faq">
@@ -71,10 +142,10 @@ import ConsumoCombustible from '../../components/tools/ConsumoCombustible.svelte
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
                 Depende del tamaño. Una <strong>excavadora mediana de 20-25 toneladas</strong>
-                consume en promedio <strong>15-25 litros por hora</strong> en operación
+                consume como referencia <strong>15-25 litros por hora</strong> en operación
                 normal. Una excavadora chica (mini de 5-10 t) baja a 8-12 L/h. Una grande
-                de 35+ toneladas sube a 25-40 L/h. En trabajo con roca dura o pendientes,
-                todos estos valores pueden subir 30-50%.
+                de 35+ toneladas sube a 25-40 L/h. En roca dura o pendientes,
+                estos valores pueden aumentar de forma importante (hasta 30-50%).
             </p>
         </details>
 
@@ -83,12 +154,12 @@ import ConsumoCombustible from '../../components/tools/ConsumoCombustible.svelte
                 ¿Un bulldozer consume más que una excavadora?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Sí, considerablemente más. Un <strong>bulldozer D8 (mediano-grande) consume
-                30-45 L/h</strong>, casi el doble que una excavadora mediana equivalente
-                en potencia. La razón: el bulldozer trabaja siempre con el motor en carga
-                alta empujando material, mientras que la excavadora tiene ciclos con
-                pausas cortas donde el motor baja. Los tractores tipo D9 o D10 pueden
-                consumir 60-80 L/h, entre las máquinas más "sedientas" del mercado.
+                Sí, considerablemente más. Como referencia, un <strong>bulldozer de clase D7-D8
+                consume 30-45 L/h</strong>, frente a 15-25 L/h de una excavadora mediana.
+                La razón principal: el bulldozer trabaja casi siempre con el motor a carga
+                alta empujando material, mientras que la excavadora alterna ciclos con
+                pausas donde la demanda baja. Los tractores de clase D9 a D11 pueden
+                llegar a 50-80 L/h, entre las máquinas de mayor consumo en obra.
             </p>
         </details>
 
@@ -97,13 +168,14 @@ import ConsumoCombustible from '../../components/tools/ConsumoCombustible.svelte
                 ¿Cómo mido el consumo real de mi máquina?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Método más simple y confiable: <strong>llená el tanque al máximo antes
-                de operar</strong>, anotá las horas en el horómetro, operá una jornada
-                típica y volvé a llenar al máximo al día siguiente. Los litros que cargues
-                divididos entre las horas trabajadas te dan el <strong>consumo real por
-                hora</strong>. Repetí durante 3-5 jornadas para tener un promedio
-                confiable. Los equipos modernos con telemetría (VisionLink, iTrak) reportan
-                estos datos automáticamente.
+                Método más simple y confiable: <strong>llene el tanque al máximo antes
+                de operar</strong>, anote las horas del horómetro, opere una jornada
+                típica y vuelva a llenar al máximo al día siguiente. Los litros repuestos
+                divididos entre las horas trabajadas dan el <strong>consumo real por
+                hora</strong>. Repita durante 3-5 jornadas para obtener un promedio
+                confiable. Los equipos con telemetría del fabricante (por ejemplo
+                VisionLink de Caterpillar, KOMTRAX de Komatsu o CareTrack de Volvo)
+                reportan estos datos automáticamente.
             </p>
         </details>
 
@@ -112,27 +184,52 @@ import ConsumoCombustible from '../../components/tools/ConsumoCombustible.svelte
                 ¿Es normal que el consumo aumente con las horas del equipo?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Sí, pero solo gradualmente. Un aumento de <strong>5-10% en 5.000 horas</strong>
-                es normal por desgaste natural de inyectores, turbo y bomba de alta
-                presión. Si el consumo sube 20% o más en poco tiempo (menos de 1.000 h),
-                hay algo mal: puede ser fuga en línea de retorno, inyector desgastado,
-                turbo con lag, filtros muy sucios, o problema del motor mismo.
-                Diagnósticá con un mecánico especializado en el equipo.
+                Sí, pero solo de forma gradual. Como referencia, un aumento de unos
+                <strong>5-10% en 5.000 horas</strong> es compatible con el desgaste natural
+                de inyectores, turbo y bomba de alta presión. Si el consumo sube 20% o más
+                en poco tiempo (menos de 1.000 h), hay algo que revisar: fuga en la línea de
+                retorno, inyector desgastado, turbo con falla, filtros muy sucios u otro
+                problema del motor. Diagnostique con un técnico especializado en el equipo.
             </p>
         </details>
 
-        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
                 ¿Cuánto pesa el combustible en el costo total de operación?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
                 Es la <strong>partida más grande del costo/hora</strong> junto con la
-                depreciación. En promedio, el combustible representa <strong>30-45% del
-                costo operativo total</strong> de una máquina en Latam. En países con
-                diesel muy caro (Chile, Uruguay, Perú urbano) puede subir a 50%. En
-                países con diesel subsidiado (Bolivia, Argentina interior) puede bajar a
-                25-30%. Es el rubro donde más se puede optimizar con capacitación de
-                operadores y mantenimiento.
+                depreciación. Como valor referencial, el combustible representa <strong>30-45% del
+                costo operativo total</strong> de una máquina en Latinoamérica. Donde el
+                diésel es más caro puede superar ese rango, y donde está subsidiado o el
+                equipo es costoso de depreciar, puede quedar por debajo. Es el rubro donde
+                más se puede optimizar con capacitación de operadores y mantenimiento.
+            </p>
+        </details>
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos litros de diésel consume una maquinaria al día?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Se obtiene multiplicando el consumo horario por las horas de motor. Una excavadora mediana de unos 20 L/h con 8 horas de motor encendido consume del orden de <strong>160 litros al día</strong>; un bulldozer mediano de 42 L/h con 10 horas, unos <strong>420 litros</strong>. Estas cifras son referenciales: use la calculadora como estimación inicial y confírmela con el consumo medido en su obra.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuál es la diferencia entre horas de turno y horas de horómetro?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Las horas de turno incluyen traslados, esperas, colaciones y paradas con el motor apagado. El horómetro cuenta solo el tiempo con el motor en marcha, incluido el ralentí. Para calcular combustible conviene usar horas de horómetro, y para el cobro de alquileres hay que verificar qué base fija el contrato. Si usted estima el consumo con horas de turno sobreestimará los litros; si ignora el ralentí, los subestimará.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo convierto el consumo de L/h a litros por m³ movido?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Divida el consumo horario entre la producción horaria. Si una excavadora consume 20 L/h y mueve 100 m³/h, su indicador es de <strong>0,20 L por m³</strong>. Este indicador es mejor que L/h para comparar equipos y operadores, porque un equipo que gasta más pero produce más puede ser más eficiente. Puede obtener la producción con la calculadora de rendimiento de excavadora.
             </p>
         </details>
     </div>

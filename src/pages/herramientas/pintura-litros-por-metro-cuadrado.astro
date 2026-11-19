@@ -9,23 +9,33 @@ import PinturaLitrosM2 from '../../components/tools/PinturaLitrosM2.svelte'
     <div slot="explanation">
         <h2>Cómo se calcula la cantidad de pintura</h2>
         <p>
-            El cálculo real de pintura no es solo "área × precio". Hay tres variables que suelen olvidarse y que hacen que la mayoría de la gente <strong>compre de más o de menos</strong>:
+            El cálculo real de pintura no es solo "área × precio". Hay tres variables que suelen olvidarse y que hacen que mucha gente <strong>compre de más o de menos</strong>:
         </p>
         <ol>
-            <li><strong>El tipo de superficie</strong> — el rendimiento varía hasta 50% entre yeso liso y cemento revocado.</li>
-            <li><strong>La cantidad de manos</strong> — casi siempre se necesitan 2, no 1.</li>
-            <li><strong>El descuento de puertas y ventanas</strong> — ignorarlas puede sobrestimar 15-20%.</li>
+            <li><strong>El tipo de superficie</strong>: el rendimiento puede variar de forma importante entre un yeso liso y un cemento revocado poroso.</li>
+            <li><strong>La cantidad de manos</strong>: casi siempre se necesitan 2, no 1.</li>
+            <li><strong>El descuento de puertas y ventanas</strong>: ignorarlas puede sobrestimar el área de pintura entre 10 y 20% en ambientes con muchas aberturas.</li>
         </ol>
 
         <h3>Fórmula que usa esta calculadora</h3>
         <p>
-            <code>Área neta = (largo × alto × cantidad paredes) − puertas − ventanas</code>
+            <code>Área paredes = largo × alto × cantidad de paredes</code>
+        </p>
+        <p>
+            <code>Área neta = Área paredes − (puertas × ancho × alto) − (ventanas × ancho × alto)</code>
         </p>
         <p>
             <code>Litros = (Área neta × manos) / rendimiento por litro</code>
         </p>
+        <ul>
+            <li><strong>Largo y alto</strong>: dimensiones de la pared en metros (m). El producto da m².</li>
+            <li><strong>Cantidad de paredes</strong>: número de paredes iguales a las dimensiones ingresadas. Si el ambiente no es cuadrado, use el perímetro como largo y 1 como cantidad de paredes.</li>
+            <li><strong>Aberturas</strong>: la calculadora usa un solo tamaño de puerta y un solo tamaño de ventana, multiplicados por su cantidad. El área neta nunca baja de 0.</li>
+            <li><strong>Manos</strong>: número de capas (adimensional).</li>
+            <li><strong>Rendimiento</strong>: metros cuadrados que cubre un litro en una mano (m²/L). La calculadora asume 12 para yeso e hierro, 14 para madera y 9 para cemento revocado y exterior.</li>
+        </ul>
         <p>
-            El rendimiento por litro depende del tipo de superficie y de la calidad de la pintura. Los rangos típicos para <strong>una mano</strong>:
+            Los rendimientos reales dependen de la marca, la calidad y la dilución del producto. Los rangos habituales para <strong>una mano</strong> son referenciales; la cifra definitiva está en la <strong>ficha técnica del fabricante</strong> impresa en el envase:
         </p>
         <ul>
             <li><strong>Yeso / pared lisa</strong>: 10-14 m²/L. La calculadora asume 12 como valor medio.</li>
@@ -35,23 +45,62 @@ import PinturaLitrosM2 from '../../components/tools/PinturaLitrosM2.svelte'
             <li><strong>Exterior expuesto</strong>: 7-10 m²/L. Requiere más capa por resistencia climática.</li>
         </ul>
 
+        <h3>Ejemplo resuelto: sala-comedor de 5 × 3,5 m</h3>
+        <p>
+            Una sala rectangular de 5 m × 3,5 m, con 2,6 m de altura, una puerta de 0,90 × 2,05 m y dos ventanas de 1,50 × 1,20 m, pintada con látex sobre yeso en 2 manos.
+        </p>
+        <ol>
+            <li>Perímetro = 2 × (5 + 3,5) = 17 m. Se ingresa largo = 17, alto = 2,6 y cantidad de paredes = 1.</li>
+            <li>Área de paredes = 17 × 2,6 × 1 = <strong>44,2 m²</strong>.</li>
+            <li>Puerta = 1 × 0,90 × 2,05 = 1,845 m². Ventanas = 2 × 1,50 × 1,20 = 3,6 m². Descuento total = 5,445 m².</li>
+            <li>Área neta = 44,2 − 5,445 = <strong>38,755 m²</strong>.</li>
+            <li>Litros = 38,755 × 2 / 12 = <strong>6,46 litros</strong>.</li>
+        </ol>
+        <p>
+            La calculadora sugeriría un envase de 10 L (el siguiente tamaño comercial que cubre 7 L redondeados). Si se agrega 10% por retoques, la necesidad real es de unos 7,1 L, así que un envase de 10 L alcanza con margen. Con el mismo ambiente sobre cemento revocado (9 m²/L) la cifra sube a 8,61 L, lo que ilustra por qué el tipo de superficie importa.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <ul>
+            <li>El resultado en litros es <strong>pintura de acabado teórica</strong> con el rendimiento nominal. No incluye sellador ni pintura para cielorraso, marcos o zócalos.</li>
+            <li>El envase sugerido redondea hacia arriba al tamaño comercial más cercano (1, 4, 10 o 20 L). Los tamaños reales varían según el país y la marca.</li>
+            <li>Si el resultado queda justo por debajo de un envase, conviene comprar el tamaño siguiente o sumar un envase pequeño, para tener reserva de retoques del mismo lote de color.</li>
+            <li>El costo total multiplica litros exactos por el precio por litro; en la práctica se paga por envases completos, así que el gasto real puede ser algo mayor.</li>
+        </ul>
+
         <h3>Cuántas manos son necesarias</h3>
         <p>
-            La respuesta técnica es <strong>siempre al menos 2</strong>, aunque el fabricante diga "cubre en una mano". Razones:
+            En la mayoría de los casos conviene <strong>al menos 2 manos</strong>, aunque el fabricante indique que cubre en una. Razones:
         </p>
         <ul>
             <li><strong>Primera mano</strong>: no cubre uniformemente en superficies porosas. Sirve como base y sellador.</li>
-            <li><strong>Segunda mano</strong>: da el color y acabado final. Es la que "se ve".</li>
+            <li><strong>Segunda mano</strong>: da el color y el acabado final. Es la que "se ve".</li>
             <li><strong>Tercera mano</strong> (solo si es necesaria): para colores muy oscuros sobre base clara, o al revés.</li>
         </ul>
 
         <h3>Superficies especiales</h3>
-        <p>Para casos particulares, ajustá el rendimiento:</p>
+        <p>Para casos particulares, ajuste el rendimiento o el número de manos:</p>
         <ul>
-            <li><strong>Superficie sin pintar previa</strong>: sumá 30% de consumo la primera vez.</li>
-            <li><strong>Cambio de color drástico</strong>: usar sellador previo o hasta 3 manos.</li>
-            <li><strong>Zona muy húmeda</strong> (cocina, baño): pintura específica anti-hongo. Rendimiento similar.</li>
-            <li><strong>Exterior sur / muy expuesto al sol</strong>: pensá en pintura reflexiva o de alta durabilidad. Puede requerir mano extra.</li>
+            <li><strong>Superficie sin pintar previa</strong>: el consumo de la primera vez suele ser mayor; considere un margen adicional o un sellador.</li>
+            <li><strong>Cambio de color drástico</strong>: use sellador previo o hasta 3 manos.</li>
+            <li><strong>Zona muy húmeda</strong> (cocina, baño): conviene una pintura específica anti-hongo. El rendimiento es similar.</li>
+            <li><strong>Exterior muy expuesto al sol o a la lluvia</strong>: considere pintura de alta durabilidad o reflectiva. Puede requerir una mano extra.</li>
+        </ul>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Medir en planta en lugar de medir paredes</strong>: los m² del piso no sirven. Hay que multiplicar el perímetro por la altura.</li>
+            <li><strong>Ingresar el largo de una sola pared con 4 paredes</strong>: en una sala de 5 × 3,5 m esto sobrestima el área, porque dos de las paredes son más cortas. Use el perímetro con 1 pared.</li>
+            <li><strong>Olvidar las manos</strong>: calcular con 1 mano y comprar de menos obliga a una segunda compra, con riesgo de diferencia de tono entre lotes.</li>
+            <li><strong>Usar un rendimiento optimista</strong>: el valor del envase se obtiene en condiciones ideales de aplicación. Rodillo, dilución y porosidad lo reducen.</li>
+            <li><strong>No incluir cielorraso, marcos ni zócalos</strong>: la calculadora solo cubre las paredes que se ingresan. El techo se calcula aparte (largo × ancho del ambiente).</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/cuanto-cuesta-construir-una-casa-por-metro-cuadrado-latam-2026/">Cuánto cuesta construir una casa por metro cuadrado en Latinoamérica (2026)</a>: para ubicar la pintura dentro del rubro de acabados.</li>
+            <li><a href="/herramientas/presupuesto-construccion-por-metro-cuadrado/">Presupuesto de construcción por metro cuadrado</a></li>
+            <li><a href="/herramientas/ladrillos-por-metro-cuadrado/">Calculadora de ladrillos por metro cuadrado</a>: para estimar el muro que luego se pinta.</li>
         </ul>
     </div>
 
@@ -61,7 +110,7 @@ import PinturaLitrosM2 from '../../components/tools/PinturaLitrosM2.svelte'
                 ¿Cuántos m² se pintan con un litro de pintura?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Para <strong>pintura látex estándar en pared lisa (yeso)</strong>, un litro cubre entre <strong>10 y 14 m²</strong> por mano (promedio 12 m²). En cemento sin pulir baja a 7-10 m²/L, en madera sube a 12-16 m²/L. Esos son valores de fabricante — en la práctica, la primera mano rinde ~15% menos que la segunda porque la superficie absorbe más.
+                Para <strong>pintura látex estándar en pared lisa (yeso)</strong>, un litro suele cubrir entre <strong>10 y 14 m²</strong> por mano (la calculadora usa 12 m²). En cemento sin pulir baja a 7-10 m²/L y en madera sube a 12-16 m²/L. Son valores orientativos: consulte la ficha técnica del producto. En la práctica, la primera mano suele rendir menos que la segunda porque la superficie absorbe más.
             </p>
         </details>
 
@@ -70,7 +119,7 @@ import PinturaLitrosM2 from '../../components/tools/PinturaLitrosM2.svelte'
                 ¿Cuánto tarda en secarse la pintura entre manos?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Depende del tipo: <strong>látex al agua</strong> — 2-4 horas al tacto, 4-6 h para segunda mano. <strong>Esmalte sintético</strong> — 6-12 horas para siguiente mano. <strong>Barniz</strong> — 8-24 horas. En días húmedos o fríos, sumá 50% más. Nunca dar segunda mano si la primera "tira" cuando la tocás con el dedo — vas a arruinar el acabado.
+                Depende del producto, y la referencia válida es la ficha técnica del envase. Como orden de magnitud, el <strong>látex al agua</strong> se seca al tacto en pocas horas y admite la segunda mano al cabo de 4-6 h; el <strong>esmalte sintético</strong> suele pedir 6-12 horas; el <strong>barniz</strong>, 8-24 horas. Con humedad alta o frío los tiempos se alargan bastante. No aplique la segunda mano si la primera todavía se despega al tocarla: se arruina el acabado.
             </p>
         </details>
 
@@ -79,7 +128,7 @@ import PinturaLitrosM2 from '../../components/tools/PinturaLitrosM2.svelte'
                 ¿Necesito sellador o imprimación antes de pintar?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                <strong>Sí, en la mayoría de los casos</strong>. Un buen sellador: (1) reduce el consumo de pintura de color un 20-30%, (2) mejora la adherencia, (3) uniformiza absorción. Es especialmente importante en superficies nuevas (yeso o revoque sin pintar), después de reparaciones con masilla, o cuando cambiás a un color muy distinto. Los selladores rinden más (~15 m²/L) y son baratos comparado con la pintura de acabado.
+                <strong>En la mayoría de los casos, sí</strong>. Un buen sellador mejora la adherencia, uniformiza la absorción y suele reducir el consumo de pintura de color. Es especialmente importante en superficies nuevas (yeso o revoque sin pintar), después de reparaciones con masilla, o cuando se cambia a un color muy distinto. Los selladores suelen rendir más por litro que la pintura de acabado, pero el valor exacto debe tomarse de su ficha técnica.
             </p>
         </details>
 
@@ -88,7 +137,25 @@ import PinturaLitrosM2 from '../../components/tools/PinturaLitrosM2.svelte'
                 ¿Qué diferencia hay entre pintura mate, satinada y brillante?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                <strong>Mate</strong>: sin brillo, disimula imperfecciones, ideal para paredes con textura o techos. Peor lavabilidad. <strong>Satinada</strong>: brillo suave (5-15%), balance entre estética y lavabilidad. La más usada en dormitorios y living. <strong>Semi-brillante</strong>: 30-50% brillo, muy lavable. Ideal para cocinas, baños, marcos. <strong>Brillante</strong>: máxima lavabilidad pero muestra todas las imperfecciones. Se usa en carpintería, hierro y aberturas. El rendimiento por litro es similar entre acabados.
+                <strong>Mate</strong>: sin brillo, disimula imperfecciones, ideal para paredes con textura o techos; es menos lavable. <strong>Satinada</strong>: brillo suave, balance entre estética y lavabilidad; muy usada en dormitorios y salas. <strong>Semibrillante</strong>: más lavable, apta para cocinas, baños y marcos. <strong>Brillante</strong>: máxima lavabilidad, pero muestra todas las imperfecciones; se usa en carpintería y metal. El rendimiento por litro es en general similar entre acabados.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo calculo la pintura para una habitación que no es cuadrada?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Calcule el <strong>perímetro</strong> (suma de los cuatro lados) y úselo como largo con 1 pared. Por ejemplo, una habitación de 4 × 3 m tiene perímetro 14 m; con 2,5 m de altura son 35 m² de paredes antes de descontar aberturas. Si usara 'largo 4 × 4 paredes' obtendría 40 m², una sobrestimación cercana al 14%.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Hay que descontar puertas y ventanas?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, pero con criterio. Descontar las aberturas grandes (puertas, ventanales) reduce el consumo de forma apreciable. Las ventanas pequeñas, cajas de luz y zócalos se pueden dejar sin descontar: compensan los retoques, las esquinas y el desperdicio. Si pinta también los marcos y las hojas, calcúlelos aparte con el rendimiento de madera o metal.
             </p>
         </details>
 
@@ -97,7 +164,7 @@ import PinturaLitrosM2 from '../../components/tools/PinturaLitrosM2.svelte'
                 ¿Cuánto conviene comprar de más?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                <strong>10-15% de sobrecompra</strong> es lo recomendable. Cubre: desperdicio en el rodillo, retoques posteriores, cambios de idea sobre alguna pared. Además, si compraste un tinte específico y te quedás corto, casi imposible replicar el color exacto en otra tanda del fabricante. Mejor sobrar medio litro que quedarte sin.
+                <strong>Entre 10 y 15% de reserva</strong> es una práctica habitual. Cubre desperdicio en el rodillo, retoques posteriores y cambios de idea. Además, si se compró un color tintado y falta pintura, replicar el tono exacto en otro lote es difícil. Es mejor que sobre medio litro que quedarse corto.
             </p>
         </details>
     </div>

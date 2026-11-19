@@ -16,7 +16,7 @@ import RendimientoExcavadora from '../../components/tools/RendimientoExcavadora.
         </p>
         <p>Donde:</p>
         <ul>
-            <li><strong>Q</strong> = producción efectiva en m³/hora</li>
+            <li><strong>Q</strong> = producción efectiva en m³/hora (volumen suelto, el que carga el cucharón)</li>
             <li><strong>3600</strong> = segundos en una hora</li>
             <li><strong>C</strong> = capacidad del cucharón en m³</li>
             <li><strong>Ff</strong> = factor de llenado (0,7-1,0)</li>
@@ -49,7 +49,7 @@ import RendimientoExcavadora from '../../components/tools/RendimientoExcavadora.
             <li>Distancia del apoyo del brazo</li>
             <li>Experiencia del operador</li>
         </ul>
-        <p>Valores típicos:</p>
+        <p>Valores típicos referenciales (varían con el modelo y la obra):</p>
         <ul>
             <li>Excavadora pequeña con giro 60°: 15-18 segundos</li>
             <li>Excavadora mediana con giro 90° a camión: 20-25 segundos</li>
@@ -58,10 +58,79 @@ import RendimientoExcavadora from '../../components/tools/RendimientoExcavadora.
 
         <h3>Factor operador (Fo)</h3>
         <p>
-            Es la penalización por la habilidad del operador. Un operador experto de
-            larga trayectoria acerca el rendimiento real al teórico. Uno sin experiencia
-            puede perder hasta 40% de la producción posible.
+            Es la penalización por la habilidad del operador. Un operador experto
+            acerca el rendimiento real al teórico; uno sin experiencia puede perder una
+            parte importante de la producción posible (el valor 0,60 de la calculadora
+            equivale a perder 40%). Como referencia: experto 0,85-0,90, normal 0,75-0,80,
+            novato 0,60-0,70.
         </p>
+
+        <h3>La fórmula tal como la calcula la herramienta</h3>
+        <p>
+            La calculadora aplica la fórmula en dos pasos. Primero obtiene la producción
+            teórica, que supone trabajar 60 minutos por hora, con el cucharón lleno al
+            factor indicado y sin pérdidas de operador. Después aplica los factores de
+            eficiencia horaria y de operador:
+        </p>
+        <p class="text-center text-lg font-mono bg-black/[0.03] dark:bg-white/[0.05] p-3 rounded-lg">
+            Q teórica = (3600 × C × Ff) / T &nbsp;·&nbsp; Q real = Q teórica × (min trabajados / 60) × Fo
+        </p>
+        <p>
+            Con los valores por defecto (C = 1,0 m³, Ff = 0,90, T = 20 s, 50 min y
+            Fo = 0,80), la producción teórica es 162 m³/h y la real 108 m³/h. La
+            jornada de 8 horas da 864 m³ y el mes (22 días de 8 horas) 19.008 m³.
+        </p>
+
+        <h3>Ejemplo resuelto</h3>
+        <p>
+            Una constructora en Medellín debe excavar una zanja de servicios con una
+            <strong>excavadora de 20-25 t con cucharón de 1,2 m³</strong>. El material es
+            arcilla húmeda (Ff = 0,85), el ciclo medido con cronómetro es de
+            <strong>22 s</strong>, la máquina trabaja efectivamente 50 minutos por hora y el
+            operador es de nivel normal (Fo = 0,80).
+        </p>
+        <ol>
+            <li>Producción teórica: (3600 × 1,2 × 0,85) / 22 = 3.672 / 22 = <strong>166,9 m³/h</strong>.</li>
+            <li>Factor horario: 50 / 60 = 0,833.</li>
+            <li>Producción real: 166,9 × 0,833 × 0,80 = <strong>111,3 m³/h</strong>.</li>
+            <li>Jornada de 8 horas: 111,3 × 8 = <strong>890 m³/día</strong>.</li>
+            <li>Mes de 22 días: 890 × 22 = 19.584 m³.</li>
+        </ol>
+        <p>
+            Si el volumen del proyecto es de 30.000 m³ medidos en banco (en el terreno) y
+            el material tiene un esponjamiento de 25% (valor supuesto para este ejemplo),
+            el volumen suelto a mover es 30.000 × 1,25 = 37.500 m³. Con 890 m³/día se
+            requieren 37.500 / 890 = <strong>42,1 jornadas</strong>, es decir, unas 43
+            jornadas de 8 horas para una sola excavadora.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            El resultado es una producción de planificación, no una garantía. Compárelo con
+            su rendimiento medido: cuente los camiones cargados en una jornada y
+            multiplique por su capacidad en m³. Si lo medido es bastante inferior al
+            calculado, revise primero el tiempo de ciclo (esperas del camión, giro largo) y
+            los minutos efectivos por hora, que suelen ser los factores más sobreestimados.
+            Para un presupuesto prudente, trabaje con el valor real y no con el teórico, y
+            considere un escenario optimista y otro pesimista variando Ff y Fo.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Mezclar volumen en banco con volumen suelto</strong>: el cucharón carga material suelto; el proyecto suele medirse en banco.</li>
+            <li><strong>Usar el tiempo de ciclo de catálogo</strong>: el ciclo real incluye posicionamiento, giro largo y esperas del camión.</li>
+            <li><strong>Suponer 60 minutos útiles por hora</strong>: siempre hay maniobras, esperas y traslados; 45-55 min es más realista.</li>
+            <li><strong>Aplicar un factor de llenado de 1,0 a todo material</strong>: en roca o arcilla pegajosa baja con claridad.</li>
+            <li><strong>Olvidar que el camión limita la producción</strong>: si los camiones no alcanzan, la excavadora espera y el rendimiento cae.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/excavadoras-2024-tendencia/">Guía de excavadoras 2024: tendencias y modelos recientes</a></li>
+            <li><a href="/posts/consejos-mantenimiento-excavadoras/">Consejos de mantenimiento para excavadoras</a></li>
+            <li><a href="/posts/tipos-de-maquinaria-pesada-en-construccion/">Tipos de maquinaria pesada en construcción</a></li>
+            <li><a href="/posts/gestion-de-la-vida-util-de-maquinaria-pesada/">Gestión de la vida útil de maquinaria pesada</a></li>
+        </ul>
     </div>
 
     <div slot="faq">
@@ -70,12 +139,13 @@ import RendimientoExcavadora from '../../components/tools/RendimientoExcavadora.
                 ¿Cuántos m³ mueve una excavadora por hora?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Depende del tamaño y las condiciones, pero como referencia:
+                Depende del tamaño y las condiciones. Como referencia (no como dato del fabricante):
                 una <strong>excavadora mediana de 20-25 t</strong> (cucharón 1 m³) mueve
                 <strong>80-140 m³/hora</strong> en tierra común con un operador
                 experimentado. Una <strong>excavadora chica de 8-12 t</strong> ronda los
                 40-70 m³/h; una <strong>grande de 40-50 t</strong> puede pasar los
-                200-300 m³/h. En roca dura, todos los valores caen a la mitad.
+                200-300 m³/h. Son rangos referenciales; en roca dura los valores
+                bajan de forma considerable.
             </p>
         </details>
 
@@ -85,11 +155,14 @@ import RendimientoExcavadora from '../../components/tools/RendimientoExcavadora.
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
                 Porque los factores de eficiencia son <strong>multiplicativos</strong>.
-                Si tenés un cucharón que se llena al 85% (Ff=0,85), trabajás 50 minutos
-                por hora (Fh=0,83) y el operador tiene skill promedio (Fo=0,80), tu
-                producción efectiva es <strong>solo el 56% de la teórica</strong>
-                (0,85 × 0,83 × 0,80 = 0,565). Y eso ya es un escenario decente. En
-                condiciones malas, se puede bajar al 35-40%.
+                Si el cucharón se llena al 85% (Ff = 0,85), se trabajan 50 minutos
+                por hora (Fh = 0,83) y el operador tiene un nivel promedio (Fo = 0,80),
+                la producción efectiva es <strong>cerca del 57% de la producción
+                con el cucharón 100% lleno y 60 minutos útiles</strong>
+                (0,85 × 0,83 × 0,80 = 0,567). Es un escenario aceptable; en condiciones
+                desfavorables puede bajar a 35-40%. Nota: la calculadora ya incluye Ff en
+                su cifra de producción teórica, por lo que la producción real que muestra
+                equivale a 0,83 × 0,80 = 67% de esa cifra.
             </p>
         </details>
 
@@ -99,10 +172,12 @@ import RendimientoExcavadora from '../../components/tools/RendimientoExcavadora.
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
                 Los mayores impactos vienen de: <strong>(1) Reducir el ángulo de giro</strong>
-                — poner los camiones lo más perpendicular posible al talud aumenta 15-25%
-                el rendimiento. <strong>(2) Sincronizar el ciclo camión-excavadora</strong>
+                — reducir el giro, ubicando el camión lo más cerca y a un ángulo
+                corto respecto del frente de excavación, puede mejorar el rendimiento de
+                manera apreciable (en la práctica, del orden de 15-25%). <strong>(2) Sincronizar el ciclo camión-excavadora</strong>
                 — que nunca esté esperando. <strong>(3) Operador experto</strong> — la
-                diferencia entre bueno y experto es 20-30% de producción. <strong>(4)
+                diferencia entre un operador bueno y uno experto puede ser notable en
+                producción. <strong>(4)
                 Cucharón correcto</strong> — un cucharón demasiado grande no se llena,
                 uno chico multiplica ciclos.
             </p>
@@ -118,22 +193,49 @@ import RendimientoExcavadora from '../../components/tools/RendimientoExcavadora.
                 Cargadora frontal: ciclos de 30-60 s (incluye desplazamiento entre pila y
                 camión). Retroexcavadora: 20-25 s. Motoescrepa (scraper): ciclos muy
                 largos porque incluye viaje ida-vuelta al depósito. Para cargadoras,
-                agregá factor de viaje aparte.
+                agregue un tiempo de viaje aparte.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo calculo cuánto material moveré en toda la obra?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con esta fórmula obtiene la producción diaria. Para el total de la obra:
+                <strong>Volumen total ÷ Producción por día = días de trabajo</strong>.
+                Pero considere el <strong>coeficiente de esponjamiento</strong>:
+                un metro cúbico de tierra en su lugar (m³ banco) puede ocupar, como referencia, 1,2-1,4 m³ cuando
+                está suelta después de excavar (m³ suelto). Este es el volumen que
+                realmente carga la excavadora en el cucharón. Para pedir el equipo,
+                calcule siempre en m³ suelto.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué tiempo de ciclo debo usar para una excavadora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Lo más confiable es <strong>cronometrar 10 a 15 ciclos</strong> en la obra (cargar, girar, descargar y regresar) y promediar. Como referencia general, una excavadora mediana con descarga a camión trabaja en 20-25 segundos, pero un giro mayor, una descarga alta o un camión mal posicionado alargan el ciclo. Un error de 3 segundos en un ciclo de 20 s cambia la producción en un 15%.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué factor de llenado se usa para arcilla, arena o roca?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Como referencia, la arena y la tierra suelta permiten 0,95 a 1,10; la tierra común compacta 0,85 a 0,95; la arcilla húmeda 0,80 a 0,90; y la roca fragmentada 0,60 a 0,75. Si el material es pegajoso o el frente está mal preparado, el factor baja. Para decidir con rigor, cargue algunos camiones de volumen conocido y compare con los ciclos contados.
             </p>
         </details>
 
         <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿Cómo calculo cuánto material moveré en toda la obra?
+                ¿Cómo sé cuántos camiones necesita mi excavadora?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Con esta fórmula tenés la producción diaria. Para el total de la obra:
-                <strong>Volumen total ÷ Producción por día = días de trabajo</strong>.
-                Pero recordá considerar el <strong>coeficiente de esponjamiento</strong>:
-                un metro cúbico de tierra en su lugar (m³ banco) ocupa 1,2-1,4 m³ cuando
-                está suelta después de excavar (m³ suelto). Este es el volumen que
-                realmente carga la excavadora en el cucharón. Para pedir el equipo,
-                calculá siempre en m³ suelto.
+                Calcule la producción de la excavadora y divídala entre lo que transporta cada camión por hora (capacidad × viajes por hora). Por ejemplo, con 111 m³/h y camiones que hacen 3 viajes por hora de 12 m³ cada uno (36 m³/h), harían falta unos 3 camiones para no dejar la excavadora esperando. Es un cálculo de partida; ajústelo con los tiempos reales de acarreo.
             </p>
         </details>
     </div>

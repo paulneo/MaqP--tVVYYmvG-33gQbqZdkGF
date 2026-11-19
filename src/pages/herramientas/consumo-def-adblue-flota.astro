@@ -18,12 +18,14 @@ import ConsumoDefAdBlue from '../../components/tools/ConsumoDefAdBlue.svelte'
         </p>
         <p>
             Sin DEF, el motor entra en <strong>modo derating</strong> (reducción forzada de
-            potencia) y eventualmente se detiene. Todos los motores Tier 4 con SCR llevan un
+            potencia) y, según la configuración del fabricante, puede llegar a limitar el
+            arranque. Todos los motores Tier 4 con SCR llevan un
             tanque de DEF separado del tanque de combustible. La flota necesita
             reabastecerlo periódicamente.
         </p>
 
         <h3>Ratio típico DEF/diésel por tipo de motor</h3>
+        <p>Los porcentajes siguientes son referenciales; el valor exacto lo informa el manual de cada motor y la medición en su operación.</p>
         <ul>
             <li>
                 <strong>Motores highway modernos</strong> (Cummins ISX15, Volvo D13, Detroit
@@ -49,12 +51,12 @@ import ConsumoDefAdBlue from '../../components/tools/ConsumoDefAdBlue.svelte'
         <p>
             El DEF es un fluido delicado. <strong>Contaminarlo cuesta caro</strong>: partículas
             metálicas, aceite, siliconas o combustible envenenan el catalizador SCR
-            (reemplazo: USD 3,000-8,000 según motor).
+            (el reemplazo puede costar varios miles de dólares según el motor).
         </p>
         <ul>
             <li>Temperatura: almacenar entre -5°C y 30°C. Se cristaliza a -11°C y se
                 degrada al sol prolongado.</li>
-            <li>Vida útil sellado: 12-24 meses según fabricante. Abierto: 6-12 meses.</li>
+            <li>Vida útil: depende del fabricante y de la temperatura de almacenamiento (en general, de 1 a 2 años sellado y bastante menos abierto). Revise la fecha del envase.</li>
             <li>Bidones dedicados: nunca reutilizar bidones que hayan tenido combustible
                 o aceite.</li>
             <li>Bombas: exclusivas para DEF, con filtros de 10 μm o menos.</li>
@@ -69,10 +71,71 @@ import ConsumoDefAdBlue from '../../components/tools/ConsumoDefAdBlue.svelte'
                 reposición en obra remota.</li>
             <li><strong>Tambores 208 L</strong>: para taller central, flotas medianas.
                 Necesita bomba manual o eléctrica dedicada.</li>
-            <li><strong>Cisternas 1000 L (IBC)</strong>: flotas grandes, grandes obras.
-                Rentables desde 500 L/mes de consumo.</li>
-            <li><strong>Granel</strong>: desde 3000 L, con tanque instalado en obra. El
-                más barato por litro pero requiere logística.</li>
+            <li><strong>Cisternas 1000 L (IBC)</strong>: flotas grandes y obras de mayor
+                consumo; conviene cuando el consumo mensual justifica el volumen.</li>
+            <li><strong>Granel</strong>: para consumos altos, con tanque instalado en obra. Suele
+                ser el más barato por litro, pero requiere logística y tanque dedicado.</li>
+        </ul>
+
+        <h3>Cómo se calcula</h3>
+        <p>
+            La calculadora parte del consumo de diésel por unidad y lo escala a toda la flota:
+        </p>
+        <ul>
+            <li><strong>Diésel de la flota (L/mes)</strong> = consumo por unidad × número de unidades.</li>
+            <li><strong>DEF (L/mes)</strong> = diésel de la flota × (ratio % / 100).</li>
+            <li><strong>Bidones de 10 L</strong> = DEF / 10, redondeado hacia arriba; <strong>tambores de 208 L</strong> = DEF / 208, redondeado hacia arriba.</li>
+            <li><strong>Costo DEF/mes</strong> = DEF (L/mes) × precio por litro; <strong>por año</strong> = costo mensual × 12.</li>
+            <li><strong>% sobre el diésel</strong> = costo mensual del DEF / costo mensual del diésel (diésel × precio del diésel).</li>
+        </ul>
+
+        <h3>Ejemplo resuelto</h3>
+        <p>
+            Una empresa minera contratista en Antofagasta opera <strong>6 excavadoras Tier 4
+            Final</strong> con un consumo medio de 3.500 L de diésel por unidad al mes. Adopta
+            un ratio de 5% (valor típico para maquinaria off-highway), con DEF a USD 1,10/L
+            y diésel a USD 1,20/L.
+        </p>
+        <ol>
+            <li>Diésel de la flota: 3.500 × 6 = <strong>21.000 L/mes</strong>.</li>
+            <li>DEF: 21.000 × 0,05 = <strong>1.050 L/mes</strong> (175 L por unidad).</li>
+            <li>Envases: 1.050 / 10 = 105 bidones, o 1.050 / 208 = 5,05, es decir <strong>6 tambores</strong> (se redondea hacia arriba).</li>
+            <li>Costo mensual de DEF: 1.050 × 1,10 = <strong>USD 1.155</strong>.</li>
+            <li>Costo anual: 1.155 × 12 = <strong>USD 13.860</strong>.</li>
+            <li>Costo mensual del diésel: 21.000 × 1,20 = USD 25.200, por lo que el DEF equivale a <strong>4,6% del gasto en diésel</strong>.</li>
+        </ol>
+        <p>
+            Si el ratio real resultara 6% (por mucho trabajo a carga parcial o en altura),
+            el consumo sería de 1.260 L/mes y el costo de USD 1.386 al mes: una diferencia de
+            210 L y USD 231 mensuales solo por un punto porcentual.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            El volumen de DEF sirve para dimensionar compras y almacenamiento; el
+            porcentaje sobre el diésel, para incorporar el insumo al costo horario. Como
+            el DEF suele representar una fracción pequeña del gasto en combustible, su
+            impacto en el presupuesto es moderado, pero un faltante detiene equipos
+            costosos, por lo que conviene mantener una reserva equivalente a varios días de consumo. Para afinar
+            el ratio, mida durante un mes los litros de DEF y de diésel repuestos por
+            unidad y divida uno entre otro.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Aplicar un solo ratio a toda la flota</strong>: motores distintos y cargas distintas tienen consumos diferentes; calcule por grupos.</li>
+            <li><strong>Olvidar las unidades en ralentí o con carga baja</strong>: pueden elevar la proporción de DEF por litro de diésel.</li>
+            <li><strong>Calcular sin considerar mermas</strong>: derrames, trasvases y envases vencidos aumentan el consumo comprado respecto del usado.</li>
+            <li><strong>Comparar precios sin igualar formato y flete</strong>: el precio por litro de un bidón y de un tambor no es comparable sin incluir transporte.</li>
+            <li><strong>Confundir DEF con aditivos de combustible</strong>: son productos distintos y no se mezclan en el mismo tanque.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/normas-emisiones-tier4-eurov-latam/">EPA Tier 4, Euro Stage V y normas de emisiones diésel en Latam</a></li>
+            <li><a href="/posts/acert-vs-scr-tecnologias-emisiones/">ACERT vs SCR: dos filosofías para bajar emisiones diésel</a></li>
+            <li><a href="/posts/motor-volvo-d7e-que-es-aplicaciones/">Motor Volvo D7E: qué es, aplicaciones y características</a></li>
+            <li><a href="/posts/sistema-escape-cummins-aftertreatment/">Sistema de escape y aftertreatment del Cummins ISX/Signature</a></li>
         </ul>
     </div>
 
@@ -84,11 +147,11 @@ import ConsumoDefAdBlue from '../../components/tools/ConsumoDefAdBlue.svelte'
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
                 La ECU detecta el nivel bajo y activa una <strong>secuencia progresiva de
                 penalizaciones</strong>. Primero enciende un aviso en el tablero (nivel bajo).
-                Luego reduce la potencia al 50-75% (derating suave). Si sigue sin
-                reabastecerse, el motor limita a 5 km/h en camiones highway, o queda en
-                ralentí en maquinaria off-highway. Finalmente puede pasar a modo de arranque
-                bloqueado. <strong>Nunca es un problema mecánico</strong>: el motor está bien,
-                solo espera DEF. Reabastecé y el sistema se recupera en 1-2 arranques.
+                Luego reduce la potencia (derating). Si sigue sin reabastecerse, puede
+                limitar más la velocidad o la potencia y, según el fabricante, bloquear
+                el arranque. La secuencia exacta y los niveles varían por marca y modelo;
+                consulte el manual del equipo. <strong>Nunca es un problema mecánico</strong>: el motor está bien,
+                solo espera DEF. Una vez reabastecido, el sistema suele recuperarse tras uno o más ciclos de arranque; en algunos modelos requiere además un reinicio por parte del servicio técnico.
             </p>
         </details>
 
@@ -98,11 +161,12 @@ import ConsumoDefAdBlue from '../../components/tools/ConsumoDefAdBlue.svelte'
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
                 <strong>No.</strong> La concentración 32.5% no es arbitraria: es la que
-                congela más bajo (~-11°C) y a la que la urea se descompone en amoníaco al
-                inyectarse. Si diluís, el sistema mide la conductividad, detecta el DEF fuera
-                de spec y bloquea el vehículo. Además, agua sola nunca reduce NOx. La única
-                opción legal es DEF certificado ISO 22241. Marcas confiables en Latam:
-                YARA, BASF, Terracair, cualquiera con sello VDA/API.
+                congela a la temperatura más baja (aprox. −11 °C) y con la que el sistema
+                SCR funciona según su diseño. Si se diluye, los sensores de calidad pueden
+                detectar el fluido fuera de especificación y activar avisos o limitaciones
+                de potencia. Además, el agua sola no reduce los NOx. La opción adecuada es
+                DEF que cumpla la norma ISO 22241; verifique que el envase indique la
+                conformidad con esa norma o la licencia correspondiente del fabricante.
             </p>
         </details>
 
@@ -125,25 +189,56 @@ import ConsumoDefAdBlue from '../../components/tools/ConsumoDefAdBlue.svelte'
                 ¿Cuándo conviene pasar de bidones a granel?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                El breakeven depende del país, pero como referencia: <strong>bidón 10L</strong>
-                cuesta ~USD 1.20-1.50/L, <strong>tambor 208L</strong> ~USD 0.95-1.15/L,
-                <strong>IBC 1000L</strong> ~USD 0.85-1.00/L, <strong>granel</strong> ~USD
-                0.70-0.85/L. Un salto típico: pasar a tambor cuando consumís más de 200 L/mes,
-                a IBC cuando pasás 800 L/mes, a granel cuando pasás 3000 L/mes. El ahorro se
-                amortiza rápido si tenés flota diésel Tier 4 activa.
+                El punto de equilibrio depende del país y del proveedor. En general, el
+                precio por litro baja a medida que aumenta el formato: el bidón de 10 L es el
+                más caro, seguido del tambor de 208 L, el contenedor IBC de 1.000 L y el
+                granel. Pida cotización por formato y calcule el ahorro anual con el consumo
+                que obtuvo en la calculadora: si 1.050 L/mes se compran en tambores en lugar
+                de bidones, una diferencia de USD 0,20 por litro equivale a USD 2.520 al año.
+                Incluya en la comparación el costo de la bomba, el espacio y el riesgo de
+                contaminación al trasvasar.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿El consumo de DEF sube en obra a mucha altura?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Puede ser. En obras sobre 3.000 msnm (minería Andes, obras de altura), el
+                motor trabaja con menos oxígeno disponible y la ECU ajusta timing y presión
+                de inyección. Los NOx generados suben ligeramente y el SCR responde
+                inyectando más DEF. El efecto depende del motor y de la calibración, y no hay un
+                valor único: lo más confiable es medir. Si su flota opera constantemente en
+                altura, pruebe con un ratio algo mayor (por ejemplo 6% en lugar de 5%) y
+                contraste con los litros realmente repuestos.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto DEF consume un equipo por cada 100 litros de diésel?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Como referencia general, entre 3 y 6 litros de DEF por cada 100 litros de diésel en equipos con SCR; con el ratio típico de 5% serían 5 L. El valor real depende del motor, la carga de trabajo y la calibración, por lo que conviene verificarlo con los registros de reposición de su propia flota.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto tiempo dura un bidón de DEF almacenado?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del fabricante y de la temperatura. Almacenado cerrado, a la sombra y sin calor intenso, suele conservarse del orden de uno a dos años; en un contenedor abierto o expuesto al sol se degrada antes. Revise la fecha de fabricación del envase y evite acopiar stock excesivo en obras con altas temperaturas.
             </p>
         </details>
 
         <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿El consumo de DEF sube en obra a mucha altura?
+                ¿Cómo transporto y guardo DEF en obra sin contaminarlo?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Sí, un poco. En obras sobre 3000 msnm (minería Andes, obras de altura), el
-                motor trabaja con menos oxígeno disponible y la ECU ajusta timing y presión
-                de inyección. Los NOx generados suben ligeramente y el SCR responde
-                inyectando más DEF. Aumento típico: 5-15% sobre el consumo a nivel del mar.
-                Considerá 6% en vez de 5% si tu flota opera constantemente en altura.
+                Use envases y bombas exclusivos para DEF, con tapas selladas, y evite el contacto con combustible, aceite, polvo o metales. Guárdelo a la sombra, entre aproximadamente −5 °C y 30 °C, y no reutilice bidones de otros fluidos. Rotule los recipientes y aplique el criterio de primero en entrar, primero en salir para vaciar el stock más antiguo antes.
             </p>
         </details>
     </div>

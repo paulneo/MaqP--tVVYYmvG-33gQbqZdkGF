@@ -4,96 +4,163 @@ import EncofradoMaderaM2 from '../../components/tools/EncofradoMaderaM2.svelte'
 ---
 
 <ToolLayout slug="encofrado-madera-por-m2">
+    <!-- Calculadora interactiva (Svelte island) -->
     <EncofradoMaderaM2 slot="calculator" client:visible />
 
+    <!-- Explicación técnica -->
     <div slot="explanation">
         <h2>Qué es el encofrado y por qué el cálculo importa</h2>
         <p>
             El <strong>encofrado</strong> es la estructura temporal que da forma al hormigón
-            fresco hasta que fragua y adquiere resistencia estructural. En obras tradicionales
-            latinoamericanas se sigue usando principalmente <strong>encofrado de madera</strong>
-            (tablero fenólico + puntales + listoneado + clavos), porque el metálico modular
-            (Peri, Ulma, Doka) exige inversión inicial alta y sólo justifica en obras grandes.
+            fresco y lo sostiene hasta que fragua y alcanza resistencia suficiente. En
+            obras pequeñas y medianas de Latinoamérica se sigue usando mucho el
+            <strong>encofrado de madera</strong> (tablero fenólico, puntales, listoneado y
+            clavos), porque exige poca inversión inicial. Los sistemas modulares
+            metálicos suelen justificarse cuando hay repetición y volumen de obra.
         </p>
         <p>
-            El costo del encofrado en obra tradicional representa entre <strong>10% y 25%
-            del costo total de la estructura de hormigón</strong>. Calcularlo mal es la
-            causa #1 de sobrecosto en pequeñas y medianas obras.
+            Según el tipo de obra, el encofrado puede representar una parte importante del
+            costo de la estructura de hormigón (con frecuencia se menciona un rango del
+            10 % al 25 %, aunque varía mucho por país y proyecto). Por eso un error de
+            cálculo se nota en el presupuesto.
         </p>
 
         <h3>Componentes que calcula esta herramienta</h3>
         <ul>
             <li>
-                <strong>Tablero fenólico 18 mm</strong> (1.22 × 2.44 m): la superficie que
-                queda en contacto con el hormigón. Es reutilizable 4-6 veces si se cuida
-                (aplicar desmoldante, no mojar en exceso).
+                <strong>Tablero fenólico de 18 mm</strong> (1,22 × 2,44 m = 2,98 m² por hoja):
+                superficie en contacto con el hormigón. Su cantidad se reduce según los
+                reusos que se prevean.
             </li>
             <li>
-                <strong>Puntales</strong>: verticales de sostén. Pueden ser metálicos
-                telescópicos (más caros pero más seguros y reutilizables), o postes de madera
-                dura (más baratos, pero rechazables después de 2-3 usos).
+                <strong>Puntales</strong>: verticales de sostén, ya sean metálicos
+                telescópicos o postes de madera. Se cuentan por m² de superficie.
             </li>
             <li>
-                <strong>Listoneado</strong>: piezas de 2×3" o 2×4" que arriostran el tablero
-                y transmiten cargas a los puntales. Incluye soleras y correas.
+                <strong>Listoneado</strong>: piezas de madera que arriostran el tablero y
+                transmiten las cargas a los puntales; se mide en metros lineales (ml).
             </li>
             <li>
-                <strong>Clavos</strong>: 2.5" para el tablero, 3.5" para el listoneado. Se
-                consumen ~100-150 g/m² según pieza y complejidad.
+                <strong>Clavos</strong>: consumo en kilogramos según el m² de encofrado.
             </li>
             <li>
-                <strong>Alambre negro #16</strong>: solo para muros y columnas, para amarrar
-                el encofrado contra la presión lateral del hormigón fresco.
+                <strong>Alambre</strong>: solo en muros y columnas, para amarrar el
+                encofrado frente a la presión lateral del hormigón fresco.
             </li>
         </ul>
 
-        <h3>Diferencias por tipo de elemento</h3>
+        <h3>Cómo se calcula: fórmulas y constantes</h3>
         <p>
-            <strong>Losa horizontal</strong>: encofrado más simple. Un tablero por debajo,
-            listoneado en cruz para arriostrar, puntales cada 1 m². Contamos una sola
-            cara.
-        </p>
-        <p>
-            <strong>Muro vertical</strong>: <em>dos caras</em>, por eso el consumo de tablero
-            es el doble por m² de muro. Menos puntales (los muros son autoportantes durante
-            el fraguado), pero más alambre para arriostrar caras opuestas.
-        </p>
-        <p>
-            <strong>Columna vertical</strong>: la más exigente por m². Poca superficie pero
-            necesita mucho listoneado y alambre para resistir la presión lateral del
-            hormigón. Consumo típico de listoneado: 2-3× el de la losa.
-        </p>
-
-        <h3>Reuso: el factor que más impacta el costo</h3>
-        <p>
-            Un tablero fenólico bien cuidado puede reutilizarse <strong>6 a 8 veces</strong>.
-            En obras mal gestionadas, uno de mala calidad se descarta a la 2° o 3° colada
-            por hinchazón, cantos rotos o clavado excesivo. La calculadora ajusta el
-            consumo de tablero dividiendo entre el número de reusos que le indicás.
-        </p>
-        <p>
-            Cuidados básicos para maximizar reusos:
+            Los datos de entrada son el tipo de elemento, el <strong>área a encofrar</strong>
+            en m², los <strong>reusos</strong> del tablero y el <strong>desperdicio</strong> en %. La
+            calculadora aplica estas expresiones:
         </p>
         <ul>
-            <li>Aplicar desmoldante antes de cada colada (aceite quemado no sirve — mancha).</li>
-            <li>Limpiar restos de hormigón fresco antes de que fragüe.</li>
-            <li>No perforar más de lo necesario. Usar el mismo agujero para clavos siguientes.</li>
-            <li>Almacenar en pila plana, sin exposición directa al sol o lluvia.</li>
+            <li><code>superficie de tablero = área</code> en losa y columna; <code>área × 2</code> en muro (dos caras).</li>
+            <li><code>superficie ajustada = superficie de tablero × (1 + desperdicio / 100)</code>.</li>
+            <li><code>hojas = redondeo hacia arriba ((superficie ajustada / 2,98) / reusos)</code>.</li>
+            <li><code>puntales = redondeo hacia arriba (área × coeficiente)</code>.</li>
+            <li><code>clavos (kg) = área × g/m² / 1.000</code>.</li>
+            <li><code>alambre (m) = redondeo hacia arriba (área × m/m²)</code>.</li>
+            <li><code>listoneado (ml) = redondeo hacia arriba ((área × ml/m²) / reusos)</code>.</li>
+        </ul>
+        <p>Coeficientes por tipo de elemento incluidos en la herramienta:</p>
+        <ul>
+            <li><strong>Losa</strong>: 1 puntal/m², 150 g de clavos/m², 3,5 ml de listoneado/m², sin alambre.</li>
+            <li><strong>Muro (dos caras)</strong>: 0,5 puntales/m², 120 g/m², 4 m de alambre/m², 5 ml/m².</li>
+            <li><strong>Columna</strong>: 0,3 puntales/m², 100 g/m², 6 m de alambre/m², 8 ml/m².</li>
+        </ul>
+        <p>
+            Son coeficientes de referencia para presupuestar. El número real de puntales,
+            su separación y el diseño del listoneado dependen de la altura de entrepiso,
+            del espesor del elemento y de las cargas de vaciado, y lo determina el
+            proyectista o el responsable del encofrado según la normativa local y las
+            especificaciones del ingeniero estructural. Esas especificaciones prevalecen
+            sobre cualquier cifra de esta página.
+        </p>
+
+        <h3>Cómo se entienden los reusos y el área</h3>
+        <p>
+            Dos detalles condicionan el resultado. Primero, el <strong>área</strong> debe
+            ser la superficie total que va a encofrar en toda la obra (suma de todos los
+            vaciados); los <strong>reusos</strong> indican cuántas veces se vuelve a usar
+            el mismo tablero. Si va a vaciar una sola losa una única vez, el uso correcto
+            es <strong>reusos = 1</strong>; con 4 reusos la herramienta supone que ese
+            tablero también cubrirá otros tres vaciados iguales. Segundo, puntales y clavos
+            se calculan sobre el área completa y no se dividen entre los reusos, por lo que
+            si reutiliza los puntales entre vaciados el resultado será conservador.
+        </p>
+
+        <h3>Ejemplo resuelto 1: losa de 4 × 5 m, vaciada una vez</h3>
+        <ol>
+            <li>Área: <code>4 × 5 = 20 m²</code>. Reusos = 1, desperdicio = 10 %.</li>
+            <li>Superficie ajustada: <code>20 × 1,10 = 22 m²</code>.</li>
+            <li>Hojas de tablero: <code>22 / 2,98 = 7,38</code>, es decir <strong>8 hojas</strong>.</li>
+            <li>Puntales: <code>20 × 1 = 20 unidades</code>.</li>
+            <li>Listoneado: <code>20 × 3,5 = 70 ml</code>.</li>
+            <li>Clavos: <code>20 × 150 / 1.000 = 3 kg</code>.</li>
+            <li>Alambre: 0 m (la losa no lo usa).</li>
+        </ol>
+        <p>
+            Variante: tres losas iguales (60 m² en total) vaciadas con el mismo tablero
+            (reusos = 3). Hojas: <code>(66 / 2,98) / 3 = 7,38</code>, es decir también 8 hojas,
+            mientras el listoneado baja a <code>(60 × 3,5) / 3 = 70 ml</code>. Se compra
+            para una losa lo que sirve para las tres.
+        </p>
+
+        <h3>Ejemplo resuelto 2: muro de 6 m de largo y 2,4 m de alto</h3>
+        <ol>
+            <li>Área de muro: <code>6 × 2,4 = 14,4 m²</code>. Reusos = 1, desperdicio = 10 %.</li>
+            <li>Superficie de tablero (dos caras): <code>14,4 × 2 = 28,8 m²</code>; ajustada: <code>28,8 × 1,10 = 31,68 m²</code>.</li>
+            <li>Hojas: <code>31,68 / 2,98 = 10,63</code>, es decir <strong>11 hojas</strong>.</li>
+            <li>Puntales: <code>14,4 × 0,5 = 7,2</code>, es decir <strong>8 unidades</strong>.</li>
+            <li>Listoneado: <code>14,4 × 5 = 72 ml</code>.</li>
+            <li>Clavos: <code>14,4 × 120 / 1.000 = 1,73 kg</code>.</li>
+            <li>Alambre: <code>14,4 × 4 = 57,6</code>, es decir <strong>58 m</strong>.</li>
+        </ol>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <ul>
+            <li>Las hojas de tablero se compran enteras; el redondeo hacia arriba ya está incluido.</li>
+            <li>El listoneado se pide en metros lineales: convierta a piezas según la longitud comercial de la madera (por ejemplo, listones de 3 m).</li>
+            <li>Los puntales son una estimación de cantidad; su distribución real y capacidad la fija el proyecto de encofrado.</li>
+            <li>Los reusos dependen del cuidado en obra: un tablero mal almacenado o con cantos dañados rinde menos veces.</li>
+        </ul>
+
+        <h3>Errores comunes al calcular el encofrado</h3>
+        <ul>
+            <li><strong>Colocar 4 reusos para una obra de un solo vaciado</strong>: se compran menos hojas de las necesarias.</li>
+            <li><strong>Olvidar que el muro lleva dos caras</strong> al calcular a mano (la herramienta ya lo duplica).</li>
+            <li><strong>Subestimar el desperdicio</strong> de corte: los remates y recortes en bordes, vanos y esquinas consumen tablero.</li>
+            <li><strong>No considerar el reapuntalado</strong> y los plazos de desencofrado, que condicionan cuántos juegos de puntales se necesitan al mismo tiempo.</li>
+            <li><strong>Usar el cálculo como diseño del encofrado</strong>: la herramienta presupuesta materiales; no verifica la resistencia del encofrado ante la presión del hormigón.</li>
+        </ul>
+
+        <h3>Cuidados para lograr más reusos</h3>
+        <ul>
+            <li>Aplicar un desmoldante adecuado antes de cada vaciado.</li>
+            <li>Limpiar el hormigón fresco del tablero antes de que fragüe.</li>
+            <li>Evitar perforaciones innecesarias y proteger los cantos.</li>
+            <li>Almacenar en pila plana, protegido del sol directo y de la lluvia.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/que-es-un-encofrado-y-tipos/">Qué es un encofrado y qué tipos existen</a></li>
+            <li><a href="/posts/como-se-hace-una-losa-de-concreto-paso-a-paso/">Cómo se hace una losa de concreto paso a paso</a></li>
+            <li><a href="/posts/que-es-el-hormigon-armado/">Qué es el hormigón armado y cómo funciona</a></li>
+            <li><a href="/posts/como-se-calcula-el-cubicaje-de-hormigon/">Cómo se calcula el cubicaje de hormigón en obra</a></li>
         </ul>
     </div>
 
+    <!-- FAQ -->
     <div slot="faq">
         <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
                 ¿Cuánta madera necesito por m² de losa?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Para <strong>1 m² de losa</strong> con reuso de 4 veces: <strong>~0.09
-                hojas de tablero fenólico 18 mm</strong> (1 hoja cubre ~11 m² a lo largo
-                de 4 usos), <strong>1 puntal cada m²</strong>, <strong>~3.5 metros lineales
-                de listoneado</strong> (soleras + correas), <strong>~150 g de clavos</strong>.
-                En obras grandes con encofrado bien cuidado se puede llegar a 0.06-0.07 hojas/m²
-                (6-7 reusos). Ajustá los reusos en la calculadora según tu experiencia.
+                Con 4 reusos y 10 % de desperdicio, la herramienta resulta en <strong>0,09 hojas de tablero fenólico 18 mm por m²</strong> (1,10 / 2,98 / 4), <strong>1 puntal por m²</strong>, <strong>3,5 ml de listoneado</strong> (antes de dividir por los reusos) y <strong>150 g de clavos</strong>. Con 1 reuso, la cifra de tablero sube a unas 0,37 hojas por m². Los coeficientes son referenciales; ajuste los reusos a su situación real.
             </p>
         </details>
 
@@ -102,13 +169,7 @@ import EncofradoMaderaM2 from '../../components/tools/EncofradoMaderaM2.svelte'
                 ¿Puntal metálico o postes de madera?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Depende del tamaño y frecuencia de obras. <strong>Puntales metálicos
-                telescópicos</strong> (Peri, Doka o marca local): USD 15-30 c/u, duran 10+
-                años, altura regulable, más seguros. Convienen desde 3-4 obras al año.
-                <strong>Postes de madera dura</strong> (algarrobo, eucalipto, ipé): USD
-                3-8 c/u, duran 1-3 obras, requieren cuñas para nivelar. Convienen para obra
-                única o para trabajos aislados. En obra industrial nunca se usan postes de
-                madera por seguridad.
+                Los <strong>puntales metálicos telescópicos</strong> permiten regular la altura, son más uniformes y tienen carga admisible especificada por el fabricante, por lo que son más seguros y se reutilizan muchas veces. Los <strong>postes de madera</strong> cuestan menos al inicio, pero varían en calidad, requieren cuñas para nivelar y se deterioran con el uso. Para una obra aislada puede resultar económico alquilar o usar madera de buena calidad; para varias obras al año suele convenir el metal. En cualquier caso, la capacidad de carga debe verificarse según el proyecto.
             </p>
         </details>
 
@@ -117,47 +178,43 @@ import EncofradoMaderaM2 from '../../components/tools/EncofradoMaderaM2.svelte'
                 ¿Cuándo puedo desencofrar?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Tiempos mínimos (hormigón H21, temperatura ~20°C):
-                <strong>columnas y muros</strong>: 12-24 horas (cara vista solo, sin cargas).
-                <strong>losas y vigas — costados</strong>: 2-3 días.
-                <strong>losas y vigas — fondo con apuntalamiento</strong>: 7-14 días según
-                luz.
-                <strong>losas y vigas — apuntalamiento total</strong>: 21-28 días para luces
-                mayores a 5 m. Con hormigones especiales (con aditivos acelerantes) los
-                tiempos bajan. Con temperaturas bajo 10°C, se duplican. Nunca desencofrar
-                sin verificar la resistencia real si tenés dudas.
+                El momento depende de la resistencia que haya alcanzado el hormigón, de la luz del elemento, de la temperatura y del tipo de cemento o aditivos. Como orden de magnitud de práctica habitual, los costados de columnas y muros pueden retirarse en uno o dos días y el fondo de losas y vigas requiere bastante más tiempo, con reapuntalado en luces grandes. Las normas locales (por ejemplo, las que siguen los reglamentos de cada país) y el ingeniero responsable fijan los plazos mínimos; con temperaturas bajas se alargan. Si hay dudas, confirme la resistencia con ensayos de probetas.
             </p>
         </details>
 
         <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿Qué tablero conviene más: fenólico, common, OSB?
+                ¿Qué tablero conviene más: fenólico, multilaminado común u OSB?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                <strong>Fenólico 18 mm</strong> (con película fenólica): el estándar. Superficie
-                lisa, resiste 6-8 reusos si se cuida, buena resistencia al agua. USD 55-95
-                por hoja de 1.22 × 2.44 m en Latam.
-                <strong>Multilaminado común 18 mm</strong>: más barato (USD 35-60/hoja) pero
-                sin película fenólica. Rinde 2-3 reusos. Solo conviene si sabés que no vas
-                a reutilizarlo.
-                <strong>OSB</strong>: no se recomienda para encofrado — se hincha al contacto
-                con agua del hormigón y queda superficie porosa.
-                Esta calculadora asume tablero fenólico 18 mm.
+                El <strong>tablero fenólico</strong> tiene una película que protege la cara y da una superficie lisa, por lo que admite más reusos si se cuida. El <strong>multilaminado común</strong> es más barato pero se degrada antes con la humedad del hormigón, por lo que rinde menos usos. El <strong>OSB</strong> no es el material habitual para encofrado visto porque tiende a hincharse en los cantos y deja una textura poco uniforme. Esta calculadora asume tablero fenólico de 18 mm. Los precios varían mucho por país, así que cotice localmente.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Puedo hacer encofrado con tablas comunes de madera?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, es una técnica tradicional en obras rurales y de autoconstrucción. Se arman tableros con tablas clavadas sobre correas. Ventajas: material de fácil acceso y menor costo inicial. Desventajas: la superficie es irregular y deja marcas, consume más clavos y tiempo de armado, y los reusos son pocos (1 o 2). Es una opción razonable cuando el acabado no importa, como cimientos o muros enterrados, siempre que la estanqueidad de las juntas evite la pérdida de lechada.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos reusos debo usar en el cálculo?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Use <strong>1</strong> si el tablero solo va a servir para un vaciado. Use 2-4 si va a repetir el encofrado en losas, muros o columnas iguales con tablero en buen estado. Valores mayores solo son realistas con tablero de calidad, desmoldante, limpieza y almacenamiento cuidadosos. La herramienta acepta de 1 a 10, pero se recomienda ser conservador: un reuso de más en el cálculo puede dejarlo sin tablero a mitad de la obra.
             </p>
         </details>
 
         <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿Puedo hacer encofrado con tablas comunes de pino?
+                ¿Cuántos puntales necesito por m² de losa?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Sí, es la técnica tradicional para obras rurales o autoconstrucción. Se
-                arman tableros con tablas de pino 1×6" clavadas sobre correas. Ventajas:
-                mucho más barato (USD 8-15/m²), tablas se venden en cualquier ferretería.
-                Desventajas: superficie irregular (marcas de tablas quedan en el hormigón),
-                más consumo de clavos, más tiempo de armado y rendimiento por reuso muy
-                bajo (1-2 usos). Para obras donde el acabado no importa (cimientos, muros
-                enterrados) es perfectamente válido y económico.
+                La herramienta usa 1 puntal por m² como coeficiente de presupuesto. El número real depende del espesor de la losa, del peso del hormigón fresco y de las sobrecargas de construcción, de la capacidad del puntal y de la separación de las vigas de reparto. Un espesor mayor o una altura de entrepiso grande puede requerir más puntales o sistemas de apuntalamiento diseñados. Consulte el proyecto de encofrado o al ingeniero estructural.
             </p>
         </details>
     </div>

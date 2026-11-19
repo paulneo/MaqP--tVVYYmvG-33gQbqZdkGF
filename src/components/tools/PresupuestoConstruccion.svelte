@@ -188,7 +188,7 @@
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
             Valores en <strong>USD</strong> como referencia para 2026. El costo real depende de zona geográfica (capital vs interior),
             terreno (plano vs pendiente), disponibilidad de materiales locales y complejidad del diseño.
-            Para presupuesto formal, siempre consultá con un arquitecto o constructor local.
+            Para presupuesto formal, siempre consulte con un arquitecto o constructor local.
         </p>
     </div>
 

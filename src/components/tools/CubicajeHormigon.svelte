@@ -84,7 +84,7 @@
     <!-- Selector de tipo de elemento -->
     <div class="mb-6">
         <label class="block text-sm font-semibold mb-2 text-black/75 dark:text-white/80">
-            ¿Qué vas a calcular?
+            ¿Qué desea calcular?
         </label>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
             {#each [{ v: 'losa', label: 'Losa' }, { v: 'columna', label: 'Columna' }, { v: 'viga', label: 'Viga' }, { v: 'zapata', label: 'Zapata' }] as opt}
@@ -263,7 +263,7 @@
 
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
             Basado en dosificación estándar 1:2:3 para hormigón estructural (resistencia
-            aproximada H21/H25). Ajustá la mezcla según el uso real y las normas locales.
+            aproximada H21/H25). Ajuste la mezcla según el uso real y las normas locales.
         </p>
     </div>
 

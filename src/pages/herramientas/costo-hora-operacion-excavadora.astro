@@ -21,26 +21,26 @@ import CostoHoraOperacion from '../../components/tools/CostoHoraOperacion.svelte
         <p>
             Es la pérdida de valor de la máquina a lo largo del tiempo. Se calcula como:
             <code>(precio de compra − valor residual) / horas totales de vida útil</code>.
-            Una excavadora clase 20 T se estima entre <strong>8-12 años</strong> con
-            <strong>1.500 hs/año</strong>, valor residual <strong>15-25%</strong> del
-            precio de compra. Esto suele ser el componente más grande del costo.
+            Como supuestos referenciales, una excavadora clase 20 T se estima entre <strong>8-12 años</strong> con
+            <strong>1.500 hs/año</strong> y un valor residual de <strong>15-25%</strong> del
+            precio de compra (la calculadora usa 10 años, 1.500 hs/año y 20%). Junto con el combustible, suele ser uno de los componentes más grandes del costo.
         </p>
 
         <h3>2. Combustible</h3>
         <p>
-            Consumo típico de excavadora 20 T: <strong>18-25 litros/hora</strong> según
-            marca, año, mantenimiento y tipo de trabajo. Un cargador frontal grande
-            (988H) consume 45-60 l/h. Un camión minero de 100 T, más de 100 l/h. El
-            precio del diesel varía mucho por país — en Latam entre USD 0.9 y 1.4/litro
-            en 2026.
+            Consumo referencial de una excavadora 20 T: <strong>18-25 litros/hora</strong> según
+            marca, año, mantenimiento y tipo de trabajo. Los equipos más grandes (cargadores
+            de gran porte, camiones mineros) consumen varias veces más. El precio del
+            diésel cambia mucho de un país a otro y en el tiempo: use el precio que
+            realmente paga, con o sin impuestos según pueda recuperarlos.
         </p>
 
         <h3>3. Mantenimiento y repuestos</h3>
         <p>
-            Regla práctica de fabricantes (Caterpillar, Volvo, Komatsu): un
-            <strong>6-10% del precio de compra anual</strong> en mantenimiento
-            preventivo, cambios de filtros y aceites, repuestos menores y correctivos.
-            Máquinas viejas o con abuso operativo suben a 12-15%.
+            Regla práctica de uso común en el sector (no es un dato de un fabricante
+            específico): un <strong>6-10% del precio de compra por año</strong> en
+            mantenimiento preventivo, filtros y aceites, repuestos menores y correctivos.
+            Las máquinas viejas o con uso severo pueden requerir bastante más.
         </p>
 
         <h3>4. Operador</h3>
@@ -48,7 +48,9 @@ import CostoHoraOperacion from '../../components/tools/CostoHoraOperacion.svelte
             El salario mensual del operador dividido por las horas laborales
             (típicamente <strong>176 hs/mes</strong> = 44 hs/sem × 4 semanas), más las
             cargas sociales (aportes patronales, seguridad social, indemnizaciones).
-            En Latam, las cargas suelen ir del <strong>25% al 45%</strong> según el país.
+            En Latinoamérica, las cargas varían mucho según el país y el régimen laboral;
+            como referencia amplia, entre <strong>25% y 45%</strong>. Consulte la normativa
+            laboral vigente de su país.
         </p>
 
         <h3>5. Overhead / margen administrativo</h3>
@@ -62,19 +64,90 @@ import CostoHoraOperacion from '../../components/tools/CostoHoraOperacion.svelte
         <h3>¿Para qué sirve este cálculo?</h3>
         <ul>
             <li>
-                <strong>Presupuestar servicios</strong> — cuando cotizás alquiler por
+                <strong>Presupuestar servicios</strong> — cuando se cotiza alquiler por
                 hora, el precio de venta debe ser <em>costo por hora × margen deseado</em>.
-                Un margen razonable en Latam es 20-40% sobre el costo.
+                Un margen habitual de referencia es 20-40% sobre el costo.
             </li>
             <li>
-                <strong>Comparar comprar vs alquilar</strong> — si vas a usar la máquina
-                menos de 800-1.000 hs/año, muchas veces alquilar es más rentable.
+                <strong>Comparar comprar vs alquilar</strong> — si se va a usar la máquina
+                menos de 800-1.000 hs/año, muchas veces alquilar es más rentable
+                (el punto de equilibrio exacto depende de cada caso).
             </li>
             <li>
-                <strong>Detectar máquinas ineficientes</strong> — si tu costo real por
-                hora es mucho más alto que el promedio del rubro, tenés un problema
-                (consumo excesivo, mantenimiento pobre, operador ineficiente).
+                <strong>Detectar máquinas ineficientes</strong> — si el costo real por
+                hora es mucho más alto que el promedio del rubro, hay un problema
+                (consumo excesivo, mantenimiento deficiente, operador ineficiente).
             </li>
+        </ul>
+
+        <h3>Cómo calcula cada componente la herramienta</h3>
+        <ul>
+            <li><strong>Vida útil en horas</strong> = años de vida útil × horas de operación al año.</li>
+            <li><strong>Depreciación/h</strong> = (precio de compra − precio × % residual) / vida útil en horas.</li>
+            <li><strong>Combustible/h</strong> = consumo (L/h) × precio del litro.</li>
+            <li><strong>Mantenimiento/h</strong> = (precio de compra × % anual) / horas de operación al año.</li>
+            <li><strong>Operador/h</strong> = salario mensual × (1 + % cargas) / horas laborales al mes.</li>
+            <li><strong>Overhead</strong> = (suma de los cuatro anteriores) × % overhead, y el total es la suma de todo.</li>
+        </ul>
+        <p>
+            Con los valores por defecto (USD 180.000, 20% residual, 10 años, 1.500 hs/año,
+            22 L/h a USD 1,10, mantenimiento 8%, operador USD 1.200 con 30% de cargas y
+            overhead 10%) el resultado es <strong>USD 57,49 por hora</strong>:
+            depreciación 9,60 + combustible 24,20 + mantenimiento 9,60 + operador 8,86 =
+            52,26, más 5,23 de overhead.
+        </p>
+
+        <h3>Ejemplo resuelto</h3>
+        <p>
+            Una empresa de movimiento de tierras en Bogotá evalúa su excavadora clase 20 t:
+            precio de compra <strong>USD 165.000</strong>, residual 20%, vida útil de 10
+            años con <strong>1.600 hs/año</strong>, consumo de 20 L/h con diésel a USD 1,00,
+            mantenimiento anual de 8%, operador con salario de USD 900 al mes más 35% de
+            cargas sociales sobre 176 horas laborales, y overhead de 12%.
+        </p>
+        <ol>
+            <li>Vida útil: 10 × 1.600 = 16.000 horas. Residual: 165.000 × 0,20 = 33.000.</li>
+            <li>Depreciación: (165.000 − 33.000) / 16.000 = <strong>USD 8,25/h</strong>.</li>
+            <li>Combustible: 20 × 1,00 = <strong>USD 20,00/h</strong>.</li>
+            <li>Mantenimiento: (165.000 × 0,08) / 1.600 = 13.200 / 1.600 = <strong>USD 8,25/h</strong>.</li>
+            <li>Operador: 900 × 1,35 / 176 = 1.215 / 176 = <strong>USD 6,90/h</strong>.</li>
+            <li>Subtotal: 8,25 + 20,00 + 8,25 + 6,90 = USD 43,40/h.</li>
+            <li>Overhead: 43,40 × 0,12 = USD 5,21/h.</li>
+            <li><strong>Costo total: USD 48,61 por hora</strong>.</li>
+        </ol>
+        <p>
+            Si esa misma máquina trabajara solo 800 horas al año, la depreciación sería
+            (165.000 − 33.000) / (10 × 800) = USD 16,50/h y el mantenimiento 13.200 / 800 =
+            USD 16,50/h: los costos fijos por hora se duplican cuando la utilización cae
+            a la mitad. Por eso la utilización es el factor más sensible del modelo.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            El valor obtenido es el <strong>costo propio</strong> de tener y operar la
+            máquina una hora; no incluye utilidad. Para fijar una tarifa multiplique por un
+            margen (en el ejemplo, 48,61 × 1,30 = USD 63,19 y × 1,40 = USD 68,06). Observe
+            también la composición: en el ejemplo el combustible pesa cerca del 41% del
+            total y la depreciación cerca del 17%. Si el combustible domina, la gestión del
+            operador y del ralentí es la palanca; si dominan depreciación y mantenimiento,
+            la palanca es aumentar las horas útiles al año.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Sobreestimar las horas por año</strong>: contar 2.000 horas cuando el horómetro registra 1.200 distorsiona todo el costo fijo.</li>
+            <li><strong>Olvidar las cargas sociales del operador</strong>: el salario nominal no es el costo real para la empresa.</li>
+            <li><strong>Ignorar neumáticos, rodaje o cuchillas</strong>: son desgaste que hay que cubrir dentro del mantenimiento o aparte.</li>
+            <li><strong>No actualizar el precio del diésel</strong>: una variación del precio mueve el costo total casi de inmediato.</li>
+            <li><strong>Confundir costo con tarifa</strong>: el costo por hora no incluye utilidad, riesgo ni traslado.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/arrendamientos-valor-mercado/">Arrendamientos de valor justo y costo por hora del equipo</a></li>
+            <li><a href="/posts/gestion-costos-combustible/">Cómo gestionar el aumento de los costos de combustible</a></li>
+            <li><a href="/posts/gestion-de-la-vida-util-de-maquinaria-pesada/">Gestión de la vida útil de maquinaria pesada</a></li>
+            <li><a href="/posts/consejos-mantenimiento-excavadoras/">Consejos de mantenimiento para excavadoras</a></li>
         </ul>
     </div>
 
@@ -86,10 +159,10 @@ import CostoHoraOperacion from '../../components/tools/CostoHoraOperacion.svelte
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
                 Con los defaults de la calculadora (compra USD 180k, vida útil 10 años,
                 1.500 hs/año, combustible USD 1.10/l, operador USD 1.200 + 30% cargas),
-                el costo total sale aproximadamente <strong>USD 55-65 por hora</strong>.
-                Este es un rango típico para excavadoras clase 20 T en Latam. Marcas
-                premium como Caterpillar o Volvo suelen estar arriba; Sany o LiuGong,
-                abajo.
+                el costo total es de <strong>USD 57,49 por hora</strong>.
+                Es un valor referencial para una excavadora clase 20 T: el costo real
+                cambia según precio de compra, utilización, combustible y salarios de
+                cada país y marca.
             </p>
         </details>
 
@@ -101,8 +174,8 @@ import CostoHoraOperacion from '../../components/tools/CostoHoraOperacion.svelte
                 Depende. Si es un trabajo largo (más de una semana en el mismo lugar),
                 el transporte se factura por separado (movilización + desmovilización).
                 Si son trabajos cortos en distintos sitios, sí conviene prorratearlo
-                dentro del overhead. Regla: si el transporte representa más del 5% del
-                ingreso total del trabajo, factuarlo por separado.
+                dentro del overhead. Como criterio práctico, si el transporte representa más del 5% del
+                ingreso total del trabajo, conviene facturarlo por separado.
             </p>
         </details>
 
@@ -111,11 +184,11 @@ import CostoHoraOperacion from '../../components/tools/CostoHoraOperacion.svelte
                 ¿Qué pasa si la máquina está financiada con crédito?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Los intereses del financiamiento se suman al overhead. Regla práctica:
-                para una máquina financiada a 5 años con tasa del 12% anual, el costo
-                financiero adicional es aproximadamente <strong>5-8% del precio de
-                compra por año</strong> — subí el overhead de 10% default a 18-25%
-                para capturarlo.
+                Los intereses del financiamiento se suman al overhead. Como orden de
+                magnitud, para una máquina financiada a 5 años con tasa del 12% anual,
+                el costo financiero equivale a un porcentaje relevante del precio de
+                compra por año. Calcule los intereses reales de su contrato y
+                aumente el overhead (por encima del 10% por defecto) hasta incluirlos.
             </p>
         </details>
 
@@ -124,24 +197,50 @@ import CostoHoraOperacion from '../../components/tools/CostoHoraOperacion.svelte
                 ¿Por qué la depreciación aparece tan alta comparada con el mantenimiento?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Porque la máquina pierde una gran parte de su valor en el primer 30%
-                de su vida útil. Una excavadora nueva de USD 180k, en 10 años, con 20%
+                Porque la máquina pierde buena parte de su valor en los primeros años de vida. Una excavadora nueva de USD 180k, en 10 años, con 20%
                 de residual, pierde USD 144k / 15.000 hs = <strong>USD 9.60/hora</strong>{' '}
                 solo en depreciación. El mantenimiento anual (~8% × USD 180k = 14.4k) /
-                1.500 hs = <strong>USD 9.60/hora</strong>. Suelen empatar. Máquinas
+                1.500 hs = <strong>USD 9.60/hora</strong>. Con los valores por defecto empatan. Máquinas
                 viejas amortizadas tienen depreciación menor pero mantenimiento más alto.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿A qué precio conviene alquilar la excavadora a un cliente?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Como referencia, <strong>costo total × 1,30 a 1,50</strong> para cubrir riesgos
+                y una utilidad razonable. Si el costo real es USD 60/hora, la tarifa
+                quedaría entre <strong>USD 78 y 90 por hora</strong>. Si el trabajo es en
+                zona alejada o de exigencia alta (24/7), el margen puede subir a 1,60-2,00.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántas horas por año debo usar para calcular el costo?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Use las horas de horómetro que la máquina realmente acumula, no las de turno. Para una excavadora de obra civil, 1.200 a 1.800 horas al año son valores referenciales habituales, pero depende de la estacionalidad y de la cartera de trabajo. Si el equipo se usa menos, la depreciación y el mantenimiento por hora suben; lo más prudente es partir del historial de los últimos dos o tres años.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué incluye el costo de mantenimiento de la calculadora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                El porcentaje anual sobre el precio de compra debe cubrir mantenimientos preventivos, filtros, aceites, repuestos menores y correctivos. Es recomendable separar lo que cambia mucho con el uso severo, como cadenas, rodillos, dientes y mangueras hidráulicas, y revisar el porcentaje con el historial de gastos de su propia flota.
             </p>
         </details>
 
         <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿A qué precio conviene alquilar la excavadora a un cliente?
+                ¿Cómo calculo el costo por hora de un equipo ya amortizado?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Regla: <strong>costo total × 1.30 a 1.50</strong> para cubrir riesgos
-                y ganancia razonable. Si tu costo real es USD 60/hora, alquilás entre
-                <strong>USD 78 y 90 por hora</strong>. Si el trabajo es en zona alejada
-                o con exigencia alta (24/7), subí el margen a 1.60-2.00.
+                Ponga un precio de compra igual al valor de mercado actual, una vida útil remanente en años y el residual esperado. Si el equipo está totalmente amortizado en libros pero sigue siendo productivo, su costo de oportunidad sigue existiendo: reservar un valor de reposición evita sorpresas el día que haya que sustituirlo.
             </p>
         </details>
     </div>

@@ -132,8 +132,8 @@
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
             El ratio real depende de la carga de trabajo. Motores con mucha carga
             parcial o ralentí consumen más DEF por litro de diésel. Contaminación
-            del DEF (siliconas, aceite) obliga a reemplazar el catalizador SCR
-            (USD 3000-8000). Almacenar DEF entre -5°C y 30°C, protegido del sol.
+            del DEF (siliconas, aceite) puede obligar a reemplazar el catalizador SCR
+            (una reparación costosa, de varios miles de USD según el motor). Almacenar DEF entre -5°C y 30°C, protegido del sol.
         </p>
     </div>
 

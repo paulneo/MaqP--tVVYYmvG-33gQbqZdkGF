@@ -14,53 +14,103 @@ import VolumenTanque from '../../components/tools/VolumenTanque.svelte'
 
         <h3>Tanque rectangular</h3>
         <p>
-            El más simple. Volumen = <code>largo × ancho × alto</code>. Común en cisternas de cemento enterradas y depósitos industriales.
+            El más simple. Volumen = <code>largo × ancho × alto</code>. Común en cisternas de concreto enterradas y depósitos industriales.
         </p>
 
         <h3>Cilíndrico vertical</h3>
         <p>
-            El clásico "tanque de agua" en el techo. Volumen = <code>π × radio² × alto</code>. En Latam los más vendidos son <strong>Rotoplas</strong>, <strong>Eternit</strong> y similares, en tamaños de 250 L, 500 L, 750 L, 1100 L, 2500 L.
+            El clásico tanque de agua sobre el techo. Volumen = <code>π × radio² × alto</code>. Los tanques prefabricados de plástico se comercializan en capacidades estándar que varían según el país y el fabricante (por ejemplo 250, 500, 1.000 o 2.500 L); consulte el catálogo local.
         </p>
 
         <h3>Cilíndrico horizontal</h3>
         <p>
-            Tanque "acostado". Volumen = <code>π × radio² × largo del tanque</code>. Común en camiones cisterna, tanques enterrados de combustible y depósitos industriales. Ojo: si el tanque no está lleno al 100%, calcular el volumen parcial es más complejo (requiere integrales).
+            Tanque "acostado". Volumen = <code>π × radio² × largo del tanque</code>. Común en camiones cisterna, tanques enterrados de combustible y depósitos industriales. Si el tanque no está lleno al 100%, el volumen parcial no es proporcional a la altura del líquido (ver más abajo).
         </p>
 
-        <h3>Tinaco esférico</h3>
+        <h3>Tanque esférico</h3>
         <p>
-            La forma más eficiente en términos de "material por litro contenido". Volumen = <code>(4/3) × π × radio³</code>. Se usa mucho en tinacos de plástico rotomoldeado en México y Centroamérica.
+            Forma con la menor superficie de material por litro contenido. Volumen = <code>(4/3) × π × radio³</code>. Se usa en algunos tinacos de plástico rotomoldeado.
         </p>
+
+        <h3>Fórmulas y variables de esta calculadora</h3>
+        <p><code>radio = diámetro / 2</code></p>
+        <p><code>Volumen (m³) = largo × ancho × alto | π × radio² × alto | π × radio² × largo | (4/3) × π × radio³</code>, según la forma elegida.</p>
+        <p><code>Litros = m³ × 1.000</code> &nbsp;·&nbsp; <code>Galones US = litros / 3,785</code></p>
+        <p><code>Consumo diario = personas × litros por persona</code> &nbsp;·&nbsp; <code>Autonomía (días) = litros del tanque / consumo diario</code></p>
+        <ul>
+            <li><strong>Largo, ancho, alto y diámetro</strong>: dimensiones <strong>internas</strong> en metros (m). Si mide por fuera, reste el espesor de pared.</li>
+            <li><strong>Personas</strong>: número de ocupantes. <strong>Litros por persona</strong>: consumo diario estimado (valor por defecto: 150 L/persona/día).</li>
+            <li>La autonomía se calcula sobre el volumen nominal, sin descontar el volumen no utilizable.</li>
+        </ul>
+
+        <h3>Ejemplo resuelto: tanque vertical para una familia de 4 personas</h3>
+        <p>
+            Un tanque cilíndrico vertical de 1,20 m de diámetro y 1,50 m de alto, para 4 personas con 150 L/persona/día (valores por defecto de la calculadora).
+        </p>
+        <ol>
+            <li>Radio = 1,20 / 2 = 0,60 m.</li>
+            <li>Volumen = π × 0,60² × 1,50 = 1,696 m³.</li>
+            <li>Litros = 1,696 × 1.000 = <strong>1.696 L</strong> (≈ 448 galones US).</li>
+            <li>Consumo diario = 4 × 150 = <strong>600 L/día</strong>.</li>
+            <li>Autonomía = 1.696 / 600 = <strong>2,83 días</strong>.</li>
+        </ol>
+        <p>
+            Si se descuenta un 8% de volumen no utilizable (rebose y aireación), el volumen útil baja a unos 1.560 L y la autonomía real a unos 2,6 días. Para cortes de agua de dos días, el tanque es ajustado; para tres días habría que pasar a unos 2.000 L o más.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <ul>
+            <li>El volumen en litros es la <strong>capacidad nominal</strong> geométrica. La capacidad comercial indicada por un fabricante puede diferir por el espesor de las paredes y la forma real del tanque.</li>
+            <li>Los m³ sirven para cisternas de obra civil (volumen de excavación, dimensionamiento de bombas); los litros y galones, para comparar con catálogos.</li>
+            <li>La autonomía es una referencia de cuánto dura el tanque lleno sin recarga. No considera consumos extraordinarios (riego, limpieza, visitas).</li>
+            <li>Si la autonomía queda justa, aumente la capacidad o agregue un segundo tanque; dejar un margen de 30-40% suele ser sensato.</li>
+        </ul>
 
         <h3>Conversión de unidades</h3>
-        <p>Las equivalencias que vas a necesitar todo el tiempo:</p>
+        <p>Las equivalencias que se usan todo el tiempo:</p>
         <ul>
             <li><strong>1 m³ = 1.000 litros</strong></li>
             <li><strong>1 litro = 0,001 m³</strong></li>
             <li><strong>1 galón US = 3,785 litros</strong></li>
-            <li><strong>1 galón UK = 4,546 litros</strong></li>
+            <li><strong>1 galón imperial (UK) = 4,546 litros</strong></li>
             <li><strong>1 pie³ = 28,317 litros</strong></li>
         </ul>
 
-        <h3>Volumen nominal vs volumen útil</h3>
+        <h3>Volumen nominal vs. volumen útil</h3>
         <p>
-            El volumen que calcula esta herramienta es el <strong>volumen nominal</strong> (el 100% teórico del tanque). El <strong>volumen útil real</strong> suele ser 90-95% porque:
+            El volumen que calcula esta herramienta es el <strong>volumen nominal</strong> (el 100% teórico del tanque). El <strong>volumen útil real</strong> suele ser algo menor, de forma orientativa 90-95%, porque:
         </p>
         <ul>
             <li>La tubería de rebose deja un espacio de aireación en la parte superior.</li>
-            <li>La entrada de la bomba o llave está a algunos centímetros del fondo (no consume el último centímetro).</li>
-            <li>En cisternas enterradas hay un colchón de seguridad para variaciones de nivel.</li>
+            <li>La toma de la bomba o la llave de salida está a algunos centímetros del fondo.</li>
+            <li>En cisternas enterradas se deja un margen de seguridad para variaciones de nivel.</li>
         </ul>
 
         <h3>Consumo típico de agua por persona</h3>
         <p>
-            Para dimensionar cuánto te dura el tanque:
+            Para dimensionar cuánto dura el tanque (valores referenciales; los consumos reales dependen del país, el clima y la dotación que fije la norma local):
         </p>
         <ul>
-            <li><strong>OMS mínimo</strong>: 100 L/persona/día para higiene básica.</li>
-            <li><strong>Latam urbano promedio</strong>: 150-200 L/persona/día.</li>
-            <li><strong>Consumo alto</strong> (jardín, piscina, aire acondicionado con condensación): 250-400 L/persona/día.</li>
-            <li><strong>Uso comercial ligero</strong> (oficina): 30-50 L/persona/día.</li>
+            <li><strong>Necesidades básicas</strong>: la OMS considera que entre 50 y 100 L/persona/día cubren las necesidades básicas de bebida, higiene y cocina.</li>
+            <li><strong>Uso doméstico urbano habitual</strong>: del orden de 150-200 L/persona/día.</li>
+            <li><strong>Consumo alto</strong> (jardín, piscina, lavado frecuente): 250-400 L/persona/día o más.</li>
+            <li><strong>Oficina</strong>: valores menores, de unas decenas de litros por persona y día.</li>
+        </ul>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Usar dimensiones exteriores</strong>: en un tanque de concreto con paredes de 10 cm, el error de volumen puede superar 20%.</li>
+            <li><strong>Confundir diámetro con radio</strong>: el radio está elevado al cuadrado; confundirlos multiplica el error por 4.</li>
+            <li><strong>Mezclar unidades</strong>: la calculadora espera metros. Ingresar 120 (cm) en lugar de 1,2 (m) da un volumen un millón de veces mayor.</li>
+            <li><strong>Suponer proporcionalidad en tanques horizontales parcialmente llenos</strong>: el volumen no crece de forma lineal con el nivel.</li>
+            <li><strong>Olvidar el volumen no utilizable</strong>: calcular la autonomía con el 100% del volumen la sobrestima.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/herramientas/cubicaje-de-hormigon/">Cubicaje de hormigón</a>: para calcular el concreto de una cisterna enterrada.</li>
+            <li><a href="/herramientas/bolsas-de-cemento-por-metro-cubico/">Bolsas de cemento por metro cúbico</a></li>
+            <li><a href="/herramientas/agregados-hormigon-arena-grava/">Agregados para hormigón: arena y grava</a></li>
         </ul>
     </div>
 
@@ -70,7 +120,7 @@ import VolumenTanque from '../../components/tools/VolumenTanque.svelte'
                 ¿Cuántos litros tiene un tanque de 1 m³?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                <strong>1 metro cúbico equivale exactamente a 1.000 litros</strong>. Esta equivalencia es directa (por definición del sistema métrico). Un tanque cúbico de 1×1×1 metros contiene 1.000 L. Un tanque cilíndrico vertical de 1 m de diámetro y 1 m de altura tiene 785 L (porque el cilindro ocupa π/4 del cubo circunscripto).
+                <strong>1 metro cúbico equivale exactamente a 1.000 litros</strong> (por definición del litro). Un tanque cúbico de 1 × 1 × 1 m contiene 1.000 L. Un tanque cilíndrico vertical de 1 m de diámetro y 1 m de alto tiene unos 785 L, porque el cilindro ocupa π/4 (≈ 78,5%) del cubo que lo contiene.
             </p>
         </details>
 
@@ -79,16 +129,16 @@ import VolumenTanque from '../../components/tools/VolumenTanque.svelte'
                 ¿Qué tamaño de tanque necesito para 4 personas?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Con consumo promedio de <strong>150 L/persona/día</strong>, una familia de 4 consume 600 L diarios. Para 1 día de autonomía necesitás un tanque de <strong>1.100 L</strong> (con margen). Si querés 2 días de autonomía (cortes de agua típicos), un tanque de <strong>1.500-2.000 L</strong>. Si además tenés jardín o aire con condensación, considerá 2.500-3.000 L. Nunca dimensiones "al ras" — dejá siempre 30-40% de margen.
+                Con un consumo de <strong>150 L/persona/día</strong>, una familia de 4 consume unos 600 L diarios. Para 1 día de autonomía bastan unos 700-1.000 L; para 2 días (cortes de suministro frecuentes), <strong>1.500-2.000 L</strong>. Si además hay jardín o consumos altos, considere 2.500 L o más. No dimensione al ras: deje 30-40% de margen y descuente el volumen no utilizable. La dotación exacta depende de la norma local y del tipo de edificación.
             </p>
         </details>
 
         <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿Cisterna enterrada o tanque en el techo?
+                ¿Cisterna enterrada o tanque elevado?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Depende del país y la infraestructura. <strong>Cisterna enterrada</strong>: recibe agua de la red (o pozo/camión), típicamente 5.000-10.000 L. Necesita bomba para elevar al tanque del techo. Común en México, Perú, Bolivia. <strong>Tanque en el techo</strong>: alimenta la casa por gravedad. Típico 1.100-2.500 L. Común en Argentina, Chile, Uruguay. Muchas casas modernas tienen ambos: cisterna grande + tanque en techo (redundancia).
+                Depende de la infraestructura y la presión de la red. La <strong>cisterna enterrada</strong> recibe agua de la red (o de camión cisterna o pozo), suele ser de mayor volumen y requiere bomba para subir el agua. El <strong>tanque elevado</strong> alimenta la vivienda por gravedad y tiene menos capacidad. Muchas viviendas combinan ambos: una cisterna grande y un tanque elevado más pequeño. Las prácticas varían por país y por empresa de agua.
             </p>
         </details>
 
@@ -97,16 +147,25 @@ import VolumenTanque from '../../components/tools/VolumenTanque.svelte'
                 ¿Cómo mido el volumen de mi tanque si no sé sus dimensiones exactas?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Dos formas: <strong>(1) Método directo</strong> — vaciar el tanque y llenarlo contando cuántos baldes de volumen conocido entran (ej. 10 baldes de 20 L = 200 L). Preciso pero costoso en agua. <strong>(2) Método por dimensiones exteriores</strong> — medir con cinta métrica el diámetro y alto (o largo/ancho/alto), restar 2-3 cm de espesor de pared si es plástico o 10 cm si es concreto, y aplicar la fórmula geométrica. Menos preciso pero rápido.
+                Hay dos formas. <strong>(1) Método directo</strong>: vaciar el tanque y llenarlo contando recipientes de volumen conocido (por ejemplo, 10 baldes de 20 L = 200 L). Es preciso pero gasta agua. <strong>(2) Método por dimensiones</strong>: medir con cinta métrica el diámetro y la altura (o largo, ancho y alto), restar el espesor de las paredes (unos pocos milímetros en plástico, 10 cm o más en concreto) y aplicar la fórmula geométrica. Es más rápido, pero menos exacto.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo calcular el volumen si un tanque horizontal está parcialmente lleno?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                No es proporcional al nivel. Para un cilindro horizontal de radio <code>r</code>, largo <code>L</code> y altura de líquido <code>h</code>: <code>V = L × [r² × arccos((r − h)/r) − (r − h) × √(2rh − h²)]</code>. Con r = 0,60 m y L = 2,5 m, llenar el 25% de la altura (h = 0,30 m) da unos <strong>553 L</strong>, el 19,6% del total (2.827 L), y a media altura (h = 0,60 m) da 1.414 L, el 50%. Los fabricantes suelen entregar tablas de calibración nivel-litros. En tanques verticales sí es proporcional: media altura es medio volumen. Esta calculadora supone el tanque lleno.
             </p>
         </details>
 
         <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿Cómo calcular el volumen si el tanque está solo lleno hasta la mitad?
+                ¿Cuántos galones son 1.000 litros?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Para <strong>tanques verticales</strong> es directo: si está lleno a la mitad de la altura, tiene 50% del volumen. Para <strong>cilíndricos horizontales</strong> es distinto: si el agua llega a la mitad del diámetro, el volumen es aproximadamente 50%, pero para niveles distintos hay que calcular por integración (fórmula del "segmento circular"). Los proveedores de tanques dan tablas de calibración: nivel en cm ↔ litros. Para uso doméstico casual, esta calculadora asume tanque lleno al 100%.
+                <strong>1.000 litros equivalen a unos 264 galones US</strong> (1.000 / 3,785). En galones imperiales (UK) son unos 220. Tenga cuidado con la unidad: los catálogos de equipos importados pueden usar galones US, y esta calculadora muestra galones US.
             </p>
         </details>
     </div>

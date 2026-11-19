@@ -185,8 +185,8 @@
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
             Los consumos son promedios estimados en operación normal. El consumo real
             varía según edad del equipo, condiciones del terreno, altitud, calidad del
-            combustible y hábitos del operador. Para presupuestos formales, medí el
-            consumo real de tu equipo con horómetro.
+            combustible y hábitos del operador. Para presupuestos formales, mida el
+            consumo real de su equipo con horómetro.
         </p>
     </div>
 

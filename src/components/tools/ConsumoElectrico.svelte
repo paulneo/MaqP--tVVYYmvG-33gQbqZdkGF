@@ -13,7 +13,7 @@
 
     const PRECIOS_KWH: Record<Pais, { label: string; precio: number; nota: string }> = {
         peru:      { label: 'Perú',      precio: 0.06, nota: 'Tarifa BT5B residencial promedio' },
-        mexico:    { label: 'México',    precio: 0.07, nota: 'Tarifa DAC residencial CFE' },
+        mexico:    { label: 'México',    precio: 0.07, nota: 'Tarifa residencial CFE subsidiada (varía por rango de consumo)' },
         colombia:  { label: 'Colombia',  precio: 0.14, nota: 'Estrato 4 promedio urbano' },
         argentina: { label: 'Argentina', precio: 0.06, nota: 'Tarifa N2 residencial (con subsidio parcial)' },
         chile:     { label: 'Chile',     precio: 0.16, nota: 'Tarifa BT1 residencial urbana' },
@@ -100,7 +100,7 @@
     <!-- Tabla de aparatos -->
     <div class="mb-8">
         <p class="text-sm font-semibold mb-3 text-black/75 dark:text-white/80">
-            Electrodomésticos (poné cantidad = 0 para los que no tenés)
+            Electrodomésticos (ponga cantidad = 0 para los que no posee)
         </p>
         <div class="space-y-2">
             {#each aparatos as aparato, i (aparato.id)}
@@ -184,7 +184,7 @@
         </div>
 
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
-            El precio del kWh mostrado es un <strong>promedio residencial 2026</strong>. Tu factura real puede variar por: <strong>banda tarifaria</strong> (mayor consumo, mayor precio), <strong>impuestos y cargos fijos</strong>, <strong>subsidios</strong> y <strong>horario</strong> (algunos países tienen tarifa horaria).
+            El precio del kWh mostrado es un valor <strong>referencial</strong> de tarifa residencial. Su factura real puede variar por: <strong>banda tarifaria</strong> (mayor consumo, mayor precio), <strong>impuestos y cargos fijos</strong>, <strong>subsidios</strong> y <strong>horario</strong> (algunos países tienen tarifa horaria).
         </p>
     </div>
 

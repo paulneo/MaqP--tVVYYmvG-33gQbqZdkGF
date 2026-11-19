@@ -9,43 +9,113 @@ import CubicajeHormigon from '../../components/tools/CubicajeHormigon.svelte'
 
     <!-- Explicación técnica -->
     <div slot="explanation">
-        <h2>Cómo funciona el cálculo</h2>
+        <h2>Cómo se calcula el cubicaje de hormigón</h2>
         <p>
-            El volumen de hormigón se obtiene multiplicando las tres dimensiones del
-            elemento estructural. La fórmula base cambia según el tipo:
-        </p>
-        <ul>
-            <li>
-                <strong>Losa y zapata</strong>: <code>largo × ancho × espesor</code>
-            </li>
-            <li>
-                <strong>Columna y viga</strong>: <code>sección A × sección B × altura</code>
-            </li>
-        </ul>
-        <p>
-            A ese volumen bruto le sumamos un <strong>porcentaje de desperdicio</strong>{' '}
-            (recomendado 5-10% según la complejidad del encofrado y la experiencia del
-            equipo). El resultado es el volumen que realmente hay que preparar.
+            El cubicaje es el volumen de hormigón, en metros cúbicos (m³), que hace falta
+            para llenar un elemento estructural. Esta calculadora trabaja con cuatro
+            tipos de elemento y aplica siempre la misma lógica: volumen de una pieza,
+            multiplicado por la cantidad de piezas, más un porcentaje de desperdicio.
         </p>
 
-        <h3>Dosificación por defecto</h3>
-        <p>
-            La calculadora asume una mezcla estándar 1:2:3 (cemento:arena:grava) para
-            hormigón estructural de resistencia H21-H25, con estas proporciones por m³:
-        </p>
+        <h3>Fórmula exacta que usa la calculadora</h3>
         <ul>
-            <li><strong>350 kg</strong> de cemento (equivale a ~8 bolsas de 42.5 kg)</li>
-            <li><strong>700 kg</strong> de arena limpia</li>
-            <li><strong>1.100 kg</strong> de grava o piedra partida</li>
-            <li><strong>180 litros</strong> de agua potable</li>
+            <li>
+                <strong>Losa y zapata</strong>: <code>V pieza = largo × ancho × espesor</code>
+                (en la zapata, el tercer valor es la altura).
+            </li>
+            <li>
+                <strong>Columna y viga</strong>: <code>V pieza = sección A × sección B × altura (o largo)</code>.
+            </li>
+            <li>
+                <strong>Volumen bruto</strong>: <code>V bruto = V pieza × cantidad de piezas</code>.
+            </li>
+            <li>
+                <strong>Volumen a pedir o preparar</strong>:
+                <code>V total = V bruto × (1 + desperdicio / 100)</code>.
+            </li>
         </ul>
         <p>
-            Estos números son referencia para pre-dimensionar. La dosificación exacta
-            depende de la resistencia buscada, la granulometría del agregado y la norma
-            aplicable en tu país (NTP en Perú, IRAM en Argentina, NCh en Chile, NTC en
-            Colombia, NMX en México). <strong>Para obras estructurales importantes,
-            siempre consultá el diseño de mezcla con un ingeniero.</strong>
+            Todas las dimensiones se ingresan en metros (por ejemplo, 12 cm se escribe
+            0,12) y el resultado sale en m³. El desperdicio por defecto es 5 % y se
+            puede variar entre 0 y 30 %.
         </p>
+
+        <h3>Materiales por metro cúbico</h3>
+        <p>
+            A partir del volumen total, la herramienta estima los insumos con una
+            dosificación de referencia 1:2:3 (cemento:arena:grava) para hormigón
+            estructural de resistencia aproximada H21-H25. Estas son las constantes
+            que utiliza:
+        </p>
+        <ul>
+            <li><strong>350 kg</strong> de cemento por m³. Las bolsas se obtienen con <code>bolsas = redondeo hacia arriba (kg de cemento / 42,5)</code>.</li>
+            <li><strong>700 kg</strong> de arena por m³.</li>
+            <li><strong>1.100 kg</strong> de grava o piedra partida por m³.</li>
+            <li><strong>180 litros</strong> de agua por m³.</li>
+        </ul>
+        <p>
+            Son valores de referencia para pre-dimensionar compras. La dosificación
+            real depende de la resistencia especificada, de la humedad y la granulometría
+            de los agregados, del tipo de cemento y de la norma aplicable en cada país
+            (NTP y RNE en Perú, NSR-10 en Colombia, NTC y NMX en México, NCh en Chile,
+            IRAM y CIRSOC en Argentina). <strong>Las especificaciones del ingeniero
+            estructural y la normativa local prevalecen siempre sobre estos números.</strong>
+            Tenga en cuenta además que en algunos países el cemento se vende en bolsas
+            de 50 kg y no de 42,5 kg; en ese caso divida los kilogramos entre el peso
+            de su bolsa.
+        </p>
+
+        <h3>Ejemplo resuelto: losa de 3 × 4 m y 10 cm de espesor</h3>
+        <p>
+            Se quiere vaciar la losa de una pequeña ampliación de 3 m de ancho por
+            4 m de largo, con 10 cm de espesor, una sola pieza y 5 % de desperdicio.
+        </p>
+        <ol>
+            <li>Volumen de la pieza: <code>4 × 3 × 0,10 = 1,20 m³</code>.</li>
+            <li>Volumen bruto (1 pieza): <code>1,20 × 1 = 1,20 m³</code>.</li>
+            <li>Volumen con desperdicio: <code>1,20 × 1,05 = 1,26 m³</code>.</li>
+            <li>Cemento: <code>1,26 × 350 = 441 kg</code>, que equivale a <code>441 / 42,5 = 10,38</code>, es decir <strong>11 bolsas</strong>.</li>
+            <li>Arena: <code>1,26 × 700 = 882 kg</code>.</li>
+            <li>Grava: <code>1,26 × 1.100 = 1.386 kg</code>.</li>
+            <li>Agua: <code>1,26 × 180 = 226,8 litros</code> (aprox. 227 L).</li>
+        </ol>
+        <p>
+            Resultado: <strong>1,26 m³ de hormigón</strong>. Si lo compra premezclado,
+            el proveedor facturará por m³ (normalmente en cantidades enteras o medias),
+            así que en la práctica se pediría 1,5 m³ o, si el mínimo de despacho lo
+            exige, el viaje mínimo.
+        </p>
+        <p>
+            Segundo caso rápido, una columna de 30 × 30 cm y 3 m de alto:
+            <code>0,30 × 0,30 × 3 = 0,27 m³</code> por columna. Para cuatro columnas
+            iguales y 5 % de desperdicio: <code>0,27 × 4 × 1,05 = 1,134 m³</code>, que
+            requieren 397 kg de cemento, es decir 10 bolsas.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <ul>
+            <li>El número en m³ es el volumen que debe estar disponible el día del vaciado, no el volumen geométrico exacto. Ya incluye el margen de desperdicio.</li>
+            <li>Las bolsas de cemento siempre se redondean hacia arriba, porque no se compran fracciones. Revise el sobrante: 10,38 bolsas pasan a 11, un 6 % de colchón adicional.</li>
+            <li>Arena y grava se entregan por volumen (m³) o por camión, no por kilo. Convierta con la densidad aparente que le informe el proveedor, que varía con la humedad.</li>
+            <li>Si va a usar hormigón premezclado, ignore las cifras de cemento, arena y grava: lo único relevante es el volumen y la resistencia que solicite.</li>
+        </ul>
+
+        <h3>Errores comunes al calcular el cubicaje</h3>
+        <ul>
+            <li><strong>Mezclar unidades</strong>: escribir 12 en lugar de 0,12 para un espesor de 12 cm multiplica el volumen por 100.</li>
+            <li><strong>Olvidar la cantidad de piezas</strong>: calcular una zapata y comprar para una sola cuando son doce.</li>
+            <li><strong>Ignorar el desperdicio</strong>: el hormigón se pierde en la bomba, en el fondo de la carretilla, en el reglado y en moldes que se deforman.</li>
+            <li><strong>No descontar ni sumar vigas, capiteles y volados</strong>: una losa nervada o con vigas de borde no es un prisma simple; calcule cada parte por separado.</li>
+            <li><strong>Suponer espesor constante</strong> en terrenos irregulares: en cimientos y contrapisos sobre suelo desnivelado el espesor real casi siempre supera el de proyecto.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/como-se-calcula-el-cubicaje-de-hormigon/">Cómo se calcula el cubicaje de hormigón en obra</a></li>
+            <li><a href="/posts/cuanto-cemento-para-una-losa-de-concreto/">Cuánto cemento necesito para una losa de concreto</a></li>
+            <li><a href="/posts/que-es-la-resistencia-del-hormigon-fc/">Qué es la resistencia del hormigón (f'c)</a></li>
+            <li><a href="/posts/como-se-hace-una-losa-de-concreto-paso-a-paso/">Cómo se hace una losa de concreto paso a paso</a></li>
+        </ul>
     </div>
 
     <!-- FAQ -->
@@ -55,12 +125,7 @@ import CubicajeHormigon from '../../components/tools/CubicajeHormigon.svelte'
                 ¿Cuántas bolsas de cemento hay en un metro cúbico de hormigón?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Para hormigón estructural típico (resistencia H21-H25) se usan
-                aproximadamente <strong>350 kg de cemento por m³</strong>, lo que
-                equivale a <strong>8 bolsas de 42.5 kg</strong>. Para hormigones de
-                mayor resistencia (H30, H40) el consumo sube a 400-450 kg/m³ (9-11
-                bolsas). Para hormigones simples de contrapiso o rellenos, baja a
-                250-300 kg/m³ (6-7 bolsas).
+                Con la dosificación de referencia de esta calculadora (350 kg de cemento por m³) resultan <strong>8,2 bolsas de 42,5 kg</strong>, que se redondean a 9 si se calcula un solo metro cúbico. Para hormigones de mayor resistencia el consumo de cemento suele ser más alto, y para rellenos o contrapisos no estructurales suele ser menor. La cifra exacta la fija el diseño de mezcla; las cantidades de esta página son referenciales.
             </p>
         </details>
 
@@ -69,12 +134,7 @@ import CubicajeHormigon from '../../components/tools/CubicajeHormigon.svelte'
                 ¿Qué porcentaje de desperdicio conviene usar?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Depende de la complejidad de la obra. Para elementos simples (losas
-                planas grandes) alcanza con <strong>3-5%</strong>. Para columnas,
-                vigas o encofrados con muchos ángulos, subí a <strong>7-10%</strong>.
-                Si el encofrado tiene juntas viejas o el equipo tiene poca experiencia,
-                mejor <strong>10-15%</strong>. Preferí sobreestimar antes que quedarte
-                corto — comprar más hormigón sobre la marcha es caro y demora la obra.
+                Depende de la geometría y de la forma de colocación. En losas planas grandes con buen control suele bastar <strong>3-5 %</strong>. En columnas, vigas y encofrados con muchos quiebres es prudente <strong>7-10 %</strong>. Si el encofrado tiene juntas abiertas, el equipo tiene poca experiencia o el hormigón se transporta en carretilla, puede justificarse <strong>10-15 %</strong>. Sobrestimar un poco cuesta menos que interrumpir un vaciado, porque una junta fría de construcción puede comprometer la pieza.
             </p>
         </details>
 
@@ -83,12 +143,7 @@ import CubicajeHormigon from '../../components/tools/CubicajeHormigon.svelte'
                 ¿Puedo usar esta calculadora para hormigón premezclado?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Sí, para calcular el volumen a pedir. En premezclado no necesitás las
-                cantidades de cemento, arena y grava por separado — solo importa el
-                total en m³. Pedile al proveedor la resistencia que necesitás (H21,
-                H25, H30, etc.) y él se encarga de la dosificación. Recordá siempre
-                sumar el desperdicio, aunque en premezclado suele ser menor (2-3%)
-                porque llega listo.
+                Sí, para obtener el volumen a pedir. En premezclado no necesita las cantidades de cemento, arena y grava por separado: solo el volumen total y la resistencia especificada (por ejemplo f'c de 21 o 25 MPa, o su equivalente en kg/cm² según el país). Agregue un margen razonable de desperdicio y confirme con la planta el volumen mínimo por despacho.
             </p>
         </details>
 
@@ -97,25 +152,34 @@ import CubicajeHormigon from '../../components/tools/CubicajeHormigon.svelte'
                 ¿Cómo calculo el hormigón para una losa con forma irregular?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Dividí la losa en rectángulos y calculá cada uno por separado. Sumá
-                todos los volúmenes al final. Para formas circulares, usá la fórmula
-                <code>π × radio² × espesor</code>. Para trapecios, usá
-                <code>((base mayor + base menor) / 2) × altura × espesor</code>. Si es
-                muy complejo (curvas, contornos irregulares), aproximá con la superficie
-                total en m² multiplicada por el espesor.
+                Divida la planta en rectángulos, triángulos o círculos y calcule cada parte por separado; luego sume los volúmenes. Para un círculo, <code>π × radio² × espesor</code>. Para un trapecio, <code>((base mayor + base menor) / 2) × altura × espesor</code>. Si el contorno es muy complejo, obtenga el área en m² desde el plano (o con un programa de dibujo) y multiplíquela por el espesor.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Sirve la misma dosificación para hormigón armado y hormigón simple?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                No. El hormigón armado exige una resistencia mínima que fija la norma de cada país y el proyecto estructural, normalmente superior a la del hormigón simple de contrapisos o rellenos. Por eso el contenido de cemento y la relación agua/cemento son distintos. Nunca emplee una mezcla pobre en elementos que reciben carga: la resistencia se define en el proyecto, no en la obra.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo se calcula el hormigón de una zapata, una viga o una columna?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Se usa el mismo principio de largo × ancho × altura. En una <strong>zapata aislada</strong> se multiplica el lado mayor por el lado menor y por la altura (si la zapata es escalonada o tiene pedestal, se calculan ambos cuerpos por separado y se suman). En una <strong>viga</strong> se toma el ancho por el alto de la sección y se multiplica por la luz; descuente la parte que ya queda dentro de la losa solo si el plano lo indica. En una <strong>columna</strong> se multiplica la sección por la altura libre. Después se multiplica por el número de piezas iguales.
             </p>
         </details>
 
         <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
             <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
-                ¿Sirve la misma dosificación para hormigón armado y hormigón simple?
+                ¿Cuántos m³ de hormigón lleva una losa de 10 cm de espesor por metro cuadrado?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                No. El <strong>hormigón armado</strong> (con acero de refuerzo) requiere
-                mayor resistencia — típicamente H21 hacia arriba, con 350+ kg de cemento/m³.
-                El <strong>hormigón simple</strong> (sin acero, para contrapisos o
-                rellenos no estructurales) puede ser H10-H15, con 250-300 kg/m³. Nunca
-                bajes de H21 en elementos estructurales que soporten cargas.
+                Cada metro cuadrado de losa con 10 cm de espesor lleva <code>1 × 1 × 0,10 = 0,10 m³</code>, es decir 100 litros de hormigón, sin contar desperdicio. Con 5 % de desperdicio son 0,105 m³ por m². Con ese dato, un área de 30 m² necesita 3,15 m³. Aplique la misma regla con cualquier espesor: espesor en metros = m³ por m².
             </p>
         </details>
     </div>

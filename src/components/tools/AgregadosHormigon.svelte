@@ -128,7 +128,7 @@
         <p class="text-xs text-black/50 dark:text-white/50 mt-4 leading-relaxed">
             Factor de compactación 1.5 aplicado (los materiales sueltos ocupan ~50% más
             volumen que el hormigón fraguado). Relación a/c: {prop.aguaCementoRatio}.
-            Ajustá según granulometría real y humedad del agregado.
+            Ajuste según granulometría real y humedad del agregado.
         </p>
     </div>
 

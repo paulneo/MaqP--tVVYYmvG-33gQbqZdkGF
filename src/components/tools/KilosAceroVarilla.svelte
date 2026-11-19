@@ -152,7 +152,7 @@
                     <p class="text-lg font-bold text-black/40 dark:text-white/40">
                         —
                     </p>
-                    <p class="text-xs text-black/50 dark:text-white/50">ingresá el precio</p>
+                    <p class="text-xs text-black/50 dark:text-white/50">ingrese el precio</p>
                 </div>
             {/if}
         </div>

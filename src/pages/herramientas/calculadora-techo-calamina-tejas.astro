@@ -9,58 +9,116 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
     <div slot="explanation">
         <h2>Cómo se calcula el área de un techo</h2>
         <p>
-            El error más común al calcular un techo es <strong>usar el área en planta</strong> (proyección horizontal) en vez del <strong>área real inclinada</strong>. Si tu techo tiene pendiente, el área real es mayor que la que ves desde arriba.
+            El error más común al calcular un techo es <strong>usar el área en planta</strong> (proyección horizontal) en vez del <strong>área real inclinada</strong>. Si el techo tiene pendiente, el área real es mayor que la que se ve desde arriba.
         </p>
         <p>
             <code>Área real = Área base / cos(ángulo de pendiente)</code>
         </p>
         <p>
-            Ejemplo: un techo de 100 m² en planta con 30° de pendiente tiene <code>100 / cos(30°) = 100 / 0,866 = 115,5 m²</code> reales. Ignorarlo puede hacerte comprar 15% menos material.
+            Ejemplo rápido: un techo de 100 m² en planta con 30° de pendiente tiene <code>100 / cos(30°) = 100 / 0,866 = 115,5 m²</code> reales. Ignorarlo implica comprar cerca de 13% menos material del necesario.
         </p>
+
+        <h3>Fórmulas que usa esta calculadora</h3>
+        <p><code>Área base = ancho × largo</code></p>
+        <p><code>Área real = Área base / cos(ángulo)</code> (1 agua, 2 aguas y 4 aguas). En techo plano se usa el área base sin corrección.</p>
+        <p><code>Piezas = ⌈ Área real × (1 + traslape) / m² útiles por pieza ⌉</code> (planchas)</p>
+        <p><code>Piezas = ⌈ Área real × (1 + traslape) × piezas por m² ⌉</code> (tejas)</p>
+        <p><code>Peso = Área real × peso por m² del material</code></p>
+        <ul>
+            <li><strong>Ancho y largo</strong>: dimensiones en planta en metros, medidas hasta el borde del alero si el techo tiene voladizo. Ingrese el área cubierta total, no solo la de los muros.</li>
+            <li><strong>Ángulo</strong>: pendiente en grados. La pendiente en porcentaje es <code>tan(ángulo) × 100</code>, y la calculadora la muestra.</li>
+            <li><strong>Traslape</strong>: 10% calamina, 5% panel sándwich, 8% ondulina, 0% tejas.</li>
+            <li><strong>m² útiles por pieza</strong>: 2,79 calamina, 5,70 panel sándwich, 1,75 ondulina. Las tejas se cuentan por m²: 15 cerámicas, 10 de concreto.</li>
+            <li><strong>Peso por m²</strong>: 4,5 kg calamina, 50 kg teja cerámica, 65 kg teja de concreto, 12 kg panel, 3 kg ondulina. Son valores orientativos.</li>
+        </ul>
+        <p>
+            Nota técnica: la calamina estándar de 0,86 × 3,60 m tiene 3,10 m² brutos. La calculadora ya parte de 2,79 m² útiles y además aplica un 10% de traslape, por lo que el resultado es <strong>conservador</strong> (tiende a pedir una plancha más de lo estricto). Es un margen razonable para cortes y mermas.
+        </p>
+
+        <h3>Ejemplo resuelto: casa de 8 × 10 m con techo a 2 aguas en calamina</h3>
+        <p>
+            Vivienda en planta de 8 m × 10 m (incluidos los aleros), techo a 2 aguas con 20° de pendiente y calamina galvanizada.
+        </p>
+        <ol>
+            <li>Área base = 8 × 10 = <strong>80 m²</strong>.</li>
+            <li>Factor de pendiente = 1 / cos(20°) = 1,064. Área real = 80 × 1,064 = <strong>85,13 m²</strong>.</li>
+            <li>Pendiente en porcentaje = tan(20°) × 100 = <strong>36,4%</strong>.</li>
+            <li>Con traslape de 10%: 85,13 × 1,10 = <strong>93,65 m²</strong>.</li>
+            <li>Planchas = 93,65 / 2,79 = 33,57, que se redondea a <strong>34 planchas</strong>.</li>
+            <li>Peso = 85,13 × 4,5 = <strong>383 kg</strong> de cubierta, sin contar la estructura.</li>
+        </ol>
+        <p>
+            Para comparar, la misma superficie con otros materiales da: teja cerámica ≈ 1.277 tejas (≈ 4.257 kg), panel sándwich ≈ 16 paneles (≈ 1.022 kg) y ondulina ≈ 53 planchas (≈ 255 kg). El salto de peso entre calamina y teja (de unos 380 kg a más de 4 toneladas) muestra por qué el material condiciona la estructura.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <ul>
+            <li>La cantidad de piezas es el <strong>mínimo</strong> para cubrir el área ingresada. Sume un margen por cortes en cumbreras, limatesas, limahoyas y bordes.</li>
+            <li>El área real es la superficie inclinada. Es la cifra que sirve para impermeabilizantes, aislantes, pintura de cubierta y mano de obra por m².</li>
+            <li>El peso es solo el de la cubierta. La estructura (correas, cerchas, vigas) debe verificarse además por peso propio, viento y, donde corresponda, nieve o sismo.</li>
+            <li>En 4 aguas la calculadora usa el mismo factor de pendiente que en 2 aguas; las caídas, cumbrera y limatesas generan más cortes, así que agregue más margen.</li>
+        </ul>
 
         <h3>Tipos de techo</h3>
         <ul>
-            <li><strong>1 agua (mono-pendiente)</strong>: una sola caída. El más simple y económico. Usado en garajes, galpones, ampliaciones.</li>
-            <li><strong>2 aguas</strong>: dos caídas simétricas hacia los lados. El clásico "techo de casa". Práctico y estético.</li>
-            <li><strong>4 aguas (hip roof)</strong>: caídas hacia los 4 lados. Más resistente al viento, mejor drenaje, pero más caro y complejo.</li>
-            <li><strong>Plano</strong>: sin pendiente aparente. Necesita drenajes internos y aislación térmica.</li>
+            <li><strong>1 agua (monopendiente)</strong>: una sola caída. El más simple y económico. Usado en garajes, galpones y ampliaciones.</li>
+            <li><strong>2 aguas</strong>: dos caídas simétricas. El clásico "techo de casa". Práctico y estético.</li>
+            <li><strong>4 aguas</strong>: caídas hacia los cuatro lados. Buen comportamiento frente al viento y buen drenaje, pero más complejo y con más cortes.</li>
+            <li><strong>Plano</strong>: sin pendiente aparente. Necesita una pendiente mínima de desagüe, impermeabilización y aislación térmica.</li>
         </ul>
 
-        <h3>Pendientes recomendadas por material</h3>
+        <h3>Pendientes habituales por material</h3>
+        <p>Rangos orientativos; la pendiente mínima exacta la define el fabricante en su ficha técnica y la normativa local.</p>
         <ul>
-            <li><strong>Teja cerámica o de concreto</strong>: <strong>25-45°</strong>. Menos pendiente y el agua entra por capilaridad.</li>
-            <li><strong>Calamina galvanizada</strong>: <strong>10-25°</strong>. Aguanta pendientes menores porque las juntas son estancas.</li>
-            <li><strong>Panel sándwich</strong>: <strong>10-20°</strong>.</li>
-            <li><strong>Ondulina bituminosa</strong>: <strong>15-30°</strong>.</li>
-            <li><strong>Techo plano (membrana asfáltica)</strong>: <strong>1-5%</strong> (0,6-3° casi imperceptibles).</li>
+            <li><strong>Teja cerámica o de concreto</strong>: aproximadamente <strong>25-45°</strong>. Con menos pendiente aumenta el riesgo de filtraciones por viento y capilaridad.</li>
+            <li><strong>Calamina galvanizada</strong>: desde unos 10° en adelante es común; algunos fabricantes aceptan menos con solapes y sellado adecuados.</li>
+            <li><strong>Panel sándwich</strong>: suele aceptar pendientes bajas (entre 5 y 20°), según el perfil.</li>
+            <li><strong>Ondulina bituminosa</strong>: alrededor de <strong>15-30°</strong> según el fabricante.</li>
+            <li><strong>Techo plano (membrana asfáltica)</strong>: <strong>1-5%</strong> (0,6-3°), casi imperceptible.</li>
         </ul>
 
-        <h3>Materiales de cubierta más usados en Latam</h3>
+        <h3>Materiales de cubierta más usados en Latinoamérica</h3>
 
         <h3>Calamina galvanizada</h3>
         <p>
-            La más común en Bolivia, Perú, Ecuador, Paraguay y Argentina rural. Plancha estándar 0,86 × 3,60 m (utiles después del traslape). Peso ~4,5 kg/m². Bajo costo, fácil instalación, pero baja aislación térmica y acústica.
+            Muy usada en Bolivia, Perú, Ecuador y Paraguay, entre otros. La plancha estándar de 0,86 × 3,60 m tiene unos 2,79 m² útiles después del traslape. Pesa del orden de 4,5 kg/m². Bajo costo y fácil instalación, pero baja aislación térmica y acústica.
         </p>
 
         <h3>Teja cerámica</h3>
         <p>
-            Clásica del sur de Chile, Uruguay y zonas turísticas. Estética premium, larga durabilidad (50+ años), buena aislación. Peso alto (~50 kg/m²) — requiere estructura reforzada. ~15 piezas por m².
+            Clásica en muchas zonas del cono sur y en el turismo. Estética premium, larga durabilidad y buena aislación. Peso alto (~50 kg/m²), por lo que requiere estructura reforzada. Unas 15 piezas por m².
         </p>
 
         <h3>Teja de concreto</h3>
         <p>
-            Alternativa moderna a la cerámica. Más pesada (~65 kg/m²), menor precio, colores durables. Común en México y Argentina. ~10 piezas por m².
+            Alternativa a la cerámica. Más pesada (~65 kg/m²), de menor precio y con colores duraderos. Unas 10 piezas por m².
         </p>
 
         <h3>Panel sándwich</h3>
         <p>
-            Dos chapas metálicas con aislante entre medio (poliuretano). Peso bajo (~12 kg/m²), excelente aislación térmica, plancha grande (5,7 m² útiles). Más caro pero rápido de instalar. Muy usado en naves industriales y viviendas modernas.
+            Dos chapas metálicas con aislante entre medio (por ejemplo, poliuretano). Peso bajo (~12 kg/m²), buena aislación térmica y paneles grandes de colocación rápida. Más caro, común en naves industriales y viviendas modernas.
         </p>
 
         <h3>Ondulina bituminosa</h3>
         <p>
-            Chapas de fibra impregnadas de betún. Muy livianas (~3 kg/m²), fácil de cortar. Vida útil corta (15-20 años). Común en construcciones económicas y quinchos.
+            Láminas de fibra impregnadas de betún. Muy livianas (~3 kg/m²) y fáciles de cortar. Vida útil menor que otras cubiertas. Frecuente en construcciones económicas y quinchos.
         </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Usar el área en planta como si fuera el área real</strong>: subestima el material, sobre todo a pendientes altas (a 30° la diferencia es 15%).</li>
+            <li><strong>Olvidar los aleros</strong>: si el techo sobresale 40-60 cm por lado, el área en planta es mayor que la de los muros.</li>
+            <li><strong>Confundir grados con porcentaje</strong>: 20° no es 20%; 20° equivalen a 36,4%. Un plano en porcentaje debe convertirse antes de ingresar el dato.</li>
+            <li><strong>No considerar el traslape ni los cortes</strong>: planchas y paneles se solapan, y cada cumbrera o limatesa genera recortes.</li>
+            <li><strong>Cambiar de material sin revisar la estructura</strong>: pasar de calamina a teja multiplica la carga por 10 o más.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/cuanto-cuesta-construir-una-casa-por-metro-cuadrado-latam-2026/">Cuánto cuesta construir una casa por metro cuadrado en Latinoamérica (2026)</a>: contexto de costos donde la cubierta es un rubro más.</li>
+            <li><a href="/posts/tipos-de-estructuras-en-construccion/">Tipos de estructuras en construcción</a>: sobre las estructuras que deben soportar la cubierta.</li>
+            <li><a href="/herramientas/presupuesto-construccion-por-metro-cuadrado/">Presupuesto de construcción por metro cuadrado</a></li>
+        </ul>
     </div>
 
     <div slot="faq">
@@ -69,7 +127,7 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
                 ¿Cuántas planchas de calamina necesito por m² de techo?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Una plancha de calamina galvanizada estándar (0,86 × 3,60 m = 3,10 m² brutos) cubre <strong>2,79 m² útiles</strong> después del traslape (~10%). Es decir, se necesitan <strong>0,36 planchas por m²</strong>. Para un techo real de 100 m², se necesitan <strong>36 planchas</strong>. Sumá 5-8% extra para cortes y bordes.
+                Con las constantes de esta calculadora (plancha estándar de 0,86 × 3,60 m, 2,79 m² útiles y 10% de traslape), se necesitan unas <strong>0,39 planchas por m²</strong> de techo real: para 100 m² reales salen <strong>40 planchas</strong>. Es un cálculo conservador. Si el proveedor indica un ancho útil menor o mayor, o la plancha tiene otra longitud, ajuste el valor. Sume además un pequeño margen para cortes y bordes.
             </p>
         </details>
 
@@ -78,7 +136,7 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
                 ¿Cuánta pendiente debe tener un techo de calamina?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                <strong>Mínimo 10°, ideal 15-25°</strong>. Menor a 10° el agua no drena rápido y puede entrar por los solapes. En zonas de nieve o lluvia intensa, mejor 25-30°. Pendientes mayores a 40° son innecesarias — solo aumentan el costo del material sin beneficio adicional. La calamina se coloca <strong>SIEMPRE con los canales en el sentido de la pendiente</strong> (nunca perpendicular).
+                Una referencia habitual es <strong>mínimo 10° y ideal 15-25°</strong>, pero la pendiente mínima exacta la fija el fabricante según el perfil y el sistema de solape. Con pendientes bajas el agua drena lento y puede entrar por los traslapes; en zonas de lluvia intensa conviene más pendiente. La calamina se coloca con las ondas en el sentido de la pendiente, nunca perpendiculares a ella.
             </p>
         </details>
 
@@ -87,7 +145,16 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
                 ¿Cómo convierto pendiente de porcentaje a grados?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                La pendiente en <strong>porcentaje</strong> es <code>tan(ángulo) × 100</code>. Ejemplos: 100% pendiente = 45° · 50% = 26,6° · 30% = 16,7° · 20% = 11,3° · 10% = 5,7°. Muchos planos arquitectónicos y códigos de construcción usan porcentaje en vez de grados. Esta calculadora te muestra ambos valores automáticamente.
+                La pendiente en <strong>porcentaje</strong> es <code>tan(ángulo) × 100</code>, y el ángulo es <code>arctan(porcentaje / 100)</code>. Ejemplos: 100% = 45° · 50% = 26,6° · 30% = 16,7° · 20% = 11,3° · 10% = 5,7°. Muchos planos usan porcentaje en vez de grados. Esta calculadora muestra el equivalente en porcentaje del ángulo ingresado.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo se calcula el techo si tiene aleros?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Mida el área <strong>en planta incluyendo el vuelo del alero</strong>. Si la casa mide 8 × 10 m y el alero sobresale 0,5 m por lado, use 9 × 11 m = 99 m² en lugar de 80 m². A 20° eso pasa de 85 a unos 105 m² reales. Es un error frecuente que deja la cubierta corta justo en el borde.
             </p>
         </details>
 
@@ -96,7 +163,7 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
                 ¿Cuál dura más: calamina, teja cerámica o panel sándwich?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                <strong>Teja cerámica</strong>: 50-80 años (imbatible). <strong>Teja de concreto</strong>: 40-60 años. <strong>Panel sándwich</strong>: 25-40 años (limitado por el aislante interno). <strong>Calamina galvanizada</strong>: 20-30 años si es galvanizado grueso; 10-15 años si es delgado. <strong>Ondulina</strong>: 15-20 años. En zonas costeras (salinidad) todos duran ~40% menos. La teja cerámica es la más cara al principio pero la más económica a largo plazo.
+                Como orden de magnitud: la <strong>teja cerámica</strong> es la de mayor vida útil (varias décadas, a menudo más de 50 años), seguida de la teja de concreto. La <strong>calamina</strong> depende mucho del espesor y del galvanizado, y dura menos si es delgada. El <strong>panel sándwich</strong> está limitado por el aislante y los sellos. La <strong>ondulina</strong> suele durar menos. En ambientes costeros, la corrosión acorta la vida útil de las cubiertas metálicas. Consulte la garantía y la ficha del fabricante.
             </p>
         </details>
 
@@ -105,7 +172,7 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
                 ¿Cuánto peso soporta la estructura de mi techo?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Depende del cálculo estructural del techo — <strong>SIEMPRE consultá con un ingeniero</strong> antes de cambiar el material. Guía rápida: si tenías calamina (~5 kg/m²) y querés cambiar a teja cerámica (~50 kg/m²), estás multiplicando por 10 la carga. La estructura de madera o metálica pensada para calamina probablemente NO soporte teja sin refuerzo. Cambios inversos (teja → calamina) son seguros. Si vas a instalar un techo nuevo, considerá también las cargas de viento (según zona) y de nieve (si aplica).
+                Eso lo define un <strong>cálculo estructural</strong>; consulte siempre con un ingeniero antes de cambiar de material. Como referencia, pasar de calamina (~5 kg/m²) a teja cerámica (~50 kg/m²) multiplica por 10 el peso de la cubierta. Una estructura pensada para calamina probablemente no soporte teja sin refuerzo. El cambio inverso (teja a calamina) reduce la carga, pero igual debe revisarse el arriostramiento y las fijaciones frente al viento.
             </p>
         </details>
     </div>
