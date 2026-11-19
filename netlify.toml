@@ -91,7 +91,7 @@
 # Manipulador telescopico Bobcat: keys iguales en orden distinto
 [[redirects]]
   from = "/posts/bobcat-manipulador-telescopico"
-  to = "/posts/manipulador-telescopico-bobcat"
+  to = "/categorias/maquinaria-pesada/"
   status = 301
   force = true
 
@@ -105,7 +105,7 @@
 # Con y sin guion: mini-excavadora -> miniexcavadora
 [[redirects]]
   from = "/posts/develon-mini-excavadora"
-  to = "/posts/develon-miniexcavadora"
+  to = "/categorias/maquinaria-pesada/"
   status = 301
   force = true
 
@@ -126,13 +126,13 @@
 # Mammoet SK6000: 3 posts del mismo evento -> el mas SEO-friendly
 [[redirects]]
   from = "/posts/mammoet-grua-terrestre"
-  to = "/posts/mammoet-grua-mas-grande"
+  to = "/categorias/maquinaria-pesada/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/posts/mamoet-grua-terrestre"
-  to = "/posts/mammoet-grua-mas-grande"
+  to = "/categorias/maquinaria-pesada/"
   status = 301
   force = true
 

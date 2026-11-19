@@ -196,8 +196,7 @@ Es el segundo gran dilema de configuración.
   un riel y permite excavar muy pegado a muros, cercas y bordillos
   sin mover la máquina. Va bien con estabilizadores que quedan dentro
   del ancho de la máquina. Es el diseño para la obra urbana
-  confinada, como la que describimos en [retroexcavadoras de cambio
-  lateral para trabajos urbanos](/posts/retroexcavadora-trabajos-urbanos/).
+  confinada.
   El costo: más piezas de desgaste en el riel y mayor mantenimiento
   de engrase.
 - **Pivote central (center-pivot):** la retro gira sobre un solo
@@ -419,8 +418,8 @@ No hay un ganador absoluto. Te proponemos criterios según el trabajo:
 6. **Verifica la opción de mandos** y practica con ambos patrones si tu
    operador viene de excavadoras.
 7. **Revisa la logística**: traslado a obra y transporte en cama baja.
-8. **Anticipa el futuro**: Case ya tiene [una retroexcavadora eléctrica
-   comercial](/posts/case-retroexcavadora-electrica/), una referencia
+8. **Anticipa el futuro**: Case ya tiene una retroexcavadora eléctrica
+   comercial (la 580EV), una referencia
    si en tu mercado empiezan a exigir cero emisiones en obras urbanas.
 
 Si buscas ubicar la retroexcavadora dentro del conjunto de equipos de una

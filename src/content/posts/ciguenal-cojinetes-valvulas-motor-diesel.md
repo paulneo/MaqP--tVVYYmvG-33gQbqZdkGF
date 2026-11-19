@@ -143,7 +143,7 @@ diseño quería evitar.
 
 Para ver un ejemplo de montaje real, consulta el artículo sobre el
 [cigüeñal y la caja del volante de los Caterpillar 3116 y
-3126](/posts/caterpillar-instalacion-ciguenal/).
+3126](/posts/caterpillar-ciguenal-bomba/).
 
 ## Bielas: ligeras, pero fuertes
 

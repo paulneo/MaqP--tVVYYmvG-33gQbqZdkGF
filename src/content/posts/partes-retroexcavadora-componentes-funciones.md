@@ -350,9 +350,7 @@ Esta es una decisión que se toma al comprar la máquina.
 Es una comparación general y referencial; verificar en el manual del
 equipo. El **Komatsu WB93R-5** documenta un interruptor de "bloqueo de
 deslizamiento del brazo" (backhoe sliding lock), señal de que existe
-una versión de brazo deslizante. Si te interesa el tema urbano,
-mira el caso de las retros de cambio lateral en
-[retroexcavadoras de cambio lateral para trabajos urbanos](/posts/retroexcavadora-trabajos-urbanos/).
+una versión de brazo deslizante.
 
 ## Estabilizadores
 
@@ -496,8 +494,6 @@ cualitativas, no datos de ficha técnica.
 
 Para profundizar en la decisión, revisa la guía de
 [cómo elegir una retroexcavadora y comparar modelos](/posts/como-elegir-retroexcavadora-comparativa-modelos/).
-Sobre la versión eléctrica de Case, lee
-[Case 580 EV, el futuro eléctrico de la retroexcavadora](/posts/580ev-evolucion-electrica/).
 
 ## Mantenimiento: qué mirar según cada parte
 
