@@ -81,12 +81,14 @@ import EncofradoMaderaM2 from '../../components/tools/EncofradoMaderaM2.svelte'
 
         <h3>Cómo se entienden los reusos y el área</h3>
         <p>
-            Dos detalles condicionan el resultado. Primero, el <strong>área</strong> debe
-            ser la superficie total que va a encofrar en toda la obra (suma de todos los
-            vaciados); los <strong>reusos</strong> indican cuántas veces se vuelve a usar
-            el mismo tablero. Si va a vaciar una sola losa una única vez, el uso correcto
-            es <strong>reusos = 1</strong>; con 4 reusos la herramienta supone que ese
-            tablero también cubrirá otros tres vaciados iguales. Segundo, puntales y clavos
+            Dos detalles condicionan el resultado. Primero, el campo
+            <strong>«Usos del mismo tablero»</strong> vale 1 por defecto, es decir, un solo
+            vaciado. Solo debe subirlo cuando el <strong>área</strong> que ingresó es el
+            total de varios vaciados que se harán con las mismas hojas: por ejemplo, tres
+            losas iguales de 20 m² se ingresan como 60 m² con 3 usos. Si ingresa el área de
+            un único vaciado y sube los usos, la herramienta supone que ese tablero
+            cubrirá además otros vaciados que no están en el área, y compra menos hojas de
+            las necesarias. Segundo, puntales y clavos
             se calculan sobre el área completa y no se dividen entre los reusos, por lo que
             si reutiliza los puntales entre vaciados el resultado será conservador.
         </p>
@@ -129,7 +131,7 @@ import EncofradoMaderaM2 from '../../components/tools/EncofradoMaderaM2.svelte'
 
         <h3>Errores comunes al calcular el encofrado</h3>
         <ul>
-            <li><strong>Colocar 4 reusos para una obra de un solo vaciado</strong>: se compran menos hojas de las necesarias.</li>
+            <li><strong>Subir los usos del tablero sin sumar las áreas de todos los vaciados</strong>: se compran menos hojas de las necesarias.</li>
             <li><strong>Olvidar que el muro lleva dos caras</strong> al calcular a mano (la herramienta ya lo duplica).</li>
             <li><strong>Subestimar el desperdicio</strong> de corte: los remates y recortes en bordes, vanos y esquinas consumen tablero.</li>
             <li><strong>No considerar el reapuntalado</strong> y los plazos de desencofrado, que condicionan cuántos juegos de puntales se necesitan al mismo tiempo.</li>
@@ -160,7 +162,7 @@ import EncofradoMaderaM2 from '../../components/tools/EncofradoMaderaM2.svelte'
                 ¿Cuánta madera necesito por m² de losa?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Con 4 reusos y 10 % de desperdicio, la herramienta resulta en <strong>0,09 hojas de tablero fenólico 18 mm por m²</strong> (1,10 / 2,98 / 4), <strong>1 puntal por m²</strong>, <strong>3,5 ml de listoneado</strong> (antes de dividir por los reusos) y <strong>150 g de clavos</strong>. Con 1 reuso, la cifra de tablero sube a unas 0,37 hojas por m². Los coeficientes son referenciales; ajuste los reusos a su situación real.
+                Con 1 uso (un solo vaciado, valor por defecto) y 10 % de desperdicio, la herramienta resulta en unas <strong>0,37 hojas de tablero fenólico 18 mm por m²</strong> (1,10 / 2,98), <strong>1 puntal por m²</strong>, <strong>3,5 ml de listoneado</strong> y <strong>150 g de clavos</strong>. Si el área ingresada es el total de varios vaciados con las mismas hojas, el tablero y el listoneado se dividen entre los usos (con 4 usos, unas 0,09 hojas por m²). Los coeficientes son referenciales; ajuste los usos a su situación real.
             </p>
         </details>
 
@@ -205,7 +207,7 @@ import EncofradoMaderaM2 from '../../components/tools/EncofradoMaderaM2.svelte'
                 ¿Cuántos reusos debo usar en el cálculo?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Use <strong>1</strong> si el tablero solo va a servir para un vaciado. Use 2-4 si va a repetir el encofrado en losas, muros o columnas iguales con tablero en buen estado. Valores mayores solo son realistas con tablero de calidad, desmoldante, limpieza y almacenamiento cuidadosos. La herramienta acepta de 1 a 10, pero se recomienda ser conservador: un reuso de más en el cálculo puede dejarlo sin tablero a mitad de la obra.
+                Use <strong>1</strong> si el tablero solo va a servir para un vaciado. Use 2-4 solo si el área ingresada es el total de varios vaciados (losas, muros o columnas iguales) que se harán con las mismas hojas en buen estado. Valores mayores solo son realistas con tablero de calidad, desmoldante, limpieza y almacenamiento cuidadosos. La herramienta acepta de 1 a 10, pero se recomienda ser conservador: un reuso de más en el cálculo puede dejarlo sin tablero a mitad de la obra.
             </p>
         </details>
 

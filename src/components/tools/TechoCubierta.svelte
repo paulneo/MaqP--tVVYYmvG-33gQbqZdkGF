@@ -6,11 +6,11 @@
      *   área real = área base / cos(ángulo)
      *
      * Materiales soportados (con m² por pieza y traslape típico):
-     *   - Calamina galvanizada estándar: 0.86 × 3.60 m útil, traslape 10%
+     *   - Calamina galvanizada estándar: 0.86 × 3.60 m bruto, traslape 10%
      *   - Teja cerámica:                 ~15 tejas/m², traslape ya incluido
      *   - Teja de concreto:              ~10 tejas/m², traslape ya incluido
-     *   - Panel sándwich:                1.00 × 6.00 m útil, traslape 5%
-     *   - Ondulina:                      2.00 × 0.95 m útil, traslape 8%
+     *   - Panel sándwich:                1.00 × 6.00 m bruto, traslape 5%
+     *   - Ondulina:                      2.00 × 0.95 m bruto, traslape 8%
      */
 
     type Tipo = '1-agua' | '2-aguas' | '4-aguas' | 'plano'
@@ -18,16 +18,16 @@
 
     const MATERIALES: Record<Material, {
         label: string
-        piezaM2: number         // m² útiles por pieza (después de traslape)
+        piezaM2: number         // gross m² per sheet (overlap is added via traslape)
         piezasPorM2?: number    // usado para tejas
         traslape: number        // porcentaje adicional
         pesoKgM2: number
     }> = {
-        'calamina':       { label: 'Calamina galvanizada', piezaM2: 2.79, traslape: 0.10, pesoKgM2: 4.5 },
+        'calamina':       { label: 'Calamina galvanizada', piezaM2: 3.10, traslape: 0.10, pesoKgM2: 4.5 },
         'teja-ceramica':  { label: 'Teja cerámica',        piezaM2: 0, piezasPorM2: 15, traslape: 0, pesoKgM2: 50 },
         'teja-concreto':  { label: 'Teja de concreto',     piezaM2: 0, piezasPorM2: 10, traslape: 0, pesoKgM2: 65 },
-        'panel-sandwich': { label: 'Panel sándwich',       piezaM2: 5.70, traslape: 0.05, pesoKgM2: 12 },
-        'ondulina':       { label: 'Ondulina bituminosa',  piezaM2: 1.75, traslape: 0.08, pesoKgM2: 3 },
+        'panel-sandwich': { label: 'Panel sándwich',       piezaM2: 6.00, traslape: 0.05, pesoKgM2: 12 },
+        'ondulina':       { label: 'Ondulina bituminosa',  piezaM2: 1.90, traslape: 0.08, pesoKgM2: 3 },
     }
 
     let tipo: Tipo = '2-aguas'

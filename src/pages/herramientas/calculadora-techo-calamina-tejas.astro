@@ -21,18 +21,18 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
         <h3>Fórmulas que usa esta calculadora</h3>
         <p><code>Área base = ancho × largo</code></p>
         <p><code>Área real = Área base / cos(ángulo)</code> (1 agua, 2 aguas y 4 aguas). En techo plano se usa el área base sin corrección.</p>
-        <p><code>Piezas = ⌈ Área real × (1 + traslape) / m² útiles por pieza ⌉</code> (planchas)</p>
+        <p><code>Piezas = ⌈ Área real × (1 + traslape) / m² brutos por pieza ⌉</code> (planchas)</p>
         <p><code>Piezas = ⌈ Área real × (1 + traslape) × piezas por m² ⌉</code> (tejas)</p>
         <p><code>Peso = Área real × peso por m² del material</code></p>
         <ul>
             <li><strong>Ancho y largo</strong>: dimensiones en planta en metros, medidas hasta el borde del alero si el techo tiene voladizo. Ingrese el área cubierta total, no solo la de los muros.</li>
             <li><strong>Ángulo</strong>: pendiente en grados. La pendiente en porcentaje es <code>tan(ángulo) × 100</code>, y la calculadora la muestra.</li>
             <li><strong>Traslape</strong>: 10% calamina, 5% panel sándwich, 8% ondulina, 0% tejas.</li>
-            <li><strong>m² útiles por pieza</strong>: 2,79 calamina, 5,70 panel sándwich, 1,75 ondulina. Las tejas se cuentan por m²: 15 cerámicas, 10 de concreto.</li>
+            <li><strong>m² brutos por pieza</strong> (área total de la plancha, sin descontar el traslape): 3,10 calamina, 6,00 panel sándwich, 1,90 ondulina. Las tejas se cuentan por m²: 15 cerámicas, 10 de concreto.</li>
             <li><strong>Peso por m²</strong>: 4,5 kg calamina, 50 kg teja cerámica, 65 kg teja de concreto, 12 kg panel, 3 kg ondulina. Son valores orientativos.</li>
         </ul>
         <p>
-            Nota técnica: la calamina estándar de 0,86 × 3,60 m tiene 3,10 m² brutos. La calculadora ya parte de 2,79 m² útiles y además aplica un 10% de traslape, por lo que el resultado es <strong>conservador</strong> (tiende a pedir una plancha más de lo estricto). Es un margen razonable para cortes y mermas.
+            Nota técnica: la calamina estándar de 0,86 × 3,60 m tiene 3,10 m² brutos. La calculadora divide el área real más el traslape entre esa superficie bruta, de modo que el traslape se cuenta una sola vez. El resultado es el mínimo para cubrir el área: sume un margen adicional para cortes y mermas.
         </p>
 
         <h3>Ejemplo resuelto: casa de 8 × 10 m con techo a 2 aguas en calamina</h3>
@@ -44,11 +44,11 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
             <li>Factor de pendiente = 1 / cos(20°) = 1,064. Área real = 80 × 1,064 = <strong>85,13 m²</strong>.</li>
             <li>Pendiente en porcentaje = tan(20°) × 100 = <strong>36,4%</strong>.</li>
             <li>Con traslape de 10%: 85,13 × 1,10 = <strong>93,65 m²</strong>.</li>
-            <li>Planchas = 93,65 / 2,79 = 33,57, que se redondea a <strong>34 planchas</strong>.</li>
+            <li>Planchas = 93,65 / 3,10 = 30,21, que se redondea a <strong>31 planchas</strong>.</li>
             <li>Peso = 85,13 × 4,5 = <strong>383 kg</strong> de cubierta, sin contar la estructura.</li>
         </ol>
         <p>
-            Para comparar, la misma superficie con otros materiales da: teja cerámica ≈ 1.277 tejas (≈ 4.257 kg), panel sándwich ≈ 16 paneles (≈ 1.022 kg) y ondulina ≈ 53 planchas (≈ 255 kg). El salto de peso entre calamina y teja (de unos 380 kg a más de 4 toneladas) muestra por qué el material condiciona la estructura.
+            Para comparar, la misma superficie con otros materiales da: teja cerámica ≈ 1.278 tejas (≈ 4.257 kg), panel sándwich ≈ 15 paneles (≈ 1.022 kg) y ondulina ≈ 49 planchas (≈ 255 kg). El salto de peso entre calamina y teja (de unos 380 kg a más de 4 toneladas) muestra por qué el material condiciona la estructura.
         </p>
 
         <h3>Cómo interpretar el resultado</h3>
@@ -81,7 +81,7 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
 
         <h3>Calamina galvanizada</h3>
         <p>
-            Muy usada en Bolivia, Perú, Ecuador y Paraguay, entre otros. La plancha estándar de 0,86 × 3,60 m tiene unos 2,79 m² útiles después del traslape. Pesa del orden de 4,5 kg/m². Bajo costo y fácil instalación, pero baja aislación térmica y acústica.
+            Muy usada en Bolivia, Perú, Ecuador y Paraguay, entre otros. La plancha estándar de 0,86 × 3,60 m tiene 3,10 m² brutos (el traslape se suma aparte en el cálculo). Pesa del orden de 4,5 kg/m². Bajo costo y fácil instalación, pero baja aislación térmica y acústica.
         </p>
 
         <h3>Teja cerámica</h3>
@@ -127,7 +127,7 @@ import TechoCubierta from '../../components/tools/TechoCubierta.svelte'
                 ¿Cuántas planchas de calamina necesito por m² de techo?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Con las constantes de esta calculadora (plancha estándar de 0,86 × 3,60 m, 2,79 m² útiles y 10% de traslape), se necesitan unas <strong>0,39 planchas por m²</strong> de techo real: para 100 m² reales salen <strong>40 planchas</strong>. Es un cálculo conservador. Si el proveedor indica un ancho útil menor o mayor, o la plancha tiene otra longitud, ajuste el valor. Sume además un pequeño margen para cortes y bordes.
+                Con las constantes de esta calculadora (plancha estándar de 0,86 × 3,60 m, 3,10 m² brutos y 10% de traslape), se necesitan unas <strong>0,35 planchas por m²</strong> de techo real: para 100 m² reales salen <code>100 × 1,10 / 3,10 = 35,5</code>, es decir <strong>36 planchas</strong>. Si el proveedor indica un ancho útil menor o mayor, o la plancha tiene otra longitud, ajuste el valor. Sume además un pequeño margen para cortes y bordes.
             </p>
         </details>
 

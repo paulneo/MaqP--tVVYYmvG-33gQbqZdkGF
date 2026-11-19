@@ -15,13 +15,14 @@ import LadrillosPorMetroCuadrado from '../../components/tools/LadrillosPorMetroC
             espesor de la junta de mortero y del aparejo (cómo se coloca el ladrillo:
             de soga, de cabeza, de canto). La calculadora trabaja con cinco tipos de pieza
             y un rendimiento fijo de unidades por m² y litros de mortero por m² para cada
-            uno. Estos son los valores que usa:
+            uno. Los ladrillos cerámicos se calculan como muro de soga con junta de 1,5 cm
+            (el bloque modular y la termoarcilla incluyen su propia junta). Estos son los valores que usa:
         </p>
         <ul>
-            <li><strong>Ladrillo común (24×11,5×6 cm)</strong>: 65 unidades/m², 30 L de mortero/m².</li>
-            <li><strong>Ladrillo macizo (24×11,5×5,5 cm)</strong>: 72 unidades/m², 32 L/m².</li>
-            <li><strong>Ladrillo hueco cerámico (33×18×18 cm)</strong>: 16 unidades/m², 22 L/m².</li>
-            <li><strong>Bloque de concreto (40×20×15 cm)</strong>: 12,5 unidades/m², 18 L/m².</li>
+            <li><strong>Ladrillo común (24×11,5×6 cm)</strong>: 52 unidades/m², 28 L de mortero/m².</li>
+            <li><strong>Ladrillo macizo (24×11,5×5,5 cm)</strong>: 56 unidades/m², 30 L/m².</li>
+            <li><strong>Ladrillo hueco cerámico (33×18×18 cm)</strong>: 15 unidades/m², 22 L/m².</li>
+            <li><strong>Bloque de concreto (39×19×14 cm, modular 40×20)</strong>: 12,5 unidades/m², 18 L/m².</li>
             <li><strong>Termoarcilla (30×19×24 cm)</strong>: 16 unidades/m², 20 L/m².</li>
         </ul>
 
@@ -50,14 +51,12 @@ import LadrillosPorMetroCuadrado from '../../components/tools/LadrillosPorMetroC
             verificar la cantidad con una fórmula geométrica:
             <code>unidades/m² = 1 / ((largo + junta vertical) × (alto + junta horizontal))</code>,
             con todas las medidas en metros. Por ejemplo, para un ladrillo hueco de 33 × 18 × 18 cm
-            colocado con la cara de 33 × 18 hacia afuera y juntas de 1 cm en vertical y
-            1,5 cm en horizontal:
-            <code>1 / ((0,33 + 0,01) × (0,18 + 0,015)) = 15,1 unidades/m²</code>. La
-            calculadora usa 16, de modo que es ligeramente conservadora para ese caso.
-            Para otros formatos, los rendimientos de la herramienta pueden ser mayores que
-            el cálculo geométrico de un muro de soga simple, porque dependen del aparejo
-            y de supuestos de junta; si su compra es grande, calcule con las medidas reales o consulte la
-            ficha del fabricante.
+            colocado con la cara de 33 × 18 hacia afuera y juntas de 1,5 cm:
+            <code>1 / ((0,33 + 0,015) × (0,18 + 0,015)) = 14,9 unidades/m²</code>, que la
+            calculadora redondea a 15. Los demás valores se obtienen igual: por ejemplo,
+            el ladrillo común da <code>1 / ((0,24 + 0,015) × (0,06 + 0,015)) = 52,3</code>.
+            Si su junta es distinta o el aparejo no es de soga, calcule con las medidas
+            reales o consulte la ficha del fabricante, sobre todo en compras grandes.
         </p>
 
         <h3>Ejemplo resuelto: muro de 6 × 2,4 m con puerta y ventana</h3>
@@ -70,8 +69,8 @@ import LadrillosPorMetroCuadrado from '../../components/tools/LadrillosPorMetroC
             <li>Área bruta: <code>6 × 2,4 × 1 = 14,4 m²</code>.</li>
             <li>Aberturas: <code>0,9 × 2,1 = 1,89 m²</code> (puerta) más <code>1,5 × 1,2 = 1,80 m²</code> (ventana) = 3,69 m².</li>
             <li>Área neta: <code>14,4 − 3,69 = 10,71 m²</code>.</li>
-            <li>Unidades base: <code>10,71 × 16 = 171,36</code>.</li>
-            <li>Con desperdicio: <code>171,36 × 1,07 = 183,35</code>, es decir <strong>184 ladrillos</strong>.</li>
+            <li>Unidades base: <code>10,71 × 15 = 160,65</code>.</li>
+            <li>Con desperdicio: <code>160,65 × 1,07 = 171,90</code>, es decir <strong>172 ladrillos</strong>.</li>
             <li>Mortero: <code>10,71 × 22 = 235,62 L = 0,236 m³</code>.</li>
             <li>Cemento: <code>0,236 × 350 = 82,5 kg</code>, que dan <code>82,5 / 42,5 = 1,94</code>, es decir <strong>2 bolsas</strong>.</li>
             <li>Arena: <code>0,236 × 1.400 = 329,9 kg</code> (aprox. 330 kg).</li>
@@ -98,7 +97,7 @@ import LadrillosPorMetroCuadrado from '../../components/tools/LadrillosPorMetroC
             <li><strong>Confundir medidas nominales y reales</strong>: el ladrillo cerámico varía entre fabricantes; mida una muestra antes de comprar un lote grande.</li>
             <li><strong>Olvidar el espesor del muro</strong>: la herramienta asume una sola hilada; un muro de doble espesor requiere el doble de piezas.</li>
             <li><strong>Calcular el mortero con el volumen del muro</strong> en vez de por m² de superficie y tipo de pieza.</li>
-            <li><strong>Usar el mismo coeficiente para piezas distintas</strong>: un bloque de 12,5 unidades/m² y un ladrillo macizo de 72 no se pueden intercambiar.</li>
+            <li><strong>Usar el mismo coeficiente para piezas distintas</strong>: un bloque de 12,5 unidades/m² y un ladrillo macizo de 56 no se pueden intercambiar.</li>
         </ul>
 
         <h3>Artículos relacionados</h3>
@@ -117,7 +116,7 @@ import LadrillosPorMetroCuadrado from '../../components/tools/LadrillosPorMetroC
                 ¿Cuántos ladrillos entran en 1 metro cuadrado?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Depende del tipo de pieza y de cómo se coloque. La calculadora usa, como referencia, <strong>65 unidades/m²</strong> para el ladrillo común de 24×11,5×6 cm, 16 para el hueco cerámico grande y <strong>12,5</strong> para el bloque de concreto de 40×20 cm. Puede comprobar la cifra con sus medidas reales usando la fórmula geométrica de esta página.
+                Depende del tipo de pieza y de cómo se coloque. La calculadora usa, como referencia, <strong>52 unidades/m²</strong> para el ladrillo común de 24×11,5×6 cm, 15 para el hueco cerámico grande y <strong>12,5</strong> para el bloque de concreto modular de 40×20 cm. Puede comprobar la cifra con sus medidas reales usando la fórmula geométrica de esta página.
             </p>
         </details>
 
@@ -135,7 +134,7 @@ import LadrillosPorMetroCuadrado from '../../components/tools/LadrillosPorMetroC
                 ¿Cuánto mortero necesito por metro cuadrado?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                Con los coeficientes de esta herramienta, <strong>entre 18 y 32 litros por m²</strong> según la pieza. Las piezas grandes consumen menos mortero porque tienen menos juntas por m². Además del volumen, la calculadora le da las bolsas de cemento y los kilogramos de arena necesarios para ese mortero.
+                Con los coeficientes de esta herramienta, <strong>entre 18 y 30 litros por m²</strong> según la pieza. Las piezas grandes consumen menos mortero porque tienen menos juntas por m². Además del volumen, la calculadora le da las bolsas de cemento y los kilogramos de arena necesarios para ese mortero.
             </p>
         </details>
 
@@ -162,7 +161,7 @@ import LadrillosPorMetroCuadrado from '../../components/tools/LadrillosPorMetroC
                 ¿Cuántos ladrillos necesito para una casa de 100 m²?
             </summary>
             <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
-                No existe una cifra única, porque depende de cuántos metros lineales de muro tenga la planta, de la altura de entrepiso, de las aberturas y del tipo de pieza. Calcule el área neta de muros (perímetro y tabiques por altura, menos aberturas) y multiplique por las unidades/m² de su ladrillo, con el desperdicio. Por ejemplo, 80 m² netos de muro con ladrillo hueco de 16 unidades/m² y 7 % de desperdicio son <code>80 × 16 × 1,07 = 1.370 unidades</code> (redondeado).
+                No existe una cifra única, porque depende de cuántos metros lineales de muro tenga la planta, de la altura de entrepiso, de las aberturas y del tipo de pieza. Calcule el área neta de muros (perímetro y tabiques por altura, menos aberturas) y multiplique por las unidades/m² de su ladrillo, con el desperdicio. Por ejemplo, 80 m² netos de muro con ladrillo hueco de 15 unidades/m² y 7 % de desperdicio son <code>80 × 15 × 1,07 = 1.284 unidades</code>.
             </p>
         </details>
 

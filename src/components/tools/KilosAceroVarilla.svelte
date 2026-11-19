@@ -16,14 +16,14 @@
     let precioPorKg = 0
 
     const DIAMETROS: { v: Diametro; label: string }[] = [
-        { v: 6, label: '6 mm (#2)' },
-        { v: 8, label: '8 mm (#3)' },
-        { v: 10, label: '10 mm (#3)' },
-        { v: 12, label: '12 mm (#4)' },
-        { v: 16, label: '16 mm (#5)' },
-        { v: 20, label: '20 mm (#6)' },
-        { v: 25, label: '25 mm (#8)' },
-        { v: 32, label: '32 mm (#10)' },
+        { v: 6, label: '6 mm (≈ #2, 1/4")' },
+        { v: 8, label: '8 mm (≈ 5/16")' },
+        { v: 10, label: '10 mm (≈ #3, 3/8")' },
+        { v: 12, label: '12 mm (≈ #4, 1/2")' },
+        { v: 16, label: '16 mm (≈ #5, 5/8")' },
+        { v: 20, label: '20 mm (≈ #6, 3/4")' },
+        { v: 25, label: '25 mm (≈ #8, 1")' },
+        { v: 32, label: '32 mm (≈ #10, 1 1/4")' },
     ]
 
     $: pesoPorMetro = (diametro * diametro) / 162

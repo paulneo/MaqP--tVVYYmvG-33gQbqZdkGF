@@ -22,36 +22,37 @@
         mortarL: number // Litros de mortero por m² de pared
     }
 
-    // Especificaciones basadas en normas y catálogos de fabricantes Latam
+    // Units per m² = 1 / ((length + joint) × (height + joint)), laid as a stretcher
+    // (soga) wall with a 1.5 cm joint. Waste is added separately by the user.
     const BRICKS: Record<BrickType, BrickSpec> = {
         comun: {
             label: 'Ladrillo común (24×11.5×6 cm)',
             description: 'Ladrillo cerámico tradicional',
-            perM2: 65,
-            mortarL: 30,
+            perM2: 52, // 1 / ((0.24 + 0.015) × (0.06 + 0.015)) = 52.3
+            mortarL: 28,
         },
         'hueco-cerámico': {
             label: 'Ladrillo hueco cerámico (33×18×18 cm)',
             description: 'Hueco perforado, aligerado',
-            perM2: 16,
+            perM2: 15, // 1 / ((0.33 + 0.015) × (0.18 + 0.015)) = 14.9
             mortarL: 22,
         },
         macizo: {
             label: 'Ladrillo macizo (24×11.5×5.5 cm)',
             description: 'Sin perforaciones, alta resistencia',
-            perM2: 72,
-            mortarL: 32,
+            perM2: 56, // 1 / ((0.24 + 0.015) × (0.055 + 0.015)) = 56.0
+            mortarL: 30,
         },
         'bloque-concreto': {
-            label: 'Bloque de concreto (40×20×15 cm)',
+            label: 'Bloque de concreto (39×19×14 cm, modular 40×20)',
             description: 'Bloque hormigón vibrado',
-            perM2: 12.5,
+            perM2: 12.5, // modular 40×20 cm already includes the 1 cm joint
             mortarL: 18,
         },
         termoarcilla: {
             label: 'Termoarcilla (30×19×24 cm)',
             description: 'Cerámico aislante térmico',
-            perM2: 16,
+            perM2: 16, // 1 / ((0.30 + 0.01) × (0.19 + 0.01)) = 16.1 (thin joint)
             mortarL: 20,
         },
     }

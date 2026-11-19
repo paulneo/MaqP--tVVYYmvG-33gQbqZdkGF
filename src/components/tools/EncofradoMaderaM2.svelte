@@ -47,7 +47,7 @@
 
     let tipo: TipoElemento = 'losa'
     let areaM2 = 20
-    let reusos = 4
+    let reusos = 1
     let desperdicio = 10
 
     $: cfg = CONFIG[tipo]
@@ -69,7 +69,7 @@
     function reset() {
         tipo = 'losa'
         areaM2 = 20
-        reusos = 4
+        reusos = 1
         desperdicio = 10
     }
 </script>
@@ -103,7 +103,7 @@
         </label>
         <label class="block">
             <span class="block text-xs uppercase tracking-wide font-semibold mb-1.5 text-black/60 dark:text-white/60">
-                Reusos del tablero
+                Usos del mismo tablero (1 = un solo vaciado)
             </span>
             <input type="number" bind:value={reusos} step="1" min="1" max="10" class="tool-input" />
         </label>
