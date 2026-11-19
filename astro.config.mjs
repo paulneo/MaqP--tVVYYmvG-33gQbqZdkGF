@@ -65,7 +65,8 @@ export default defineConfig({
       Image: false,
     }),
     svelte(),
-    sitemap(),
+    // Tag pages are noindex, so they must not be listed in the sitemap either.
+    sitemap({ filter: (page) => !page.includes('/archive/tag/') }),
     partytown({
 			config: {
 			  forward: ["dataLayer.push"],

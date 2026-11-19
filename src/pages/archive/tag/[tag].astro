@@ -31,6 +31,8 @@ const tagItem = (await getCollection('tags')).find((el) => el.data.title === tag
 
 ---
 
-<MainGridLayout title={tag} description={tagItem?.data?.description}>
+<!-- Tag listings are thin pages: keep them for visitors, out of Google's index. -->
+<MainGridLayout title={tag} description={tagItem?.data?.description} noindex>
+
     <ArchivePanel tags={[tag]}></ArchivePanel>
 </MainGridLayout>

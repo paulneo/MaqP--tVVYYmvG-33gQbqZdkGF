@@ -64,7 +64,7 @@ const showHreflang = await hasTranslation(pathname)
 
 <link rel="canonical" href={canonicalUrl} />
 {noindex
-  ? <meta name="robots" content="noindex, nofollow" />
+  ? <meta name="robots" content="noindex, follow" />
   : <meta name="robots" content="index, follow, max-image-preview:large" />}
 
 {showHreflang && <>
