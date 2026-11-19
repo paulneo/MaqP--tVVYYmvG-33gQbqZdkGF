@@ -35,7 +35,7 @@ sources:
 related:
   - motor-d7e-bloque-culata-pistones
   - bloque-cilindros-cummins-isx
-  - desgaste-tipo-abrasivo
+  - tipos-de-desgaste-abrasivo-adhesivo-fatiga
 ---
 
 Cuando un motor diésel de excavadora, cargador o camión minero empieza a
@@ -266,7 +266,7 @@ Dos de estas causas aparecen una y otra vez en campo. La primera es el
 **polvo**: el desgaste abrasivo se produce por un elemento duro entre dos
 superficies, y el conjunto pistón-anillos-camisa es el primer lugar
 donde se nota. Hay más detalle sobre el mecanismo en el artículo de
-[desgaste abrasivo en maquinaria](/posts/desgaste-tipo-abrasivo/). La
+[desgaste abrasivo en maquinaria](/posts/tipos-de-desgaste-abrasivo-adhesivo-fatiga/). La
 segunda es la **lubricación deficiente**: la pared de la camisa depende
 de una película muy delgada y, cuando esa película se rompe por
 sobrecalentamiento, combustible diluido o aceite degradado, aparece el

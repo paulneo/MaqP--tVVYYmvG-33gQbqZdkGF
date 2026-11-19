@@ -235,3 +235,25 @@
 /posts/wirtgen-maquinas/  /categorias/maquinaria-pesada/  301
 /posts/xcmg-nuevas-maquinas/  /categorias/maquinaria-pesada/  301
 /posts/yamaha-nuevos-modelos-2025/  /categorias/maquinaria-pesada/  301
+
+# Merged into consolidated guides (2026-11).
+/posts/aceros-estructurales/  /posts/clasificacion-aceros/  301
+/posts/aceros-nitruracion/  /posts/clasificacion-aceros/  301
+/posts/analisis-danos-fatiga/  /posts/analisis-fallas-engranajes-tipos-de-danos/  301
+/posts/avances-y-desafios-analisis-resonancia/  /posts/resonancia-en-sistemas-mecanicos/  301
+/posts/caterpillar-instalacion-ciguenal/  /posts/caterpillar-ciguenal-bomba/  301
+/posts/comprendiendo-el-analisis-de-fallas-en-componentes-de-maquinaria-pesada/  /posts/analisis-de-fallas-componentes-maquinaria-pesada/  301
+/posts/dano-tipico-carga-choque/  /posts/analisis-fallas-engranajes-tipos-de-danos/  301
+/posts/danos-al-portadiferencial/  /posts/analisis-fallas-engranajes-tipos-de-danos/  301
+/posts/danos-escoriacion-patinaje/  /posts/analisis-fallas-engranajes-tipos-de-danos/  301
+/posts/danos-lubricacion/  /posts/analisis-fallas-engranajes-tipos-de-danos/  301
+/posts/danos-tipicos-patinaje/  /posts/analisis-fallas-engranajes-tipos-de-danos/  301
+/posts/defectos-engranajes/  /posts/analisis-fallas-engranajes-tipos-de-danos/  301
+/posts/desgaste-tipo-abrasivo/  /posts/tipos-de-desgaste-abrasivo-adhesivo-fatiga/  301
+/posts/desgaste-tipo-adhesivo/  /posts/tipos-de-desgaste-abrasivo-adhesivo-fatiga/  301
+/posts/desgaste-tipo-fatiga/  /posts/tipos-de-desgaste-abrasivo-adhesivo-fatiga/  301
+/posts/el-futuro-del-sistema-hdi-innovaciones-en-motores-diesel-mas-limpios-y-eficiente/  /posts/como-el-sistema-hdi-reduce-las-emisiones-motores-diesel/  301
+/posts/funcionamiento-y-tipos-de-iscv-con-solenoi-de-rotatorio-y-impacto-control-ralent/  /posts/funcionamiento-control-ralenti-solenoide-rotatorio-y-motor-paso-a-paso-motores/  301
+/posts/sistema-de-inyeccion-de-combustible-motor-2-0-l-maximiza-rendimiento-y-eficienci/  /posts/motor-2-0l-de-volkswagen-diseno-estructura-funcionamiento/  301
+/posts/tipos-danos-lubricacion/  /posts/analisis-fallas-engranajes-tipos-de-danos/  301
+/posts/tipos-de-cargas-y-sus-efectos-en-los-componentes-de-maquinaria/  /posts/analisis-de-fallas-componentes-maquinaria-pesada/  301

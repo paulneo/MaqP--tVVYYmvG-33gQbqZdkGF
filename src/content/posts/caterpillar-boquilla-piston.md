@@ -1,136 +1,180 @@
 ---
-title: "Boquillas de Enfriamiento de Pistón y Componentes Asociados en Motores"
+title: "Boquillas de enfriamiento de pistón: función, fallas y revisión en motores"
 published: 2024-05-27
+updatedAt: 2026-11-19
 draft: false
 featured: false
-description: "Procedimientos detallados para la remoción e instalación de boquillas de enfriamiento de pistón y componentes asociados en los motores Caterpillar 3116 y 3126"
+description: "Para qué sirven las boquillas de enfriamiento de pistón, qué pasa si se doblan u obstruyen, cómo revisarlas y notas de armado de pistones y bielas del Cat 3116 y 3126."
 category: maquinaria-pesada
-formato: concepto
+formato: guia
 nivel: intermedio
-tags: []
+tags:
+  - "boquillas-de-enfriamiento"
+  - "pistones"
+  - "caterpillar-3116"
+  - "bielas"
+  - "lubricacion-del-motor"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/piston
 author: redaccion-maquinaria
 reviewedBy: redaccion-maquinaria
-aiAssisted: false
+aiAssisted: true
+faq:
+  - q: "¿Para qué sirve una boquilla de enfriamiento de pistón?"
+    a: "Rocía aceite de motor a presión contra la parte inferior de la corona del pistón (o hacia una galería interna en pistones que la tienen). Ese aceite retira calor que el aro y la pared del cilindro no alcanzan a evacuar, y así mantiene la temperatura del pistón y de la zona de aros dentro de límites seguros, sobre todo en motores diésel turboalimentados y de alta carga."
+  - q: "¿Qué síntomas da una boquilla obstruida, doblada o faltante?"
+    a: "El pistón de ese cilindro trabaja más caliente. Se ve como corona quemada o con grietas, aros pegados o carbonizados, rayado de pistón y camisa, y consumo de aceite creciente. Si el motor se rearmó con una boquilla mal asentada o sin ella, la falla puede aparecer en pocas horas de trabajo con carga."
+  - q: "¿Se puede reutilizar una boquilla de enfriamiento?"
+    a: "Solo si está recta, limpia, sin golpes ni deformaciones y con su orificio libre. Como son tubos finos que se doblan fácil, muchos talleres cambian el juego completo en una reparación mayor, ya que su costo es bajo frente al de un pistón. El criterio final es el del manual de servicio del motor."
+  - q: "¿Por qué es importante asentar bien la boquilla antes de apretar el perno?"
+    a: "Porque el chorro debe apuntar al punto exacto del pistón. Si la boquilla queda levantada o torcida al apretar, se deforma o se rompe el tubo, y el aceite no llega donde debe. El manual del motor indica sostener la boquilla en su posición mientras se aprieta el perno, y verificar que el pistón no la golpee al girar el cigüeñal."
+  - q: "¿Qué puede pasar si hay baja presión de aceite?"
+    a: "Las boquillas son de los primeros consumidores en perder caudal: algunas se abren solo por encima de cierta presión (según el diseño del motor), y si la presión es baja el pistón se enfría menos. Una presión de aceite baja con el motor caliente también es una advertencia para cojinetes, por lo que se investiga antes de seguir trabajando el equipo."
+related:
+  - caterpillar-ciguenal-bomba
+  - caterpillar-valvulas
+  - caterpillar-levantavalvulas
+  - fracturas-un-analisis-de-fallas-en-maquinaria-pesada
 ---
 
-## Boquillas de Enfriamiento de Pistón - Quitar e Instalar
+En un motor diésel moderno el pistón recibe en su corona los gases de
+combustión a altísima temperatura y solo puede ceder calor por los aros hacia
+la camisa y por el aceite. Cuando la carga sube (turbocompresor, mayor
+inyección), ese camino ya no basta. La solución es una **boquilla de
+enfriamiento**: un pequeño surtidor de aceite, fijado al bloque, que
+proyecta un chorro bajo el pistón en cada ciclo. Es una pieza pequeña y
+barata cuya falta o mal montaje destruye un pistón completo.
 
-### Procedimiento de Remoción
+## Cómo funciona el sistema
 
-1. Quite el perno y la boquilla de enfriamiento de pistón.
-2. Quite el resto de las boquillas de enfriamiento de pistón.
+El aceite sale de la galería principal del bloque, pasa a la boquilla y se
+proyecta hacia la parte inferior del pistón. Ese aceite:
 
-### Procedimiento de Instalación
+- retira calor de la corona y de la zona de aros,
+- lubrica el pasador y el bulón del pistón,
+- regresa al cárter por gravedad.
 
-**ATENCIÓN:**
-Asegúrese de que la boquilla de enfriamiento del pistón esté asentada correctamente antes de apretar el perno.
+Según el motor, la boquilla puede ser un simple tubo con orificio calibrado o
+llevar una válvula que abre solo sobre una presión mínima de aceite, para no
+consumir caudal en el arranque. Algunos pistones tienen además una **galería
+de refrigeración** interna en la que el aceite circula y regresa. Los
+detalles (posición, diámetro, presión de apertura) son propios de cada motor y
+se consultan en el manual.
 
-1. Coloque la boquilla de enfriamiento de pistón en el bloque motor.
-2. Asegúrese de que la boquilla de enfriamiento de pistón esté asentada correctamente e instale el perno que sujeta la boquilla en posición.
+## Qué pasa cuando falla
 
-**ATENCIÓN:**
-Sujete la boquilla de enfriamiento del pistón en posición al apretar el perno de montaje. Si no se sujeta el tubo de enfriamiento, podría doblarse o romperse. 3. Instale el resto de las boquillas de enfriamiento de pistón.
+| Falla | Causa | Consecuencia |
+| --- | --- | --- |
+| Boquilla obstruida | Carbonilla, residuos de rearmado, aceite sucio | Pistón sobrecalentado, aros pegados |
+| Boquilla doblada o mal apuntada | Golpe al montar, perno apretado sin asentar | Chorro fuera de objetivo, enfriamiento deficiente |
+| Boquilla rota o faltante | Montaje incorrecto, golpe del pistón | Pistón agarrotado, daño de camisa y bloque |
+| Válvula de la boquilla pegada | Residuos o desgaste | Falta de caudal con carga, o pérdida de presión |
+| Baja presión de aceite general | Bomba, cojinetes gastados, nivel | Pistones calientes y cojinetes con riesgo |
 
-## Pistones y Bielas
+En el pistón se reconoce por **corona quemada o con grietas, quemado local,
+rayado con material transferido a la camisa, aros pegados y carbonizados y
+depósitos duros en la zona de aros**. Si falla un solo cilindro, se sospecha de
+la boquilla de ese cilindro; si fallan todos, se mira la presión de aceite y el
+sistema de lubricación en general.
 
-### Procedimiento de Remoción
+## Diagnóstico y revisión
 
-1. Inspeccione la biela y la tapa de la biela para ver si tienen la marca de identificación apropiada. La biela y la tapa de la biela deben tener un número grabado en el lado que está hacia el lado derecho del motor. El número debe coincidir con el número del cilindro. Marque la biela y la tapa de biela, si es necesario.
-2. Quite las tuercas de la tapa de biela, los pernos y la tapa de biela.
-3. Quite la mitad inferior del cojinete de la tapa de biela.
-   **ATENCIÓN:**
-   Instale pedazos cortos de manguera de caucho por encima de ambos pernos de biela para proteger el cigüeñal contra la porción roscada de los pernos de la biela.
-4. Empuje el pistón y la biela lejos del cigüeñal. Quite la mitad superior del cojinete de biela de la biela.
-5. Quite el pistón y la biela del bloque de motor.
-6. Repita los pasos 1 a 5 para los pistones y bielas restantes.
+1. **Presión de aceite:** comprobar a ralentí y a régimen con el motor
+   caliente y comparar con el manual.
+2. **Análisis del aceite:** metales de desgaste (aluminio y silicio), y hollín
+   alto sugieren desgaste de pistón y problemas de combustión.
+3. **Inspección en reparación:** con el motor desarmado, revisar cada boquilla:
+   recta, con el orificio libre (soplar aire o pasar un alambre fino sin
+   forzar), sin marcas de golpe y con su perno en buen estado.
+4. **Comprobar el apuntamiento:** el chorro debe llegar a la zona del
+   pistón indicada; al girar el cigüeñal, el pistón no debe tocar la boquilla.
+5. **Limpieza de galerías:** los conductos de aceite del bloque se limpian a
+   fondo con cepillo y solvente y se soplan con aire antes de rearmar.
 
-### Procedimiento de Desarmado
+## Instalación de la boquilla
 
-### Herramientas Necesarias
+El procedimiento de servicio del Caterpillar 3116 y 3126 describe la
+operación así:
 
-| Herramienta | Número de Pieza | Descripción de la Pieza            | Cant. |
-| ----------- | --------------- | ---------------------------------- | ----- |
-| A           | 1U-6683         | Extensor de anillos                | 1     |
-| B           | 1P-1861         | Alicates para Anillos de Retención | 1     |
+1. Colocar la boquilla en el bloque motor.
+2. Verificar que esté **asentada correctamente** antes de apretar el perno.
+3. **Sujetar la boquilla en posición** mientras se aprieta el perno de
+   montaje; si no se sostiene, el tubo puede doblarse o romperse.
+4. Repetir con el resto de las boquillas y comprobar que ninguna interfiera
+   con el pistón al girar el motor.
 
-1. Use la herramienta (B) para quitar el anillo de retención. Quite el pasador de biela (4) y separe el pistón de la biela.
-2. Use la herramienta (A) para quitar los anillos de pistón.
+Para extraerlas se quita el perno y la boquilla. Se instalan siempre antes de
+montar los pistones y bielas para evitar golpearlas.
 
-### Procedimiento de Armado
+## Pistones y bielas: notas de armado del 3116 y 3126
 
-### Herramientas Necesarias
+Cuando se desmonta el pistón para revisar la boquilla, el armado correcto
+incluye estos puntos, tomados del procedimiento de servicio de esos motores.
+Los datos se verifican en el manual vigente del motor antes de aplicarlos.
 
-| Herramienta | Número de Pieza | Descripción de la Pieza            | Cant. |
-| ----------- | --------------- | ---------------------------------- | ----- |
-| A           | 1U-6683         | Extensor de anillos                | 1     |
-| B           | 1P-1861         | Alicates para Anillos de Retención | 1     |
+| Paso | Indicación del procedimiento |
+| --- | --- |
+| Identificación | Biela y tapa llevan el número del cilindro grabado, hacia el lado derecho del motor; marcar si faltan |
+| Protección del cigüeñal | Cubrir las roscas de los pernos de biela con trozos de manguera de goma al sacar e instalar |
+| Aros | Separación entre extremos según la sección de especificaciones; anillos marcados "UP-1" (superior) y "UP-2" (intermedio) con la marca hacia la corona |
+| Anillo de aceite | Los extremos del resorte se giran 180° respecto a la separación del anillo |
+| Pistón de dos piezas | Consta de corona y falda; la corona se reemplaza si el cojinete está desgastado, no se repara |
+| Pasador | Lubricar con aceite limpio del motor y asegurar los anillos de retención en sus ranuras |
+| Montaje del pistón | Aceitar pistón, aros, cilindro y cojinetes; usar compresor de aros; el pistón entra con un martillo blando |
+| Tapa de biela | El número de la tapa debe coincidir con el de la biela y estar del mismo lado |
+| Apriete de tuercas de biela | 54 ± 7 N·m (40 ± 5 lb-pie) y luego 60 ± 5 grados adicionales |
+| Cojinetes de bancada | 54 ± 7 N·m (40 ± 5 lb-pie) y 90 ± 5 grados adicionales; juego axial del cigüeñal de 0,07 a 0,32 mm |
 
-1. Verifique el espacio libre entre los extremos de los anillos de pistón. Vea en el manual de Especificaciones, "Pistones y anillos".
-   **Nota:** El anillo de aceite debe estar instalado por encima del resorte con la separación entre los extremos del anillo a 180 grados con respecto a la unión del resorte del anillo de aceite.
-2. Instale el anillo de pistón de control de aceite con la herramienta (A). Los extremos del resorte deben estar girados 180 grados con respecto a la separación entre los extremos del anillo.
-3. Instale el anillo de pistón intermedio con el lado "UP-2" apuntando hacia la parte superior del pistón. Use la herramienta (A) para instalar el anillo.
-4. Instale el anillo de pistón superior con el lado marcado "UP-1" apuntando hacia la parte superior del pistón. Use la herramienta (A) para instalar el anillo.
-5. Reemplace el cojinete de biela presionando un cojinete nuevo en la biela. Vea las herramientas correctas y el procedimiento correcto de instalación en la Instrucción especial, SEHS7295.
-6. Este pistón es un conjunto de dos piezas. Este pistón consiste de la corona del pistón y el faldón del pistón. Inspeccione el cojinete en la corona del pistón. Se debe reemplazar la corona del pistón si está desgastada o dañada. El cojinete no es reparable.
-7. Coloque el pistón en la biela. Cubra el pasador de biela con aceite limpio de motor e instale el pasador de biela.
-8. Use la herramienta (B) para instalar el anillo de retención.
-9. Asegúrese de que los anillos de retención estén en las ranuras del pistón.
+El apriete por ángulo se marca con pintura o con marcas de referencia en la
+tuerca y la biela, para ver que realmente giró el ángulo indicado. Una tuerca
+floja puede dejar que la tapa se separe y causar una avería grave del motor.
 
-### Procedimiento de Instalación
+## Prevención
 
-### Herramientas Necesarias
+- Cambiar el aceite y el filtro con el intervalo del fabricante; el aceite
+  sucio obstruye boquillas y desgasta el sistema.
+- Limpiar las galerías y verificar boquillas en toda reparación mayor.
+- Instalar boquillas nuevas si hay duda, y sostenerlas al apretar el perno.
+- Comprobar la presión de aceite después del rearmado, antes de poner el
+  motor a carga.
+- Girar el cigüeñal a mano tras el montaje para confirmar que no hay
+  interferencia.
+- Investigar de inmediato cualquier alarma de presión de aceite: ver
+  [cigüeñal y bomba de transferencia del 3116 y 3126](/posts/caterpillar-ciguenal-bomba/) y
+  [análisis de fracturas en maquinaria pesada](/posts/fracturas-un-analisis-de-fallas-en-maquinaria-pesada/).
 
-| Herramienta | Número de Pieza | Descripción de la Pieza        | Cant. |
-| ----------- | --------------- | ------------------------------ | ----- |
-| A           | 187-1462        | Compresor de anillos de pistón | 1     |
-| A           | 173-5529        | Compresor de anillos de pistón | 1     |
-| B           | 4C-5593         | Compuesto antiagarrotante      | 1     |
+## Pistón de dos piezas y cojinete del pasador
 
-1. Instale los pernos y la mitad superior del cojinete de biela. Asegúrese de que la orejeta del cojinete se enganche con la ranura en la biela.
-2. Instale la mitad inferior del cojinete de biela (4). Asegúrese de que la orejeta del cojinete se enganche con la ranura en la tapa de biela.
-3. Ponga aceite limpio de motor en los artículos siguientes: pistones, anillos de pistón, perforación del cilindro, mitad superior del cojinete de biela y mitad inferior del cojinete de biela.
-4. Instale trozos cortos de la manguera de goma sobre ambos pernos de biela.
-5. Instale la Herramienta (A) para prensar los anillos de pistón.
-6. Con el codo del cigüeñal número uno en el centro inferior, instale el pistón y la biela en el motor. Asegúrese de que el pistón y la biela apropiados estén en el cilindro correspondiente con la muesca del retenedor del cojinete hacia el lado derecho del motor.
-7. Alinee el pistón y la biela con el cigüeñal. Utilice un martillo blando y golpee el pistón en la perforación del cilindro hasta que la Herramienta (A) salga del pistón.
-8. Use un martillo blando para golpear el pistón en el calibre de cilindro mientras guía la biela sobre el cigüeñal.
-9. Saque las mangueras que se instalaron en el paso 4 de los pernos de biela.
-10. Instale la tapa de cojinete de biela en la biela. Asegúrese de que el número en la tapa de cojinete de biela se combine con el número en la biela. Asegúrese de que los números estén en el mismo lado.
-11. Lubrique los pernos de tapa de biela con herramienta (B).
+El procedimiento de servicio del 3116 y 3126 señala que el pistón consta de dos
+piezas: la **corona** y la **falda**. El cojinete del pasador se aloja en la
+corona y **no es reparable**: si está desgastado o dañado, se reemplaza la
+corona. Esto tiene una consecuencia en el diagnóstico. Un pistón que trabajó
+caliente por una boquilla obstruida puede mostrar, además de la corona
+quemada, holgura excesiva en el pasador, y no basta con cambiar solo los
+aros.
 
-**ATENCIÓN:**
-Si las tuercas de las bielas están flojas, se pueden separar las tapas de biela y causar una avería grave del motor. 12. Instale las tuercas de tapa de biela (1). Apriete las tuercas a un par de 54 ± 7 N·m (40 ± 5 lb-pie). 13. Coloque la marca de indicación en la biela. Coloque la marca de indicación en la tuerca de tapa de biela. Las marcas de indicación y marcan la posición inicial de la tuerca. Coloque la marca de indicación en la tuerca de tapa de biela. La marca de indicación debe ser hacia la izquierda de la marca de indicación. Apriete cada tuerca 60 ± 5 grados adicionales (1/6 vuelta). La marca de indicación se debe alinear con la marca de indicación. Repita el procedimiento para la otra tuerca de tapa de biela. 14. Repita los pasos 1 a 13 para los pistones y bielas restantes.
+## Ejemplo de revisión tras una falla
 
-### Cojinetes de Bancada del Cigüeñal
+Un motor llega al taller con pérdida de potencia y consumo de aceite. Al abrir:
 
-### Procedimiento de Remoción
+1. El pistón del cilindro 3 tiene la zona de aros carbonizada, el aro
+   superior pegado y rayado en la falda.
+2. La boquilla del cilindro 3 está doblada hacia un lado y el orificio
+   parcialmente tapado por carbón.
+3. Los demás cilindros están en buen estado.
 
-### Herramientas Necesarias
+La causa más probable es una boquilla mal asentada o golpeada en un
+armado anterior, que desvió el chorro y dejó ese pistón sin refrigeración
+suficiente. Acciones: cambiar pistón y aros de ese cilindro, revisar
+cilindro y cojinetes, sustituir el juego de boquillas, limpiar las galerías y
+verificar la presión de aceite al arrancar. Sin esa investigación, el
+siguiente pistón habría fallado igual.
 
-| Herramienta | Número de Pieza | Descripción de la Pieza     | Cant. |
-| ----------- | --------------- | --------------------------- | ----- |
-| A           | 2P-5518         | Herramienta para engranajes | 1     |
+## Aceite, temperatura y vida del pistón
 
-1. Quite los pernos que sujetan la tapa del cojinete de bancada del cigüeñal. Quite la tapa.
-2. Saque la mitad inferior del cojinete de bancada de la tapa del cojinete de bancada del cigüeñal.
-3. Use los siguientes pasos para quitar la mitad superior de los cojinetes de bancada:
-   a. Haga girar el cigüeñal hasta que se pueda instalar la Herramienta (A) en el muñón del cigüeñal. Instale la Herramienta (A).
-   b. Gire el cigüeñal para quitar la mitad superior del cojinete de bancada. Para sacar primero la lengüeta, hay que girar el cigüeñal en el sentido correcto.
-   c. Compruebe el estado de los cojinetes de bancada. Vea la publicación Guía de piezas reutilizables y operaciones de recuperación, SEBF8009, "Cojinetes de bancada y de biela" y la Publicación Especial, SEBD0531, "Cigüeñales y cojinetes del motor".
-
-### Procedimiento de Instalación
-
-### Herramientas Necesarias
-
-| Herramienta | Número de Pieza | Descripción de la Pieza      | Cant. |
-| ----------- | --------------- | ---------------------------- | ----- |
-| A           | 2P-5518         | Herramienta para engranajes  | 1     |
-| B           | 8T-5096         | Grupo de Indicador de Esfera | 1     |
-
-1. Use la herramienta (A) e instale las mitades superiores de los cojinetes de bancada en el bloque de motor. No ponga aceite en la parte trasera del cojinete de bancada.
-2. Instale las mitades de la parte inferior de los cojinetes de bancada en las tapas de cojinete de bancada del cigüeñal. No ponga aceite en la parte trasera del cojinete de bancada.
-3. Las ranuras de aceite se maquinan en los montajes de los bloques de motor de todos los motores 3114 y de los motores 3116 más antiguos. No hay ranuras de aceite maquinadas en los montajes del bloque de motor de los motores 3116 más recientes ni de todos los motores 3126.
-4. Instale las tapas de los cojinetes con el número de orden a la derecha. Un motor de seis cilindros tiene un orden de 1 a 7 (parte delantera a parte trasera). Un motor de cuatro cilindros tiene un orden de 1 a 5 (parte delantera a parte trasera). Coloque las tapas de los cojinetes de bancada en el bloque del motor. Ponga aceite de motor limpio o Molylube en las roscas del perno y en la cara de la arandela. Instale los pernos.
-5. Apriete los pernos a un par de 54 ± 7 N·m (40 ± 5 lb-pie). Apriete cada perno 90 ± 5 grados (1/4 vuelta) adicional.
-6. Compruebe el juego axial del cigüeñal con la herramienta (B). El juego axial debe ser de 0,07 mm (0,003 pulg) a 0,32 mm (0,013 pulg).
+La eficacia de la boquilla depende del aceite que recibe. Un aceite degradado,
+con hollín alto o diluido por combustible, retira menos calor y ensucia
+orificios pequeños. Por eso conviene combinar el cambio de aceite con el
+análisis periódico: la presencia de aluminio (pistón) y silicio, el hollín y
+la dilución por combustible son datos que anticipan problemas de
+enfriamiento. Ver también
+[análisis de aceite en maquinaria](/posts/analisis-aceites-maquinaria/).

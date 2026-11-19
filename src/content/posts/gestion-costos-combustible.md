@@ -1,78 +1,233 @@
 ---
-title: "Cómo gestionar el aumento de los costos de combustible"
+title: "Gestión del combustible en flotas pesadas: consumo, ralentí y telemetría"
 published: 2024-08-02
+updatedAt: 2026-11-19
 draft: false
 featured: false
-description: "Este artículo ofrece estrategias prácticas para manejar el aumento de los costos de combustible en la industria de la construcción, destacando la importancia de la gestión efici..."
+description: "Cómo medir y reducir el gasto de combustible de una flota de maquinaria: consumo por hora, ralentí, telemática, control de despachos y un ejemplo de ahorro calculado."
 category: maquinaria-pesada
-formato: concepto
+formato: guia
 nivel: intermedio
-tags: []
+tags:
+  - "consumo-de-combustible"
+  - "ralenti"
+  - "telematica"
+  - "costos-operativos"
+  - "gestion-de-flota"
 image: https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/costos-combustible
 author: redaccion-maquinaria
 reviewedBy: redaccion-maquinaria
-aiAssisted: false
+aiAssisted: true
+faq:
+  - q: "¿Cuál es la métrica correcta para medir el consumo de una máquina?"
+    a: "Litros por hora de motor, porque la maquinaria pesada no se mide en kilómetros. Pero esa cifra sola engaña: una excavadora que consume más por hora puede estar moviendo más material. Por eso se completa con litros por unidad productiva (por m³ movido, por tonelada o por viaje) y se separa el consumo en trabajo del consumo en ralentí."
+  - q: "¿Cuánto combustible se pierde en ralentí?"
+    a: "Depende del motor y del régimen. Un motor diésel en ralentí no produce trabajo pero sí consume combustible, y además acumula horas de motor, desgaste y carbonilla sin generar producción. La cifra real de cada máquina sale de la telemática o de una prueba controlada, no de un promedio general."
+  - q: "¿Cómo detecto robo o pérdida de combustible?"
+    a: "Cruzando tres datos: litros despachados por vale o surtidor, consumo reportado por el computador del motor o la telemática, y horas trabajadas. Si el despacho supera de forma sostenida el consumo esperado (un umbral que cada empresa define, por ejemplo más de 5 %), se investiga: fugas, calibración del surtidor, carga fuera de registro o desvío."
+  - q: "¿Vale la pena instalar telemática en una flota pequeña?"
+    a: "Normalmente sí cuando el combustible es uno de los mayores costos operativos. Basta con que reduzca el ralentí y detecte consumos anómalos en pocas máquinas para recuperar la inversión. Antes de comprar, define qué decisiones vas a tomar con los datos; sin ellas, el sistema solo produce gráficos."
+  - q: "¿El mantenimiento influye en el consumo?"
+    a: "Mucho. Filtros de aire tapados, inyectores desgastados, combustible contaminado con agua, neumáticos con baja presión, fugas hidráulicas o un circuito de refrigeración sucio elevan el consumo por hora. Muchas veces el gasto extra aparece en el combustible antes que en cualquier alarma."
+related:
+  - productividad-telescopico-telematica
+  - vaciado-agua-combustible
+  - mantenimiento-vims-caterpillar
+  - mantenimiento-basico-de-maquinaria-pesada
 ---
 
-Hubo un tiempo en que el precio del combustible diésel no cambiaba 40-50 centavos durante muchos años," dice Brett Ames, presidente de distrito de SEMA Construction, un contratista de servicio completo a nivel nacional que opera con 1,000 piezas de equipo. En ese entonces, los contratistas prestaban más atención a los factores de consumo de combustible que al precio por galón de combustible. Pero los precios del combustible se han disparado, complicando la situación, dice Ames. Y debido a que el combustible juega un papel importante en todos los aspectos de un proyecto de construcción, los aumentos de precios de combustible tienen un impacto mucho mayor en los contratistas que en las empresas de muchas otras industrias, señala Ken Simonson, economista jefe de la Associated General Contractors of America.
+El combustible suele ser uno de los dos o tres costos más grandes de
+operar maquinaria pesada, y es el que más fácil se pierde sin darse
+cuenta: se pierde en ralentí, en una mala técnica de operación, en un
+filtro tapado o en un surtidor mal calibrado. El precio del diésel sube
+y baja fuera del control de la empresa; el **consumo** sí se puede
+gestionar.
 
-## Impacto del Aumento de los Costos de Combustible
+Esta guía explica qué medir, cómo calcularlo, qué datos aporta la
+telemática y cómo estimar el ahorro de una medida con un ejemplo
+numérico.
 
-Los precios del diésel han aumentado un 74% en el último año, con el combustible representando ahora más del 40% de los costos operativos del equipo. Y los precios del combustible son solo una parte de la historia. Ames dice que los costos generales del equipo de SEMA han subido un 33%, atribuyendo esto a una combinación de factores, incluida la inflación.
+## Qué medir: tres números por máquina
 
-![Impacto del Aumento de los Costos de Combustible](https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/legacy-root/grafica-combustible)
+1. **Consumo por hora de motor (L/h).** Litros consumidos entre horas de
+   motor del periodo. Es la base de todo.
+2. **Consumo por unidad productiva.** Litros por m³ movido, por tonelada
+   cargada, por viaje de camión o por hectárea. Responde si la máquina
+   gasta más porque trabaja más o porque trabaja peor.
+3. **Porcentaje de ralentí.** Horas de motor encendido sin trabajo
+   productivo sobre horas totales de motor.
 
-## Estrategias para Gestionar los Costos de Combustible
+Con esos tres datos se pueden comparar máquinas del mismo modelo,
+operadores distintos y turnos, y detectar desviaciones antes de que el
+gasto aparezca en la factura.
 
-### Monitoreo y Ajuste de Costos
+### Cómo obtener los datos
 
-Para manejar estos costos volátiles, es crucial examinar detenidamente los costos, dice Ames. "Utilizamos los factores de consumo de EquipmentWatch como base," afirma. Cuando los costos de SEMA superan esos puntos de referencia, "miramos las cosas de manera diferente." EquipmentWatch ofrece una calculadora que ayuda a los contratistas a calcular con precisión su tarifa de carga interna, permitiendo ajustar los costos en tiempo real.
+- **Cálculo manual:** vales de despacho más horómetro de cada máquina.
+  Simple, pero depende de que el registro se llene bien.
+- **Computador del motor (ECM):** guarda litros consumidos, horas en
+  ralentí y horas en carga. Se puede leer con la herramienta del
+  fabricante.
+- **Telemática:** transmite esos datos en línea, junto con posición,
+  alarmas y horas. Reduce la carga administrativa y permite alertas.
+  Más en
+  [telemática y productividad](/posts/productividad-telescopico-telematica/).
+- **Sensor de nivel en el tanque o caudalímetros:** miden directamente y
+  ayudan a detectar fugas y extracciones.
 
-### Actualización de Tarifas
+## Ralentí: el ahorro más rápido
 
-En el entorno actual, es crítico que las tarifas cobradas reflejen con precisión los costos operativos. Ames comenta que su empresa solía establecer tarifas cada 2-3 años, pero ahora lo revisan casi mensualmente. Las herramientas y el monitoreo sofisticados permiten ajustar las tarifas internas del equipo mucho más rápido.
+Un motor en ralentí consume combustible, suma horas de motor (y por
+tanto adelanta los servicios) y no produce nada. En obra es habitual
+dejar la máquina encendida mientras el operador baja, espera un camión o
+almuerza. Cada máquina tiene su consumo en ralentí, que se obtiene de la
+telemática o de una prueba corta con consumo medido en ese régimen.
 
-### Negociación de Escalación de Combustible
+Medidas que funcionan sin inversión:
 
-En el mercado del DOT, los términos contractuales establecidos de escalación de combustible no cubren los costos reales. En el sector privado, SEMA intenta negociar y compartir el riesgo del precio del combustible con el propietario. Durante estas negociaciones, desarrollan una matriz de riesgo mostrando el precio actual del combustible e incluyendo un desencadenante específico que implementaría un método de pago.
+- Regla escrita: si la espera pasa de cierto tiempo (por ejemplo,
+  5 minutos), se apaga el motor. Respeta lo que indique el fabricante
+  para turbocompresores: algunos requieren unos minutos de enfriamiento
+  antes del apagado.
+- Función de apagado automático por ralentí, disponible en muchos
+  motores y configurable.
+- Reporte semanal de % de ralentí por operador, comentado en la reunión
+  de seguridad; lo que se mide y se muestra mejora.
 
-### Datos de Soporte
+## Otros factores que elevan el consumo
 
-Para negociar un recargo por combustible o un aumento de tarifa, es útil armarse con datos creíbles de terceros. Un PDF de la tarifa de carga interna de EquipmentWatch junto con recibos de combustible puede ser suficiente evidencia para respaldar un aumento a corto plazo en los reembolsos.
+| Causa | Síntoma | Qué revisar |
+|---|---|---|
+| Filtro de aire obstruido | Humo oscuro, falta de potencia | Indicador de restricción, estado del elemento |
+| Combustible con agua o sucio | Inyectores dañados, filtros que se tapan | Drenado del separador y tanque; ver [agua en combustible](/posts/vaciado-agua-combustible/) |
+| Inyectores o bomba desgastados | Más consumo con menos potencia | Diagnóstico del sistema de inyección |
+| Presión baja en neumáticos | Mayor resistencia a la rodadura | Medición de presión con regularidad |
+| Radiador sucio o ventilador mal calibrado | Temperatura alta, ventilador funcionando todo el tiempo | Limpieza del núcleo, correa y control del ventilador |
+| Fugas hidráulicas o presiones fuera de rango | Ciclos lentos, motor trabajando de más | Ajuste de presiones, estado de bombas y mangueras |
+| Técnica del operador | Régimen alto sin necesidad, pasadas con balde mal llenado | Capacitación y modos de potencia del fabricante |
 
-## Reducción del Consumo de Combustible
+Muchas máquinas modernas ofrecen modos de potencia (económico, estándar,
+potencia). Usar el modo más alto para tareas livianas gasta combustible
+sin ganar productividad.
 
-### Manejo del Tiempo de Inactividad
+## Ejemplo: cuánto vale reducir el ralentí
 
-Una forma inmediata de controlar los costos de combustible es reducir el tiempo de inactividad. Si los operadores suelen dejar una máquina en marcha mientras realizan tareas fuera de la cabina, se les debe incentivar para que apaguen el motor y ahorren combustible.
+Datos supuestos para ilustrar el cálculo (reemplázalos por los de tu
+flota):
 
-### Selección de Equipos Eficientes
+- 10 excavadoras de tamaño medio.
+- 1.600 horas de motor por máquina al año.
+- Consumo en trabajo: 16 L/h; en ralentí: 3 L/h.
+- Ralentí actual: 30 % de las horas de motor.
+- Meta: bajar el ralentí a 15 %.
+- Precio supuesto del diésel: 1,00 USD por litro.
 
-Dado que los altos precios del combustible probablemente continuarán, al comprar equipos nuevos, es importante investigar para encontrar máquinas con el costo de propiedad más bajo, incluyendo el consumo de combustible. También se debe considerar alquilar en lugar de comprar, lo que permite usar las máquinas más eficientes en consumo de combustible disponibles y probar vehículos eléctricos o de combustibles alternativos.
+**Situación actual (por máquina):**
 
-### Venta de Equipos Infrautilizados
+- Horas en ralentí: 1.600 × 0,30 = 480 h → 480 × 3 = 1.440 L.
+- Horas en trabajo: 1.120 h → 1.120 × 16 = 17.920 L.
+- Total: 19.360 L al año.
 
-Con la actual escasez de equipos usados, las máquinas inactivas podrían tener un precio de venta elevado. Vender estas máquinas puede proporcionar el efectivo necesario para enfrentar los altos costos de combustible.
+**Con ralentí en 15 %:**
 
-## Inversiones a Largo Plazo
+- Horas en ralentí: 1.600 × 0,15 = 240 h. Las 240 h que se evitan ya no
+  tienen el motor encendido.
+- Ahorro por máquina: 240 × 3 = 720 L al año.
+- Ahorro de la flota: 720 × 10 = **7.200 L**, es decir, **7.200 USD al
+  año** al precio supuesto, un 3,7 % del consumo.
 
-### Software de Gestión de Flotas
+A ese ahorro se suma otro, menos visible: 240 h de motor menos por
+máquina retrasan los servicios y reducen desgaste. Y el costo para
+lograrlo fue una regla, una configuración y un reporte.
 
-Agregar software de gestión de flotas puede ayudar a monitorear las prácticas adecuadas de operación y mantenimiento, optimizando el uso del combustible y reduciendo los costos operativos.
+### Costo por unidad productiva
 
-### Transición a Vehículos Eléctricos
+Si la misma excavadora carga 120 m³ por hora de trabajo con 16 L/h,
+su consumo es 16 / 120 = **0,13 L/m³**. Si otro operador, con la misma
+máquina, carga 100 m³/h con 17 L/h, el consumo sube a **0,17 L/m³**: el
+gasto es 30 % mayor por el mismo trabajo. Ese es el tipo de diferencia
+que el L/h solo no muestra.
 
-Considerar la transición a vehículos eléctricos si es viable para la ubicación y los requisitos del trabajo, puede ser una solución a largo plazo para reducir la dependencia del combustible diésel.
+## Técnica del operador
 
-## Consejos para Ahorrar Combustible
+La diferencia entre un operador y otro con la misma máquina puede ser
+grande. Los hábitos que más pesan:
 
-Pequeños cambios en la operación de las máquinas y camiones diésel pueden hacer una gran diferencia en la factura de combustible. Aquí hay algunos consejos del Diesel Technology Forum:
+- Trabajar en el régimen y el modo de potencia que pide la tarea, y no
+  siempre al máximo.
+- Llenar el cucharón o la caja de manera uniforme; muchas pasadas
+  medio vacías gastan lo mismo que las llenas.
+- Reducir distancias y giros innecesarios al posicionar la máquina y
+  los camiones.
+- No dejar el motor a plena aceleración mientras espera.
+- Evitar cargar el motor contra el tope de un movimiento hidráulico
+  (el brazo o el cucharón en fin de carrera con la palanca accionada).
+- En camiones y equipos de transporte, mantener velocidad estable,
+  anticipar frenadas y respetar la presión de neumáticos.
 
-- **Reducir la Velocidad**: El consumo de combustible aumenta por cada milla por hora que se conduce por encima de 55 mph.
-- **Usar el Control de Crucero**: Los sistemas avanzados de control de crucero optimizan la velocidad del motor y del viaje según la carga, mejorando significativamente la eficiencia.
-- **Operar en la Marcha más Alta Posible**: Esto reduce las RPM del motor y, por lo tanto, el consumo de combustible.
-- **Evitar el Tiempo de Inactividad**: El tiempo de inactividad quema aproximadamente ¾ de galón de combustible diésel por hora y acelera el desgaste del motor.
-- **Planificar la Ruta**: Tomar rutas eficientes en combustible y evitar congestiones puede ahorrar combustible.
-- **Mantener la Presión de los Neumáticos**: La presión adecuada de los neumáticos puede mejorar la economía de combustible.
-- **Mantenimiento Preventivo**: Seguir el programa de mantenimiento recomendado maximiza la eficiencia del combustible.
-- \*\*Apagar
+La capacitación funciona mejor con datos: mostrar al operador su L/h y
+su % de ralentí frente al promedio de la flota, sin sanciones, y
+reconocer las mejoras.
+
+## Ejemplo de conciliación semanal
+
+Una máquina trabajó 40 h de motor en la semana, con 28 h en trabajo y
+12 h en ralentí. Con 16 L/h y 3 L/h, el consumo esperado es
+28 × 16 + 12 × 3 = 448 + 36 = **484 L**. Los vales de despacho suman
+530 L. La diferencia es 46 L, 9,5 % sobre lo esperado, por encima del
+umbral de 5 % que fijó la empresa. Se revisa: fugas en mangueras de
+combustible, vale duplicado, litros cargados a otra máquina o un
+consumo mayor por trabajo en pendiente. Sin esa conciliación, la
+diferencia habría pasado inadvertida dentro del gasto total.
+
+## Control de despachos y pérdidas
+
+El combustible que sale del tanque debe cuadrar con el que entra en las
+máquinas:
+
+1. Surtidores y medidores calibrados y precintados, con revisión
+   periódica.
+2. Vale o registro electrónico por despacho: máquina, litros, horómetro,
+   operador y firma.
+3. Conciliación semanal: litros despachados frente a consumo esperado
+   según horas y consumo por hora. Las desviaciones se investigan.
+4. Tanques cerrados, con acceso controlado y, si es posible, sensor de
+   nivel con alerta por descenso fuera de horario.
+5. Muestreo y limpieza del combustible almacenado para evitar agua y
+   sedimento.
+
+## Decisiones de largo plazo
+
+- **Selección de equipo.** Al comprar o alquilar, compara el consumo
+  declarado por tamaño y por unidad productiva, no solo el precio de
+  adquisición. Un modelo más eficiente puede compensar su costo en pocas
+  temporadas si trabaja muchas horas.
+- **Contratos.** En contratos de larga duración, incluye una cláusula de
+  ajuste por variación del combustible, con un precio base y un
+  disparador claro. Respalda el pedido con facturas y con tus propios
+  datos de consumo.
+- **Renta y reemplazo.** Máquinas muy antiguas con alto consumo y poco
+  uso pueden costar más en combustible y mantenimiento que reemplazarlas.
+  Lo confirma el análisis de costo por hora, como el de la
+  [auditoría de mantenimiento](/posts/auditoria-mantenimiento/).
+- **Tecnologías alternativas.** Equipos eléctricos o híbridos pueden
+  convenir si hay infraestructura de carga y ciclos de trabajo
+  adecuados; se evalúa caso por caso.
+
+## Plan de acción en cuatro pasos
+
+1. Línea base: L/h, L por unidad productiva y % de ralentí por máquina,
+   durante al menos un mes.
+2. Metas por máquina y por operador, con comparaciones justas (mismo
+   modelo y tarea).
+3. Tres medidas inmediatas: regla de apagado, revisión de filtros y
+   neumáticos, conciliación de despachos.
+4. Revisión mensual de resultados y ajuste. Reconoce las mejoras,
+   no solo las desviaciones.
+
+Un buen programa de
+[mantenimiento básico](/posts/mantenimiento-basico-de-maquinaria-pesada/)
+y la lectura de alarmas del equipo, como en
+[VIMS](/posts/mantenimiento-vims-caterpillar/), mantienen el motor
+trabajando en su rango eficiente y evitan que el consumo se degrade
+con el tiempo.

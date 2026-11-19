@@ -41,8 +41,6 @@ sources:
     url: "https://www.heavyequipments.org/blog/198-catalogue-volvo-bl70-backhoe-loader-specifications"
 related:
   - diferencia-retroexcavadora-cargador-frontal
-  - retroexcavadora-trabajos-urbanos
-  - case-retroexcavadora-electrica
   - tipos-de-maquinaria-pesada-en-construccion
 ---
 
