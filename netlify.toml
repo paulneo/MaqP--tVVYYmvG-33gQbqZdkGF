@@ -136,6 +136,14 @@
   status = 301
   force = true
 
+# English URLs without a translation (old hreflang links pointed every page
+# at /en/<path>). NOT forced: existing /en/ pages are served normally; only
+# missing ones are redirected to the Spanish original.
+[[redirects]]
+  from = "/en/*"
+  to = "/:splat"
+  status = 301
+
 # ── Cache HTTP ──────────────────────────────────────────────────────────
 # /_astro/* son assets con hash en el nombre (ej: /_astro/x8jf3.abc123.css),
 # así que se pueden cachear por un año — cuando el contenido cambia, Astro

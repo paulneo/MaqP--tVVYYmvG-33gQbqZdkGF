@@ -8,12 +8,17 @@
  * reevalúa el idioma actual desde window.location.pathname en cada visita.
  */
 import { getLocaleFromUrl, getAlternateLangUrl, languages } from '../i18n'
+import { getTranslatedSlugs, hasTranslation } from '../utils/translations'
 
 const currentLang = getLocaleFromUrl(Astro.url)
 const pathname = Astro.url.pathname
 
 const otherLang = currentLang === 'es' ? 'en' : 'es'
-const otherUrl = getAlternateLangUrl(pathname, currentLang, otherLang)
+// Link to the counterpart only if it exists; otherwise go to the other language's home.
+const otherUrl = (await hasTranslation(pathname))
+  ? getAlternateLangUrl(pathname, currentLang, otherLang)
+  : (otherLang === 'en' ? '/en/' : '/')
+const translatedSlugs = JSON.stringify([...(await getTranslatedSlugs())])
 const otherLabel = languages[otherLang]
 const otherFlag = otherLang === 'es' ? '🇪🇸' : '🇺🇸'
 ---
@@ -21,6 +26,7 @@ const otherFlag = otherLang === 'es' ? '🇪🇸' : '🇺🇸'
 <a
   href={otherUrl}
   data-lang-selector
+  data-translated={translatedSlugs}
   class="lang-selector inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-sm text-black/65 dark:text-white/65 hover:bg-black/[0.05] dark:hover:bg-white/[0.06] hover:text-[var(--primary)] transition"
   aria-label={`Switch to ${otherLabel}`}
   title={otherLabel}
@@ -42,11 +48,18 @@ const otherFlag = otherLang === 'es' ? '🇪🇸' : '🇺🇸'
       const otherLang = currentLang === 'es' ? 'en' : 'es'
       const otherFlag = otherLang === 'es' ? '🇪🇸' : '🇺🇸'
       const otherLabel = otherLang === 'es' ? 'Español' : 'English'
+      let translated = []
+      try { translated = JSON.parse(el.getAttribute('data-translated') || '[]') } catch (e) {}
+      const m = path.match(/^(?:\/en)?\/posts\/([^/]+)\/?$/)
+      const isHome = path === '/' || path === '/en/' || path === '/en'
+      const hasPair = isHome || (m && translated.indexOf(m[1]) !== -1)
       let otherUrl
-      if (otherLang === 'en') {
+      if (!hasPair) {
+        otherUrl = otherLang === 'en' ? '/en/' : '/'
+      } else if (otherLang === 'en') {
         otherUrl = '/en' + path
       } else {
-        otherUrl = path.startsWith('/en/') ? path.replace(/^\/en/, '') || '/' : path
+        otherUrl = path.replace(/^\/en/, '') || '/'
       }
       el.setAttribute('href', otherUrl)
       el.setAttribute('aria-label', 'Switch to ' + otherLabel)
