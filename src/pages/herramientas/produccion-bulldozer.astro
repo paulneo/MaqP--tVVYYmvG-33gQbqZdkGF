@@ -1,0 +1,189 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import ProduccionBulldozer from '../../components/tools/ProduccionBulldozer.svelte'
+---
+
+<ToolLayout slug="produccion-bulldozer">
+    <ProduccionBulldozer slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula la producción de un bulldozer</h2>
+        <p>
+            Un bulldozer que empuja material trabaja en ciclos: carga la hoja, empuja hasta el
+            punto de descarga, retrocede y vuelve a empezar. La producción sale de multiplicar
+            lo que lleva la hoja en cada ciclo por los ciclos que se completan en una hora:
+        </p>
+        <p class="text-center text-lg font-mono bg-black/[0.03] dark:bg-white/[0.05] p-3 rounded-lg">Q = q × (60 / Tc) × E</p>
+        <p>
+            <code>Tc = D / F + D / R + Z</code> &nbsp;·&nbsp; <code>q = L × H² × a</code>
+        </p>
+
+        <h3>Variables</h3>
+        <ul>
+            <li><strong>Q</strong> = producción en m³ sueltos por hora (se pasa a m³ en banco dividiendo entre 1 + esponjamiento)</li>
+            <li><strong>q</strong> = carga de la hoja en m³ sueltos por ciclo</li>
+            <li><strong>L</strong> = ancho de la hoja (m) y <strong>H</strong> = altura de la hoja (m)</li>
+            <li><strong>a</strong> = factor de hoja, que depende del material y de la condición del frente</li>
+            <li><strong>Tc</strong> = tiempo de ciclo en minutos</li>
+            <li><strong>D</strong> = distancia de empuje (m)</li>
+            <li><strong>F</strong> y <strong>R</strong> = velocidades de avance y de retroceso, convertidas de km/h a m/min (1 km/h = 16,67 m/min)</li>
+            <li><strong>Z</strong> = tiempo fijo por cambios de marcha y maniobras (min)</li>
+            <li><strong>E</strong> = eficiencia de trabajo (minutos efectivos por hora / 60)</li>
+        </ul>
+
+        <h3>Factor de hoja (a): valores de referencia</h3>
+        <p>
+            Son rangos genéricos de referencia, no datos de un fabricante. Si conoce la carga real
+            de su máquina (por ejemplo, medida en obra), puede ingresarla directamente en la calculadora.
+        </p>
+        <ul>
+            <li><strong>Material fácil</strong> (arena, tierra suelta, material ya aflojado): 0,9 - 1,1</li>
+            <li><strong>Material medio</strong> (tierra común, mezcla de suelo y grava): 0,7 - 0,9</li>
+            <li><strong>Material difícil</strong> (arcilla compacta o húmeda, material cementado): 0,6 - 0,7</li>
+            <li><strong>Material muy difícil</strong> (roca fragmentada, suelo muy cohesivo): 0,4 - 0,6</li>
+        </ul>
+
+        <h3>Ejemplo resuelto con los valores por defecto</h3>
+        <p>
+            Un tractor de orugas mediano con hoja de 3,4 m de ancho y 1,3 m de alto empuja
+            material medio (a = 0,8) a lo largo de 30 m. Avanza a 3,5 km/h, retrocede a
+            6,5 km/h, pierde 0,10 min en cambios de marcha y trabaja con una eficiencia de
+            0,83 (50 minutos efectivos por hora). El esponjamiento del material es 25%.
+        </p>
+        <ol>
+            <li>Carga de la hoja: q = 3,4 × 1,3² × 0,8 = <strong>4,60 m³ sueltos</strong>.</li>
+            <li>Velocidades: F = 3,5 × 1.000 / 60 = 58,3 m/min y R = 6,5 × 1.000 / 60 = 108,3 m/min.</li>
+            <li>Tiempo de ciclo: Tc = 30 / 58,3 + 30 / 108,3 + 0,10 = 0,514 + 0,277 + 0,10 = <strong>0,89 min</strong>.</li>
+            <li>Ciclos por hora: 60 / 0,89 = 67,3.</li>
+            <li>Producción: Q = 4,60 × 67,3 × 0,83 = <strong>256,9 m³ sueltos/h</strong>.</li>
+            <li>En banco: 256,9 / 1,25 = <strong>205,5 m³/h</strong>.</li>
+            <li>Jornada de 8 horas: 2.055 m³ sueltos, es decir, 1.644 m³ en banco.</li>
+        </ol>
+
+        <h3>Por qué la producción cae tanto con la distancia</h3>
+        <p>
+            La carga de la hoja es casi fija, pero el tiempo de ciclo crece de forma directa con
+            la distancia de empuje. Con los mismos datos del ejemplo, la producción cambia así:
+        </p>
+        <ul>
+            <li>15 m: unos 462 m³/h sueltos</li>
+            <li>30 m: unos 257 m³/h</li>
+            <li>60 m: unos 136 m³/h (53% de lo que se produce a 30 m)</li>
+            <li>100 m: unos 84 m³/h</li>
+        </ul>
+        <p>
+            Como referencia general, más allá de unos 60 a 100 m suele resultar más económico
+            apoyar el trabajo con otro equipo de acarreo (cargador con camiones o motoescrepa).
+            El límite exacto depende del costo horario de cada equipo y del terreno.
+        </p>
+
+        <h3>Cómo mejorar la producción</h3>
+        <ul>
+            <li><strong>Empuje en zanja (slot dozing)</strong>: al empujar siempre por el mismo canal, el material no se escapa por los lados de la hoja y la carga aumenta. Como referencia, la mejora ronda el 10-20%, según el material.</li>
+            <li><strong>Empuje lado a lado (side-by-side)</strong>: dos tractores empujan con las hojas contiguas y pierden menos material por los costados en distancias largas.</li>
+            <li><strong>Empuje cuesta abajo</strong>: la gravedad ayuda y permite cargar más. En esta calculadora puede reflejarlo con el factor de corrección (mayor que 1 a favor de la pendiente, menor que 1 en subida).</li>
+        </ul>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            La cifra es una producción de planificación en volumen suelto. Para un volumen de
+            proyecto medido en banco, use el valor en banco que muestra la calculadora; la
+            diferencia entre ambos depende del esponjamiento del material (puede calcularlo con
+            la <a href="/herramientas/esponjamiento-de-suelos/">calculadora de esponjamiento de suelos</a>).
+            Compare el resultado con lo medido en obra durante un par de jornadas y ajuste el
+            factor de hoja y la eficiencia hasta que coincidan: eso vale más que cualquier
+            tabla genérica.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Confundir m³ sueltos con m³ en banco</strong>: la hoja empuja material suelto; los volúmenes de proyecto suelen medirse en banco. Una diferencia de 25% en el esponjamiento mueve el resultado en la misma proporción.</li>
+            <li><strong>Usar las velocidades máximas del catálogo</strong>: en empuje la máquina trabaja en la marcha de carga, normalmente más lenta que la velocidad máxima de avance.</li>
+            <li><strong>Ignorar la pendiente</strong>: una subida del 10% reduce de forma notable la carga y la velocidad; una bajada hace lo contrario.</li>
+            <li><strong>Suponer 60 minutos útiles por hora</strong>: considere esperas, ajustes de frente y traslados; 45 a 50 minutos es más realista.</li>
+            <li><strong>Olvidar el tiempo fijo</strong>: los cambios de marcha y el posicionamiento pesan más cuando la distancia es corta.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/bulldozer-vs-motoniveladora/">Bulldozer vs motoniveladora: diferencias y cuándo usar cada uno</a></li>
+            <li><a href="/posts/hyundai-bulldozers-hd100/">Hyundai bulldozers HD100</a></li>
+            <li><a href="/posts/tipos-de-maquinaria-pesada-en-construccion/">Tipos de maquinaria pesada en construcción</a></li>
+            <li><a href="/posts/errores-comunes-al-operar-maquinaria-pesada/">Errores comunes al operar maquinaria pesada</a></li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos m³ mueve un bulldozer por hora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del tamaño de la máquina, el material y la distancia. Como referencia (no es un dato de fabricante), un tractor de orugas mediano con hoja de unos 3,4 m empujando 30 m de material medio produce del orden de <strong>250 m³ sueltos por hora</strong> con buena eficiencia, que equivalen a unos 205 m³/h en banco con 25% de esponjamiento. A 60 m baja a cerca de 136 m³/h.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo se calcula la carga de la hoja de un bulldozer?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con la expresión <strong>q = L × H² × a</strong>, donde L es el ancho de la hoja, H su altura y a un factor que depende del material (0,4 a 1,1 como referencia). Con 3,4 m, 1,3 m y a = 0,8 resulta q = 4,60 m³ sueltos. Si usted midió la carga real en obra, ingrésela directamente.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es el tiempo de ciclo de un bulldozer?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Es el tiempo que tarda en empujar, retroceder y quedar listo para el siguiente empuje: <strong>Tc = D/F + D/R + Z</strong>. Con 30 m, 3,5 km/h de avance, 6,5 km/h de retroceso y 0,10 min fijos, el ciclo dura 0,89 min, es decir, unos 67 ciclos por hora.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Hasta qué distancia conviene empujar con un bulldozer?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Como referencia, el empuje resulta eficiente hasta unos 60 m y comienza a perder competitividad entre 60 y 100 m, porque la producción baja casi en proporción inversa a la distancia. Más allá de ese rango conviene comparar el costo por m³ con un cargador y camiones o con una motoescrepa.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo paso la producción de m³ sueltos a m³ en banco?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Divida entre uno más el esponjamiento expresado en decimal: <strong>Vb = Vs / (1 + esponjamiento)</strong>. Con 25% de esponjamiento, 256,9 m³ sueltos por hora equivalen a 205,5 m³ en banco por hora. Para el esponjamiento propio de su suelo use la <a href="/herramientas/esponjamiento-de-suelos/">calculadora de esponjamiento</a>.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué eficiencia de trabajo debo usar?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                La eficiencia de 0,83 corresponde a 50 minutos efectivos por hora y es un valor habitual para planificar con buena supervisión. Con condiciones regulares (45 minutos por hora) use 0,75, y con mala organización o frentes difíciles puede bajar de 0,70. Con 0,75 en lugar de 0,83, la producción del ejemplo pasa de 257 a unos 232 m³/h.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es el empuje en zanja o slot dozing?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Es una técnica en la que el tractor empuja siempre por el mismo canal, de modo que las paredes de material evitan que se derrame por los costados de la hoja. Aumenta la carga por ciclo; como referencia, la mejora típica ronda el 10 a 20%, según el material y la longitud del empuje.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Puedo usar esta calculadora para estimar el costo por m³?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, como segundo paso. Divida el costo horario de la máquina (incluyendo operador y combustible) entre la producción en m³ por hora. Para el combustible puede apoyarse en la <a href="/herramientas/consumo-combustible-maquinaria/">calculadora de consumo de combustible de maquinaria</a>.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

@@ -1,0 +1,176 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import ConversorPresionTorque from '../../components/tools/ConversorPresionTorque.svelte'
+---
+
+<ToolLayout slug="conversor-presion-torque">
+    <ConversorPresionTorque slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se convierten la presión y el torque</h2>
+        <p>
+            Toda conversión se hace pasando por una unidad base: kPa para la presión y N·m para el torque.
+            El valor ingresado se multiplica por el factor de su unidad y el resultado se divide entre el
+            factor de la unidad de destino.
+        </p>
+        <p>
+            <code>valor destino = valor origen × factor origen / factor destino</code>
+        </p>
+
+        <h3>Factores de conversión</h3>
+        <p><strong>Presión</strong> (a kPa):</p>
+        <ul>
+            <li>1 bar = 100 kPa</li>
+            <li>1 psi = 6,894757 kPa</li>
+            <li>1 kgf/cm² = 98,0665 kPa</li>
+            <li>1 atm = 101,325 kPa</li>
+            <li>1 MPa = 1.000 kPa</li>
+        </ul>
+        <p><strong>Torque</strong> (a N·m):</p>
+        <ul>
+            <li>1 lb·ft = 1,355818 N·m</li>
+            <li>1 lb·in = 0,1129848 N·m</li>
+            <li>1 kgf·m = 9,80665 N·m</li>
+        </ul>
+
+        <h3>Presión manométrica y absoluta (psig y psia)</h3>
+        <p>
+            La presión manométrica se mide respecto a la atmósfera y la absoluta respecto al vacío. La
+            absoluta es la manométrica más la atmosférica (cerca de 1,013 bar, 14,7 psi a nivel del mar).
+            Los manómetros de sistemas hidráulicos, neumáticos y de neumáticos leen presión manométrica. Esta
+            herramienta convierte unidades, no suma ni resta la atmosférica: use el mismo tipo de presión en
+            ambos lados.
+        </p>
+
+        <h3>Por qué el kgf/cm² se parece al bar pero no es igual</h3>
+        <p>
+            1 kgf/cm² es el peso de un kilogramo-fuerza repartido en un centímetro cuadrado: 98.066,5 Pa.
+            1 bar son exactamente 100.000 Pa. Por eso 1 kgf/cm² = 0,980665 bar, una diferencia cercana a
+            2 %. Muchos manuales antiguos y manómetros usan kgf/cm² y los llaman «bar» por comodidad.
+        </p>
+
+        <h3>Dónde aparece cada unidad</h3>
+        <p>Como referencia general (no son datos de un fabricante):</p>
+        <ul>
+            <li><strong>Neumáticos</strong>: psi o bar (por ejemplo, 35 psi ≈ 2,41 bar).</li>
+            <li><strong>Sistemas hidráulicos de maquinaria</strong>: bar o MPa, con valores de varios cientos de bar.</li>
+            <li><strong>Manuales de taller</strong>: torques de apriete en N·m, lb·ft o kgf·m según el origen del equipo; lb·in en tornillos pequeños.</li>
+        </ul>
+
+        <h3>Ejemplo resuelto</h3>
+        <p>
+            Un manual da la presión de un circuito hidráulico como <strong>200 bar</strong> y el manómetro
+            del taller está en psi. Además, el tornillo de una tapa pide <strong>100 lb·ft</strong> y su
+            llave está en N·m.
+        </p>
+        <ol>
+            <li>200 bar × 100 = 20.000 kPa.</li>
+            <li>En psi: 20.000 / 6,894757 = <strong>2.900,75 psi</strong>.</li>
+            <li>En MPa: 20.000 / 1.000 = <strong>20 MPa</strong>; en kgf/cm²: 20.000 / 98,0665 = <strong>203,94</strong>; en atm: <strong>197,38</strong>.</li>
+            <li>Torque: 100 lb·ft × 1,355818 = <strong>135,58 N·m</strong> (≈ 13,83 kgf·m).</li>
+            <li>El mismo torque en lb·in: 135,5818 / 0,1129848 = <strong>1.200 lb·in</strong>.</li>
+        </ol>
+        <p>
+            Si ingresa 200 bar y 100 lb·ft en la calculadora (valores por defecto) obtendrá estos resultados.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            Los factores son exactos para fines prácticos, pero los valores que se muestran se redondean a
+            cuatro decimales. Trabaje con la tolerancia que indica el manual: si el torque se da en un rango, no
+            hacen falta decimales. Si el manual da la presión como «bar» y su manómetro está en kgf/cm²,
+            la diferencia de 2 % puede ser relevante en un ajuste de válvula.
+        </p>
+
+        <h3>Errores comunes</h3>
+        <ul>
+            <li><strong>Confundir lb·ft con lb·in</strong> en una llave de torque: una diferencia de 12 veces.</li>
+            <li><strong>Redondear 1 bar = 1 atm</strong>: la diferencia es de 1,3 %.</li>
+            <li><strong>Mezclar presión manométrica y absoluta</strong> (psig y psia) en un cálculo.</li>
+            <li><strong>Tomar kgf/cm² por bar</strong> cuando se necesita precisión.</li>
+            <li><strong>Confundir lb·ft con lbf (fuerza)</strong>: el torque es fuerza por distancia, no una fuerza.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/principios-hidraulica/">Principios de la hidráulica</a></li>
+            <li><a href="/posts/fluidos-hidraulicos-propiedades-tipos-aceites/">Fluidos hidráulicos: propiedades, tipos y aceites</a></li>
+            <li><a href="/posts/que-es-un-sistema-hidraulico-en-una-excavadora/">Qué es un sistema hidráulico en una excavadora</a></li>
+            <li><a href="/herramientas/fuerza-cilindro-hidraulico/">Calculadora de fuerza de cilindro hidráulico</a></li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos psi es un bar?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                1 bar equivale a <strong>14,5 psi</strong> (14,5038 con el factor completo). A la inversa, 1 psi son 0,06895 bar. Una presión hidráulica de 200 bar corresponde a unos 2.901 psi, y 250 bar a unos 3.626 psi.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos bar son 35 psi?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                35 psi son <strong>2,41 bar</strong> (35 × 0,06894757). Es un valor típico de presión de inflado de neumáticos de vehículos livianos, como referencia.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos N·m son 100 lb·ft?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                100 lb·ft equivalen a <strong>135,6 N·m</strong> (100 × 1,355818), o 13,8 kgf·m. Al revés, 100 N·m son 73,8 lb·ft.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Es lo mismo un bar que un kgf/cm²?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                No, aunque son parecidos. 1 kgf/cm² = 98,0665 kPa = 0,98 bar, así que 1 bar es 1,0197 kgf/cm². La diferencia es de casi 2 %, que importa cuando el manual de taller da un valor ajustado.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuál es la diferencia entre lb·ft y lb·in?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Una libra-pie son <strong>12 libras-pulgada</strong>. Un torque de 25 lb·ft equivale a 300 lb·in. Confundirlos en una llave de torque apretaría el tornillo 12 veces más o 12 veces menos de lo debido. Compruebe siempre la unidad que muestra la escala.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es psig y psia?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                psig es presión manométrica (relativa a la presión atmosférica) y psia es presión absoluta (relativa al vacío). La absoluta es la manométrica más la atmosférica, unos 14,7 psi a nivel del mar. Los manómetros comunes de talleres y sistemas hidráulicos leen presión manométrica.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos MPa son 200 bar?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                <strong>20 MPa</strong>: 1 MPa = 10 bar. También equivalen a 20.000 kPa y a unos 203,9 kgf/cm².
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿1 atm es igual a 1 bar?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Son cercanos pero no iguales: 1 atm = 101,325 kPa = 1,01325 bar. Redondear una a la otra introduce un error de 1,3 %, aceptable en una estimación rápida pero no al calibrar un equipo.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

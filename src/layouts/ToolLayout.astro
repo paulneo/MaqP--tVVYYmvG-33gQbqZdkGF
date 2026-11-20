@@ -14,7 +14,7 @@
 import { Icon } from 'astro-icon/components'
 import MainGridLayout from './MainGridLayout.astro'
 import AdSlot from '../components/AdSlot.astro'
-import { CATEGORY_LABEL, CATEGORY_ICON, getToolBySlug } from '../lib/tools'
+import { CATEGORY_LABEL, CATEGORY_ICON, getToolBySlug, getActiveTools } from '../lib/tools'
 
 interface Props {
     slug: string
@@ -26,6 +26,12 @@ const tool = getToolBySlug(slug)
 if (!tool) {
     throw new Error(`Tool '${slug}' no encontrada en el registro (src/lib/tools.ts)`)
 }
+
+// Only active tools are linked, in the order declared in the registry entry.
+const activeTools = getActiveTools()
+const relatedTools = (tool.relatedTools ?? [])
+    .map((s) => activeTools.find((t) => t.slug === s))
+    .filter((t): t is NonNullable<typeof t> => Boolean(t))
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.mundoingenieria.org'
 const toolUrl = `${siteUrl}/herramientas/${tool.slug}/`
@@ -117,13 +123,13 @@ const breadcrumbJsonLd = {
         {tool.relatedPost && (
             <section class="mb-10 p-5 md:p-6 rounded-xl bg-black/[0.03] dark:bg-white/[0.04] border border-black/[0.05] dark:border-white/[0.06]">
                 <p class="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--primary)] font-semibold mb-2">
-                    Leé la guía completa
+                    Lea la guía completa
                 </p>
                 <a
                     href={`/posts/${tool.relatedPost}/`}
                     class="inline-flex items-center gap-2 text-lg md:text-xl font-bold text-[var(--deep-text)] dark:text-white/95 hover:text-[var(--primary)] transition"
                 >
-                    <span>¿Cómo se calcula? Entendé la fórmula paso a paso</span>
+                    <span>Entienda el tema a fondo con nuestra guía técnica</span>
                     <Icon name="material-symbols:arrow-forward" class="w-5 h-5" />
                 </a>
             </section>
@@ -139,13 +145,35 @@ const breadcrumbJsonLd = {
             </section>
         )}
 
+        <!-- Calculadoras relacionadas -->
+        {relatedTools.length > 0 && (
+            <section class="mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-6 text-[var(--deep-text)] dark:text-white/95">
+                    Calculadoras relacionadas
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {relatedTools.map((rt) => (
+                        <a
+                            href={`/herramientas/${rt.slug}/`}
+                            class="group p-5 rounded-xl bg-white dark:bg-white/[0.03] border border-black/[0.07] dark:border-white/[0.08] hover:border-[var(--primary)]/30 transition"
+                        >
+                            <Icon name={rt.icon} class="w-5 h-5 mb-2 text-[var(--primary)]" />
+                            <p class="font-bold leading-tight text-[var(--deep-text)] dark:text-white/95 group-hover:text-[var(--primary)] transition-colors">
+                                {rt.title}
+                            </p>
+                        </a>
+                    ))}
+                </div>
+            </section>
+        )}
+
         <!-- Multiplex antes del CTA final -->
         <AdSlot variant="multiplex" slot="1244971895" />
 
         <!-- CTA a más herramientas -->
         <section class="mt-16 pt-10 border-t border-black/[0.08] dark:border-white/[0.1] text-center">
             <p class="text-lg text-black/65 dark:text-white/65 mb-5">
-                Explorá más calculadoras técnicas
+                Explore más calculadoras técnicas
             </p>
             <a
                 href="/herramientas/"

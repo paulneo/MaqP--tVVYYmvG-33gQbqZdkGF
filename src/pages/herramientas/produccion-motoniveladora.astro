@@ -1,0 +1,161 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import ProduccionMotoniveladora from '../../components/tools/ProduccionMotoniveladora.svelte'
+---
+
+<ToolLayout slug="produccion-motoniveladora">
+    <ProduccionMotoniveladora slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula el rendimiento de una motoniveladora</h2>
+        <p>
+            Una motoniveladora trabaja por pasadas a lo largo de la vía. Su rendimiento depende
+            del ancho que realmente corta o perfila en cada pasada, de la velocidad y del tiempo
+            efectivo de trabajo. Se calcula en dos pasos:
+        </p>
+        <p class="text-center text-lg font-mono bg-black/[0.03] dark:bg-white/[0.05] p-3 rounded-lg">We = L × sen(ángulo) − traslape</p>
+        <p>
+            <code>A = v × 1000 × We × E</code> &nbsp;·&nbsp; <code>carriles = redondear hacia arriba (ancho de la vía / We)</code>
+            &nbsp;·&nbsp; <code>T = carriles × pasadas por carril × longitud / (v × E)</code>
+        </p>
+
+        <h3>Variables</h3>
+        <ul>
+            <li><strong>We</strong> = ancho efectivo por pasada (m)</li>
+            <li><strong>L</strong> = longitud de la hoja (m)</li>
+            <li><strong>ángulo</strong> = ángulo de la hoja respecto a la dirección de avance, en grados (90° es una hoja perpendicular al avance)</li>
+            <li><strong>traslape</strong> = superposición entre pasadas contiguas (m); como referencia, 0,2 a 0,4 m</li>
+            <li><strong>v</strong> = velocidad de trabajo en km/h (no la de traslado)</li>
+            <li><strong>E</strong> = eficiencia, que incluye giros, esperas y ajustes de hoja</li>
+            <li><strong>A</strong> = área trabajada por hora (m²/h)</li>
+            <li><strong>T</strong> = tiempo para completar el tramo (horas)</li>
+        </ul>
+
+        <h3>Velocidades de trabajo de referencia</h3>
+        <p>Son rangos orientativos; la velocidad real depende del equipo, el material y la exigencia de acabado.</p>
+        <ul>
+            <li><strong>Apertura de cunetas</strong>: 2 - 4 km/h</li>
+            <li><strong>Escarificado y mezcla de material</strong>: 3 - 6 km/h</li>
+            <li><strong>Nivelación y perfilado</strong>: 4 - 8 km/h</li>
+            <li><strong>Acabado fino</strong>: 5 - 10 km/h</li>
+        </ul>
+
+        <h3>Ejemplo resuelto con los valores por defecto</h3>
+        <p>
+            Se debe perfilar un tramo de 1 km de una vía de 7 m de ancho con una motoniveladora de
+            hoja de 3,7 m, inclinada a 60°, con 0,3 m de traslape. Trabaja a 4 km/h con una
+            eficiencia de 0,75 y se programan 3 pasadas por carril.
+        </p>
+        <ol>
+            <li>Ancho efectivo: We = 3,7 × sen 60° − 0,3 = 3,20 − 0,3 = <strong>2,90 m</strong>.</li>
+            <li>Área por hora: A = 4 × 1.000 × 2,90 × 0,75 = <strong>8.713 m²/h</strong>.</li>
+            <li>Carriles: 7 / 2,90 = 2,41, que se redondea a <strong>3 carriles</strong>.</li>
+            <li>Pasadas totales: 3 × 3 = <strong>9 pasadas</strong> de 1 km.</li>
+            <li>Tiempo: T = 9 × 1 / (4 × 0,75) = <strong>3,0 horas</strong>, es decir, 0,38 de una jornada de 8 horas.</li>
+        </ol>
+        <p>
+            Cada pasada recorre el kilómetro a una velocidad efectiva de 4 × 0,75 = 3 km/h, o sea
+            20 minutos. Las 9 pasadas (3 carriles con 3 pasadas cada uno) suman las 3 horas.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            El área por hora (m²/h) sirve para comparar equipos y condiciones. El tiempo del tramo
+            (horas) sirve para programar. Fíjese en el número de carriles: como se redondea hacia
+            arriba, un ancho de vía apenas mayor que un múltiplo de We puede añadir un carril
+            completo (por ejemplo, 3 carriles cubren hasta 8,7 m, pero 8,8 m exigen 4). Ajustar el
+            ángulo de la hoja o el traslape puede evitar ese carril adicional.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Usar la longitud de la hoja como ancho de trabajo</strong>: con la hoja inclinada, el ancho efectivo es menor. A 60° la hoja de 3,7 m trabaja 3,20 m, y con el traslape queda en 2,90 m.</li>
+            <li><strong>Suponer la velocidad de traslado</strong>: se trabaja con marchas lentas; la velocidad de transporte no sirve para perfilar.</li>
+            <li><strong>Olvidar el traslape</strong>: sin descontarlo se sobrestima el área. En el ejemplo, ignorarlo elevaría el rendimiento a 9.613 m²/h, un 10% más.</li>
+            <li><strong>No incluir giros y esperas</strong>: al final de cada pasada la máquina debe maniobrar; ese tiempo entra en la eficiencia.</li>
+            <li><strong>Subestimar las pasadas</strong>: una vía muy deformada, con material por mezclar o humedecer, puede requerir 4 a 6 pasadas por carril.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/bulldozer-vs-motoniveladora/">Bulldozer vs motoniveladora: diferencias y cuándo usar cada uno</a></li>
+            <li><a href="/posts/analisis-tren-fuerza-motoniveladora/">Análisis del tren de fuerza de una motoniveladora</a></li>
+            <li><a href="/posts/tipos-de-maquinaria-pesada-en-construccion/">Tipos de maquinaria pesada en construcción</a></li>
+            <li><a href="/posts/gestion-de-la-vida-util-de-maquinaria-pesada/">Gestión de la vida útil de maquinaria pesada</a></li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos m² nivela una motoniveladora por hora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Como referencia, con una hoja de 3,7 m inclinada a 60°, traslape de 0,3 m, 4 km/h y eficiencia de 0,75, la máquina cubre unos <strong>8.700 m² por hora en una pasada</strong> (unos 69.700 m² en 8 horas). El área terminada por hora es menor, porque cada carril necesita varias pasadas.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo se calcula el ancho efectivo de la hoja?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con <strong>We = L × sen(ángulo) − traslape</strong>. Con L = 3,7 m, ángulo de 60° y traslape de 0,3 m resulta 2,90 m. Si la hoja se coloca a 45°, baja a 2,32 m; a 90° (perpendicular al avance) se acerca a 3,4 m.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué velocidad de trabajo se usa para perfilar una vía?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Como referencia, entre 4 y 8 km/h para nivelación y perfilado, 2 a 4 km/h para abrir cunetas y 5 a 10 km/h en acabados finos. No use la velocidad de traslado de la máquina. Duplicar la velocidad en el ejemplo (de 4 a 8 km/h) duplica el rendimiento: 17.426 m²/h.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántas pasadas necesita una motoniveladora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del trabajo: de 2 a 6 pasadas por carril como referencia. Un perfilado de mantenimiento puede resolverse con 2 o 3; una vía muy deformada, con escarificado, mezcla y compactación posterior, requiere más. Con 5 pasadas por carril, el tramo del ejemplo pasa de 3 a 5 horas.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué se redondea el número de carriles hacia arriba?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Porque no se puede dejar una franja sin trabajar. Con un ancho efectivo de 2,90 m y una vía de 7 m se necesitan 2,41 carriles, es decir, 3 completos. El último carril puede aprovecharse con más traslape para no pasar de más.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto tarda una motoniveladora en perfilar 1 km de vía?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con los datos del ejemplo (vía de 7 m, 3 pasadas por carril, 4 km/h y E = 0,75), el tramo de 1 km requiere unas <strong>3 horas</strong>. Si la vía fuera de 10 km, serían unas 30 horas, o poco menos de 4 jornadas de 8 horas.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo afecta el ángulo de la hoja al rendimiento?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Un ángulo mayor (más cerca de 90°) aumenta el ancho efectivo y el rendimiento en m²/h, pero la hoja desplaza menos material lateralmente. Para cortar o mover material se usan ángulos menores, y para el acabado, ángulos mayores. La calculadora le permite ver el efecto directo sobre el tiempo del tramo.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué hago si el ancho efectivo resulta cero o negativo?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Significa que el traslape es mayor que la proyección de la hoja sobre el ancho de trabajo (L × sen del ángulo). Aumente el ángulo de la hoja, reduzca el traslape o revise la longitud de la hoja. La calculadora no entrega un resultado hasta que el ancho efectivo sea positivo.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

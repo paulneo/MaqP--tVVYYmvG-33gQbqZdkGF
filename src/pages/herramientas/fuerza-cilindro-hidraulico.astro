@@ -1,0 +1,172 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import FuerzaCilindroHidraulico from '../../components/tools/FuerzaCilindroHidraulico.svelte'
+---
+
+<ToolLayout slug="fuerza-cilindro-hidraulico">
+    <FuerzaCilindroHidraulico slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula la fuerza de un cilindro hidráulico</h2>
+        <p>
+            La fuerza que entrega un cilindro hidráulico es el producto de la presión del aceite por el
+            área sobre la que actúa. Al extenderse, el aceite empuja el émbolo completo; al
+            retraerse, solo actúa sobre la corona que deja libre el vástago.
+        </p>
+        <p>
+            <code>F = p × A</code>
+        </p>
+        <p>
+            <code>A émbolo = π × D² / 4</code> &nbsp;·&nbsp; <code>A anular = π × (D² − d²) / 4</code>
+        </p>
+        <p>
+            <code>v = Q / A</code> &nbsp;·&nbsp; <code>t = carrera / v</code>
+        </p>
+
+        <h3>Variables</h3>
+        <ul>
+            <li><strong>F</strong> = fuerza en newtons (se muestra en kN y en toneladas-fuerza)</li>
+            <li><strong>p</strong> = presión de trabajo; 1 bar = 0,1 N/mm²</li>
+            <li><strong>A</strong> = área efectiva en mm² (émbolo para empujar, anular para retraer)</li>
+            <li><strong>D</strong> = diámetro interior del cilindro (émbolo) en mm</li>
+            <li><strong>d</strong> = diámetro del vástago en mm</li>
+            <li><strong>Q</strong> = caudal de la bomba (1 L/min = 16.667 mm³/s)</li>
+            <li><strong>v</strong> = velocidad del vástago en mm/s</li>
+        </ul>
+
+        <h3>Manejo de unidades</h3>
+        <p>
+            La calculadora acepta la presión en bar, psi o MPa y la convierte a bar: 1 psi = 0,06894757 bar y
+            1 MPa = 10 bar. Con la presión en N/mm² y el área en mm², el producto sale directamente en
+            newtons. Para pasar a toneladas-fuerza se divide la fuerza en kN entre 9,80665.
+        </p>
+
+        <h3>Por qué la retracción es más débil pero más rápida</h3>
+        <p>
+            El vástago le quita área al lado donde entra el aceite durante la retracción. Con menos área, la
+            misma presión genera menos fuerza. Y con el mismo caudal, un área menor se llena antes, por lo
+            que el vástago se mueve más rápido. La relación entre ambas áreas (émbolo dividido entre anular)
+            indica cuánto cambia: con los valores por defecto es 1,46, de modo que la extensión es 1,46 veces
+            más fuerte y la retracción 1,46 veces más rápida.
+        </p>
+
+        <h3>Ejemplo resuelto</h3>
+        <p>
+            Cilindro de <strong>100 mm de émbolo</strong> y <strong>56 mm de vástago</strong>, con
+            <strong>200 bar</strong> de presión, <strong>60 L/min</strong> de caudal y
+            <strong>500 mm</strong> de carrera (son los valores por defecto de la calculadora).
+        </p>
+        <ol>
+            <li>Área del émbolo: π × 100² / 4 = 7.854 mm² = <strong>78,54 cm²</strong>.</li>
+            <li>Área anular: π × (100² − 56²) / 4 = 5.391 mm² = <strong>53,91 cm²</strong>.</li>
+            <li>Empuje: 20 N/mm² × 7.854 mm² = 157.080 N = <strong>157,1 kN ≈ 16,0 tf</strong>.</li>
+            <li>Tracción: 20 N/mm² × 5.391 mm² = <strong>107,8 kN ≈ 11,0 tf</strong>.</li>
+            <li>Caudal: 60 L/min = 1.000.000 mm³/s. Velocidad de extensión: 1.000.000 / 7.854 = <strong>127,3 mm/s</strong>.</li>
+            <li>Velocidad de retracción: 1.000.000 / 5.391 = <strong>185,5 mm/s</strong>.</li>
+            <li>Tiempos: 500 / 127,3 = <strong>3,93 s</strong> para extender y 500 / 185,5 = <strong>2,70 s</strong> para retraer.</li>
+        </ol>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            Los valores son <strong>teóricos</strong>. La fuerza real disponible es menor por la fricción de
+            sellos y guías, la contrapresión del retorno y las caídas de presión en válvulas y mangueras.
+            Además, la presión nunca supera el ajuste de la válvula de alivio: si el cálculo da una fuerza
+            superior a la que su circuito puede alcanzar con ese alivio, manda el alivio. Use la fuerza de
+            la calculadora para dimensionar y compare con la capacidad de la máquina antes de decidir. Las
+            velocidades también son teóricas: no consideran las fugas internas ni las restricciones de la
+            válvula direccional.
+        </p>
+
+        <h3>Errores comunes</h3>
+        <ul>
+            <li><strong>Usar el área del lado del vástago para calcular el empuje</strong>: el empuje usa el área completa del émbolo.</li>
+            <li><strong>Mezclar psi y bar</strong>: un manómetro en psi marca 14,5 veces más que uno en bar para la misma presión. Verifique también que sea presión manométrica.</li>
+            <li><strong>Ignorar la presión del alivio</strong>: la presión de la bomba o del manómetro nominal no es la que alcanza el cilindro si el alivio abre antes.</li>
+            <li><strong>Confundir toneladas-fuerza con kN</strong>: 1 tf = 9,80665 kN, no 1 kN.</li>
+            <li><strong>Olvidar el diámetro del vástago en la retracción</strong>: un vástago grueso reduce bastante la fuerza de tracción.</li>
+            <li><strong>Esperar la fuerza teórica en la práctica</strong>: descuente fricción y pérdidas.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/principios-hidraulica/">Principios de la hidráulica</a></li>
+            <li><a href="/posts/cilindros-hidraulicos-simple-doble-efecto/">Cilindros hidráulicos de simple y doble efecto</a></li>
+            <li><a href="/posts/que-es-un-sistema-hidraulico-en-una-excavadora/">Qué es un sistema hidráulico en una excavadora</a></li>
+            <li><a href="/posts/bombas-hidraulicas/">Bombas hidráulicas</a></li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántas toneladas empuja un cilindro de 100 mm a 200 bar?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Un émbolo de 100 mm tiene un área de 78,54 cm². A 200 bar la fuerza teórica de empuje es <strong>157,1 kN</strong>, es decir, unas <strong>16,0 toneladas-fuerza</strong> (157,1 / 9,80665). A 250 bar serían unas 20,0 tf. La fuerza real es algo menor por la fricción de los sellos.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo se calcula la fuerza de un cilindro hidráulico?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con <strong>F = p × A</strong>: presión por área efectiva. Si la presión está en bar, multiplíquela por 0,1 para obtener N/mm² y use el área en mm²; el resultado queda en newtons. Para el empuje se usa el área completa del émbolo y para la retracción el área anular (émbolo menos vástago).
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué el cilindro retrae con menos fuerza que cuando extiende?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Porque en la retracción el aceite actúa sobre el lado del vástago, cuya área es menor: el vástago ocupa parte de la superficie del émbolo. Con 100 mm de émbolo y 56 mm de vástago, el área anular es 53,91 cm² contra 78,54 cm², así que a 200 bar la retracción entrega 107,8 kN (11,0 tf) frente a 157,1 kN (16,0 tf) del empuje.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos litros por minuto necesito para una velocidad dada?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                La velocidad es <strong>v = Q / A</strong>. Despejando, Q = A × v. Para mover un émbolo de 100 mm a 200 mm/s hacen falta unos <strong>94,2 L/min</strong> en la extensión. Si el caudal disponible es menor, el cilindro irá más lento; la fuerza no cambia, porque depende de la presión.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué presión necesito para empujar 10 toneladas con un cilindro de 100 mm?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Se despeja p = F / A. Una carga de 10 tf equivale a 98,07 kN; dividida entre 7.854 mm² da 12,49 N/mm², es decir, unos <strong>124,9 bar</strong>. Conviene dejar margen sobre ese valor para vencer la fricción y las pérdidas de la línea.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿La fuerza real es igual a la que muestra la calculadora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                No. La calculadora entrega la fuerza <strong>teórica</strong>. En la práctica hay fricción de sellos y guías, contrapresión en la línea de retorno y caída de presión en válvulas y mangueras, de modo que la fuerza disponible es menor. Además, la válvula de alivio fija la presión máxima: aunque la bomba pueda dar más, el cilindro no empuja más que lo que permite el ajuste del alivio.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuál es la diferencia entre kN y toneladas-fuerza?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                El kilonewton (kN) es la unidad del Sistema Internacional. La tonelada-fuerza (tf) es el peso de una tonelada de masa bajo la gravedad estándar: 1 tf = 9,80665 kN. Por eso 157,1 kN son 16,0 tf y no 157,1 toneladas. No debe confundirse con la tonelada de masa de una carga.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué potencia hidráulica consume el cilindro?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                La potencia hidráulica en kW es <strong>P = p × Q / 600</strong>, con la presión en bar y el caudal en L/min. Con 200 bar y 60 L/min resultan 20 kW, que es lo que la bomba debe entregar como mínimo en forma de flujo y presión; la potencia del motor que la mueve es mayor por el rendimiento de la bomba.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

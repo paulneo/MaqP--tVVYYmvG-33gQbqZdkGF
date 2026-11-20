@@ -1,0 +1,198 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import EsponjamientoSuelos from '../../components/tools/EsponjamientoSuelos.svelte'
+---
+
+<ToolLayout slug="esponjamiento-de-suelos">
+    <EsponjamientoSuelos slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Esponjamiento y contracción del suelo: banco, suelto y compactado</h2>
+        <p>
+            Un mismo material ocupa volúmenes distintos según su estado. Al excavarlo se
+            aflojan las partículas y aparecen vacíos; al compactarlo en un relleno esos
+            vacíos se reducen. Por eso un proyecto de movimiento de tierras maneja tres
+            volúmenes del mismo suelo:
+        </p>
+        <ul>
+            <li><strong>Banco (m³ b)</strong>: el material en su lugar natural, sin excavar. Es el volumen que miden los planos y se paga normalmente en el presupuesto.</li>
+            <li><strong>Suelto (m³ s)</strong>: el material ya excavado. Es el que carga el cucharón y el que transporta el volquete.</li>
+            <li><strong>Compactado (m³ c)</strong>: el material colocado y compactado en el relleno o terraplén.</li>
+        </ul>
+
+        <h3>Fórmulas</h3>
+        <p class="text-center text-lg font-mono bg-black/[0.03] dark:bg-white/[0.05] p-3 rounded-lg">
+            V<sub>s</sub> = V<sub>b</sub> × (1 + E) &nbsp;·&nbsp; V<sub>c</sub> = V<sub>b</sub> × F<sub>c</sub> &nbsp;·&nbsp; F<sub>carga</sub> = 1 / (1 + E)
+        </p>
+        <ul>
+            <li><strong>E</strong> = porcentaje de esponjamiento expresado en decimal (25% = 0,25).</li>
+            <li><strong>Fc</strong> = relación entre el volumen compactado y el de banco. En tierra y arcilla es menor que 1 (0,80-0,95), porque el relleno compactado queda más denso que el terreno natural. En roca volada es mayor que 1 (aprox. 1,3): una roca fragmentada nunca vuelve a ocupar tan poco espacio como en banco.</li>
+            <li><strong>Factor de carga</strong> = m³ de banco que corresponden a 1 m³ suelto. Sirve para pasar de la capacidad de un volquete a lo que realmente retira del terreno.</li>
+        </ul>
+        <p>
+            La calculadora convierte siempre a través del volumen en banco. Si usted
+            ingresa un volumen suelto, lo divide entre (1 + E); si ingresa uno compactado, lo
+            divide entre Fc. Después calcula los otros dos estados. Los viajes de volquete
+            son V<sub>s</sub> ÷ capacidad del camión, redondeado hacia arriba.
+        </p>
+
+        <h3>Valores de referencia</h3>
+        <p>
+            Valores de referencia; varían con la humedad y la granulometría; para obra use
+            ensayos. Son rangos típicos de la literatura de movimiento de tierras, no datos
+            de un fabricante ni de un suelo específico.
+        </p>
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left">
+                <thead>
+                    <tr>
+                        <th class="py-2 pr-4">Material</th>
+                        <th class="py-2 pr-4">Esponjamiento típico</th>
+                        <th class="py-2 pr-4">Valor de la calculadora</th>
+                        <th class="py-2">Fc (compactado / banco)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="py-1 pr-4">Arena y grava</td><td class="py-1 pr-4">10-15%</td><td class="py-1 pr-4">12%</td><td class="py-1">0,95</td></tr>
+                    <tr><td class="py-1 pr-4">Tierra común</td><td class="py-1 pr-4">20-30%</td><td class="py-1 pr-4">25%</td><td class="py-1">0,90</td></tr>
+                    <tr><td class="py-1 pr-4">Arcilla</td><td class="py-1 pr-4">30-40%</td><td class="py-1 pr-4">35%</td><td class="py-1">0,90</td></tr>
+                    <tr><td class="py-1 pr-4">Roca volada</td><td class="py-1 pr-4">50-65%</td><td class="py-1 pr-4">60%</td><td class="py-1">1,30</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>
+            Seleccione «Personalizado» en la calculadora si dispone de ensayos propios de
+            densidad en banco y suelta. El esponjamiento se obtiene también de las
+            densidades: E = (densidad en banco ÷ densidad suelta) − 1.
+        </p>
+
+        <h3>Ejemplo resuelto (valores por defecto)</h3>
+        <p>
+            Se excavan <strong>1.000 m³ en banco</strong> de tierra común (E = 25%, Fc = 0,90)
+            y se transportan en volquetes de 12 m³.
+        </p>
+        <ol>
+            <li>Volumen suelto: 1.000 × (1 + 0,25) = <strong>1.250 m³</strong>.</li>
+            <li>Volumen compactado: 1.000 × 0,90 = <strong>900 m³</strong>.</li>
+            <li>Factor de carga: 1 / 1,25 = <strong>0,800</strong>.</li>
+            <li>Viajes: 1.250 / 12 = 104,17, es decir <strong>105 viajes</strong>.</li>
+        </ol>
+        <p>
+            Para el caso inverso: un terraplén requiere 500 m³ compactados de la misma
+            tierra. Material en banco necesario: 500 / 0,90 = 555,6 m³; volumen suelto a
+            transportar: 555,6 × 1,25 = 694,4 m³, es decir 58 viajes de 12 m³. Con el mismo
+            material en roca volada (E = 60%, Fc = 1,30), 1.000 m³ en banco serían 1.600 m³
+            sueltos y 1.300 m³ en el relleno.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            Use el volumen en banco para pagar la excavación, el suelto para dimensionar
+            equipos de carga y transporte, y el compactado para el relleno. Si el volumen
+            compactado que usted necesita es mayor que el que obtiene de la excavación,
+            tendrá que traer material de préstamo; si sobra, deberá disponerse como
+            excedente. En arena y grava el cambio de volumen es pequeño; en arcilla y roca
+            es considerable. Estos valores son compatibles con la referencia de 1,2-1,4 de
+            esponjamiento que se usa en la
+            <a href="/herramientas/rendimiento-de-excavadora/">calculadora de rendimiento de excavadora</a>.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Aplicar el esponjamiento a un relleno compactado</strong>: el esponjamiento relaciona banco con suelto; para pasar a compactado se usa Fc, no E.</li>
+            <li><strong>Suponer que la roca compactada ocupa menos que en banco</strong>: la roca volada compactada ocupa más (Fc &gt; 1), a diferencia de la tierra.</li>
+            <li><strong>Mezclar los m³ del proyecto con los m³ del camión</strong>: el proyecto está en banco y el camión transporta suelto. Cuente los viajes sobre el volumen suelto.</li>
+            <li><strong>Usar un solo valor para todo el perfil</strong>: arena, arcilla y roca alteran el resultado; calcule por estratos.</li>
+            <li><strong>Ignorar la humedad</strong>: una arcilla muy húmeda o una arena saturada cambian el esponjamiento y la densidad. Conviene medir en el sitio.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/tipos-de-suelo-en-ingenieria-civil/">Tipos de suelo en ingeniería civil</a></li>
+            <li><a href="/posts/rodillo-compactador/">Rodillo compactador</a></li>
+            <li><a href="/posts/que-es-una-excavadora/">Qué es una excavadora</a></li>
+            <li><a href="/posts/diferencia-retroexcavadora-cargador-frontal/">Diferencia entre retroexcavadora y cargador frontal</a></li>
+        </ul>
+        <p>
+            Calculadoras relacionadas:
+            <a href="/herramientas/numero-de-volquetes-por-excavadora/">número de volquetes por excavadora</a>,
+            <a href="/herramientas/rendimiento-de-excavadora/">rendimiento de excavadora</a> y
+            <a href="/herramientas/produccion-bulldozer/">producción de bulldozer</a>.
+        </p>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto se esponja la tierra al excavarla?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Como referencia, la tierra común se esponja alrededor de 25% (rango 20-30%), la arcilla entre 30 y 40%, la arena y grava entre 10 y 15%, y la roca volada entre 50 y 65%. Son valores de referencia; el dato real depende de la humedad y la granulometría, y se obtiene con ensayos.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos m³ de tierra suelta salen de 1 m³ en banco?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del material. Con tierra común (25%) salen 1,25 m³ sueltos; con arcilla (35%), 1,35 m³; con arena y grava (12%), 1,12 m³; con roca volada (60%), 1,60 m³. Para 1.000 m³ de tierra común en banco, son 1.250 m³ sueltos.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué diferencia hay entre m³ banco, suelto y compactado?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Banco es el material en su lugar natural, suelto es el material ya excavado y compactado es el material colocado en el relleno. Son el mismo suelo en tres estados, con distinto volumen. El presupuesto suele medirse en banco; los camiones y excavadoras trabajan en suelto; el relleno se mide compactado.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo se calcula el volumen de tierra a transportar?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Multiplique el volumen en banco por (1 + esponjamiento). Si solo conoce el volumen compactado del relleno, primero divídalo entre Fc para obtenerlo en banco. Con 500 m³ compactados de tierra común (Fc = 0,90) necesita 555,6 m³ en banco y 694,4 m³ sueltos para transportar.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es el factor de carga?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Es el inverso de (1 + esponjamiento): cuántos m³ de banco equivalen a 1 m³ suelto. Con 25% de esponjamiento vale 0,80. Si un volquete lleva 12 m³ sueltos, retira 9,6 m³ en banco.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué la roca compactada ocupa más que en banco?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Porque al volar la roca se obtienen bloques de formas y tamaños irregulares que, aun compactados, dejan muchos vacíos entre sí, y la roca en banco es un macizo con muy pocos. Por eso Fc es mayor que 1 (aprox. 1,3 como referencia) y un relleno de roca necesita más volumen que el que se excavó en banco.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos viajes de volquete necesito para mover un volumen?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Convierta el volumen a suelto y divídalo entre la capacidad del volquete, redondeando hacia arriba. Con 1.250 m³ sueltos y volquetes de 12 m³ son 105 viajes. Para saber cuántos volquetes necesita trabajando a la vez, use la calculadora de número de volquetes por excavadora.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Se compacta más la arcilla o la arena?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del contenido de humedad y del equipo de compactación; los valores de Fc de la tabla (0,90 para arcilla, 0,95 para arena y grava) son referenciales. Para el control en obra se usa la densidad seca máxima del ensayo Proctor, no un factor genérico.
+            </p>
+        </details>
+
+    </div>
+</ToolLayout>

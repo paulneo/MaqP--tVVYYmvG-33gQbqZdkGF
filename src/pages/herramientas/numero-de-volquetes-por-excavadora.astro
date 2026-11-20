@@ -1,0 +1,187 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import NumeroVolquetes from '../../components/tools/NumeroVolquetes.svelte'
+---
+
+<ToolLayout slug="numero-de-volquetes-por-excavadora">
+    <NumeroVolquetes slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo se calcula el número de volquetes por excavadora</h2>
+        <p>
+            El número de volquetes (también llamados camiones de volteo, camiones tolva o
+            dumpers) que necesita una excavadora sale de comparar cuánto tarda en cargarse
+            un camión con lo que tarda el camión en completar su viaje. Si el camión regresa
+            antes de que la excavadora haya terminado con el anterior, hay cola; si
+            tarda más, la excavadora se detiene.
+        </p>
+        <p>
+            <code>N = T<sub>ciclo del camión</sub> / T<sub>carga</sub></code>
+        </p>
+
+        <h3>Variables</h3>
+        <ul>
+            <li><strong>Carga por pase</strong> = cucharón × factor de llenado (m³ sueltos por ciclo de la excavadora).</li>
+            <li><strong>Límite de carga del camión</strong> = el menor entre la capacidad de la tolva (m³ sueltos) y la carga útil en toneladas dividida entre la densidad del material suelto (t/m³).</li>
+            <li><strong>Pases n</strong> = límite de carga ÷ carga por pase, redondeado hacia arriba. Se redondea porque la excavadora no puede dar fracciones de pase: el último cucharón puede ir parcialmente lleno o descargarse solo en parte, y la carga real nunca supera el límite de volumen ni de peso.</li>
+            <li><strong>Tiempo de carga</strong> = n × ciclo de la excavadora ÷ 60 (en minutos).</li>
+            <li><strong>Ciclo del camión</strong> = carga + ida cargado (distancia ÷ velocidad) + descarga + regreso vacío + maniobra y espera en el frente.</li>
+            <li><strong>Factor de acoplamiento (MF)</strong> = (N elegido × tiempo de carga) ÷ ciclo del camión.</li>
+        </ul>
+
+        <h3>Factor de acoplamiento</h3>
+        <p>
+            El MF indica qué tan bien se corresponden la excavadora y la flota. Con
+            <strong>MF &lt; 1</strong> hay menos camiones de los necesarios y la excavadora
+            espera; con <strong>MF &gt; 1</strong> sobran camiones y se forma cola en el
+            frente de carga; <strong>MF = 1</strong> es el equilibrio ideal, difícil de
+            lograr con números enteros de camiones. En la práctica, un MF ligeramente mayor
+            que 1 suele preferirse, porque la excavadora es la máquina más cara de la
+            cadena y conviene que no pare.
+        </p>
+
+        <h3>Producción de la flota</h3>
+        <p>
+            La producción de la excavadora es la carga por camión ÷ tiempo de carga (por
+            hora). La de los camiones es N × carga ÷ ciclo (por hora). La producción de la
+            flota es la menor de las dos, en m³ sueltos por hora. Supuesto de la
+            calculadora: son valores teóricos, sin factores de eficiencia más allá de los
+            tiempos que usted ingresa; multiplique por su eficiencia horaria y de operador
+            (por ejemplo, como en la
+            <a href="/herramientas/rendimiento-de-excavadora/">calculadora de rendimiento de excavadora</a>)
+            para obtener un valor de planificación.
+        </p>
+
+        <h3>Ejemplo resuelto (valores por defecto)</h3>
+        <p>
+            Volquete de 15 m³ y 25 t de carga útil, material suelto de 1,6 t/m³, cucharón de
+            1,2 m³ con llenado 0,9, ciclo de la excavadora de 22 s, acarreo de 3 km a
+            30 km/h cargado y 40 km/h vacío, descarga de 1,5 min y maniobra de 1 min.
+        </p>
+        <ol>
+            <li>Carga por pase: 1,2 × 0,9 = <strong>1,08 m³</strong>.</li>
+            <li>Límite por peso: 25 / 1,6 = 15,625 m³. Límite por volumen: 15 m³. Manda el menor: <strong>15 m³</strong> (volumen de la tolva).</li>
+            <li>Pases: 15 / 1,08 = 13,89, es decir <strong>14 pases</strong>. Con 14 pases entrarían 15,12 m³, pero la carga real se limita a <strong>15 m³</strong>.</li>
+            <li>Tiempo de carga: 14 × 22 / 60 = <strong>5,13 min</strong>.</li>
+            <li>Ida: 3 / 30 × 60 = 6 min. Regreso: 3 / 40 × 60 = 4,5 min.</li>
+            <li>Ciclo del camión: 5,13 + 6 + 1,5 + 4,5 + 1 = <strong>18,13 min</strong>.</li>
+            <li>Camiones: 18,13 / 5,13 = <strong>3,53</strong>, que se redondea a <strong>4 volquetes</strong>.</li>
+            <li>MF con 4 camiones: 4 × 5,13 / 18,13 = <strong>1,13</strong> (los camiones esperan un poco). Con 3 camiones sería 0,85 (la excavadora esperaría).</li>
+            <li>Producción de la excavadora: 15 / 5,13 × 60 = <strong>175,3 m³/h</strong>. Con 4 camiones: 4 × 15 / 18,13 × 60 = 198,5 m³/h. La flota produce el menor: <strong>175,3 m³/h</strong>. Con 3 camiones bajaría a 148,9 m³/h.</li>
+        </ol>
+        <p>
+            Si el volquete fuera de 20 m³ pero con la misma carga útil de 25 t, el límite lo
+            pondría el peso: 25 / 1,6 = 15,625 m³ y 15 pases, de modo que parte de la
+            tolva viajaría vacía. Es un caso frecuente con materiales densos.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            El número exacto (3,53) indica cuánto se acerca a un entero. Con 4 camiones la
+            excavadora trabaja sin esperas y la flota queda limitada por ella; añadir un
+            quinto camión no sube la producción, solo suma costo. Con 3 camiones, la
+            excavadora queda parada cerca de un 15% del tiempo. Si en su obra el tiempo
+            real de acarreo es incierto (tráfico, rampa, clima), tome un camión adicional
+            como reserva solo cuando el costo de parar la excavadora supere el del camión.
+            Use el campo «Volquetes disponibles» para evaluar la flota que ya tiene.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Usar m³ en banco para el camión</strong>: la capacidad del volquete y el cucharón se miden en volumen suelto; el volumen del proyecto, en banco. Convierta con la <a href="/herramientas/esponjamiento-de-suelos/">calculadora de esponjamiento</a>.</li>
+            <li><strong>Ignorar el límite de peso</strong>: con roca o suelo húmedo, el camión alcanza la carga útil antes de llenar la tolva.</li>
+            <li><strong>Olvidar los tiempos de maniobra y espera</strong>: posicionarse bajo el cucharón y salir del frente pueden sumar 1-2 minutos por viaje.</li>
+            <li><strong>Usar la velocidad máxima del camión</strong>: la velocidad media de recorrido incluye curvas, rampas, cruces y pistas en mal estado, y es bastante menor.</li>
+            <li><strong>Redondear hacia abajo</strong>: con 3,53 camiones, tres no bastan; la excavadora esperaría. El número de pases también se redondea hacia arriba.</li>
+            <li><strong>No variar el acarreo</strong>: si el frente avanza, la distancia crece y el número de camiones debe recalcularse.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="/posts/que-es-una-excavadora/">Qué es una excavadora</a></li>
+            <li><a href="/posts/diferencia-retroexcavadora-cargador-frontal/">Diferencia entre retroexcavadora y cargador frontal</a></li>
+            <li><a href="/posts/anatomia-camion-minero/">Anatomía de un camión minero</a></li>
+            <li><a href="/posts/tipos-de-suelo-en-ingenieria-civil/">Tipos de suelo en ingeniería civil</a></li>
+        </ul>
+        <p>
+            Calculadoras relacionadas:
+            <a href="/herramientas/rendimiento-de-excavadora/">rendimiento de excavadora</a>,
+            <a href="/herramientas/esponjamiento-de-suelos/">esponjamiento de suelos</a> y
+            <a href="/herramientas/produccion-bulldozer/">producción de bulldozer</a>.
+        </p>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos volquetes necesita una excavadora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del ciclo del volquete y del tiempo de carga: N = ciclo del camión ÷ tiempo de carga, redondeado hacia arriba. Con una excavadora de cucharón de 1,2 m³, volquetes de 15 m³ y 3 km de acarreo, salen unos 4 volquetes. Con 1 km de acarreo bastarían 3; con 10 km serían 9, de modo que el número crece rápido con la distancia.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos pases de cucharón llenan un volquete?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Divida el volumen útil del camión entre lo que carga la excavadora por pase (cucharón × factor de llenado) y redondee hacia arriba. Con 15 m³ y 1,08 m³ por pase son 14 pases. Cuanto más pequeño es el cucharón respecto del camión, más pases se necesitan y más se alarga el tiempo de carga, lo que hace subir el número de volquetes para el mismo acarreo.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es el factor de acoplamiento (match factor)?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Es la relación entre la capacidad de carga de la flota y la de la excavadora: MF = (camiones × tiempo de carga) ÷ ciclo del camión. Si es menor que 1, la excavadora espera camiones; si es mayor que 1, los camiones esperan turno. Un valor algo superior a 1 (por ejemplo 1,1) es habitual cuando se quiere que la excavadora no pare.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué importa el límite de peso del camión?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Porque un volquete puede estar lleno de peso antes que de volumen. Un volquete de 12 m³ con material suelto de 1,6 t/m³ lleva 19,2 t, y si su carga útil es de 18 t no puede llenarse. Cargarlo de más acorta la vida útil del camión y puede ser inseguro. La calculadora toma el menor entre el límite de volumen y el de peso.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo estimo el ciclo de un volquete?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sume el tiempo de carga, el de ida cargado, la descarga, el regreso vacío y la maniobra. Para el viaje, divida distancia entre velocidad media (no la máxima). Lo más confiable es cronometrar algunos ciclos reales en la obra y ajustar los tiempos de la calculadora con ellos.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuántos m³ por hora produce una flota de volquetes?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                La menor entre la producción de la excavadora y la de los camiones. En el ejemplo, 4 volquetes de 15 m³ con ciclo de 18,13 min pueden mover 198,5 m³/h, pero la excavadora solo carga 175,3 m³/h; la flota produce 175,3 m³/h sueltos. Esa cifra es teórica: aplique su eficiencia horaria y de operador.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué pasa si hay más volquetes de los necesarios?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                La excavadora no produce más: los camiones sobrantes hacen cola. El factor de acoplamiento supera 1 y se paga tiempo de máquina inactiva. Un volquete de reserva puede justificarse si el acarreo es muy variable, pero conviene medir cuánto cuesta esa espera.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿La calculadora sirve para cargador frontal o retroexcavadora?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, siempre que cargue por ciclos. Introduzca el cucharón y el tiempo de ciclo del equipo (en un cargador frontal suele ser mayor, por el desplazamiento entre la pila y el camión). El resto del cálculo no cambia.
+            </p>
+        </details>
+    </div>
+</ToolLayout>
