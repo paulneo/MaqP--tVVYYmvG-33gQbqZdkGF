@@ -303,6 +303,11 @@ avanzando; al bajar, en reversa. Con la carga cuesta abajo, las ruedas
 direccionales pueden quedar sin peso y la carga puede caer o volcar el
 equipo.
 
+<figure class="photo">
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/montacargas/montacargas-seguridad-estabilidad-inspeccion-operacion-foto" alt="Montacargas a gas LP transportando dos tarimas apiladas de cajas dentro de un almacén." width="1200" height="798" loading="lazy" decoding="async" style="width:100%;height:auto" />
+<figcaption>Montacargas a gas LP con dos tarimas apiladas. Si la carga tapa la vista hacia adelante, se circula en reversa. Foto: <a href="https://commons.wikimedia.org/wiki/File:FEMA_-_37931_-_Meals_Ready_to_Eat_being_moved_by_fork_lift_in_a_Texas_warehouse.jpg" rel="noopener" target="_blank">Patsy Lynch / FEMA</a>, dominio público, vía Wikimedia Commons.</figcaption>
+</figure>
+
 ## Peatones
 
 El manual recomienda bocina en intersecciones, alarma de retroceso y luces

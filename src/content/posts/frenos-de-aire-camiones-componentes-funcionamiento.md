@@ -318,6 +318,11 @@ estacionamiento encapsulado, con el candado de anclaje de las cámaras tipo
 
 La cámara de resorte nunca se desarma: si está dañada, se reemplaza completa.
 
+<figure class="photo">
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/frenos/frenos-de-aire-camiones-componentes-funcionamiento-foto" alt="Cámara de freno de aire doble con freno de resorte de un camión, con sus espárragos de montaje." width="900" height="1200" loading="lazy" decoding="async" style="width:100%;max-width:420px;height:auto;margin-inline:auto;display:block" />
+<figcaption>Cámara de freno doble: la sección con los espárragos de montaje es la de servicio; el cilindro posterior aloja el resorte del freno de estacionamiento. Foto: <a href="https://commons.wikimedia.org/wiki/File:Spring_brake_air_cylinder.jpg" rel="noopener" target="_blank">Panoha</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es" rel="license noopener" target="_blank">CC BY-SA 3.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 ## Las válvulas del sistema
 
 El curso dedica la mayor parte de sus láminas a las válvulas. Todas trabajan

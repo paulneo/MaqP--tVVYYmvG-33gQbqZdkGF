@@ -73,6 +73,11 @@ El propio curso destaca un uso que se olvida a menudo: cambiando el piñón y la
 corona se modifica el **desarrollo final** de la transmisión, es decir, cuántas
 vueltas da la rueda por cada vuelta del motor en una marcha dada.
 
+<figure class="photo">
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/transmisiones/diferencial-automotriz-tipos-componentes-funcionamiento-foto" alt="Diferencial trasero en corte que muestra la corona, la caja de satélites y los engranajes planetarios." width="1200" height="1094" loading="lazy" decoding="async" style="width:100%;height:auto" />
+<figcaption>Diferencial trasero en corte: la corona va unida a la caja de satélites, que aloja los satélites y los planetarios. Foto: <a href="https://commons.wikimedia.org/wiki/File:Differentialgetriebe_Hinterachse_Porsche_Cayenne.jpg" rel="noopener" target="_blank">Dr. Mirko Junge</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es" rel="license noopener" target="_blank">CC BY-SA 3.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 ## Dónde va montado
 
 La posición depende de la arquitectura del vehículo, y el curso muestra los

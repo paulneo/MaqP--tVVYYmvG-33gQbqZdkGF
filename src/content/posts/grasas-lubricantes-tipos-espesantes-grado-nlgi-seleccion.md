@@ -398,6 +398,11 @@ Una buena grasa mal aplicada rinde como una mala. Las reglas de taller:
 - **Almacenamiento:** envases cerrados, bajo techo y rotulados. Mucha
   separación de aceite o un cambio de color indican producto degradado.
 
+<figure class="photo">
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/lubricacion/grasas-lubricantes-tipos-espesantes-grado-nlgi-seleccion-foto" alt="Técnico aplicando grasa con una engrasadora manual en una grasera del tren de rodaje de una excavadora." width="1200" height="795" loading="lazy" decoding="async" style="width:100%;height:auto" />
+<figcaption>Engrase manual de una grasera en el tren de rodaje de una excavadora. Foto: <a href="https://commons.wikimedia.org/wiki/File:US_Navy_080826-A-1497L-012_Constructionman_3rd_Class_Chance_Keifer_greases_the_tracks_of_a_land_excavator.jpg" rel="noopener" target="_blank">U.S. Army, Pfc. Eric Liesse</a>, dominio público, vía Wikimedia Commons.</figcaption>
+</figure>
+
 ## Errores comunes
 
 - **Elegir solo por el grado NLGI.** El número no dice nada del aceite base,

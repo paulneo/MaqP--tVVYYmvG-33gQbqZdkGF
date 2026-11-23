@@ -65,6 +65,11 @@ y tercera la fuerza disponible es menor, pero se alcanzan velocidades mayores.
 De ahí sale una regla de operación: se empuja en primera y se retrocede en una
 marcha más rápida para acortar el ciclo.
 
+<figure class="photo">
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/bulldozer/tractores-de-cadenas-bulldozer-aplicaciones-configuraciones-ripper-foto" alt="Tractor de cadenas de gran tamaño en una mina, con hoja frontal y ripper trasero visibles." width="1200" height="674" loading="lazy" decoding="async" style="width:100%;height:auto" />
+<figcaption>Tractor de cadenas trabajando en una mina a cielo abierto, con la hoja al frente y el ripper atrás. Foto: <a href="https://commons.wikimedia.org/wiki/File:Narva_mine_bulldozer_2.jpg" rel="noopener" target="_blank">Siim Roov</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" rel="license noopener" target="_blank">CC BY-SA 4.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 ## La línea de modelos del curso
 
 El curso llama "sopa de letras" a la nomenclatura y divide la línea en dos

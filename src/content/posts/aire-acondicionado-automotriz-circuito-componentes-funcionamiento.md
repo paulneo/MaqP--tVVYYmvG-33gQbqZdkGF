@@ -408,6 +408,11 @@ Antes de recargar, recuerde que un circuito al que le falta fluido tiene una
 fuga. Para localizarla y entender juntas y sellos, vea
 [fugas y estanqueidad](/posts/fugas-estanqueidad/).
 
+<figure class="photo">
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/climatizacion/aire-acondicionado-automotriz-circuito-componentes-funcionamiento-foto" alt="Manómetros de alta y baja presión conectados al sistema de aire acondicionado de un auto durante la recarga de refrigerante." width="1200" height="900" loading="lazy" decoding="async" style="width:100%;height:auto" />
+<figcaption>Juego de manómetros conectado a las tomas de baja (azul) y alta presión (rojo) durante la recarga del sistema. Foto: <a href="https://commons.wikimedia.org/wiki/File:Regassing_the_aircon_of_a_Ford_Focus_2017_02.jpg" rel="noopener" target="_blank">Mike Peel</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" rel="license noopener" target="_blank">CC BY-SA 4.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 ## Errores comunes
 
 - **Recargar sin buscar la fuga.** El refrigerante volverá a escaparse.

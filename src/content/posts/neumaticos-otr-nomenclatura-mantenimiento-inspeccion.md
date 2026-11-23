@@ -64,6 +64,11 @@ Lo que los distingue no es solo el tamaño. Trabajan a baja velocidad con cargas
 enormes, sobre roca y barro, con cortes e impactos, y su vida depende tanto del
 diseño como de la operación y el mantenimiento.
 
+<figure class="photo">
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/neumaticos/neumaticos-otr-nomenclatura-mantenimiento-inspeccion-foto" alt="Neumáticos OTR de un camión de acarreo, con banda de rodamiento desgastada y rines visibles." width="1200" height="800" loading="lazy" decoding="async" style="width:100%;height:auto" />
+<figcaption>Neumáticos OTR en el eje trasero de un camión de acarreo; la banda de tacos profundos es típica del trabajo fuera de carretera. Foto: <a href="https://commons.wikimedia.org/wiki/File:Bell_haul_truck_2023_(52706446926).jpg" rel="noopener" target="_blank">Jon Lavis</a>, <a href="https://creativecommons.org/licenses/by/2.0/deed.es" rel="license noopener" target="_blank">CC BY 2.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 ## Construcción
 
 El curso describe un neumático de construcción **diagonal** (convencional), en

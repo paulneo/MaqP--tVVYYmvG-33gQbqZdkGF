@@ -100,6 +100,11 @@ fuelle en una sola pieza, que veremos en los vehículos livianos. Si quiere
 repasar esa diferencia entre resorte y amortiguador, lea la guía de
 [amortiguadores y suspensión](/posts/amortiguadores-suspension-tipos-funcionamiento-fallas/).
 
+<figure class="photo">
+<img src="https://res.cloudinary.com/vadks4nc/image/upload/f_auto,q_auto/mundo-ingenieria/suspension/suspension-neumatica-camiones-componentes-funcionamiento-averias-foto" alt="Bolsa de aire (resorte neumático) de la suspensión de un semirremolque, montada junto a la rueda." width="1200" height="900" loading="lazy" decoding="async" style="width:100%;height:auto" />
+<figcaption>Resorte neumático tipo fuelle montado entre el bastidor y el eje de un semirremolque. Foto: <a href="https://commons.wikimedia.org/wiki/File:Pneumatic_spring.JPG" rel="noopener" target="_blank">Bongoman</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es" rel="license noopener" target="_blank">CC BY-SA 3.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 ## Suspensión neumática en vehículos pesados
 
 En los vehículos pesados, señala el curso, la suspensión neumática necesita
