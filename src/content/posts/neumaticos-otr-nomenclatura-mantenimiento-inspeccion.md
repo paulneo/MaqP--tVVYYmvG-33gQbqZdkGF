@@ -296,7 +296,9 @@ superarse los límites de carga ni de presión. Los símbolos de velocidad que
 cita el curso (J de 100 km/h, K de 110, L de 120 y M de 130) son de neumáticos
 de camión de carretera; en un OTR, la referencia es la velocidad máxima de su
 código TRA y la capacidad de trabajo que indique el fabricante para el ciclo
-real de acarreo.
+real de acarreo. Esa capacidad se expresa como TKPH (toneladas-kilómetro por
+hora), y puede comparar la de su ciclo con la del catálogo en la [calculadora de
+TKPH para neumáticos OTR](/herramientas/tkph-neumaticos-otr/).
 
 ## Montaje dual, rotación y balanceo
 

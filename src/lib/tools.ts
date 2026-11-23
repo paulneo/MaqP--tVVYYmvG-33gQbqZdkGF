@@ -457,6 +457,44 @@ export const TOOLS: Tool[] = [
     tier: 'free',
   },
   {
+    slug: 'capacidad-montacargas-centro-de-carga',
+    title: 'Calculadora de capacidad real del montacargas según el centro de carga',
+    description:
+      'Calcule cuánto puede levantar un montacargas cuando el centro de carga real supera al de la placa, con reducción por accesorio y margen frente al peso de la carga.',
+    category: 'maquinaria',
+    icon: 'material-symbols:forklift',
+    relatedPost: 'montacargas-seguridad-estabilidad-inspeccion-operacion',
+    relatedTools: ['conversor-presion-torque', 'fuerza-cilindro-hidraulico'],
+    keywords: [
+      'capacidad montacargas centro de carga',
+      'capacidad real montacargas',
+      'placa de capacidad montacargas',
+      'centro de carga 500 mm 24 pulgadas',
+      'cálculo capacidad autoelevador',
+    ],
+    status: 'active',
+    tier: 'free',
+  },
+  {
+    slug: 'tkph-neumaticos-otr',
+    title: 'Calculadora de TKPH para neumáticos OTR',
+    description:
+      'Calcule el TKPH de obra por posición (delantera y trasera) de un camión de acarreo y compárelo con el TKPH nominal del neumático para saber si el compuesto soporta el calor del ciclo.',
+    category: 'maquinaria',
+    icon: 'material-symbols:tire-repair',
+    relatedPost: 'neumaticos-otr-nomenclatura-mantenimiento-inspeccion',
+    relatedTools: ['numero-de-volquetes-por-excavadora', 'conversor-presion-torque', 'consumo-combustible-maquinaria'],
+    keywords: [
+      'tkph neumáticos',
+      'cálculo tkph',
+      'tkph camión minero',
+      'neumáticos otr',
+      'separación por calor neumático',
+    ],
+    status: 'active',
+    tier: 'free',
+  },
+  {
     slug: 'numero-de-volquetes-por-excavadora',
     title: 'Calculadora de número de volquetes por excavadora',
     description:

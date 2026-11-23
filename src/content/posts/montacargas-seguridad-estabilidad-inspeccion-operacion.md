@@ -224,9 +224,11 @@ momento igual o menor se puede levantar; una con un momento mayor, no.
 - Con un accesorio montado manda la capacidad con accesorio.
 - Una placa ilegible o ausente deja el equipo fuera de operación.
 
-El cálculo del manual sirve para entender el principio. Para cargas fuera
-del centro nominal, use el diagrama de carga del fabricante, que considera
-la altura de elevación y el mástil reales.
+El cálculo del manual sirve para entender el principio, y puede estimar
+cuánto baja la capacidad con la
+[calculadora de capacidad real según el centro de carga](/herramientas/capacidad-montacargas-centro-de-carga/).
+Para cargas fuera del centro nominal, use el diagrama de carga del
+fabricante, que considera la altura de elevación y el mástil reales.
 
 ## El triángulo de estabilidad
 

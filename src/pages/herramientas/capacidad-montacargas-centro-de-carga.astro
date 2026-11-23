@@ -1,0 +1,187 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import CapacidadMontacargas from '../../components/tools/CapacidadMontacargas.svelte'
+import { isPostLive } from '../../utils/content-utils'
+
+const forkliftPostLive = await isPostLive('montacargas-seguridad-estabilidad-inspeccion-operacion')
+---
+
+<ToolLayout slug="capacidad-montacargas-centro-de-carga">
+    <CapacidadMontacargas slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Cómo cambia la capacidad del montacargas con el centro de carga</h2>
+        <p>
+            Un montacargas contrabalanceado funciona como un balancín: las ruedas delanteras son el
+            <strong>fulcro</strong>, la carga queda de un lado y el cuerpo con su contrapeso del otro.
+            La <strong>placa de capacidad</strong> indica cuánto puede levantar el equipo con el centro
+            de gravedad de la carga a una distancia dada de la cara vertical de las horquillas: el
+            <strong>centro de carga nominal</strong>, normalmente 500 mm o 24 pulgadas (610 mm). Si la
+            carga es más larga o está mal colocada, su centro se aleja, el <strong>momento de carga</strong>
+            (peso por distancia al fulcro) crece y la capacidad real baja.
+        </p>
+        <p>
+            Como el momento que puede resistir el contrapeso es el mismo, la capacidad real sale de
+            igualar momentos respecto del eje delantero:
+        </p>
+        <p class="text-center text-lg font-mono bg-black/[0.03] dark:bg-white/[0.05] p-3 rounded-lg">C = Cn × (A + LCn) / (A + LCr)</p>
+        <p>
+            Si no conoce A, la calculadora usa la versión simplificada, que mide los brazos desde la
+            cara de las horquillas: <code>C = Cn × LCn / LCr</code>. En ambos casos el resultado se limita
+            a <strong>Cn</strong>: nunca se muestra una capacidad mayor que la de la placa.
+        </p>
+
+        <h3>Variables</h3>
+        <ul>
+            <li><strong>C</strong> = capacidad real estimada (kg) con el centro de carga real</li>
+            <li><strong>Cn</strong> = capacidad nominal de la placa (kg), descontada la reducción por accesorio si corresponde</li>
+            <li><strong>LCn</strong> = centro de carga nominal de la placa (mm)</li>
+            <li><strong>LCr</strong> = centro de carga real (mm): para una carga uniforme apoyada contra el respaldo, la mitad de su largo</li>
+            <li><strong>A</strong> = distancia del centro del eje delantero a la cara vertical de las horquillas (mm); en las fichas técnicas suele aparecer como distancia de carga o voladizo delantero</li>
+        </ul>
+
+        <h3>Por qué la fórmula simplificada es conservadora</h3>
+        <p>
+            Al ignorar A, la fórmula simplificada trata a la cara de las horquillas como si fuera el
+            fulcro. Así, alejar el centro de carga de 500 a 600 mm parece alargar el brazo un 20 %,
+            cuando el brazo real (medido desde el eje) pasa de A + 500 a A + 600, un aumento menor. Por
+            eso, cuando el centro de carga real es mayor que el nominal, el resultado simplificado
+            siempre es menor que el exacto: queda del lado de la seguridad. Es el mismo criterio de
+            la guía de montacargas, donde el cálculo se simplifica midiendo desde la cara de las
+            horquillas.
+        </p>
+
+        <h3>Por qué no sube la capacidad con una carga corta</h3>
+        <p>
+            Si el centro de carga real es menor que el nominal, la fórmula daría una capacidad mayor
+            que la de la placa. La calculadora la limita a la capacidad nominal porque la estabilidad
+            no es el único límite: las horquillas, el mástil, las cadenas y el sistema hidráulico están
+            dimensionados para esa capacidad. Una carga compacta no autoriza a sobrecargar el equipo.
+        </p>
+
+        <h3>Accesorios</h3>
+        <p>
+            Un accesorio (desplazador lateral, pinzas, espolón, rotador) agrega peso delante del eje
+            y suele adelantar el centro de carga, así que reduce la capacidad. Si la placa del
+            accesorio indica una reducción en kg o en porcentaje, ingrésela en la opción
+            correspondiente: la calculadora la descuenta de la capacidad nominal y luego aplica la
+            corrección por centro de carga. Si la placa del equipo con accesorio indica una capacidad
+            y un centro de carga propios, ingrese directamente esos valores como datos de placa.
+        </p>
+
+        <h3>Ejemplo resuelto con los valores por defecto</h3>
+        <p>
+            Un montacargas de <strong>2.500 kg a 500 mm</strong> debe levantar una carga uniforme de
+            <strong>2.000 kg</strong> y 1.200 mm de largo, apoyada contra el respaldo de las horquillas.
+            No lleva accesorio.
+        </p>
+        <ol>
+            <li>Centro de carga real: LCr = 1.200 / 2 = <strong>600 mm</strong>.</li>
+            <li>Cálculo simplificado (A desconocida): C = 2.500 × 500 / 600 = <strong>2.083 kg</strong>.</li>
+            <li>Margen: 2.083 − 2.000 = <strong>83 kg</strong>; uso de la capacidad: 2.000 / 2.083 = <strong>96,0 %</strong>. La carga está dentro, pero con poco margen.</li>
+            <li>Centro de carga máximo para 2.000 kg: 2.500 × 500 / 2.000 = <strong>625 mm</strong>, es decir, una carga uniforme de hasta 1.250 mm de largo.</li>
+            <li>Si la ficha técnica indica A = 450 mm y activa el cálculo exacto: C = 2.500 × (450 + 500) / (450 + 600) = 2.500 × 950 / 1.050 = <strong>2.262 kg</strong>, con un margen de 262 kg (88,4 % de uso) y un centro de carga máximo de 738 mm.</li>
+        </ol>
+        <p>
+            La diferencia entre 2.083 y 2.262 kg es justamente el margen que agrega la fórmula
+            simplificada. Con una carga de 1.600 mm (centro a 800 mm), la capacidad baja a 1.563 kg en
+            el cálculo simplificado y a 1.900 kg en el exacto: en ambos casos los 2.000 kg exceden la
+            capacidad.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <p>
+            El resultado es una <strong>referencia</strong> para decidir si una carga es razonable,
+            no un reemplazo de la placa. La capacidad de la placa vale para una altura de elevación
+            determinada y con el mástil vertical; por encima de esa altura, y al inclinar el mástil
+            hacia adelante, el fabricante reduce la capacidad en el <strong>diagrama de carga</strong>.
+            Si el uso de la capacidad se acerca al 100 %, si va a elevar alto o si la carga no es
+            uniforme, consulte ese diagrama o fraccione la carga. Con la carga en el límite, cualquier
+            frenada, pendiente o bache mueve el centro de gravedad hacia el eje delantero.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Mirar solo el peso</strong>: una carga de 2.000 kg puede ser segura con 1.200 mm de largo y exceder la capacidad con 1.600 mm, en el mismo equipo.</li>
+            <li><strong>Medir el centro de carga desde la punta de las horquillas o desde el eje</strong>: se mide desde la cara vertical de las horquillas hasta el centro de gravedad de la carga.</li>
+            <li><strong>Suponer que el centro de carga es la mitad del largo en cualquier carga</strong>: solo vale para cargas uniformes apoyadas contra el respaldo. Una máquina, un motor o una caja con el peso concentrado adelante tiene el centro más lejos.</li>
+            <li><strong>Pensar que una carga corta permite superar la placa</strong>: la capacidad nominal es un máximo, aunque el centro de carga sea menor.</li>
+            <li><strong>Olvidar el accesorio</strong>: con un accesorio montado manda la capacidad con accesorio.</li>
+            <li><strong>Ignorar la altura de elevación</strong>: la placa y el diagrama de carga reducen la capacidad a gran altura; este cálculo no lo considera.</li>
+            <li><strong>Mezclar unidades</strong>: si la placa está en libras y pulgadas, convierta ambos centros de carga a la misma unidad (24 in = 610 mm, 1 lb = 0,4536 kg).</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            {forkliftPostLive && <li><a href="/posts/montacargas-seguridad-estabilidad-inspeccion-operacion/">Montacargas: estabilidad, placa de capacidad, inspección y operación segura</a></li>}
+            <li><a href="/posts/gruas-configuracion-segura/">Condiciones del suelo y estabilizadores de grúa: cálculo de apoyo</a></li>
+            <li><a href="/posts/manipulador-telescopico-1536x/">Manipulador telescópico X-Series Extendo 1536X de Pettibone</a></li>
+            <li><a href="/posts/analisis-seguridad-trabajo/">Análisis de Seguridad en el Trabajo (AST): principios y aplicaciones</a></li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué es el centro de carga de un montacargas?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Es la distancia horizontal desde la cara vertical de las horquillas hasta el centro de gravedad de la carga. La placa indica la capacidad para un centro de carga nominal, normalmente <strong>500 mm</strong> o <strong>24 pulgadas (610 mm)</strong>; los equipos grandes se rotulan a 600 mm, 36 o 48 pulgadas. Para una carga uniforme apoyada contra el respaldo, el centro de carga es la mitad de su largo.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo se calcula la capacidad real de un montacargas?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Igualando momentos respecto del eje delantero: <strong>C = Cn × (A + LCn) / (A + LCr)</strong>. Si no conoce la distancia A entre el eje y la cara de las horquillas, use <strong>C = Cn × LCn / LCr</strong>, que da un valor más bajo y por lo tanto conservador. Por ejemplo, un equipo de 2.500 kg a 500 mm con la carga a 600 mm queda en 2.083 kg (simplificado) o 2.262 kg (exacto con A = 450 mm).
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                Si la carga es corta, ¿el montacargas puede levantar más que lo que dice la placa?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                No. Aunque el momento de la carga sea menor, la capacidad nominal es un máximo: las horquillas, el mástil, las cadenas y el sistema hidráulico están dimensionados para ese valor. Por eso la calculadora nunca muestra una capacidad mayor que la de la placa.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cuánto reduce la capacidad un accesorio?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Depende del accesorio y del equipo: lo indica la placa del accesorio o la placa actualizada del montacargas, y ese valor manda. Como ejemplo de cálculo, si un accesorio reduce un 10 % la capacidad de un equipo de 2.500 kg a 500 mm, la base queda en 2.250 kg y, con la carga a 600 mm, la capacidad simplificada baja a 1.875 kg: una carga de 2.000 kg ya no se puede levantar.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Dónde encuentro la distancia del eje delantero a las horquillas?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                En la ficha técnica del fabricante, donde suele figurar como distancia de carga o voladizo delantero (en las fichas europeas, la cota x). También puede medirla desde el centro de la rueda delantera hasta la cara vertical de las horquillas. Si no la tiene, deje la opción desactivada: el cálculo simplificado queda del lado de la seguridad.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿La altura de elevación cambia la capacidad?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí. La placa indica la capacidad hasta una altura de elevación determinada; por encima, y al inclinar el mástil hacia adelante, el fabricante la reduce en el diagrama de carga. Esta calculadora solo corrige por centro de carga, así que para cargas en altura prevalece siempre el diagrama del fabricante.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Puedo usar la calculadora con una placa en libras y pulgadas?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Sí, siempre que use la misma unidad en los dos centros de carga y en los dos pesos: la fórmula depende de la relación entre ellos. Con el ejemplo de la {forkliftPostLive ? <a href="/posts/montacargas-seguridad-estabilidad-inspeccion-operacion/">guía de montacargas</a> : 'guía de montacargas'}, un equipo de 5.000 lb a 24 in con una carga de 4.000 lb centrada a 33 in tiene una capacidad simplificada de 3.636 lb: la carga excede la capacidad, igual que en la comparación de momentos de esa guía.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

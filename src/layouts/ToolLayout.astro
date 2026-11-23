@@ -15,6 +15,7 @@ import { Icon } from 'astro-icon/components'
 import MainGridLayout from './MainGridLayout.astro'
 import AdSlot from '../components/AdSlot.astro'
 import { CATEGORY_LABEL, CATEGORY_ICON, getToolBySlug, getActiveTools } from '../lib/tools'
+import { isPostLive } from '../utils/content-utils'
 
 interface Props {
     slug: string
@@ -29,6 +30,7 @@ if (!tool) {
 
 // Only active tools are linked, in the order declared in the registry entry.
 const activeTools = getActiveTools()
+const relatedPostLive = tool.relatedPost ? await isPostLive(tool.relatedPost) : false
 const relatedTools = (tool.relatedTools ?? [])
     .map((s) => activeTools.find((t) => t.slug === s))
     .filter((t): t is NonNullable<typeof t> => Boolean(t))
@@ -120,7 +122,7 @@ const breadcrumbJsonLd = {
         )}
 
         <!-- Post relacionado -->
-        {tool.relatedPost && (
+        {tool.relatedPost && relatedPostLive && (
             <section class="mb-10 p-5 md:p-6 rounded-xl bg-black/[0.03] dark:bg-white/[0.04] border border-black/[0.05] dark:border-white/[0.06]">
                 <p class="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--primary)] font-semibold mb-2">
                     Lea la guía completa

@@ -1,0 +1,232 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro'
+import TkphNeumaticosOtr from '../../components/tools/TkphNeumaticosOtr.svelte'
+import { isPostLive } from '../../utils/content-utils'
+
+const otrPostLive = await isPostLive('neumaticos-otr-nomenclatura-mantenimiento-inspeccion')
+---
+
+<ToolLayout slug="tkph-neumaticos-otr">
+    <TkphNeumaticosOtr slot="calculator" client:visible />
+
+    <div slot="explanation">
+        <h2>Qué es el TKPH y cómo se calcula</h2>
+        <p>
+            Un neumático OTR que rueda con carga se calienta: la carcasa y la banda flexionan
+            en cada vuelta y la goma convierte parte de ese trabajo en calor. Si el neumático
+            genera más calor del que puede disipar, la temperatura interna sube hasta que las
+            capas se despegan (separación por calor). El <strong>TKPH</strong> (toneladas ×
+            kilómetro por hora) mide esa exigencia térmica: combina la carga media que lleva
+            el neumático con la velocidad media a la que trabaja durante el turno.
+        </p>
+        <p>
+            Cada fabricante asigna a cada medida y compuesto un <strong>TKPH nominal</strong>,
+            que es el trabajo que el neumático soporta sin superar su temperatura límite. La
+            verificación consiste en calcular el TKPH de la obra y compararlo con ese valor:
+        </p>
+        <p class="text-center text-lg font-mono bg-black/[0.03] dark:bg-white/[0.05] p-3 rounded-lg">TKPH obra = Qm × Vm × K1 × K2</p>
+        <p>
+            <code>Qm = (Qvacío + Qcargado) / 2</code> &nbsp;·&nbsp; <code>Vm = L × N / H</code>
+        </p>
+
+        <h3>Variables</h3>
+        <ul>
+            <li><strong>Qm</strong> = carga media por neumático (t), calculada para cada posición</li>
+            <li><strong>Qvacío</strong> y <strong>Qcargado</strong> = carga sobre un neumático con el camión vacío y cargado (t)</li>
+            <li><strong>Vm</strong> = velocidad media de trabajo (km/h)</li>
+            <li><strong>L</strong> = longitud del ciclo, ida y vuelta (km)</li>
+            <li><strong>N</strong> = ciclos completados en el turno</li>
+            <li><strong>H</strong> = duración total del turno (h), con esperas, carga y descarga incluidas</li>
+            <li><strong>K1</strong> = coeficiente de longitud para tramos de ida mayores de 5 km (1,0 si no aplica)</li>
+            <li><strong>K2</strong> = coeficiente de temperatura ambiente (1,0 si no se corrige)</li>
+        </ul>
+
+        <h3>La carga por posición: delantero y trasero no se parecen</h3>
+        <p>
+            El TKPH se calcula por neumático, y cada eje reparte el peso de forma distinta. En un
+            camión rígido de dos ejes, el delantero lleva una parte grande del peso vacío y pocos
+            neumáticos (dos), mientras que el trasero, con duales, recibe la mayor parte de la
+            carga útil. Por eso conviene calcular las dos posiciones: la que tenga el mayor TKPH
+            es la que decide el compuesto.
+        </p>
+        <p>
+            La calculadora acepta las cargas por neumático directamente o las obtiene del peso del
+            camión vacío y cargado, del porcentaje que va al eje delantero en cada condición y del
+            número de neumáticos por eje. Los repartos por defecto (47 % delantero vacío y 33 %
+            cargado) son valores típicos de un camión rígido de dos ejes, no de un modelo concreto:
+            use los de la ficha técnica de su camión. Y recuerde que en un montaje dual la carga
+            no se reparte por igual cuando el camino tiene inclinación transversal, como se explica
+            en la guía de {otrPostLive ? <a href="/posts/neumaticos-otr-nomenclatura-mantenimiento-inspeccion/">neumáticos OTR</a> : 'neumáticos OTR'}.
+        </p>
+
+        <h3>La velocidad media incluye las paradas</h3>
+        <p>
+            Vm no es la velocidad del velocímetro ni la velocidad máxima en el camino de acarreo.
+            Es la distancia total recorrida en el turno dividida entre <strong>todas</strong> las
+            horas del turno, incluidas las colas en la pala, la carga, la descarga y las esperas.
+            La razón es física: mientras el camión está detenido, el neumático no genera calor y
+            se enfría, de modo que esas paradas reducen la exigencia térmica promedio. Si usted
+            divide solo entre el tiempo en marcha, obtiene un TKPH más alto que el real; si se
+            olvida de un tramo del recorrido, obtiene uno más bajo.
+        </p>
+
+        <h3>Coeficientes K1 y K2: valores de referencia</h3>
+        <p>
+            Los dos coeficientes dependen del fabricante del neumático, y cada uno publica su
+            propio método. Por eso la calculadora los deja en 1,0 (sin corrección) y usted puede
+            reemplazarlos por los de su proveedor.
+        </p>
+        <ul>
+            <li>
+                <strong>K1 (longitud)</strong>: en recorridos largos el neumático no alcanza a
+                enfriarse en las paradas y trabaja más tiempo cerca de su temperatura máxima. Se
+                aplica cuando el tramo de ida supera 5 km y vale más de 1. Su valor sale de la
+                tabla del fabricante según la longitud del tramo; la calculadora no trae una tabla
+                propia para no inventar datos.
+            </li>
+            <li>
+                <strong>K2 (temperatura ambiente)</strong>: el TKPH nominal se define para una
+                temperatura ambiente de referencia. En el método de Michelin esa referencia es
+                38 °C y, como referencia, se publica esta corrección, donde Ta es la temperatura
+                ambiente máxima de la zona en el período más caluroso:
+                <code>K2 = (Vm + 0,25 × (Ta − 38)) / Vm</code> si Ta es menor de 38 °C, y
+                <code>K2 = (Vm + 0,40 × (Ta − 38)) / Vm</code> si es igual o mayor. Puede activarla
+                en la calculadora. Otros fabricantes usan otra temperatura de referencia o un
+                método distinto: aplique el del fabricante cuyo TKPH nominal está usando.
+            </li>
+        </ul>
+
+        <h3>Ejemplo resuelto con los valores por defecto</h3>
+        <p>
+            Un camión rígido pesa 65 t vacío y 160 t cargado. Su eje delantero, con 2 neumáticos,
+            lleva el 47 % del peso vacío y el 33 % del peso cargado; el trasero tiene 4 neumáticos
+            en duales. El ciclo mide 6 km ida y vuelta (3 km de ida, sin K1) y el camión completa
+            24 ciclos en un turno de 12 horas. No se corrige por temperatura (K2 = 1). El
+            neumático elegido tiene, según el catálogo, un TKPH nominal de 280 t·km/h.
+        </p>
+        <ol>
+            <li>Delantero vacío: 65 × 0,47 / 2 = 15,28 t por neumático. Cargado: 160 × 0,33 / 2 = 26,40 t.</li>
+            <li>Trasero vacío: 65 × 0,53 / 4 = 8,61 t por neumático. Cargado: 160 × 0,67 / 4 = 26,80 t.</li>
+            <li>Carga media: delantero (15,28 + 26,40) / 2 = <strong>20,84 t</strong>; trasero (8,61 + 26,80) / 2 = <strong>17,71 t</strong>.</li>
+            <li>Velocidad media: Vm = 6 × 24 / 12 = <strong>12 km/h</strong>.</li>
+            <li>TKPH delantero: 20,84 × 12 ≈ <strong>250 t·km/h</strong>. TKPH trasero: 17,71 × 12 ≈ <strong>212,5 t·km/h</strong>.</li>
+            <li>Margen frente al nominal: delantero (280 − 250) / 280 = <strong>10,7 %</strong>; trasero 24,1 %.</li>
+            <li>Resultado: el compuesto es adecuado, y la posición que decide es la <strong>delantera</strong>, aunque el trasero lleve más carga cuando el camión va lleno.</li>
+        </ol>
+
+        <h3>Qué pasa si la obra es más calurosa</h3>
+        <p>
+            Con los mismos datos y la fórmula de referencia de K2 activada, una temperatura
+            ambiente de 45 °C da K2 = (12 + 0,40 × 7) / 12 = 1,233. El TKPH delantero sube a
+            <strong>308,4 t·km/h</strong>, 28,4 por encima del nominal: hay riesgo de separación por
+            calor, y el trasero queda con apenas 6,4 % de margen. En cambio, a 30 °C resulta
+            K2 = (12 + 0,25 × (−8)) / 12 = 0,833 y el TKPH delantero baja a 208,4 t·km/h. El mismo
+            neumático puede servir en una mina y fallar en otra con el mismo ciclo.
+        </p>
+
+        <h3>Cómo interpretar el resultado</h3>
+        <ul>
+            <li><strong>TKPH de la obra menor que el nominal</strong>: el compuesto soporta el calor que genera ese ciclo. La calculadora marca como "poco margen" cuando queda menos de 10 % por debajo; es un criterio de esta herramienta, no de un fabricante.</li>
+            <li><strong>TKPH de la obra mayor que el nominal</strong>: el neumático trabajará por encima de su temperatura límite y aumenta el riesgo de separación. Las salidas habituales son un compuesto de mayor TKPH (normalmente con menor resistencia al corte), bajar la velocidad media o la carga, o reorganizar el ciclo.</li>
+            <li><strong>El TKPH no reemplaza la tabla de carga</strong>: además de cumplir el TKPH, la carga por neumático no debe superar la que admite su tabla de carga y presión.</li>
+        </ul>
+        <p>
+            Esta herramienta es una verificación de referencia. El TKPH nominal del fabricante del
+            neumático y su propio método de corrección (K1, K2 y la forma de medir la velocidad)
+            siempre prevalecen; ante una diferencia, consulte a su proveedor.
+        </p>
+
+        <h3>Errores comunes al calcular</h3>
+        <ul>
+            <li><strong>Dividir solo entre las horas en marcha</strong>: las paradas enfrían el neumático y deben entrar en H; omitirlas sobreestima el TKPH.</li>
+            <li><strong>Calcular solo el eje trasero</strong>: en muchos camiones rígidos la posición delantera tiene la carga media más alta y es la que decide el compuesto.</li>
+            <li><strong>Usar la carga útil nominal</strong>: si la tolva lleva suplementos o se carga de más, la carga real por neumático sube y el TKPH con ella.</li>
+            <li><strong>Mezclar el TKPH de un fabricante con la corrección de otro</strong>: la temperatura de referencia y los coeficientes cambian entre marcas.</li>
+            <li><strong>Calcular con un turno promedio</strong>: verifique el turno más exigente (más ciclos, más calor), que es donde aparece la separación.</li>
+            <li><strong>Olvidar K1 en recorridos largos</strong>: con tramos de ida mayores de 5 km el neumático no se enfría lo suficiente entre ciclos.</li>
+        </ul>
+
+        <h3>Artículos relacionados</h3>
+        <ul>
+            {otrPostLive && <li><a href="/posts/neumaticos-otr-nomenclatura-mantenimiento-inspeccion/">Neumáticos OTR: nomenclatura, códigos TRA, presión e inspección</a></li>}
+            <li><a href="/posts/anatomia-camion-minero/">Anatomía básica de los camiones mineros</a></li>
+            <li><a href="/posts/componenetes-camion-minero/">Componentes de un camión minero: tolva, bastidor, transmisión y cabina</a></li>
+            <li><a href="/posts/maquinaria-mineria/">Maquinaria minera: perforación, carga, acarreo y criterios de selección</a></li>
+            <li><a href="/posts/conoce-los-diferentes-tipos-de-neumaticos-y-sus-usos/">Tipos de neumáticos y sus usos</a></li>
+        </ul>
+    </div>
+
+    <div slot="faq">
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué significa TKPH en un neumático?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Significa toneladas-kilómetro por hora: el trabajo que el neumático puede realizar sin superar su temperatura interna límite. Es un índice de capacidad térmica: el fabricante asigna un <strong>TKPH nominal</strong> a cada medida y compuesto, y usted lo compara con el TKPH de su obra, que es la carga media por neumático multiplicada por la velocidad media de trabajo.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Cómo se calcula el TKPH de la obra?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Con <strong>TKPH = Qm × Vm × K1 × K2</strong>. Qm es el promedio entre la carga del neumático vacío y cargado, y Vm es la distancia recorrida en el turno dividida entre las horas totales del turno. En el ejemplo de esta página, 20,84 t × 12 km/h = 250 t·km/h para el neumático delantero.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué se usa la carga media y no la carga máxima?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Porque el TKPH evalúa el calor acumulado a lo largo del ciclo, y el camión recorre la mitad del camino cargado y la otra mitad vacío. La carga máxima se controla aparte, con la tabla de carga y presión del neumático, que nunca debe superarse aunque el TKPH esté dentro del límite.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Por qué cuentan las esperas y la carga en la velocidad media?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Porque durante las paradas el neumático no genera calor y se enfría. La velocidad media debe reflejar esa alternancia entre trabajo y descanso, así que se divide la distancia del turno entre todas sus horas. Dividir solo entre el tiempo en movimiento da un TKPH más alto que el real.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué son los coeficientes K1 y K2?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                K1 corrige por la longitud del recorrido cuando el tramo de ida supera 5 km, y K2 por la temperatura ambiente frente a la de referencia del catálogo. Ambos dependen del fabricante del neumático. Como referencia, el método de Michelin usa 38 °C y la fórmula de K2 que trae esta calculadora; con 45 °C y 12 km/h resulta K2 = 1,233. Si su proveedor usa otro método, ingrese sus valores.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Qué pasa si el TKPH de la obra supera el del neumático?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                El neumático trabaja por encima de su temperatura límite y aumenta el riesgo de <strong>separación por calor</strong> entre la banda y la carcasa o entre telas, una falla que suele dejar el neumático fuera de servicio. Las soluciones son un compuesto con mayor TKPH nominal, menos velocidad media, menos carga o un ciclo con más tiempo de enfriamiento; defínalas con el fabricante del neumático.
+            </p>
+        </details>
+
+        <details class="mb-3 p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿Siempre conviene elegir el compuesto de mayor TKPH?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                No necesariamente. Los compuestos que disipan mejor el calor suelen resistir menos los cortes y el desgaste, que en caminos con roca pueden ser la causa principal de baja. Lo habitual es elegir el compuesto más resistente al corte cuyo TKPH nominal todavía cubra el de la obra con margen, y revisarlo con el proveedor.
+            </p>
+        </details>
+
+        <details class="p-4 rounded-lg bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06]">
+            <summary class="font-semibold cursor-pointer text-[var(--deep-text)] dark:text-white/90">
+                ¿De dónde saco el número de ciclos por turno?
+            </summary>
+            <p class="mt-3 text-black/70 dark:text-white/70 leading-relaxed">
+                Lo ideal es tomarlo del sistema de despacho o de los registros de la flota en el turno más exigente. Si está planificando, estime el ciclo del camión (carga, acarreo, descarga y retorno) y divida las horas del turno entre su duración; la <a href="/herramientas/numero-de-volquetes-por-excavadora/">calculadora de volquetes por excavadora</a> le ayuda a estimar ese ciclo.
+            </p>
+        </details>
+    </div>
+</ToolLayout>

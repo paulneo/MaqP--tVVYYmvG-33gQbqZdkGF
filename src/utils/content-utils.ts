@@ -40,6 +40,16 @@ export function isPostPublishable(data: any): boolean {
   return true
 }
 
+/**
+ * True when the post with this slug exists and is publicly visible in this
+ * build. Use it before linking to a post from a page that is not a post
+ * (e.g. a tool page), so a scheduled post is not linked before its date.
+ */
+export async function isPostLive(slug: string): Promise<boolean> {
+  const matches = await getCollection('posts', (entry) => entry.id === slug)
+  return matches.some((entry) => isPostPublishable(entry.data))
+}
+
 export async function getSortedPosts() {
   const allBlogPosts = await getCollection('posts', ({ data }) => isPostPublishable(data))
   const sorted = allBlogPosts.sort((a, b) => {

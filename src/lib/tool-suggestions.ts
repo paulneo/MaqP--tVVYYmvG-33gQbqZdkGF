@@ -55,6 +55,8 @@ const SLUG_RULES: { keywords: RegExp; toolSlug: string }[] = [
   { keywords: /costo-hora|precio-hora-maquinaria|costo-operacion/, toolSlug: 'costo-hora-operacion-excavadora' },
   { keywords: /consumo-combustible|litros-diesel|combustible-maquinaria/, toolSlug: 'consumo-combustible-maquinaria' },
   { keywords: /amortizacion|depreciacion|vida-util-maquinaria|valor-contable/, toolSlug: 'amortizacion-maquinaria-pesada' },
+  { keywords: /montacarga|autoelevador|forklift|centro-de-carga/, toolSlug: 'capacidad-montacargas-centro-de-carga' },
+  { keywords: /tkph|neumaticos-otr|neumatico-otr|llantas-otr/, toolSlug: 'tkph-neumaticos-otr' },
 ]
 
 // Fallback por categoría — si ningún slug matchea, sugerir según la categoría del post.
