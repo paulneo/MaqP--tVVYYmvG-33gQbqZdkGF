@@ -1,23 +1,12 @@
 <script lang="ts">
-    /**
-     * Site TKPH calculator for OTR tires (haul trucks).
-     *
-     *   Qm  = (Q_empty + Q_loaded) / 2                 mean load per tire (t), per position
-     *   Vm  = (round-trip km × cycles per shift) / shift hours     average work speed (km/h)
-     *   TKPH_site = Qm × Vm × K1 × K2
-     *
-     *   K1 = haul length factor (one-way hauls > 5 km), taken from the tire maker's table.
-     *   K2 = ambient temperature factor. Optional reference formula (Michelin method,
-     *        reference ambient Tr = 38 °C):
-     *          Ta <  Tr: K2 = (Vm + 0.25 × (Ta − Tr)) / Vm
-     *          Ta >= Tr: K2 = (Vm + 0.40 × (Ta − Tr)) / Vm
-     *
-     * Per-tire loads come either from direct input or from truck empty/loaded weight,
-     * front-axle weight distribution (%) and tires per axle (rear % = 100 − front %).
-     * The site TKPH of the worst position is compared with the tire's rated TKPH.
-     */
-
-    const K2_REF_TEMP = 38
+    // Formulas live in src/lib/calculators/otr-tkph.ts (covered by tests).
+    import {
+        averageSpeed,
+        computeTkph,
+        isTruckValid,
+        referenceK2,
+        tireLoadsFromTruck,
+    } from '../../lib/calculators/otr-tkph'
 
     let desdeCamion = true
 
@@ -49,56 +38,54 @@
     // Tire rating
     let tkphNominal = 280
 
-    $: cargas = desdeCamion
-        ? {
-              delVacio: (pesoVacio * delanteroVacioPct) / 100 / llantasDelanteras,
-              delCargado: (pesoCargado * delanteroCargadoPct) / 100 / llantasDelanteras,
-              trasVacio: (pesoVacio * (100 - delanteroVacioPct)) / 100 / llantasTraseras,
-              trasCargado: (pesoCargado * (100 - delanteroCargadoPct)) / 100 / llantasTraseras,
-          }
-        : { delVacio, delCargado, trasVacio, trasCargado }
+    $: camion = {
+        emptyWeight: pesoVacio,
+        loadedWeight: pesoCargado,
+        frontEmptyPercent: delanteroVacioPct,
+        frontLoadedPercent: delanteroCargadoPct,
+        frontTires: llantasDelanteras,
+        rearTires: llantasTraseras,
+    }
+    $: cargasLib = desdeCamion
+        ? tireLoadsFromTruck(camion)
+        : { frontEmpty: delVacio, frontLoaded: delCargado, rearEmpty: trasVacio, rearLoaded: trasCargado }
+    $: cargas = {
+        delVacio: cargasLib.frontEmpty,
+        delCargado: cargasLib.frontLoaded,
+        trasVacio: cargasLib.rearEmpty,
+        trasCargado: cargasLib.rearLoaded,
+    }
 
-    $: datosCamionValidos =
-        !desdeCamion ||
-        (pesoVacio > 0 && pesoCargado >= pesoVacio &&
-            delanteroVacioPct > 0 && delanteroVacioPct < 100 &&
-            delanteroCargadoPct > 0 && delanteroCargadoPct < 100 &&
-            llantasDelanteras >= 1 && llantasTraseras >= 1)
+    $: datosCamionValidos = !desdeCamion || isTruckValid(camion)
 
-    $: velocidadMedia = (distanciaIdaVuelta * ciclosTurno) / horasTurno
-    $: k2Calculado =
-        (velocidadMedia +
-            (temperaturaAmbiente >= K2_REF_TEMP ? 0.4 : 0.25) * (temperaturaAmbiente - K2_REF_TEMP)) /
-        velocidadMedia
+    $: velocidadMedia = averageSpeed(distanciaIdaVuelta, ciclosTurno, horasTurno)
+    $: k2Calculado = referenceK2(velocidadMedia, temperaturaAmbiente)
     $: k2 = k2Referencia ? k2Calculado : k2Manual
 
-    $: datosValidos =
-        datosCamionValidos &&
-        cargas.delVacio > 0 && cargas.delCargado > 0 && cargas.trasVacio > 0 && cargas.trasCargado > 0 &&
-        distanciaIdaVuelta > 0 && ciclosTurno > 0 && horasTurno > 0 &&
-        k1 > 0 && k2 > 0 && tkphNominal > 0
+    $: resultado = computeTkph({
+        loads: cargasLib,
+        roundTripKm: distanciaIdaVuelta,
+        cyclesPerShift: ciclosTurno,
+        shiftHours: horasTurno,
+        k1,
+        k2,
+        ratedTkph: tkphNominal,
+    })
 
-    $: cargaMediaDel = (cargas.delVacio + cargas.delCargado) / 2
-    $: cargaMediaTras = (cargas.trasVacio + cargas.trasCargado) / 2
-    $: tkphBaseDel = cargaMediaDel * velocidadMedia
-    $: tkphBaseTras = cargaMediaTras * velocidadMedia
-    $: tkphDel = tkphBaseDel * k1 * k2
-    $: tkphTras = tkphBaseTras * k1 * k2
-    $: margenDel = ((tkphNominal - tkphDel) / tkphNominal) * 100
-    $: margenTras = ((tkphNominal - tkphTras) / tkphNominal) * 100
+    $: datosValidos = datosCamionValidos && resultado.valid
 
-    $: criticaDelantera = tkphDel >= tkphTras
-    $: tkphCritico = Math.max(tkphDel, tkphTras)
-    $: margenCritico = ((tkphNominal - tkphCritico) / tkphNominal) * 100
+    $: cargaMediaDel = resultado.meanLoadFront
+    $: cargaMediaTras = resultado.meanLoadRear
+    $: tkphDel = resultado.tkphFront
+    $: tkphTras = resultado.tkphRear
+    $: margenDel = resultado.marginFront
+    $: margenTras = resultado.marginRear
 
-    // Calculator convention (not a manufacturer criterion): below 10 % margin is flagged as tight.
-    $: veredicto = !datosValidos
-        ? null
-        : tkphCritico > tkphNominal
-          ? 'riesgo'
-          : margenCritico < 10
-            ? 'justo'
-            : 'adecuado'
+    $: criticaDelantera = resultado.frontIsCritical
+    $: tkphCritico = resultado.criticalTkph
+    $: margenCritico = resultado.criticalMargin
+
+    $: veredicto = datosValidos ? resultado.verdict : null
 
     $: distanciaIda = distanciaIdaVuelta / 2
     $: avisoK1 = distanciaIda > 5 && k1 === 1

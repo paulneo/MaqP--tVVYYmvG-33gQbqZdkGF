@@ -1,5 +1,5 @@
 Objective: add two calculators tied to batch-7 posts (forklift actual capacity by load center, OTR tire TKPH), linked both ways with their posts.
-Branch: main (direct deploys, repo convention). Delivery: one commit for the feature. Test runner: none for tools; checks are formula spot checks with node + `pnpm build` + link scan of dist.
+Branch: main (direct deploys, repo convention). Delivery: one commit for the feature. Test runner: `pnpm test` (node --test, added in L5); checks are formula spot checks with node + `pnpm build` + link scan of dist.
 
 ## Specs
 
@@ -23,3 +23,4 @@ Route evidence: T2 and T3 are independent units with disjoint files (~400 lines 
 - L2 Writers A and B done: formula spot checks (forklift 10 cases incl. post example 3,636 lb and cap at rated capacity; TKPH worked example front 250 / rear 212.5, K2 reference check 0.855), Svelte compile clean, links valid. Parent registered both tools and SLUG_RULES.
 - L3 Link scan of dist (unquoted hrefs) found the tool pages linking to their posts, which publish 25/11 and 26/11 (404 until then). Added `isPostLive(slug)` in src/utils/content-utils.ts (reuses isPostPublishable) and gated ToolLayout's related-post callout and the pages' post links on it; the daily scheduled rebuild shows them on the post date. Differential: 23 existing tools render "Lea la guía completa" exactly as before; new tools have 0 missing links. `pnpm build` exit 0 (KaTeX warnings pre-existing: 54 before and after).
 - L4 Risk: item 3 (shared ToolLayout/content-utils). RDD review (lens reliability) granted by user, approved and acknowledged (lineage review-e840ad16422a49da). Advisory follow-ups: no automated formula tests for the calculators; isPostLive id match was flagged as inferential and is covered by the differential check above.
+- L5 (2026-11-24) User: "si corrige" (follow-up from L4: no automated formula tests). Formulas moved to src/lib/calculators/forklift-capacity.ts and otr-tkph.ts, imported by both Svelte islands; 19 tests in tests/calculators/ run with `pnpm test` (node --test, no new dependency). Evidence: 19/19 pass; mutating the K2 coefficient or removing the capacity cap fails 1 test each; old inline formulas vs new modules identical on 40,000 random inputs; `pnpm build` exit 0 and both tool pages render the same HTML as before.

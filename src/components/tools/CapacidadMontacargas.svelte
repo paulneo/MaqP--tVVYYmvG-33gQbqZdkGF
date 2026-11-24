@@ -1,17 +1,6 @@
 <script lang="ts">
-    /**
-     * Forklift actual capacity by load center (moment balance about the front axle).
-     *
-     *   Cb = rated capacity minus the attachment reduction (kg or %)
-     *   Exact (A known):   C = Cb × (A + LCn) / (A + LCr)
-     *   Simplified:        C = Cb × LCn / LCr       (ignores A → conservative when LCr > LCn)
-     *   C is capped at Cb: forks, mast and hydraulics are rated for Cb, so a shorter
-     *   load center never raises the capacity above the plate value.
-     *
-     *   LCn = rated load center (mm), LCr = actual load center (mm)
-     *   A   = distance from the front axle centerline to the fork face (mm)
-     *   Max load center for a given load W: LCmax = Cb × (A + LCn) / W − A
-     */
+    // Formulas live in src/lib/calculators/forklift-capacity.ts (covered by tests).
+    import { computeForkliftCapacity } from '../../lib/calculators/forklift-capacity'
 
     let capacidadNominal = 2500
     let centroNominal = 500
@@ -27,26 +16,26 @@
 
     $: lcReal = desdeLargo ? largoCarga / 2 : centroReal
     $: a = conocerEje ? distanciaEje : 0
-    $: reduccionKg = !usarAccesorio
-        ? 0
-        : modoReduccion === 'kg'
-            ? reduccion
-            : (capacidadNominal * reduccion) / 100
-    $: capacidadBase = capacidadNominal - reduccionKg
-    $: datosValidos =
-        capacidadNominal > 0 && centroNominal > 0 && lcReal > 0 && pesoCarga > 0 &&
-        (!conocerEje || distanciaEje >= 0) &&
-        (!usarAccesorio || (reduccion >= 0 && capacidadBase > 0))
-    $: capacidadSinTope = datosValidos ? capacidadBase * ((a + centroNominal) / (a + lcReal)) : NaN
-    $: topeAplicado = datosValidos && capacidadSinTope > capacidadBase
-    $: capacidadReal = Math.min(capacidadSinTope, capacidadBase)
-    $: margen = capacidadReal - pesoCarga
-    $: porcentajeUso = (pesoCarga / capacidadReal) * 100
-    $: excede = datosValidos && pesoCarga > capacidadReal
-    $: reduccionPct = (1 - capacidadReal / capacidadNominal) * 100
-    $: centroMaximo = pesoCarga <= capacidadBase
-        ? (capacidadBase * (a + centroNominal)) / pesoCarga - a
-        : NaN
+    $: resultado = computeForkliftCapacity({
+        ratedCapacity: capacidadNominal,
+        ratedLoadCenter: centroNominal,
+        actualLoadCenter: lcReal,
+        axleToForkFace: a,
+        reduction: usarAccesorio
+            ? { mode: modoReduccion === 'kg' ? 'weight' : 'percent', value: reduccion }
+            : null,
+        loadWeight: pesoCarga,
+    })
+    $: capacidadBase = resultado.baseCapacity
+    $: datosValidos = resultado.valid
+    $: capacidadSinTope = resultado.uncappedCapacity
+    $: topeAplicado = resultado.capApplied
+    $: capacidadReal = resultado.actualCapacity
+    $: margen = resultado.margin
+    $: porcentajeUso = resultado.usagePercent
+    $: excede = resultado.exceeds
+    $: reduccionPct = resultado.reductionPercent
+    $: centroMaximo = resultado.maxLoadCenter
 
     const fmt = (n: number, decimals = 2) =>
         Number.isFinite(n)
